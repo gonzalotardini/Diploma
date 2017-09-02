@@ -1,0 +1,765 @@
+﻿Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 21/11/2016 05:35:52 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 21/11/2016 05:36:44 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 21/11/2016 05:49:37 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 21/11/2016 05:50:24 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 21/11/2016 05:53:49 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 21/11/2016 05:56:03 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 21/11/2016 05:59:17 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 21/11/2016 05:59:58 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 21/11/2016 06:01:22 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 21/11/2016 06:02:15 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 21/11/2016 06:02:53 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 21/11/2016 06:04:23 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 21/11/2016 06:06:57 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 21/11/2016 06:08:15 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 21/11/2016 06:09:22 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 21/11/2016 06:09:59 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 21/11/2016 06:10:55 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 21/11/2016 06:57:46 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: Se Actualizo correctamente el Cliente LA CAMIONERA
+StackTrace: Articulo Form
+Fecha/Hora: 21/11/2016 06:58:22 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 21/11/2016 07:02:15 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: Se Actualizo correctamente el Cliente LA CAMIONERA
+StackTrace: Articulo Form
+Fecha/Hora: 21/11/2016 07:02:36 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: Se Actualizo correctamente el Cliente LA CAMIONERA
+StackTrace: Articulo Form
+Fecha/Hora: 21/11/2016 07:03:32 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 21/11/2016 07:05:29 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: Se Actualizo correctamente el Cliente ROMANO
+StackTrace: Articulo Form
+Fecha/Hora: 21/11/2016 07:05:48 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 23/11/2016 01:18:17 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: Se Actualizo correctamente el Cliente ROMANO
+StackTrace: Articulo Form
+Fecha/Hora: 23/11/2016 01:20:05 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: Se actualizo correctamente la integridad
+StackTrace: Integridad Form
+Fecha/Hora: 23/11/2016 01:20:32 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 23/11/2016 01:32:15 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 23/11/2016 01:47:48 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 23/11/2016 01:53:44 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 23/11/2016 01:57:27 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: Se ha eliminado correctamente el articulo 90 SEGUNDOS
+StackTrace: Articulo Form
+Fecha/Hora: 23/11/2016 01:57:33 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 23/11/2016 01:58:44 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 23/11/2016 02:04:36 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: Se Actualizo correctamente el Cliente ROMANO
+StackTrace: Articulo Form
+Fecha/Hora: 23/11/2016 02:04:56 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: Se Actualizo correctamente el Cliente ARCON
+StackTrace: Articulo Form
+Fecha/Hora: 23/11/2016 02:05:08 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 23/11/2016 02:28:53 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: Se Actualizo correctamente el Cliente ULRIC LARSON
+StackTrace: Articulo Form
+Fecha/Hora: 23/11/2016 02:29:03 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 23/11/2016 02:30:53 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 23/11/2016 02:32:25 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 23/11/2016 02:34:19 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 23/11/2016 02:35:30 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 23/11/2016 02:36:25 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 23/11/2016 02:43:39 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 23/11/2016 02:54:06 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 23/11/2016 02:54:24 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 23/11/2016 02:56:04 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 23/11/2016 03:04:24 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 23/11/2016 03:05:51 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 23/11/2016 03:08:07 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 23/11/2016 03:08:46 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 23/11/2016 03:19:45 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 23/11/2016 03:24:06 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 23/11/2016 03:27:00 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 23/11/2016 03:29:42 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 23/11/2016 06:54:01 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 24/11/2016 01:53:57 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 24/11/2016 01:59:31 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 25/11/2016 01:40:58 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 25/11/2016 03:39:49 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 25/11/2016 03:40:20 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 25/11/2016 03:41:00 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 25/11/2016 03:45:01 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 25/11/2016 03:46:07 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 25/11/2016 03:55:03 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 25/11/2016 03:55:20 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: Se guardo correctamente el presupuesto 
+StackTrace: Nuevo Presupuesto Form
+Fecha/Hora: 25/11/2016 03:58:22 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 25/11/2016 04:54:46 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: Se guardo correctamente el presupuesto 
+StackTrace: Nuevo Presupuesto Form
+Fecha/Hora: 25/11/2016 04:55:49 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 25/11/2016 19:33:48
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 09:40:45 a.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 09:43:51 a.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 09:46:03 a.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 09:47:04 a.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 09:49:35 a.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 09:52:16 a.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 09:53:28 a.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 09:54:08 a.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 09:54:50 a.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 09:57:49 a.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 10:06:30 a.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 10:09:25 a.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 10:10:12 a.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 10:10:43 a.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 10:17:08 a.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 10:18:39 a.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 10:21:18 a.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 10:22:02 a.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 10:23:11 a.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 10:24:42 a.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 10:25:36 a.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 10:36:48 a.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 10:37:44 a.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 10:38:43 a.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 10:40:23 a.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 10:43:56 a.m.
+===========================================================================================
+Titulo: Información
+Mensaje: Se guardo correctamente el presupuesto 
+StackTrace: Nuevo Presupuesto Form
+Fecha/Hora: 02/12/2016 10:44:08 a.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 10:47:01 a.m.
+===========================================================================================
+Titulo: Información
+Mensaje: Se guardo correctamente el presupuesto 
+StackTrace: Nuevo Presupuesto Form
+Fecha/Hora: 02/12/2016 10:49:10 a.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 10:52:25 a.m.
+===========================================================================================
+Titulo: Información
+Mensaje: Se guardo correctamente el presupuesto 
+StackTrace: Nuevo Presupuesto Form
+Fecha/Hora: 02/12/2016 10:52:48 a.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 10:53:32 a.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 10:53:56 a.m.
+===========================================================================================
+Titulo: Información
+Mensaje: Se guardo correctamente el presupuesto 
+StackTrace: Nuevo Presupuesto Form
+Fecha/Hora: 02/12/2016 10:54:32 a.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 11:07:34 a.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 11:33:11 a.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 11:36:29 a.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 11:37:32 a.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 11:38:16 a.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 11:39:23 a.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 11:41:06 a.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 11:44:17 a.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 11:46:32 a.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 11:46:42 a.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 11:47:45 a.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 11:48:31 a.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 11:56:57 a.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 12:21:47 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 12:31:56 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 12:40:09 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 12:40:55 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: Se creo correctamente la venta 
+StackTrace: Nuevo venta form
+Fecha/Hora: 02/12/2016 12:44:09 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 01:51:24 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 02:07:05 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 02:07:38 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 02:55:38 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: Se creo correctamente la venta 
+StackTrace: Nuevo venta form
+Fecha/Hora: 02/12/2016 02:56:09 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 02:56:59 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 02:57:28 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: Se creo correctamente la venta 
+StackTrace: Nuevo venta form
+Fecha/Hora: 02/12/2016 02:57:42 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 03:01:38 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: Se guardo correctamente el presupuesto 
+StackTrace: Nuevo Presupuesto Form
+Fecha/Hora: 02/12/2016 03:19:54 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 03:37:14 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 03:37:24 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 03:40:27 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 03:40:37 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 03:42:43 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 03:45:05 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 03:45:28 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 03:46:17 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 03:56:05 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 04:34:52 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 04:35:20 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 04:36:13 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 04:38:15 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 05:21:09 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 05:21:36 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 05:46:48 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 05:47:30 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 05:51:29 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 05:51:43 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 05:52:24 p.m.
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/12/2016 05:53:12 p.m.
+===========================================================================================

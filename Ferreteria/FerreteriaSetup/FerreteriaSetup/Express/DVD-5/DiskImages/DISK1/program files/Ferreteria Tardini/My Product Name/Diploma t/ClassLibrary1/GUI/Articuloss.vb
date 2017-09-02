@@ -1,0 +1,622 @@
+﻿
+
+Imports BIZ
+Imports BLL
+Imports SL
+Imports DAL
+
+
+
+
+
+Public Class Articuloss
+
+
+
+
+
+
+
+    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
+
+
+        Dim GestorArticulo As New GestorArticulo
+        Dim Articulo As New Articulo
+
+        Dim Fecha As Date
+
+        Fecha = Now
+
+
+
+
+
+        Try
+            'el textbox codigo de barras no puede estar vacio
+            If TextBoxCodProveedor.Text = "" Then
+
+                Throw New Exception("Introduzca Codigo de Barras")
+                TextBoxCodProveedor.Focus()
+
+            Else
+                Articulo.CodigoDeBarras = Convert.ToInt64(TextBoxCodProveedor.Text)
+            End If
+
+
+            If TextBoxPrecio.Text = "" Then
+
+                Throw New Exception("Introduzca precio")
+                TextBoxPrecio.Focus()
+            Else
+
+                Articulo.Precio = Convert.ToDecimal(TextBoxPrecio.Text + "," + TextBox3.Text)
+
+            End If
+
+
+            If Combo_UniddMedida.SelectedIndex = -1 Then
+                Throw New Exception("Error, Seleccione Unidad de Medida")
+
+            Else
+
+                Articulo.UnidadDeMedida = Combo_UniddMedida.SelectedValue
+
+            End If
+
+
+
+            If Combo_SubUnidad.SelectedIndex = -1 Then
+
+                Throw New Exception("Error, Seleccione Sub-Unidad de Medida")
+
+
+            Else
+                Articulo.SubUnidadDeMedida = Combo_SubUnidad.SelectedValue
+
+            End If
+
+
+            If ComboCategoria.SelectedIndex = -1 Then
+
+                Throw New Exception("Error, Seleccione Categoría")
+
+            Else
+
+                Articulo.Categoria = ComboCategoria.SelectedValue
+
+            End If
+
+
+
+            If ComboSubCategoria.SelectedIndex = -1 Then
+
+                Throw New Exception("Error, Seleccione Sub-Categoría")
+
+            Else
+
+                Articulo.SubCategoria = ComboSubCategoria.SelectedValue
+
+            End If
+
+
+            If ComboMarca.SelectedIndex = -1 Then
+
+                Throw New Exception("Error, Seleccione Marca")
+
+            Else
+
+                Articulo.Marca = ComboMarca.SelectedValue
+
+            End If
+
+
+            Articulo.Descripcion = (TextBoxDescripcion.Text).ToUpper
+
+
+            GestorArticulo.ValidarDatosArticulo(Articulo, Fecha)
+
+            Dim el As New EventLogger
+
+            el.WriteToErrorLog("Se agregó correctamente el artículo " & Articulo.Descripcion, "Articulo Form", "Información")
+
+            Dim Mensaje = MsgBox("Se agregó correctamente el articulo " & Articulo.Descripcion, MsgBoxStyle.Information, "ATENCÓN")
+
+
+        Catch ex As Exception
+
+            Dim el As New ErrorLogger
+            MsgBox(ex.Message, MsgBoxStyle.Critical, "ERROR")
+            el.WriteToErrorLog(ex.Message, ex.StackTrace, "Error")
+
+
+
+        End Try
+
+
+
+    End Sub
+
+    Public num = 0
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+
+
+
+        If Principal.CulturaGlobal = "ESPAÑOL" Then
+
+            Dim Multiidioma As New SL.Multiidioma
+            Dim Cultura = "ES-ESP"
+
+            CODBARRAS.Text = Multiidioma.ObtenerValue("CODBARRAS", Cultura)
+            DESCRIPCION.Text = Multiidioma.ObtenerValue("DESCRIPCION", Cultura)
+            UNIDADDEMEDIDA.Text = Multiidioma.ObtenerValue("UNIDADDEMEDIDA", Cultura)
+            SUBUNIDADDEMEDIDA.Text = Multiidioma.ObtenerValue("SUBUNIDADDEMEDIDA", Cultura)
+            PRECIO.Text = Multiidioma.ObtenerValue("PRECIO", Cultura)
+            CATEGORIA.Text = Multiidioma.ObtenerValue("CATEGORIA", Cultura)
+            SUBCATEGORIA.Text = Multiidioma.ObtenerValue("SUBCATEGORIA", Cultura)
+            MARCA.Text = Multiidioma.ObtenerValue("MARCA", Cultura)
+            ARTICULOS.Text = Multiidioma.ObtenerValue("ARTICULOS", Cultura)
+            BUSCAR.Text = Multiidioma.ObtenerValue("BUSCAR", Cultura)
+            RadioButtonDESCRIPCION.Text = Multiidioma.ObtenerValue("DESCRIPCION", Cultura)
+            MODIFICAR.Text = Multiidioma.ObtenerValue("MODIFICAR", Cultura)
+            RadioButtonCODIGO.Text = Multiidioma.ObtenerValue("CODIGO", Cultura)
+            CANTIDADDEARTICULOS.Text = Multiidioma.ObtenerValue("CANTIDADDEARTICULOS", Cultura)
+
+        End If
+
+        If Principal.CulturaGlobal = "ENGLISH" Then
+
+            Dim Multiidioma As New SL.Multiidioma
+            Dim Cultura = "ENG-ENGLAND"
+
+            CODBARRAS.Text = Multiidioma.ObtenerValue("CODBARRAS", Cultura)
+            DESCRIPCION.Text = Multiidioma.ObtenerValue("DESCRIPCION", Cultura)
+            UNIDADDEMEDIDA.Text = Multiidioma.ObtenerValue("UNIDADDEMEDIDA", Cultura)
+            SUBUNIDADDEMEDIDA.Text = Multiidioma.ObtenerValue("SUBUNIDADDEMEDIDA", Cultura)
+            PRECIO.Text = Multiidioma.ObtenerValue("PRECIO", Cultura)
+            CATEGORIA.Text = Multiidioma.ObtenerValue("CATEGORIA", Cultura)
+            SUBCATEGORIA.Text = Multiidioma.ObtenerValue("SUBCATEGORIA", Cultura)
+            MARCA.Text = Multiidioma.ObtenerValue("MARCA", Cultura)
+            ARTICULOS.Text = Multiidioma.ObtenerValue("ARTICULOS", Cultura)
+            BUSCAR.Text = Multiidioma.ObtenerValue("BUSCAR", Cultura)
+            RadioButtonDESCRIPCION.Text = Multiidioma.ObtenerValue("DESCRIPCION", Cultura)
+            MODIFICAR.Text = Multiidioma.ObtenerValue("MODIFICAR", Cultura)
+            RadioButtonCODIGO.Text = Multiidioma.ObtenerValue("CODIGO", Cultura)
+            CANTIDADDEARTICULOS.Text = Multiidioma.ObtenerValue("CANTIDADDEARTICULOS", Cultura)
+
+        End If
+
+
+        If Principal.CulturaGlobal = "PORTUGUES" Then
+
+            Dim Multiidioma As New SL.Multiidioma
+            Dim Cultura = "POR-PORTUGAL"
+
+            CODBARRAS.Text = Multiidioma.ObtenerValue("CODBARRAS", Cultura)
+            DESCRIPCION.Text = Multiidioma.ObtenerValue("DESCRIPCION", Cultura)
+            UNIDADDEMEDIDA.Text = Multiidioma.ObtenerValue("UNIDADDEMEDIDA", Cultura)
+            SUBUNIDADDEMEDIDA.Text = Multiidioma.ObtenerValue("SUBUNIDADDEMEDIDA", Cultura)
+            PRECIO.Text = Multiidioma.ObtenerValue("PRECIO", Cultura)
+            CATEGORIA.Text = Multiidioma.ObtenerValue("CATEGORIA", Cultura)
+            SUBCATEGORIA.Text = Multiidioma.ObtenerValue("SUBCATEGORIA", Cultura)
+            MARCA.Text = Multiidioma.ObtenerValue("MARCA", Cultura)
+            ARTICULOS.Text = Multiidioma.ObtenerValue("ARTICULOS", Cultura)
+            BUSCAR.Text = Multiidioma.ObtenerValue("BUSCAR", Cultura)
+            RadioButtonDESCRIPCION.Text = Multiidioma.ObtenerValue("DESCRIPCION", Cultura)
+            MODIFICAR.Text = Multiidioma.ObtenerValue("MODIFICAR", Cultura)
+            RadioButtonCODIGO.Text = Multiidioma.ObtenerValue("CODIGO", Cultura)
+            CANTIDADDEARTICULOS.Text = Multiidioma.ObtenerValue("CANTIDADDEARTICULOS", Cultura)
+
+        End If
+
+
+
+
+        Application.DoEvents()
+        TextBoxBuscar.Focus()
+
+        Me.WindowState = FormWindowState.Maximized
+
+
+
+        '----------------------------------------------------------------------
+
+        Dim ArticuloDao As New ArticuloDAO
+        Dim UnidadDeMedidaDao As New UnidadDeMedidaDao
+
+        TextBox3.Text = "00"
+        RadioButtonDESCRIPCION.Select()
+
+        Try
+
+
+            DataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
+
+
+            'Cargo las unidades de medida
+            Combo_UniddMedida.DataSource = UnidadDeMedidaDao.ObtenerUnidadesMedida
+            Combo_UniddMedida.ValueMember = "Cod_Unidad_Medida"
+            Combo_UniddMedida.DisplayMember = "Descripcion"
+
+
+
+
+
+
+
+
+
+
+
+        Catch ex As Exception
+
+
+            MsgBox(ex.Message)
+
+
+
+        End Try
+
+
+
+
+        'CARGO LAS SUB UNIDAD DE MEDIDA
+
+
+        Try
+
+
+            Dim UnidadDeMedida As New UnidadDeMedida
+            Dim SubUnidadDeMedidaDao As New SubUnidadDeMedidaDAO
+
+
+
+
+            UnidadDeMedida.CodUnidadMedida = Combo_UniddMedida.SelectedValue
+            'Cargo las Sub Unidad de Medida
+            Combo_SubUnidad.DataSource = SubUnidadDeMedidaDao.ObtenerSubUnidadMedida(UnidadDeMedida)
+            Combo_SubUnidad.DisplayMember = "Descripcion"
+            Combo_SubUnidad.ValueMember = "Cod_SubUnidad_Medida"
+
+
+        Catch ex As Exception
+
+            MsgBox(ex.Message)
+
+        End Try
+
+
+
+
+
+
+        'Cargo las Categorias
+
+        Try
+
+            Dim _CategoriaDAO As New CategoriaDAO
+
+            ComboCategoria.DataSource = _CategoriaDAO.ObtenerTodasCategorias
+            ComboCategoria.ValueMember = "Cod_Categoria"
+            ComboCategoria.DisplayMember = "Descripcion"
+            num = 1
+        Catch ex As Exception
+
+            MsgBox(ex.Message)
+
+        End Try
+
+
+
+        'Cargo Sub Categorias
+
+
+        Try
+
+            Dim Categoria As New Categoria
+            Dim SubCategoriaDao As New SubCategoriaDAO
+
+            Categoria.CodigoCategoria = ComboCategoria.SelectedValue
+
+
+            ComboSubCategoria.DataSource = SubCategoriaDao.ObtenerSubCategorias(Categoria)
+            ComboSubCategoria.ValueMember = "Cod_SubCategoria"
+            ComboSubCategoria.DisplayMember = "Descripcion"
+
+        Catch ex As Exception
+
+            MsgBox(ex.Message)
+
+        End Try
+
+
+
+
+
+
+
+
+        'Cargo las Marcas
+
+        Try
+
+            Dim MarcaDAO As New MarcaDAO
+
+            ComboMarca.DataSource = MarcaDAO.ObtenerMarcas
+            ComboMarca.ValueMember = "Cod_Marca"
+            ComboMarca.DisplayMember = "Descripcion"
+
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        DataGridView1.DataSource = ArticuloDao.ObtenerPrimerosArticulos.Tables(0)
+
+        Dim CantidadArticulos As Integer
+
+        CantidadArticulos = DataGridView1.RowCount - 1
+        Label14.Text = CantidadArticulos
+
+        For Each row As DataGridViewRow In DataGridView1.Rows
+
+            If row.Index Mod 2 <> 0 Then
+                row.DefaultCellStyle.BackColor = Color.Bisque
+                ' row.Cells("Descripcion").Style.Font.Bold = True
+
+            Else
+                row.DefaultCellStyle.BackColor = Color.Aqua
+
+            End If
+
+        Next
+
+
+
+
+
+
+
+
+
+
+
+    End Sub
+
+    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs)
+
+       
+    End Sub
+
+
+    Private Sub Combo_UniddMedida_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Combo_UniddMedida.SelectedIndexChanged
+
+        Dim UnidadDeMedida As New UnidadDeMedida
+        'Dim Categoria As New Categoria
+        Dim SubUnidadDeMedidaDAO As New SubUnidadDeMedidaDAO
+
+
+
+
+
+
+        UnidadDeMedida.CodUnidadMedida = Combo_UniddMedida.SelectedValue
+
+        'Cargo las Sub Unidad de Medida
+        Combo_SubUnidad.DataSource = SubUnidadDeMedidaDAO.ObtenerSubUnidadMedida(UnidadDeMedida)
+        Combo_SubUnidad.DisplayMember = "Descripcion"
+        Combo_SubUnidad.ValueMember = "Cod_SubUnidad_Medida"
+
+
+    End Sub
+
+
+
+
+    Private Sub ComboCategoria_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboCategoria.SelectedIndexChanged
+        Dim SubCategoriaDAO As New SubCategoriaDAO
+        Dim Categoria As New Categoria
+
+
+
+        If num = 1 Then
+            Try
+                Categoria.CodigoCategoria = ComboCategoria.SelectedValue
+
+                'Cargo Sub Categorias
+                ComboSubCategoria.DataSource = SubCategoriaDAO.ObtenerSubCategorias(Categoria)
+                ComboSubCategoria.ValueMember = "Cod_SubCategoria"
+                ComboSubCategoria.DisplayMember = "Descripcion"
+            Catch ex As Exception
+                MsgBox(ex.Message)
+            End Try
+
+
+
+
+        End If
+
+    End Sub
+
+    Private Sub TextBoxBuscar_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBoxBuscar.KeyDown
+
+
+        Dim bandera As Integer = 0
+
+        If RadioButtonCODIGO.Checked = True Then
+
+            Dim Articulo As New Articulo
+            Dim ArticuloBLL As New GestorArticulo
+
+            Select Case e.KeyData
+                Case Keys.Enter
+                    Dim EsNumero As Boolean
+
+                    EsNumero = IsNumeric(TextBoxBuscar.Text)
+
+                    If TextBoxBuscar.Text <> "" And EsNumero = True And ((Len(TextBoxBuscar.Text)) < 16) Then  'valido para que no ejectue la funcion si no hay caracteres
+                        Articulo.CodigoDeBarras = Convert.ToInt64(TextBoxBuscar.Text)
+                        DataGridView1.DataSource = ArticuloBLL.ValidarCodigoDeBarrasParaBusqueda(Articulo)
+
+                        TextBoxBuscar.SelectAll()
+
+                        For Each row As DataGridViewRow In DataGridView1.Rows
+
+                            If row.Index Mod 2 <> 0 Then
+                                row.DefaultCellStyle.BackColor = Color.Bisque
+                            Else
+                                row.DefaultCellStyle.BackColor = Color.Aqua
+
+                            End If
+
+                        Next
+
+
+
+
+                    Else
+                        bandera = 1
+                    End If
+
+                    Dim CantidadArticulos As Integer
+
+                    CantidadArticulos = DataGridView1.RowCount - 1
+                    Label14.Text = CantidadArticulos
+
+            End Select
+
+
+
+
+
+
+
+
+
+        End If
+
+        If RadioButtonDESCRIPCION.Checked = True Or bandera = 1 Then
+
+            Dim Articulo As New Articulo
+            Dim GestorArticulo As New GestorArticulo
+
+            Select Case e.KeyData
+
+                Case Keys.Enter
+
+
+
+
+
+                    Articulo.Descripcion = (TextBoxBuscar.Text).ToUpper
+                    DataGridView1.DataSource = GestorArticulo.ValidarDescripcionParaBusqueda(Articulo).Tables(0)
+
+
+
+                    For Each row As DataGridViewRow In DataGridView1.Rows
+
+                        If row.Index Mod 2 <> 0 Then
+                            row.DefaultCellStyle.BackColor = Color.Bisque
+                        Else
+                            row.DefaultCellStyle.BackColor = Color.Aqua
+
+                        End If
+
+                    Next
+
+
+                    bandera = 0
+
+                    RadioButtonDESCRIPCION.Checked = True
+            End Select
+
+            Dim CantidadArticulos As Integer
+
+            CantidadArticulos = DataGridView1.RowCount - 1
+            Label14.Text = CantidadArticulos
+        End If
+
+
+
+    End Sub
+
+    Private Sub TextBoxBuscar_TextChanged(sender As Object, e As EventArgs) Handles TextBoxBuscar.TextChanged
+
+    End Sub
+
+    Private Sub RadioButtonCODIGO_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButtonCODIGO.CheckedChanged
+        If RadioButtonCODIGO.Checked = True Then
+            TextBoxBuscar.Text = ""
+            Me.Show()
+            TextBoxBuscar.Focus()
+
+
+        End If
+
+        If RadioButtonDESCRIPCION.Checked = True Then
+            Me.Show()
+            TextBoxBuscar.Focus()
+        End If
+    End Sub
+
+    Private Sub EliminarButton_Click(sender As Object, e As EventArgs) Handles EliminarButton.Click
+        Dim _Articulo As New Articulo
+        Dim _ArticuloDao As New ArticuloDAO
+
+
+
+        Try
+
+            _Articulo.CodigoArticulo = DataGridView1.CurrentRow.Cells(0).Value
+            _Articulo.Descripcion = DataGridView1.CurrentRow.Cells(2).Value
+
+            _ArticuloDao.EliminarArticulo(_Articulo)
+
+            Dim el As New EventLogger
+
+            MsgBox("Se ha eliminado correctamente el articulo " & _Articulo.Descripcion, MsgBoxStyle.Information, "ATENCION")
+            el.WriteToErrorLog("Se ha eliminado correctamente el articulo " & _Articulo.Descripcion, "Articulo Form", "Información")
+
+            _ArticuloDao.ObtenerPrimerosArticulos()
+
+        Catch ex As Exception
+
+            Dim el As New ErrorLogger
+            MsgBox(ex.Message, MsgBoxStyle.Critical, "ERROR")
+            el.WriteToErrorLog(ex.Message, ex.StackTrace, "Error")
+
+        End Try
+
+
+
+    End Sub
+
+    Private Sub MODIFICAR_Click(sender As Object, e As EventArgs) Handles MODIFICAR.Click
+
+
+       
+       
+
+
+    End Sub
+End Class

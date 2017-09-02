@@ -1,0 +1,1351 @@
+﻿
+Titulo: Error
+Mensaje: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.)
+StackTrace:    at SL.GestorUsuario.TraerUsuarioBLL(Usuario _Usuario) in C:\Users\Gonzalo\Desktop\Diploma\ClassLibrary1\SL\Usuario\GestorUsuario.vb:line 29
+   at GUI.LogIn.Button1_Click(Object sender, EventArgs e) in C:\Users\Gonzalo\Desktop\Diploma\ClassLibrary1\GUI\LogIn.vb:line 24
+Fecha/Hora: 23/11/2016 01:18:12 p.m.
+===========================================================================================
+Titulo: Error
+Mensaje: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.)
+StackTrace:    at SL.GestorUsuario.TraerUsuarioBLL(Usuario _Usuario) in C:\Users\Gonzalo\Desktop\Diploma\ClassLibrary1\SL\Usuario\GestorUsuario.vb:line 29
+   at GUI.LogIn.Button1_Click(Object sender, EventArgs e) in C:\Users\Gonzalo\Desktop\Diploma\ClassLibrary1\GUI\LogIn.vb:line 24
+Fecha/Hora: 24/11/2016 01:53:44 p.m.
+===========================================================================================
+Titulo: Error
+Mensaje: USUARIO O CONTRASEÑA INCORRECTO
+StackTrace:    at GUI.LogIn.Button1_Click(Object sender, EventArgs e) in C:\Users\Gonzalo\Desktop\Diploma\ClassLibrary1\GUI\LogIn.vb:line 34
+Fecha/Hora: 24/11/2016 01:59:29 p.m.
+===========================================================================================
+Titulo: Error
+Mensaje: Error revise Cuit del cliente
+StackTrace:    at GUI.ClienteForm.Button1_Click(Object sender, EventArgs e) in C:\Users\Gonzalo\Desktop\Diploma\ClassLibrary1\GUI\ClienteForm.vb:line 107
+Fecha/Hora: 24/11/2016 02:04:40 p.m.
+===========================================================================================
+Titulo: Error
+Mensaje: Error relacionado con la red o específico de la instancia mientras se establecía una conexión con el servidor SQL Server. No se encontró el servidor o éste no estaba accesible. Compruebe que el nombre de la instancia es correcto y que SQL Server está configurado para admitir conexiones remotas. (provider: SQL Network Interfaces, error: 26 - Error al buscar el servidor o instancia especificado)
+StackTrace:    en SL.GestorUsuario.TraerUsuarioBLL(Usuario _Usuario) en C:\Users\Gonzalo\Desktop\Diploma\ClassLibrary1\SL\Usuario\GestorUsuario.vb:línea 29
+   en GUI.LogIn.Button1_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma\ClassLibrary1\GUI\LogIn.vb:línea 24
+Fecha/Hora: 25/11/2016 19:25:55
+===========================================================================================
+Titulo: Error
+Mensaje: Error relacionado con la red o específico de la instancia mientras se establecía una conexión con el servidor SQL Server. No se encontró el servidor o éste no estaba accesible. Compruebe que el nombre de la instancia es correcto y que SQL Server está configurado para admitir conexiones remotas. (provider: SQL Network Interfaces, error: 26 - Error al buscar el servidor o instancia especificado)
+StackTrace:    en SL.GestorUsuario.TraerUsuarioBLL(Usuario _Usuario) en C:\Users\Gonzalo\Desktop\Diploma\ClassLibrary1\SL\Usuario\GestorUsuario.vb:línea 29
+   en GUI.LogIn.Button1_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma\ClassLibrary1\GUI\LogIn.vb:línea 24
+Fecha/Hora: 25/11/2016 19:26:15
+===========================================================================================
+Titulo: Error
+Mensaje: El nombre de objeto 'Usuario' no es válido.
+StackTrace:    en SL.GestorUsuario.TraerUsuarioBLL(Usuario _Usuario) en H:\Diploma t\ClassLibrary1\SL\Usuario\GestorUsuario.vb:línea 29
+   en GUI.LogIn.Button1_Click(Object sender, EventArgs e) en H:\Diploma t\ClassLibrary1\GUI\LogIn.vb:línea 24
+Fecha/Hora: 25/11/2016 19:28:12
+===========================================================================================
+Titulo: Error
+Mensaje: El nombre de objeto 'Usuario' no es válido.
+StackTrace:    en SL.GestorUsuario.TraerUsuarioBLL(Usuario _Usuario) en H:\Diploma t\ClassLibrary1\SL\Usuario\GestorUsuario.vb:línea 29
+   en GUI.LogIn.Button1_Click(Object sender, EventArgs e) en H:\Diploma t\ClassLibrary1\GUI\LogIn.vb:línea 24
+Fecha/Hora: 25/11/2016 19:28:18
+===========================================================================================
+Titulo: Error
+Mensaje: El nombre de objeto 'Usuario' no es válido.
+StackTrace:    en SL.GestorUsuario.TraerUsuarioBLL(Usuario _Usuario) en H:\Diploma t\ClassLibrary1\SL\Usuario\GestorUsuario.vb:línea 29
+   en GUI.LogIn.Button1_Click(Object sender, EventArgs e) en H:\Diploma t\ClassLibrary1\GUI\LogIn.vb:línea 24
+Fecha/Hora: 25/11/2016 19:28:20
+===========================================================================================
+Titulo: Error
+Mensaje: La conversión de la cadena "" en el tipo 'Integer' no es válida.
+StackTrace:    en Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)
+   en GUI.NuevoPresupuestoForm.ImprimirButton_Click(Object sender, EventArgs e) en H:\Diploma t\ClassLibrary1\GUI\NuevoPresupuestoForm.vb:línea 358
+Fecha/Hora: 25/11/2016 19:34:56
+===========================================================================================
+Titulo: Error
+Mensaje: Error, cantidad debe ser numerico
+StackTrace:    at GUI.PresupuestoDetalleForm.ArticuloGridView1_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\PresupuestoDetalleForm.vb:line 272
+Fecha/Hora: 02/12/2016 09:52:37 a.m.
+===========================================================================================
+Titulo: Error
+Mensaje: Column named Codigo cannot be found.
+Parameter name: columnName
+StackTrace:    at System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   at GUI.PresupuestoDetalleForm.ArticuloGridView1_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\PresupuestoDetalleForm.vb:line 253
+Fecha/Hora: 02/12/2016 09:53:02 a.m.
+===========================================================================================
+Titulo: Error
+Mensaje: Column named CodigoArticulo cannot be found.
+Parameter name: columnName
+StackTrace:    at System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   at GUI.PresupuestoDetalleForm.ArticuloGridView1_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\PresupuestoDetalleForm.vb:line 253
+Fecha/Hora: 02/12/2016 09:53:39 a.m.
+===========================================================================================
+Titulo: Error
+Mensaje: Error, cantidad debe ser numerico
+StackTrace:    at GUI.PresupuestoDetalleForm.ArticuloGridView1_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\PresupuestoDetalleForm.vb:line 272
+Fecha/Hora: 02/12/2016 09:54:14 a.m.
+===========================================================================================
+Titulo: Error
+Mensaje: Rows cannot be programmatically added to the DataGridView's rows collection when the control is data-bound.
+StackTrace:    at System.Windows.Forms.DataGridViewRowCollection.Add()
+   at GUI.PresupuestoDetalleForm.ArticuloGridView1_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\PresupuestoDetalleForm.vb:line 278
+Fecha/Hora: 02/12/2016 09:54:25 a.m.
+===========================================================================================
+Titulo: Error
+Mensaje: Conversion from type 'DBNull' to type 'Decimal' is not valid.
+StackTrace:    at Microsoft.VisualBasic.CompilerServices.Conversions.ToDecimal(Object Value, NumberFormatInfo NumberFormat)
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToDecimal(Object Value)
+   at GUI.PresupuestoDetalleForm.ArticuloGridView1_CellDoubleClick(Object sender, DataGridViewCellEventArgs e)
+Fecha/Hora: 02/12/2016 10:15:59 a.m.
+===========================================================================================
+Titulo: Error
+Mensaje: Rows cannot be programmatically added to the DataGridView's rows collection when the control is data-bound.
+StackTrace:    at System.Windows.Forms.DataGridViewRowCollection.Add()
+   at GUI.PresupuestoDetalleForm.ArticuloGridView1_CellDoubleClick(Object sender, DataGridViewCellEventArgs e)
+Fecha/Hora: 02/12/2016 10:18:29 a.m.
+===========================================================================================
+Titulo: Error
+Mensaje: Column named Codigo cannot be found.
+Parameter name: columnName
+StackTrace:    at System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   at GUI.PresupuestoDetalleForm.FinalizarButton_Click(Object sender, EventArgs e)
+Fecha/Hora: 02/12/2016 10:38:32 a.m.
+===========================================================================================
+Titulo: Error
+Mensaje: Cannot clear this list.
+StackTrace:    at System.Data.DataView.System.Collections.IList.Clear()
+   at System.Windows.Forms.DataGridViewRowCollection.Clear()
+   at GUI.PresupuestoDetalleForm.FinalizarButton_Click(Object sender, EventArgs e) in C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\PresupuestoDetalleForm.vb:line 497
+Fecha/Hora: 02/12/2016 10:44:18 a.m.
+===========================================================================================
+Titulo: Error
+Mensaje: Error al generar venta Sintaxis incorrecta cerca de '='.
+StackTrace:    at BLL.GestorVenta.GenerarVenta(VentaCabecera VentaCabecera, List`1 ListaDetalles) in C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\BLL\GestorVenta.vb:line 20
+   at GUI.NuevaVentaForm.FinalizarButton_Click(Object sender, EventArgs e) in C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\NuevaVentaForm.vb:line 409
+Fecha/Hora: 02/12/2016 12:22:09 p.m.
+===========================================================================================
+Titulo: Error
+Mensaje: Error al generar venta Sintaxis incorrecta cerca de '='.
+StackTrace:    at BLL.GestorVenta.GenerarVenta(VentaCabecera VentaCabecera, List`1 ListaDetalles) in C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\BLL\GestorVenta.vb:line 20
+   at GUI.NuevaVentaForm.FinalizarButton_Click(Object sender, EventArgs e) in C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\NuevaVentaForm.vb:line 409
+Fecha/Hora: 02/12/2016 12:23:20 p.m.
+===========================================================================================
+Titulo: Error
+Mensaje: Error al generar venta Sintaxis incorrecta cerca de '='.
+StackTrace:    at BLL.GestorVenta.GenerarVenta(VentaCabecera VentaCabecera, List`1 ListaDetalles) in C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\BLL\GestorVenta.vb:line 20
+   at GUI.NuevaVentaForm.FinalizarButton_Click(Object sender, EventArgs e) in C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\NuevaVentaForm.vb:line 409
+Fecha/Hora: 02/12/2016 12:23:27 p.m.
+===========================================================================================
+Titulo: Error
+Mensaje: Error al generar venta Sintaxis incorrecta cerca de '='.
+StackTrace:    at BLL.GestorVenta.GenerarVenta(VentaCabecera VentaCabecera, List`1 ListaDetalles) in C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\BLL\GestorVenta.vb:line 20
+   at GUI.NuevaVentaForm.FinalizarButton_Click(Object sender, EventArgs e) in C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\NuevaVentaForm.vb:line 409
+Fecha/Hora: 02/12/2016 12:24:13 p.m.
+===========================================================================================
+Titulo: Error
+Mensaje: Error al generar venta Sintaxis incorrecta cerca de '='.
+StackTrace:    at BLL.GestorVenta.GenerarVenta(VentaCabecera VentaCabecera, List`1 ListaDetalles) in C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\BLL\GestorVenta.vb:line 20
+   at GUI.NuevaVentaForm.FinalizarButton_Click(Object sender, EventArgs e) in C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\NuevaVentaForm.vb:line 409
+Fecha/Hora: 02/12/2016 12:25:35 p.m.
+===========================================================================================
+Titulo: Error
+Mensaje: Error al generar venta Infracción de la restricción PRIMARY KEY 'PK_VentaDetalle'. No se puede insertar una clave duplicada en el objeto 'dbo.VentaDetalle'.
+Se terminó la instrucción.
+StackTrace:    at BLL.GestorVenta.GenerarVenta(VentaCabecera VentaCabecera, List`1 ListaDetalles) in C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\BLL\GestorVenta.vb:line 20
+   at GUI.NuevaVentaForm.FinalizarButton_Click(Object sender, EventArgs e) in C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\NuevaVentaForm.vb:line 409
+Fecha/Hora: 02/12/2016 12:26:40 p.m.
+===========================================================================================
+Titulo: Error
+Mensaje: Error al generar venta No se puede insertar un valor explícito en la columna de identidad de la tabla 'VentaCabecera' cuando IDENTITY_INSERT es OFF.
+StackTrace:    at BLL.GestorVenta.GenerarVenta(VentaCabecera VentaCabecera, List`1 ListaDetalles) in C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\BLL\GestorVenta.vb:line 20
+   at GUI.NuevaVentaForm.FinalizarButton_Click(Object sender, EventArgs e) in C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\NuevaVentaForm.vb:line 409
+Fecha/Hora: 02/12/2016 12:32:47 p.m.
+===========================================================================================
+Titulo: Error
+Mensaje: Error al generar venta Infracción de la restricción PRIMARY KEY 'PK_VentaDetalle'. No se puede insertar una clave duplicada en el objeto 'dbo.VentaDetalle'.
+Se terminó la instrucción.
+StackTrace:    at BLL.GestorVenta.GenerarVenta(VentaCabecera VentaCabecera, List`1 ListaDetalles) in C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\BLL\GestorVenta.vb:line 20
+   at GUI.NuevaVentaForm.FinalizarButton_Click(Object sender, EventArgs e) in C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\NuevaVentaForm.vb:line 409
+Fecha/Hora: 02/12/2016 12:33:58 p.m.
+===========================================================================================
+Titulo: Error
+Mensaje: Error al generar venta Infracción de la restricción PRIMARY KEY 'PK__VentaDet__CAA0547A1332DBDC'. No se puede insertar una clave duplicada en el objeto 'dbo.VentaDetalle'.
+Se terminó la instrucción.
+StackTrace:    at BLL.GestorVenta.GenerarVenta(VentaCabecera VentaCabecera, List`1 ListaDetalles) in C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\BLL\GestorVenta.vb:line 20
+   at GUI.NuevaVentaForm.FinalizarButton_Click(Object sender, EventArgs e) in C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\NuevaVentaForm.vb:line 409
+Fecha/Hora: 02/12/2016 12:36:47 p.m.
+===========================================================================================
+Titulo: Error
+Mensaje: Error al generar venta Infracción de la restricción PRIMARY KEY 'PK__VentaDet__CAA0547A1332DBDC'. No se puede insertar una clave duplicada en el objeto 'dbo.VentaDetalle'.
+Se terminó la instrucción.
+StackTrace:    at BLL.GestorVenta.GenerarVenta(VentaCabecera VentaCabecera, List`1 ListaDetalles) in C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\BLL\GestorVenta.vb:line 20
+   at GUI.NuevaVentaForm.FinalizarButton_Click(Object sender, EventArgs e) in C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\NuevaVentaForm.vb:line 409
+Fecha/Hora: 02/12/2016 12:38:21 p.m.
+===========================================================================================
+Titulo: Error
+Mensaje: Error relacionado con la red o específico de la instancia mientras se establecía una conexión con el servidor SQL Server. No se encontró el servidor o éste no estaba accesible. Compruebe que el nombre de la instancia es correcto y que SQL Server está configurado para admitir conexiones remotas. (provider: SQL Network Interfaces, error: 26 - Error al buscar el servidor o instancia especificado)
+StackTrace:    en SL.GestorUsuario.TraerUsuarioBLL(Usuario _Usuario) en J:\_\Diploma t\ClassLibrary1\SL\Usuario\GestorUsuario.vb:línea 29
+   en GUI.LogIn.Button1_Click(Object sender, EventArgs e) en J:\_\Diploma t\ClassLibrary1\GUI\LogIn.vb:línea 24
+Fecha/Hora: 02/06/2017 16:40:09
+===========================================================================================
+Titulo: Error
+Mensaje: Error relacionado con la red o específico de la instancia mientras se establecía una conexión con el servidor SQL Server. No se encontró el servidor o éste no estaba accesible. Compruebe que el nombre de la instancia es correcto y que SQL Server está configurado para admitir conexiones remotas. (provider: SQL Network Interfaces, error: 26 - Error al buscar el servidor o instancia especificado)
+StackTrace:    en SL.GestorUsuario.TraerUsuarioBLL(Usuario _Usuario) en J:\_\Diploma t\ClassLibrary1\SL\Usuario\GestorUsuario.vb:línea 29
+   en GUI.LogIn.Button1_Click(Object sender, EventArgs e) en J:\_\Diploma t\ClassLibrary1\GUI\LogIn.vb:línea 24
+Fecha/Hora: 02/06/2017 16:41:19
+===========================================================================================
+Titulo: Error
+Mensaje: Se corrompido la integridad de la BD en la Tabla Marcas
+StackTrace:    en SL.Verificar.VerificarIntegridad() en J:\_\Diploma t\ClassLibrary1\SL\Digito Verificador\Verificar.vb:línea 149
+   en GUI.Idioma.ComboBox1_SelectedIndexChanged(Object sender, EventArgs e) en J:\_\Diploma t\ClassLibrary1\GUI\Idioma.vb:línea 26
+Fecha/Hora: 02/06/2017 16:49:47
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en J:\_\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 123
+Fecha/Hora: 02/06/2017 16:49:49
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en J:\_\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 123
+Fecha/Hora: 02/06/2017 16:49:49
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en J:\_\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 123
+Fecha/Hora: 02/06/2017 16:51:12
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en J:\_\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 123
+Fecha/Hora: 02/06/2017 16:51:13
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en J:\_\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 123
+Fecha/Hora: 02/06/2017 16:55:32
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en J:\_\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 123
+Fecha/Hora: 02/06/2017 16:55:32
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en J:\_\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 123
+Fecha/Hora: 02/06/2017 16:55:45
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en J:\_\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 123
+Fecha/Hora: 02/06/2017 16:55:46
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en J:\_\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 123
+Fecha/Hora: 02/06/2017 16:55:48
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en J:\_\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 123
+Fecha/Hora: 02/06/2017 16:55:49
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en J:\_\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 123
+Fecha/Hora: 02/06/2017 16:55:49
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en J:\_\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 123
+Fecha/Hora: 02/06/2017 16:57:01
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en J:\_\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 123
+Fecha/Hora: 02/06/2017 16:57:01
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en J:\_\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 123
+Fecha/Hora: 02/06/2017 16:58:09
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en J:\_\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 123
+Fecha/Hora: 02/06/2017 16:58:10
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en J:\_\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 123
+Fecha/Hora: 02/06/2017 16:59:56
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en J:\_\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 123
+Fecha/Hora: 02/06/2017 16:59:57
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en J:\_\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 123
+Fecha/Hora: 02/06/2017 17:59:13
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en J:\_\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 123
+Fecha/Hora: 02/06/2017 17:59:16
+===========================================================================================
+Titulo: Error
+Mensaje: La cadena de entrada no tiene el formato correcto.
+StackTrace:    en System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   en System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   en System.Convert.ToInt32(String value)
+   en GUI.NuevaVentaForm.FinalizarButton_Click(Object sender, EventArgs e) en J:\_\Diploma t\ClassLibrary1\GUI\NuevaVentaForm.vb:línea 389
+Fecha/Hora: 02/06/2017 18:01:13
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en J:\_\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 123
+Fecha/Hora: 02/06/2017 18:01:30
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 124
+Fecha/Hora: 06/06/2017 22:26:18
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 124
+Fecha/Hora: 06/06/2017 22:28:58
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 124
+Fecha/Hora: 06/06/2017 22:36:28
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 124
+Fecha/Hora: 06/06/2017 22:36:29
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 124
+Fecha/Hora: 06/06/2017 22:36:29
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 124
+Fecha/Hora: 06/06/2017 22:36:29
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 124
+Fecha/Hora: 06/06/2017 22:36:29
+===========================================================================================
+Titulo: Error
+Mensaje: Error al cargar el artículo Instrucción INSERT en conflicto con la restricción FOREIGN KEY "FK_PresupuestoCabecera_Cliente". El conflicto ha aparecido en la base de datos "Ferreteria", tabla "dbo.Cliente", column 'Cod_Cliente'.
+Se terminó la instrucción.
+StackTrace:    en BLL.GestorPresupuesto.GenerarPresupuesto(PresupuestoCabecera PresupuestoCabecera, List`1 ListaDetalles) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\BLL\GestorPresupuesto.vb:línea 67
+   en GUI.NuevoPresupuestoForm.FinalizarButton_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\NuevoPresupuestoForm.vb:línea 248
+Fecha/Hora: 06/06/2017 22:44:49
+===========================================================================================
+Titulo: Error
+Mensaje: La conversión de la cadena "" en el tipo 'Long' no es válida.
+StackTrace:    en Microsoft.VisualBasic.CompilerServices.Conversions.ToLong(String Value)
+   en GUI.ClienteForm.Button1_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\ClienteForm.vb:línea 133
+Fecha/Hora: 06/06/2017 22:47:53
+===========================================================================================
+Titulo: Error
+Mensaje: La conversión de la cadena "" en el tipo 'Long' no es válida.
+StackTrace:    en Microsoft.VisualBasic.CompilerServices.Conversions.ToLong(String Value)
+   en GUI.ClienteForm.Button1_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\ClienteForm.vb:línea 133
+Fecha/Hora: 06/06/2017 22:47:56
+===========================================================================================
+Titulo: Error
+Mensaje: La conversión de la cadena "" en el tipo 'Long' no es válida.
+StackTrace:    en Microsoft.VisualBasic.CompilerServices.Conversions.ToLong(String Value)
+   en GUI.ClienteForm.Button1_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\ClienteForm.vb:línea 133
+Fecha/Hora: 07/06/2017 8:54:44
+===========================================================================================
+Titulo: Error
+Mensaje: La conversión de la cadena "" en el tipo 'Long' no es válida.
+StackTrace:    en Microsoft.VisualBasic.CompilerServices.Conversions.ToLong(String Value)
+   en GUI.ClienteForm.Button1_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\ClienteForm.vb:línea 133
+Fecha/Hora: 07/06/2017 8:54:47
+===========================================================================================
+Titulo: Error
+Mensaje: La conversión de la cadena "" en el tipo 'Long' no es válida.
+StackTrace:    en Microsoft.VisualBasic.CompilerServices.Conversions.ToLong(String Value)
+   en GUI.ClienteForm.Button1_Click(Object sender, EventArgs e)
+Fecha/Hora: 07/06/2017 8:56:25
+===========================================================================================
+Titulo: Error
+Mensaje: La cadena de entrada no tiene el formato correcto.
+StackTrace:    en System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   en System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   en System.Convert.ToInt64(String value)
+   en GUI.ClienteForm.Button1_Click(Object sender, EventArgs e)
+Fecha/Hora: 07/06/2017 8:57:15
+===========================================================================================
+Titulo: Error
+Mensaje: La cadena de entrada no tiene el formato correcto.
+StackTrace:    en System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   en System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   en System.Convert.ToInt64(String value)
+   en GUI.ClienteForm.Button1_Click(Object sender, EventArgs e)
+Fecha/Hora: 07/06/2017 8:57:33
+===========================================================================================
+Titulo: Error
+Mensaje: Revise nombre de usuario o contraseña
+StackTrace:    en SL.GestorUsuario.TraerUsuarioBLL(Usuario _Usuario) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Usuario\GestorUsuario.vb:línea 29
+   en GUI.LogIn.Button1_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\LogIn.vb:línea 24
+Fecha/Hora: 07/06/2017 18:12:57
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 124
+Fecha/Hora: 07/06/2017 18:20:42
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 124
+Fecha/Hora: 07/06/2017 18:20:42
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 124
+Fecha/Hora: 07/06/2017 18:20:44
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 124
+Fecha/Hora: 07/06/2017 18:20:44
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 124
+Fecha/Hora: 07/06/2017 18:20:45
+===========================================================================================
+Titulo: Error
+Mensaje: USUARIO O CONTRASEÑA INCORRECTO
+StackTrace:    en GUI.LogIn.Button1_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\LogIn.vb:línea 35
+Fecha/Hora: 07/06/2017 19:51:59
+===========================================================================================
+Titulo: Error
+Mensaje: USUARIO O CONTRASEÑA INCORRECTO
+StackTrace:    en GUI.LogIn.Button1_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\LogIn.vb:línea 35
+Fecha/Hora: 07/06/2017 19:58:22
+===========================================================================================
+Titulo: Error
+Mensaje: USUARIO O CONTRASEÑA INCORRECTO
+StackTrace:    en GUI.LogIn.Button1_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\LogIn.vb:línea 35
+Fecha/Hora: 07/06/2017 19:59:09
+===========================================================================================
+Titulo: Error
+Mensaje: USUARIO O CONTRASEÑA INCORRECTO
+StackTrace:    en GUI.LogIn.Button1_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\LogIn.vb:línea 35
+Fecha/Hora: 07/06/2017 20:36:52
+===========================================================================================
+Titulo: Error
+Mensaje: ERROR: Check input data
+StackTrace:    en GUI.ContraseñaForm.Button1_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\ContraseñaForm.vb:línea 106
+Fecha/Hora: 07/06/2017 20:54:03
+===========================================================================================
+Titulo: Error
+Mensaje: El objeto de tipo 'System.String' no puede convertirse en el tipo 'System.Int32'.
+StackTrace:    en System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   en System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   en System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   en System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   en System.Reflection.PropertyInfo.SetValue(Object obj, Object value)
+   en DAL.Convertir.DataRowToObject(DataRow dr, Object& o) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 68
+   en DAL.Convertir.DataTableToList[T](DataTable datatable) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 24
+   en GUI.Usuarios.RegistrarButton_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\Usuarios.vb:línea 172
+Fecha/Hora: 07/06/2017 22:39:15
+===========================================================================================
+Titulo: Error
+Mensaje: El objeto de tipo 'System.String' no puede convertirse en el tipo 'System.Int32'.
+StackTrace:    en System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   en System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   en System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   en System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   en System.Reflection.PropertyInfo.SetValue(Object obj, Object value)
+   en DAL.Convertir.DataRowToObject(DataRow dr, Object& o) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 68
+   en DAL.Convertir.DataTableToList[T](DataTable datatable) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 24
+   en GUI.Usuarios.RegistrarButton_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\Usuarios.vb:línea 172
+Fecha/Hora: 07/06/2017 22:40:14
+===========================================================================================
+Titulo: Error
+Mensaje: El objeto de tipo 'System.String' no puede convertirse en el tipo 'System.Int32'.
+StackTrace:    en System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   en System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   en System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   en System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   en System.Reflection.PropertyInfo.SetValue(Object obj, Object value)
+   en DAL.Convertir.DataRowToObject(DataRow dr, Object& o) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 68
+   en DAL.Convertir.DataTableToList[T](DataTable datatable) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 24
+   en GUI.Usuarios.RegistrarButton_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\Usuarios.vb:línea 172
+Fecha/Hora: 07/06/2017 22:43:37
+===========================================================================================
+Titulo: Error
+Mensaje: El objeto de tipo 'System.String' no puede convertirse en el tipo 'System.Int32'.
+StackTrace:    en System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   en System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   en System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   en System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   en System.Reflection.PropertyInfo.SetValue(Object obj, Object value)
+   en DAL.Convertir.DataRowToObject(DataRow dr, Object& o) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 68
+   en DAL.Convertir.DataTableToList[T](DataTable datatable) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 24
+   en GUI.Usuarios.RegistrarButton_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\Usuarios.vb:línea 172
+Fecha/Hora: 07/06/2017 22:44:30
+===========================================================================================
+Titulo: Error
+Mensaje: El objeto de tipo 'System.String' no puede convertirse en el tipo 'System.Int32'.
+StackTrace:    en System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   en System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   en System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   en System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   en System.Reflection.PropertyInfo.SetValue(Object obj, Object value)
+   en DAL.Convertir.DataRowToObject(DataRow dr, Object& o) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 68
+   en DAL.Convertir.DataTableToList[T](DataTable datatable) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 24
+   en GUI.Usuarios.RegistrarButton_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\Usuarios.vb:línea 172
+Fecha/Hora: 07/06/2017 22:51:54
+===========================================================================================
+Titulo: Error
+Mensaje: 
+StackTrace:    en SL.GestorUsuario.ActualizarPatentesBLL(List`1 ListaPatentes, Usuario Usuario) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Usuario\GestorUsuario.vb:línea 110
+   en GUI.Usuarios.RegistrarButton_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\Usuarios.vb:línea 175
+Fecha/Hora: 07/06/2017 22:52:38
+===========================================================================================
+Titulo: Error
+Mensaje: 
+StackTrace:    en SL.GestorUsuario.ActualizarPatentesBLL(List`1 ListaPatentes, Usuario Usuario) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Usuario\GestorUsuario.vb:línea 110
+   en GUI.Usuarios.RegistrarButton_Click(Object sender, EventArgs e)
+Fecha/Hora: 07/06/2017 22:53:45
+===========================================================================================
+Titulo: Error
+Mensaje: 
+StackTrace:    en SL.GestorUsuario.ActualizarPatentesBLL(List`1 ListaPatentes, Usuario Usuario) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Usuario\GestorUsuario.vb:línea 110
+   en GUI.Usuarios.RegistrarButton_Click(Object sender, EventArgs e)
+Fecha/Hora: 07/06/2017 22:53:53
+===========================================================================================
+Titulo: Error
+Mensaje: 
+StackTrace:    en SL.GestorUsuario.ActualizarPatentesBLL(List`1 ListaPatentes, Usuario Usuario)
+   en GUI.Usuarios.RegistrarButton_Click(Object sender, EventArgs e)
+Fecha/Hora: 07/06/2017 22:59:16
+===========================================================================================
+Titulo: Error
+Mensaje: 
+StackTrace:    en SL.GestorUsuario.ActualizarPatentesBLL(List`1 ListaPatentes, Usuario Usuario) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Usuario\GestorUsuario.vb:línea 110
+   en GUI.Usuarios.RegistrarButton_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\Usuarios.vb:línea 175
+Fecha/Hora: 07/06/2017 23:03:16
+===========================================================================================
+Titulo: Error
+Mensaje: 
+StackTrace:    en SL.GestorUsuario.ActualizarPatentesBLL(List`1 ListaPatentes, Usuario Usuario) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Usuario\GestorUsuario.vb:línea 110
+   en GUI.Usuarios.RegistrarButton_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\Usuarios.vb:línea 175
+Fecha/Hora: 07/06/2017 23:04:13
+===========================================================================================
+Titulo: Error
+Mensaje: Error al agregar patente a usuario Instrucción INSERT en conflicto con la restricción FOREIGN KEY "FK_Usuario_Patente_Patente". El conflicto ha aparecido en la base de datos "Ferreteria", tabla "dbo.Patente", column 'IdPatente'.
+Se terminó la instrucción.
+StackTrace:    en SL.GestorUsuario.ActualizarPatentesBLL(List`1 ListaPatentes, Usuario Usuario) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Usuario\GestorUsuario.vb:línea 110
+   en GUI.Usuarios.RegistrarButton_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\Usuarios.vb:línea 175
+Fecha/Hora: 08/06/2017 8:44:24
+===========================================================================================
+Titulo: Error
+Mensaje: Error al agregar patente a usuario Instrucción INSERT en conflicto con la restricción FOREIGN KEY "FK_Usuario_Patente_Patente". El conflicto ha aparecido en la base de datos "Ferreteria", tabla "dbo.Patente", column 'IdPatente'.
+Se terminó la instrucción.
+StackTrace:    en SL.GestorUsuario.ActualizarPatentesBLL(List`1 ListaPatentes, Usuario Usuario) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Usuario\GestorUsuario.vb:línea 110
+   en GUI.Usuarios.RegistrarButton_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\Usuarios.vb:línea 175
+Fecha/Hora: 08/06/2017 8:45:25
+===========================================================================================
+Titulo: Error
+Mensaje: Error al agregar patente a usuario Instrucción INSERT en conflicto con la restricción FOREIGN KEY "FK_Usuario_Patente_Patente". El conflicto ha aparecido en la base de datos "Ferreteria", tabla "dbo.Patente", column 'IdPatente'.
+Se terminó la instrucción.
+StackTrace:    en SL.GestorUsuario.ActualizarPatentesBLL(List`1 ListaPatentes, Usuario Usuario) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Usuario\GestorUsuario.vb:línea 110
+   en GUI.Usuarios.RegistrarButton_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\Usuarios.vb:línea 175
+Fecha/Hora: 08/06/2017 8:46:03
+===========================================================================================
+Titulo: Error
+Mensaje: Error al agregar patente a usuario Instrucción INSERT en conflicto con la restricción FOREIGN KEY "FK_Usuario_Patente_Patente". El conflicto ha aparecido en la base de datos "Ferreteria", tabla "dbo.Patente", column 'IdPatente'.
+Se terminó la instrucción.
+StackTrace:    en SL.GestorUsuario.ActualizarPatentesBLL(List`1 ListaPatentes, Usuario Usuario) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Usuario\GestorUsuario.vb:línea 110
+   en GUI.Usuarios.RegistrarButton_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\Usuarios.vb:línea 175
+Fecha/Hora: 08/06/2017 8:47:54
+===========================================================================================
+Titulo: Error
+Mensaje: Error al agregar patente a usuario Instrucción INSERT en conflicto con la restricción FOREIGN KEY "FK_Usuario_Patente_Patente". El conflicto ha aparecido en la base de datos "Ferreteria", tabla "dbo.Patente", column 'IdPatente'.
+Se terminó la instrucción.
+StackTrace:    en SL.GestorUsuario.ActualizarPatentesBLL(List`1 ListaPatentes, Usuario Usuario) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Usuario\GestorUsuario.vb:línea 110
+   en GUI.Usuarios.RegistrarButton_Click(Object sender, EventArgs e)
+Fecha/Hora: 08/06/2017 8:48:55
+===========================================================================================
+Titulo: Error
+Mensaje: Error al agregar patente a usuario Instrucción INSERT en conflicto con la restricción FOREIGN KEY "FK_Usuario_Patente_Patente". El conflicto ha aparecido en la base de datos "Ferreteria", tabla "dbo.Patente", column 'IdPatente'.
+Se terminó la instrucción.
+StackTrace:    en SL.GestorUsuario.ActualizarPatentesBLL(List`1 ListaPatentes, Usuario Usuario) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Usuario\GestorUsuario.vb:línea 110
+   en GUI.Usuarios.RegistrarButton_Click(Object sender, EventArgs e)
+Fecha/Hora: 08/06/2017 8:49:01
+===========================================================================================
+Titulo: Error
+Mensaje: El objeto de tipo 'System.String' no puede convertirse en el tipo 'System.Int32'.
+StackTrace:    en System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   en System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   en System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   en System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   en System.Reflection.PropertyInfo.SetValue(Object obj, Object value)
+   en DAL.Convertir.DataRowToObject(DataRow dr, Object& o) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 68
+   en DAL.Convertir.DataTableToList[T](DataTable datatable) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 24
+   en GUI.Usuarios.RegistrarButton_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\Usuarios.vb:línea 172
+Fecha/Hora: 08/06/2017 8:51:29
+===========================================================================================
+Titulo: Error
+Mensaje: El objeto de tipo 'System.String' no puede convertirse en el tipo 'System.Int32'.
+StackTrace:    en System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   en System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   en System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   en System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   en System.Reflection.PropertyInfo.SetValue(Object obj, Object value)
+   en DAL.Convertir.DataRowToObject(DataRow dr, Object& o) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 68
+   en DAL.Convertir.DataTableToList[T](DataTable datatable) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 24
+   en GUI.Usuarios.RegistrarButton_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\Usuarios.vb:línea 172
+Fecha/Hora: 08/06/2017 8:58:14
+===========================================================================================
+Titulo: Error
+Mensaje: El objeto de tipo 'System.String' no puede convertirse en el tipo 'System.Int32'.
+StackTrace:    en System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   en System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   en System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   en System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   en System.Reflection.PropertyInfo.SetValue(Object obj, Object value)
+   en DAL.Convertir.DataRowToObject(DataRow dr, Object& o) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 68
+   en DAL.Convertir.DataTableToList[T](DataTable datatable) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 24
+   en GUI.Usuarios.RegistrarButton_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\Usuarios.vb:línea 172
+Fecha/Hora: 08/06/2017 8:58:50
+===========================================================================================
+Titulo: Error
+Mensaje: El objeto de tipo 'System.String' no puede convertirse en el tipo 'System.Int32'.
+StackTrace:    en System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   en System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   en System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   en System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   en System.Reflection.PropertyInfo.SetValue(Object obj, Object value)
+   en DAL.Convertir.DataRowToObject(DataRow dr, Object& o) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 68
+   en DAL.Convertir.DataTableToList[T](DataTable datatable) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 24
+   en GUI.Usuarios.RegistrarButton_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\Usuarios.vb:línea 172
+Fecha/Hora: 08/06/2017 8:59:09
+===========================================================================================
+Titulo: Error
+Mensaje: El objeto de tipo 'System.String' no puede convertirse en el tipo 'System.Int32'.
+StackTrace:    en System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   en System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   en System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   en System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   en System.Reflection.PropertyInfo.SetValue(Object obj, Object value)
+   en DAL.Convertir.DataRowToObject(DataRow dr, Object& o) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 68
+   en DAL.Convertir.DataTableToList[T](DataTable datatable) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 24
+   en GUI.Usuarios.RegistrarButton_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\Usuarios.vb:línea 172
+Fecha/Hora: 08/06/2017 9:06:33
+===========================================================================================
+Titulo: Error
+Mensaje: El objeto de tipo 'System.String' no puede convertirse en el tipo 'System.Int32'.
+StackTrace:    en System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   en System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   en System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   en System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   en System.Reflection.PropertyInfo.SetValue(Object obj, Object value)
+   en DAL.Convertir.DataRowToObject(DataRow dr, Object& o) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 68
+   en DAL.Convertir.DataTableToList[T](DataTable datatable) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 24
+   en GUI.Usuarios.RegistrarButton_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\Usuarios.vb:línea 172
+Fecha/Hora: 08/06/2017 9:07:24
+===========================================================================================
+Titulo: Error
+Mensaje: El objeto de tipo 'System.String' no puede convertirse en el tipo 'System.Int32'.
+StackTrace:    en System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   en System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   en System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   en System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   en System.Reflection.PropertyInfo.SetValue(Object obj, Object value)
+   en DAL.Convertir.DataRowToObject(DataRow dr, Object& o) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 68
+   en DAL.Convertir.DataTableToList[T](DataTable datatable) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 24
+   en GUI.Usuarios.RegistrarButton_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\Usuarios.vb:línea 172
+Fecha/Hora: 08/06/2017 9:07:48
+===========================================================================================
+Titulo: Error
+Mensaje: El objeto de tipo 'System.String' no puede convertirse en el tipo 'System.Int32'.
+StackTrace:    en System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   en System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   en System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   en System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   en System.Reflection.PropertyInfo.SetValue(Object obj, Object value)
+   en DAL.Convertir.DataRowToObject(DataRow dr, Object& o) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 68
+   en DAL.Convertir.DataTableToList[T](DataTable datatable) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 24
+   en GUI.Usuarios.RegistrarButton_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\Usuarios.vb:línea 172
+Fecha/Hora: 08/06/2017 9:08:02
+===========================================================================================
+Titulo: Error
+Mensaje: El objeto de tipo 'System.String' no puede convertirse en el tipo 'System.Int32'.
+StackTrace:    en System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   en System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   en System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   en System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   en System.Reflection.PropertyInfo.SetValue(Object obj, Object value)
+   en DAL.Convertir.DataRowToObject(DataRow dr, Object& o) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 68
+   en DAL.Convertir.DataTableToList[T](DataTable datatable) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 24
+   en GUI.Usuarios.RegistrarButton_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\Usuarios.vb:línea 183
+Fecha/Hora: 08/06/2017 9:17:23
+===========================================================================================
+Titulo: Error
+Mensaje: El objeto de tipo 'System.String' no puede convertirse en el tipo 'System.Int32'.
+StackTrace:    en System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   en System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   en System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   en System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   en System.Reflection.PropertyInfo.SetValue(Object obj, Object value)
+   en DAL.Convertir.DataRowToObject(DataRow dr, Object& o) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 68
+   en DAL.Convertir.DataTableToList[T](DataTable datatable) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 24
+   en GUI.Usuarios.RegistrarButton_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\Usuarios.vb:línea 183
+Fecha/Hora: 08/06/2017 9:17:39
+===========================================================================================
+Titulo: Error
+Mensaje: El objeto de tipo 'System.String' no puede convertirse en el tipo 'System.Int32'.
+StackTrace:    en System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   en System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   en System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   en System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   en System.Reflection.PropertyInfo.SetValue(Object obj, Object value)
+   en DAL.Convertir.DataRowToObject(DataRow dr, Object& o) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 68
+   en DAL.Convertir.DataTableToList[T](DataTable datatable) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 24
+   en GUI.Usuarios.RegistrarButton_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\Usuarios.vb:línea 183
+Fecha/Hora: 08/06/2017 9:17:50
+===========================================================================================
+Titulo: Error
+Mensaje: El objeto de tipo 'System.String' no puede convertirse en el tipo 'System.Int32'.
+StackTrace:    en System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   en System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   en System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   en System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   en System.Reflection.PropertyInfo.SetValue(Object obj, Object value)
+   en DAL.Convertir.DataRowToObject(DataRow dr, Object& o) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 68
+   en DAL.Convertir.DataTableToList[T](DataTable datatable) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 24
+   en GUI.Usuarios.RegistrarButton_Click(Object sender, EventArgs e)
+Fecha/Hora: 08/06/2017 9:22:00
+===========================================================================================
+Titulo: Error
+Mensaje: El objeto de tipo 'System.String' no puede convertirse en el tipo 'System.Int32'.
+StackTrace:    en System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   en System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   en System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   en System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   en System.Reflection.PropertyInfo.SetValue(Object obj, Object value)
+   en DAL.Convertir.DataRowToObject(DataRow dr, Object& o) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 68
+   en DAL.Convertir.DataTableToList[T](DataTable datatable) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 24
+   en GUI.Usuarios.RegistrarButton_Click(Object sender, EventArgs e)
+Fecha/Hora: 08/06/2017 9:22:13
+===========================================================================================
+Titulo: Error
+Mensaje: El objeto de tipo 'System.String' no puede convertirse en el tipo 'System.Int32'.
+StackTrace:    en System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   en System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   en System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   en System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   en System.Reflection.PropertyInfo.SetValue(Object obj, Object value)
+   en DAL.Convertir.DataRowToObject(DataRow dr, Object& o) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 68
+   en DAL.Convertir.DataTableToList[T](DataTable datatable) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 24
+   en GUI.Usuarios.RegistrarButton_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\Usuarios.vb:línea 184
+Fecha/Hora: 08/06/2017 9:25:47
+===========================================================================================
+Titulo: Error
+Mensaje: El objeto de tipo 'System.String' no puede convertirse en el tipo 'System.Int32'.
+StackTrace:    en System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   en System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   en System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   en System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   en System.Reflection.PropertyInfo.SetValue(Object obj, Object value)
+   en DAL.Convertir.DataRowToObject(DataRow dr, Object& o) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 68
+   en DAL.Convertir.DataTableToList[T](DataTable datatable) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 24
+   en GUI.Usuarios.RegistrarButton_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\Usuarios.vb:línea 194
+Fecha/Hora: 08/06/2017 10:00:10
+===========================================================================================
+Titulo: Error
+Mensaje: El objeto de tipo 'System.String' no puede convertirse en el tipo 'System.Int32'.
+StackTrace:    en System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   en System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   en System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   en System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   en System.Reflection.PropertyInfo.SetValue(Object obj, Object value)
+   en DAL.Convertir.DataRowToObject(DataRow dr, Object& o) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 68
+   en DAL.Convertir.DataTableToList[T](DataTable datatable) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 24
+   en GUI.Usuarios.RegistrarButton_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\Usuarios.vb:línea 194
+Fecha/Hora: 08/06/2017 10:00:12
+===========================================================================================
+Titulo: Error
+Mensaje: El objeto de tipo 'System.String' no puede convertirse en el tipo 'System.Int32'.
+StackTrace:    en System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   en System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   en System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   en System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   en System.Reflection.PropertyInfo.SetValue(Object obj, Object value)
+   en DAL.Convertir.DataRowToObject(DataRow dr, Object& o) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 68
+   en DAL.Convertir.DataTableToList[T](DataTable datatable) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 24
+   en GUI.Usuarios.RegistrarButton_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\Usuarios.vb:línea 194
+Fecha/Hora: 08/06/2017 10:00:15
+===========================================================================================
+Titulo: Error
+Mensaje: El objeto de tipo 'System.String' no puede convertirse en el tipo 'System.Int32'.
+StackTrace:    en System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   en System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   en System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   en System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   en System.Reflection.PropertyInfo.SetValue(Object obj, Object value)
+   en DAL.Convertir.DataRowToObject(DataRow dr, Object& o) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 68
+   en DAL.Convertir.DataTableToList[T](DataTable datatable) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 24
+   en GUI.Usuarios.RegistrarButton_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\Usuarios.vb:línea 194
+Fecha/Hora: 08/06/2017 10:00:18
+===========================================================================================
+Titulo: Error
+Mensaje: El objeto de tipo 'System.String' no puede convertirse en el tipo 'System.Int32'.
+StackTrace:    en System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   en System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   en System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   en System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   en System.Reflection.PropertyInfo.SetValue(Object obj, Object value)
+   en DAL.Convertir.DataRowToObject(DataRow dr, Object& o) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 68
+   en DAL.Convertir.DataTableToList[T](DataTable datatable) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 24
+   en GUI.Usuarios.RegistrarButton_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\Usuarios.vb:línea 194
+Fecha/Hora: 08/06/2017 10:00:24
+===========================================================================================
+Titulo: Error
+Mensaje: El objeto de tipo 'System.String' no puede convertirse en el tipo 'System.Int32'.
+StackTrace:    en System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   en System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   en System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   en System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   en System.Reflection.PropertyInfo.SetValue(Object obj, Object value)
+   en DAL.Convertir.DataRowToObject(DataRow dr, Object& o) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 68
+   en DAL.Convertir.DataTableToList[T](DataTable datatable) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 24
+   en GUI.Usuarios.RegistrarButton_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\Usuarios.vb:línea 194
+Fecha/Hora: 08/06/2017 10:02:51
+===========================================================================================
+Titulo: Error
+Mensaje: El objeto de tipo 'System.String' no puede convertirse en el tipo 'System.Int32'.
+StackTrace:    en System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   en System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   en System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   en System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   en System.Reflection.PropertyInfo.SetValue(Object obj, Object value)
+   en DAL.Convertir.DataRowToObject(DataRow dr, Object& o) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 68
+   en DAL.Convertir.DataTableToList[T](DataTable datatable) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 24
+   en GUI.Usuarios.RegistrarButton_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\Usuarios.vb:línea 194
+Fecha/Hora: 08/06/2017 10:03:16
+===========================================================================================
+Titulo: Error
+Mensaje: El objeto de tipo 'System.String' no puede convertirse en el tipo 'System.Int32'.
+StackTrace:    en System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   en System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   en System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   en System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   en System.Reflection.PropertyInfo.SetValue(Object obj, Object value)
+   en DAL.Convertir.DataRowToObject(DataRow dr, Object& o) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 68
+   en DAL.Convertir.DataTableToList[T](DataTable datatable) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 24
+   en GUI.Usuarios.RegistrarButton_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\Usuarios.vb:línea 194
+Fecha/Hora: 08/06/2017 10:03:26
+===========================================================================================
+Titulo: Error
+Mensaje: El objeto de tipo 'System.String' no puede convertirse en el tipo 'System.Int32'.
+StackTrace:    en System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   en System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   en System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   en System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   en System.Reflection.PropertyInfo.SetValue(Object obj, Object value)
+   en DAL.Convertir.DataRowToObject(DataRow dr, Object& o) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 68
+   en DAL.Convertir.DataTableToList[T](DataTable datatable) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 24
+   en GUI.Usuarios.RegistrarButton_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\Usuarios.vb:línea 194
+Fecha/Hora: 08/06/2017 10:16:09
+===========================================================================================
+Titulo: Error
+Mensaje: El objeto de tipo 'System.String' no puede convertirse en el tipo 'System.Int32'.
+StackTrace:    en System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   en System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   en System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   en System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   en System.Reflection.PropertyInfo.SetValue(Object obj, Object value)
+   en DAL.Convertir.DataRowToObject(DataRow dr, Object& o) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 68
+   en DAL.Convertir.DataTableToList[T](DataTable datatable) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 24
+   en GUI.Usuarios.RegistrarButton_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\Usuarios.vb:línea 194
+Fecha/Hora: 08/06/2017 10:17:05
+===========================================================================================
+Titulo: Error
+Mensaje: El objeto de tipo 'System.String' no puede convertirse en el tipo 'System.Int32'.
+StackTrace:    en System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   en System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   en System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   en System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   en System.Reflection.PropertyInfo.SetValue(Object obj, Object value)
+   en DAL.Convertir.DataRowToObject(DataRow dr, Object& o) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 68
+   en DAL.Convertir.DataTableToList[T](DataTable datatable) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 24
+   en GUI.Usuarios.RegistrarButton_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\Usuarios.vb:línea 194
+Fecha/Hora: 08/06/2017 10:19:36
+===========================================================================================
+Titulo: Error
+Mensaje: El objeto de tipo 'System.String' no puede convertirse en el tipo 'System.Int32'.
+StackTrace:    en System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   en System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   en System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   en System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   en System.Reflection.PropertyInfo.SetValue(Object obj, Object value)
+   en DAL.Convertir.DataRowToObject(DataRow dr, Object& o) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 68
+   en DAL.Convertir.DataTableToList[T](DataTable datatable) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 24
+   en GUI.Usuarios.RegistrarButton_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\Usuarios.vb:línea 194
+Fecha/Hora: 08/06/2017 10:19:59
+===========================================================================================
+Titulo: Error
+Mensaje: El objeto de tipo 'System.String' no puede convertirse en el tipo 'System.Int32'.
+StackTrace:    en System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   en System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   en System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   en System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   en System.Reflection.PropertyInfo.SetValue(Object obj, Object value)
+   en DAL.Convertir.DataRowToObject(DataRow dr, Object& o) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 68
+   en DAL.Convertir.DataTableToList[T](DataTable datatable) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 24
+   en GUI.Usuarios.RegistrarButton_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\Usuarios.vb:línea 194
+Fecha/Hora: 08/06/2017 10:20:35
+===========================================================================================
+Titulo: Error
+Mensaje: El objeto de tipo 'System.String' no puede convertirse en el tipo 'System.Int32'.
+StackTrace:    en System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   en System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   en System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   en System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   en System.Reflection.PropertyInfo.SetValue(Object obj, Object value)
+   en DAL.Convertir.DataRowToObject(DataRow dr, Object& o) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 68
+   en DAL.Convertir.DataTableToList[T](DataTable datatable) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 24
+   en GUI.Usuarios.RegistrarButton_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\Usuarios.vb:línea 165
+Fecha/Hora: 08/06/2017 14:08:15
+===========================================================================================
+Titulo: Error
+Mensaje: El objeto de tipo 'System.String' no puede convertirse en el tipo 'System.Int32'.
+StackTrace:    en System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   en System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   en System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   en System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   en System.Reflection.PropertyInfo.SetValue(Object obj, Object value)
+   en DAL.Convertir.DataRowToObject(DataRow dr, Object& o) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 68
+   en DAL.Convertir.DataTableToList[T](DataTable datatable) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 24
+   en GUI.Usuarios.RegistrarButton_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\Usuarios.vb:línea 165
+Fecha/Hora: 08/06/2017 14:08:20
+===========================================================================================
+Titulo: Error
+Mensaje: El objeto de tipo 'System.String' no puede convertirse en el tipo 'System.Int32'.
+StackTrace:    en System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   en System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   en System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   en System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   en System.Reflection.PropertyInfo.SetValue(Object obj, Object value)
+   en DAL.Convertir.DataRowToObject(DataRow dr, Object& o) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 68
+   en DAL.Convertir.DataTableToList[T](DataTable datatable) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\DAL\Gateway\Convertir.vb:línea 24
+   en GUI.Usuarios.RegistrarButton_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\Usuarios.vb:línea 165
+Fecha/Hora: 08/06/2017 14:08:46
+===========================================================================================
+Titulo: Error
+Mensaje: ERROR: Check input data
+StackTrace:    en GUI.ContraseñaForm.Button1_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\ContraseñaForm.vb:línea 106
+Fecha/Hora: 08/06/2017 16:26:55
+===========================================================================================
+Titulo: Error
+Mensaje: ERROR: Check input data
+StackTrace:    en GUI.ContraseñaForm.Button1_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\ContraseñaForm.vb:línea 106
+Fecha/Hora: 08/06/2017 16:26:57
+===========================================================================================
+Titulo: Error
+Mensaje: ERROR: Check input data
+StackTrace:    en GUI.ContraseñaForm.Button1_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\ContraseñaForm.vb:línea 106
+Fecha/Hora: 08/06/2017 16:26:59
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 124
+Fecha/Hora: 08/06/2017 17:00:20
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 124
+Fecha/Hora: 08/06/2017 17:00:20
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 124
+Fecha/Hora: 08/06/2017 17:00:20
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 124
+Fecha/Hora: 08/06/2017 17:00:20
+===========================================================================================
+Titulo: Error
+Mensaje: ERROR: Check input data
+StackTrace:    en GUI.ContraseñaForm.Button1_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\ContraseñaForm.vb:línea 108
+Fecha/Hora: 08/06/2017 18:46:45
+===========================================================================================
+Titulo: Error
+Mensaje: Error relacionado con la red o específico de la instancia mientras se establecía una conexión con el servidor SQL Server. No se encontró el servidor o éste no estaba accesible. Compruebe que el nombre de la instancia es correcto y que SQL Server está configurado para admitir conexiones remotas. (provider: Named Pipes Provider, error: 40 - No se pudo abrir una conexión con SQL Server)
+StackTrace:    en SL.GestorUsuario.TraerUsuarioBLL(Usuario _Usuario) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Usuario\GestorUsuario.vb:línea 30
+   en GUI.LogIn.Button1_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\LogIn.vb:línea 25
+Fecha/Hora: 09/06/2017 15:43:42
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 124
+Fecha/Hora: 09/06/2017 17:04:37
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 124
+Fecha/Hora: 09/06/2017 17:04:37
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 124
+Fecha/Hora: 09/06/2017 17:04:38
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 124
+Fecha/Hora: 09/06/2017 17:04:38
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 124
+Fecha/Hora: 09/06/2017 17:10:36
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 124
+Fecha/Hora: 09/06/2017 17:10:38
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 124
+Fecha/Hora: 09/06/2017 17:10:39
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 124
+Fecha/Hora: 09/06/2017 17:10:41
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 124
+Fecha/Hora: 09/06/2017 17:17:01
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 124
+Fecha/Hora: 09/06/2017 17:17:01
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 124
+Fecha/Hora: 09/06/2017 17:17:01
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 124
+Fecha/Hora: 09/06/2017 17:17:01
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 124
+Fecha/Hora: 09/06/2017 17:44:48
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 124
+Fecha/Hora: 09/06/2017 17:44:49
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 124
+Fecha/Hora: 09/06/2017 17:44:49
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 124
+Fecha/Hora: 09/06/2017 17:44:49
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 124
+Fecha/Hora: 09/06/2017 19:22:39
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 124
+Fecha/Hora: 09/06/2017 19:22:39
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 124
+Fecha/Hora: 09/06/2017 19:22:40
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 124
+Fecha/Hora: 09/06/2017 19:22:41
+===========================================================================================
+Titulo: Error
+Mensaje: ERROR: Check input data
+StackTrace:    en GUI.ContraseñaForm.Button1_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\ContraseñaForm.vb:línea 108
+Fecha/Hora: 09/06/2017 20:11:09
+===========================================================================================
+Titulo: Error
+Mensaje: Revise nombre de usuario o contraseña
+StackTrace:    en SL.GestorUsuario.TraerUsuarioBLL(Usuario _Usuario) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Usuario\GestorUsuario.vb:línea 30
+   en GUI.LogIn.Button1_Click_1(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\LogIn.vb:línea 35
+Fecha/Hora: 09/06/2017 21:35:48
+===========================================================================================
+Titulo: Error
+Mensaje: Revise nombre de usuario o contraseña
+StackTrace:    en SL.GestorUsuario.TraerUsuarioBLL(Usuario _Usuario) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Usuario\GestorUsuario.vb:línea 30
+   en GUI.LogIn.Button1_Click_1(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\LogIn.vb:línea 35
+Fecha/Hora: 09/06/2017 21:35:51
+===========================================================================================
+Titulo: Error
+Mensaje: USUARIO O CONTRASEÑA INCORRECTO
+StackTrace:    en GUI.LogIn.Button1_Click_1(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\LogIn.vb:línea 46
+Fecha/Hora: 10/06/2017 13:47:15
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 124
+Fecha/Hora: 10/06/2017 23:59:19
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 124
+Fecha/Hora: 10/06/2017 23:59:20
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 124
+Fecha/Hora: 10/06/2017 23:59:20
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 124
+Fecha/Hora: 10/06/2017 23:59:20
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 124
+Fecha/Hora: 11/06/2017 0:01:13
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 124
+Fecha/Hora: 11/06/2017 0:01:14
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 124
+Fecha/Hora: 11/06/2017 0:01:14
+===========================================================================================
+Titulo: Error
+Mensaje: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en SL.Multiidioma.ObtenerValue(String key, String Cultura) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Multiidioma\Multiidioma.vb:línea 124
+Fecha/Hora: 11/06/2017 0:01:14
+===========================================================================================
+Titulo: Error
+Mensaje: Revise nombre de usuario o contraseña
+StackTrace:    en SL.GestorUsuario.TraerUsuarioBLL(Usuario _Usuario) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\SL\Usuario\GestorUsuario.vb:línea 30
+   en GUI.LogIn.Button1_Click_1(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\LogIn.vb:línea 41
+Fecha/Hora: 11/06/2017 15:59:58
+===========================================================================================
+Titulo: Error
+Mensaje: ERROR: Check input data
+StackTrace:    en GUI.ContraseñaForm.Button1_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\ContraseñaForm.vb:línea 108
+Fecha/Hora: 11/06/2017 21:39:25
+===========================================================================================
+Titulo: Error
+Mensaje: ERROR: Check input data
+StackTrace:    en GUI.ContraseñaForm.AceptarButton_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\ContraseñaForm.vb:línea 120
+Fecha/Hora: 11/06/2017 21:41:27
+===========================================================================================
+Titulo: Error
+Mensaje: ERROR: Check input data
+StackTrace:    en GUI.ContraseñaForm.AceptarButton_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\ContraseñaForm.vb:línea 120
+Fecha/Hora: 11/06/2017 21:41:28
+===========================================================================================
+Titulo: Error
+Mensaje: Check Input Data
+StackTrace:    en GUI.UnidadDeMedidaForm.AgregarButton_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\Ferreteria\GUI\UnidadDeMedidaForm.vb:línea 94
+Fecha/Hora: 12/06/2017 13:42:51
+===========================================================================================
+Titulo: Error
+Mensaje: Check Input Data
+StackTrace:    en GUI.UnidadDeMedidaForm.AgregarButton_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\Ferreteria\GUI\UnidadDeMedidaForm.vb:línea 94
+Fecha/Hora: 12/06/2017 13:42:52
+===========================================================================================
+Titulo: Error
+Mensaje: Revise datos ingresados
+StackTrace:    en GUI.UnidadDeMedidaForm.AgregarButton_Click(Object sender, EventArgs e)
+Fecha/Hora: 12/06/2017 13:49:46
+===========================================================================================
+Titulo: Error
+Mensaje: ERRORError al cargar la Unidad de Medida No se puede insertar un valor explícito en la columna de identidad de la tabla 'Unidad_Medida' cuando IDENTITY_INSERT es OFF.
+StackTrace:    en GUI.UnidadDeMedidaForm.AgregarButton_Click(Object sender, EventArgs e)
+Fecha/Hora: 12/06/2017 13:50:34
+===========================================================================================
+Titulo: Error
+Mensaje: Check Input Data
+StackTrace:    en GUI.UnidadDeMedidaForm.AgregarButton_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\Ferreteria\GUI\UnidadDeMedidaForm.vb:línea 94
+Fecha/Hora: 12/06/2017 13:51:29
+===========================================================================================
+Titulo: Error
+Mensaje: Check Input Data
+StackTrace:    en GUI.UnidadDeMedidaForm.AgregarButton_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\Ferreteria\GUI\UnidadDeMedidaForm.vb:línea 94
+Fecha/Hora: 12/06/2017 13:52:01
+===========================================================================================
+Titulo: Error
+Mensaje: Chequeat datos ingresados
+StackTrace:    en GUI.UnidadDeMedidaForm.AceptarButton_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\Ferreteria\GUI\UnidadDeMedidaForm.vb:línea 163
+Fecha/Hora: 12/06/2017 14:04:08
+===========================================================================================
+Titulo: Error
+Mensaje: Error al actualizar la Unidad de Medida Sintaxis incorrecta cerca de '('.
+StackTrace:    en DAL.UnidadDeMedidaDao.ActualizarUnidadDeMedida(UnidadDeMedida UnidadDeMedida) en C:\Users\Gonzalo\Desktop\Diploma t\Ferreteria\DAL\Gateway\UnidadDeMedidaDao.vb:línea 110
+   en GUI.UnidadDeMedidaForm.AceptarButton_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\Ferreteria\GUI\UnidadDeMedidaForm.vb:línea 138
+Fecha/Hora: 12/06/2017 14:04:14
+===========================================================================================
+Titulo: Error
+Mensaje: Error al actualizar la Unidad de Medida Sintaxis incorrecta cerca de '('.
+StackTrace:    en DAL.UnidadDeMedidaDao.ActualizarUnidadDeMedida(UnidadDeMedida UnidadDeMedida) en C:\Users\Gonzalo\Desktop\Diploma t\Ferreteria\DAL\Gateway\UnidadDeMedidaDao.vb:línea 110
+   en GUI.UnidadDeMedidaForm.AceptarButton_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\Ferreteria\GUI\UnidadDeMedidaForm.vb:línea 146
+Fecha/Hora: 12/06/2017 14:08:55
+===========================================================================================
+Titulo: Error
+Mensaje: USUARIO O CONTRASEÑA INCORRECTO
+StackTrace:    en GUI.LogIn.Button1_Click_1(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\Ferreteria\GUI\LogIn.vb:línea 52
+Fecha/Hora: 14/06/2017 21:19:36
+===========================================================================================
+Titulo: Error
+Mensaje: Error al generar venta No se puede insertar el valor NULL en la columna 'Cod_Venta', tabla 'Ferreteria.dbo.VentaCabecera'. La columna no admite valores NULL. Error de INSERT.
+Se terminó la instrucción.
+StackTrace:    en BLL.GestorVenta.GenerarVenta(VentaCabecera VentaCabecera, List`1 ListaDetalles) en C:\Users\Gonzalo\Desktop\Diploma t\Ferreteria\BLL\GestorVenta.vb:línea 24
+   en GUI.NuevaVentaForm.FinalizarButton_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\Ferreteria\GUI\NuevaVentaForm.vb:línea 410
+Fecha/Hora: 14/06/2017 21:33:33
+===========================================================================================
+Titulo: Error
+Mensaje: Error revise Cuit del cliente
+StackTrace:    en GUI.ClienteForm.Button1_Click(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\Ferreteria\GUI\ClienteForm.vb:línea 110
+Fecha/Hora: 14/06/2017 21:41:18
+===========================================================================================
+Titulo: Error
+Mensaje: USUARIO O CONTRASEÑA INCORRECTO
+StackTrace:    en GUI.LogIn.Button1_Click_1(Object sender, EventArgs e) en C:\Users\Gonzalo\Desktop\Diploma t\Ferreteria\GUI\LogIn.vb:línea 52
+Fecha/Hora: 02/09/2017 20:01:11
+===========================================================================================

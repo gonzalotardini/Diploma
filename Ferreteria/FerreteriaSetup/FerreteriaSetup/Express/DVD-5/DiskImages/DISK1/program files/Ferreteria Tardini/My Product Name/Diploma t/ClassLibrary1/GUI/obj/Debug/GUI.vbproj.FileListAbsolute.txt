@@ -1,0 +1,327 @@
+G:\proyecto\Trabajo de campo\Proyecto Final\VB net\ClassLibrary1\GUI\bin\Debug\GUI.exe.config
+G:\proyecto\Trabajo de campo\Proyecto Final\VB net\ClassLibrary1\GUI\bin\Debug\GUI.exe
+G:\proyecto\Trabajo de campo\Proyecto Final\VB net\ClassLibrary1\GUI\bin\Debug\GUI.pdb
+G:\proyecto\Trabajo de campo\Proyecto Final\VB net\ClassLibrary1\GUI\bin\Debug\GUI.xml
+G:\proyecto\Trabajo de campo\Proyecto Final\VB net\ClassLibrary1\GUI\obj\Debug\GUI.Resources.resources
+G:\proyecto\Trabajo de campo\Proyecto Final\VB net\ClassLibrary1\GUI\obj\Debug\GUI.vbproj.GenerateResource.Cache
+G:\proyecto\Trabajo de campo\Proyecto Final\VB net\ClassLibrary1\GUI\obj\Debug\GUI.exe
+G:\proyecto\Trabajo de campo\Proyecto Final\VB net\ClassLibrary1\GUI\obj\Debug\GUI.xml
+G:\proyecto\Trabajo de campo\Proyecto Final\VB net\ClassLibrary1\GUI\obj\Debug\GUI.pdb
+L:\proyecto\Trabajo de campo\Proyecto Final\VB net\ClassLibrary1\GUI\bin\Debug\GUI.exe.config
+L:\proyecto\Trabajo de campo\Proyecto Final\VB net\ClassLibrary1\GUI\obj\Debug\GUI.exe
+L:\proyecto\Trabajo de campo\Proyecto Final\VB net\ClassLibrary1\GUI\obj\Debug\GUI.xml
+L:\proyecto\Trabajo de campo\Proyecto Final\VB net\ClassLibrary1\GUI\obj\Debug\GUI.pdb
+L:\proyecto\Trabajo de campo\Proyecto Final\VB net\ClassLibrary1\GUI\bin\Debug\GUI.exe
+L:\proyecto\Trabajo de campo\Proyecto Final\VB net\ClassLibrary1\GUI\bin\Debug\GUI.pdb
+L:\proyecto\Trabajo de campo\Proyecto Final\VB net\ClassLibrary1\GUI\bin\Debug\GUI.xml
+L:\proyecto\Trabajo de campo\Proyecto Final\VB net\ClassLibrary1\GUI\bin\Debug\BIZ.dll
+L:\proyecto\Trabajo de campo\Proyecto Final\VB net\ClassLibrary1\GUI\bin\Debug\BLL.dll
+L:\proyecto\Trabajo de campo\Proyecto Final\VB net\ClassLibrary1\GUI\bin\Debug\SL.dll
+L:\proyecto\Trabajo de campo\Proyecto Final\VB net\ClassLibrary1\GUI\bin\Debug\BLL.pdb
+L:\proyecto\Trabajo de campo\Proyecto Final\VB net\ClassLibrary1\GUI\bin\Debug\BLL.xml
+L:\proyecto\Trabajo de campo\Proyecto Final\VB net\ClassLibrary1\GUI\bin\Debug\BIZ.pdb
+L:\proyecto\Trabajo de campo\Proyecto Final\VB net\ClassLibrary1\GUI\bin\Debug\BIZ.xml
+L:\proyecto\Trabajo de campo\Proyecto Final\VB net\ClassLibrary1\GUI\bin\Debug\SL.pdb
+L:\proyecto\Trabajo de campo\Proyecto Final\VB net\ClassLibrary1\GUI\bin\Debug\SL.xml
+L:\proyecto\Trabajo de campo\Proyecto Final\VB net\ClassLibrary1\GUI\obj\Debug\GUI.vbprojResolveAssemblyReference.cache
+L:\proyecto\Trabajo de campo\Proyecto Final\VB net\ClassLibrary1\GUI\obj\Debug\GUI.Resources.resources
+L:\proyecto\Trabajo de campo\Proyecto Final\VB net\ClassLibrary1\GUI\obj\Debug\GUI.vbproj.GenerateResource.Cache
+L:\proyecto\Trabajo de campo\Proyecto Final\VB net\ClassLibrary1\GUI\bin\Debug\DAL.dll
+L:\proyecto\Trabajo de campo\Proyecto Final\VB net\ClassLibrary1\GUI\bin\Debug\DAL.pdb
+L:\proyecto\Trabajo de campo\Proyecto Final\VB net\ClassLibrary1\GUI\bin\Debug\DAL.xml
+L:\proyecto\Trabajo de campo\Proyecto Final\VB net\ClassLibrary1\GUI\obj\Debug\GUI.Idioma.resources
+G:\proyecto\Trabajo de campo\Proyecto Final\VB net\ClassLibrary1\GUI\bin\Debug\BIZ.dll
+G:\proyecto\Trabajo de campo\Proyecto Final\VB net\ClassLibrary1\GUI\bin\Debug\BLL.dll
+G:\proyecto\Trabajo de campo\Proyecto Final\VB net\ClassLibrary1\GUI\bin\Debug\SL.dll
+G:\proyecto\Trabajo de campo\Proyecto Final\VB net\ClassLibrary1\GUI\bin\Debug\DAL.dll
+G:\proyecto\Trabajo de campo\Proyecto Final\VB net\ClassLibrary1\GUI\bin\Debug\BLL.pdb
+G:\proyecto\Trabajo de campo\Proyecto Final\VB net\ClassLibrary1\GUI\bin\Debug\BLL.xml
+G:\proyecto\Trabajo de campo\Proyecto Final\VB net\ClassLibrary1\GUI\bin\Debug\BIZ.pdb
+G:\proyecto\Trabajo de campo\Proyecto Final\VB net\ClassLibrary1\GUI\bin\Debug\BIZ.xml
+G:\proyecto\Trabajo de campo\Proyecto Final\VB net\ClassLibrary1\GUI\bin\Debug\SL.pdb
+G:\proyecto\Trabajo de campo\Proyecto Final\VB net\ClassLibrary1\GUI\bin\Debug\SL.xml
+G:\proyecto\Trabajo de campo\Proyecto Final\VB net\ClassLibrary1\GUI\bin\Debug\DAL.pdb
+G:\proyecto\Trabajo de campo\Proyecto Final\VB net\ClassLibrary1\GUI\bin\Debug\DAL.xml
+G:\proyecto\Trabajo de campo\Proyecto Final\VB net\ClassLibrary1\GUI\obj\Debug\GUI.vbprojResolveAssemblyReference.cache
+G:\proyecto\Trabajo de campo\Proyecto Final\VB net\ClassLibrary1\GUI\obj\Debug\GUI.Form1.resources
+G:\proyecto\Trabajo de campo\Proyecto Final\VB net\ClassLibrary1\GUI\obj\Debug\GUI.Idioma.resources
+L:\proyecto\Trabajo de campo\Proyecto Final\VB net\ClassLibrary1\GUI\obj\Debug\GUI.Principal.resources
+L:\proyecto\Trabajo de campo\Proyecto Final\VB net\ClassLibrary1\GUI\obj\Debug\GUI.Articuloss.resources
+L:\proyecto\Trabajo de campo\Proyecto Final\VB net\ClassLibrary1\GUI\obj\Debug\GUI.LogIn.resources
+C:\Users\Gonzalo\Desktop\VB net\ClassLibrary1\GUI\bin\Debug\GUI.exe.config
+C:\Users\Gonzalo\Desktop\VB net\ClassLibrary1\GUI\obj\Debug\GUI.exe
+C:\Users\Gonzalo\Desktop\VB net\ClassLibrary1\GUI\obj\Debug\GUI.xml
+C:\Users\Gonzalo\Desktop\VB net\ClassLibrary1\GUI\obj\Debug\GUI.pdb
+C:\Users\Gonzalo\Desktop\VB net\ClassLibrary1\GUI\bin\Debug\GUI.exe
+C:\Users\Gonzalo\Desktop\VB net\ClassLibrary1\GUI\bin\Debug\GUI.pdb
+C:\Users\Gonzalo\Desktop\VB net\ClassLibrary1\GUI\bin\Debug\GUI.xml
+C:\Users\Gonzalo\Desktop\VB net\ClassLibrary1\GUI\bin\Debug\BIZ.dll
+C:\Users\Gonzalo\Desktop\VB net\ClassLibrary1\GUI\bin\Debug\BLL.dll
+C:\Users\Gonzalo\Desktop\VB net\ClassLibrary1\GUI\bin\Debug\DAL.dll
+C:\Users\Gonzalo\Desktop\VB net\ClassLibrary1\GUI\bin\Debug\SL.dll
+C:\Users\Gonzalo\Desktop\VB net\ClassLibrary1\GUI\bin\Debug\BLL.pdb
+C:\Users\Gonzalo\Desktop\VB net\ClassLibrary1\GUI\bin\Debug\BLL.xml
+C:\Users\Gonzalo\Desktop\VB net\ClassLibrary1\GUI\bin\Debug\BIZ.pdb
+C:\Users\Gonzalo\Desktop\VB net\ClassLibrary1\GUI\bin\Debug\BIZ.xml
+C:\Users\Gonzalo\Desktop\VB net\ClassLibrary1\GUI\bin\Debug\DAL.pdb
+C:\Users\Gonzalo\Desktop\VB net\ClassLibrary1\GUI\bin\Debug\DAL.xml
+C:\Users\Gonzalo\Desktop\VB net\ClassLibrary1\GUI\bin\Debug\SL.pdb
+C:\Users\Gonzalo\Desktop\VB net\ClassLibrary1\GUI\bin\Debug\SL.xml
+C:\Users\Gonzalo\Desktop\VB net\ClassLibrary1\GUI\obj\Debug\GUI.vbprojResolveAssemblyReference.cache
+C:\Users\Gonzalo\Desktop\VB net\ClassLibrary1\GUI\obj\Debug\GUI.BackUp.resources
+C:\Users\Gonzalo\Desktop\VB net\ClassLibrary1\GUI\obj\Debug\GUI.Principal.resources
+C:\Users\Gonzalo\Desktop\VB net\ClassLibrary1\GUI\obj\Debug\GUI.Articuloss.resources
+C:\Users\Gonzalo\Desktop\VB net\ClassLibrary1\GUI\obj\Debug\GUI.Idioma.resources
+C:\Users\Gonzalo\Desktop\VB net\ClassLibrary1\GUI\obj\Debug\GUI.LogIn.resources
+C:\Users\Gonzalo\Desktop\VB net\ClassLibrary1\GUI\obj\Debug\GUI.Resources.resources
+C:\Users\Gonzalo\Desktop\VB net\ClassLibrary1\GUI\obj\Debug\GUI.vbproj.GenerateResource.Cache
+F:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\bin\Debug\GUI.exe.config
+F:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\obj\Debug\GUI.exe
+F:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\obj\Debug\GUI.xml
+F:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\obj\Debug\GUI.pdb
+F:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\obj\Debug\GUI.vbprojResolveAssemblyReference.cache
+F:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\obj\Debug\GUI.BackUp.resources
+F:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\obj\Debug\GUI.Integridad.resources
+F:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\obj\Debug\GUI.Principal.resources
+F:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\obj\Debug\GUI.Articuloss.resources
+F:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\obj\Debug\GUI.Idioma.resources
+F:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\obj\Debug\GUI.LogIn.resources
+F:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\obj\Debug\GUI.Resources.resources
+F:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\obj\Debug\GUI.vbproj.GenerateResource.Cache
+F:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\bin\Debug\GUI.exe
+F:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\bin\Debug\GUI.pdb
+F:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\bin\Debug\GUI.xml
+F:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\bin\Debug\BIZ.dll
+F:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\bin\Debug\BLL.dll
+F:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\bin\Debug\DAL.dll
+F:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\bin\Debug\SL.dll
+F:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\bin\Debug\BLL.pdb
+F:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\bin\Debug\BLL.xml
+F:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\bin\Debug\BIZ.pdb
+F:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\bin\Debug\BIZ.xml
+F:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\bin\Debug\DAL.pdb
+F:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\bin\Debug\DAL.xml
+F:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\bin\Debug\SL.pdb
+F:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\bin\Debug\SL.xml
+L:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\bin\Debug\GUI.exe.config
+L:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\obj\Debug\GUI.exe
+L:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\obj\Debug\GUI.xml
+L:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\obj\Debug\GUI.pdb
+L:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\bin\Debug\GUI.exe
+L:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\bin\Debug\GUI.pdb
+L:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\bin\Debug\GUI.xml
+L:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\bin\Debug\BIZ.dll
+L:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\bin\Debug\BLL.dll
+L:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\bin\Debug\DAL.dll
+L:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\bin\Debug\SL.dll
+L:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\bin\Debug\BLL.pdb
+L:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\bin\Debug\BLL.xml
+L:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\bin\Debug\BIZ.pdb
+L:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\bin\Debug\BIZ.xml
+L:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\bin\Debug\DAL.pdb
+L:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\bin\Debug\DAL.xml
+L:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\bin\Debug\SL.pdb
+L:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\bin\Debug\SL.xml
+L:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\obj\Debug\GUI.vbprojResolveAssemblyReference.cache
+L:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\obj\Debug\GUI.BackUp.resources
+L:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\obj\Debug\GUI.Integridad.resources
+L:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\obj\Debug\GUI.Principal.resources
+L:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\obj\Debug\GUI.Articuloss.resources
+L:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\obj\Debug\GUI.Idioma.resources
+L:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\obj\Debug\GUI.LogIn.resources
+L:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\obj\Debug\GUI.Resources.resources
+L:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\obj\Debug\GUI.vbproj.GenerateResource.Cache
+L:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\obj\Debug\GUI.ErroresForm.resources
+F:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\obj\Debug\GUI.ErroresForm.resources
+F:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\obj\Debug\GUI.EventosForm.resources
+I:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\bin\Debug\GUI.exe.config
+I:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\obj\Debug\GUI.exe
+I:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\obj\Debug\GUI.xml
+I:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\obj\Debug\GUI.pdb
+I:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\bin\Debug\GUI.exe
+I:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\bin\Debug\GUI.pdb
+I:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\bin\Debug\GUI.xml
+I:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\bin\Debug\BIZ.dll
+I:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\bin\Debug\BLL.dll
+I:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\bin\Debug\DAL.dll
+I:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\bin\Debug\SL.dll
+I:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\bin\Debug\BLL.pdb
+I:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\bin\Debug\BLL.xml
+I:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\bin\Debug\BIZ.pdb
+I:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\bin\Debug\BIZ.xml
+I:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\bin\Debug\DAL.pdb
+I:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\bin\Debug\DAL.xml
+I:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\bin\Debug\SL.pdb
+I:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\bin\Debug\SL.xml
+I:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\obj\Debug\GUI.vbprojResolveAssemblyReference.cache
+I:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\obj\Debug\GUI.BackUp.resources
+I:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\obj\Debug\GUI.ErroresForm.resources
+I:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\obj\Debug\GUI.EventosForm.resources
+I:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\obj\Debug\GUI.Integridad.resources
+I:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\obj\Debug\GUI.Principal.resources
+I:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\obj\Debug\GUI.Articuloss.resources
+I:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\obj\Debug\GUI.Idioma.resources
+I:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\obj\Debug\GUI.LogIn.resources
+I:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\obj\Debug\GUI.Resources.resources
+I:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\obj\Debug\GUI.vbproj.GenerateResource.Cache
+E:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\bin\Debug\GUI.exe.config
+E:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\obj\Debug\GUI.exe
+E:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\obj\Debug\GUI.xml
+E:\proyecto\Trabajo de campo\Proyecto Final\VB net2\ClassLibrary1\GUI\obj\Debug\GUI.pdb
+C:\Users\gonza\Desktop\Diploma\ClassLibrary1\GUI\bin\Debug\GUI.exe.config
+C:\Users\gonza\Desktop\Diploma\ClassLibrary1\GUI\obj\Debug\GUI.exe
+C:\Users\gonza\Desktop\Diploma\ClassLibrary1\GUI\obj\Debug\GUI.xml
+C:\Users\gonza\Desktop\Diploma\ClassLibrary1\GUI\obj\Debug\GUI.pdb
+C:\Users\gonza\Desktop\Diploma\ClassLibrary1\GUI\bin\Debug\GUI.exe
+C:\Users\gonza\Desktop\Diploma\ClassLibrary1\GUI\bin\Debug\GUI.pdb
+C:\Users\gonza\Desktop\Diploma\ClassLibrary1\GUI\bin\Debug\GUI.xml
+C:\Users\gonza\Desktop\Diploma\ClassLibrary1\GUI\bin\Debug\BIZ.dll
+C:\Users\gonza\Desktop\Diploma\ClassLibrary1\GUI\bin\Debug\BLL.dll
+C:\Users\gonza\Desktop\Diploma\ClassLibrary1\GUI\bin\Debug\DAL.dll
+C:\Users\gonza\Desktop\Diploma\ClassLibrary1\GUI\bin\Debug\SL.dll
+C:\Users\gonza\Desktop\Diploma\ClassLibrary1\GUI\bin\Debug\BLL.pdb
+C:\Users\gonza\Desktop\Diploma\ClassLibrary1\GUI\bin\Debug\BLL.xml
+C:\Users\gonza\Desktop\Diploma\ClassLibrary1\GUI\bin\Debug\BIZ.pdb
+C:\Users\gonza\Desktop\Diploma\ClassLibrary1\GUI\bin\Debug\BIZ.xml
+C:\Users\gonza\Desktop\Diploma\ClassLibrary1\GUI\bin\Debug\DAL.pdb
+C:\Users\gonza\Desktop\Diploma\ClassLibrary1\GUI\bin\Debug\DAL.xml
+C:\Users\gonza\Desktop\Diploma\ClassLibrary1\GUI\bin\Debug\SL.pdb
+C:\Users\gonza\Desktop\Diploma\ClassLibrary1\GUI\bin\Debug\SL.xml
+C:\Users\gonza\Desktop\Diploma\ClassLibrary1\GUI\obj\Debug\GUI.vbprojResolveAssemblyReference.cache
+C:\Users\gonza\Desktop\Diploma\ClassLibrary1\GUI\obj\Debug\GUI.BackUp.resources
+C:\Users\gonza\Desktop\Diploma\ClassLibrary1\GUI\obj\Debug\GUI.ErroresForm.resources
+C:\Users\gonza\Desktop\Diploma\ClassLibrary1\GUI\obj\Debug\GUI.EventosForm.resources
+C:\Users\gonza\Desktop\Diploma\ClassLibrary1\GUI\obj\Debug\GUI.Integridad.resources
+C:\Users\gonza\Desktop\Diploma\ClassLibrary1\GUI\obj\Debug\GUI.Principal.resources
+C:\Users\gonza\Desktop\Diploma\ClassLibrary1\GUI\obj\Debug\GUI.Articuloss.resources
+C:\Users\gonza\Desktop\Diploma\ClassLibrary1\GUI\obj\Debug\GUI.Idioma.resources
+C:\Users\gonza\Desktop\Diploma\ClassLibrary1\GUI\obj\Debug\GUI.LogIn.resources
+C:\Users\gonza\Desktop\Diploma\ClassLibrary1\GUI\obj\Debug\GUI.Resources.resources
+C:\Users\gonza\Desktop\Diploma\ClassLibrary1\GUI\obj\Debug\GUI.vbproj.GenerateResource.Cache
+C:\Users\gonza\Desktop\Diploma\ClassLibrary1\GUI\obj\Debug\GUI.NuevoPresupuestoForm.resources
+C:\Users\gonza\Desktop\Diploma\ClassLibrary1\GUI\obj\Debug\GUI.PresupuestosForm.resources
+C:\Users\gonza\Desktop\Diploma\ClassLibrary1\GUI\obj\Debug\GUI.ClienteForm.resources
+C:\Users\gonza\Desktop\Diploma\ClassLibrary1\GUI\bin\Debug\itextsharp.dll
+C:\Users\gonza\Desktop\Diploma\ClassLibrary1\GUI\bin\Debug\itextsharp.xml
+C:\Users\Gonzalo\Desktop\Diploma\ClassLibrary1\GUI\bin\Debug\GUI.exe.config
+C:\Users\Gonzalo\Desktop\Diploma\ClassLibrary1\GUI\obj\Debug\GUI.exe
+C:\Users\Gonzalo\Desktop\Diploma\ClassLibrary1\GUI\obj\Debug\GUI.xml
+C:\Users\Gonzalo\Desktop\Diploma\ClassLibrary1\GUI\obj\Debug\GUI.pdb
+C:\Users\Gonzalo\Desktop\Diploma\ClassLibrary1\GUI\bin\Debug\GUI.exe
+C:\Users\Gonzalo\Desktop\Diploma\ClassLibrary1\GUI\bin\Debug\GUI.pdb
+C:\Users\Gonzalo\Desktop\Diploma\ClassLibrary1\GUI\bin\Debug\GUI.xml
+C:\Users\Gonzalo\Desktop\Diploma\ClassLibrary1\GUI\bin\Debug\BIZ.dll
+C:\Users\Gonzalo\Desktop\Diploma\ClassLibrary1\GUI\bin\Debug\BLL.dll
+C:\Users\Gonzalo\Desktop\Diploma\ClassLibrary1\GUI\bin\Debug\DAL.dll
+C:\Users\Gonzalo\Desktop\Diploma\ClassLibrary1\GUI\bin\Debug\SL.dll
+C:\Users\Gonzalo\Desktop\Diploma\ClassLibrary1\GUI\bin\Debug\itextsharp.dll
+C:\Users\Gonzalo\Desktop\Diploma\ClassLibrary1\GUI\bin\Debug\BLL.pdb
+C:\Users\Gonzalo\Desktop\Diploma\ClassLibrary1\GUI\bin\Debug\BLL.xml
+C:\Users\Gonzalo\Desktop\Diploma\ClassLibrary1\GUI\bin\Debug\BIZ.pdb
+C:\Users\Gonzalo\Desktop\Diploma\ClassLibrary1\GUI\bin\Debug\BIZ.xml
+C:\Users\Gonzalo\Desktop\Diploma\ClassLibrary1\GUI\bin\Debug\DAL.pdb
+C:\Users\Gonzalo\Desktop\Diploma\ClassLibrary1\GUI\bin\Debug\DAL.xml
+C:\Users\Gonzalo\Desktop\Diploma\ClassLibrary1\GUI\bin\Debug\SL.pdb
+C:\Users\Gonzalo\Desktop\Diploma\ClassLibrary1\GUI\bin\Debug\SL.xml
+C:\Users\Gonzalo\Desktop\Diploma\ClassLibrary1\GUI\bin\Debug\itextsharp.xml
+C:\Users\Gonzalo\Desktop\Diploma\ClassLibrary1\GUI\obj\Debug\GUI.vbprojResolveAssemblyReference.cache
+C:\Users\Gonzalo\Desktop\Diploma\ClassLibrary1\GUI\obj\Debug\GUI.BackUp.resources
+C:\Users\Gonzalo\Desktop\Diploma\ClassLibrary1\GUI\obj\Debug\GUI.ClienteForm.resources
+C:\Users\Gonzalo\Desktop\Diploma\ClassLibrary1\GUI\obj\Debug\GUI.ErroresForm.resources
+C:\Users\Gonzalo\Desktop\Diploma\ClassLibrary1\GUI\obj\Debug\GUI.EventosForm.resources
+C:\Users\Gonzalo\Desktop\Diploma\ClassLibrary1\GUI\obj\Debug\GUI.Integridad.resources
+C:\Users\Gonzalo\Desktop\Diploma\ClassLibrary1\GUI\obj\Debug\GUI.NuevoPresupuestoForm.resources
+C:\Users\Gonzalo\Desktop\Diploma\ClassLibrary1\GUI\obj\Debug\GUI.PresupuestosForm.resources
+C:\Users\Gonzalo\Desktop\Diploma\ClassLibrary1\GUI\obj\Debug\GUI.Principal.resources
+C:\Users\Gonzalo\Desktop\Diploma\ClassLibrary1\GUI\obj\Debug\GUI.Articuloss.resources
+C:\Users\Gonzalo\Desktop\Diploma\ClassLibrary1\GUI\obj\Debug\GUI.Idioma.resources
+C:\Users\Gonzalo\Desktop\Diploma\ClassLibrary1\GUI\obj\Debug\GUI.LogIn.resources
+C:\Users\Gonzalo\Desktop\Diploma\ClassLibrary1\GUI\obj\Debug\GUI.Resources.resources
+C:\Users\Gonzalo\Desktop\Diploma\ClassLibrary1\GUI\obj\Debug\GUI.vbproj.GenerateResource.Cache
+C:\Users\Gonzalo\Desktop\Diploma\ClassLibrary1\GUI\obj\Debug\GUI.NuevaVentaForm.resources
+C:\Users\Gonzalo\Desktop\Diploma\ClassLibrary1\GUI\obj\Debug\GUI.PresupuestoDetalleForm.resources
+C:\Users\Gonzalo\Desktop\Diploma\ClassLibrary1\GUI\obj\Debug\GUI.Precios.resources
+H:\Diploma t\ClassLibrary1\GUI\bin\Debug\GUI.exe.config
+H:\Diploma t\ClassLibrary1\GUI\obj\Debug\GUI.exe
+H:\Diploma t\ClassLibrary1\GUI\obj\Debug\GUI.xml
+H:\Diploma t\ClassLibrary1\GUI\obj\Debug\GUI.pdb
+H:\Diploma t\ClassLibrary1\GUI\bin\Debug\GUI.exe
+H:\Diploma t\ClassLibrary1\GUI\bin\Debug\GUI.pdb
+H:\Diploma t\ClassLibrary1\GUI\bin\Debug\GUI.xml
+H:\Diploma t\ClassLibrary1\GUI\bin\Debug\BIZ.dll
+H:\Diploma t\ClassLibrary1\GUI\bin\Debug\BLL.dll
+H:\Diploma t\ClassLibrary1\GUI\bin\Debug\DAL.dll
+H:\Diploma t\ClassLibrary1\GUI\bin\Debug\SL.dll
+H:\Diploma t\ClassLibrary1\GUI\bin\Debug\itextsharp.dll
+H:\Diploma t\ClassLibrary1\GUI\bin\Debug\BLL.pdb
+H:\Diploma t\ClassLibrary1\GUI\bin\Debug\BLL.xml
+H:\Diploma t\ClassLibrary1\GUI\bin\Debug\BIZ.pdb
+H:\Diploma t\ClassLibrary1\GUI\bin\Debug\BIZ.xml
+H:\Diploma t\ClassLibrary1\GUI\bin\Debug\DAL.pdb
+H:\Diploma t\ClassLibrary1\GUI\bin\Debug\DAL.xml
+H:\Diploma t\ClassLibrary1\GUI\bin\Debug\SL.pdb
+H:\Diploma t\ClassLibrary1\GUI\bin\Debug\SL.xml
+H:\Diploma t\ClassLibrary1\GUI\bin\Debug\itextsharp.xml
+H:\Diploma t\ClassLibrary1\GUI\obj\Debug\GUI.vbprojResolveAssemblyReference.cache
+H:\Diploma t\ClassLibrary1\GUI\obj\Debug\GUI.BackUp.resources
+H:\Diploma t\ClassLibrary1\GUI\obj\Debug\GUI.ClienteForm.resources
+H:\Diploma t\ClassLibrary1\GUI\obj\Debug\GUI.ErroresForm.resources
+H:\Diploma t\ClassLibrary1\GUI\obj\Debug\GUI.EventosForm.resources
+H:\Diploma t\ClassLibrary1\GUI\obj\Debug\GUI.Integridad.resources
+H:\Diploma t\ClassLibrary1\GUI\obj\Debug\GUI.NuevaVentaForm.resources
+H:\Diploma t\ClassLibrary1\GUI\obj\Debug\GUI.NuevoPresupuestoForm.resources
+H:\Diploma t\ClassLibrary1\GUI\obj\Debug\GUI.Precios.resources
+H:\Diploma t\ClassLibrary1\GUI\obj\Debug\GUI.PresupuestoDetalleForm.resources
+H:\Diploma t\ClassLibrary1\GUI\obj\Debug\GUI.PresupuestosForm.resources
+H:\Diploma t\ClassLibrary1\GUI\obj\Debug\GUI.Principal.resources
+H:\Diploma t\ClassLibrary1\GUI\obj\Debug\GUI.Articuloss.resources
+H:\Diploma t\ClassLibrary1\GUI\obj\Debug\GUI.Idioma.resources
+H:\Diploma t\ClassLibrary1\GUI\obj\Debug\GUI.LogIn.resources
+H:\Diploma t\ClassLibrary1\GUI\obj\Debug\GUI.Resources.resources
+H:\Diploma t\ClassLibrary1\GUI\obj\Debug\GUI.vbproj.GenerateResource.Cache
+F:\Diploma t\ClassLibrary1\GUI\bin\Debug\GUI.exe.config
+F:\Diploma t\ClassLibrary1\GUI\obj\Debug\GUI.exe
+F:\Diploma t\ClassLibrary1\GUI\obj\Debug\GUI.xml
+F:\Diploma t\ClassLibrary1\GUI\obj\Debug\GUI.pdb
+C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\bin\Debug\GUI.exe.config
+C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\obj\Debug\GUI.exe
+C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\obj\Debug\GUI.xml
+C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\obj\Debug\GUI.pdb
+C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\bin\Debug\GUI.exe
+C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\bin\Debug\GUI.pdb
+C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\bin\Debug\GUI.xml
+C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\bin\Debug\BIZ.dll
+C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\bin\Debug\BLL.dll
+C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\bin\Debug\DAL.dll
+C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\bin\Debug\SL.dll
+C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\bin\Debug\itextsharp.dll
+C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\bin\Debug\BLL.pdb
+C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\bin\Debug\BLL.xml
+C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\bin\Debug\BIZ.pdb
+C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\bin\Debug\BIZ.xml
+C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\bin\Debug\DAL.pdb
+C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\bin\Debug\DAL.xml
+C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\bin\Debug\SL.pdb
+C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\bin\Debug\SL.xml
+C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\bin\Debug\itextsharp.xml
+C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\obj\Debug\GUI.vbprojResolveAssemblyReference.cache
+C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\obj\Debug\GUI.BackUp.resources
+C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\obj\Debug\GUI.ClienteForm.resources
+C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\obj\Debug\GUI.ErroresForm.resources
+C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\obj\Debug\GUI.EventosForm.resources
+C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\obj\Debug\GUI.Integridad.resources
+C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\obj\Debug\GUI.NuevaVentaForm.resources
+C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\obj\Debug\GUI.NuevoPresupuestoForm.resources
+C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\obj\Debug\GUI.Precios.resources
+C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\obj\Debug\GUI.PresupuestoDetalleForm.resources
+C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\obj\Debug\GUI.PresupuestosForm.resources
+C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\obj\Debug\GUI.Principal.resources
+C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\obj\Debug\GUI.Articuloss.resources
+C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\obj\Debug\GUI.Idioma.resources
+C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\obj\Debug\GUI.LogIn.resources
+C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\obj\Debug\GUI.Resources.resources
+C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\obj\Debug\GUI.ReportePrecios.resources
+C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\obj\Debug\GUI.vbproj.GenerateResource.Cache
+C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\obj\Debug\GUI.Usuarios.resources
+C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\obj\Debug\GUI.VentasForm.resources
+C:\Users\Gonzalo\Desktop\Diploma t\ClassLibrary1\GUI\obj\Debug\GUI.VentDetalle.resources
