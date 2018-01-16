@@ -68,3 +68,13 @@ C:\Users\Gonzalo\Desktop\Diploma t\Ferreteria\ClassLibrary1\obj\Debug\BIZ.vbproj
 C:\Users\Gonzalo\Desktop\Diploma t\Ferreteria\ClassLibrary1\obj\Debug\BIZ.dll
 C:\Users\Gonzalo\Desktop\Diploma t\Ferreteria\ClassLibrary1\obj\Debug\BIZ.xml
 C:\Users\Gonzalo\Desktop\Diploma t\Ferreteria\ClassLibrary1\obj\Debug\BIZ.pdb
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\ClassLibrary1\bin\Debug\BIZ.dll
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\ClassLibrary1\bin\Debug\BIZ.pdb
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\ClassLibrary1\bin\Debug\BIZ.xml
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\ClassLibrary1\obj\Debug\BIZ.Resources.resources
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\ClassLibrary1\obj\Debug\BIZ.vbproj.GenerateResource.Cache
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\ClassLibrary1\obj\Debug\BIZ.vbproj.CoreCompileInputs.cache
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\ClassLibrary1\obj\Debug\BIZ.dll
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\ClassLibrary1\obj\Debug\BIZ.xml
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\ClassLibrary1\obj\Debug\BIZ.pdb
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\ClassLibrary1\obj\Debug\BIZ.vbprojResolveAssemblyReference.cache

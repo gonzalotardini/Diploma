@@ -14,8 +14,11 @@ Public Class ClaseConexion
 
         Try
 
+
+
             '_CadenaConexion = New SqlConnection("Data Source=Gonzalo-PC;Initial Catalog=Ferreteria;Integrated Security=True")
-            _CadenaConexion = New SqlConnection(My.Settings.Conexion)
+            _CadenaConexion = New SqlConnection("Data Source=ACBYEMRTRL\SQLEXPRESS;Initial Catalog=Ferreteria;Integrated Security=True")
+            '_CadenaConexion = New SqlConnection(ConfigurationManager.ConnectionStrings("Conexion").ToString)
 
         Catch ex As Exception
 

@@ -2623,3 +2623,18 @@ Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
 StackTrace: LogIn Form
 Fecha/Hora: 02/09/2017 20:01:20
 ===========================================================================================
+Titulo: Información
+Mensaje: El usuario: LAURA ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 16/1/2018 09:31:19
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 16/1/2018 09:54:39
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 16/1/2018 10:17:09
+===========================================================================================

@@ -127,3 +127,17 @@ C:\Users\Gonzalo\Desktop\Diploma t\Ferreteria\DAL\obj\Debug\DAL.dll
 C:\Users\Gonzalo\Desktop\Diploma t\Ferreteria\DAL\obj\Debug\DAL.xml
 C:\Users\Gonzalo\Desktop\Diploma t\Ferreteria\DAL\obj\Debug\DAL.pdb
 C:\Users\Gonzalo\Desktop\Diploma t\Ferreteria\DAL\bin\Debug\DAL.dll.config
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\DAL\bin\Debug\DAL.dll.config
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\DAL\bin\Debug\DAL.dll
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\DAL\bin\Debug\DAL.pdb
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\DAL\bin\Debug\DAL.xml
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\DAL\bin\Debug\BIZ.dll
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\DAL\bin\Debug\BIZ.pdb
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\DAL\bin\Debug\BIZ.xml
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\DAL\obj\Debug\DAL.vbprojResolveAssemblyReference.cache
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\DAL\obj\Debug\DAL.Resources.resources
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\DAL\obj\Debug\DAL.vbproj.GenerateResource.Cache
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\DAL\obj\Debug\DAL.vbproj.CoreCompileInputs.cache
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\DAL\obj\Debug\DAL.dll
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\DAL\obj\Debug\DAL.xml
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\DAL\obj\Debug\DAL.pdb

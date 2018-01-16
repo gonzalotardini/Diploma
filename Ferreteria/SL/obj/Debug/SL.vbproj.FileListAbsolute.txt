@@ -179,3 +179,20 @@ C:\Users\Gonzalo\Desktop\Diploma t\Ferreteria\SL\obj\Debug\SL.dll
 C:\Users\Gonzalo\Desktop\Diploma t\Ferreteria\SL\obj\Debug\SL.xml
 C:\Users\Gonzalo\Desktop\Diploma t\Ferreteria\SL\obj\Debug\SL.pdb
 C:\Users\Gonzalo\Desktop\Diploma t\Ferreteria\SL\bin\Debug\DAL.dll.config
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\SL\bin\Debug\SL.dll
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\SL\bin\Debug\SL.pdb
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\SL\bin\Debug\SL.xml
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\SL\bin\Debug\BIZ.dll
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\SL\bin\Debug\DAL.dll
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\SL\bin\Debug\BIZ.pdb
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\SL\bin\Debug\BIZ.xml
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\SL\bin\Debug\DAL.pdb
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\SL\bin\Debug\DAL.xml
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\SL\bin\Debug\DAL.dll.config
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\SL\obj\Debug\SL.vbprojResolveAssemblyReference.cache
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\SL\obj\Debug\SL.Resources.resources
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\SL\obj\Debug\SL.vbproj.GenerateResource.Cache
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\SL\obj\Debug\SL.vbproj.CoreCompileInputs.cache
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\SL\obj\Debug\SL.dll
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\SL\obj\Debug\SL.xml
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\SL\obj\Debug\SL.pdb

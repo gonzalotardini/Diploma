@@ -224,3 +224,25 @@ C:\Users\Gonzalo\Desktop\Diploma t\Ferreteria\BLL\obj\Debug\BLL.dll
 C:\Users\Gonzalo\Desktop\Diploma t\Ferreteria\BLL\obj\Debug\BLL.xml
 C:\Users\Gonzalo\Desktop\Diploma t\Ferreteria\BLL\obj\Debug\BLL.pdb
 C:\Users\Gonzalo\Desktop\Diploma t\Ferreteria\BLL\bin\Debug\DAL.dll.config
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\bin\Debug\BLL.dll
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\bin\Debug\BLL.pdb
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\bin\Debug\BLL.xml
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\bin\Debug\BIZ.dll
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\bin\Debug\DAL.dll
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\bin\Debug\itextsharp.dll
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\bin\Debug\SL.dll
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\bin\Debug\BIZ.pdb
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\bin\Debug\BIZ.xml
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\bin\Debug\DAL.pdb
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\bin\Debug\DAL.xml
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\bin\Debug\DAL.dll.config
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\bin\Debug\SL.pdb
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\bin\Debug\SL.xml
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\bin\Debug\itextsharp.xml
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\obj\Debug\BLL.vbprojResolveAssemblyReference.cache
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\obj\Debug\BLL.Resources.resources
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\obj\Debug\BLL.vbproj.GenerateResource.Cache
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\obj\Debug\BLL.vbproj.CoreCompileInputs.cache
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\obj\Debug\BLL.dll
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\obj\Debug\BLL.xml
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\obj\Debug\BLL.pdb

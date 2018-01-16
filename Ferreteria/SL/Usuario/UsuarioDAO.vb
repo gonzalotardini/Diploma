@@ -20,7 +20,7 @@ Public Class UsuarioDAO
         Try
             Me.Conexion.Open()
 
-            _Consulta = "Select idUsuario, Nombre, Pw from Usuario where Nombre=@Nombre"
+            _Consulta = "Select idUsuario, Nombre, Pw from Usuario where Nombre='" + _Usuario.NombreUsuario + "'"
 
 
 
@@ -28,11 +28,9 @@ Public Class UsuarioDAO
 
             _Comando = New SqlCommand(_Consulta, Me.Conexion)
 
-            _Comando.Parameters.AddWithValue("@Nombre", _Usuario.NombreUsuario)
+            '_Comando.Parameters.AddWithValue("@Nombre", _Usuario.NombreUsuario)
 
-            _Comando.ExecuteNonQuery()
-
-
+            '_Comando.ExecuteNonQuery()
 
             Dim _Adapter As New SqlDataAdapter(_Comando)
 
@@ -45,7 +43,7 @@ Public Class UsuarioDAO
 
                 _UsuarioObtenido.IdUsuario = _Dataset.Tables(0).Rows(0)("IdUsuario")
                 _UsuarioObtenido.NombreUsuario = _Dataset.Tables(0).Rows(0)("Nombre")
-                _UsuarioObtenido.PW = _Dataset.Tables(0).Rows(0)("Pw")
+                _UsuarioObtenido.PW = _Dataset.Tables(0).Rows(0).Item(2)
 
                 Return _UsuarioObtenido
 
