@@ -102,4 +102,16 @@ Public Class GestorCliente
 
 
     End Sub
+
+    Public Function BuscarClientePorRazonSocialBLL(_Cliente As Cliente) As DataTable
+
+        Try
+            Dim _ClienteFacade = New ClienteFacade()
+            Return _ClienteFacade.ObtenerClientePorRazonSocialFacade(_Cliente)
+        Catch ex As Exception
+            Throw New Exception(ex.Message)
+        End Try
+
+
+    End Function
 End Class

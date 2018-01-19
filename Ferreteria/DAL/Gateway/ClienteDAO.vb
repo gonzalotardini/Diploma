@@ -15,7 +15,7 @@ Public Class ClienteDAO
 
         Try
 
-            _Consulta = "Select top 50 Cod_Cliente as 'Codigo' ,Razon_Social, Cuit, Direccion, B.Descripcion, Telefono, Email from Cliente AS C, Barrio as B Where C.Cod_barrio = B.Cod_Barrio"
+            _Consulta = "Select Cod_Cliente as 'Codigo' ,Razon_Social, Cuit, Direccion, B.Descripcion, Telefono, Email from Cliente AS C, Barrio as B Where C.Cod_barrio = B.Cod_Barrio"
 
 
             Me.Conexion.Open()
@@ -229,5 +229,45 @@ Public Class ClienteDAO
 
     End Sub
 
+
+    Public Function BuscarClientePorRazonSocial(_Cliente As Cliente) As DataTable
+
+
+        Dim _Consulta As String
+        Dim _Comando As SqlCommand
+        Dim _DataSet As New DataSet
+
+        Try
+
+            _Consulta = "Select Cod_Cliente as 'Codigo' ,Razon_Social, Cuit, Direccion, B.Descripcion, Telefono, Email from Cliente AS C, Barrio as B Where C.Cod_barrio = B.Cod_Barrio"
+            _Consulta += " and Razon_Social like '%" + _Cliente.RazonSocial + "%'"
+
+            Me.Conexion.Open()
+
+            _Comando = New SqlCommand(_Consulta, Me.Conexion)
+
+
+
+
+            Dim _Adapter As New SqlDataAdapter(_Comando)
+
+            _Adapter.Fill(_DataSet)
+
+
+
+            Return _DataSet.Tables(0)
+
+        Catch ex As Exception
+
+            MsgBox(ex.Message)
+            Return Nothing
+
+        Finally
+
+            Conexion.Close()
+
+        End Try
+
+    End Function
 
 End Class

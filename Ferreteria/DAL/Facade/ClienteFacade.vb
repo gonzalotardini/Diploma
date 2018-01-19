@@ -42,6 +42,21 @@ Public Class ClienteFacade
     End Sub
 
 
+    Public Function ObtenerClientePorRazonSocialFacade(_Cliente As Cliente) As DataTable
 
-   
+        Try
+            Dim _ClienteDao = New ClienteDAO()
+            Dim _DataSet = New DataSet()
+
+            Return _ClienteDao.BuscarClientePorRazonSocial(_Cliente)
+
+        Catch ex As Exception
+            Throw New Exception("Error " & ex.Message)
+        End Try
+
+
+    End Function
+
+
+
 End Class

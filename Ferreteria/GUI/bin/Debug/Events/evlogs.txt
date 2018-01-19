@@ -2638,3 +2638,93 @@ Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
 StackTrace: LogIn Form
 Fecha/Hora: 16/1/2018 10:17:09
 ===========================================================================================
+Titulo: Información
+Mensaje: El usuario: LAURA ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 18/1/2018 09:48:18
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 18/1/2018 09:50:40
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 18/1/2018 09:50:57
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 18/1/2018 09:51:58
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 18/1/2018 09:54:16
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 18/1/2018 10:03:36
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 18/1/2018 10:06:20
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 18/1/2018 10:13:39
+===========================================================================================
+Titulo: Información
+Mensaje: Se agregó correctamente el artículo LA BARCA SRL
+StackTrace: Articulo Form
+Fecha/Hora: 18/1/2018 10:17:44
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 18/1/2018 10:23:11
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 18/1/2018 10:31:55
+===========================================================================================
+Titulo: Información
+Mensaje: Se agregó correctamente el artículo SEBASTIAN
+StackTrace: Articulo Form
+Fecha/Hora: 18/1/2018 10:37:38
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 18/1/2018 10:40:20
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 18/1/2018 10:42:48
+===========================================================================================
+Titulo: Información
+Mensaje: Se Actualizo correctamente el Cliente ROEMERS
+StackTrace: Articulo Form
+Fecha/Hora: 18/1/2018 10:43:52
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 18/1/2018 10:46:19
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 19/1/2018 10:27:20
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 19/1/2018 10:33:55
+===========================================================================================

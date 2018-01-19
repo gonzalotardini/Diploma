@@ -5,7 +5,7 @@
     Private _Cuit As Long
     Private _Direccion As String
     Private _Barrio As Integer
-    Private _Telefono As Long
+    Private _Telefono As String
     Private _Email As String
 
     Public Property CodigoCliente As Integer

@@ -352,4 +352,105 @@ Public Class ClienteForm
 
 
     End Sub
+
+    Private Sub BuscarTextBox_KeyDown(sender As Object, e As KeyEventArgs) Handles BuscarTextBox.KeyDown
+
+        Dim bandera As Integer = 0
+
+        'If RadioButtonCODIGO.Checked = True Then
+
+        '    Dim Articulo As New Articulo
+        '    Dim ArticuloBLL As New GestorArticulo
+
+        '    Select Case e.KeyData
+        '        Case Keys.Enter
+        '            Dim EsNumero As Boolean
+
+        '            EsNumero = IsNumeric(TextBoxBuscar.Text)
+
+        '            If TextBoxBuscar.Text <> "" And EsNumero = True And ((Len(TextBoxBuscar.Text)) < 16) Then  'valido para que no ejectue la funcion si no hay caracteres
+        '                Articulo.CodigoDeBarras = Convert.ToInt64(TextBoxBuscar.Text)
+        '                DataGridView1.DataSource = ArticuloBLL.ValidarCodigoDeBarrasParaBusqueda(Articulo)
+
+        '                TextBoxBuscar.SelectAll()
+
+        '                For Each row As DataGridViewRow In DataGridView1.Rows
+
+        '                    If row.Index Mod 2 <> 0 Then
+        '                        row.DefaultCellStyle.BackColor = Color.Bisque
+        '                    Else
+        '                        row.DefaultCellStyle.BackColor = Color.Aqua
+
+        '                    End If
+
+        '                Next
+
+
+
+
+        '            Else
+        '                bandera = 1
+        '            End If
+
+        '            Dim CantidadArticulos As Integer
+
+        '            CantidadArticulos = DataGridView1.RowCount - 1
+        '            Label14.Text = CantidadArticulos
+
+        '    End Select
+
+
+
+
+
+
+
+
+
+        'End If
+
+        If RazonSocialRadioButton.Checked = True Or bandera = 1 Then
+
+            Dim _Cliente As New Cliente
+            Dim _GestorCliente As New GestorCliente
+
+            Select Case e.KeyData
+
+                Case Keys.Enter
+
+
+
+
+
+                    _Cliente.RazonSocial = (BuscarTextBox.Text).ToUpper
+                    ClienteGridView.DataSource = _GestorCliente.BuscarClientePorRazonSocialBLL(_Cliente)
+
+
+
+                    For Each row As DataGridViewRow In ClienteGridView.Rows
+
+                        If row.Index Mod 2 <> 0 Then
+                            row.DefaultCellStyle.BackColor = Color.Bisque
+                        Else
+                            row.DefaultCellStyle.BackColor = Color.Aqua
+
+                        End If
+
+                    Next
+
+
+                    bandera = 0
+
+                    RazonSocialRadioButton.Checked = True
+            End Select
+
+            'Dim CantidadArticulos As Integer
+
+            'CantidadArticulos = DataGridView1.RowCount - 1
+            'Label14.Text = CantidadArticulos
+        End If
+
+
+
+    End Sub
 End Class
