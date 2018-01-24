@@ -418,8 +418,66 @@ Public Class NuevaVentaForm
                 Dim Mensaje = MsgBox("Se creo correctamente la venta", MsgBoxStyle.Information, "INFORMACION")
 
 
+                If MsgBox("¿Desea imprimir comprobante de venta?", MsgBoxStyle.YesNo, "ATENCIÓN") = MsgBoxResult.Yes Then
+
+                    Dim VentaCabecera As New VentaCabecera
+
+                    Dim _ClaseVentaPdf As SL.ClaseVentaPDF
+
+                    Dim _ListaDetalle As New List(Of ClaseVentaPDF)
 
 
+                    Dim CantidadItems As Integer = PresupuestoGridView1.RowCount
+
+
+
+                    '  Dim _GestorVenta As New GestorVenta
+
+                    For i = 0 To (CantidadItems - 1)
+
+                        _ClaseVentaPdf = New ClaseVentaPDF
+
+
+
+
+                        _ClaseVentaPdf.Cantidad = CDec(PresupuestoGridView1.Rows(i).Cells("Cantidad").Value)
+                        _ClaseVentaPdf.Descripcion = Microsoft.VisualBasic.Left(CStr((PresupuestoGridView1.Rows(i).Cells("Descripcion").Value)), 40)
+                        _ClaseVentaPdf.Marca = CStr(PresupuestoGridView1.Rows(i).Cells("Marca").Value)
+                        _ClaseVentaPdf.Medida = CStr(PresupuestoGridView1.Rows(i).Cells("UnidadMedida").Value)
+                        _ClaseVentaPdf.Codigo = CLng(PresupuestoGridView1.Rows(i).Cells("Codigo").Value)
+                        _ClaseVentaPdf.Precio = CDec(PresupuestoGridView1.Rows(i).Cells("Precio").Value)
+                        _ClaseVentaPdf.Importe = CDec(PresupuestoGridView1.Rows(i).Cells("Importe").Value)
+
+
+
+
+                        _ListaDetalle.Add(_ClaseVentaPdf)
+
+
+
+
+
+                    Next
+                    VentaCabecera.Fecha = CDate(LabelFecha.Text)
+                    VentaCabecera.Total = CDec(TotalLabel.Text)
+                    VentaCabecera.Cod_Cliente = (CodigoClienteLabel.Text).ToUpper
+
+                    _GestorVenta.GenerarVentaPDF(_ListaDetalle, _VentaCabecera)
+
+                End If
+
+
+                CodigoClienteLabel.Text = ""
+                CuitLabel.Text = ""
+                RazonSocialLabel.Text = ""
+
+                PresupuestoGridView1.Rows.Clear()
+
+                TotalLabel.Text = 0
+
+                TextBoxBuscarArticulo.Text = ""
+                Me.Show()
+                TextBoxBuscarArticulo.Focus()
 
 
 
@@ -440,89 +498,13 @@ Public Class NuevaVentaForm
         End If
 
 
-        Try
-            If MsgBox("¿Desea imprimir comprobante de venta?", MsgBoxStyle.YesNo, "ATENCIÓN") = MsgBoxResult.Yes Then
-
-                Dim VentaCabecera As New VentaCabecera
-
-                Dim _ClaseVentaPdf As SL.ClaseVentaPDF
-
-                Dim _ListaDetalle As New List(Of ClaseVentaPDF)
-
-
-                Dim CantidadItems As Integer = PresupuestoGridView1.RowCount
-
-
-
-                '  Dim _GestorVenta As New GestorVenta
-
-                For i = 0 To (CantidadItems - 1)
-
-                    _ClaseVentaPdf = New ClaseVentaPDF
-
-
-
-
-                    _ClaseVentaPdf.Cantidad = CDec(PresupuestoGridView1.Rows(i).Cells("Cantidad").Value)
-                    _ClaseVentaPdf.Descripcion = Microsoft.VisualBasic.Left(CStr((PresupuestoGridView1.Rows(i).Cells("Descripcion").Value)), 40)
-                    _ClaseVentaPdf.Marca = CStr(PresupuestoGridView1.Rows(i).Cells("Marca").Value)
-                    _ClaseVentaPdf.Medida = CStr(PresupuestoGridView1.Rows(i).Cells("UnidadMedida").Value)
-                    _ClaseVentaPdf.Codigo = CLng(PresupuestoGridView1.Rows(i).Cells("Codigo").Value)
-                    _ClaseVentaPdf.Precio = CDec(PresupuestoGridView1.Rows(i).Cells("Precio").Value)
-                    _ClaseVentaPdf.Importe = CDec(PresupuestoGridView1.Rows(i).Cells("Importe").Value)
-
-
-
-
-                    _ListaDetalle.Add(_ClaseVentaPdf)
-
-
-
-
-
-                Next
-                VentaCabecera.Fecha = CDate(LabelFecha.Text)
-                VentaCabecera.Total = CDec(TotalLabel.Text)
-                VentaCabecera.Cod_Cliente = (CodigoClienteLabel.Text).ToUpper
-
-                _GestorVenta.GenerarVentaPDF(_ListaDetalle, _VentaCabecera)
-
-            End If
-
-
-           
-
-
-
-
-        Catch ex As Exception
-
-            Dim el As New ErrorLogger
-            MsgBox(ex.Message, MsgBoxStyle.Critical, "ERROR")
-            el.WriteToErrorLog(ex.Message, ex.StackTrace, "Error")
-
-
-
-        End Try
-      
 
 
 
 
 
 
-        PresupuestoGridView1.Rows.Clear()
 
-        TotalLabel.Text = 0
-
-        TextBoxBuscarArticulo.Text = ""
-        Me.Show()
-        TextBoxBuscarArticulo.Focus()
-
-
-
-
-      
 
 
 

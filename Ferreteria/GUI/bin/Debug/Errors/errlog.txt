@@ -1586,3 +1586,8 @@ StackTrace:    at BLL.GestorVenta.GenerarVenta(VentaCabecera VentaCabecera, List
    at GUI.NuevaVentaForm.FinalizarButton_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevaVentaForm.vb:line 410
 Fecha/Hora: 19/1/2018 10:34:47
 ===========================================================================================
+Titulo: Error
+Mensaje: Introduzca Codigo de Barras
+StackTrace:    at GUI.ArticulosForm.Button1_Click_1(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ArticulosForm.vb:line 38
+Fecha/Hora: 24/1/2018 14:09:31
+===========================================================================================

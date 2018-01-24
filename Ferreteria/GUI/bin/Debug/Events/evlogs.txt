@@ -2728,3 +2728,38 @@ Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
 StackTrace: LogIn Form
 Fecha/Hora: 19/1/2018 10:33:55
 ===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 22/1/2018 09:01:32
+===========================================================================================
+Titulo: Información
+Mensaje: Se creo correctamente la venta 
+StackTrace: Nuevo venta form
+Fecha/Hora: 22/1/2018 09:25:38
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 22/1/2018 15:46:54
+===========================================================================================
+Titulo: Información
+Mensaje: Se creo correctamente la venta 
+StackTrace: Nuevo venta form
+Fecha/Hora: 22/1/2018 15:47:39
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 24/1/2018 14:09:23
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 24/1/2018 14:12:52
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 24/1/2018 14:16:58
+===========================================================================================

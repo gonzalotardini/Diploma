@@ -2,6 +2,7 @@
 Imports System.Configuration
 Imports System.Data.SqlClient
 Imports DAL
+Imports System.IO
 
 Public Class BackUp
     Inherits DatosBase
@@ -19,7 +20,13 @@ Public Class BackUp
 
             Me.Conexion.Open()
 
-            Dim v_ruta_destino As String = "C:\Users\Gonzalo\Desktop\Diploma t\BackUp\"
+            Dim v_ruta_destino As String = "C:\BackUp\"
+
+            If Directory.Exists(v_ruta_destino) Then
+
+            Else
+                Directory.CreateDirectory(v_ruta_destino)
+            End If
 
             Dim cmd As New SqlCommand("BACKUP DATABASE Ferreteria TO DISK = '" & v_ruta_destino & NombreRespaldo & "'", Me.Conexion)
 
