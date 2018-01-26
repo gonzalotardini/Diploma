@@ -512,10 +512,6 @@ Public Class ArticulosForm
 
                 Case Keys.Enter
 
-
-
-
-
                     Articulo.Descripcion = (TextBoxBuscar.Text).ToUpper
                     DataGridView1.DataSource = GestorArticulo.ValidarDescripcionParaBusqueda(Articulo).Tables(0)
 

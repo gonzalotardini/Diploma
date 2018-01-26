@@ -114,7 +114,7 @@ DAL
  <returns></returns>
  <remarks></remarks>
 </member>
-<member name="M:DAL.ArticuloDAO.ObtenerPreciosHistoricosPorDescripcion(BIZ.Articulo)">
+<member name="M:DAL.ArticuloDAO.ObtenerPreciosHistoricosPorDescripcion(BIZ.Articulo,System.DateTime,System.DateTime)">
  <summary>
  Busca todos los precios históricos de un artículo mediante su Descripción
  </summary>

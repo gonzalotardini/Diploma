@@ -69,6 +69,7 @@
     <Compile Include="GestorArticulo.vb" />
     <Compile Include="GestorCliente.vb" />
     <Compile Include="GestorPresupuesto.vb" />
+    <Compile Include="GestorReporte.vb" />
     <Compile Include="GestorVenta.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">

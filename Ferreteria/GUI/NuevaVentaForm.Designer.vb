@@ -239,7 +239,7 @@ Partial Class NuevaVentaForm
         'Button1
         '
         Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
-        Me.Button1.Location = New System.Drawing.Point(37, 12)
+        Me.Button1.Location = New System.Drawing.Point(37, 9)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(137, 40)
         Me.Button1.TabIndex = 26
@@ -309,6 +309,7 @@ Partial Class NuevaVentaForm
         Me.Controls.Add(Me.TextBoxBuscarArticulo)
         Me.Controls.Add(Me.ArticuloGridView1)
         Me.Controls.Add(Me.PresupuestoGridView1)
+        Me.DoubleBuffered = True
         Me.Name = "NuevaVentaForm"
         Me.Text = "NUEVA VENTA"
         Me.GroupBox1.ResumeLayout(False)

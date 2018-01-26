@@ -30,14 +30,16 @@ Partial Class VentasForm
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.VentasDataGridView = New System.Windows.Forms.DataGridView()
         Me.VentasLabel = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1.SuspendLayout()
         CType(Me.VentasDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'CancelarButton
         '
         Me.CancelarButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CancelarButton.Location = New System.Drawing.Point(594, 483)
+        Me.CancelarButton.Location = New System.Drawing.Point(588, 514)
         Me.CancelarButton.Name = "CancelarButton"
         Me.CancelarButton.Size = New System.Drawing.Size(95, 45)
         Me.CancelarButton.TabIndex = 10
@@ -47,7 +49,7 @@ Partial Class VentasForm
         'VerDetalleButton
         '
         Me.VerDetalleButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.VerDetalleButton.Location = New System.Drawing.Point(175, 483)
+        Me.VerDetalleButton.Location = New System.Drawing.Point(172, 514)
         Me.VerDetalleButton.Name = "VerDetalleButton"
         Me.VerDetalleButton.Size = New System.Drawing.Size(107, 45)
         Me.VerDetalleButton.TabIndex = 9
@@ -58,7 +60,7 @@ Partial Class VentasForm
         '
         Me.GroupBox1.Controls.Add(Me.RazonSocialRadioButton)
         Me.GroupBox1.Controls.Add(Me.CodigoClienteRadioButton)
-        Me.GroupBox1.Location = New System.Drawing.Point(378, 46)
+        Me.GroupBox1.Location = New System.Drawing.Point(433, 89)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(274, 41)
         Me.GroupBox1.TabIndex = 8
@@ -90,15 +92,16 @@ Partial Class VentasForm
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(48, 67)
+        Me.TextBox1.Location = New System.Drawing.Point(47, 110)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(295, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(350, 20)
         Me.TextBox1.TabIndex = 7
         '
         'VentasDataGridView
         '
+        Me.VentasDataGridView.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight
         Me.VentasDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.VentasDataGridView.Location = New System.Drawing.Point(48, 108)
+        Me.VentasDataGridView.Location = New System.Drawing.Point(47, 151)
         Me.VentasDataGridView.Name = "VentasDataGridView"
         Me.VentasDataGridView.ReadOnly = True
         Me.VentasDataGridView.Size = New System.Drawing.Size(841, 357)
@@ -107,17 +110,28 @@ Partial Class VentasForm
         'VentasLabel
         '
         Me.VentasLabel.AutoSize = True
-        Me.VentasLabel.Location = New System.Drawing.Point(459, 21)
+        Me.VentasLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.VentasLabel.Location = New System.Drawing.Point(280, 18)
         Me.VentasLabel.Name = "VentasLabel"
-        Me.VentasLabel.Size = New System.Drawing.Size(50, 13)
+        Me.VentasLabel.Size = New System.Drawing.Size(222, 55)
         Me.VentasLabel.TabIndex = 11
         Me.VentasLabel.Text = "VENTAS"
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.GUI.My.Resources.Resources.Ventas_rapidas_con_inbound1
+        Me.PictureBox1.Location = New System.Drawing.Point(110, -8)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(109, 98)
+        Me.PictureBox1.TabIndex = 12
+        Me.PictureBox1.TabStop = False
         '
         'VentasForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1226, 544)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.VentasLabel)
         Me.Controls.Add(Me.CancelarButton)
         Me.Controls.Add(Me.VerDetalleButton)
@@ -130,6 +144,7 @@ Partial Class VentasForm
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.VentasDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -142,4 +157,5 @@ Partial Class VentasForm
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents VentasDataGridView As System.Windows.Forms.DataGridView
     Friend WithEvents VentasLabel As Label
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

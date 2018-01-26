@@ -59,4 +59,8 @@ Public Class VentasForm
     Private Sub CancelarButton_Click(sender As Object, e As EventArgs) Handles CancelarButton.Click
 
     End Sub
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs)
+
+    End Sub
 End Class

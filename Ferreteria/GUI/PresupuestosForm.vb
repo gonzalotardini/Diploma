@@ -158,4 +158,8 @@ Public Class PresupuestosForm
     Private Sub PresupuestosDataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
 
     End Sub
+
+    Private Sub PresupuestosDataGridView_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles PresupuestosDataGridView.CellContentClick
+
+    End Sub
 End Class

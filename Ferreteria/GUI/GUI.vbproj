@@ -356,6 +356,8 @@
     <None Include="Resources\textura-fondo-azul-8500.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Ventas-rapidas-con-inbound.jpg" />
+    <None Include="Resources\Ventas-rapidas-con-inbound.png" />
     <None Include="Resources\palabras-clave.png" />
     <None Include="Resources\presupuesto.png" />
     <None Include="Resources\dependiente-con-corbata.png" />

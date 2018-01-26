@@ -27,15 +27,19 @@ Partial Class ReportePrecios
         Me.RadioButtonCODIGO = New System.Windows.Forms.RadioButton()
         Me.TextBoxBuscar = New System.Windows.Forms.TextBox()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.FechaDesde = New System.Windows.Forms.DateTimePicker()
+        Me.FechaHasta = New System.Windows.Forms.DateTimePicker()
+        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
         Me.GroupBox1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.RadioButtonDESCRIPCION)
         Me.GroupBox1.Controls.Add(Me.RadioButtonCODIGO)
-        Me.GroupBox1.Location = New System.Drawing.Point(361, 32)
+        Me.GroupBox1.Location = New System.Drawing.Point(322, 485)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(252, 36)
         Me.GroupBox1.TabIndex = 34
@@ -45,7 +49,7 @@ Partial Class ReportePrecios
         '
         Me.RadioButtonDESCRIPCION.AutoSize = True
         Me.RadioButtonDESCRIPCION.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButtonDESCRIPCION.Location = New System.Drawing.Point(106, 13)
+        Me.RadioButtonDESCRIPCION.Location = New System.Drawing.Point(106, 14)
         Me.RadioButtonDESCRIPCION.Name = "RadioButtonDESCRIPCION"
         Me.RadioButtonDESCRIPCION.Size = New System.Drawing.Size(140, 22)
         Me.RadioButtonDESCRIPCION.TabIndex = 29
@@ -67,7 +71,7 @@ Partial Class ReportePrecios
         '
         'TextBoxBuscar
         '
-        Me.TextBoxBuscar.Location = New System.Drawing.Point(77, 48)
+        Me.TextBoxBuscar.Location = New System.Drawing.Point(38, 501)
         Me.TextBoxBuscar.Name = "TextBoxBuscar"
         Me.TextBoxBuscar.Size = New System.Drawing.Size(242, 20)
         Me.TextBoxBuscar.TabIndex = 33
@@ -75,24 +79,52 @@ Partial Class ReportePrecios
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(77, 90)
+        Me.DataGridView1.Location = New System.Drawing.Point(38, 541)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(1130, 427)
+        Me.DataGridView1.Size = New System.Drawing.Size(1130, 302)
         Me.DataGridView1.TabIndex = 32
+        '
+        'FechaDesde
+        '
+        Me.FechaDesde.CalendarFont = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FechaDesde.Location = New System.Drawing.Point(49, 38)
+        Me.FechaDesde.Name = "FechaDesde"
+        Me.FechaDesde.Size = New System.Drawing.Size(200, 20)
+        Me.FechaDesde.TabIndex = 35
+        '
+        'FechaHasta
+        '
+        Me.FechaHasta.Location = New System.Drawing.Point(304, 38)
+        Me.FechaHasta.Name = "FechaHasta"
+        Me.FechaHasta.Size = New System.Drawing.Size(200, 20)
+        Me.FechaHasta.TabIndex = 36
+        '
+        'DataGridView2
+        '
+        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView2.Location = New System.Drawing.Point(38, 99)
+        Me.DataGridView2.Name = "DataGridView2"
+        Me.DataGridView2.Size = New System.Drawing.Size(1130, 380)
+        Me.DataGridView2.TabIndex = 37
         '
         'ReportePrecios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1292, 585)
+        Me.ClientSize = New System.Drawing.Size(1292, 873)
+        Me.Controls.Add(Me.DataGridView2)
+        Me.Controls.Add(Me.FechaHasta)
+        Me.Controls.Add(Me.FechaDesde)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.TextBoxBuscar)
         Me.Controls.Add(Me.DataGridView1)
+        Me.DoubleBuffered = True
         Me.Name = "ReportePrecios"
         Me.Text = "ReportePrecios"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -102,4 +134,7 @@ Partial Class ReportePrecios
     Friend WithEvents RadioButtonCODIGO As System.Windows.Forms.RadioButton
     Friend WithEvents TextBoxBuscar As System.Windows.Forms.TextBox
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
+    Friend WithEvents FechaDesde As DateTimePicker
+    Friend WithEvents FechaHasta As DateTimePicker
+    Friend WithEvents DataGridView2 As DataGridView
 End Class
