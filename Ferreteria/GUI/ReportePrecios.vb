@@ -8,7 +8,7 @@ Public Class ReportePrecios
     Private Sub ReportePrecios_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.Icon = My.Resources.ico
         Me.WindowState = FormWindowState.Maximized 'Maximizar Ventana al Abrir
-        DataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
+        ArticulosGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
 
         RadioButtonDESCRIPCION.Checked = True
 
@@ -18,9 +18,9 @@ Public Class ReportePrecios
 
 
 
-        DataGridView1.DataSource = _ArticuloDAO.ObtenerPreciosHistoricostop50.Tables(0)
+        ArticulosGridView.DataSource = _ArticuloDAO.ObtenerPreciosHistoricostop50.Tables(0)
 
-        For Each row As DataGridViewRow In DataGridView1.Rows
+        For Each row As DataGridViewRow In ArticulosGridView.Rows
 
             If row.Index Mod 2 <> 0 Then
                 row.DefaultCellStyle.BackColor = Color.Bisque
@@ -31,7 +31,7 @@ Public Class ReportePrecios
 
         Next
 
-        DataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
+        ArticulosGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
     End Sub
 
     Private Sub TextBoxBuscar_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBoxBuscar.KeyDown
@@ -53,11 +53,11 @@ Public Class ReportePrecios
 
                     If TextBoxBuscar.Text <> "" And EsNumero = True And ((Len(TextBoxBuscar.Text)) < 16) Then  'valido para que no ejectue la funcion si no hay caracteres
                         Articulo.CodigoDeBarras = Convert.ToInt64(TextBoxBuscar.Text)
-                        DataGridView1.DataSource = ArticuloBLL.ValidarCodigoDeBarrasParaBusqueda(Articulo)
+                        ArticulosGridView.DataSource = ArticuloBLL.ValidarCodigoDeBarrasParaBusqueda(Articulo)
 
                         TextBoxBuscar.SelectAll()
 
-                        For Each row As DataGridViewRow In DataGridView1.Rows
+                        For Each row As DataGridViewRow In ArticulosGridView.Rows
 
                             If row.Index Mod 2 <> 0 Then
                                 row.DefaultCellStyle.BackColor = Color.Bisque
@@ -95,11 +95,11 @@ Public Class ReportePrecios
                 Case Keys.Enter
 
                     Articulo.Descripcion = (TextBoxBuscar.Text).ToUpper
-                    DataGridView1.DataSource = GestorArticulo.ValidarDescripcionParaBusqueda(Articulo).Tables(0)
+                    ArticulosGridView.DataSource = GestorArticulo.ValidarDescripcionParaBusqueda(Articulo).Tables(0)
 
 
 
-                    For Each row As DataGridViewRow In DataGridView1.Rows
+                    For Each row As DataGridViewRow In ArticulosGridView.Rows
 
                         If row.Index Mod 2 <> 0 Then
                             row.DefaultCellStyle.BackColor = Color.Bisque
@@ -227,6 +227,33 @@ Public Class ReportePrecios
     End Sub
 
     Private Sub TextBoxBuscar_TextChanged(sender As Object, e As EventArgs) Handles TextBoxBuscar.TextChanged
+
+    End Sub
+
+    Private Sub ArticulosGridView_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles ArticulosGridView.CellContentClick
+
+    End Sub
+
+    Private Sub ArticulosGridView_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles ArticulosGridView.CellDoubleClick
+        Dim _Articulo As New Articulo
+        Dim _ReporteDao As New ReporteDAO
+
+        Dim _fecha_Desde As Date
+        Dim _fecha_hasta As Date
+
+        _fecha_Desde = FechaDesde.Value
+        _fecha_hasta = FechaHasta.Value
+
+
+        Try
+
+            _Articulo.CodigoArticulo = ArticulosGridView.CurrentRow.Cells(1).Value
+            _ReporteDao.BuscarPrecios(_Articulo, _fecha_Desde, _fecha_hasta)
+
+        Catch ex As Exception
+
+        End Try
+
 
     End Sub
 End Class

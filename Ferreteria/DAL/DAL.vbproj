@@ -67,6 +67,7 @@
     <Compile Include="Facade\ArticuloFacade.vb" />
     <Compile Include="Facade\ClienteFacade.vb" />
     <Compile Include="Facade\PresupuestoFacade.vb" />
+    <Compile Include="Facade\ReporteFacade.vb" />
     <Compile Include="Facade\VentaFacade.vb" />
     <Compile Include="Gateway\ArticuloDAO.vb" />
     <Compile Include="Gateway\BarrioDAO.vb" />
@@ -78,6 +79,7 @@
     <Compile Include="Gateway\MarcaDAO.vb" />
     <Compile Include="Gateway\ModificacionesPreciosDAO.vb" />
     <Compile Include="Gateway\PresupuestoDAO.vb" />
+    <Compile Include="Gateway\ReporteDAO.vb" />
     <Compile Include="Gateway\SubCategoriaDAO.vb" />
     <Compile Include="Gateway\SubUnidadDeMedidaDAO.vb" />
     <Compile Include="Gateway\UnidadDeMedidaDao.vb" />
