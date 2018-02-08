@@ -1591,3 +1591,153 @@ Mensaje: Introduzca Codigo de Barras
 StackTrace:    at GUI.ArticulosForm.Button1_Click_1(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ArticulosForm.vb:line 38
 Fecha/Hora: 24/1/2018 14:09:31
 ===========================================================================================
+Titulo: Error
+Mensaje: Fecha desde debe ser anterior a fecha hasta
+StackTrace:    at BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _fecha_Desde, DateTime _fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 28
+   at GUI.ReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ReportePrecios.vb:line 253
+Fecha/Hora: 06/02/2018 14:41:47
+===========================================================================================
+Titulo: Error
+Mensaje: Fecha desde debe ser anterior a fecha hasta
+StackTrace:    at BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _fecha_Desde, DateTime _fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 28
+   at GUI.ReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ReportePrecios.vb:line 254
+Fecha/Hora: 06/02/2018 15:12:30
+===========================================================================================
+Titulo: Error
+Mensaje: Fecha desde debe ser anterior a fecha hasta
+StackTrace:    at BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _fecha_Desde, DateTime _fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 28
+   at GUI.ReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ReportePrecios.vb:line 254
+Fecha/Hora: 06/02/2018 15:16:50
+===========================================================================================
+Titulo: Error
+Mensaje: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+StackTrace:    at System.Collections.ArrayList.get_Item(Int32 index)
+   at System.Windows.Forms.DataGridViewCellCollection.get_Item(Int32 index)
+   at GUI.ReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e)
+Fecha/Hora: 06/02/2018 15:17:27
+===========================================================================================
+Titulo: Error
+Mensaje: Fecha desde debe ser anterior a fecha hasta
+StackTrace:    at BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _fecha_Desde, DateTime _fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 28
+   at GUI.ReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ReportePrecios.vb:line 254
+Fecha/Hora: 06/02/2018 15:52:41
+===========================================================================================
+Titulo: Error
+Mensaje: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+StackTrace:    at System.Collections.ArrayList.get_Item(Int32 index)
+   at System.Windows.Forms.DataGridViewCellCollection.get_Item(Int32 index)
+   at GUI.ReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e)
+Fecha/Hora: 06/02/2018 15:59:04
+===========================================================================================
+Titulo: Error
+Mensaje: Fecha desde debe ser anterior a fecha hasta
+StackTrace:    at BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _fecha_Desde, DateTime _fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 28
+   at GUI.ReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ReportePrecios.vb:line 254
+Fecha/Hora: 06/02/2018 16:03:06
+===========================================================================================
+Titulo: Error
+Mensaje: Fecha desde debe ser anterior a fecha hasta
+StackTrace:    at BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _fecha_Desde, DateTime _fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 28
+   at GUI.ReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ReportePrecios.vb:line 254
+Fecha/Hora: 06/02/2018 17:38:09
+===========================================================================================
+Titulo: Error
+Mensaje: Fecha desde debe ser anterior a fecha hasta
+StackTrace:    at BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _fecha_Desde, DateTime _fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 28
+   at GUI.ReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ReportePrecios.vb:line 254
+Fecha/Hora: 06/02/2018 17:45:55
+===========================================================================================
+Titulo: Error
+Mensaje: Fecha desde debe ser anterior a fecha hasta
+StackTrace:    at BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _fecha_Desde, DateTime _fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 28
+   at GUI.ReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ReportePrecios.vb:line 254
+Fecha/Hora: 06/02/2018 17:53:12
+===========================================================================================
+Titulo: Error
+Mensaje: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+StackTrace:    at System.Collections.ArrayList.get_Item(Int32 index)
+   at System.Windows.Forms.DataGridViewCellCollection.get_Item(Int32 index)
+   at GUI.ReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ReportePrecios.vb:line 269
+Fecha/Hora: 06/02/2018 17:53:37
+===========================================================================================
+Titulo: Error
+Mensaje: Fecha desde debe ser anterior a fecha hasta
+StackTrace:    at BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _fecha_Desde, DateTime _fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 28
+   at GUI.ReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ReportePrecios.vb:line 254
+Fecha/Hora: 06/02/2018 17:59:16
+===========================================================================================
+Titulo: Error
+Mensaje: Fecha desde debe ser anterior a fecha hasta
+StackTrace:    at BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _fecha_Desde, DateTime _fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 28
+   at GUI.ReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ReportePrecios.vb:line 254
+Fecha/Hora: 08/02/2018 10:23:52
+===========================================================================================
+Titulo: Error
+Mensaje: There is no row at position 0.
+StackTrace:    at BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _fecha_Desde, DateTime _fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 28
+   at GUI.ReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ReportePrecios.vb:line 254
+Fecha/Hora: 08/02/2018 10:26:48
+===========================================================================================
+Titulo: Error
+Mensaje: USUARIO O CONTRASEÑA INCORRECTO
+StackTrace:    at GUI.LogIn.Button1_Click_1(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\LogIn.vb:line 52
+Fecha/Hora: 08/02/2018 10:54:05
+===========================================================================================
+Titulo: Error
+Mensaje: Fecha desde debe ser anterior a fecha hasta
+StackTrace:    at BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _fecha_Desde, DateTime _fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 28
+   at GUI.ReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ReportePrecios.vb:line 254
+Fecha/Hora: 08/02/2018 10:54:30
+===========================================================================================
+Titulo: Error
+Mensaje: Fecha desde debe ser anterior a fecha hasta
+StackTrace:    at BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _fecha_Desde, DateTime _fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 28
+   at GUI.ReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ReportePrecios.vb:line 254
+Fecha/Hora: 08/02/2018 10:57:10
+===========================================================================================
+Titulo: Error
+Mensaje: No existes precios historicos del articulo
+StackTrace:    at BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _fecha_Desde, DateTime _fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 28
+   at GUI.ReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ReportePrecios.vb:line 254
+Fecha/Hora: 08/02/2018 10:57:22
+===========================================================================================
+Titulo: Error
+Mensaje: Fecha desde debe ser anterior a fecha hasta
+StackTrace:    at BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _fecha_Desde, DateTime _fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 28
+   at GUI.ReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ReportePrecios.vb:line 254
+Fecha/Hora: 08/02/2018 10:58:19
+===========================================================================================
+Titulo: Error
+Mensaje: No existes precios historicos del articulo
+StackTrace:    at BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _fecha_Desde, DateTime _fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 28
+   at GUI.ReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ReportePrecios.vb:line 254
+Fecha/Hora: 08/02/2018 10:58:26
+===========================================================================================
+Titulo: Error
+Mensaje: Fecha desde debe ser anterior a fecha hasta
+StackTrace:    at BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _fecha_Desde, DateTime _fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 28
+   at GUI.ReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ReportePrecios.vb:line 254
+Fecha/Hora: 08/02/2018 11:00:40
+===========================================================================================
+Titulo: Error
+Mensaje: Fecha desde debe ser anterior a fecha hasta
+StackTrace:    at BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _fecha_Desde, DateTime _fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 28
+   at GUI.ReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ReportePrecios.vb:line 254
+Fecha/Hora: 08/02/2018 11:00:46
+===========================================================================================
+Titulo: Error
+Mensaje: Fecha desde debe ser anterior a fecha hasta
+StackTrace:    at BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _fecha_Desde, DateTime _fecha_hasta)
+   at GUI.ReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ReportePrecios.vb:line 254
+Fecha/Hora: 08/02/2018 11:05:11
+===========================================================================================
+Titulo: Error
+Mensaje: Conversion from string "%" to type 'Double' is not valid.
+StackTrace:    at Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value)
+   at GUI.ReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ReportePrecios.vb:line 267
+Fecha/Hora: 08/02/2018 11:08:13
+===========================================================================================

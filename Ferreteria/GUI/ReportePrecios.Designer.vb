@@ -29,10 +29,20 @@ Partial Class ReportePrecios
         Me.ArticulosGridView = New System.Windows.Forms.DataGridView()
         Me.FechaDesde = New System.Windows.Forms.DateTimePicker()
         Me.FechaHasta = New System.Windows.Forms.DateTimePicker()
-        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
+        Me.GridView1 = New System.Windows.Forms.DataGridView()
+        Me.Codigo = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Descripcion = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Marca = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.UnidadMedida = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Precio_Inicial = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Precio_Final = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Cantidad_Precios = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Aumento = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Desde = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Hasta = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GroupBox1.SuspendLayout()
         CType(Me.ArticulosGridView, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox1
@@ -99,20 +109,72 @@ Partial Class ReportePrecios
         Me.FechaHasta.Size = New System.Drawing.Size(200, 20)
         Me.FechaHasta.TabIndex = 36
         '
-        'DataGridView2
+        'GridView1
         '
-        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView2.Location = New System.Drawing.Point(38, 52)
-        Me.DataGridView2.Name = "DataGridView2"
-        Me.DataGridView2.Size = New System.Drawing.Size(1130, 380)
-        Me.DataGridView2.TabIndex = 37
+        Me.GridView1.AllowUserToAddRows = False
+        Me.GridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.GridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Codigo, Me.Descripcion, Me.Marca, Me.UnidadMedida, Me.Precio_Inicial, Me.Precio_Final, Me.Cantidad_Precios, Me.Aumento, Me.Desde, Me.Hasta})
+        Me.GridView1.Location = New System.Drawing.Point(37, 71)
+        Me.GridView1.Name = "GridView1"
+        Me.GridView1.Size = New System.Drawing.Size(1040, 309)
+        Me.GridView1.TabIndex = 37
+        '
+        'Codigo
+        '
+        Me.Codigo.HeaderText = "Codigo"
+        Me.Codigo.Name = "Codigo"
+        '
+        'Descripcion
+        '
+        Me.Descripcion.HeaderText = "Descripcion"
+        Me.Descripcion.Name = "Descripcion"
+        '
+        'Marca
+        '
+        Me.Marca.HeaderText = "Marca"
+        Me.Marca.Name = "Marca"
+        '
+        'UnidadMedida
+        '
+        Me.UnidadMedida.HeaderText = "Unidad de Medida"
+        Me.UnidadMedida.Name = "UnidadMedida"
+        '
+        'Precio_Inicial
+        '
+        Me.Precio_Inicial.HeaderText = "Precio_Inicial"
+        Me.Precio_Inicial.Name = "Precio_Inicial"
+        '
+        'Precio_Final
+        '
+        Me.Precio_Final.HeaderText = "Precio_Final"
+        Me.Precio_Final.Name = "Precio_Final"
+        '
+        'Cantidad_Precios
+        '
+        Me.Cantidad_Precios.HeaderText = "Cantidad_Precios"
+        Me.Cantidad_Precios.Name = "Cantidad_Precios"
+        '
+        'Aumento
+        '
+        Me.Aumento.HeaderText = "Aumento"
+        Me.Aumento.Name = "Aumento"
+        '
+        'Desde
+        '
+        Me.Desde.HeaderText = "Desde"
+        Me.Desde.Name = "Desde"
+        '
+        'Hasta
+        '
+        Me.Hasta.HeaderText = "Hasta"
+        Me.Hasta.Name = "Hasta"
         '
         'ReportePrecios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1292, 873)
-        Me.Controls.Add(Me.DataGridView2)
+        Me.ClientSize = New System.Drawing.Size(1292, 865)
+        Me.Controls.Add(Me.GridView1)
         Me.Controls.Add(Me.FechaHasta)
         Me.Controls.Add(Me.FechaDesde)
         Me.Controls.Add(Me.GroupBox1)
@@ -124,7 +186,7 @@ Partial Class ReportePrecios
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.ArticulosGridView, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -136,5 +198,15 @@ Partial Class ReportePrecios
     Friend WithEvents ArticulosGridView As System.Windows.Forms.DataGridView
     Friend WithEvents FechaDesde As DateTimePicker
     Friend WithEvents FechaHasta As DateTimePicker
-    Friend WithEvents DataGridView2 As DataGridView
+    Friend WithEvents GridView1 As DataGridView
+    Friend WithEvents Codigo As DataGridViewTextBoxColumn
+    Friend WithEvents Descripcion As DataGridViewTextBoxColumn
+    Friend WithEvents Marca As DataGridViewTextBoxColumn
+    Friend WithEvents UnidadMedida As DataGridViewTextBoxColumn
+    Friend WithEvents Precio_Inicial As DataGridViewTextBoxColumn
+    Friend WithEvents Precio_Final As DataGridViewTextBoxColumn
+    Friend WithEvents Cantidad_Precios As DataGridViewTextBoxColumn
+    Friend WithEvents Aumento As DataGridViewTextBoxColumn
+    Friend WithEvents Desde As DataGridViewTextBoxColumn
+    Friend WithEvents Hasta As DataGridViewTextBoxColumn
 End Class

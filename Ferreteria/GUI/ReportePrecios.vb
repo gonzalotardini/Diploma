@@ -236,10 +236,12 @@ Public Class ReportePrecios
 
     Private Sub ArticulosGridView_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles ArticulosGridView.CellDoubleClick
         Dim _Articulo As New Articulo
-        Dim _ReporteDao As New ReporteDAO
+        Dim _reporteDetalle As ReportePreciosDetalle
+        Dim _ReporteBll As New GestorReporte
 
         Dim _fecha_Desde As Date
         Dim _fecha_hasta As Date
+        Dim Fila = GridView1.Rows.Count
 
         _fecha_Desde = FechaDesde.Value
         _fecha_hasta = FechaHasta.Value
@@ -248,10 +250,28 @@ Public Class ReportePrecios
         Try
 
             _Articulo.CodigoArticulo = ArticulosGridView.CurrentRow.Cells(1).Value
-            _ReporteDao.BuscarPrecios(_Articulo, _fecha_Desde, _fecha_hasta)
+            '_ReporteDao.BuscarPrecios(_Articulo, _fecha_Desde, _fecha_hasta)
+            _reporteDetalle = _ReporteBll.ValidarFechas(_Articulo, _fecha_Desde, _fecha_hasta)
+
+            GridView1.Rows.Add()
+            GridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
+            Fila = GridView1.Rows.Count
+
+            GridView1.Rows(Fila - 1).Cells(0).Value = _reporteDetalle.Cod_Articulo
+            GridView1.Rows(Fila - 1).Cells(1).Value = _reporteDetalle.Descripcion
+            GridView1.Rows(Fila - 1).Cells(2).Value = _reporteDetalle.Marca1
+            GridView1.Rows(Fila - 1).Cells(3).Value = _reporteDetalle.SubUnidad
+            GridView1.Rows(Fila - 1).Cells(4).Value = _reporteDetalle.PrecioInicial
+            GridView1.Rows(Fila - 1).Cells(5).Value = _reporteDetalle.PrecioFinal
+            GridView1.Rows(Fila - 1).Cells(6).Value = _reporteDetalle.CantidadPrecios
+            GridView1.Rows(Fila - 1).Cells(7).Value = "%" & _reporteDetalle.PorcentajeAumento
+            GridView1.Rows(Fila - 1).Cells(8).Value = _reporteDetalle.Fecha_Desde.ToString("dd/MM/yyyy")
+            GridView1.Rows(Fila - 1).Cells(9).Value = _reporteDetalle.Fecha_Hasta.ToString("dd/MM/yyyy")
 
         Catch ex As Exception
-
+            Dim el As New ErrorLogger
+            MsgBox(ex.Message, MsgBoxStyle.Critical, "ERROR")
+            el.WriteToErrorLog(ex.Message, ex.StackTrace, "Error")
         End Try
 
 

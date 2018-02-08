@@ -5,7 +5,7 @@ Imports BIZ
 Public Class ReporteDAO
     Inherits DatosBase
 
-    Public Function BuscarPrecios(ByVal articulo As Articulo, ByVal _fecha_desde As Date, ByVal _fecha_hasta As Date) As DataSet
+    Public Function BuscarPrecios(ByVal articulo As Articulo, ByVal _fecha_desde As Date, ByVal _fecha_hasta As Date) As DataTable
         Dim _Comando As New SqlCommand
         Dim _DataSet As New DataSet
         Dim _Consulta As String
@@ -17,7 +17,7 @@ Public Class ReporteDAO
 
         Try
             _Consulta = "Select id_Movimiento as ID, Mo.Cod_Articulo as Codigo, A.Cod_Articulo_Proveedor AS 'CodigoBarras', A.Descripcion, M.Descripcion as 'Marca', SU.Descripcion as 'Sub Unidad', Mo.Precio, SC.Descripcion 'Sub Categoria', C.Descripcion as 'Categoria', Mo.Fecha from MovimientoPrecios as Mo, Articulo as A, Marca as M, Unidad_Medida as U, SubUnidad_Medida as SU, Categoria as C, SubCategoria as SC Where U.Cod_Unidad_Medida = A.Cod_Unidad_Medida And SU.Cod_SubUnidad_Medida = A.Cod_SubUnidad_Medida and M.Cod_Marca=A.Cod_Marca and C.Cod_Categoria=A.Cod_Categoria"
-            _Consulta += "  and SC.Cod_SubCategoria=A.Cod_SubCategoria and Mo.Cod_Articulo=A.Cod_Articulo and  Mo.Cod_Articulo =" & articulo.CodigoArticulo & " and  Fecha between (Cast('" + Fecha_Desde + " 00:00:00' as datetime)) and (Cast('" + Fecha_Hasta + " 23:59:59' as datetime))  ORDER BY Mo.Fecha DESC"
+            _Consulta += "  and SC.Cod_SubCategoria=A.Cod_SubCategoria and Mo.Cod_Articulo=A.Cod_Articulo and  Mo.Cod_Articulo =" & articulo.CodigoArticulo & " and  Fecha between (Cast('" + Fecha_Desde + " 00:00:00' as datetime)) and (Cast('" + Fecha_Hasta + " 23:59:59' as datetime))  ORDER BY Mo.Fecha ASC"
 
 
             Me.Conexion.Open()
@@ -27,12 +27,16 @@ Public Class ReporteDAO
 
             _Adapter.Fill(_DataSet)
 
+            If _DataSet.Tables(0).Rows.Count = 0 Then
+                Throw New Exception("No existes precios historicos del articulo")
+            End If
 
-            Return _DataSet
+
+            Return _DataSet.Tables(0)
 
         Catch ex As Exception
 
-            MsgBox(ex.Message)
+            Throw New Exception(ex.Message)
             Return Nothing
 
 
