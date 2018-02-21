@@ -110,10 +110,10 @@ Partial Class VentasForm
         'VentasLabel
         '
         Me.VentasLabel.AutoSize = True
-        Me.VentasLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.VentasLabel.Font = New System.Drawing.Font("Segoe UI", 36.0!, System.Drawing.FontStyle.Bold)
         Me.VentasLabel.Location = New System.Drawing.Point(280, 18)
         Me.VentasLabel.Name = "VentasLabel"
-        Me.VentasLabel.Size = New System.Drawing.Size(222, 55)
+        Me.VentasLabel.Size = New System.Drawing.Size(210, 65)
         Me.VentasLabel.TabIndex = 11
         Me.VentasLabel.Text = "VENTAS"
         '

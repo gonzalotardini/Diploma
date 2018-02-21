@@ -235,10 +235,10 @@ Partial Class ClienteForm
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Calibri", 39.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Font = New System.Drawing.Font("Segoe UI", 36.0!, System.Drawing.FontStyle.Bold)
         Me.Label7.Location = New System.Drawing.Point(321, 27)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(229, 64)
+        Me.Label7.Size = New System.Drawing.Size(243, 65)
         Me.Label7.TabIndex = 20
         Me.Label7.Text = "CLIENTES"
         '
@@ -285,6 +285,7 @@ Partial Class ClienteForm
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.AgregarClienteButton)
         Me.Controls.Add(Me.ClienteGridView)
+        Me.DoubleBuffered = True
         Me.Name = "ClienteForm"
         Me.Text = "CLIENTES"
         CType(Me.ClienteGridView, System.ComponentModel.ISupportInitialize).EndInit()

@@ -108,6 +108,23 @@ Public Class ArticuloFacade
 
     End Function
 
+    Public Sub ModificarArticuloFacade(articulo As Articulo, fecha As Date)
+
+        Dim ArticuloDao As New ArticuloDAO
+        Dim ModificacionesPreciosDao As New ModificacionesPreciosDAO
+
+        Try
+
+            ArticuloDao.CargarArticulo(articulo) 'Cargo el artículo en la tabla artículos
+            ModificacionesPreciosDao.MovimientoPrecios(articulo, fecha) 'Cargo el precio histórico en la tabla de precios modificados
+
+
+        Catch ex As Exception
+
+            Throw New Exception(ex.Message)
+
+        End Try
+    End Sub
 
     Public Sub ActualizarPrecioFacade(ByVal Articulo As Articulo)
 

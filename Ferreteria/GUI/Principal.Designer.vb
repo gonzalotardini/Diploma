@@ -52,6 +52,11 @@ Partial Class Principal
         Me.IntegridadButton = New DevComponents.DotNetBar.ButtonX()
         Me.ContraseñaButton = New DevComponents.DotNetBar.ButtonX()
         Me.LabelX1 = New DevComponents.DotNetBar.LabelX()
+        Me.VentasDiariasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.VentasSemanalesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.VentasMensualesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ArticulosMasVendidosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ClientesMasGastadoresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -127,7 +132,7 @@ Partial Class Principal
         'ReportesToolStripMenuItem
         '
         Me.ReportesToolStripMenuItem.AutoSize = False
-        Me.ReportesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PreciosToolStripMenuItem1})
+        Me.ReportesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PreciosToolStripMenuItem1, Me.VentasDiariasToolStripMenuItem, Me.VentasSemanalesToolStripMenuItem, Me.VentasMensualesToolStripMenuItem, Me.ArticulosMasVendidosToolStripMenuItem, Me.ClientesMasGastadoresToolStripMenuItem})
         Me.ReportesToolStripMenuItem.Enabled = False
         Me.ReportesToolStripMenuItem.Name = "ReportesToolStripMenuItem"
         Me.ReportesToolStripMenuItem.Size = New System.Drawing.Size(94, 25)
@@ -136,7 +141,7 @@ Partial Class Principal
         'PreciosToolStripMenuItem1
         '
         Me.PreciosToolStripMenuItem1.Name = "PreciosToolStripMenuItem1"
-        Me.PreciosToolStripMenuItem1.Size = New System.Drawing.Size(110, 22)
+        Me.PreciosToolStripMenuItem1.Size = New System.Drawing.Size(198, 22)
         Me.PreciosToolStripMenuItem1.Text = "Precios"
         '
         'BitacoraToolStripMenuItem
@@ -170,7 +175,7 @@ Partial Class Principal
         '
         Me.AdministrarToolStripMenuItem.Enabled = False
         Me.AdministrarToolStripMenuItem.Name = "AdministrarToolStripMenuItem"
-        Me.AdministrarToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.AdministrarToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
         Me.AdministrarToolStripMenuItem.Text = "Administrar"
         '
         'LogOutToolStripMenuItem
@@ -331,6 +336,36 @@ Partial Class Principal
         Me.LabelX1.Text = "LabelX1"
         Me.LabelX1.TextAlignment = System.Drawing.StringAlignment.Center
         '
+        'VentasDiariasToolStripMenuItem
+        '
+        Me.VentasDiariasToolStripMenuItem.Name = "VentasDiariasToolStripMenuItem"
+        Me.VentasDiariasToolStripMenuItem.Size = New System.Drawing.Size(198, 22)
+        Me.VentasDiariasToolStripMenuItem.Text = "Ventas Diarias"
+        '
+        'VentasSemanalesToolStripMenuItem
+        '
+        Me.VentasSemanalesToolStripMenuItem.Name = "VentasSemanalesToolStripMenuItem"
+        Me.VentasSemanalesToolStripMenuItem.Size = New System.Drawing.Size(198, 22)
+        Me.VentasSemanalesToolStripMenuItem.Text = "Ventas Semanales"
+        '
+        'VentasMensualesToolStripMenuItem
+        '
+        Me.VentasMensualesToolStripMenuItem.Name = "VentasMensualesToolStripMenuItem"
+        Me.VentasMensualesToolStripMenuItem.Size = New System.Drawing.Size(198, 22)
+        Me.VentasMensualesToolStripMenuItem.Text = "Ventas Mensuales"
+        '
+        'ArticulosMasVendidosToolStripMenuItem
+        '
+        Me.ArticulosMasVendidosToolStripMenuItem.Name = "ArticulosMasVendidosToolStripMenuItem"
+        Me.ArticulosMasVendidosToolStripMenuItem.Size = New System.Drawing.Size(198, 22)
+        Me.ArticulosMasVendidosToolStripMenuItem.Text = "Articulos mas vendidos"
+        '
+        'ClientesMasGastadoresToolStripMenuItem
+        '
+        Me.ClientesMasGastadoresToolStripMenuItem.Name = "ClientesMasGastadoresToolStripMenuItem"
+        Me.ClientesMasGastadoresToolStripMenuItem.Size = New System.Drawing.Size(198, 22)
+        Me.ClientesMasGastadoresToolStripMenuItem.Text = "Clientes mas gastadores"
+        '
         'Principal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -388,4 +423,9 @@ Partial Class Principal
     Friend WithEvents IntegridadButton As DevComponents.DotNetBar.ButtonX
     Friend WithEvents ContraseñaButton As DevComponents.DotNetBar.ButtonX
     Friend WithEvents LabelX1 As DevComponents.DotNetBar.LabelX
+    Friend WithEvents VentasDiariasToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents VentasSemanalesToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents VentasMensualesToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ArticulosMasVendidosToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ClientesMasGastadoresToolStripMenuItem As ToolStripMenuItem
 End Class

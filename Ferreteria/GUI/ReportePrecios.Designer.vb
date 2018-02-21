@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class ReportePrecios
     Inherits DevComponents.DotNetBar.Metro.MetroForm
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class ReportePrecios
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.RadioButtonDESCRIPCION = New System.Windows.Forms.RadioButton()
@@ -40,6 +40,9 @@ Partial Class ReportePrecios
         Me.Aumento = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Desde = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Hasta = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ButtonX1 = New DevComponents.DotNetBar.ButtonX()
+        Me.ButtonX3 = New DevComponents.DotNetBar.ButtonX()
+        Me.ButtonX2 = New DevComponents.DotNetBar.ButtonX()
         Me.GroupBox1.SuspendLayout()
         CType(Me.ArticulosGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -88,6 +91,7 @@ Partial Class ReportePrecios
         '
         'ArticulosGridView
         '
+        Me.ArticulosGridView.BackgroundColor = System.Drawing.SystemColors.Window
         Me.ArticulosGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.ArticulosGridView.Location = New System.Drawing.Point(37, 494)
         Me.ArticulosGridView.Name = "ArticulosGridView"
@@ -169,11 +173,49 @@ Partial Class ReportePrecios
         Me.Hasta.HeaderText = "Hasta"
         Me.Hasta.Name = "Hasta"
         '
+        'ButtonX1
+        '
+        Me.ButtonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.ButtonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
+        Me.ButtonX1.Image = Global.GUI.My.Resources.Resources.quitar
+        Me.ButtonX1.Location = New System.Drawing.Point(1107, 71)
+        Me.ButtonX1.Name = "ButtonX1"
+        Me.ButtonX1.Size = New System.Drawing.Size(107, 47)
+        Me.ButtonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.ButtonX1.TabIndex = 38
+        Me.ButtonX1.Text = "ButtonX1"
+        '
+        'ButtonX3
+        '
+        Me.ButtonX3.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.ButtonX3.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
+        Me.ButtonX3.Image = Global.GUI.My.Resources.Resources.Imprimir
+        Me.ButtonX3.Location = New System.Drawing.Point(1107, 137)
+        Me.ButtonX3.Name = "ButtonX3"
+        Me.ButtonX3.Size = New System.Drawing.Size(107, 43)
+        Me.ButtonX3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.ButtonX3.TabIndex = 41
+        Me.ButtonX3.Text = "ButtonX3"
+        '
+        'ButtonX2
+        '
+        Me.ButtonX2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.ButtonX2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
+        Me.ButtonX2.Location = New System.Drawing.Point(1107, 346)
+        Me.ButtonX2.Name = "ButtonX2"
+        Me.ButtonX2.Size = New System.Drawing.Size(100, 34)
+        Me.ButtonX2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.ButtonX2.TabIndex = 42
+        Me.ButtonX2.Text = "ButtonX2"
+        '
         'ReportePrecios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1292, 865)
+        Me.Controls.Add(Me.ButtonX2)
+        Me.Controls.Add(Me.ButtonX3)
+        Me.Controls.Add(Me.ButtonX1)
         Me.Controls.Add(Me.GridView1)
         Me.Controls.Add(Me.FechaHasta)
         Me.Controls.Add(Me.FechaDesde)
@@ -209,4 +251,7 @@ Partial Class ReportePrecios
     Friend WithEvents Aumento As DataGridViewTextBoxColumn
     Friend WithEvents Desde As DataGridViewTextBoxColumn
     Friend WithEvents Hasta As DataGridViewTextBoxColumn
+    Friend WithEvents ButtonX1 As DevComponents.DotNetBar.ButtonX
+    Friend WithEvents ButtonX3 As DevComponents.DotNetBar.ButtonX
+    Friend WithEvents ButtonX2 As DevComponents.DotNetBar.ButtonX
 End Class

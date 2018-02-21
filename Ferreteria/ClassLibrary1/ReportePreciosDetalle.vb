@@ -1,7 +1,7 @@
 ﻿Public Class ReportePreciosDetalle
     Inherits Articulo
 
-
+    Private _Cod_Reporte As Integer
     Private _Cod_Articulo As Integer
     Private _PorcentajeAumento As Decimal
     Private _PrecioInicial As Decimal
@@ -13,7 +13,14 @@
     Private _SubUnidad As String
 
 
-
+    Public Property Cod_Reporte As Integer
+        Get
+            Return _Cod_Reporte
+        End Get
+        Set(ByVal value As Integer)
+            _Cod_Reporte = value
+        End Set
+    End Property
 
     Public Property Cod_Articulo As Integer
         Get

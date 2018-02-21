@@ -3,6 +3,8 @@
 
     Protected _Fecha As Date
     Protected _Tipo As String
+    Protected _Usuario As String
+    Protected _Cod_Reporte As Integer
 
 
     Public Property Fecha As Date
@@ -24,8 +26,23 @@
         End Set
     End Property
 
+    Public Property Usuario As String
+        Get
+            Return _Usuario
+        End Get
+        Set(value As String)
+            _Usuario = value
+        End Set
+    End Property
 
-
+    Public Property Cod_Reporte As Integer
+        Get
+            Return _Cod_Reporte
+        End Get
+        Set(value As Integer)
+            _Cod_Reporte = value
+        End Set
+    End Property
 
 
 

@@ -195,10 +195,10 @@ Partial Class NuevoPresupuestoForm
         'TotalLabel
         '
         Me.TotalLabel.AutoSize = True
-        Me.TotalLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TotalLabel.Location = New System.Drawing.Point(971, 389)
+        Me.TotalLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TotalLabel.Location = New System.Drawing.Point(972, 377)
         Me.TotalLabel.Name = "TotalLabel"
-        Me.TotalLabel.Size = New System.Drawing.Size(0, 39)
+        Me.TotalLabel.Size = New System.Drawing.Size(0, 42)
         Me.TotalLabel.TabIndex = 13
         '
         'LabelFecha

@@ -1741,3 +1741,98 @@ StackTrace:    at Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(St
    at GUI.ReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ReportePrecios.vb:line 267
 Fecha/Hora: 08/02/2018 11:08:13
 ===========================================================================================
+Titulo: Error
+Mensaje: Error, cantidad debe ser numerico
+StackTrace:    at GUI.NuevaVentaForm.ArticuloGridView1_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevaVentaForm.vb:line 305
+Fecha/Hora: 08/02/2018 12:29:54
+===========================================================================================
+Titulo: Error
+Mensaje: No existes precios historicos del articulo
+StackTrace:    at BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _fecha_Desde, DateTime _fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 28
+   at GUI.ReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ReportePrecios.vb:line 254
+Fecha/Hora: 15/02/2018 11:21:23
+===========================================================================================
+Titulo: Error
+Mensaje: No existes precios historicos del articulo
+StackTrace:    at BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _fecha_Desde, DateTime _fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 28
+   at GUI.ReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ReportePrecios.vb:line 254
+Fecha/Hora: 15/02/2018 11:21:36
+===========================================================================================
+Titulo: Error
+Mensaje: No existes precios historicos del articulo
+StackTrace:    at BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _fecha_Desde, DateTime _fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 28
+   at GUI.ReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ReportePrecios.vb:line 254
+Fecha/Hora: 15/02/2018 11:21:38
+===========================================================================================
+Titulo: Error
+Mensaje: No existes precios historicos del articulo
+StackTrace:    at BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _fecha_Desde, DateTime _fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 28
+   at GUI.ReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ReportePrecios.vb:line 254
+Fecha/Hora: 15/02/2018 11:21:50
+===========================================================================================
+Titulo: Error
+Mensaje: No existes precios historicos del articulo
+StackTrace:    at BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _fecha_Desde, DateTime _fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 28
+   at GUI.ReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ReportePrecios.vb:line 254
+Fecha/Hora: 15/02/2018 11:21:53
+===========================================================================================
+Titulo: Error
+Mensaje: No existes precios historicos del articulo
+StackTrace:    at BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _fecha_Desde, DateTime _fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 28
+   at GUI.ReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ReportePrecios.vb:line 254
+Fecha/Hora: 15/02/2018 11:21:59
+===========================================================================================
+Titulo: Error
+Mensaje: No existes precios historicos del articulo
+StackTrace:    at BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _fecha_Desde, DateTime _fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 29
+   at GUI.ReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ReportePrecios.vb:line 254
+Fecha/Hora: 15/02/2018 14:17:07
+===========================================================================================
+Titulo: Error
+Mensaje: Arithmetic operation resulted in an overflow.
+StackTrace:    at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)
+   at GUI.ReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ReportePrecios.vb:line 252
+Fecha/Hora: 15/02/2018 14:19:29
+===========================================================================================
+Titulo: Error
+Mensaje: Arithmetic operation resulted in an overflow.
+StackTrace:    at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)
+   at GUI.ReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ReportePrecios.vb:line 252
+Fecha/Hora: 15/02/2018 14:19:40
+===========================================================================================
+Titulo: Error
+Mensaje: Arithmetic operation resulted in an overflow.
+StackTrace:    at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)
+   at GUI.ReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ReportePrecios.vb:line 252
+Fecha/Hora: 15/02/2018 14:20:39
+===========================================================================================
+Titulo: Error
+Mensaje: No existes precios historicos del articulo
+StackTrace:    at BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _fecha_Desde, DateTime _fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 29
+   at GUI.ReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e)
+Fecha/Hora: 15/02/2018 14:21:22
+===========================================================================================
+Titulo: Error
+Mensaje: No existes precios historicos del articulo
+StackTrace:    at BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _fecha_Desde, DateTime _fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 29
+   at GUI.ReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ReportePrecios.vb:line 254
+Fecha/Hora: 19/02/2018 10:59:32
+===========================================================================================
+Titulo: Error
+Mensaje: No existes precios historicos del articulo
+StackTrace:    at BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _fecha_Desde, DateTime _fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 29
+   at GUI.ReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e)
+Fecha/Hora: 19/02/2018 11:00:51
+===========================================================================================
+Titulo: Error
+Mensaje: Error al cargar Reporte The connection was not closed. The connection's current state is open.
+StackTrace:    at BLL.GestorReporte.ValidarReporteAumentoDePrecios(Reporte reporteCabecera, List`1 listaDetalles, String culturaGlobal) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 80
+   at GUI.ReportePrecios.ButtonX2_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ReportePrecios.vb:line 314
+Fecha/Hora: 19/02/2018 11:07:26
+===========================================================================================
+Titulo: Error
+Mensaje: No existes precios historicos del articulo
+StackTrace:    at BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _fecha_Desde, DateTime _fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 29
+   at GUI.ReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ReportePrecios.vb:line 254
+Fecha/Hora: 19/02/2018 11:37:48
+===========================================================================================

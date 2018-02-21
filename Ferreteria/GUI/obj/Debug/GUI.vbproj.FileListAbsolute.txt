@@ -472,3 +472,5 @@ C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\obj\Debug\GUI.vbproj.CoreC
 C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\obj\Debug\GUI.exe
 C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\obj\Debug\GUI.xml
 C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\obj\Debug\GUI.pdb
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\bin\Debug\DevComponents.DotNetBar2.dll
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\bin\Debug\DevComponents.DotNetBar2.xml

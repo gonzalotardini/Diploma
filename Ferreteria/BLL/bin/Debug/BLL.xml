@@ -22,7 +22,7 @@ BLL
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
-<member name="M:BLL.GestorArticulo.ValidarDatosArticulo(BIZ.Articulo,System.DateTime)">
+<member name="M:BLL.GestorArticulo.ValidarDatosArticulo(BIZ.Articulo,System.DateTime,System.String)">
  <summary>
  Valida que los datos ingresados del artículo cumplan con las validaciones de los casos de uso
  </summary>

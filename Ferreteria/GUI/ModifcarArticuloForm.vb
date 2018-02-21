@@ -214,12 +214,6 @@ Public Class ModifcarArticuloForm
         ComboBoxSubCategoria.DisplayMember = "Descripcion"
 
 
-
-
-
-
-
-
         ComboBoxSubCategoria.SelectedValue = Articulo.SubCategoria
 
 

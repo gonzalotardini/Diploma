@@ -49,5 +49,115 @@ Public Class ReporteDAO
 
     End Function
 
+    Public Sub GuardarReportePreciosDetalle(item As ReportePreciosDetalle)
+
+        Dim _Consulta As String
+        Dim _Comando As New SqlCommand
+
+
+        _Consulta = "insert into ReportePreciosDetalle (Cod_Reporte, Cod_Articulo, CantidadPrecios, PorcentajeAumento, Precio_Inicial, Precio_Final, Fecha_Desde, Fecha_Hasta) Values (@Cod_Reporte, @Cod_Articulo, @CantidadPrecios, @PorcentajeAumento, @Precio_Inicial, @Precio_Final, @Fecha_Desde, @Fecha_Hasta)"
+
+        Try
+
+            Me.Conexion.Open()
+
+            _Comando = New SqlCommand(_Consulta, Me.Conexion)
+
+            _Comando.Parameters.AddWithValue("@Cod_Reporte", item.Cod_Reporte)
+            _Comando.Parameters.AddWithValue("@Cod_Articulo", item.Cod_Articulo)
+            _Comando.Parameters.AddWithValue("@CantidadPrecios", item.CantidadPrecios)
+            _Comando.Parameters.AddWithValue("@PorcentajeAumento", item.PorcentajeAumento)
+            _Comando.Parameters.AddWithValue("@Precio_Inicial", item.PrecioInicial)
+            _Comando.Parameters.AddWithValue("@Precio_Final", item.PrecioFinal)
+            _Comando.Parameters.AddWithValue("@Fecha_Desde", item.Fecha_Desde)
+            _Comando.Parameters.AddWithValue("@Fecha_Hasta", item.Fecha_Hasta)
+
+            '_Comando.Parameters.AddWithValue("@Precio", PresupuestoDetalle.Precio)
+            '_Comando.Parameters.AddWithValue("@Importe", PresupuestoDetalle.Importe)
+            '_Comando.Parameters.AddWithValue("@SubTotal", PresupuestoDetalle.SubTotal)
+            '_Comando.Parameters.AddWithValue("@Iva", PresupuestoDetalle.Iva)
+
+
+            _Comando.ExecuteNonQuery()
+
+
+        Catch ex As Exception
+
+            Throw New Exception("Error al cargar el artículo " & ex.Message)
+
+
+        Finally
+            Me.Conexion.Close()
+        End Try
+    End Sub
+
+    Public Sub GuardarReportePreciosCabecera(ReporteCabecera As Reporte)
+        Dim _Consulta As String
+        Dim _Comando As New SqlCommand
+
+
+        _Consulta = "insert into ReporteAumentoDePrecios (Fecha, Usuario) Values (@Fecha, @Usuario)"
+
+        Try
+
+            Me.Conexion.Open()
+
+            _Comando = New SqlCommand(_Consulta, Me.Conexion)
+
+            '_Comando.Parameters.AddWithValue("@Cod_Reporte", ReporteCabecera.Cod_Reporte)
+            _Comando.Parameters.AddWithValue("@Fecha", ReporteCabecera.Fecha)
+            _Comando.Parameters.AddWithValue("@Usuario", ReporteCabecera.Usuario)
+
+            _Comando.ExecuteNonQuery()
+
+
+        Catch ex As Exception
+
+            Throw New Exception("Error al cargar Reporte " & ex.Message)
+
+
+        Finally
+            Me.Conexion.Close()
+        End Try
+
+    End Sub
+
+
+
+    Public Function ObtenerCodUltimoReportePrecios() As Integer
+
+
+
+        Dim _Consulta As String
+        Dim _Comando As New SqlCommand
+        Dim _Codigo As Integer
+
+
+
+        Try
+
+
+            Me.Conexion.Open()
+
+            _Consulta = "select top 1 Cod_Reporte from ReporteAumentoDePrecios order by Cod_Reporte desc "
+
+            _Comando = New SqlCommand(_Consulta, Me.Conexion)
+
+            _Codigo = (_Comando.ExecuteScalar) 'ejecuto scalar porque quiero obtener el valor, uso executenonqueri cuando quiero hacer un insert
+
+
+            Return _Codigo
+
+
+        Catch ex As Exception
+            Throw New Exception(ex.Message)
+        Finally
+            Me.Conexion.Close()
+
+        End Try
+
+
+
+    End Function
 
 End Class

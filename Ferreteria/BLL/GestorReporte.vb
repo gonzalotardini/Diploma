@@ -1,5 +1,6 @@
 ﻿Imports BIZ
 Imports DAL
+Imports GUI
 
 Public Class GestorReporte
 
@@ -54,7 +55,33 @@ Public Class GestorReporte
     End Function
 
 
+    Public Sub ValidarReporteAumentoDePrecios(reporteCabecera As Reporte, listaDetalles As List(Of ReportePreciosDetalle), culturaGlobal As String)
+        Dim ReporteFacade = New ReporteFacade
 
+        Try
+            If listaDetalles.Count = 0 Then
+                Select Case culturaGlobal
+                    Case "ESPAÑOL"
+                        Throw New Exception("Error, debe agregar articulos al reporte")
+
+                    Case "ENGLISH"
+                        Throw New Exception("Error, you must add products to the report")
+                    Case Else
+                End Select
+            End If
+
+            reporteCabecera.Fecha = Now
+            reporteCabecera.Tipo = "AUMENTO DE PRECIOS"
+
+            ReporteFacade.GuardarReportePreciosFacade(reporteCabecera, listaDetalles, culturaGlobal)
+
+
+        Catch ex As Exception
+            Throw New Exception(ex.Message)
+        End Try
+
+
+    End Sub
 
 
 End Class

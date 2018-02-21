@@ -51,6 +51,48 @@ Public Class ArticuloDAO
 
     End Sub
 
+    ''' <summary>
+    ''' Modifica un artículo en la base de datos
+    ''' </summary>
+    ''' <param name="Articulo"></param>
+    Public Sub ModificarArticulo(ByVal Articulo As Articulo)
+
+        Dim _Consulta As String
+        Dim _Comando As New SqlCommand
+        'Dim Dal As New DAL.DatosBase
+        _Consulta = "Update Articulo set (Cod_Articulo_Proveedor,Descripcion,Cod_Unidad_Medida,Cod_SubUnidad_Medida,Precio,Cod_Categoria,Cod_SubCategoria,Cod_Marca) values (@Cod_Articulo_Proveedor,@Descripcion,@Cod_Unidad_Medida, @Cod_SubUnidad_Medida, @Precio,@Cod_Categoria, @Cod_SubCategoria, @Cod_Marca)"
+
+        Try
+
+            Me.Conexion.Open()
+
+            _Comando = New SqlCommand(_Consulta, Me.Conexion)
+
+            _Comando.Parameters.AddWithValue("@Cod_Articulo_Proveedor", Articulo.CodigoDeBarras)
+            _Comando.Parameters.AddWithValue("@Descripcion", Articulo.Descripcion)
+            _Comando.Parameters.AddWithValue("@Cod_Unidad_Medida", Articulo.UnidadDeMedida)
+            _Comando.Parameters.AddWithValue("@Cod_SubUnidad_Medida", Articulo.SubUnidadDeMedida)
+            _Comando.Parameters.AddWithValue("@Precio", Articulo.Precio)
+            _Comando.Parameters.AddWithValue("@Cod_Categoria", Articulo.Categoria)
+            _Comando.Parameters.AddWithValue("@Cod_SubCategoria", Articulo.SubCategoria)
+            _Comando.Parameters.AddWithValue("@Cod_Marca", Articulo.Marca)
+
+
+            _Comando.ExecuteNonQuery()
+
+
+        Catch ex As Exception
+
+            Throw New Exception("Error al cargar el artículo " & ex.Message)
+
+
+        Finally
+            Me.Conexion.Close()
+        End Try
+
+
+    End Sub
+
 
     ''' <summary>
     ''' Obtiene los primeros 50 artículos que se encuentran en la base de datos

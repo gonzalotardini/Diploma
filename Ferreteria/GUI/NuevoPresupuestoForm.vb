@@ -230,7 +230,7 @@ Public Class NuevoPresupuestoForm
 
     Private Sub FinalizarButton_Click(sender As Object, e As EventArgs) Handles FinalizarButton.Click
         Dim _GestorPresupuesto As New GestorPresupuesto
-        Dim _PresupuestoDAO As New PresupuestoDAO
+        '  Dim _PresupuestoDAO As New PresupuestoDAO
         Dim _PresupuestoCabecera As New PresupuestoCabecera
         Dim _ListaDetalles As New List(Of PresupuestoDetalle)
 

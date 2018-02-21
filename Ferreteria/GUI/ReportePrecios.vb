@@ -15,10 +15,7 @@ Public Class ReportePrecios
 
         Dim _ArticuloDAO As New ArticuloDAO
 
-
-
-
-        ArticulosGridView.DataSource = _ArticuloDAO.ObtenerPreciosHistoricostop50.Tables(0)
+        ArticulosGridView.DataSource = _ArticuloDAO.ObtenerPrimerosArticulos.Tables(0)
 
         For Each row As DataGridViewRow In ArticulosGridView.Rows
 
@@ -34,7 +31,7 @@ Public Class ReportePrecios
         ArticulosGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
     End Sub
 
-    Private Sub TextBoxBuscar_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBoxBuscar.KeyDown
+   Private Sub TextBoxBuscar_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBoxBuscar.KeyDown
 
 
 
@@ -75,7 +72,7 @@ Public Class ReportePrecios
                         bandera = 1
                     End If
 
-                    Dim CantidadArticulos As Integer
+                    '   Dim CantidadArticulos As Integer
 
                     'CantidadArticulos = DataGridView1.RowCount - 1
                     'Label14.Text = CantidadArticulos
@@ -116,7 +113,7 @@ Public Class ReportePrecios
                     RadioButtonDESCRIPCION.Checked = True
             End Select
 
-            Dim CantidadArticulos As Integer
+            'Dim CantidadArticulos As Integer
 
             'CantidadArticulos = DataGridView1.RowCount - 1
             'Label14.Text = CantidadArticulos
@@ -249,7 +246,7 @@ Public Class ReportePrecios
 
         Try
 
-            _Articulo.CodigoArticulo = ArticulosGridView.CurrentRow.Cells(1).Value
+            _Articulo.CodigoArticulo = ArticulosGridView.CurrentRow.Cells(0).Value
             '_ReporteDao.BuscarPrecios(_Articulo, _fecha_Desde, _fecha_hasta)
             _reporteDetalle = _ReporteBll.ValidarFechas(_Articulo, _fecha_Desde, _fecha_hasta)
 
@@ -275,5 +272,65 @@ Public Class ReportePrecios
         End Try
 
 
+    End Sub
+
+    Private Sub ButtonX1_Click(sender As Object, e As EventArgs) Handles ButtonX1.Click
+        If GridView1.CurrentRow IsNot Nothing Then
+            ' saco del reporte el articulo
+            GridView1.Rows.RemoveAt(GridView1.CurrentRow.Index)
+        End If
+
+
+    End Sub
+
+
+
+    Private Sub ImprimirButton_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub ButtonX2_Click(sender As Object, e As EventArgs) Handles ButtonX2.Click
+
+        Dim listaDetalle As List(Of ReportePreciosDetalle)
+        Dim item As ReportePreciosDetalle
+        Dim GestorReporte As New GestorReporte
+        Dim ReporteCabecera As New Reporte
+        Dim msg As String
+
+        Select Case Principal.CulturaGlobal
+            Case "ESPAÑOL"
+                msg = "¿Seguro desea finalizar el reporte?"
+            Case "ENGLISH"
+                msg = "Do you really want to finish the report?"
+        End Select
+
+        Try
+            If MsgBox(msg, MsgBoxStyle.YesNo, "ATENCIÓN") = MsgBoxResult.Yes Then
+                ReporteCabecera.Usuario = LogIn.Usuario.NombreUsuario
+                listaDetalle = New List(Of ReportePreciosDetalle)
+
+                For Each i As DataGridViewRow In GridView1.Rows
+
+                    item = New ReportePreciosDetalle
+                    item.Cod_Articulo = i.Cells(0).Value
+                    item.PrecioInicial = i.Cells(4).Value
+                    item.PrecioFinal = i.Cells(5).Value
+                    item.CantidadPrecios = i.Cells(6).Value
+                    item.PorcentajeAumento = Replace(i.Cells(7).Value, "%", "")
+                    item.Fecha_Desde = i.Cells(8).Value
+                    item.Fecha_Hasta = i.Cells(9).Value
+                    listaDetalle.Add(item)
+
+                Next
+
+                GestorReporte.ValidarReporteAumentoDePrecios(ReporteCabecera, listaDetalle, Principal.CulturaGlobal)
+            End If
+        Catch ex As Exception
+
+            Dim el As New ErrorLogger
+            MsgBox(ex.Message, MsgBoxStyle.Critical, "ERROR")
+            el.WriteToErrorLog(ex.Message, ex.StackTrace, "Error")
+
+        End Try
     End Sub
 End Class

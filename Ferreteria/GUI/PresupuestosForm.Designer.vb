@@ -102,10 +102,10 @@ Partial Class PresupuestosForm
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 36.0!, System.Drawing.FontStyle.Bold)
         Me.Label1.Location = New System.Drawing.Point(277, 57)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(431, 55)
+        Me.Label1.Size = New System.Drawing.Size(382, 65)
         Me.Label1.TabIndex = 7
         Me.Label1.Text = "PRESUPUESTOS"
         '

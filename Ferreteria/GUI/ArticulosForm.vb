@@ -22,6 +22,9 @@ Public Class ArticulosForm
 
         Dim GestorArticulo As New GestorArticulo
         Dim Articulo As New Articulo
+        Dim _Tipo As String
+
+        _Tipo = "AGREGAR"
 
         Dim Fecha As Date
 
@@ -113,7 +116,7 @@ Public Class ArticulosForm
             Articulo.Descripcion = (TextBoxDescripcion.Text).ToUpper
 
 
-            GestorArticulo.ValidarDatosArticulo(Articulo, Fecha)
+            GestorArticulo.ValidarDatosArticulo(Articulo, Fecha, _Tipo)
 
             Dim el As New EventLogger
 

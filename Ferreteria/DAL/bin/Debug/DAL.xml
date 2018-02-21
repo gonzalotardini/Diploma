@@ -29,6 +29,12 @@ DAL
  <param name="Articulo"></param>
  <remarks></remarks>
 </member>
+<member name="M:DAL.ArticuloDAO.ModificarArticulo(BIZ.Articulo)">
+ <summary>
+ Modifica un artículo en la base de datos
+ </summary>
+ <param name="Articulo"></param>
+</member>
 <member name="M:DAL.ArticuloDAO.ObtenerPrimerosArticulos">
  <summary>
  Obtiene los primeros 50 artículos que se encuentran en la base de datos

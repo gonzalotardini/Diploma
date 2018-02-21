@@ -59,17 +59,17 @@ Partial Class NuevaVentaForm
         'TotalLabel
         '
         Me.TotalLabel.AutoSize = True
-        Me.TotalLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TotalLabel.Location = New System.Drawing.Point(1028, 387)
+        Me.TotalLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TotalLabel.Location = New System.Drawing.Point(995, 379)
         Me.TotalLabel.Name = "TotalLabel"
-        Me.TotalLabel.Size = New System.Drawing.Size(0, 39)
+        Me.TotalLabel.Size = New System.Drawing.Size(0, 42)
         Me.TotalLabel.TabIndex = 22
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(847, 375)
+        Me.Label3.Location = New System.Drawing.Point(826, 382)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(163, 39)
         Me.Label3.TabIndex = 21

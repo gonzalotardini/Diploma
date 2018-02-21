@@ -97,9 +97,6 @@ Public Class GestorPresupuesto
 
             Dim linea As PdfContentByte
 
-
-
-
             Dim cb As PdfContentByte
 
 

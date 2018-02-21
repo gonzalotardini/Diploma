@@ -240,14 +240,6 @@ Public Class Principal
 
 
             End Select
-
-
-
-
-
-
-
-
         Next
 
         LogOutToolStripMenuItem.Enabled = True

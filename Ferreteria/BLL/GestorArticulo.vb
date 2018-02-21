@@ -13,7 +13,7 @@ Public Class GestorArticulo
     ''' <param name="Fecha"></param>
     ''' <remarks></remarks>
 
-    Public Sub ValidarDatosArticulo(ByVal Articulo As Articulo, ByVal Fecha As Date)
+    Public Sub ValidarDatosArticulo(ByVal Articulo As Articulo, ByVal Fecha As Date, ByVal Tipo As String)
 
         Dim ArticuloFacade As New ArticuloFacade
 
@@ -50,8 +50,13 @@ Public Class GestorArticulo
 
             End If
 
+            Select Case Tipo
+                Case "AGREGAR"
+                    ArticuloFacade.AgregarArticuloFacade(Articulo, Fecha)
+                Case "MODIFICAR"
+                    ArticuloFacade.ModificarArticuloFacade(Articulo, Fecha)
+            End Select
 
-            ArticuloFacade.AgregarArticuloFacade(Articulo, Fecha)
 
 
         Catch ex As Exception
