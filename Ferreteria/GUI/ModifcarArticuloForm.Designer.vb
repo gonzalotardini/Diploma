@@ -30,9 +30,9 @@ Partial Class ModifcarArticuloForm
         Me.CategoriaLabel = New DevComponents.DotNetBar.LabelX()
         Me.SubCategoriaLabel = New DevComponents.DotNetBar.LabelX()
         Me.MarcaLabel = New DevComponents.DotNetBar.LabelX()
-        Me.TextBoxX1 = New DevComponents.DotNetBar.Controls.TextBoxX()
+        Me.TextBoxCodBarras = New DevComponents.DotNetBar.Controls.TextBoxX()
         Me.ModificarButton = New DevComponents.DotNetBar.ButtonX()
-        Me.TextBoxX2 = New DevComponents.DotNetBar.Controls.TextBoxX()
+        Me.TextBoxDescripcion = New DevComponents.DotNetBar.Controls.TextBoxX()
         Me.ComboBoxUnidadDeMedida = New DevComponents.DotNetBar.Controls.ComboBoxEx()
         Me.ComboBoxSubUnidadMedida = New DevComponents.DotNetBar.Controls.ComboBoxEx()
         Me.TextBox3 = New DevComponents.DotNetBar.Controls.TextBoxX()
@@ -148,20 +148,20 @@ Partial Class ModifcarArticuloForm
         Me.MarcaLabel.TabIndex = 7
         Me.MarcaLabel.Text = "MARCA"
         '
-        'TextBoxX1
+        'TextBoxCodBarras
         '
-        Me.TextBoxX1.BackColor = System.Drawing.Color.White
+        Me.TextBoxCodBarras.BackColor = System.Drawing.Color.White
         '
         '
         '
-        Me.TextBoxX1.Border.Class = "TextBoxBorder"
-        Me.TextBoxX1.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.TextBoxX1.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxX1.ForeColor = System.Drawing.Color.Black
-        Me.TextBoxX1.Location = New System.Drawing.Point(122, 61)
-        Me.TextBoxX1.Name = "TextBoxX1"
-        Me.TextBoxX1.Size = New System.Drawing.Size(213, 27)
-        Me.TextBoxX1.TabIndex = 8
+        Me.TextBoxCodBarras.Border.Class = "TextBoxBorder"
+        Me.TextBoxCodBarras.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.TextBoxCodBarras.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBoxCodBarras.ForeColor = System.Drawing.Color.Black
+        Me.TextBoxCodBarras.Location = New System.Drawing.Point(122, 61)
+        Me.TextBoxCodBarras.Name = "TextBoxCodBarras"
+        Me.TextBoxCodBarras.Size = New System.Drawing.Size(213, 27)
+        Me.TextBoxCodBarras.TabIndex = 8
         '
         'ModificarButton
         '
@@ -177,20 +177,20 @@ Partial Class ModifcarArticuloForm
         Me.ModificarButton.Text = "MODIFICAR"
         Me.ModificarButton.TextColor = System.Drawing.Color.White
         '
-        'TextBoxX2
+        'TextBoxDescripcion
         '
-        Me.TextBoxX2.BackColor = System.Drawing.Color.White
+        Me.TextBoxDescripcion.BackColor = System.Drawing.Color.White
         '
         '
         '
-        Me.TextBoxX2.Border.Class = "TextBoxBorder"
-        Me.TextBoxX2.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.TextBoxX2.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxX2.ForeColor = System.Drawing.Color.Black
-        Me.TextBoxX2.Location = New System.Drawing.Point(122, 125)
-        Me.TextBoxX2.Name = "TextBoxX2"
-        Me.TextBoxX2.Size = New System.Drawing.Size(213, 27)
-        Me.TextBoxX2.TabIndex = 17
+        Me.TextBoxDescripcion.Border.Class = "TextBoxBorder"
+        Me.TextBoxDescripcion.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.TextBoxDescripcion.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBoxDescripcion.ForeColor = System.Drawing.Color.Black
+        Me.TextBoxDescripcion.Location = New System.Drawing.Point(122, 125)
+        Me.TextBoxDescripcion.Name = "TextBoxDescripcion"
+        Me.TextBoxDescripcion.Size = New System.Drawing.Size(213, 27)
+        Me.TextBoxDescripcion.TabIndex = 17
         '
         'ComboBoxUnidadDeMedida
         '
@@ -327,9 +327,9 @@ Partial Class ModifcarArticuloForm
         Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.ComboBoxSubUnidadMedida)
         Me.Controls.Add(Me.ComboBoxUnidadDeMedida)
-        Me.Controls.Add(Me.TextBoxX2)
+        Me.Controls.Add(Me.TextBoxDescripcion)
         Me.Controls.Add(Me.ModificarButton)
-        Me.Controls.Add(Me.TextBoxX1)
+        Me.Controls.Add(Me.TextBoxCodBarras)
         Me.Controls.Add(Me.MarcaLabel)
         Me.Controls.Add(Me.SubCategoriaLabel)
         Me.Controls.Add(Me.CategoriaLabel)
@@ -354,9 +354,9 @@ Partial Class ModifcarArticuloForm
     Friend WithEvents CategoriaLabel As DevComponents.DotNetBar.LabelX
     Friend WithEvents SubCategoriaLabel As DevComponents.DotNetBar.LabelX
     Friend WithEvents MarcaLabel As DevComponents.DotNetBar.LabelX
-    Friend WithEvents TextBoxX1 As DevComponents.DotNetBar.Controls.TextBoxX
+    Friend WithEvents TextBoxCodBarras As DevComponents.DotNetBar.Controls.TextBoxX
     Friend WithEvents ModificarButton As DevComponents.DotNetBar.ButtonX
-    Friend WithEvents TextBoxX2 As DevComponents.DotNetBar.Controls.TextBoxX
+    Friend WithEvents TextBoxDescripcion As DevComponents.DotNetBar.Controls.TextBoxX
     Friend WithEvents ComboBoxUnidadDeMedida As DevComponents.DotNetBar.Controls.ComboBoxEx
     Friend WithEvents ComboBoxSubUnidadMedida As DevComponents.DotNetBar.Controls.ComboBoxEx
     Friend WithEvents TextBox3 As DevComponents.DotNetBar.Controls.TextBoxX

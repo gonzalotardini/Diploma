@@ -3188,3 +3188,38 @@ Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
 StackTrace: LogIn Form
 Fecha/Hora: 21/02/2018 17:46:07
 ===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 21/02/2018 20:59:08
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 21/02/2018 21:02:27
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 21/02/2018 21:14:44
+===========================================================================================
+Titulo: Información
+Mensaje: Se modificó correctamente el artículo ABRAZADERA ALAMBRE 13,00 A 18,00 MM
+StackTrace: Articulo Form
+Fecha/Hora: 21/02/2018 21:19:19
+===========================================================================================
+Titulo: Información
+Mensaje: Se modificó correctamente el artículo ABRAZADERA TURRA ALAMBRE 13,00 A 18,00 MM
+StackTrace: Articulo Form
+Fecha/Hora: 21/02/2018 21:20:09
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 21/02/2018 21:22:16
+===========================================================================================
+Titulo: Información
+Mensaje: Se modificó correctamente el artículo ABRAZADERA ALAMBRE 13,00 A 18,00 MM
+StackTrace: Articulo Form
+Fecha/Hora: 21/02/2018 21:22:48
+===========================================================================================

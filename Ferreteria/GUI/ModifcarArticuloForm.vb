@@ -1,6 +1,7 @@
 ﻿Imports BIZ
 Imports DAL
-
+Imports BLL
+Imports SL
 
 Public Class ModifcarArticuloForm
 
@@ -71,32 +72,137 @@ Public Class ModifcarArticuloForm
         End If
 
 
-
-
-
-
-
-
-
         Dim _ArticuloDao As New ArticuloDAO
 
         Articulo = _ArticuloDao.BuscarArticuloPorCodigo(Articulo)
 
 
 
-        TextBoxX1.Text = Articulo.CodigoDeBarras
-        TextBoxX2.Text = Articulo.Descripcion
+        TextBoxCodBarras.Text = Articulo.CodigoDeBarras
+        TextBoxDescripcion.Text = Articulo.Descripcion
         TextBox4.Text = Microsoft.VisualBasic.Right(Articulo.Precio, 2) 'solo los decimales
         TextBox3.Text = Convert.ToInt32(Fix(Articulo.Precio)) ' selecciono solo el número entero, sin decimales
 
     End Sub
 
     Private Sub ModificarButton_Click(sender As Object, e As EventArgs) Handles ModificarButton.Click
+        Dim articuloBll = New GestorArticulo
+        'Dim _articulo = New Articulo
+        Dim Fecha As Date = Now
+        Dim _Tipo As String = "MODIFICAR"
+
+
+        Try
+            'el textbox codigo de barras no puede estar vacio
+            If TextBoxCodBarras.Text = "" Then
+
+                Throw New Exception("Introduzca Codigo de Barras")
+                TextBoxCodBarras.Focus()
+
+            Else
+                Articulo.CodigoDeBarras = Convert.ToInt64(TextBoxCodBarras.Text)
+            End If
+
+
+            If TextBox3.Text = "" Then
+
+                Throw New Exception("Introduzca precio")
+                TextBox3.Focus()
+            Else
+
+                articulo.Precio = Convert.ToDecimal(TextBox3.Text + "," + TextBox4.Text)
+
+            End If
+
+
+            If ComboBoxUnidadDeMedida.SelectedIndex = -1 Then
+                Throw New Exception("Error, Seleccione Unidad de Medida")
+
+            Else
+
+                articulo.UnidadDeMedida = ComboBoxUnidadDeMedida.SelectedValue
+
+            End If
+
+
+
+            If ComboBoxSubUnidadMedida.SelectedIndex = -1 Then
+
+                Throw New Exception("Error, Seleccione Sub-Unidad de Medida")
+
+
+            Else
+                articulo.SubUnidadDeMedida = ComboBoxSubUnidadMedida.SelectedValue
+
+            End If
+
+
+            If ComboBoxCategoria.SelectedIndex = -1 Then
+
+                Throw New Exception("Error, Seleccione Categoría")
+
+            Else
+
+                articulo.Categoria = ComboBoxCategoria.SelectedValue
+
+            End If
+
+
+
+            If ComboBoxSubCategoria.SelectedIndex = -1 Then
+
+                Throw New Exception("Error, Seleccione Sub-Categoría")
+
+            Else
+
+                articulo.SubCategoria = ComboBoxSubCategoria.SelectedValue
+
+            End If
+
+
+            If ComboBoxMarca.SelectedIndex = -1 Then
+
+                Throw New Exception("Error, Seleccione Marca")
+
+            Else
+
+                articulo.Marca = ComboBoxMarca.SelectedValue
+
+            End If
+
+
+            articulo.Descripcion = (TextBoxDescripcion.Text).ToUpper
+            articulo.CodigoArticulo = articulo.CodigoArticulo
+
+            articuloBll.ValidarDatosArticulo(articulo, Fecha, _Tipo)
+
+            Dim el As New EventLogger
+
+            el.WriteToErrorLog("Se modificó correctamente el artículo " & articulo.Descripcion, "Articulo Form", "Información")
+
+            Dim Mensaje = MsgBox("Se modificó correctamente el articulo " & articulo.Descripcion, MsgBoxStyle.Information, "ATENCÓN")
+
+            Me.Hide()
+
+        Catch ex As Exception
+
+            Dim el As New ErrorLogger
+            MsgBox(ex.Message, MsgBoxStyle.Critical, "ERROR")
+            el.WriteToErrorLog(ex.Message, ex.StackTrace, "Error")
+
+
+
+        End Try
+
+
+
+        articulo.Descripcion = (TextBoxDescripcion.Text).ToUpper
+
 
     End Sub
     Public numUnidad As Integer = 0
     Public NumCategoria As Integer = 0
-    Private Sub TextBoxX1_TextChanged(sender As Object, e As EventArgs) Handles TextBoxX1.TextChanged
+    Private Sub TextBoxX1_TextChanged(sender As Object, e As EventArgs) Handles TextBoxCodBarras.TextChanged
 
 
     End Sub
@@ -159,7 +265,7 @@ Public Class ModifcarArticuloForm
 
     End Sub
 
-    Private Sub TextBoxX2_TextChanged(sender As Object, e As EventArgs) Handles TextBoxX2.TextChanged
+    Private Sub TextBoxDescripcion_TextChanged(sender As Object, e As EventArgs) Handles TextBoxDescripcion.TextChanged
         Dim _ArticuloDao As New ArticuloDAO
         Dim _UnidadDeMedidaDao As New UnidadDeMedidaDao
         Dim _CategoriaDao As New CategoriaDAO

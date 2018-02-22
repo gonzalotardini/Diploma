@@ -1836,3 +1836,15 @@ StackTrace:    at BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _
    at GUI.ReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ReportePrecios.vb:line 254
 Fecha/Hora: 19/02/2018 11:37:48
 ===========================================================================================
+Titulo: Error
+Mensaje: Conversion from string " where Cod_Articulo=@Cod_Articul" to type 'Double' is not valid.
+StackTrace:    at BLL.GestorArticulo.ValidarDatosArticulo(Articulo Articulo, DateTime Fecha, String Tipo) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorArticulo.vb:line 64
+   at GUI.ModifcarArticuloForm.ModificarButton_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ModifcarArticuloForm.vb:line 184
+Fecha/Hora: 21/02/2018 21:03:31
+===========================================================================================
+Titulo: Error
+Mensaje: Error al cargar el artículo Incorrect syntax near '('.
+StackTrace:    at BLL.GestorArticulo.ValidarDatosArticulo(Articulo Articulo, DateTime Fecha, String Tipo) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorArticulo.vb:line 64
+   at GUI.ModifcarArticuloForm.ModificarButton_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ModifcarArticuloForm.vb:line 177
+Fecha/Hora: 21/02/2018 21:19:14
+===========================================================================================

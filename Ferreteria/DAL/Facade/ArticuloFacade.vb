@@ -115,7 +115,7 @@ Public Class ArticuloFacade
 
         Try
 
-            ArticuloDao.CargarArticulo(articulo) 'Cargo el artículo en la tabla artículos
+            ArticuloDao.ModificarArticulo(articulo) 'Cargo el artículo en la tabla artículos
             ModificacionesPreciosDao.MovimientoPrecios(articulo, fecha) 'Cargo el precio histórico en la tabla de precios modificados
 
 

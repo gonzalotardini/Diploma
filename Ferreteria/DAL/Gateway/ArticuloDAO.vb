@@ -60,7 +60,8 @@ Public Class ArticuloDAO
         Dim _Consulta As String
         Dim _Comando As New SqlCommand
         'Dim Dal As New DAL.DatosBase
-        _Consulta = "Update Articulo set (Cod_Articulo_Proveedor,Descripcion,Cod_Unidad_Medida,Cod_SubUnidad_Medida,Precio,Cod_Categoria,Cod_SubCategoria,Cod_Marca) values (@Cod_Articulo_Proveedor,@Descripcion,@Cod_Unidad_Medida, @Cod_SubUnidad_Medida, @Precio,@Cod_Categoria, @Cod_SubCategoria, @Cod_Marca)"
+        _Consulta = "Update Articulo set Cod_Articulo_Proveedor=@Cod_Articulo_Proveedor,Descripcion=@Descripcion,Cod_Unidad_Medida=@Cod_Unidad_Medida,Cod_SubUnidad_Medida=@Cod_SubUnidad_Medida,Precio = @Precio , Cod_Categoria=@Cod_Categoria , Cod_SubCategoria= @Cod_SubCategoria , Cod_Marca=@Cod_Marca "
+        _Consulta += " where Cod_Articulo=@Cod_Articulo"
 
         Try
 
@@ -76,6 +77,7 @@ Public Class ArticuloDAO
             _Comando.Parameters.AddWithValue("@Cod_Categoria", Articulo.Categoria)
             _Comando.Parameters.AddWithValue("@Cod_SubCategoria", Articulo.SubCategoria)
             _Comando.Parameters.AddWithValue("@Cod_Marca", Articulo.Marca)
+            _Comando.Parameters.AddWithValue("@Cod_Articulo", Articulo.CodigoArticulo)
 
 
             _Comando.ExecuteNonQuery()
