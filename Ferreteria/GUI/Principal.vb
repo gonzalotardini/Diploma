@@ -303,7 +303,7 @@ Public Class Principal
 
 
     Private Sub PreciosToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles PreciosToolStripMenuItem1.Click
-        ReportePrecios.Show()
+        NuevoReportePrecios.Show()
 
     End Sub
 
@@ -387,6 +387,6 @@ Public Class Principal
     End Sub
 
     Private Sub ArticulosMasVendidosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ArticulosMasVendidosToolStripMenuItem.Click
-        ReporteArticulosVendidos.Show()
+        NuevoReporteArticulosVendidos.Show()
     End Sub
 End Class

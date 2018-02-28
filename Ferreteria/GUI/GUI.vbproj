@@ -190,10 +190,22 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="ReporteArticulosVendidos.Designer.vb">
-      <DependentUpon>ReporteArticulosVendidos.vb</DependentUpon>
+    <Compile Include="NuevoReporteArticulosVendidos.Designer.vb">
+      <DependentUpon>NuevoReporteArticulosVendidos.vb</DependentUpon>
     </Compile>
-    <Compile Include="ReporteArticulosVendidos.vb">
+    <Compile Include="NuevoReporteArticulosVendidos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NuevoReportePrecios.Designer.vb">
+      <DependentUpon>NuevoReportePrecios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NuevoReportePrecios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteArticulosç.Designer.vb">
+      <DependentUpon>ReporteArticulosç.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteArticulosç.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ReportePrecios.Designer.vb">
@@ -291,8 +303,14 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="ReporteArticulosVendidos.resx">
-      <DependentUpon>ReporteArticulosVendidos.vb</DependentUpon>
+    <EmbeddedResource Include="NuevoReporteArticulosVendidos.resx">
+      <DependentUpon>NuevoReporteArticulosVendidos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NuevoReportePrecios.resx">
+      <DependentUpon>NuevoReportePrecios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteArticulosç.resx">
+      <DependentUpon>ReporteArticulosç.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ReportePrecios.resx">
       <DependentUpon>ReportePrecios.vb</DependentUpon>

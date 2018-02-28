@@ -1963,3 +1963,31 @@ Mensaje: USUARIO O CONTRASEÑA INCORRECTO
 StackTrace:    at GUI.LogIn.Button1_Click_1(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\LogIn.vb:line 52
 Fecha/Hora: 27/02/2018 14:57:43
 ===========================================================================================
+Titulo: Error
+Mensaje: USUARIO O CONTRASEÑA INCORRECTO
+StackTrace:    at GUI.LogIn.Button1_Click_1(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\LogIn.vb:line 52
+Fecha/Hora: 27/02/2018 21:48:36
+===========================================================================================
+Titulo: Error
+Mensaje: Error, debe agregar articulos al reporte
+StackTrace:    at BLL.GestorReporte.ValidarReporteArticulosMasVendidos(Reporte reporteCabecera, List`1 listaDetalle, String culturaGlobal) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 124
+   at GUI.ReporteArticulosVendidos.ButtonX2_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ReporteArticulosVendidos.vb:line 93
+Fecha/Hora: 27/02/2018 22:11:03
+===========================================================================================
+Titulo: Error
+Mensaje: Conversion from string "1 U" to type 'Integer' is not valid.
+StackTrace:    at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)
+   at GUI.NuevoReporteArticulosVendidos.ButtonX2_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevoReporteArticulosVendidos.vb:line 78
+Fecha/Hora: 27/02/2018 22:29:52
+===========================================================================================
+Titulo: Error
+Mensaje: USUARIO O CONTRASEÑA INCORRECTO
+StackTrace:    at GUI.LogIn.Button1_Click_1(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\LogIn.vb:line 52
+Fecha/Hora: 27/02/2018 23:07:37
+===========================================================================================
+Titulo: Error
+Mensaje: USUARIO O CONTRASEÑA INCORRECTO
+StackTrace:    at GUI.LogIn.Button1_Click_1(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\LogIn.vb:line 52
+Fecha/Hora: 27/02/2018 23:09:18
+===========================================================================================

@@ -71,6 +71,8 @@
     <Compile Include="NotaDeCredito.vb" />
     <Compile Include="PresupuestoCabecera.vb" />
     <Compile Include="PresupuestoDetalle.vb" />
+    <Compile Include="ReporteArticulosCabecera.vb" />
+    <Compile Include="ReporteArticulosMasVendidosDetalle.vb" />
     <Compile Include="ReportePreciosDetalle.vb" />
     <Compile Include="Reporte.vb" />
     <Compile Include="SubCategoria.vb" />

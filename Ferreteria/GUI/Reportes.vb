@@ -1,28 +1,9 @@
-﻿Imports DAL
-Public Class Reportes
-    Private Sub Reportes_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Try
-            Me.WindowState = FormWindowState.Maximized 'Maximizar Ventana al Abrir
-            Dim reportesDal = New ReporteDAO
-            DataGridViewX1.DataSource = reportesDal.ObtenerReportes
+﻿Public Class Reportes
+    Private Sub ButtonReportePrecios_Click(sender As Object, e As EventArgs) Handles ButtonReportePrecios.Click
+        ReportePrecios.Show()
+    End Sub
 
-            For Each row As DataGridViewRow In DataGridViewX1.Rows
-
-                If row.Index Mod 2 <> 0 Then
-                    row.DefaultCellStyle.BackColor = Color.Bisque
-                Else
-                    row.DefaultCellStyle.BackColor = Color.Aqua
-
-                End If
-
-            Next
-
-            DataGridViewX1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
-
-        Catch ex As Exception
-
-            Throw New Exception(ex.Message)
-
-        End Try
+    Private Sub ButtonReporteArticulos_Click(sender As Object, e As EventArgs) Handles ButtonReporteArticulos.Click
+        ReporteArticulosç.Show()
     End Sub
 End Class

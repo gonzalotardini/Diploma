@@ -52,6 +52,41 @@ Public Class ReporteDAO
 
     End Function
 
+    Public Function ObtenerReportesArticulos() As DataTable
+        Dim _Consulta As String
+        Dim _Comando As SqlCommand
+        Dim _dataSet As New DataSet
+        Dim _Convertir As New Convertir
+
+
+
+        Try
+            _Consulta = "select Cod_Reporte, convert(char(10),FechaInicio,103) as FechaDesde, convert(char(10),FechaFin,103) as FechaHasta, Usuario, Tipo from ReporteArticulosMasVendidos"
+
+            Me.Conexion.Open()
+
+            _Comando = New SqlCommand(_Consulta, Me.Conexion)
+
+            Dim _Adapter As New SqlDataAdapter(_Comando)
+
+            _Adapter.Fill(_dataSet)
+
+            Return _dataSet.Tables(0)
+
+
+        Catch ex As Exception
+
+            Throw New Exception(ex.Message)
+            Return Nothing
+
+        Finally
+
+            Me.Conexion.Close()
+
+        End Try
+
+    End Function
+
     Public Function ArticulosMasVendidos(ByVal _cantidad As Integer, ByVal _fecha_desde As Date, ByVal _fecha_hasta As Date) As DataTable
         Dim _Comando As New SqlCommand
         Dim _DataSet As New DataSet
@@ -373,13 +408,46 @@ Public Class ReporteDAO
 
     End Sub
 
-    Public Sub GuardarReporteArticulosDetalle(item As ReportePreciosDetalle)
+    Public Sub GuardarReporteArticulosCabecera(ReporteCabecera As ReporteArticulosCabecera)
+        Dim _Consulta As String
+        Dim _Comando As New SqlCommand
+
+
+        _Consulta = "insert into ReporteArticulosMasVendidos (FechaInicio, FechaFin, Tipo ,Usuario) Values (@FechaInicio, @FechaFin, @Tipo ,@Usuario)"
+
+        Try
+
+            Me.Conexion.Open()
+
+            _Comando = New SqlCommand(_Consulta, Me.Conexion)
+
+            '_Comando.Parameters.AddWithValue("@Cod_Reporte", ReporteCabecera.Cod_Reporte)
+            _Comando.Parameters.AddWithValue("@FechaInicio", ReporteCabecera.FechaInicio)
+            _Comando.Parameters.AddWithValue("@FechaFin", ReporteCabecera.FechaFin)
+            _Comando.Parameters.AddWithValue("@Usuario", ReporteCabecera.Usuario)
+            _Comando.Parameters.AddWithValue("@Tipo", ReporteCabecera.Tipo)
+
+            _Comando.ExecuteNonQuery()
+
+
+        Catch ex As Exception
+
+            Throw New Exception("Error al cargar Reporte " & ex.Message)
+
+
+        Finally
+            Me.Conexion.Close()
+        End Try
+
+    End Sub
+
+    Public Sub GuardarReporteArticulosDetalle(item As ReporteArticulosMasVendidosDetalle)
 
         Dim _Consulta As String
         Dim _Comando As New SqlCommand
 
 
-        _Consulta = "insert into ReporteArticulosMasVendidos (Cod_Reporte, Cod_Articulo, Cantidad) Values (Cod_Reporte, Cod_Articulo, Cantidad)"
+        _Consulta = "insert into ReporteArticulosMasVendidosDetalle (Cod_Reporte, Cod_Articulo, CantidadVentas) Values (@Cod_Reporte, @Cod_Articulo, @CantidadVentas)"
 
         Try
 
@@ -389,7 +457,7 @@ Public Class ReporteDAO
 
             _Comando.Parameters.AddWithValue("@Cod_Reporte", item.Cod_Reporte)
             _Comando.Parameters.AddWithValue("@Cod_Articulo", item.Cod_Articulo)
-            _Comando.Parameters.AddWithValue("@Cantidad", item.CantidadPrecios)
+            _Comando.Parameters.AddWithValue("@CantidadVentas", item.CantidadVentas)
 
 
             _Comando.ExecuteNonQuery()
@@ -440,6 +508,41 @@ Public Class ReporteDAO
 
 
     End Function
+
+
+    Public Function ObtenerCodUltimoReporteArticulos() As Integer
+
+        Dim _Consulta As String
+        Dim _Comando As New SqlCommand
+        Dim _Codigo As Integer
+
+        Try
+
+
+            Me.Conexion.Open()
+
+            _Consulta = "select top 1 Cod_Reporte from ReporteArticulosMasVendidos order by Cod_Reporte desc "
+
+            _Comando = New SqlCommand(_Consulta, Me.Conexion)
+
+            _Codigo = (_Comando.ExecuteScalar) 'ejecuto scalar porque quiero obtener el valor, uso executenonqueri cuando quiero hacer un insert
+
+
+            Return _Codigo
+
+
+        Catch ex As Exception
+            Throw New Exception(ex.Message)
+        Finally
+            Me.Conexion.Close()
+
+        End Try
+
+
+
+    End Function
+
+
 
     Public Function ObtenerReportes() As DataTable
 

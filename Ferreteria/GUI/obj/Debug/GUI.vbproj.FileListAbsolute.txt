@@ -464,7 +464,6 @@ C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\obj\Debug\GUI.ArticulosFor
 C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\obj\Debug\GUI.Idioma.resources
 C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\obj\Debug\GUI.LogIn.resources
 C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\obj\Debug\GUI.Resources.resources
-C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\obj\Debug\GUI.ReporteArticulosVendidos.resources
 C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\obj\Debug\GUI.ReportePrecios.resources
 C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\obj\Debug\GUI.Reportes.resources
 C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\obj\Debug\GUI.UnidadDeMedidaForm.resources
@@ -476,3 +475,6 @@ C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\obj\Debug\GUI.vbproj.CoreC
 C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\obj\Debug\GUI.exe
 C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\obj\Debug\GUI.xml
 C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\obj\Debug\GUI.pdb
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\obj\Debug\GUI.NuevoReporteArticulosVendidos.resources
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\obj\Debug\GUI.NuevoReportePrecios.resources
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\obj\Debug\GUI.ReporteArticulosç.resources

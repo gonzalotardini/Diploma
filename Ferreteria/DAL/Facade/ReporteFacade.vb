@@ -63,4 +63,27 @@ Public Class ReporteFacade
             Throw New Exception(ex.Message)
         End Try
     End Sub
+
+    Public Sub GuardarReporteArticulosFacade(reporteCabecera As ReporteArticulosCabecera, listaDetalle As List(Of ReporteArticulosMasVendidosDetalle), culturaGlobal As String)
+        Dim reportesDAL As New ReporteDAO
+        Dim codReporte As Integer
+
+        Try
+            Using ts As TransactionScope = New TransactionScope
+                reportesDAL.GuardarReporteArticulosCabecera(reporteCabecera)
+                codReporte = reportesDAL.ObtenerCodUltimoReporteArticulos()
+
+                For Each i As ReporteArticulosMasVendidosDetalle In listaDetalle
+                    i.Cod_Reporte = codReporte
+                    reportesDAL.GuardarReporteArticulosDetalle(i)
+                Next
+
+                ts.Complete()
+            End Using
+
+
+        Catch ex As Exception
+            Throw New Exception(ex.Message)
+        End Try
+    End Sub
 End Class

@@ -22,56 +22,60 @@ Partial Class Reportes
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Me.DataGridViewX1 = New DevComponents.DotNetBar.Controls.DataGridViewX()
-        Me.Label1 = New System.Windows.Forms.Label()
-        CType(Me.DataGridViewX1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ButtonReportePrecios = New DevComponents.DotNetBar.ButtonX()
+        Me.ButtonReporteArticulos = New DevComponents.DotNetBar.ButtonX()
+        Me.ButtonReporteVentas = New DevComponents.DotNetBar.ButtonX()
         Me.SuspendLayout()
         '
-        'DataGridViewX1
+        'ButtonReportePrecios
         '
-        Me.DataGridViewX1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.DataGridViewX1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DataGridViewX1.DefaultCellStyle = DataGridViewCellStyle2
-        Me.DataGridViewX1.GridColor = System.Drawing.Color.FromArgb(CType(CType(170, Byte), Integer), CType(CType(170, Byte), Integer), CType(CType(170, Byte), Integer))
-        Me.DataGridViewX1.Location = New System.Drawing.Point(109, 89)
-        Me.DataGridViewX1.Name = "DataGridViewX1"
-        Me.DataGridViewX1.Size = New System.Drawing.Size(720, 316)
-        Me.DataGridViewX1.TabIndex = 0
+        Me.ButtonReportePrecios.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.ButtonReportePrecios.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
+        Me.ButtonReportePrecios.Location = New System.Drawing.Point(147, 95)
+        Me.ButtonReportePrecios.Name = "ButtonReportePrecios"
+        Me.ButtonReportePrecios.Size = New System.Drawing.Size(255, 203)
+        Me.ButtonReportePrecios.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.ButtonReportePrecios.TabIndex = 0
+        Me.ButtonReportePrecios.Text = "ButtonX1"
         '
-        'Label1
+        'ButtonReporteArticulos
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 36.0!, System.Drawing.FontStyle.Bold)
-        Me.Label1.Location = New System.Drawing.Point(253, 9)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(226, 65)
-        Me.Label1.TabIndex = 8
-        Me.Label1.Text = "label rep"
+        Me.ButtonReporteArticulos.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.ButtonReporteArticulos.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
+        Me.ButtonReporteArticulos.Location = New System.Drawing.Point(437, 95)
+        Me.ButtonReporteArticulos.Name = "ButtonReporteArticulos"
+        Me.ButtonReporteArticulos.Size = New System.Drawing.Size(251, 203)
+        Me.ButtonReporteArticulos.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.ButtonReporteArticulos.TabIndex = 1
+        Me.ButtonReporteArticulos.Text = "ButtonX2"
+        '
+        'ButtonReporteVentas
+        '
+        Me.ButtonReporteVentas.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.ButtonReporteVentas.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
+        Me.ButtonReporteVentas.Location = New System.Drawing.Point(708, 95)
+        Me.ButtonReporteVentas.Name = "ButtonReporteVentas"
+        Me.ButtonReporteVentas.Size = New System.Drawing.Size(234, 203)
+        Me.ButtonReporteVentas.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.ButtonReporteVentas.TabIndex = 2
+        Me.ButtonReporteVentas.Text = "ButtonX3"
         '
         'Reportes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(925, 429)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.DataGridViewX1)
+        Me.ClientSize = New System.Drawing.Size(1084, 436)
+        Me.Controls.Add(Me.ButtonReporteVentas)
+        Me.Controls.Add(Me.ButtonReporteArticulos)
+        Me.Controls.Add(Me.ButtonReportePrecios)
         Me.DoubleBuffered = True
         Me.Name = "Reportes"
         Me.Text = "Reportes"
-        CType(Me.DataGridViewX1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents DataGridViewX1 As DevComponents.DotNetBar.Controls.DataGridViewX
-    Friend WithEvents Label1 As Label
+    Friend WithEvents ButtonReportePrecios As DevComponents.DotNetBar.ButtonX
+    Friend WithEvents ButtonReporteArticulos As DevComponents.DotNetBar.ButtonX
+    Friend WithEvents ButtonReporteVentas As DevComponents.DotNetBar.ButtonX
 End Class
