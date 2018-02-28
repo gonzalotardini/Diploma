@@ -57,11 +57,6 @@ GUI
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:GUI.My.Resources.Resources.cubos__fondo_azul_206675">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
 <member name="P:GUI.My.Resources.Resources.cubos__fondo_azul_2066751">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -192,11 +187,6 @@ GUI
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:GUI.My.Resources.Resources.textura_fondo_azul_8500">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
 <member name="P:GUI.My.Resources.Resources.usuario">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -208,11 +198,6 @@ GUI
 </summary>
 </member>
 <member name="P:GUI.My.Resources.Resources.usuario2">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:GUI.My.Resources.Resources.Ventas_rapidas_con_inbound">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

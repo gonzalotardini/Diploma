@@ -431,6 +431,7 @@ C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\bin\Debug\GUI.xml
 C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\bin\Debug\BIZ.dll
 C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\bin\Debug\BLL.dll
 C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\bin\Debug\DAL.dll
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\bin\Debug\DevComponents.DotNetBar2.dll
 C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\bin\Debug\SL.dll
 C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\bin\Debug\itextsharp.dll
 C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\bin\Debug\BLL.pdb
@@ -442,6 +443,7 @@ C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\bin\Debug\DAL.xml
 C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\bin\Debug\DAL.dll.config
 C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\bin\Debug\SL.pdb
 C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\bin\Debug\SL.xml
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\bin\Debug\DevComponents.DotNetBar2.xml
 C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\bin\Debug\itextsharp.xml
 C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\obj\Debug\GUI.vbprojResolveAssemblyReference.cache
 C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\obj\Debug\GUI.BackUp.resources
@@ -462,7 +464,9 @@ C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\obj\Debug\GUI.ArticulosFor
 C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\obj\Debug\GUI.Idioma.resources
 C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\obj\Debug\GUI.LogIn.resources
 C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\obj\Debug\GUI.Resources.resources
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\obj\Debug\GUI.ReporteArticulosVendidos.resources
 C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\obj\Debug\GUI.ReportePrecios.resources
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\obj\Debug\GUI.Reportes.resources
 C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\obj\Debug\GUI.UnidadDeMedidaForm.resources
 C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\obj\Debug\GUI.Usuarios.resources
 C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\obj\Debug\GUI.VentasForm.resources
@@ -472,5 +476,3 @@ C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\obj\Debug\GUI.vbproj.CoreC
 C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\obj\Debug\GUI.exe
 C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\obj\Debug\GUI.xml
 C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\obj\Debug\GUI.pdb
-C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\bin\Debug\DevComponents.DotNetBar2.dll
-C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\bin\Debug\DevComponents.DotNetBar2.xml

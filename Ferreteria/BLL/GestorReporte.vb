@@ -1,6 +1,6 @@
 ﻿Imports BIZ
 Imports DAL
-Imports GUI
+
 
 Public Class GestorReporte
 
@@ -32,6 +32,22 @@ Public Class GestorReporte
 
     End Function
 
+    Public Function ObtenerArticulosMasVendidosBLL(cantidad As Integer, fecha_desde As Date, fecha_hasta As Date) As DataTable
+        Try
+            Dim reporteFacade = New ReporteFacade
+
+            If fecha_desde > fecha_hasta.AddMinutes(1) Then
+
+                Throw New Exception("Fecha desde debe ser menor a fecha hasta")
+            Else
+                Return reporteFacade.ObtenerArticulosMasVendidosFacade(cantidad, fecha_desde, fecha_hasta)
+            End If
+        Catch ex As Exception
+            Throw New Exception(ex.Message)
+            Return Nothing
+        End Try
+
+    End Function
 
     Public Function CalculosReportePrecios(_Datatable As DataTable, _fecha_Desde As Date, _fecha_hasta As Date) As ReportePreciosDetalle
         Dim _ReportePreciosDetalle As New ReportePreciosDetalle
@@ -83,5 +99,14 @@ Public Class GestorReporte
 
     End Sub
 
+    Public Sub ImprimirReportePrecios(reporteCabecera As Reporte, listaDetalle As List(Of ReportePreciosDetalle))
+        Try
+            Dim reporteFacade = New ReporteFacade
 
+            reporteFacade.ImprimirReportePreciosFacade(reporteCabecera, listaDetalle)
+
+        Catch ex As Exception
+            Throw New Exception(ex.Message)
+        End Try
+    End Sub
 End Class

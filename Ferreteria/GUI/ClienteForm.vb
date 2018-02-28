@@ -188,7 +188,6 @@ Public Class ClienteForm
         Dim _BarrioDao As New BarrioDAO
 
 
- 
 
 
 
@@ -357,57 +356,49 @@ Public Class ClienteForm
 
         Dim bandera As Integer = 0
 
-        'If RadioButtonCODIGO.Checked = True Then
+        If CuitRadioButton.Checked = True Then
 
-        '    Dim Articulo As New Articulo
-        '    Dim ArticuloBLL As New GestorArticulo
+            Dim cliente As New Cliente
+            Dim ClienteBll As New GestorCliente
 
-        '    Select Case e.KeyData
-        '        Case Keys.Enter
-        '            Dim EsNumero As Boolean
+            Select Case e.KeyData
+                Case Keys.Enter
+                    Dim EsNumero As Boolean
 
-        '            EsNumero = IsNumeric(TextBoxBuscar.Text)
+                    EsNumero = IsNumeric(BuscarTextBox.Text)
 
-        '            If TextBoxBuscar.Text <> "" And EsNumero = True And ((Len(TextBoxBuscar.Text)) < 16) Then  'valido para que no ejectue la funcion si no hay caracteres
-        '                Articulo.CodigoDeBarras = Convert.ToInt64(TextBoxBuscar.Text)
-        '                DataGridView1.DataSource = ArticuloBLL.ValidarCodigoDeBarrasParaBusqueda(Articulo)
+                    If BuscarTextBox.Text <> "" And EsNumero = True And ((Len(BuscarTextBox.Text)) < 16) Then  'valido para que no ejectue la funcion si no hay caracteres
+                        cliente.Cuit = Convert.ToInt64(BuscarTextBox.Text)
+                        ClienteGridView.DataSource = ClienteBll.BuscarClientePorCuitBll(cliente)
 
-        '                TextBoxBuscar.SelectAll()
+                        BuscarTextBox.SelectAll()
 
-        '                For Each row As DataGridViewRow In DataGridView1.Rows
+                        For Each row As DataGridViewRow In ClienteGridView.Rows
 
-        '                    If row.Index Mod 2 <> 0 Then
-        '                        row.DefaultCellStyle.BackColor = Color.Bisque
-        '                    Else
-        '                        row.DefaultCellStyle.BackColor = Color.Aqua
+                            If row.Index Mod 2 <> 0 Then
+                                row.DefaultCellStyle.BackColor = Color.Bisque
+                            Else
+                                row.DefaultCellStyle.BackColor = Color.Aqua
 
-        '                    End If
+                            End If
 
-        '                Next
-
-
-
-
-        '            Else
-        '                bandera = 1
-        '            End If
-
-        '            Dim CantidadArticulos As Integer
-
-        '            CantidadArticulos = DataGridView1.RowCount - 1
-        '            Label14.Text = CantidadArticulos
-
-        '    End Select
+                        Next
 
 
 
 
+                    Else
+                        bandera = 1
+                    End If
 
+                    Dim CantidadArticulos As Integer
 
+                    'CantidadArticulos = DataGridView1.RowCount - 1
+                    'Label14.Text = CantidadArticulos
 
+            End Select
 
-
-        'End If
+        End If
 
         If RazonSocialRadioButton.Checked = True Or bandera = 1 Then
 

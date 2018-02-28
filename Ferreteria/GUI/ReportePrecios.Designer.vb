@@ -42,7 +42,9 @@ Partial Class ReportePrecios
         Me.Hasta = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ButtonX1 = New DevComponents.DotNetBar.ButtonX()
         Me.ButtonX3 = New DevComponents.DotNetBar.ButtonX()
-        Me.ButtonX2 = New DevComponents.DotNetBar.ButtonX()
+        Me.ButtonFinalizar = New DevComponents.DotNetBar.ButtonX()
+        Me.LabelDesde = New DevComponents.DotNetBar.LabelX()
+        Me.LabelHasta = New DevComponents.DotNetBar.LabelX()
         Me.GroupBox1.SuspendLayout()
         CType(Me.ArticulosGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -101,14 +103,14 @@ Partial Class ReportePrecios
         'FechaDesde
         '
         Me.FechaDesde.CalendarFont = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.FechaDesde.Location = New System.Drawing.Point(38, 12)
+        Me.FechaDesde.Location = New System.Drawing.Point(37, 26)
         Me.FechaDesde.Name = "FechaDesde"
         Me.FechaDesde.Size = New System.Drawing.Size(200, 20)
         Me.FechaDesde.TabIndex = 35
         '
         'FechaHasta
         '
-        Me.FechaHasta.Location = New System.Drawing.Point(296, 12)
+        Me.FechaHasta.Location = New System.Drawing.Point(294, 26)
         Me.FechaHasta.Name = "FechaHasta"
         Me.FechaHasta.Size = New System.Drawing.Size(200, 20)
         Me.FechaHasta.TabIndex = 36
@@ -116,6 +118,7 @@ Partial Class ReportePrecios
         'GridView1
         '
         Me.GridView1.AllowUserToAddRows = False
+        Me.GridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight
         Me.GridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.GridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Codigo, Me.Descripcion, Me.Marca, Me.UnidadMedida, Me.Precio_Inicial, Me.Precio_Final, Me.Cantidad_Precios, Me.Aumento, Me.Desde, Me.Hasta})
         Me.GridView1.Location = New System.Drawing.Point(37, 71)
@@ -197,23 +200,54 @@ Partial Class ReportePrecios
         Me.ButtonX3.TabIndex = 41
         Me.ButtonX3.Text = "ButtonX3"
         '
-        'ButtonX2
+        'ButtonFinalizar
         '
-        Me.ButtonX2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
-        Me.ButtonX2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
-        Me.ButtonX2.Location = New System.Drawing.Point(1107, 346)
-        Me.ButtonX2.Name = "ButtonX2"
-        Me.ButtonX2.Size = New System.Drawing.Size(100, 34)
-        Me.ButtonX2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.ButtonX2.TabIndex = 42
-        Me.ButtonX2.Text = "ButtonX2"
+        Me.ButtonFinalizar.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.ButtonFinalizar.BackColor = System.Drawing.Color.OrangeRed
+        Me.ButtonFinalizar.ColorTable = DevComponents.DotNetBar.eButtonColor.Blue
+        Me.ButtonFinalizar.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.ButtonFinalizar.Location = New System.Drawing.Point(1107, 382)
+        Me.ButtonFinalizar.Name = "ButtonFinalizar"
+        Me.ButtonFinalizar.Size = New System.Drawing.Size(141, 72)
+        Me.ButtonFinalizar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.ButtonFinalizar.TabIndex = 42
+        Me.ButtonFinalizar.Text = "ButtonX2"
+        Me.ButtonFinalizar.TextColor = System.Drawing.Color.White
+        '
+        'LabelDesde
+        '
+        '
+        '
+        '
+        Me.LabelDesde.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelDesde.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.LabelDesde.Location = New System.Drawing.Point(37, -3)
+        Me.LabelDesde.Name = "LabelDesde"
+        Me.LabelDesde.Size = New System.Drawing.Size(75, 23)
+        Me.LabelDesde.TabIndex = 43
+        Me.LabelDesde.Text = "LabelX1"
+        '
+        'LabelHasta
+        '
+        '
+        '
+        '
+        Me.LabelHasta.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelHasta.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.LabelHasta.Location = New System.Drawing.Point(294, -4)
+        Me.LabelHasta.Name = "LabelHasta"
+        Me.LabelHasta.Size = New System.Drawing.Size(75, 23)
+        Me.LabelHasta.TabIndex = 44
+        Me.LabelHasta.Text = "LabelX2"
         '
         'ReportePrecios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1292, 865)
-        Me.Controls.Add(Me.ButtonX2)
+        Me.Controls.Add(Me.LabelHasta)
+        Me.Controls.Add(Me.LabelDesde)
+        Me.Controls.Add(Me.ButtonFinalizar)
         Me.Controls.Add(Me.ButtonX3)
         Me.Controls.Add(Me.ButtonX1)
         Me.Controls.Add(Me.GridView1)
@@ -253,5 +287,7 @@ Partial Class ReportePrecios
     Friend WithEvents Hasta As DataGridViewTextBoxColumn
     Friend WithEvents ButtonX1 As DevComponents.DotNetBar.ButtonX
     Friend WithEvents ButtonX3 As DevComponents.DotNetBar.ButtonX
-    Friend WithEvents ButtonX2 As DevComponents.DotNetBar.ButtonX
+    Friend WithEvents ButtonFinalizar As DevComponents.DotNetBar.ButtonX
+    Friend WithEvents LabelDesde As DevComponents.DotNetBar.LabelX
+    Friend WithEvents LabelHasta As DevComponents.DotNetBar.LabelX
 End Class

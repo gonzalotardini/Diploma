@@ -184,11 +184,13 @@ C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\SL\bin\Debug\SL.pdb
 C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\SL\bin\Debug\SL.xml
 C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\SL\bin\Debug\BIZ.dll
 C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\SL\bin\Debug\DAL.dll
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\SL\bin\Debug\itextsharp.dll
 C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\SL\bin\Debug\BIZ.pdb
 C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\SL\bin\Debug\BIZ.xml
 C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\SL\bin\Debug\DAL.pdb
 C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\SL\bin\Debug\DAL.xml
 C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\SL\bin\Debug\DAL.dll.config
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\SL\bin\Debug\itextsharp.xml
 C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\SL\obj\Debug\SL.vbprojResolveAssemblyReference.cache
 C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\SL\obj\Debug\SL.Resources.resources
 C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\SL\obj\Debug\SL.vbproj.GenerateResource.Cache

@@ -190,10 +190,22 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="ReporteArticulosVendidos.Designer.vb">
+      <DependentUpon>ReporteArticulosVendidos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteArticulosVendidos.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ReportePrecios.Designer.vb">
       <DependentUpon>ReportePrecios.vb</DependentUpon>
     </Compile>
     <Compile Include="ReportePrecios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes.Designer.vb">
+      <DependentUpon>Reportes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UnidadDeMedidaForm.Designer.vb">
@@ -279,8 +291,14 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="ReporteArticulosVendidos.resx">
+      <DependentUpon>ReporteArticulosVendidos.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ReportePrecios.resx">
       <DependentUpon>ReportePrecios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes.resx">
+      <DependentUpon>Reportes.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UnidadDeMedidaForm.resx">
       <DependentUpon>UnidadDeMedidaForm.vb</DependentUpon>
@@ -350,13 +368,13 @@
     <None Include="Resources\password.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\cubos,-fondo-azul-206675.jpg" />
     <None Include="Resources\cubos,-fondo-azul-2066751.jpg" />
     <None Include="Resources\herramientas.jpg" />
-    <None Include="Resources\textura-fondo-azul-8500.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Ventas-rapidas-con-inbound.jpg" />
+    <None Include="Resources\periodico.bmp" />
+    <Content Include="Resources\periodico.png" />
+    <None Include="Resources\Ventas-rapidas-con-inbound1.jpg" />
     <None Include="Resources\Ventas-rapidas-con-inbound.png" />
     <None Include="Resources\palabras-clave.png" />
     <None Include="Resources\presupuesto.png" />

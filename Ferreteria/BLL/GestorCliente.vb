@@ -111,6 +111,17 @@ Public Class GestorCliente
         Catch ex As Exception
             Throw New Exception(ex.Message)
         End Try
+    End Function
+
+
+    Public Function BuscarClientePorCuitBll(_cliente As Cliente) As DataTable
+
+        Try
+            Dim _clienteFacade = New ClienteFacade
+            Return _clienteFacade.BuscarClientePorCuitFacade(_cliente)
+        Catch ex As Exception
+            Throw New Exception(ex.Message)
+        End Try
 
 
     End Function

@@ -57,6 +57,13 @@ Public Class ClienteFacade
 
     End Function
 
-
-
+    Public Function BuscarClientePorCuitFacade(cliente As Cliente) As DataTable
+        Try
+            Dim clienteDAL = New ClienteDAO
+            Return clienteDAL.BuscarClientePorCuit(cliente)
+        Catch ex As Exception
+            Throw New Exception(ex.Message)
+            Return Nothing
+        End Try
+    End Function
 End Class

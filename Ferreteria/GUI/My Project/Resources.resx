@@ -172,26 +172,17 @@
   <data name="dispositivo_de_almacenamiento_de_datos" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\dispositivo-de-almacenamiento-de-datos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Ventas-rapidas-con-inbound" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ventas-rapidas-con-inbound.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="aceptar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\aceptar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="circuito_integrado" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\circuito-integrado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cubos__fondo_azul_206675" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\cubos,-fondo-azul-206675.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="herramientas_del_empleado_de_mantenimiento1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\herramientas-del-empleado-de-mantenimiento.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="delete1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\delete1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="textura_fondo_azul_8500" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\textura-fondo-azul-8500.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="herramientas" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\herramientas.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -235,7 +226,7 @@
   <data name="agregar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\agregar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Ventas-rapidas-con-inbound1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ventas-rapidas-con-inbound.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Ventas_rapidas_con_inbound1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ventas-rapidas-con-inbound1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -1848,3 +1848,118 @@ StackTrace:    at BLL.GestorArticulo.ValidarDatosArticulo(Articulo Articulo, Dat
    at GUI.ModifcarArticuloForm.ModificarButton_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ModifcarArticuloForm.vb:line 177
 Fecha/Hora: 21/02/2018 21:19:14
 ===========================================================================================
+Titulo: Error
+Mensaje: No existes precios historicos del articulo
+StackTrace:    at BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _fecha_Desde, DateTime _fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 29
+   at GUI.ReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ReportePrecios.vb:line 251
+Fecha/Hora: 22/02/2018 20:19:09
+===========================================================================================
+Titulo: Error
+Mensaje: Conversion from string "Object reference not set to an i" to type 'Integer' is not valid.
+StackTrace:    at BLL.GestorReporte.ImprimirReportePrecios(Reporte reporteCabecera, List`1 listaDetalle) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 93
+   at GUI.ReportePrecios.ButtonX2_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ReportePrecios.vb:line 332
+Fecha/Hora: 23/02/2018 09:32:09
+===========================================================================================
+Titulo: Error
+Mensaje: No existes precios historicos del articulo
+StackTrace:    at BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _fecha_Desde, DateTime _fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 29
+   at GUI.ReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ReportePrecios.vb:line 251
+Fecha/Hora: 23/02/2018 09:40:25
+===========================================================================================
+Titulo: Error
+Mensaje: Error al cargar el artículo Violation of PRIMARY KEY constraint 'PK_ReportePreciosDetalle'. Cannot insert duplicate key in object 'dbo.ReportePreciosDetalle'. The duplicate key value is (9, 4797).
+The statement has been terminated.
+StackTrace:    at BLL.GestorReporte.ValidarReporteAumentoDePrecios(Reporte reporteCabecera, List`1 listaDetalles, String culturaGlobal) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 80
+   at GUI.ReportePrecios.ButtonX2_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ReportePrecios.vb:line 329
+Fecha/Hora: 23/02/2018 09:41:33
+===========================================================================================
+Titulo: Error
+Mensaje: Conversion from string "Object reference not set to an i" to type 'Integer' is not valid.
+StackTrace:    at BLL.GestorReporte.ImprimirReportePrecios(Reporte reporteCabecera, List`1 listaDetalle) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 93
+   at GUI.ReportePrecios.ButtonX2_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ReportePrecios.vb:line 332
+Fecha/Hora: 23/02/2018 09:49:01
+===========================================================================================
+Titulo: Error
+Mensaje: No existes precios historicos del articulo
+StackTrace:    at BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _fecha_Desde, DateTime _fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 29
+   at GUI.ReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ReportePrecios.vb:line 251
+Fecha/Hora: 23/02/2018 10:39:10
+===========================================================================================
+Titulo: Error
+Mensaje: Conversion from string "Font and size must be set before" to type 'Integer' is not valid.
+StackTrace:    at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)
+   at DAL.ReporteDAO.ImprimirReportePreciosDAO(Reporte reporteCabecera, List`1 listaDetalle)
+   at GUI.ReportePrecios.ButtonX2_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ReportePrecios.vb:line 333
+Fecha/Hora: 23/02/2018 10:42:18
+===========================================================================================
+Titulo: Error
+Mensaje: Conversion from string "The process cannot access the fi" to type 'Integer' is not valid.
+StackTrace:    at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)
+   at DAL.ReporteDAO.ImprimirReportePreciosDAO(Reporte reporteCabecera, List`1 listaDetalle)
+   at GUI.ReportePrecios.ButtonX2_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ReportePrecios.vb:line 333
+Fecha/Hora: 23/02/2018 10:50:18
+===========================================================================================
+Titulo: Error
+Mensaje: Conversion from string "Process has exited, so the reque" to type 'Integer' is not valid.
+StackTrace:    at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)
+   at DAL.ReporteDAO.ImprimirReportePreciosDAO(Reporte reporteCabecera, List`1 listaDetalle)
+   at GUI.ReportePrecios.ButtonX2_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ReportePrecios.vb:line 333
+Fecha/Hora: 23/02/2018 10:53:52
+===========================================================================================
+Titulo: Error
+Mensaje: Conversion from string "The process cannot access the fi" to type 'Integer' is not valid.
+StackTrace:    at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)
+   at DAL.ReporteDAO.ImprimirReportePreciosDAO(Reporte reporteCabecera, List`1 listaDetalle)
+   at GUI.ReportePrecios.ButtonX2_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ReportePrecios.vb:line 333
+Fecha/Hora: 23/02/2018 11:03:20
+===========================================================================================
+Titulo: Error
+Mensaje: Revise datos ingresados
+StackTrace:    at GUI.UnidadDeMedidaForm.AgregarButton_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\UnidadDeMedidaForm.vb:line 100
+Fecha/Hora: 27/02/2018 12:31:46
+===========================================================================================
+Titulo: Error
+Mensaje: Fecha desde debe ser menor a fecha hasta
+StackTrace:    at BLL.GestorReporte.ObtenerArticulosMasVendidosBLL(Int32 cantidad, DateTime fecha_desde, DateTime fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 46
+   at GUI.ReporteArticulosVendidos.ButtonX1_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ReporteArticulosVendidos.vb:line 18
+Fecha/Hora: 27/02/2018 12:35:04
+===========================================================================================
+Titulo: Error
+Mensaje: No se encontraron articulos
+StackTrace:    at BLL.GestorReporte.ObtenerArticulosMasVendidosBLL(Int32 cantidad, DateTime fecha_desde, DateTime fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 46
+   at GUI.ReporteArticulosVendidos.ButtonX1_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ReporteArticulosVendidos.vb:line 18
+Fecha/Hora: 27/02/2018 12:35:07
+===========================================================================================
+Titulo: Error
+Mensaje: Introduce Bar Code
+StackTrace:    at GUI.ArticulosForm.Button1_Click_1(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ArticulosForm.vb:line 46
+Fecha/Hora: 27/02/2018 14:40:49
+===========================================================================================
+Titulo: Error
+Mensaje: Error, cantidad debe ser numerico
+StackTrace:    at GUI.NuevoPresupuestoForm.ArticuloGridView1_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevoPresupuestoForm.vb:line 489
+Fecha/Hora: 27/02/2018 14:41:12
+===========================================================================================
+Titulo: Error
+Mensaje: Error, cantidad debe ser numerico
+StackTrace:    at GUI.NuevoPresupuestoForm.ArticuloGridView1_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevoPresupuestoForm.vb:line 489
+Fecha/Hora: 27/02/2018 14:47:17
+===========================================================================================
+Titulo: Error
+Mensaje: Input string was not in a correct format.
+StackTrace:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at GUI.NuevoPresupuestoForm.FinalizarButton_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevoPresupuestoForm.vb:line 243
+Fecha/Hora: 27/02/2018 14:48:49
+===========================================================================================
+Titulo: Error
+Mensaje: Error, debe seleccionar un cliente
+StackTrace:    at GUI.NuevoPresupuestoForm.FinalizarButton_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevoPresupuestoForm.vb:line 252
+Fecha/Hora: 27/02/2018 14:51:56
+===========================================================================================
+Titulo: Error
+Mensaje: USUARIO O CONTRASEÑA INCORRECTO
+StackTrace:    at GUI.LogIn.Button1_Click_1(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\LogIn.vb:line 52
+Fecha/Hora: 27/02/2018 14:57:43
+===========================================================================================

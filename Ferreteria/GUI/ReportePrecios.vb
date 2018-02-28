@@ -12,6 +12,15 @@ Public Class ReportePrecios
 
         RadioButtonDESCRIPCION.Checked = True
 
+        Select Case Principal.CulturaGlobal
+            Case "ENGLISH"
+                LabelDesde.Text="FROM"
+                LabelHasta.Text = "TO"
+            Case "ESPAÑOL"
+                LabelDesde.Text = "DESDE"
+                LabelHasta.Text = "HASTA"
+        End Select
+
 
         Dim _ArticuloDAO As New ArticuloDAO
 
@@ -289,19 +298,23 @@ Public Class ReportePrecios
 
     End Sub
 
-    Private Sub ButtonX2_Click(sender As Object, e As EventArgs) Handles ButtonX2.Click
+    Private Sub ButtonX2_Click(sender As Object, e As EventArgs) Handles ButtonFinalizar.Click
 
         Dim listaDetalle As List(Of ReportePreciosDetalle)
         Dim item As ReportePreciosDetalle
         Dim GestorReporte As New GestorReporte
         Dim ReporteCabecera As New Reporte
-        Dim msg As String
+        Dim msg As String = ""
+        Dim msg2 = ""
+        Dim reporteDao = New ReporteDAO
 
         Select Case Principal.CulturaGlobal
             Case "ESPAÑOL"
                 msg = "¿Seguro desea finalizar el reporte?"
+                msg2 = "¿Desea imprimir el reporte?"
             Case "ENGLISH"
                 msg = "Do you really want to finish the report?"
+                msg2 = "Do you want to print the report?"
         End Select
 
         Try
@@ -313,6 +326,9 @@ Public Class ReportePrecios
 
                     item = New ReportePreciosDetalle
                     item.Cod_Articulo = i.Cells(0).Value
+                    item.Descripcion = i.Cells(1).Value
+                    item.Marca1 = i.Cells(2).Value
+                    item.SubUnidad = i.Cells(3).Value
                     item.PrecioInicial = i.Cells(4).Value
                     item.PrecioFinal = i.Cells(5).Value
                     item.CantidadPrecios = i.Cells(6).Value
@@ -323,7 +339,17 @@ Public Class ReportePrecios
 
                 Next
 
+                'reporteDao.ImprimirReportePreciosDAO(ReporteCabecera, listaDetalle)
+
                 GestorReporte.ValidarReporteAumentoDePrecios(ReporteCabecera, listaDetalle, Principal.CulturaGlobal)
+
+                If MsgBox(msg2, MsgBoxStyle.YesNo, "ATENCIÓN") = MsgBoxResult.Yes Then
+                    ReporteCabecera.Cod_Reporte = reporteDao.ObtenerCodUltimoReportePrecios()
+                    GestorReporte.ImprimirReportePrecios(ReporteCabecera, listaDetalle)
+                End If
+
+                Me.Hide()
+
             End If
         Catch ex As Exception
 

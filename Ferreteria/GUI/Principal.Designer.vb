@@ -23,6 +23,7 @@ Partial Class Principal
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Principal))
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.ExtraToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.UnidadMedidaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -34,6 +35,11 @@ Partial Class Principal
         Me.VentasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReportesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PreciosToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ArticulosMasVendidosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.VentasDiariasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.VentasSemanalesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.VentasMensualesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ClientesMasGastadoresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BitacoraToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EventosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ErroresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -52,11 +58,7 @@ Partial Class Principal
         Me.IntegridadButton = New DevComponents.DotNetBar.ButtonX()
         Me.ContraseñaButton = New DevComponents.DotNetBar.ButtonX()
         Me.LabelX1 = New DevComponents.DotNetBar.LabelX()
-        Me.VentasDiariasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.VentasSemanalesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.VentasMensualesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ArticulosMasVendidosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ClientesMasGastadoresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportesButton = New DevComponents.DotNetBar.ButtonX()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -132,7 +134,7 @@ Partial Class Principal
         'ReportesToolStripMenuItem
         '
         Me.ReportesToolStripMenuItem.AutoSize = False
-        Me.ReportesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PreciosToolStripMenuItem1, Me.VentasDiariasToolStripMenuItem, Me.VentasSemanalesToolStripMenuItem, Me.VentasMensualesToolStripMenuItem, Me.ArticulosMasVendidosToolStripMenuItem, Me.ClientesMasGastadoresToolStripMenuItem})
+        Me.ReportesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PreciosToolStripMenuItem1, Me.ArticulosMasVendidosToolStripMenuItem, Me.VentasDiariasToolStripMenuItem, Me.VentasSemanalesToolStripMenuItem, Me.VentasMensualesToolStripMenuItem, Me.ClientesMasGastadoresToolStripMenuItem})
         Me.ReportesToolStripMenuItem.Enabled = False
         Me.ReportesToolStripMenuItem.Name = "ReportesToolStripMenuItem"
         Me.ReportesToolStripMenuItem.Size = New System.Drawing.Size(94, 25)
@@ -143,6 +145,36 @@ Partial Class Principal
         Me.PreciosToolStripMenuItem1.Name = "PreciosToolStripMenuItem1"
         Me.PreciosToolStripMenuItem1.Size = New System.Drawing.Size(198, 22)
         Me.PreciosToolStripMenuItem1.Text = "Precios"
+        '
+        'ArticulosMasVendidosToolStripMenuItem
+        '
+        Me.ArticulosMasVendidosToolStripMenuItem.Name = "ArticulosMasVendidosToolStripMenuItem"
+        Me.ArticulosMasVendidosToolStripMenuItem.Size = New System.Drawing.Size(198, 22)
+        Me.ArticulosMasVendidosToolStripMenuItem.Text = "Articulos mas vendidos"
+        '
+        'VentasDiariasToolStripMenuItem
+        '
+        Me.VentasDiariasToolStripMenuItem.Name = "VentasDiariasToolStripMenuItem"
+        Me.VentasDiariasToolStripMenuItem.Size = New System.Drawing.Size(198, 22)
+        Me.VentasDiariasToolStripMenuItem.Text = "Ventas Diarias"
+        '
+        'VentasSemanalesToolStripMenuItem
+        '
+        Me.VentasSemanalesToolStripMenuItem.Name = "VentasSemanalesToolStripMenuItem"
+        Me.VentasSemanalesToolStripMenuItem.Size = New System.Drawing.Size(198, 22)
+        Me.VentasSemanalesToolStripMenuItem.Text = "Ventas Semanales"
+        '
+        'VentasMensualesToolStripMenuItem
+        '
+        Me.VentasMensualesToolStripMenuItem.Name = "VentasMensualesToolStripMenuItem"
+        Me.VentasMensualesToolStripMenuItem.Size = New System.Drawing.Size(198, 22)
+        Me.VentasMensualesToolStripMenuItem.Text = "Ventas Mensuales"
+        '
+        'ClientesMasGastadoresToolStripMenuItem
+        '
+        Me.ClientesMasGastadoresToolStripMenuItem.Name = "ClientesMasGastadoresToolStripMenuItem"
+        Me.ClientesMasGastadoresToolStripMenuItem.Size = New System.Drawing.Size(198, 22)
+        Me.ClientesMasGastadoresToolStripMenuItem.Text = "Clientes mas gastadores"
         '
         'BitacoraToolStripMenuItem
         '
@@ -329,42 +361,27 @@ Partial Class Principal
         '
         Me.LabelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.LabelX1.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelX1.Location = New System.Drawing.Point(589, 447)
+        Me.LabelX1.Location = New System.Drawing.Point(778, 346)
         Me.LabelX1.Name = "LabelX1"
         Me.LabelX1.Size = New System.Drawing.Size(139, 49)
         Me.LabelX1.TabIndex = 31
         Me.LabelX1.Text = "LabelX1"
         Me.LabelX1.TextAlignment = System.Drawing.StringAlignment.Center
         '
-        'VentasDiariasToolStripMenuItem
+        'ReportesButton
         '
-        Me.VentasDiariasToolStripMenuItem.Name = "VentasDiariasToolStripMenuItem"
-        Me.VentasDiariasToolStripMenuItem.Size = New System.Drawing.Size(198, 22)
-        Me.VentasDiariasToolStripMenuItem.Text = "Ventas Diarias"
-        '
-        'VentasSemanalesToolStripMenuItem
-        '
-        Me.VentasSemanalesToolStripMenuItem.Name = "VentasSemanalesToolStripMenuItem"
-        Me.VentasSemanalesToolStripMenuItem.Size = New System.Drawing.Size(198, 22)
-        Me.VentasSemanalesToolStripMenuItem.Text = "Ventas Semanales"
-        '
-        'VentasMensualesToolStripMenuItem
-        '
-        Me.VentasMensualesToolStripMenuItem.Name = "VentasMensualesToolStripMenuItem"
-        Me.VentasMensualesToolStripMenuItem.Size = New System.Drawing.Size(198, 22)
-        Me.VentasMensualesToolStripMenuItem.Text = "Ventas Mensuales"
-        '
-        'ArticulosMasVendidosToolStripMenuItem
-        '
-        Me.ArticulosMasVendidosToolStripMenuItem.Name = "ArticulosMasVendidosToolStripMenuItem"
-        Me.ArticulosMasVendidosToolStripMenuItem.Size = New System.Drawing.Size(198, 22)
-        Me.ArticulosMasVendidosToolStripMenuItem.Text = "Articulos mas vendidos"
-        '
-        'ClientesMasGastadoresToolStripMenuItem
-        '
-        Me.ClientesMasGastadoresToolStripMenuItem.Name = "ClientesMasGastadoresToolStripMenuItem"
-        Me.ClientesMasGastadoresToolStripMenuItem.Size = New System.Drawing.Size(198, 22)
-        Me.ClientesMasGastadoresToolStripMenuItem.Text = "Clientes mas gastadores"
+        Me.ReportesButton.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.ReportesButton.BackColor = System.Drawing.Color.Indigo
+        Me.ReportesButton.ColorTable = DevComponents.DotNetBar.eButtonColor.Magenta
+        Me.ReportesButton.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ReportesButton.Image = CType(resources.GetObject("ReportesButton.Image"), System.Drawing.Image)
+        Me.ReportesButton.Location = New System.Drawing.Point(547, 414)
+        Me.ReportesButton.Name = "ReportesButton"
+        Me.ReportesButton.Size = New System.Drawing.Size(214, 132)
+        Me.ReportesButton.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.ReportesButton.TabIndex = 32
+        Me.ReportesButton.Text = "CONTRASEÑA"
+        Me.ReportesButton.TextColor = System.Drawing.Color.White
         '
         'Principal
         '
@@ -373,6 +390,7 @@ Partial Class Principal
         Me.BackColor = System.Drawing.Color.LightGray
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(939, 558)
+        Me.Controls.Add(Me.ReportesButton)
         Me.Controls.Add(Me.LabelX1)
         Me.Controls.Add(Me.ContraseñaButton)
         Me.Controls.Add(Me.IntegridadButton)
@@ -428,4 +446,5 @@ Partial Class Principal
     Friend WithEvents VentasMensualesToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ArticulosMasVendidosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ClientesMasGastadoresToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ReportesButton As DevComponents.DotNetBar.ButtonX
 End Class

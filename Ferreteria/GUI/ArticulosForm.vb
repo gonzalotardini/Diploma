@@ -38,7 +38,14 @@ Public Class ArticulosForm
             'el textbox codigo de barras no puede estar vacio
             If TextBoxCodProveedor.Text = "" Then
 
-                Throw New Exception("Introduzca Codigo de Barras")
+                Select Case Principal.CulturaGlobal
+                    Case "ESPAÑOL"
+                        Throw New Exception("Introduzca Codigo de Barras")
+
+                    Case "ENGLISH"
+                        Throw New Exception("Introduce Bar Code")
+                End Select
+
                 TextBoxCodProveedor.Focus()
 
             Else
@@ -48,7 +55,15 @@ Public Class ArticulosForm
 
             If TextBoxPrecio.Text = "" Then
 
-                Throw New Exception("Introduzca precio")
+                Select Case Principal.CulturaGlobal
+                    Case "ESPAÑOL"
+                        Throw New Exception("Introduzca precio")
+
+                    Case "ENGLISH"
+                        Throw New Exception("Introduce Price")
+                End Select
+
+
                 TextBoxPrecio.Focus()
             Else
 
@@ -481,10 +496,6 @@ Public Class ArticulosForm
                             End If
 
                         Next
-
-
-
-
                     Else
                         bandera = 1
                     End If
@@ -495,14 +506,6 @@ Public Class ArticulosForm
                     Label14.Text = CantidadArticulos
 
             End Select
-
-
-
-
-
-
-
-
 
         End If
 

@@ -129,11 +129,9 @@ Public Class Principal
             VentasButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "VENTAS" Select V.Value).FirstOrDefault
             UsuariosToolStripMenuItem.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "USUARIO" Select V.Value).FirstOrDefault
             ' EnviosButton.Text = RTrim(Multiidioma.ObtenerValue("ENVIOS", Cultura))
-
             ReportesToolStripMenuItem.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "REPORTES" Select V.Value).FirstOrDefault
-
             ContraseñaButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "CONTRASEÑA" Select V.Value).FirstOrDefault
-
+            ReportesButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "REPORTES" Select V.Value).FirstOrDefault
         End If
 
 
@@ -169,7 +167,7 @@ Public Class Principal
             UsuariosToolStripMenuItem.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "USUARIO" Select V.Value).FirstOrDefault
             ' EnviosButton.Text = RTrim(Multiidioma.ObtenerValue("ENVIOS", Cultura))
             ReportesToolStripMenuItem.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "REPORTES" Select V.Value).FirstOrDefault
-
+            ReportesButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "REPORTES" Select V.Value).FirstOrDefault
             ContraseñaButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "CONTRASEÑA" Select V.Value).FirstOrDefault
         End If
 
@@ -382,5 +380,13 @@ Public Class Principal
 
     Private Sub AnalogClockControl1_ValueChanged(sender As Object, e As EventArgs)
 
+    End Sub
+
+    Private Sub ButtonX1_Click(sender As Object, e As EventArgs) Handles ReportesButton.Click
+        Reportes.Show()
+    End Sub
+
+    Private Sub ArticulosMasVendidosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ArticulosMasVendidosToolStripMenuItem.Click
+        ReporteArticulosVendidos.Show()
     End Sub
 End Class
