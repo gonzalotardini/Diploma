@@ -1991,3 +1991,38 @@ Mensaje: USUARIO O CONTRASEÑA INCORRECTO
 StackTrace:    at GUI.LogIn.Button1_Click_1(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\LogIn.vb:line 52
 Fecha/Hora: 27/02/2018 23:09:18
 ===========================================================================================
+Titulo: Error
+Mensaje: No se encontraron articulos
+StackTrace:    at BLL.GestorReporte.ObtenerArticulosMasVendidosBLL(Int32 cantidad, DateTime fecha_desde, DateTime fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 46
+   at GUI.NuevoReporteArticulosVendidos.ButtonX1_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevoReporteArticulosVendidos.vb:line 20
+Fecha/Hora: 28/02/2018 15:29:14
+===========================================================================================
+Titulo: Error
+Mensaje: Input string was not in a correct format.
+StackTrace:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at GUI.NuevaVentaForm.FinalizarButton_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevaVentaForm.vb:line 382
+Fecha/Hora: 28/02/2018 15:38:01
+===========================================================================================
+Titulo: Error
+Mensaje: You must choose a customer
+StackTrace:    at GUI.NuevaVentaForm.FinalizarButton_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevaVentaForm.vb:line 391
+Fecha/Hora: 28/02/2018 15:41:55
+===========================================================================================
+Titulo: Error
+Mensaje: You must choose a customer
+StackTrace:    at GUI.NuevaVentaForm.FinalizarButton_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevaVentaForm.vb:line 391
+Fecha/Hora: 28/02/2018 15:48:23
+===========================================================================================
+Titulo: Error
+Mensaje: USUARIO O CONTRASEÑA INCORRECTO
+StackTrace:    at GUI.LogIn.Button1_Click_1(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\LogIn.vb:line 52
+Fecha/Hora: 28/02/2018 16:02:41
+===========================================================================================
+Titulo: Error
+Mensaje: Fecha desde debe ser menor a fecha hasta
+StackTrace:    at BLL.GestorReporte.ObtenerArticulosMasVendidosBLL(Int32 cantidad, DateTime fecha_desde, DateTime fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 46
+   at GUI.NuevoReporteArticulosVendidos.ButtonX1_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevoReporteArticulosVendidos.vb:line 20
+Fecha/Hora: 28/02/2018 16:12:54
+===========================================================================================

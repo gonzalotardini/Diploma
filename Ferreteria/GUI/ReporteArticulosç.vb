@@ -3,6 +3,9 @@
 Public Class ReporteArticulosç
     Private Sub ReporteArticulosç_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
+            Me.Icon = My.Resources.ico
+
+
             Dim reporteDao = New ReporteDAO
             DataGridViewX1.AllowUserToAddRows = False
             DataGridViewX1.DataSource = reporteDao.ObtenerReportesArticulos

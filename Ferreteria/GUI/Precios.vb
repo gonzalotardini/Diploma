@@ -353,7 +353,7 @@ Public Class Precios
                     _GestorArticulo.AumentarPreciosBLL(_PorcentajeAumento, _ListaArticulo)
 
                     MsgBox("Se actualizaron correctamente los Artículos", MsgBoxStyle.Information, "Información")
-
+                    i = 1
 
                 Case DescontarRadioButon.Checked = True
                     _GestorArticulo.DescontarPrecioBll(_ListaArticulo, _PorcentajeAumento)
@@ -390,7 +390,11 @@ Public Class Precios
         Dim _marca As New Marca
         Dim _SubCategoria As New SubCategoria
         Dim _Categoria As New Categoria
+        Dim _selected As Integer
 
+        '_selected = ComboBox1.SelectedIndex
+
+        'ComboBox1.SelectedIndex = _selected
 
         DataGridView1.DataSource = Nothing
 
@@ -430,7 +434,18 @@ Public Class Precios
 
             End Select
 
+            For Each row As DataGridViewRow In DataGridView1.Rows
 
+                If row.Index Mod 2 <> 0 Then
+                    row.DefaultCellStyle.BackColor = Color.Bisque
+                    ' row.Cells("Descripcion").Style.Font.Bold = True
+
+                Else
+                    row.DefaultCellStyle.BackColor = Color.Aqua
+
+                End If
+
+            Next
 
         Catch ex As Exception
             MsgBox(ex.Message)

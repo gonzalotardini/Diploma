@@ -13,6 +13,8 @@ Public Class VentasForm
 
 
 
+        VentasDataGridView.AllowUserToAddRows = False
+
         Dim _VentaDAO As New VentaDAO
 
         Me.WindowState = FormWindowState.Maximized 'Maximizar Ventana al Abrir
@@ -41,7 +43,7 @@ Public Class VentasForm
 
     End Sub
 
-    Private Sub VerDetalleButton_Click(sender As Object, e As EventArgs) Handles VerDetalleButton.Click
+    Private Sub VerDetalleButton_Click(sender As Object, e As EventArgs)
 
         If VentasDataGridView.CurrentRow IsNot Nothing Then
 
@@ -62,5 +64,15 @@ Public Class VentasForm
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs)
 
+    End Sub
+
+    Private Sub VerDetalleButton_Click_1(sender As Object, e As EventArgs) Handles VerDetalleButton.Click
+        If VentasDataGridView.CurrentRow IsNot Nothing Then
+
+            _CodigoVenta = (VentasDataGridView.CurrentRow.Cells(0).Value)
+
+            VentDetalle.Show()
+
+        End If
     End Sub
 End Class

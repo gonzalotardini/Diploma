@@ -14,6 +14,8 @@ Public Class VentDetalle
 
         _VentaCabecera.Cod_Venta = VentasForm._CodigoVenta
 
+        PresupuestoGridView.AllowUserToAddRows = False
+
         PresupuestoGridView.DataSource = _VentaDao.ObtenerVentaDetalle(_VentaCabecera).Tables(0)
 
         _VentaCabecera = _VentaDao.ObtenerCabecera(_VentaCabecera)
@@ -43,18 +45,18 @@ Public Class VentDetalle
 
 
 
-        For Each row As DataGridViewRow In PresupuestoGridView.Rows
+        'For Each row As DataGridViewRow In PresupuestoGridView.Rows
 
-            If row.Index Mod 2 <> 0 Then
-                row.DefaultCellStyle.BackColor = Color.Bisque
-                ' row.Cells("Descripcion").Style.Font.Bold = True
+        '    If row.Index Mod 2 <> 0 Then
+        '        row.DefaultCellStyle.BackColor = Color.Bisque
+        '        ' row.Cells("Descripcion").Style.Font.Bold = True
 
-            Else
-                row.DefaultCellStyle.BackColor = Color.Aqua
+        '    Else
+        '        row.DefaultCellStyle.BackColor = Color.Aqua
 
-            End If
+        '    End If
 
-        Next
+        'Next
 
 
 
@@ -70,13 +72,6 @@ Public Class VentDetalle
 
 
         Me.WindowState = FormWindowState.Maximized 'Maximizar Ventana al Abrir
-
-
-
-
-
-
-
 
     End Sub
 End Class

@@ -2,6 +2,7 @@
 Public Class ReportePrecios
     Private Sub Reportes_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
+            Me.Icon = My.Resources.ico
             Me.WindowState = FormWindowState.Maximized 'Maximizar Ventana al Abrir
             Dim reportesDal = New ReporteDAO
             DataGridViewX1.DataSource = reportesDal.ObtenerReportes

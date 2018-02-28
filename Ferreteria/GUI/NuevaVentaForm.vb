@@ -335,15 +335,9 @@ Public Class NuevaVentaForm
 
                 PresupuestoGridView1.Item("Importe", indice).Value = _Importe
 
-
+                _CantidadFilas = PresupuestoGridView1.RowCount
 
             End If
-
-
-
-
-
-
 
 
             For i = 0 To _CantidadFilas - 1
@@ -355,8 +349,6 @@ Public Class NuevaVentaForm
                 _ListaDetalles.Add(_PresupuestoDetalle)
 
             Next
-
-
 
 
             TotalLabel.Text = _GestorPresupuesto.CalcularTotal(_ListaDetalles)
@@ -385,11 +377,23 @@ Public Class NuevaVentaForm
         If MsgBox("¿Seguro desea finalizar la venta?", MsgBoxStyle.YesNo, "ATENCIÓN") = MsgBoxResult.Yes Then
 
             Try
+                Try
+                    '_PresupuestoCabecera.Cod_Presupuesto = _PresupuestoDAO.ObtenerCodUltimoPresupuesto + 1
+                    _VentaCabecera.Cod_Cliente = Convert.ToInt32(CodigoClienteLabel.Text)
+                    _VentaCabecera.Fecha = Convert.ToDateTime(LabelFecha.Text)
+                    _VentaCabecera.Total = Convert.ToDecimal(TotalLabel.Text)
+                Catch ex As Exception
 
-                '_PresupuestoCabecera.Cod_Presupuesto = _PresupuestoDAO.ObtenerCodUltimoPresupuesto + 1
-                _VentaCabecera.Cod_Cliente = Convert.ToInt32(CodigoClienteLabel.Text)
-                _VentaCabecera.Fecha = Convert.ToDateTime(LabelFecha.Text)
-                _VentaCabecera.Total = Convert.ToDecimal(TotalLabel.Text)
+                    Select Case Principal.CulturaGlobal
+                        Case "ESPAÑOL"
+                            Throw New Exception("Debe seleccionar un cliente")
+                        Case "ENGLISH"
+                            Throw New Exception("You must choose a customer")
+                    End Select
+
+
+                End Try
+
 
 
                 For i = 0 To PresupuestoGridView1.RowCount - 1

@@ -22,7 +22,6 @@ Partial Class VentDetalle
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.CodigoPresupuestoTextbox = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TotalLabel = New System.Windows.Forms.Label()
         Me.label = New System.Windows.Forms.Label()
@@ -35,15 +34,11 @@ Partial Class VentDetalle
         Me.RazonSocialTextBox = New System.Windows.Forms.TextBox()
         Me.RazonSocialLabel = New System.Windows.Forms.Label()
         Me.PresupuestoGridView = New System.Windows.Forms.DataGridView()
+        Me.CodigoPresupuestoTextbox = New System.Windows.Forms.Label()
+        Me.ButtonX1 = New DevComponents.DotNetBar.ButtonX()
+        Me.ButtonX2 = New DevComponents.DotNetBar.ButtonX()
         CType(Me.PresupuestoGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'CodigoPresupuestoTextbox
-        '
-        Me.CodigoPresupuestoTextbox.Location = New System.Drawing.Point(961, 24)
-        Me.CodigoPresupuestoTextbox.Name = "CodigoPresupuestoTextbox"
-        Me.CodigoPresupuestoTextbox.Size = New System.Drawing.Size(100, 20)
-        Me.CodigoPresupuestoTextbox.TabIndex = 35
         '
         'Label1
         '
@@ -59,7 +54,7 @@ Partial Class VentDetalle
         '
         Me.TotalLabel.AutoSize = True
         Me.TotalLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TotalLabel.Location = New System.Drawing.Point(821, 449)
+        Me.TotalLabel.Location = New System.Drawing.Point(821, 452)
         Me.TotalLabel.Name = "TotalLabel"
         Me.TotalLabel.Size = New System.Drawing.Size(226, 73)
         Me.TotalLabel.TabIndex = 32
@@ -69,7 +64,7 @@ Partial Class VentDetalle
         '
         Me.label.AutoSize = True
         Me.label.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label.Location = New System.Drawing.Point(605, 449)
+        Me.label.Location = New System.Drawing.Point(605, 467)
         Me.label.Name = "label"
         Me.label.Size = New System.Drawing.Size(183, 55)
         Me.label.TabIndex = 31
@@ -155,11 +150,45 @@ Partial Class VentDetalle
         Me.PresupuestoGridView.Size = New System.Drawing.Size(1030, 300)
         Me.PresupuestoGridView.TabIndex = 22
         '
+        'CodigoPresupuestoTextbox
+        '
+        Me.CodigoPresupuestoTextbox.AutoSize = True
+        Me.CodigoPresupuestoTextbox.Location = New System.Drawing.Point(976, 30)
+        Me.CodigoPresupuestoTextbox.Name = "CodigoPresupuestoTextbox"
+        Me.CodigoPresupuestoTextbox.Size = New System.Drawing.Size(39, 13)
+        Me.CodigoPresupuestoTextbox.TabIndex = 35
+        Me.CodigoPresupuestoTextbox.Text = "Label2"
+        '
+        'ButtonX1
+        '
+        Me.ButtonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.ButtonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
+        Me.ButtonX1.Image = Global.GUI.My.Resources.Resources.Imprimir1
+        Me.ButtonX1.Location = New System.Drawing.Point(1099, 126)
+        Me.ButtonX1.Name = "ButtonX1"
+        Me.ButtonX1.Size = New System.Drawing.Size(169, 66)
+        Me.ButtonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.ButtonX1.TabIndex = 36
+        Me.ButtonX1.Text = "ButtonX1"
+        '
+        'ButtonX2
+        '
+        Me.ButtonX2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.ButtonX2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
+        Me.ButtonX2.Location = New System.Drawing.Point(1099, 240)
+        Me.ButtonX2.Name = "ButtonX2"
+        Me.ButtonX2.Size = New System.Drawing.Size(169, 63)
+        Me.ButtonX2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.ButtonX2.TabIndex = 37
+        Me.ButtonX2.Text = "ButtonX2"
+        '
         'VentDetalle
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1188, 592)
+        Me.ClientSize = New System.Drawing.Size(1334, 592)
+        Me.Controls.Add(Me.ButtonX2)
+        Me.Controls.Add(Me.ButtonX1)
         Me.Controls.Add(Me.CodigoPresupuestoTextbox)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TotalLabel)
@@ -173,6 +202,7 @@ Partial Class VentDetalle
         Me.Controls.Add(Me.RazonSocialTextBox)
         Me.Controls.Add(Me.RazonSocialLabel)
         Me.Controls.Add(Me.PresupuestoGridView)
+        Me.DoubleBuffered = True
         Me.Name = "VentDetalle"
         Me.Text = "VentDetalle"
         CType(Me.PresupuestoGridView, System.ComponentModel.ISupportInitialize).EndInit()
@@ -180,7 +210,6 @@ Partial Class VentDetalle
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents CodigoPresupuestoTextbox As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents TotalLabel As System.Windows.Forms.Label
     Friend WithEvents label As System.Windows.Forms.Label
@@ -193,4 +222,7 @@ Partial Class VentDetalle
     Friend WithEvents RazonSocialTextBox As System.Windows.Forms.TextBox
     Friend WithEvents RazonSocialLabel As System.Windows.Forms.Label
     Friend WithEvents PresupuestoGridView As System.Windows.Forms.DataGridView
+    Friend WithEvents CodigoPresupuestoTextbox As Label
+    Friend WithEvents ButtonX1 As DevComponents.DotNetBar.ButtonX
+    Friend WithEvents ButtonX2 As DevComponents.DotNetBar.ButtonX
 End Class
