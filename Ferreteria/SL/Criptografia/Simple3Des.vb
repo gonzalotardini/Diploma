@@ -36,8 +36,7 @@ Public NotInheritable Class Simple3Des
     End Sub
 
     'Metodo publico que cifre la cadena
-    Public Function EncryptData(
-    ByVal plaintext As String) As String
+    Public Function EncryptData(ByVal plaintext As String) As String
 
         ' Convert the plaintext string to a byte array.
         Dim plaintextBytes() As Byte =
@@ -59,8 +58,7 @@ Public NotInheritable Class Simple3Des
     End Function
 
     'método público que descifre una cadena.
-    Public Function DecryptData(
-    ByVal encryptedtext As String) As String
+    Public Function DecryptData(ByVal encryptedtext As String) As String
 
         ' Convert the encrypted text string to a byte array.
         Dim encryptedBytes() As Byte = Convert.FromBase64String(encryptedtext)
