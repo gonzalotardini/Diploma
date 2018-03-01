@@ -112,9 +112,10 @@ Partial Class ReportePreciosDetalleForm
         '
         Me.ButtonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
         Me.ButtonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
-        Me.ButtonX1.Location = New System.Drawing.Point(1244, 99)
+        Me.ButtonX1.Image = Global.GUI.My.Resources.Resources.Imprimir1
+        Me.ButtonX1.Location = New System.Drawing.Point(1203, 99)
         Me.ButtonX1.Name = "ButtonX1"
-        Me.ButtonX1.Size = New System.Drawing.Size(139, 51)
+        Me.ButtonX1.Size = New System.Drawing.Size(180, 51)
         Me.ButtonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.ButtonX1.TabIndex = 7
         Me.ButtonX1.Text = "ButtonX1"

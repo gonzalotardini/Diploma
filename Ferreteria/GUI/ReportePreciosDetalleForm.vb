@@ -26,7 +26,9 @@ Public Class ReportePreciosDetalleForm
             DataGridView1.DataSource = reporteBll.ObtenerReportePreciosDetalleBll(ReportePrecios._CodReportePrecios)
 
         Catch ex As Exception
-
+            Dim el As New ErrorLogger
+            MsgBox(ex.Message, MsgBoxStyle.Critical, "ERROR")
+            el.WriteToErrorLog(ex.Message, ex.StackTrace, "Error")
         End Try
 
 
