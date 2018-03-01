@@ -1,13 +1,17 @@
 ﻿Imports DAL
+
+
 Public Class ReportePrecios
+
+    Public Shared _CodReportePrecios As Long
     Private Sub Reportes_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
             Me.Icon = My.Resources.ico
             Me.WindowState = FormWindowState.Maximized 'Maximizar Ventana al Abrir
             Dim reportesDal = New ReporteDAO
-            DataGridViewX1.DataSource = reportesDal.ObtenerReportes
+            DataGridView1.DataSource = reportesDal.ObtenerReportes
 
-            For Each row As DataGridViewRow In DataGridViewX1.Rows
+            For Each row As DataGridViewRow In DataGridView1.Rows
 
                 If row.Index Mod 2 <> 0 Then
                     row.DefaultCellStyle.BackColor = Color.Bisque
@@ -18,12 +22,22 @@ Public Class ReportePrecios
 
             Next
 
-            DataGridViewX1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
+            DataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
 
         Catch ex As Exception
 
             Throw New Exception(ex.Message)
 
         End Try
+    End Sub
+
+    Private Sub ButtonX1_Click(sender As Object, e As EventArgs) Handles ButtonX1.Click
+        If DataGridView1.CurrentRow IsNot Nothing Then
+
+            _CodReportePrecios = (DataGridView1.CurrentRow.Cells(0).Value)
+
+            ReportePreciosDetalleForm.Show()
+
+        End If
     End Sub
 End Class

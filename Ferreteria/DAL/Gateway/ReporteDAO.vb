@@ -87,6 +87,93 @@ Public Class ReporteDAO
 
     End Function
 
+
+    Public Function ObtenerReportePreciosCabecera(cod_reporte As Long) As Reporte
+        Dim _Consulta As String
+        Dim _Comando As SqlCommand
+        Dim _dataSet As New DataSet
+        Dim _Convertir As New Convertir
+        Dim reporte = New Reporte
+
+
+        Try
+            _Consulta = "select Cod_Reporte as ID, Fecha, Usuario, Tipo as Reporte from ReporteAumentoDePrecios where cod_reporte=" & cod_reporte
+
+            Me.Conexion.Open()
+
+            _Comando = New SqlCommand(_Consulta, Me.Conexion)
+
+            Dim _Adapter As New SqlDataAdapter(_Comando)
+
+            _Adapter.Fill(_dataSet)
+
+            reporte.Cod_Reporte = _dataSet.Tables(0).Rows(0).Item(0)
+            reporte.Fecha = _dataSet.Tables(0).Rows(0).Item(1)
+            reporte.Usuario = _dataSet.Tables(0).Rows(0).Item(2)
+            reporte.Tipo = _dataSet.Tables(0).Rows(0).Item(3)
+
+
+            Return reporte
+
+
+        Catch ex As Exception
+
+            Throw New Exception(ex.Message)
+            Return Nothing
+
+        Finally
+
+            Me.Conexion.Close()
+
+        End Try
+
+    End Function
+
+
+    Public Function ObtenerReportePreciosDetalle(cod_reporte As Long) As DataTable
+
+        Dim _Consulta As String
+        Dim _Comando As SqlCommand
+        Dim _dataSet As New DataSet
+        Dim _Convertir As New Convertir
+
+
+
+        Try
+            _Consulta = " Select a.Cod_Articulo, a.Descripcion, m.Descripcion as 'Marca',s.Descripcion AS 'Unidad_Medida',Precio_Inicial, Precio_Final, CantidadPrecios, PorcentajeAumento as 'Aumento', Fecha_Desde as 'Desde' , Fecha_Hasta as 'Hasta'
+                          From ReportePreciosDetalle r
+                          inner Join Articulo  a on a.Cod_Articulo=r.Cod_Articulo
+                          inner Join Marca m on m.Cod_Marca=a.Cod_Marca
+                          inner Join SubUnidad_Medida s on s.Cod_SubUnidad_Medida=a.Cod_SubUnidad_Medida
+                          where cod_reporte =" & cod_reporte
+
+            Me.Conexion.Open()
+
+            _Comando = New SqlCommand(_Consulta, Me.Conexion)
+
+            Dim _Adapter As New SqlDataAdapter(_Comando)
+
+            _Adapter.Fill(_dataSet)
+
+            Return _dataSet.Tables(0)
+
+
+        Catch ex As Exception
+
+            Throw New Exception(ex.Message)
+            Return Nothing
+
+        Finally
+
+            Me.Conexion.Close()
+
+        End Try
+
+
+
+    End Function
+
+
     Public Function ArticulosMasVendidos(ByVal _cantidad As Integer, ByVal _fecha_desde As Date, ByVal _fecha_hasta As Date) As DataTable
         Dim _Comando As New SqlCommand
         Dim _DataSet As New DataSet

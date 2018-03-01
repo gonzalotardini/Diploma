@@ -32,6 +32,28 @@ Public Class GestorReporte
 
     End Function
 
+    Public Function ObtenerReportePreciosDetalleBll(codReportePrecios As Long) As Object
+        Try
+            Dim reporteFacade = New ReporteFacade
+
+            Return reporteFacade.ObtenerReportePreciosDetalleFacade(codReportePrecios)
+
+        Catch ex As Exception
+            Throw New Exception(ex.Message)
+        End Try
+    End Function
+
+    Public Function ObtenerReportePreciosCabeceraBll(codReportePrecios As Long) As Reporte
+        Try
+            Dim reporteFacade = New ReporteFacade
+
+            Return reporteFacade.ObtenerReportePreciosCabeceraFacade(codReportePrecios)
+
+        Catch ex As Exception
+            Throw New Exception(ex.Message)
+        End Try
+    End Function
+
     Public Function ObtenerArticulosMasVendidosBLL(cantidad As Integer, fecha_desde As Date, fecha_hasta As Date) As DataTable
         Try
             Dim reporteFacade = New ReporteFacade

@@ -45,6 +45,26 @@ Public Class ReporteFacade
 
     End Sub
 
+    Public Function ObtenerReportePreciosDetalleFacade(codReportePrecios As Long) As Object
+        Try
+            Dim reporteDal = New ReporteDAO
+
+            Return reporteDal.ObtenerReportePreciosDetalle(codReportePrecios)
+
+        Catch ex As Exception
+            Throw New Exception(ex.Message)
+        End Try
+    End Function
+
+    Public Function ObtenerReportePreciosCabeceraFacade(codReportePrecios As Long) As Reporte
+        Try
+            Dim reporteDao = New ReporteDAO
+            Return reporteDao.ObtenerReportePreciosCabecera(codReportePrecios)
+        Catch ex As Exception
+            Throw New Exception(ex.Message)
+        End Try
+    End Function
+
     Public Function ObtenerArticulosMasVendidosFacade(cantidad As Integer, fecha_desde As Date, fecha_hasta As Date) As DataTable
         Try
             Dim reporteDal = New ReporteDAO
