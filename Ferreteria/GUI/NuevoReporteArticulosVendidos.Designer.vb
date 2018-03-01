@@ -22,7 +22,7 @@ Partial Class NuevoReporteArticulosVendidos
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.DataGridViewX1 = New DevComponents.DotNetBar.Controls.DataGridViewX()
         Me.CantidadInput = New DevComponents.Editors.IntegerInput()
         Me.ButtonX1 = New DevComponents.DotNetBar.ButtonX()
@@ -38,14 +38,14 @@ Partial Class NuevoReporteArticulosVendidos
         '
         Me.DataGridViewX1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight
         Me.DataGridViewX1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DataGridViewX1.DefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DataGridViewX1.DefaultCellStyle = DataGridViewCellStyle1
         Me.DataGridViewX1.GridColor = System.Drawing.Color.FromArgb(CType(CType(170, Byte), Integer), CType(CType(170, Byte), Integer), CType(CType(170, Byte), Integer))
         Me.DataGridViewX1.Location = New System.Drawing.Point(105, 153)
         Me.DataGridViewX1.Name = "DataGridViewX1"
@@ -69,7 +69,7 @@ Partial Class NuevoReporteArticulosVendidos
         'ButtonX1
         '
         Me.ButtonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
-        Me.ButtonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
+        Me.ButtonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.Magenta
         Me.ButtonX1.Location = New System.Drawing.Point(837, 84)
         Me.ButtonX1.Name = "ButtonX1"
         Me.ButtonX1.Size = New System.Drawing.Size(107, 45)
@@ -114,7 +114,7 @@ Partial Class NuevoReporteArticulosVendidos
         Me.VentasLabel.TabIndex = 12
         Me.VentasLabel.Text = "LABEL"
         '
-        'ReporteArticulosVendidos
+        'NuevoReporteArticulosVendidos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -127,7 +127,7 @@ Partial Class NuevoReporteArticulosVendidos
         Me.Controls.Add(Me.CantidadInput)
         Me.Controls.Add(Me.DataGridViewX1)
         Me.DoubleBuffered = True
-        Me.Name = "ReporteArticulosVendidos"
+        Me.Name = "NuevoReporteArticulosVendidos"
         Me.Text = "ReporteArticulosVendidos"
         CType(Me.DataGridViewX1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CantidadInput, System.ComponentModel.ISupportInitialize).EndInit()
