@@ -30,7 +30,7 @@ Partial Class Reportes
         'ButtonReportePrecios
         '
         Me.ButtonReportePrecios.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
-        Me.ButtonReportePrecios.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
+        Me.ButtonReportePrecios.ColorTable = DevComponents.DotNetBar.eButtonColor.Magenta
         Me.ButtonReportePrecios.Location = New System.Drawing.Point(147, 95)
         Me.ButtonReportePrecios.Name = "ButtonReportePrecios"
         Me.ButtonReportePrecios.Size = New System.Drawing.Size(255, 203)
@@ -41,7 +41,7 @@ Partial Class Reportes
         'ButtonReporteArticulos
         '
         Me.ButtonReporteArticulos.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
-        Me.ButtonReporteArticulos.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
+        Me.ButtonReporteArticulos.ColorTable = DevComponents.DotNetBar.eButtonColor.Magenta
         Me.ButtonReporteArticulos.Location = New System.Drawing.Point(437, 95)
         Me.ButtonReporteArticulos.Name = "ButtonReporteArticulos"
         Me.ButtonReporteArticulos.Size = New System.Drawing.Size(251, 203)
@@ -52,7 +52,7 @@ Partial Class Reportes
         'ButtonReporteVentas
         '
         Me.ButtonReporteVentas.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
-        Me.ButtonReporteVentas.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
+        Me.ButtonReporteVentas.ColorTable = DevComponents.DotNetBar.eButtonColor.Magenta
         Me.ButtonReporteVentas.Location = New System.Drawing.Point(708, 95)
         Me.ButtonReporteVentas.Name = "ButtonReporteVentas"
         Me.ButtonReporteVentas.Size = New System.Drawing.Size(234, 203)
