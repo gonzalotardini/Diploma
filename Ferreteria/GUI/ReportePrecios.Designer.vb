@@ -53,9 +53,9 @@ Partial Class ReportePrecios
         '
         Me.DataGridView1.BackgroundColor = System.Drawing.SystemColors.Control
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(233, 89)
+        Me.DataGridView1.Location = New System.Drawing.Point(245, 89)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(531, 326)
+        Me.DataGridView1.Size = New System.Drawing.Size(488, 314)
         Me.DataGridView1.TabIndex = 10
         '
         'ReportePrecios

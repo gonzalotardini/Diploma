@@ -155,7 +155,7 @@ Public Class VentaDAO
 
 
         Try
-            _Consulta = "Select V.Cod_Venta, V.Cod_Cliente, C.Razon_Social, V.Fecha, V.Total From VentaCabecera as V , Cliente as C Where C.Cod_Cliente=V.Cod_Cliente "
+            _Consulta = "Select V.Cod_Venta, V.Cod_Cliente, C.Razon_Social, V.Fecha, V.Total From VentaCabecera as V , Cliente as C Where C.Cod_Cliente=V.Cod_Cliente and Estado=0"
 
 
 
@@ -390,7 +390,36 @@ Public Class VentaDAO
 
     End Function
 
+    Public Sub CancelarVentaDao(cod_venta As Long)
 
+        Dim _Consulta As String
+        Dim _Comando As New SqlCommand
+
+
+        _Consulta = "Update VentaCabecera set Estado=1 where Cod_Venta=@Cod_Venta"
+
+        Try
+
+            Me.Conexion.Open()
+
+            _Comando = New SqlCommand(_Consulta, Me.Conexion)
+
+            _Comando.Parameters.AddWithValue("@Cod_Venta", cod_venta)
+
+
+            _Comando.ExecuteNonQuery()
+
+
+        Catch ex As Exception
+
+            Throw New Exception("Error: " & ex.Message)
+
+
+        Finally
+            Me.Conexion.Close()
+        End Try
+
+    End Sub
 
 
 End Class

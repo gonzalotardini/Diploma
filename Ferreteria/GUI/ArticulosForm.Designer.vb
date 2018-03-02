@@ -400,7 +400,7 @@ Partial Class ArticulosForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 17.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1703, 894)
+        Me.ClientSize = New System.Drawing.Size(1596, 873)
         Me.Controls.Add(Me.CODBARRAS)
         Me.Controls.Add(Me.EliminarButton)
         Me.Controls.Add(Me.Label14)

@@ -18,4 +18,12 @@ Public Class ReporteArticulosç
 
         End Try
     End Sub
+
+    Private Sub DataGridViewX1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridViewX1.CellContentClick
+
+    End Sub
+
+    Private Sub DataGridViewX1_ColumnHeaderMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles DataGridViewX1.ColumnHeaderMouseClick
+
+    End Sub
 End Class

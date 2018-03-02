@@ -371,10 +371,24 @@ Public Class NuevaVentaForm
         Dim _VentaDao As New VentaDAO
         Dim _VentaCabecera As New VentaCabecera
         Dim _ListaDetalles As New List(Of VentaDetalle)
+        Dim pregunta As String = ""
+        Dim imprimir As String = ""
+        Dim venta As String = ""
+
+        Select Case Principal.CulturaGlobal
+            Case "ESPAÑOL"
+                pregunta = "¿Seguro desea finaliza la venta?"
+                imprimir = "¿Desea imprimir el comprobante?"
+                venta = "Se creó correctamente la venta"
+            Case "ENGLISH"
+                pregunta = "Do you realle want to finish the sell?"
+                imprimir = "Do you want to print?"
+                venta = "Sell correctly created"
+        End Select
 
 
 
-        If MsgBox("¿Seguro desea finalizar la venta?", MsgBoxStyle.YesNo, "ATENCIÓN") = MsgBoxResult.Yes Then
+        If MsgBox(pregunta, MsgBoxStyle.YesNo + MsgBoxStyle.Question, "ATENCIÓN") = MsgBoxResult.Yes Then
 
             Try
                 Try
@@ -419,10 +433,10 @@ Public Class NuevaVentaForm
 
                 el.WriteToErrorLog("Se creo correctamente la venta ", "Nuevo venta form", "Información")
 
-                Dim Mensaje = MsgBox("Se creo correctamente la venta", MsgBoxStyle.Information, "INFORMACION")
+                Dim Mensaje = MsgBox(venta, MsgBoxStyle.Information, "INFORMACION")
 
 
-                If MsgBox("¿Desea imprimir comprobante de venta?", MsgBoxStyle.YesNo, "ATENCIÓN") = MsgBoxResult.Yes Then
+                If MsgBox(imprimir, MsgBoxStyle.YesNo + MsgBoxStyle.Question, "ATENCIÓN") = MsgBoxResult.Yes Then
 
                     Dim VentaCabecera As New VentaCabecera
 
@@ -512,5 +526,18 @@ Public Class NuevaVentaForm
 
 
 
+    End Sub
+
+    Private Sub ArticuloGridView1_ColumnHeaderMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles ArticuloGridView1.ColumnHeaderMouseClick
+        For Each row As DataGridViewRow In ArticuloGridView1.Rows
+
+            If row.Index Mod 2 <> 0 Then
+                row.DefaultCellStyle.BackColor = Color.Bisque
+            Else
+                row.DefaultCellStyle.BackColor = Color.Aqua
+
+            End If
+
+        Next
     End Sub
 End Class

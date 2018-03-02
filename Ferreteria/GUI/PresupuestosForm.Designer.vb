@@ -122,6 +122,7 @@ Partial Class PresupuestosForm
         'PresupuestosDataGridView
         '
         Me.PresupuestosDataGridView.BackgroundColor = System.Drawing.Color.White
+        Me.PresupuestosDataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised
         Me.PresupuestosDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window
@@ -134,6 +135,7 @@ Partial Class PresupuestosForm
         Me.PresupuestosDataGridView.GridColor = System.Drawing.Color.FromArgb(CType(CType(170, Byte), Integer), CType(CType(170, Byte), Integer), CType(CType(170, Byte), Integer))
         Me.PresupuestosDataGridView.Location = New System.Drawing.Point(57, 271)
         Me.PresupuestosDataGridView.Name = "PresupuestosDataGridView"
+        Me.PresupuestosDataGridView.ReadOnly = True
         Me.PresupuestosDataGridView.Size = New System.Drawing.Size(852, 313)
         Me.PresupuestosDataGridView.TabIndex = 8
         '

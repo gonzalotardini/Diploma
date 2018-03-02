@@ -12,7 +12,8 @@ Public Class PresupuestosForm
         Dim _PresupuestoDAO As New PresupuestoDAO
 
         Me.WindowState = FormWindowState.Maximized 'Maximizar Ventana al Abrir
-
+        PresupuestosDataGridView.AllowUserToAddRows = False
+        PresupuestosDataGridView.EditMode = False
 
         PresupuestosDataGridView.DataSource = _PresupuestoDAO.ObtenerPresupuestos
 
@@ -161,5 +162,22 @@ Public Class PresupuestosForm
 
     Private Sub PresupuestosDataGridView_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles PresupuestosDataGridView.CellContentClick
 
+    End Sub
+
+    Private Sub PresupuestosDataGridView_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles PresupuestosDataGridView.CellClick
+
+    End Sub
+
+    Private Sub PresupuestosDataGridView_ColumnHeaderMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles PresupuestosDataGridView.ColumnHeaderMouseClick
+        For Each row As DataGridViewRow In PresupuestosDataGridView.Rows
+
+            If row.Index Mod 2 <> 0 Then
+                row.DefaultCellStyle.BackColor = Color.Bisque
+            Else
+                row.DefaultCellStyle.BackColor = Color.Aqua
+
+            End If
+
+        Next
     End Sub
 End Class

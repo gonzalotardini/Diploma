@@ -444,4 +444,17 @@ Public Class ClienteForm
 
 
     End Sub
+
+    Private Sub ClienteGridView_ColumnHeaderMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles ClienteGridView.ColumnHeaderMouseClick
+        For Each row As DataGridViewRow In ClienteGridView.Rows
+
+            If row.Index Mod 2 <> 0 Then
+                row.DefaultCellStyle.BackColor = Color.Bisque
+            Else
+                row.DefaultCellStyle.BackColor = Color.Aqua
+
+            End If
+
+        Next
+    End Sub
 End Class

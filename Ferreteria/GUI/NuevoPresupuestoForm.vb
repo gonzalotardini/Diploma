@@ -159,16 +159,7 @@ Public Class NuevoPresupuestoForm
     End Sub
 
     Private Sub ArticuloGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles ArticuloGridView1.CellContentClick
-        For Each row As DataGridViewRow In ArticuloGridView1.Rows
 
-            If row.Index Mod 2 <> 0 Then
-                row.DefaultCellStyle.BackColor = Color.Bisque
-            Else
-                row.DefaultCellStyle.BackColor = Color.Aqua
-
-            End If
-
-        Next
 
     End Sub
 
@@ -342,7 +333,8 @@ Public Class NuevoPresupuestoForm
 
         Try
 
-            If MsgBox("¿Seguro desea imprimir?", MsgBoxStyle.YesNo, "ATENCIÓN") = MsgBoxResult.Yes Then
+
+            If MsgBox("¿Seguro desea imprimir?", MsgBoxStyle.YesNo + MsgBoxStyle.Question, "ATENCIÓN") = MsgBoxResult.Yes Then
 
 
                 Dim PresupuestoCabecera As New PresupuestoCabecera
@@ -607,5 +599,22 @@ Public Class NuevoPresupuestoForm
 
         CodigoClienteLabel.Text = _CodigoCliente
 
+    End Sub
+
+    Private Sub ArticuloGridView1_ColumnHeaderMouseDoubleClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles ArticuloGridView1.ColumnHeaderMouseDoubleClick
+
+    End Sub
+
+    Private Sub ArticuloGridView1_ColumnHeaderMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles ArticuloGridView1.ColumnHeaderMouseClick
+        For Each row As DataGridViewRow In ArticuloGridView1.Rows
+
+            If row.Index Mod 2 <> 0 Then
+                row.DefaultCellStyle.BackColor = Color.Bisque
+            Else
+                row.DefaultCellStyle.BackColor = Color.Aqua
+
+            End If
+
+        Next
     End Sub
 End Class

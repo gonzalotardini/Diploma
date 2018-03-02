@@ -1,6 +1,7 @@
 ﻿Imports DAL
 Imports BLL
 Imports BIZ
+Imports SL
 
 Public Class VentasForm
 
@@ -59,7 +60,31 @@ Public Class VentasForm
     End Sub
 
     Private Sub CancelarButton_Click(sender As Object, e As EventArgs) Handles CancelarButton.Click
+        Try
+            Dim ventaBll = New GestorVenta
+            Dim ventaDao = New VentaDAO
+            Dim cod As Long
+            cod = VentasDataGridView.CurrentRow.Cells(0).Value
 
+            ventaBll.CancelarVentaBll(cod)
+
+            VentasDataGridView.DataSource = ventaDao.ObtenerVentas
+
+            For Each row As DataGridViewRow In VentasDataGridView.Rows
+
+                If row.Index Mod 2 <> 0 Then
+                    row.DefaultCellStyle.BackColor = Color.Bisque
+                Else
+                    row.DefaultCellStyle.BackColor = Color.Aqua
+
+                End If
+
+            Next
+        Catch ex As Exception
+            Dim el As New ErrorLogger
+            MsgBox(ex.Message, MsgBoxStyle.Critical, "ERROR")
+            el.WriteToErrorLog(ex.Message, ex.StackTrace, "Error")
+        End Try
     End Sub
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs)
@@ -74,5 +99,26 @@ Public Class VentasForm
             VentDetalle.Show()
 
         End If
+    End Sub
+
+    Private Sub VentasDataGridView_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles VentasDataGridView.CellContentClick
+
+    End Sub
+
+    Private Sub VentasDataGridView_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles VentasDataGridView.CellClick
+
+    End Sub
+
+    Private Sub VentasDataGridView_ColumnHeaderMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles VentasDataGridView.ColumnHeaderMouseClick
+        For Each row As DataGridViewRow In VentasDataGridView.Rows
+
+            If row.Index Mod 2 <> 0 Then
+                row.DefaultCellStyle.BackColor = Color.Bisque
+            Else
+                row.DefaultCellStyle.BackColor = Color.Aqua
+
+            End If
+
+        Next
     End Sub
 End Class
