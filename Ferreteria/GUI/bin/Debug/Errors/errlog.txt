@@ -2124,3 +2124,8 @@ Mensaje: Error, cantidad debe ser numerico
 StackTrace:    at GUI.NuevaVentaForm.ArticuloGridView1_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevaVentaForm.vb:line 332
 Fecha/Hora: 02/03/2018 17:16:34
 ===========================================================================================
+Titulo: Error
+Mensaje: Error, la nota de crédito no corresponde al cliente seleccionado
+StackTrace:    at GUI.NuevaVentaForm.FinalizarButton_Click_1(Object sender, EventArgs e)
+Fecha/Hora: 02/03/2018 17:46:19
+===========================================================================================

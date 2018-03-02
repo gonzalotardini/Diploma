@@ -16,7 +16,7 @@ Public Class NotaCreditoForm
 
             Me.Close()
         Catch ex As Exception
-            MsgBox(ex.Message)
+            MsgBox(ex.Message, MsgBoxStyle.Critical, "ERROR")
         End Try
     End Sub
 

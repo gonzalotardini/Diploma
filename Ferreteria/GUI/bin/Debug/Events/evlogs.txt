@@ -3978,3 +3978,13 @@ Mensaje: Se creo correctamente la venta
 StackTrace: Nuevo venta form
 Fecha/Hora: 02/03/2018 17:16:50
 ===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/03/2018 17:43:56
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 02/03/2018 17:51:53
+===========================================================================================

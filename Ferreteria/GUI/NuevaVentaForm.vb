@@ -7,6 +7,7 @@ Imports SL
 Public Class NuevaVentaForm
 
     Public _CodNotaCredito As Long = 0
+    Public _CodClienteNota As Long
     Public Shared _CodigoCliente As Long
     Public Shared _TotalCredito As Decimal
     Public Shared _Cuit As Long
@@ -216,6 +217,7 @@ Public Class NuevaVentaForm
             codCreditoLabel.Visible = True
             Label6.Visible = True
             Label6.Text = _CodNotaCredito
+            _CodClienteNota = codClienteNota
 
         Else
 
@@ -435,7 +437,20 @@ Public Class NuevaVentaForm
 
         If MsgBox(pregunta, MsgBoxStyle.YesNo + MsgBoxStyle.Question, "ATENCIÓN") = MsgBoxResult.Yes Then
 
+
             Try
+                If Label6.Text <> "" Then
+
+                    If Convert.ToString(_CodClienteNota) <> CodigoClienteLabel.Text Then
+                        Select Case Principal.CulturaGlobal
+                            Case "ESPAÑOL"
+                                Throw New Exception("Error, la nota de crédito no corresponde al cliente seleccionado")
+                            Case "ENGLISH"
+                                Throw New Exception("Error, this credit note does not belong to the selected client")
+                        End Select
+                    End If
+
+                End If
                 Try
                     '_PresupuestoCabecera.Cod_Presupuesto = _PresupuestoDAO.ObtenerCodUltimoPresupuesto + 1
                     _VentaCabecera.Cod_Cliente = Convert.ToInt32(CodigoClienteLabel.Text)

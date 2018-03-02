@@ -472,6 +472,8 @@ Public Class VentaDAO
 
 
 
+
+
     Public Function ObtenerNotasDeCredito() As DataTable
         Dim _Consulta As String
         Dim _Comando As SqlCommand
@@ -507,6 +509,29 @@ Public Class VentaDAO
 
         End Try
     End Function
+
+    Public Sub CancelarNotaDeCredito(codNota As Long)
+
+        Dim _Consulta As String
+        Dim _Comando As New SqlCommand
+
+
+        _Consulta = "update NotaDeCredito set Estado=1 where Cod_NotaCredito=" + codNota
+
+        Try
+
+            Me.Conexion.Open()
+
+            _Comando = New SqlCommand(_Consulta, Me.Conexion)
+            _Comando.ExecuteNonQuery()
+
+
+        Catch ex As Exception
+            Throw New Exception("Error al generar venta " & ex.Message)
+        Finally
+            Me.Conexion.Close()
+        End Try
+    End Sub
 
 
 End Class
