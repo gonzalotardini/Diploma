@@ -504,6 +504,8 @@ Public Class PresupuestoDetalleForm
                 TextBoxBuscarArticulo.Focus()
 
 
+                Me.Close()
+
             Catch ex As Exception
 
                 Dim el As New ErrorLogger

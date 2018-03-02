@@ -95,10 +95,10 @@ Partial Class VentasForm
         Me.VentasDataGridView.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight
         Me.VentasDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.VentasDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.VentasDataGridView.Location = New System.Drawing.Point(185, 175)
+        Me.VentasDataGridView.Location = New System.Drawing.Point(229, 174)
         Me.VentasDataGridView.Name = "VentasDataGridView"
         Me.VentasDataGridView.ReadOnly = True
-        Me.VentasDataGridView.Size = New System.Drawing.Size(841, 357)
+        Me.VentasDataGridView.Size = New System.Drawing.Size(699, 352)
         Me.VentasDataGridView.TabIndex = 6
         '
         'VentasLabel

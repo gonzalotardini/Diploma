@@ -77,4 +77,3 @@ C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\ClassLibrary1\obj\Debug\BIZ.vb
 C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\ClassLibrary1\obj\Debug\BIZ.dll
 C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\ClassLibrary1\obj\Debug\BIZ.xml
 C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\ClassLibrary1\obj\Debug\BIZ.pdb
-C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\ClassLibrary1\obj\Debug\BIZ.vbprojResolveAssemblyReference.cache

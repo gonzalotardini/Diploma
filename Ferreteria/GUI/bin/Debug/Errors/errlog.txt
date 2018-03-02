@@ -2048,3 +2048,30 @@ Mensaje: USUARIO O CONTRASEÑA INCORRECTO
 StackTrace:    at GUI.LogIn.Button1_Click_1(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\LogIn.vb:line 52
 Fecha/Hora: 01/03/2018 17:24:16
 ===========================================================================================
+Titulo: Error
+Mensaje: Debe seleccionar un cliente
+StackTrace:    at GUI.NuevoPresupuestoForm.FinalizarButton_Click(Object sender, EventArgs e)
+Fecha/Hora: 01/03/2018 23:04:43
+===========================================================================================
+Titulo: Error
+Mensaje: Debe seleccionar un cliente
+StackTrace:    at GUI.NuevoPresupuestoForm.FinalizarButton_Click(Object sender, EventArgs e)
+Fecha/Hora: 01/03/2018 23:05:47
+===========================================================================================
+Titulo: Error
+Mensaje: Conversion from string "" to type 'Decimal' is not valid.
+StackTrace:    at Microsoft.VisualBasic.CompilerServices.Conversions.ToDecimal(String Value, NumberFormatInfo NumberFormat)
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToDecimal(String Value)
+   at GUI.NuevoPresupuestoForm.ImprimirButton_Click(Object sender, EventArgs e)
+Fecha/Hora: 01/03/2018 23:06:36
+===========================================================================================
+Titulo: Error
+Mensaje: Debe seleccionar un cliente
+StackTrace:    at GUI.NuevoPresupuestoForm.FinalizarButton_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevoPresupuestoForm.vb:line 255
+Fecha/Hora: 01/03/2018 23:11:54
+===========================================================================================
+Titulo: Error
+Mensaje: Error, debe agregar artículos
+StackTrace:    at GUI.NuevoPresupuestoForm.ImprimirButton_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevoPresupuestoForm.vb:line 359
+Fecha/Hora: 01/03/2018 23:15:13
+===========================================================================================

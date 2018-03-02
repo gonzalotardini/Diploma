@@ -40,6 +40,7 @@ Public Class Principal
         BackUpButton.Enabled = False
         IntegridadButton.Enabled = False
         UsuariosToolStripMenuItem.Enabled = False
+        ReportesButton.Enabled = False
 
 
 
@@ -84,22 +85,12 @@ Public Class Principal
         AdministrarToolStripMenuItem.ForeColor = Color.White
         AdministrarToolStripMenuItem.BackColor = Color.DodgerBlue
 
-
-
-
-
-
         Me.Icon = My.Resources.ico
         Me.Icon = My.Resources.ico
-
-
-
 
         Dim ListaPalabras As New List(Of SL.PalabrasIdioma)
 
         Dim Multiidioma As New SL.Multiidioma
-
-
 
         If CulturaGlobal = "ESPAÑOL" Then
             ListaPalabras = Multiidioma.ObtenerPalabras("ES-ESP")
@@ -141,10 +132,6 @@ Public Class Principal
             Dim Cultura = "ENG-ENGLAND"
             ListaPalabras = Multiidioma.ObtenerPalabras(Cultura)
 
-
-
-
-
             ArticulosButtonn.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "ARTICULOS" Select V.Value).FirstOrDefault
             ClientesButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "CLIENTES" Select V.Value).FirstOrDefault
             UnidadMedidaToolStripMenuItem.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "UNIDADDEMEDIDA" Select V.Value).FirstOrDefault
@@ -176,6 +163,21 @@ Public Class Principal
 
         '-------PROCESO DE PATENTES
 
+        '1-ABMARTICULO
+        '2-ABMCATEGORIA
+        '3-ABMSUBCATEGORIA
+        '4-ABMMARCA
+        '5-ABMSUBUNIDADDEMEDIDA
+        '6-PRECIOS
+        '7-PRESUPUESTO
+        '8-ABMCLIENTE
+        '9-VENTA
+        '10-REPORTE
+        '11-INTEGRIDAD
+        '12-BITACORA
+        '13-ENVIO
+        '14-BACKUP
+        '15-USUARIO
 
         LogOutToolStripMenuItem.Enabled = True
         For Each item In LogIn.ListaPatentes
@@ -218,6 +220,7 @@ Public Class Principal
 
                 Case 10
                     ReportesToolStripMenuItem.Enabled = True
+                    ReportesButton.Enabled = True
 
                 Case 11
                     IntegridadButton.Enabled = True

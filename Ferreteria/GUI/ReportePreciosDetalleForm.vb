@@ -1,5 +1,7 @@
 ﻿Imports BLL
 Imports BIZ
+Imports SL
+
 Public Class ReportePreciosDetalleForm
     Private Sub ReportePreciosDetalleForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 

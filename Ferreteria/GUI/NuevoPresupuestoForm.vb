@@ -28,6 +28,8 @@ Public Class NuevoPresupuestoForm
 
     Private Sub NuevoPresupuestoForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+        ArticuloGridView1.AllowUserToAddRows = False
+
         Me.Icon = My.Resources.ico
         Dim ArticuloDAO As New ArticuloDAO
         LabelFecha.Text = Today
@@ -69,10 +71,10 @@ Public Class NuevoPresupuestoForm
 
     End Sub
 
-  
+
 
     Private Sub TextBoxBuscarArticulo_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBoxBuscarArticulo.KeyDown
-
+        ArticuloGridView1.AllowUserToAddRows = False
 
         Dim GestorArticulo As New GestorArticulo
         Dim _Articulo As New Articulo
@@ -235,15 +237,29 @@ Public Class NuevoPresupuestoForm
         Dim _ListaDetalles As New List(Of PresupuestoDetalle)
 
 
-        If MsgBox("¿Seguro desea finalizar el presupuesto?", MsgBoxStyle.YesNo, "ATENCIÓN") = MsgBoxResult.Yes Then
+        If MsgBox("¿Seguro desea finalizar el presupuesto?", MsgBoxStyle.YesNo + MsgBoxStyle.Question, "ATENCIÓN") = MsgBoxResult.Yes Then
 
             Try
+                Try
 
-                '_PresupuestoCabecera.Cod_Presupuesto = _PresupuestoDAO.ObtenerCodUltimoPresupuesto + 1
-                _PresupuestoCabecera.Cod_Cliente = Convert.ToInt32(CodigoClienteLabel.Text)
-                _PresupuestoCabecera.FechaInicio = Convert.ToDateTime(LabelFecha.Text)
-                _PresupuestoCabecera.FechaFin = DateAdd(DateInterval.Day, 15, Convert.ToDateTime(LabelFecha.Text))
-                _PresupuestoCabecera.Total = Convert.ToDecimal(TotalLabel.Text)
+                    '_PresupuestoCabecera.Cod_Presupuesto = _PresupuestoDAO.ObtenerCodUltimoPresupuesto + 1
+                    _PresupuestoCabecera.Cod_Cliente = Convert.ToInt32(CodigoClienteLabel.Text)
+                    _PresupuestoCabecera.FechaInicio = Convert.ToDateTime(LabelFecha.Text)
+                    _PresupuestoCabecera.FechaFin = DateAdd(DateInterval.Day, 15, Convert.ToDateTime(LabelFecha.Text))
+                    _PresupuestoCabecera.Total = Convert.ToDecimal(TotalLabel.Text)
+
+                Catch ex As Exception
+
+                    Select Case Principal.CulturaGlobal
+                        Case "ESPAÑOL"
+                            Throw New Exception("Debe seleccionar un cliente")
+                        Case "ENGLISH"
+                            Throw New Exception("You must choose a customer")
+                    End Select
+
+                End Try
+
+
 
 
                 For i = 0 To PresupuestoGridView1.RowCount - 1
@@ -282,6 +298,12 @@ Public Class NuevoPresupuestoForm
                 Me.Show()
                 TextBoxBuscarArticulo.Focus()
 
+                CodigoClienteLabel.Text = ""
+
+                TotalLabel.Text = ""
+                CuitLabel.Text = ""
+                RazonSocialLabel.Text = ""
+
 
             Catch ex As Exception
 
@@ -298,7 +320,7 @@ Public Class NuevoPresupuestoForm
         End If
 
 
-        
+
 
     End Sub
 
@@ -322,14 +344,25 @@ Public Class NuevoPresupuestoForm
 
             If MsgBox("¿Seguro desea imprimir?", MsgBoxStyle.YesNo, "ATENCIÓN") = MsgBoxResult.Yes Then
 
+
                 Dim PresupuestoCabecera As New PresupuestoCabecera
-
                 Dim _ClasePDFpresupuesto As SL.ClasePDFpresupuesto
-
                 Dim _ListaDetalle As New List(Of ClasePDFpresupuesto)
 
 
+
                 Dim CantidadItems As Integer = PresupuestoGridView1.RowCount
+
+                If CantidadItems = 0 Then
+                    Select Case Principal.CulturaGlobal
+                        Case "ESPAÑOL"
+                            Throw New Exception("Error, debe agregar artículos")
+                        Case "ENGLISH"
+                            Throw New Exception("Error, you must add products")
+                    End Select
+                End If
+
+
 
 
 
@@ -360,9 +393,20 @@ Public Class NuevoPresupuestoForm
 
 
                 Next
-                PresupuestoCabecera.FechaInicio = CDate(LabelFecha.Text)
-                PresupuestoCabecera.Total = CDec(TotalLabel.Text)
-                PresupuestoCabecera.Cod_Cliente = (CodigoClienteLabel.Text).ToUpper
+
+                Try
+                    PresupuestoCabecera.FechaInicio = CDate(LabelFecha.Text)
+                    PresupuestoCabecera.Total = CDec(TotalLabel.Text)
+                    PresupuestoCabecera.Cod_Cliente = (CodigoClienteLabel.Text).ToUpper
+                Catch ex As Exception
+                    Select Case Principal.CulturaGlobal
+                        Case "ESPAÑOL"
+                            Throw New Exception("Debe seleccionar un cliente")
+                        Case "ENGLISH"
+                            Throw New Exception("You must choose a customer")
+                    End Select
+                End Try
+
 
                 _GestorPresupuesto.GenerarPresupuestoPDF(_ListaDetalle, PresupuestoCabecera)
 
@@ -471,7 +515,7 @@ Public Class NuevoPresupuestoForm
 
                         _RespuestaInputBox = _RespuestaInputBox + Convert.ToDecimal(row.Cells("Cantidad").Value)
                         row.Cells(0).Value = _RespuestaInputBox
-                        bandera = 1
+                        Bandera = 1
                         indice = row.Index
 
 
@@ -518,6 +562,7 @@ Public Class NuevoPresupuestoForm
 
 
                 PresupuestoGridView1.Item("Importe", indice).Value = _Importe
+                _CantidadFilas = PresupuestoGridView1.RowCount
 
 
 
