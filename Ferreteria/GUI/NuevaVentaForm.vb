@@ -6,61 +6,15 @@ Imports SL
 
 Public Class NuevaVentaForm
 
-
+    Public _CodNotaCredito As Long = 0
     Public Shared _CodigoCliente As Long
+    Public Shared _TotalCredito As Decimal
     Public Shared _Cuit As Long
     Public Shared _RazonSocial As String
 
-    Private Sub QuitarButton_Click(sender As Object, e As EventArgs) Handles QuitarButton.Click
+    Private Sub QuitarButton_Click(sender As Object, e As EventArgs)
 
 
-        Try
-            Dim _ListaDetalles As New List(Of PresupuestoDetalle)
-            Dim _GestorPresupuesto As New GestorPresupuesto
-
-            Dim _CantidadFilas As Integer
-
-
-            If PresupuestoGridView1.CurrentRow IsNot Nothing Then
-
-                ' saco del presupuesto el articulo
-                PresupuestoGridView1.Rows.RemoveAt(PresupuestoGridView1.CurrentRow.Index)
-                _CantidadFilas = PresupuestoGridView1.RowCount
-
-
-
-
-                For i = 0 To _CantidadFilas - 1
-
-                    Dim _PresupuestoDetalle As New PresupuestoDetalle
-
-                    _PresupuestoDetalle.Importe = PresupuestoGridView1.Rows(i).Cells("Importe").Value
-
-                    _ListaDetalles.Add(_PresupuestoDetalle)
-
-                Next
-
-
-
-
-                TotalLabel.Text = _GestorPresupuesto.CalcularTotal(_ListaDetalles)
-
-            End If
-
-
-
-
-            Me.Show()
-            TextBoxBuscarArticulo.Focus()
-
-        Catch ex As Exception
-
-            Dim el As New ErrorLogger
-            MsgBox(ex.Message, MsgBoxStyle.Critical, "ERROR")
-            el.WriteToErrorLog(ex.Message, ex.StackTrace, "Error")
-
-
-        End Try
 
     End Sub
 
@@ -68,6 +22,57 @@ Public Class NuevaVentaForm
         Me.Icon = My.Resources.ico
         Dim ArticuloDAO As New ArticuloDAO
         LabelFecha.Text = Today
+        RazonSocialLabel.Text = ""
+        CuitLabel.Text = ""
+        CodigoClienteLabel.Text=""
+        labelPesos.Visible = False
+        CreditoLabel.Visible = False
+        codCreditoLabel.Visible = False
+        Label6.Visible = False
+        Label6.Text = ""
+
+
+
+        Dim ListaPalabras As New List(Of SL.PalabrasIdioma)
+
+        Dim Multiidioma As New SL.Multiidioma
+
+        If Principal.CulturaGlobal = "ESPAÑOL" Then
+            ListaPalabras = Multiidioma.ObtenerPalabras("ES-ESP")
+
+
+            Dim Cultura = "ES-ESP"
+            'LINQ para el multiidioma
+
+            Label2.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "CODIGOCLIENTE" Select V.Value).FirstOrDefault
+            Label4.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "RAZONSOCIAL" Select V.Value).FirstOrDefault
+            Label1.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "FECHA" Select V.Value).FirstOrDefault
+            BuscarButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "BUSCAR" Select V.Value).FirstOrDefault
+            ButtonX1.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "QUITAR" Select V.Value).FirstOrDefault
+            FinalizarButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "FINALIZAR" Select V.Value).FirstOrDefault
+            RadioButtonDescripcion.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "DESCRIPCION" Select V.Value).FirstOrDefault
+            RadioButtonDescripcion.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "CODIGO" Select V.Value).FirstOrDefault
+        End If
+
+
+        If Principal.CulturaGlobal = "ENGLISH" Then
+
+
+            Dim Cultura = "ENG-ENGLAND"
+            ListaPalabras = Multiidioma.ObtenerPalabras(Cultura)
+
+            Label2.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "CODIGOCLIENTE" Select V.Value).FirstOrDefault
+            Label4.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "RAZONSOCIAL" Select V.Value).FirstOrDefault
+            Label1.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "FECHA" Select V.Value).FirstOrDefault
+            BuscarButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "BUSCAR" Select V.Value).FirstOrDefault
+            ButtonX1.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "QUITAR" Select V.Value).FirstOrDefault
+            FinalizarButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "FINALIZAR" Select V.Value).FirstOrDefault
+            RadioButtonDescripcion.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "DESCRIPCION" Select V.Value).FirstOrDefault
+            RadioButtonDescripcion.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "CODIGO" Select V.Value).FirstOrDefault
+
+        End If
+
+
 
         Try
             ArticuloGridView1.DataSource = ArticuloDAO.ObtenerPrimerosArticulos.Tables(0)
@@ -185,22 +190,44 @@ Public Class NuevaVentaForm
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
 
 
-        ClienteForm.Show()
+
 
 
     End Sub
 
 
     Public Sub TraerCliente(CodigoCliente As Long, RazonSocial As String, Cuit As Long)
-
-
         CodigoClienteLabel.Text = CodigoCliente
         RazonSocialLabel.Text = RazonSocial
         CuitLabel.Text = _Cuit
+    End Sub
 
+    Public Sub TraerNotaCredito(Total As Decimal, CodNotaCredito As Long, codCliente As Long, codClienteNota As Long)
+
+        If codCliente = codClienteNota Then
+
+            CreditoLabel.Text = Total
+            RazonSocialLabel.Text = CodNotaCredito
+            labelPesos.Visible = True
+            CreditoLabel.Visible = True
+            codCreditoLabel.Visible = True
+            Label6.Visible = True
+            Label6.Text = _CodNotaCredito
+
+        Else
+
+            Select Case Principal.CulturaGlobal
+                Case "ESPAÑOL"
+                    Throw New Exception("Error, la nota de crédito no corresponde al cliente seleccionado")
+                Case "ENGLISH"
+                    Throw New Exception("Error, this credit note does not belong to the selected client")
+            End Select
+
+
+        End If
 
     End Sub
 
@@ -220,7 +247,7 @@ Public Class NuevaVentaForm
 
     End Sub
 
-    Private Sub QuitarTodoButton_Click(sender As Object, e As EventArgs) Handles QuitarTodoButton.Click
+    Private Sub QuitarTodoButton_Click(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -352,8 +379,9 @@ Public Class NuevaVentaForm
 
 
             TotalLabel.Text = _GestorPresupuesto.CalcularTotal(_ListaDetalles)
-
-
+            TextBoxBuscarArticulo.Text = ""
+            Me.Show()
+            TextBoxBuscarArticulo.Focus()
         Catch ex As Exception
 
             Dim el As New ErrorLogger
@@ -364,8 +392,25 @@ Public Class NuevaVentaForm
 
     End Sub
 
-    Private Sub FinalizarButton_Click(sender As Object, e As EventArgs) Handles FinalizarButton.Click
+    Private Sub FinalizarButton_Click(sender As Object, e As EventArgs)
 
+
+    End Sub
+
+    Private Sub ArticuloGridView1_ColumnHeaderMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles ArticuloGridView1.ColumnHeaderMouseClick
+        For Each row As DataGridViewRow In ArticuloGridView1.Rows
+
+            If row.Index Mod 2 <> 0 Then
+                row.DefaultCellStyle.BackColor = Color.Bisque
+            Else
+                row.DefaultCellStyle.BackColor = Color.Aqua
+
+            End If
+
+        Next
+    End Sub
+
+    Private Sub FinalizarButton_Click_1(sender As Object, e As EventArgs) Handles FinalizarButton.Click
 
         Dim _GestorVenta As New GestorVenta
         Dim _VentaDao As New VentaDAO
@@ -514,30 +559,66 @@ Public Class NuevaVentaForm
         Else
 
         End If
-
-
-
-
-
-
-
-
-
-
-
-
     End Sub
 
-    Private Sub ArticuloGridView1_ColumnHeaderMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles ArticuloGridView1.ColumnHeaderMouseClick
-        For Each row As DataGridViewRow In ArticuloGridView1.Rows
+    Private Sub ButtonX1_Click(sender As Object, e As EventArgs) Handles ButtonX1.Click
 
-            If row.Index Mod 2 <> 0 Then
-                row.DefaultCellStyle.BackColor = Color.Bisque
-            Else
-                row.DefaultCellStyle.BackColor = Color.Aqua
+        Try
+            Dim _ListaDetalles As New List(Of PresupuestoDetalle)
+            Dim _GestorPresupuesto As New GestorPresupuesto
+
+            Dim _CantidadFilas As Integer
+
+
+            If PresupuestoGridView1.CurrentRow IsNot Nothing Then
+
+                ' saco del presupuesto el articulo
+                PresupuestoGridView1.Rows.RemoveAt(PresupuestoGridView1.CurrentRow.Index)
+                _CantidadFilas = PresupuestoGridView1.RowCount
+
+
+
+
+                For i = 0 To _CantidadFilas - 1
+
+                    Dim _PresupuestoDetalle As New PresupuestoDetalle
+
+                    _PresupuestoDetalle.Importe = PresupuestoGridView1.Rows(i).Cells("Importe").Value
+
+                    _ListaDetalles.Add(_PresupuestoDetalle)
+
+                Next
+
+
+
+
+                TotalLabel.Text = _GestorPresupuesto.CalcularTotal(_ListaDetalles)
 
             End If
 
-        Next
+
+
+
+            Me.Show()
+            TextBoxBuscarArticulo.Focus()
+
+        Catch ex As Exception
+
+            Dim el As New ErrorLogger
+            MsgBox(ex.Message, MsgBoxStyle.Critical, "ERROR")
+            el.WriteToErrorLog(ex.Message, ex.StackTrace, "Error")
+
+
+        End Try
+    End Sub
+
+    Private Sub BuscarButton_Click(sender As Object, e As EventArgs) Handles BuscarButton.Click
+        ClienteForm.Show()
+    End Sub
+
+    Private Sub ButtonX2_Click(sender As Object, e As EventArgs) Handles ButtonX2.Click
+
+        NotaCreditoForm.Show()
+
     End Sub
 End Class

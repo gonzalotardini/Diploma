@@ -64,22 +64,51 @@ Public Class VentasForm
             Dim ventaBll = New GestorVenta
             Dim ventaDao = New VentaDAO
             Dim cod As Long
+            Dim msg As String = ""
             cod = VentasDataGridView.CurrentRow.Cells(0).Value
+            Dim pregunta As String = ""
 
-            ventaBll.CancelarVentaBll(cod)
+            Select Case Principal.CulturaGlobal
+                Case "ESPAÑOL"
+                    pregunta = "¿Seguro desea cancelar la venta?"
 
-            VentasDataGridView.DataSource = ventaDao.ObtenerVentas
+                Case "ENGLISH"
+                    pregunta = "Do you realle want to cancel the sell?"
 
-            For Each row As DataGridViewRow In VentasDataGridView.Rows
+            End Select
 
-                If row.Index Mod 2 <> 0 Then
-                    row.DefaultCellStyle.BackColor = Color.Bisque
-                Else
-                    row.DefaultCellStyle.BackColor = Color.Aqua
 
-                End If
 
-            Next
+            If MsgBox(pregunta, MsgBoxStyle.YesNo + MsgBoxStyle.Question, "ATENCIÓN") = MsgBoxResult.Yes Then
+                ventaBll.CancelarVentaBll(cod)
+                VentasDataGridView.DataSource = ventaDao.ObtenerVentas
+
+                For Each row As DataGridViewRow In VentasDataGridView.Rows
+
+                    If row.Index Mod 2 <> 0 Then
+                        row.DefaultCellStyle.BackColor = Color.Bisque
+                    Else
+                        row.DefaultCellStyle.BackColor = Color.Aqua
+
+                    End If
+
+                Next
+                Select Case Principal.CulturaGlobal
+                    Case "ESPAÑOL"
+                        msg = "La venta fue correctamente cancelada y se generó la nota de crédito"
+                    Case "ENGLISH"
+                        msg = "The sell was correctly cancelled and credit note was created"
+                End Select
+
+
+                MsgBox(msg, MsgBoxStyle.Information, "ATENTION")
+
+            End If
+
+
+
+
+
         Catch ex As Exception
             Dim el As New ErrorLogger
             MsgBox(ex.Message, MsgBoxStyle.Critical, "ERROR")

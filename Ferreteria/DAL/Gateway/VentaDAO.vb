@@ -1,6 +1,7 @@
 ﻿Imports BIZ
 Imports System.Configuration
 Imports System.Data.SqlClient
+Imports System.Transactions
 
 Public Class VentaDAO
     Inherits DatosBase
@@ -19,7 +20,7 @@ Public Class VentaDAO
         Dim _Comando As New SqlCommand
 
 
-        _Consulta = "insert into VentaCabecera (Cod_Cliente, Fecha, Total) Values (@Cod_Cliente, @Fecha, @Total)"
+        _Consulta = "insert into VentaCabecera (Cod_Cliente,Estado,Fecha, Total) Values (@Cod_Cliente,@Estado, @Fecha, @Total)"
 
         Try
 
@@ -28,9 +29,9 @@ Public Class VentaDAO
             _Comando = New SqlCommand(_Consulta, Me.Conexion)
 
             _Comando.Parameters.AddWithValue("@Cod_Cliente", VentaCabecera.Cod_Cliente)
-
             _Comando.Parameters.AddWithValue("@Fecha", VentaCabecera.Fecha)
             _Comando.Parameters.AddWithValue("@Total", VentaCabecera.Total)
+            _Comando.Parameters.AddWithValue("@Estado", 0)
 
 
             _Comando.ExecuteNonQuery()
@@ -394,32 +395,118 @@ Public Class VentaDAO
 
         Dim _Consulta As String
         Dim _Comando As New SqlCommand
+        Dim _CodNotaCredito As Long
+
+        Using ts As TransactionScope = New TransactionScope
+            Try
+                'Creo cabecera de nota de credito
+                _Consulta = "insert into NotaDeCredito select Cod_Cliente,Cod_Venta,Total,Fecha,0 from VentaCabecera where Cod_Venta=" & cod_venta
+                Me.Conexion.Open()
+                _Comando = New SqlCommand(_Consulta, Me.Conexion)
+                '_Comando.Parameters.AddWithValue("@Cod_Venta", cod_venta)
+                _Comando.ExecuteNonQuery()
+
+                _Consulta = "update VentaCabecera set Estado=1 where Cod_Venta=" & cod_venta
+                _Comando = New SqlCommand(_Consulta, Me.Conexion)
+                '_Comando.Parameters.AddWithValue("@Cod_Venta", cod_venta)
+                _Comando.ExecuteNonQuery()
+
+                Me.Conexion.Close()
+
+                _CodNotaCredito = ObtenerCodUltimaNotaDeCredito()
+                Me.Conexion.Open()
+                _Consulta = "insert into NotaDeCreditoDetalle select " & _CodNotaCredito & ",cod_articulo,cantidad, importe, precio from VentaDetalle where cod_venta=" & cod_venta
+                _Comando = New SqlCommand(_Consulta, Me.Conexion)
+                '_Comando.Parameters.AddWithValue("@Cod_Venta", cod_venta)
+                _Comando.ExecuteNonQuery()
 
 
-        _Consulta = "Update VentaCabecera set Estado=1 where Cod_Venta=@Cod_Venta"
+            Catch ex As Exception
+
+                Throw New Exception("Error: " & ex.Message)
+
+
+            Finally
+                Me.Conexion.Close()
+            End Try
+
+            ts.Complete()
+
+        End Using
+
+    End Sub
+
+    Public Function ObtenerCodUltimaNotaDeCredito() As Integer
+
+
+
+        Dim _Consulta As String
+        Dim _Comando As New SqlCommand
+        Dim _Codigo As Integer
+
+
 
         Try
+
+
+            Me.Conexion.Open()
+
+            _Consulta = "select top 1 Cod_NotaCredito from NotaDeCredito order by Cod_NotaCredito desc "
+
+            _Comando = New SqlCommand(_Consulta, Me.Conexion)
+
+            _Codigo = (_Comando.ExecuteScalar) 'ejecuto scalar porque quiero obtener el valor, uso executenonqueri cuando quiero hacer un insert
+
+
+            Return _Codigo
+
+
+        Catch ex As Exception
+            Throw New Exception(ex.Message)
+        Finally
+            Me.Conexion.Close()
+
+        End Try
+
+    End Function
+
+
+
+    Public Function ObtenerNotasDeCredito() As DataTable
+        Dim _Consulta As String
+        Dim _Comando As SqlCommand
+        Dim _dataSet As New DataSet
+        Dim _Convertir As New Convertir
+
+
+
+        Try
+            _Consulta = "Select * from NotaDeCredito Where Estado=0"
 
             Me.Conexion.Open()
 
             _Comando = New SqlCommand(_Consulta, Me.Conexion)
 
-            _Comando.Parameters.AddWithValue("@Cod_Venta", cod_venta)
+            Dim _Adapter As New SqlDataAdapter(_Comando)
 
+            _Adapter.Fill(_dataSet)
 
-            _Comando.ExecuteNonQuery()
+            Return _dataSet.Tables(0)
 
 
         Catch ex As Exception
 
-            Throw New Exception("Error: " & ex.Message)
+            Throw New Exception(ex.Message)
+            Return Nothing
 
 
         Finally
-            Me.Conexion.Close()
-        End Try
 
-    End Sub
+
+            Me.Conexion.Close()
+
+        End Try
+    End Function
 
 
 End Class

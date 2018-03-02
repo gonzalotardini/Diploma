@@ -235,6 +235,7 @@ Public Class GestorVenta
     Public Sub CancelarVentaBll(cod As Long)
         Try
             Dim ventaFacade = New VentaFacade
+
             ventaFacade.CancelarVentaFacade(cod)
 
         Catch ex As Exception

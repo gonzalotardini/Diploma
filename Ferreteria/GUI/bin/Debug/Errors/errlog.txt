@@ -2090,3 +2090,37 @@ Mensaje: Object reference not set to an instance of an object.
 StackTrace:    at GUI.VentasForm.CancelarButton_Click(Object sender, EventArgs e)
 Fecha/Hora: 02/03/2018 12:17:09
 ===========================================================================================
+Titulo: Error
+Mensaje: Error: ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+StackTrace:    at BLL.GestorVenta.CancelarVentaBll(Int64 cod) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorVenta.vb:line 242
+   at GUI.VentasForm.CancelarButton_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\VentasForm.vb:line 69
+Fecha/Hora: 02/03/2018 14:35:31
+===========================================================================================
+Titulo: Error
+Mensaje: Error: Conversion from string "insert into NotaDeCreditoDetalle" to type 'Double' is not valid.
+StackTrace:    at BLL.GestorVenta.CancelarVentaBll(Int64 cod) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorVenta.vb:line 242
+   at GUI.VentasForm.CancelarButton_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\VentasForm.vb:line 69
+Fecha/Hora: 02/03/2018 14:36:25
+===========================================================================================
+Titulo: Error
+Mensaje: Error, cantidad debe ser numerico
+StackTrace:    at GUI.NuevoPresupuestoForm.ArticuloGridView1_CellDoubleClick(Object sender, DataGridViewCellEventArgs e)
+Fecha/Hora: 02/03/2018 14:41:49
+===========================================================================================
+Titulo: Error
+Mensaje: No existes precios historicos del articulo
+StackTrace:    at BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _fecha_Desde, DateTime _fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 29
+   at GUI.NuevoReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e)
+Fecha/Hora: 02/03/2018 14:42:04
+===========================================================================================
+Titulo: Error
+Mensaje: No existes precios historicos del articulo
+StackTrace:    at BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _fecha_Desde, DateTime _fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 29
+   at GUI.NuevoReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e)
+Fecha/Hora: 02/03/2018 14:42:12
+===========================================================================================
+Titulo: Error
+Mensaje: Error, cantidad debe ser numerico
+StackTrace:    at GUI.NuevaVentaForm.ArticuloGridView1_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevaVentaForm.vb:line 332
+Fecha/Hora: 02/03/2018 17:16:34
+===========================================================================================

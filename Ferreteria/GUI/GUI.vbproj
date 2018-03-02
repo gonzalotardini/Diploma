@@ -125,6 +125,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="NotaCreditoForm.Designer.vb">
+      <DependentUpon>NotaCreditoForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NotaCreditoForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="NuevaVentaForm.Designer.vb">
       <DependentUpon>NuevaVentaForm.vb</DependentUpon>
     </Compile>
@@ -275,6 +281,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ModifcarArticuloForm.resx">
       <DependentUpon>ModifcarArticuloForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NotaCreditoForm.resx">
+      <DependentUpon>NotaCreditoForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NuevaVentaForm.resx">
       <DependentUpon>NuevaVentaForm.vb</DependentUpon>
