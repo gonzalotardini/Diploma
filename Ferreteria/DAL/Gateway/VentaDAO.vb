@@ -483,7 +483,8 @@ Public Class VentaDAO
 
 
         Try
-            _Consulta = "Select * from NotaDeCredito Where Estado=0"
+            _Consulta = "select Cod_NotaCredito as ID, c.Cod_Cliente as CodCliente ,c.Razon_Social, n.Cod_Venta, Credito, convert(char(10),Fecha,103) as FechaVenta from NotaDeCredito n
+                        inner join Cliente c on c.Cod_Cliente=n.Cod_Cliente Where Estado=0"
 
             Me.Conexion.Open()
 
@@ -516,7 +517,7 @@ Public Class VentaDAO
         Dim _Comando As New SqlCommand
 
 
-        _Consulta = "update NotaDeCredito set Estado=1 where Cod_NotaCredito=" + codNota
+        _Consulta = "update NotaDeCredito set Estado=1 where Cod_NotaCredito=" & codNota
 
         Try
 

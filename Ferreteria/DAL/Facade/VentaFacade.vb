@@ -57,4 +57,13 @@ Public Class VentaFacade
             Throw New Exception(ex.Message)
         End Try
     End Sub
+
+    Public Sub CancelarNotaCreditoFacade(codNotaCredito As Long)
+        Try
+            Dim ventaDao = New VentaDAO
+            ventaDao.CancelarNotaDeCredito(codNotaCredito)
+        Catch ex As Exception
+            Throw New Exception(ex.Message)
+        End Try
+    End Sub
 End Class

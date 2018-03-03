@@ -3988,3 +3988,63 @@ Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
 StackTrace: LogIn Form
 Fecha/Hora: 02/03/2018 17:51:53
 ===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 03/03/2018 15:51:11
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 03/03/2018 16:00:00
+===========================================================================================
+Titulo: Información
+Mensaje: Se creo correctamente la venta 
+StackTrace: Nuevo venta form
+Fecha/Hora: 03/03/2018 16:06:35
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 03/03/2018 16:11:02
+===========================================================================================
+Titulo: Información
+Mensaje: Se creo correctamente la venta 
+StackTrace: Nuevo venta form
+Fecha/Hora: 03/03/2018 16:14:59
+===========================================================================================
+Titulo: Información
+Mensaje: Se agregó correctamente el artículo ROMANO
+StackTrace: Articulo Form
+Fecha/Hora: 03/03/2018 16:18:38
+===========================================================================================
+Titulo: Información
+Mensaje: Se Actualizo correctamente el Cliente ROEMERS
+StackTrace: Articulo Form
+Fecha/Hora: 03/03/2018 16:21:04
+===========================================================================================
+Titulo: Información
+Mensaje: Se Actualizo correctamente el Cliente ROEMERS
+StackTrace: Articulo Form
+Fecha/Hora: 03/03/2018 16:21:12
+===========================================================================================
+Titulo: Información
+Mensaje: Se creo correctamente la venta 
+StackTrace: Nuevo venta form
+Fecha/Hora: 03/03/2018 16:22:56
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 03/03/2018 16:40:56
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 03/03/2018 16:41:06
+===========================================================================================
+Titulo: Información
+Mensaje: Se creo correctamente la venta 
+StackTrace: Nuevo venta form
+Fecha/Hora: 03/03/2018 16:46:52
+===========================================================================================

@@ -1,7 +1,7 @@
 ﻿Imports BLL
 Imports BIZ
 Imports DAL
-
+Imports SL
 
 Public Class VentDetalle
 
@@ -73,5 +73,62 @@ Public Class VentDetalle
 
         Me.WindowState = FormWindowState.Maximized 'Maximizar Ventana al Abrir
 
+    End Sub
+
+    Private Sub ButtonX2_Click(sender As Object, e As EventArgs) Handles ButtonX2.Click
+        Try
+            Dim ventaBll = New GestorVenta
+            Dim ventaDao = New VentaDAO
+            Dim cod As Long
+            Dim msg As String = ""
+            cod = Convert.ToInt64(CodigoPresupuestoTextbox.Text)
+            Dim pregunta As String = ""
+
+            Select Case Principal.CulturaGlobal
+                Case "ESPAÑOL"
+                    pregunta = "¿Seguro desea cancelar la venta?"
+
+                Case "ENGLISH"
+                    pregunta = "Do you realle want to cancel the sell?"
+
+            End Select
+
+
+
+            If MsgBox(pregunta, MsgBoxStyle.YesNo + MsgBoxStyle.Question, "ATENCIÓN") = MsgBoxResult.Yes Then
+                ventaBll.CancelarVentaBll(cod)
+                VentasForm.VentasDataGridView.DataSource = ventaDao.ObtenerVentas
+
+                For Each row As DataGridViewRow In VentasForm.VentasDataGridView.Rows
+
+                    If row.Index Mod 2 <> 0 Then
+                        row.DefaultCellStyle.BackColor = Color.Bisque
+                    Else
+                        row.DefaultCellStyle.BackColor = Color.Aqua
+
+                    End If
+
+                Next
+                Select Case Principal.CulturaGlobal
+                    Case "ESPAÑOL"
+                        msg = "La venta fue correctamente cancelada y se generó la nota de crédito"
+                    Case "ENGLISH"
+                        msg = "The sell was correctly cancelled and credit note was created"
+                End Select
+
+
+                MsgBox(msg, MsgBoxStyle.Information, "ATENTION")
+                Me.Close()
+            End If
+
+
+
+
+
+        Catch ex As Exception
+            Dim el As New ErrorLogger
+            MsgBox(ex.Message, MsgBoxStyle.Critical, "ERROR")
+            el.WriteToErrorLog(ex.Message, ex.StackTrace, "Error")
+        End Try
     End Sub
 End Class

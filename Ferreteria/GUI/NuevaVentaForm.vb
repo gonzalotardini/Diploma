@@ -2,7 +2,7 @@
 Imports BLL
 Imports BIZ
 Imports SL
-
+Imports System.Transactions
 
 Public Class NuevaVentaForm
 
@@ -25,7 +25,7 @@ Public Class NuevaVentaForm
         LabelFecha.Text = Today
         RazonSocialLabel.Text = ""
         CuitLabel.Text = ""
-        CodigoClienteLabel.Text=""
+        CodigoClienteLabel.Text = ""
         labelPesos.Visible = False
         CreditoLabel.Visible = False
         codCreditoLabel.Visible = False
@@ -129,9 +129,8 @@ Public Class NuevaVentaForm
                         If EsNumero = True Then
 
                             _Articulo.CodigoDeBarras = Convert.ToInt64(TextBoxBuscarArticulo.Text)
-
-
                             ArticuloGridView1.[DataSource] = GestorArticulo.ValidarCodigoDeBarrasParaBusqueda(_Articulo)
+                            ArticuloGridView1.AllowUserToAddRows = False
 
                         Else
 
@@ -147,15 +146,14 @@ Public Class NuevaVentaForm
                 Select Case e.KeyData
                     Case Keys.Enter
                         _Articulo.Descripcion = (TextBoxBuscarArticulo.Text).ToUpper
-
-
                         ArticuloGridView1.[DataSource] = GestorArticulo.ValidarDescripcionParaBusqueda(_Articulo).Tables(0)
+                        ArticuloGridView1.AllowUserToAddRows = False
 
                 End Select
 
             End If
 
-
+            ArticuloGridView1.AllowUserToAddRows = False
 
         Catch ex As Exception
 
@@ -421,6 +419,8 @@ Public Class NuevaVentaForm
         Dim pregunta As String = ""
         Dim imprimir As String = ""
         Dim venta As String = ""
+        Dim _codNotaCredito As Long
+        Dim totaCredito As Decimal
 
         Select Case Principal.CulturaGlobal
             Case "ESPAÑOL"
@@ -428,7 +428,7 @@ Public Class NuevaVentaForm
                 imprimir = "¿Desea imprimir el comprobante?"
                 venta = "Se creó correctamente la venta"
             Case "ENGLISH"
-                pregunta = "Do you realle want to finish the sell?"
+                pregunta = "Do you really want to finish the sell?"
                 imprimir = "Do you want to print?"
                 venta = "Sell correctly created"
         End Select
@@ -484,9 +484,20 @@ Public Class NuevaVentaForm
 
                 Next
 
+                Using ts As TransactionScope = New TransactionScope
 
-                _GestorVenta.GenerarVenta(_VentaCabecera, _ListaDetalles)
+                    If Label6.Text <> "" Then
+                        _TotalCredito = Convert.ToDecimal(CreditoLabel.Text)
+                        _codNotaCredito = Label6.Text
+                        _GestorVenta.CancelarNotaDeCredito(_codNotaCredito, _TotalCredito, _VentaCabecera.Total, Principal.CulturaGlobal)
 
+                    End If
+
+                    _GestorVenta.GenerarVenta(_VentaCabecera, _ListaDetalles)
+
+                    ts.Complete()
+
+                End Using
 
                 Dim el As New EventLogger
 
@@ -548,6 +559,16 @@ Public Class NuevaVentaForm
                 CodigoClienteLabel.Text = ""
                 CuitLabel.Text = ""
                 RazonSocialLabel.Text = ""
+
+
+                labelPesos.Visible = False
+                labelPesos.Text = ""
+                CreditoLabel.Visible = False
+                CreditoLabel.Text = ""
+                codCreditoLabel.Visible = False
+                codCreditoLabel.Text = ""
+                Label6.Visible = False
+                Label6.Text = ""
 
                 PresupuestoGridView1.Rows.Clear()
 

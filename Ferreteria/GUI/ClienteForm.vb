@@ -129,7 +129,7 @@ Public Class ClienteForm
 
 
 
-            If IsNumeric(CuitTextBox.Text) = False Then
+            If IsNumeric(TelefonoTextBox.Text) = False Then
 
                 Throw New Exception("Error, Telefono debe ser numérico")
             Else
@@ -141,12 +141,6 @@ Public Class ClienteForm
 
 
             _Cliente.Email = (EmailTextBox.Text).ToUpper
-
-
-
-
-
-
             _GestorCLiente.ValidarClienteBLL(_Cliente)
 
 
@@ -156,6 +150,11 @@ Public Class ClienteForm
 
             Dim Mensaje = MsgBox("Se agregó correctamente el articulo " & _Cliente.RazonSocial, MsgBoxStyle.Information, "ATENCÓN")
 
+            RazonSocialTextBox.Text = ""
+            CuitTextBox.Text = ""
+            TelefonoTextBox.Text = ""
+            EmailTextBox.Text = ""
+            DireccionTextBox.Text = ""
 
         Catch ex As Exception
 

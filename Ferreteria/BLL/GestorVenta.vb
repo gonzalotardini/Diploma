@@ -242,4 +242,26 @@ Public Class GestorVenta
             Throw New Exception(ex.Message)
         End Try
     End Sub
+
+    Public Sub CancelarNotaDeCredito(codNotaCredito As Long, totalCredito As Decimal, totalVenta As Decimal, cultura As String)
+        Try
+
+            If totalVenta >= totalCredito Then
+                Dim ventaFacade As New VentaFacade
+                ventaFacade.CancelarNotaCreditoFacade(codNotaCredito)
+            Else
+
+                Select Case cultura
+                    Case "ESPAÑOL"
+                        Throw New Exception("Error, el total de la venta debe ser mayor al crédito")
+                    Case "ENGLISH"
+                        Throw New Exception("Error, the total of the sell must be higher than the credit")
+                End Select
+
+            End If
+
+        Catch ex As Exception
+            Throw New Exception(ex.Message)
+        End Try
+    End Sub
 End Class

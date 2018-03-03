@@ -2129,3 +2129,66 @@ Mensaje: Error, la nota de crédito no corresponde al cliente seleccionado
 StackTrace:    at GUI.NuevaVentaForm.FinalizarButton_Click_1(Object sender, EventArgs e)
 Fecha/Hora: 02/03/2018 17:46:19
 ===========================================================================================
+Titulo: Error
+Mensaje: USUARIO O CONTRASEÑA INCORRECTO
+StackTrace:    at GUI.LogIn.Button1_Click_1(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\LogIn.vb:line 52
+Fecha/Hora: 03/03/2018 15:51:08
+===========================================================================================
+Titulo: Error
+Mensaje: Error, cantidad debe ser numerico
+StackTrace:    at GUI.NuevaVentaForm.ArticuloGridView1_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevaVentaForm.vb:line 334
+Fecha/Hora: 03/03/2018 15:58:33
+===========================================================================================
+Titulo: Error
+Mensaje: Debe seleccionar un cliente
+StackTrace:    at GUI.NuevaVentaForm.FinalizarButton_Click_1(Object sender, EventArgs e)
+Fecha/Hora: 03/03/2018 16:02:38
+===========================================================================================
+Titulo: Error
+Mensaje: Conversion from string "COD: " to type 'Long' is not valid.
+StackTrace:    at Microsoft.VisualBasic.CompilerServices.Conversions.ToLong(String Value)
+   at GUI.NuevaVentaForm.FinalizarButton_Click_1(Object sender, EventArgs e)
+Fecha/Hora: 03/03/2018 16:02:55
+===========================================================================================
+Titulo: Error
+Mensaje: Conversion from string "COD: " to type 'Long' is not valid.
+StackTrace:    at Microsoft.VisualBasic.CompilerServices.Conversions.ToLong(String Value)
+   at GUI.NuevaVentaForm.FinalizarButton_Click_1(Object sender, EventArgs e)
+Fecha/Hora: 03/03/2018 16:04:10
+===========================================================================================
+Titulo: Error
+Mensaje: Input string was not in a correct format.
+StackTrace:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Convert.ToInt64(String value)
+   at GUI.ClienteForm.Button1_Click(Object sender, EventArgs e)
+Fecha/Hora: 03/03/2018 16:17:25
+===========================================================================================
+Titulo: Error
+Mensaje: Error, Telefono debe ser numérico
+StackTrace:    at GUI.ClienteForm.Button1_Click(Object sender, EventArgs e)
+Fecha/Hora: 03/03/2018 16:18:09
+===========================================================================================
+Titulo: Error
+Mensaje: Object reference not set to an instance of an object.
+StackTrace:    at GUI.ClienteForm.Button1_Click(Object sender, EventArgs e)
+Fecha/Hora: 03/03/2018 16:20:27
+===========================================================================================
+Titulo: Error
+Mensaje: Conversion from string "COD: " to type 'Long' is not valid.
+StackTrace:    at Microsoft.VisualBasic.CompilerServices.Conversions.ToLong(String Value)
+   at GUI.NuevaVentaForm.FinalizarButton_Click_1(Object sender, EventArgs e)
+Fecha/Hora: 03/03/2018 16:42:53
+===========================================================================================
+Titulo: Error
+Mensaje: Error, the total of the sell must be higher
+StackTrace:    at BLL.GestorVenta.CancelarNotaDeCredito(Int64 codNotaCredito, Decimal totalCredito, Decimal totalVenta, String cultura) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorVenta.vb:line 264
+   at GUI.NuevaVentaForm.FinalizarButton_Click_1(Object sender, EventArgs e)
+Fecha/Hora: 03/03/2018 16:44:22
+===========================================================================================
+Titulo: Error
+Mensaje: Error, the total of the sell must be higher than the credit
+StackTrace:    at BLL.GestorVenta.CancelarNotaDeCredito(Int64 codNotaCredito, Decimal totalCredito, Decimal totalVenta, String cultura)
+   at GUI.NuevaVentaForm.FinalizarButton_Click_1(Object sender, EventArgs e)
+Fecha/Hora: 03/03/2018 16:44:52
+===========================================================================================
