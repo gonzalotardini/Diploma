@@ -279,6 +279,14 @@ Public Class GestorPresupuesto
 
     End Sub
 
+    Public Sub EliminarPresupuestoBll(cod As Long)
+        Try
+            Dim presupuestoFacade As New PresupuestoFacade
+            presupuestoFacade.EliminarPresupuestoFacade(cod)
+        Catch ex As Exception
+            Throw New Exception(ex.Message)
+        End Try
+    End Sub
 
     ''' <summary>
     ''' Valida que los datos sean correctos para realizar una busqueda de presupuesto mediante razon social

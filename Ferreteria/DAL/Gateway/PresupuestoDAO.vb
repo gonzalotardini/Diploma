@@ -19,7 +19,7 @@ Public Class PresupuestoDAO
         Dim _Comando As New SqlCommand
 
 
-        _Consulta = "insert into PresupuestoCabecera (Cod_Cliente, Fecha_Inicio, Fecha_Fin, Total) Values (@Cod_Cliente, @Fecha_Inicio, @Fecha_Fin, @Total)"
+        _Consulta = "insert into PresupuestoCabecera (Cod_Cliente, Fecha_Inicio, Fecha_Fin, Total, Estado) Values (@Cod_Cliente, @Fecha_Inicio, @Fecha_Fin, @Total, 0)"
 
         Try
 
@@ -31,6 +31,7 @@ Public Class PresupuestoDAO
             _Comando.Parameters.AddWithValue("@Fecha_Inicio", PresupuestoCabecera.FechaInicio)
             _Comando.Parameters.AddWithValue("@Fecha_Fin", PresupuestoCabecera.FechaFin)
             _Comando.Parameters.AddWithValue("@Total", PresupuestoCabecera.Total)
+
 
 
             _Comando.ExecuteNonQuery()
@@ -153,7 +154,7 @@ Public Class PresupuestoDAO
 
 
         Try
-            _Consulta = "Select Cod_Presupuesto, P.Cod_Cliente, C.Razon_Social, Fecha_Inicio, Fecha_Fin, Total From PresupuestoCabecera as P, Cliente as C Where C.Cod_Cliente=P.Cod_Cliente "
+            _Consulta = "Select Cod_Presupuesto, P.Cod_Cliente, C.Razon_Social, Fecha_Inicio, Fecha_Fin, Total From PresupuestoCabecera as P, Cliente as C Where C.Cod_Cliente=P.Cod_Cliente and Estado=0"
 
 
 
@@ -596,5 +597,35 @@ Public Class PresupuestoDAO
         End Try
 
 
+    End Sub
+
+
+    Public Sub EliminarPresupuesto(cod As Long)
+        Dim _Consulta As String
+        Dim _Comando As New SqlCommand
+
+
+        _Consulta = "Update PresupuestoCabecera set Estado=1 where Cod_Presupuesto=@Cod_Presupuesto"
+
+        Try
+
+            Me.Conexion.Open()
+
+            _Comando = New SqlCommand(_Consulta, Me.Conexion)
+
+            _Comando.Parameters.AddWithValue("@Cod_Presupuesto", cod)
+
+
+            _Comando.ExecuteNonQuery()
+
+
+        Catch ex As Exception
+
+            Throw New Exception("Error,  " & ex.Message)
+
+
+        Finally
+            Me.Conexion.Close()
+        End Try
     End Sub
 End Class

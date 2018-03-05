@@ -23,16 +23,16 @@ Partial Class PresupuestosForm
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(PresupuestosForm))
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.RazonSocialRadioButton = New System.Windows.Forms.RadioButton()
         Me.CodigoClienteRadioButton = New System.Windows.Forms.RadioButton()
-        Me.VerDetalleButton = New System.Windows.Forms.Button()
-        Me.EliminarButton = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PresupuestosDataGridView = New DevComponents.DotNetBar.Controls.DataGridViewX()
+        Me.ButtonX1 = New DevComponents.DotNetBar.ButtonX()
+        Me.ButtonX2 = New DevComponents.DotNetBar.ButtonX()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PresupuestosDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -79,26 +79,6 @@ Partial Class PresupuestosForm
         Me.CodigoClienteRadioButton.Text = "CODIGO CLIENTE"
         Me.CodigoClienteRadioButton.UseVisualStyleBackColor = True
         '
-        'VerDetalleButton
-        '
-        Me.VerDetalleButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.VerDetalleButton.Location = New System.Drawing.Point(184, 626)
-        Me.VerDetalleButton.Name = "VerDetalleButton"
-        Me.VerDetalleButton.Size = New System.Drawing.Size(107, 45)
-        Me.VerDetalleButton.TabIndex = 3
-        Me.VerDetalleButton.Text = "VER DETALLE"
-        Me.VerDetalleButton.UseVisualStyleBackColor = True
-        '
-        'EliminarButton
-        '
-        Me.EliminarButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.EliminarButton.Location = New System.Drawing.Point(603, 626)
-        Me.EliminarButton.Name = "EliminarButton"
-        Me.EliminarButton.Size = New System.Drawing.Size(95, 45)
-        Me.EliminarButton.TabIndex = 5
-        Me.EliminarButton.Text = "ELIMINAR"
-        Me.EliminarButton.UseVisualStyleBackColor = True
-        '
         'Label1
         '
         Me.Label1.AutoSize = True
@@ -124,14 +104,14 @@ Partial Class PresupuestosForm
         Me.PresupuestosDataGridView.BackgroundColor = System.Drawing.Color.White
         Me.PresupuestosDataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised
         Me.PresupuestosDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.PresupuestosDataGridView.DefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.PresupuestosDataGridView.DefaultCellStyle = DataGridViewCellStyle7
         Me.PresupuestosDataGridView.GridColor = System.Drawing.Color.FromArgb(CType(CType(170, Byte), Integer), CType(CType(170, Byte), Integer), CType(CType(170, Byte), Integer))
         Me.PresupuestosDataGridView.Location = New System.Drawing.Point(57, 271)
         Me.PresupuestosDataGridView.Name = "PresupuestosDataGridView"
@@ -139,16 +119,46 @@ Partial Class PresupuestosForm
         Me.PresupuestosDataGridView.Size = New System.Drawing.Size(852, 313)
         Me.PresupuestosDataGridView.TabIndex = 8
         '
+        'ButtonX1
+        '
+        Me.ButtonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.ButtonX1.BackColor = System.Drawing.Color.Red
+        Me.ButtonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.Magenta
+        Me.ButtonX1.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.ButtonX1.Image = CType(resources.GetObject("ButtonX1.Image"), System.Drawing.Image)
+        Me.ButtonX1.Location = New System.Drawing.Point(616, 626)
+        Me.ButtonX1.Name = "ButtonX1"
+        Me.ButtonX1.Size = New System.Drawing.Size(148, 59)
+        Me.ButtonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.ButtonX1.TabIndex = 17
+        Me.ButtonX1.Text = "ButtonX1"
+        Me.ButtonX1.TextColor = System.Drawing.Color.White
+        '
+        'ButtonX2
+        '
+        Me.ButtonX2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.ButtonX2.BackColor = System.Drawing.Color.DodgerBlue
+        Me.ButtonX2.ColorTable = DevComponents.DotNetBar.eButtonColor.Magenta
+        Me.ButtonX2.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.ButtonX2.Image = CType(resources.GetObject("ButtonX2.Image"), System.Drawing.Image)
+        Me.ButtonX2.Location = New System.Drawing.Point(184, 626)
+        Me.ButtonX2.Name = "ButtonX2"
+        Me.ButtonX2.Size = New System.Drawing.Size(148, 59)
+        Me.ButtonX2.Style = DevComponents.DotNetBar.eDotNetBarStyle.Metro
+        Me.ButtonX2.TabIndex = 16
+        Me.ButtonX2.Text = "ButtonX1"
+        Me.ButtonX2.TextColor = System.Drawing.Color.White
+        '
         'PresupuestosForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1049, 732)
+        Me.Controls.Add(Me.ButtonX1)
+        Me.Controls.Add(Me.ButtonX2)
         Me.Controls.Add(Me.PresupuestosDataGridView)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.EliminarButton)
-        Me.Controls.Add(Me.VerDetalleButton)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.TextBox1)
         Me.DoubleBuffered = True
@@ -166,9 +176,9 @@ Partial Class PresupuestosForm
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents RazonSocialRadioButton As RadioButton
     Friend WithEvents CodigoClienteRadioButton As RadioButton
-    Friend WithEvents VerDetalleButton As System.Windows.Forms.Button
-    Friend WithEvents EliminarButton As System.Windows.Forms.Button
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents PresupuestosDataGridView As DevComponents.DotNetBar.Controls.DataGridViewX
+    Friend WithEvents ButtonX1 As DevComponents.DotNetBar.ButtonX
+    Friend WithEvents ButtonX2 As DevComponents.DotNetBar.ButtonX
 End Class

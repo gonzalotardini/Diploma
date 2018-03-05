@@ -4073,3 +4073,28 @@ Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
 StackTrace: LogIn Form
 Fecha/Hora: 05/03/2018 09:45:25
 ===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 05/03/2018 16:17:15
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 05/03/2018 16:21:46
+===========================================================================================
+Titulo: Información
+Mensaje: Se guardo correctamente el presupuesto 
+StackTrace: Nuevo Presupuesto Form
+Fecha/Hora: 05/03/2018 16:24:51
+===========================================================================================
+Titulo: Información
+Mensaje: Se guardo correctamente el presupuesto 
+StackTrace: Nuevo Presupuesto Form
+Fecha/Hora: 05/03/2018 16:26:49
+===========================================================================================
+Titulo: Información
+Mensaje: Se creo correctamente la venta 
+StackTrace: Nuevo venta form
+Fecha/Hora: 05/03/2018 16:28:28
+===========================================================================================

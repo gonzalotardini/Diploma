@@ -172,4 +172,14 @@ Public Class PresupuestoFacade
 
 
     End Sub
+
+    Public Sub EliminarPresupuestoFacade(cod As Long)
+        Try
+            Dim presupuestoDao As New PresupuestoDAO
+            presupuestoDao.EliminarPresupuesto(cod)
+
+        Catch ex As Exception
+            Throw New Exception(ex.Message)
+        End Try
+    End Sub
 End Class

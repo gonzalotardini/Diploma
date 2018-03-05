@@ -16,8 +16,8 @@ Public Class PresupuestoDetalleForm
         Dim _Cliente As New Cliente
 
         _PresupuestoCabecera.Cod_Presupuesto = PresupuestosForm._CodigoPresupuesto
-
         PresupuestoGridView.DataSource = _GestorPresupuesto.ObtenerPresupuestoDetalleBLL(_PresupuestoCabecera).Tables(0)
+        PresupuestoGridView.AllowUserToAddRows = False
 
         _PresupuestoCabecera = _PresupuestoDAO.ObtenerCabecera(_PresupuestoCabecera)
 
@@ -46,18 +46,18 @@ Public Class PresupuestoDetalleForm
 
 
 
-        For Each row As DataGridViewRow In PresupuestoGridView.Rows
+        'For Each row As DataGridViewRow In PresupuestoGridView.Rows
 
-            If row.Index Mod 2 <> 0 Then
-                row.DefaultCellStyle.BackColor = Color.Bisque
-                ' row.Cells("Descripcion").Style.Font.Bold = True
+        '    If row.Index Mod 2 <> 0 Then
+        '        row.DefaultCellStyle.BackColor = Color.Bisque
+        '        ' row.Cells("Descripcion").Style.Font.Bold = True
 
-            Else
-                row.DefaultCellStyle.BackColor = Color.Aqua
+        '    Else
+        '        row.DefaultCellStyle.BackColor = Color.Aqua
 
-            End If
+        '    End If
 
-        Next
+        'Next
 
 
 
@@ -93,7 +93,7 @@ Public Class PresupuestoDetalleForm
 
         ArticuloGridView1.DataSource = _ArticuloDao.ObtenerPrimerosArticulos.Tables(0)
 
-
+        ArticuloGridView1.AllowUserToAddRows = False
         ArticuloGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
 
 
@@ -135,7 +135,7 @@ Public Class PresupuestoDetalleForm
 
 
                             ArticuloGridView1.[DataSource] = GestorArticulo.ValidarCodigoDeBarrasParaBusqueda(_Articulo)
-
+                            ArticuloGridView1.AllowUserToAddRows = False
                         Else
 
                             Throw New Exception("Error, código debe ser numérico")
@@ -153,7 +153,7 @@ Public Class PresupuestoDetalleForm
 
 
                         ArticuloGridView1.[DataSource] = GestorArticulo.ValidarDescripcionParaBusqueda(_Articulo).Tables(0)
-
+                        ArticuloGridView1.AllowUserToAddRows = False
                 End Select
 
             End If

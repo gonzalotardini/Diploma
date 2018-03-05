@@ -2202,3 +2202,20 @@ Mensaje: Object reference not set to an instance of an object.
 StackTrace:    at GUI.VentasForm.TextBox1_KeyDown(Object sender, KeyEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\VentasForm.vb:line 184
 Fecha/Hora: 05/03/2018 09:44:20
 ===========================================================================================
+Titulo: Error
+Mensaje: Object reference not set to an instance of an object.
+StackTrace:    at GUI.PresupuestosForm.ButtonX1_Click(Object sender, EventArgs e)
+Fecha/Hora: 05/03/2018 16:19:28
+===========================================================================================
+Titulo: Error
+Mensaje: Debe seleccionar un cliente
+StackTrace:    at GUI.NuevoPresupuestoForm.FinalizarButton_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevoPresupuestoForm.vb:line 246
+Fecha/Hora: 05/03/2018 16:22:52
+===========================================================================================
+Titulo: Error
+Mensaje: Error al cargar el artículo Cannot insert the value NULL into column 'Estado', table 'Ferreteria.dbo.PresupuestoCabecera'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+StackTrace:    at BLL.GestorPresupuesto.GenerarPresupuesto(PresupuestoCabecera PresupuestoCabecera, List`1 ListaDetalles) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorPresupuesto.vb:line 67
+   at GUI.NuevoPresupuestoForm.FinalizarButton_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevoPresupuestoForm.vb:line 271
+Fecha/Hora: 05/03/2018 16:23:29
+===========================================================================================

@@ -17,7 +17,7 @@ Public Class PresupuestosForm
 
         PresupuestosDataGridView.DataSource = _PresupuestoDAO.ObtenerPresupuestos
 
-
+        PresupuestosDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
 
         RazonSocialRadioButton.Checked = True
 
@@ -138,17 +138,11 @@ Public Class PresupuestosForm
 
     End Sub
 
-    Private Sub VerDetalleButton_Click(sender As Object, e As EventArgs) Handles VerDetalleButton.Click
+    Private Sub VerDetalleButton_Click(sender As Object, e As EventArgs)
 
 
 
-        If PresupuestosDataGridView.CurrentRow IsNot Nothing Then
 
-            _CodigoPresupuesto = (PresupuestosDataGridView.CurrentRow.Cells(0).Value)
-
-            PresupuestoDetalleForm.Show()
-
-        End If
 
 
 
@@ -179,5 +173,57 @@ Public Class PresupuestosForm
             End If
 
         Next
+    End Sub
+
+    Private Sub ButtonX2_Click(sender As Object, e As EventArgs) Handles ButtonX2.Click
+        If PresupuestosDataGridView.CurrentRow IsNot Nothing Then
+
+            _CodigoPresupuesto = (PresupuestosDataGridView.CurrentRow.Cells(0).Value)
+
+            PresupuestoDetalleForm.Show()
+
+        End If
+    End Sub
+
+    Private Sub EliminarButton_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub ButtonX1_Click(sender As Object, e As EventArgs) Handles ButtonX1.Click
+        Try
+
+            Dim pregunta As String = ""
+            Dim msg As String = ""
+            Dim presupuestoDAO As New PresupuestoDAO
+
+            Select Case Principal.CulturaGlobal
+                Case "ESPAÑOL"
+                    pregunta = "¿Seguro desea eliminar el presupuesto?"
+                    msg = "Se eliminó correctamente el presupuesto"
+
+                Case "ENGLISH"
+                    pregunta = "Do you really want to delete the budget?"
+                    msg = "The budget was correctly deleted"
+
+            End Select
+
+            If MsgBox(pregunta, MsgBoxStyle.YesNo + MsgBoxStyle.Question, "ATENCIÓN") = MsgBoxResult.Yes Then
+                Dim presupuestoBll = New GestorPresupuesto
+                Dim cod As Long = PresupuestosDataGridView.CurrentRow.Cells(0).Value
+                presupuestoBll.EliminarPresupuestoBll(cod)
+            End If
+
+            PresupuestosDataGridView.AllowUserToAddRows = False
+            PresupuestosDataGridView.EditMode = False
+
+            PresupuestosDataGridView.DataSource = presupuestoDAO.ObtenerPresupuestos
+
+            MsgBox(msg, MsgBoxStyle.Information, "ATENTION")
+
+        Catch ex As Exception
+            Dim el As New ErrorLogger
+            MsgBox(ex.Message, MsgBoxStyle.Critical, "ERROR")
+            el.WriteToErrorLog(ex.Message, ex.StackTrace, "Error")
+        End Try
     End Sub
 End Class
