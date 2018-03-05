@@ -4048,3 +4048,28 @@ Mensaje: Se creo correctamente la venta
 StackTrace: Nuevo venta form
 Fecha/Hora: 03/03/2018 16:46:52
 ===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 05/03/2018 08:57:45
+===========================================================================================
+Titulo: Información
+Mensaje: Se actualizó correctamente la unidad de medida GRAMO
+StackTrace: UnidadMedida form
+Fecha/Hora: 05/03/2018 08:58:53
+===========================================================================================
+Titulo: Información
+Mensaje: Se actualizó correctamente la unidad de medida GRAMO
+StackTrace: UnidadMedida form
+Fecha/Hora: 05/03/2018 09:00:26
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 05/03/2018 09:42:58
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 05/03/2018 09:45:25
+===========================================================================================

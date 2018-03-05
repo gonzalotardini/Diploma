@@ -153,7 +153,7 @@ Public Class UnidadDeMedidaForm
 
                 If Principal.CulturaGlobal = "ESPAÑOL" Then
 
-                    Dim Mensaje = MsgBox("Se agregó correctamente la unidad de medida " & UnidadMedida.DescripcionUnidadMedida, MsgBoxStyle.Information, "ATENCÓN")
+                    Dim Mensaje = MsgBox("Se actualizó correctamente la unidad de medida " & UnidadMedida.DescripcionUnidadMedida, MsgBoxStyle.Information, "ATENCÓN")
 
                 Else
 

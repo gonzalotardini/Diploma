@@ -232,6 +232,26 @@ Public Class GestorVenta
 
     End Sub
 
+    Public Function ValidarBusquedaVentaPorCodigoCliente(cliente As Cliente, cultura As String) As DataSet
+        Try
+            If Not IsNumeric(cliente.CodigoCliente) Then
+                Select Case cultura
+                    Case "ESPAÑOL"
+                        Throw New Exception("Error, el código de cliente debe ser numérico")
+                    Case "ENGLISH"
+                        Throw New Exception("Error, client code must be numeric")
+                End Select
+            Else
+                Dim ventaFacade As New VentaFacade
+
+                Return ventaFacade.BuscarPresupuestoPorCodigoClientelFacade(cliente)
+            End If
+
+        Catch ex As Exception
+            Throw New Exception(ex.Message)
+        End Try
+    End Function
+
     Public Sub CancelarVentaBll(cod As Long)
         Try
             Dim ventaFacade = New VentaFacade

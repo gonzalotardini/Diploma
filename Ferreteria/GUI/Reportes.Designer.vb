@@ -34,7 +34,7 @@ Partial Class Reportes
         Me.ButtonReportePrecios.BackColor = System.Drawing.Color.YellowGreen
         Me.ButtonReportePrecios.ColorTable = DevComponents.DotNetBar.eButtonColor.Magenta
         Me.ButtonReportePrecios.Font = New System.Drawing.Font("Segoe UI Semibold", 15.75!, System.Drawing.FontStyle.Bold)
-        Me.ButtonReportePrecios.Location = New System.Drawing.Point(153, 183)
+        Me.ButtonReportePrecios.Location = New System.Drawing.Point(235, 210)
         Me.ButtonReportePrecios.Name = "ButtonReportePrecios"
         Me.ButtonReportePrecios.Size = New System.Drawing.Size(255, 203)
         Me.ButtonReportePrecios.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
@@ -47,7 +47,7 @@ Partial Class Reportes
         Me.ButtonReporteArticulos.BackColor = System.Drawing.Color.DarkOrange
         Me.ButtonReporteArticulos.ColorTable = DevComponents.DotNetBar.eButtonColor.Magenta
         Me.ButtonReporteArticulos.Font = New System.Drawing.Font("Segoe UI Semibold", 15.75!, System.Drawing.FontStyle.Bold)
-        Me.ButtonReporteArticulos.Location = New System.Drawing.Point(443, 183)
+        Me.ButtonReporteArticulos.Location = New System.Drawing.Point(525, 210)
         Me.ButtonReporteArticulos.Name = "ButtonReporteArticulos"
         Me.ButtonReporteArticulos.Size = New System.Drawing.Size(251, 203)
         Me.ButtonReporteArticulos.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
@@ -60,7 +60,7 @@ Partial Class Reportes
         Me.ButtonReporteVentas.BackColor = System.Drawing.Color.LightSkyBlue
         Me.ButtonReporteVentas.ColorTable = DevComponents.DotNetBar.eButtonColor.Magenta
         Me.ButtonReporteVentas.Font = New System.Drawing.Font("Segoe UI Semibold", 15.75!, System.Drawing.FontStyle.Bold)
-        Me.ButtonReporteVentas.Location = New System.Drawing.Point(714, 183)
+        Me.ButtonReporteVentas.Location = New System.Drawing.Point(796, 210)
         Me.ButtonReporteVentas.Name = "ButtonReporteVentas"
         Me.ButtonReporteVentas.Size = New System.Drawing.Size(234, 203)
         Me.ButtonReporteVentas.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
@@ -71,7 +71,7 @@ Partial Class Reportes
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 36.0!, System.Drawing.FontStyle.Bold)
-        Me.Label1.Location = New System.Drawing.Point(350, 55)
+        Me.Label1.Location = New System.Drawing.Point(499, 78)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(138, 65)
         Me.Label1.TabIndex = 8

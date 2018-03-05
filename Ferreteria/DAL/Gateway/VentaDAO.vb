@@ -535,4 +535,56 @@ Public Class VentaDAO
     End Sub
 
 
+    Public Function BucarVentaPorCodigoCliente(Cliente As Cliente) As DataSet
+
+        Dim _Consulta As String
+        Dim _Comando As SqlCommand
+        Dim _dataSet As New DataSet
+        Dim _Convertir As New Convertir
+
+
+
+        Try
+            _Consulta = "Select Cod_venta, V.Cod_Cliente, C.Razon_Social, Fecha, Total From VentaCabecera as V, Cliente as C Where V.Cod_Cliente=c.Cod_Cliente and c.Cod_Cliente='" & Cliente.CodigoCliente & "' and Estado=0"
+
+
+
+
+
+            Me.Conexion.Open()
+
+
+
+            _Comando = New SqlCommand(_Consulta, Me.Conexion)
+
+
+
+            Dim _Adapter As New SqlDataAdapter(_Comando)
+
+            _Adapter.Fill(_dataSet)
+
+
+
+
+
+            Return _dataSet
+
+
+        Catch ex As Exception
+
+            Throw New Exception(ex.Message)
+
+            Return Nothing
+
+
+        Finally
+
+
+            Me.Conexion.Close()
+
+        End Try
+
+
+    End Function
+
 End Class

@@ -2192,3 +2192,13 @@ StackTrace:    at BLL.GestorVenta.CancelarNotaDeCredito(Int64 codNotaCredito, De
    at GUI.NuevaVentaForm.FinalizarButton_Click_1(Object sender, EventArgs e)
 Fecha/Hora: 03/03/2018 16:44:52
 ===========================================================================================
+Titulo: Error
+Mensaje: Object reference not set to an instance of an object.
+StackTrace:    at GUI.VentasForm.TextBox1_KeyDown(Object sender, KeyEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\VentasForm.vb:line 184
+Fecha/Hora: 05/03/2018 09:43:09
+===========================================================================================
+Titulo: Error
+Mensaje: Object reference not set to an instance of an object.
+StackTrace:    at GUI.VentasForm.TextBox1_KeyDown(Object sender, KeyEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\VentasForm.vb:line 184
+Fecha/Hora: 05/03/2018 09:44:20
+===========================================================================================

@@ -66,4 +66,14 @@ Public Class VentaFacade
             Throw New Exception(ex.Message)
         End Try
     End Sub
+
+    Public Function BuscarPresupuestoPorCodigoClientelFacade(cliente As Cliente) As DataSet
+        Try
+            Dim ventaDao As New VentaDAO
+            Return ventaDao.BucarVentaPorCodigoCliente(cliente)
+        Catch ex As Exception
+            Return Nothing
+            Throw New Exception(ex.Message)
+        End Try
+    End Function
 End Class
