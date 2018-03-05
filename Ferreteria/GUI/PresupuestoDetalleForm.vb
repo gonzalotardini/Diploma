@@ -17,7 +17,7 @@ Public Class PresupuestoDetalleForm
 
         _PresupuestoCabecera.Cod_Presupuesto = PresupuestosForm._CodigoPresupuesto
         PresupuestoGridView.DataSource = _GestorPresupuesto.ObtenerPresupuestoDetalleBLL(_PresupuestoCabecera).Tables(0)
-        PresupuestoGridView.AllowUserToAddRows = False
+        'PresupuestoGridView.AllowUserToAddRows = False
 
         _PresupuestoCabecera = _PresupuestoDAO.ObtenerCabecera(_PresupuestoCabecera)
 
@@ -263,6 +263,7 @@ Public Class PresupuestoDetalleForm
 
 
                     End If
+                    _CantidadFilas = PresupuestoGridView.RowCount
 
                 Next
 
@@ -340,24 +341,22 @@ Public Class PresupuestoDetalleForm
 
 
 
-            For Each row As DataGridViewRow In PresupuestoGridView.Rows
+            'For Each row As DataGridViewRow In PresupuestoGridView.Rows
 
-                If row.Index Mod 2 <> 0 Then
-                    row.DefaultCellStyle.BackColor = Color.Bisque
-                    ' row.Cells("Descripcion").Style.Font.Bold = True
+            '    If row.Index Mod 2 <> 0 Then
+            '        row.DefaultCellStyle.BackColor = Color.Bisque
+            '        ' row.Cells("Descripcion").Style.Font.Bold = True
 
-                Else
-                    row.DefaultCellStyle.BackColor = Color.Aqua
+            '    Else
+            '        row.DefaultCellStyle.BackColor = Color.Aqua
 
-                End If
+            '    End If
 
+            'Next
 
-
-                TextBoxBuscarArticulo.Text = ""
-                Me.Show()
-                TextBoxBuscarArticulo.Focus()
-
-            Next
+            TextBoxBuscarArticulo.Text = ""
+            Me.Show()
+            TextBoxBuscarArticulo.Focus()
 
         Catch ex As Exception
 
@@ -503,6 +502,21 @@ Public Class PresupuestoDetalleForm
                 Me.Show()
                 TextBoxBuscarArticulo.Focus()
 
+                PresupuestosForm.PresupuestosDataGridView.AllowUserToAddRows = False
+                PresupuestosForm.PresupuestosDataGridView.EditMode = False
+
+                PresupuestosForm.PresupuestosDataGridView.DataSource = _PresupuestoDAO.ObtenerPresupuestos
+
+                For Each row As DataGridViewRow In PresupuestosForm.PresupuestosDataGridView.Rows
+
+                    If row.Index Mod 2 <> 0 Then
+                        row.DefaultCellStyle.BackColor = Color.Bisque
+                    Else
+                        row.DefaultCellStyle.BackColor = Color.Aqua
+
+                    End If
+
+                Next
 
                 Me.Close()
 

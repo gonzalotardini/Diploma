@@ -2219,3 +2219,21 @@ StackTrace:    at BLL.GestorPresupuesto.GenerarPresupuesto(PresupuestoCabecera P
    at GUI.NuevoPresupuestoForm.FinalizarButton_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevoPresupuestoForm.vb:line 271
 Fecha/Hora: 05/03/2018 16:23:29
 ===========================================================================================
+Titulo: Error
+Mensaje: Conversion from type 'DBNull' to type 'Decimal' is not valid.
+StackTrace:    at Microsoft.VisualBasic.CompilerServices.Conversions.ToDecimal(Object Value, NumberFormatInfo NumberFormat)
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToDecimal(Object Value)
+   at GUI.PresupuestoDetalleForm.ArticuloGridView1_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\PresupuestoDetalleForm.vb:line 330
+Fecha/Hora: 05/03/2018 16:38:21
+===========================================================================================
+Titulo: Error
+Mensaje: Operator '=' is not defined for type 'Integer' and type 'DBNull'.
+StackTrace:    at Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectEqual(Object Left, Object Right, Boolean TextCompare)
+   at GUI.PresupuestoDetalleForm.ArticuloGridView1_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\PresupuestoDetalleForm.vb:line 257
+Fecha/Hora: 05/03/2018 16:38:26
+===========================================================================================
+Titulo: Error
+Mensaje: Error, cantidad debe ser numerico
+StackTrace:    at GUI.PresupuestoDetalleForm.ArticuloGridView1_CellDoubleClick(Object sender, DataGridViewCellEventArgs e)
+Fecha/Hora: 05/03/2018 19:30:11
+===========================================================================================
