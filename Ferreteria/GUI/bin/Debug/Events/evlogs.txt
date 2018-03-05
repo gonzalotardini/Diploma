@@ -4133,3 +4133,8 @@ Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
 StackTrace: LogIn Form
 Fecha/Hora: 05/03/2018 19:37:39
 ===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 05/03/2018 19:53:15
+===========================================================================================
