@@ -157,6 +157,15 @@ Public Class ArticulosForm
     Public num = 0
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+        'Me.WindowState = FormWindowState.Maximized
+
+        Me.Width = 1366
+
+        Me.Height = 768
+
+
+
+        Me.PerformAutoScale()
         Me.Icon = My.Resources.ico
         Dim ListaPalabras As New List(Of SL.PalabrasIdioma)
 
@@ -221,7 +230,7 @@ Public Class ArticulosForm
         Application.DoEvents()
         TextBoxBuscar.Focus()
 
-        Me.WindowState = FormWindowState.Maximized
+
 
 
 

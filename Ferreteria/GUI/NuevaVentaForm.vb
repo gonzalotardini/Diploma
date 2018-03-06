@@ -31,6 +31,10 @@ Public Class NuevaVentaForm
         codCreditoLabel.Visible = False
         Label6.Visible = False
         Label6.Text = ""
+        Acobrar.Text = ""
+        Acobrar.Visible = False
+        AcobrarPrecio.Text = ""
+        AcobrarPrecio.Visible = False
 
 
 
@@ -379,6 +383,12 @@ Public Class NuevaVentaForm
 
 
             TotalLabel.Text = _GestorPresupuesto.CalcularTotal(_ListaDetalles)
+
+            If Label6.Text <> "" Then
+                AcobrarPrecio.Text ="$"& Convert.ToDecimal(TotalLabel.Text) - Convert.ToDecimal(CreditoLabel.Text)
+                Acobrar.Visible = True
+                AcobrarPrecio.Visible=True
+            End If
             TextBoxBuscarArticulo.Text = ""
             Me.Show()
             TextBoxBuscarArticulo.Focus()
@@ -625,10 +635,11 @@ Public Class NuevaVentaForm
 
                 Next
 
-
-
-
                 TotalLabel.Text = _GestorPresupuesto.CalcularTotal(_ListaDetalles)
+
+                If Label6.Text <> "" Then
+                    AcobrarPrecio.Text = Convert.ToDecimal(TotalLabel.Text) - Convert.ToDecimal(CreditoLabel.Text)
+                End If
 
             End If
 

@@ -1,4 +1,6 @@
-﻿Imports DAL
+﻿Imports BLL
+Imports DAL
+Imports SL
 
 Public Class NotaCreditoForm
     Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
@@ -23,10 +25,120 @@ Public Class NotaCreditoForm
     Private Sub NotaCreditoForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
             Dim ventaDao = New VentaDAO
-
+            Me.WindowState = FormWindowState.Maximized 'Maximizar Ventana al Abrir
             DataGridView1.DataSource = ventaDao.ObtenerNotasDeCredito
+            DataGridView1.AllowUserToAddRows = False
+            DataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
+    End Sub
+
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
+
+    End Sub
+
+    Private Sub TextBox1_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox1.KeyDown
+
+        Dim _GestorPresupuesto As New GestorPresupuesto
+        Dim _cod As Long
+        Dim ventaDao As New VentaDAO
+        Dim _razonSocial As String
+
+        Try
+
+
+
+            If CodigoClienteRadioButton.Checked = True Then
+
+                Select Case e.KeyData
+                    Case Keys.Enter
+
+                        Dim EsNumero As Boolean
+
+                        EsNumero = IsNumeric(TextBox1.Text)
+
+                        If EsNumero = True Then
+
+                            _cod = Convert.ToInt64(TextBox1.Text)
+
+                            DataGridView1.DataSource = ventaDao.BuscarNotaDeCreditoPorCOD(_cod)
+                            DataGridView1.AllowUserToAddRows = False
+
+                        Else
+
+                            Select Case Principal.CulturaGlobal
+                                Case "ESPAÑOL"
+                                    Throw New Exception("Error, el código debe ser numérico")
+                                Case "ENGLISH"
+                                    Throw New Exception("Error,  code must be numeric")
+                            End Select
+
+                        End If
+
+
+
+
+                End Select
+
+            Else
+
+                If RazonSocialRadioButton.Checked = True Then
+                    Select Case e.KeyData
+
+
+
+
+                        Case Keys.Enter
+
+                            If TextBox1.Text = "" Then
+                                _razonSocial = (TextBox1.Text).ToUpper
+                                DataGridView1.DataSource = ventaDao.BuscarNotaDeCreditoPorRazonSocial(_razonSocial)
+                                DataGridView1.AllowUserToAddRows = False
+
+                            Else
+                                _razonSocial = (TextBox1.Text).ToUpper
+                                DataGridView1.[DataSource] = ventaDao.BuscarNotaDeCreditoPorRazonSocial(_razonSocial)
+                                 DataGridView1.AllowUserToAddRows=False
+
+
+                            End If
+
+
+
+
+                    End Select
+
+                End If
+
+
+            End If
+
+
+
+        Catch ex As Exception
+
+            Dim el As New ErrorLogger
+            MsgBox(ex.Message, MsgBoxStyle.Critical, "ERROR")
+            el.WriteToErrorLog(ex.Message, ex.StackTrace, "Error")
+
+        End Try
+
+
+
+
+
+
+        For Each row As DataGridViewRow In DataGridView1.Rows
+
+            If row.Index Mod 2 <> 0 Then
+                row.DefaultCellStyle.BackColor = Color.Bisque
+            Else
+                row.DefaultCellStyle.BackColor = Color.Aqua
+
+            End If
+
+        Next
+
     End Sub
 End Class

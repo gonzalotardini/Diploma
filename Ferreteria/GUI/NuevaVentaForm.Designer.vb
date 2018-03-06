@@ -55,6 +55,8 @@ Partial Class NuevaVentaForm
         Me.CreditoLabel = New System.Windows.Forms.Label()
         Me.codCreditoLabel = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.Acobrar = New System.Windows.Forms.Label()
+        Me.AcobrarPrecio = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         CType(Me.ArticuloGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PresupuestoGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -64,7 +66,7 @@ Partial Class NuevaVentaForm
         '
         Me.TotalLabel.AutoSize = True
         Me.TotalLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TotalLabel.Location = New System.Drawing.Point(995, 379)
+        Me.TotalLabel.Location = New System.Drawing.Point(902, 381)
         Me.TotalLabel.Name = "TotalLabel"
         Me.TotalLabel.Size = New System.Drawing.Size(0, 42)
         Me.TotalLabel.TabIndex = 22
@@ -73,7 +75,7 @@ Partial Class NuevaVentaForm
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(826, 382)
+        Me.Label3.Location = New System.Drawing.Point(733, 384)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(163, 39)
         Me.Label3.TabIndex = 21
@@ -351,11 +353,33 @@ Partial Class NuevaVentaForm
         Me.Label6.TabIndex = 51
         Me.Label6.Text = "Label6"
         '
+        'Acobrar
+        '
+        Me.Acobrar.AutoSize = True
+        Me.Acobrar.Font = New System.Drawing.Font("Segoe UI Semibold", 16.0!, System.Drawing.FontStyle.Bold)
+        Me.Acobrar.Location = New System.Drawing.Point(1070, 388)
+        Me.Acobrar.Name = "Acobrar"
+        Me.Acobrar.Size = New System.Drawing.Size(126, 30)
+        Me.Acobrar.TabIndex = 52
+        Me.Acobrar.Text = "A COBRAR:"
+        '
+        'AcobrarPrecio
+        '
+        Me.AcobrarPrecio.AutoSize = True
+        Me.AcobrarPrecio.Font = New System.Drawing.Font("Segoe UI Semibold", 16.0!, System.Drawing.FontStyle.Bold)
+        Me.AcobrarPrecio.Location = New System.Drawing.Point(1198, 388)
+        Me.AcobrarPrecio.Name = "AcobrarPrecio"
+        Me.AcobrarPrecio.Size = New System.Drawing.Size(78, 30)
+        Me.AcobrarPrecio.TabIndex = 53
+        Me.AcobrarPrecio.Text = "Label8"
+        '
         'NuevaVentaForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1450, 691)
+        Me.Controls.Add(Me.AcobrarPrecio)
+        Me.Controls.Add(Me.Acobrar)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.codCreditoLabel)
         Me.Controls.Add(Me.CreditoLabel)
@@ -421,4 +445,6 @@ Partial Class NuevaVentaForm
     Friend WithEvents CreditoLabel As Label
     Friend WithEvents codCreditoLabel As Label
     Friend WithEvents Label6 As Label
+    Friend WithEvents Acobrar As Label
+    Friend WithEvents AcobrarPrecio As Label
 End Class

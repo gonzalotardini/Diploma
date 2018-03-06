@@ -47,7 +47,7 @@ Public Class Principal
 
 
 
-        LabelX1.Text = Now.ToShortDateString
+
 
         Me.ForeColor = Color.LightGray
 

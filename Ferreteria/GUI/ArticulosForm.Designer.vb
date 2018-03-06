@@ -130,7 +130,7 @@ Partial Class ArticulosForm
         'MODIFICAR
         '
         Me.MODIFICAR.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MODIFICAR.Location = New System.Drawing.Point(26, 771)
+        Me.MODIFICAR.Location = New System.Drawing.Point(243, 868)
         Me.MODIFICAR.Margin = New System.Windows.Forms.Padding(4)
         Me.MODIFICAR.Name = "MODIFICAR"
         Me.MODIFICAR.Size = New System.Drawing.Size(177, 51)
@@ -400,7 +400,7 @@ Partial Class ArticulosForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 17.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1596, 873)
+        Me.ClientSize = New System.Drawing.Size(1596, 1038)
         Me.Controls.Add(Me.CODBARRAS)
         Me.Controls.Add(Me.EliminarButton)
         Me.Controls.Add(Me.Label14)

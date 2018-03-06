@@ -4141,5 +4141,49 @@ Fecha/Hora: 05/03/2018 19:53:15
 Titulo: Información
 Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
 StackTrace: LogIn Form
+<<<<<<< HEAD
 Fecha/Hora: 05/03/2018 20:36:55
+=======
+Fecha/Hora: 05/03/2018 20:25:48
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 05/03/2018 20:50:15
+===========================================================================================
+Titulo: Información
+Mensaje: Se creo correctamente la venta 
+StackTrace: Nuevo venta form
+Fecha/Hora: 05/03/2018 20:51:28
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 05/03/2018 20:56:54
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 05/03/2018 21:04:30
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 05/03/2018 21:13:25
+===========================================================================================
+Titulo: Información
+Mensaje: Se creo correctamente la venta 
+StackTrace: Nuevo venta form
+Fecha/Hora: 05/03/2018 21:47:03
+===========================================================================================
+Titulo: Información
+Mensaje: Se creo correctamente la venta 
+StackTrace: Nuevo venta form
+Fecha/Hora: 05/03/2018 21:55:39
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 05/03/2018 22:17:11
+>>>>>>> 9dd98ee67172c18f5ca99dd303bbd19f554243ee
 ===========================================================================================

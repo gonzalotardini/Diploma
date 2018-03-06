@@ -298,11 +298,6 @@ Public Class GestorPresupuesto
     Public Function ValidarBusquedaClientePorRazonSocial(Cliente As Cliente) As DataSet
 
         Dim _PresupuestoFacade As New PresupuestoFacade
-
-
-
-
-
         Try
 
             Return _PresupuestoFacade.BuscarPresupuestoPorRazonSocialFacade(Cliente)
