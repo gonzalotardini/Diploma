@@ -48,13 +48,13 @@ Partial Class ArticulosForm
         Me.UNIDADDEMEDIDA = New System.Windows.Forms.Label()
         Me.DESCRIPCION = New System.Windows.Forms.Label()
         Me.TextBoxDescripcion = New System.Windows.Forms.TextBox()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.EliminarButton = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.CODBARRAS = New System.Windows.Forms.Label()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label14
@@ -84,7 +84,7 @@ Partial Class ArticulosForm
         Me.RadioButtonDESCRIPCION.BackColor = System.Drawing.Color.Transparent
         Me.RadioButtonDESCRIPCION.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioButtonDESCRIPCION.ForeColor = System.Drawing.Color.Black
-        Me.RadioButtonDESCRIPCION.Location = New System.Drawing.Point(805, 150)
+        Me.RadioButtonDESCRIPCION.Location = New System.Drawing.Point(768, 79)
         Me.RadioButtonDESCRIPCION.Margin = New System.Windows.Forms.Padding(4)
         Me.RadioButtonDESCRIPCION.Name = "RadioButtonDESCRIPCION"
         Me.RadioButtonDESCRIPCION.Size = New System.Drawing.Size(137, 24)
@@ -98,7 +98,7 @@ Partial Class ArticulosForm
         Me.RadioButtonCODIGO.BackColor = System.Drawing.Color.Transparent
         Me.RadioButtonCODIGO.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioButtonCODIGO.ForeColor = System.Drawing.Color.Black
-        Me.RadioButtonCODIGO.Location = New System.Drawing.Point(681, 150)
+        Me.RadioButtonCODIGO.Location = New System.Drawing.Point(644, 79)
         Me.RadioButtonCODIGO.Margin = New System.Windows.Forms.Padding(4)
         Me.RadioButtonCODIGO.Name = "RadioButtonCODIGO"
         Me.RadioButtonCODIGO.Size = New System.Drawing.Size(96, 24)
@@ -111,7 +111,7 @@ Partial Class ArticulosForm
         '
         Me.BUSCAR.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BUSCAR.ForeColor = System.Drawing.Color.Black
-        Me.BUSCAR.Location = New System.Drawing.Point(302, 156)
+        Me.BUSCAR.Location = New System.Drawing.Point(265, 85)
         Me.BUSCAR.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.BUSCAR.Name = "BUSCAR"
         Me.BUSCAR.Size = New System.Drawing.Size(69, 17)
@@ -121,7 +121,7 @@ Partial Class ArticulosForm
         'TextBoxBuscar
         '
         Me.TextBoxBuscar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxBuscar.Location = New System.Drawing.Point(379, 152)
+        Me.TextBoxBuscar.Location = New System.Drawing.Point(342, 81)
         Me.TextBoxBuscar.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBoxBuscar.Name = "TextBoxBuscar"
         Me.TextBoxBuscar.Size = New System.Drawing.Size(277, 22)
@@ -130,7 +130,7 @@ Partial Class ArticulosForm
         'MODIFICAR
         '
         Me.MODIFICAR.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MODIFICAR.Location = New System.Drawing.Point(243, 868)
+        Me.MODIFICAR.Location = New System.Drawing.Point(243, 554)
         Me.MODIFICAR.Margin = New System.Windows.Forms.Padding(4)
         Me.MODIFICAR.Name = "MODIFICAR"
         Me.MODIFICAR.Size = New System.Drawing.Size(177, 51)
@@ -140,11 +140,11 @@ Partial Class ArticulosForm
         '
         'TextBoxCodProveedor
         '
-        Me.TextBoxCodProveedor.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxCodProveedor.Location = New System.Drawing.Point(15, 47)
+        Me.TextBoxCodProveedor.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.TextBoxCodProveedor.Location = New System.Drawing.Point(11, 34)
         Me.TextBoxCodProveedor.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBoxCodProveedor.Name = "TextBoxCodProveedor"
-        Me.TextBoxCodProveedor.Size = New System.Drawing.Size(172, 25)
+        Me.TextBoxCodProveedor.Size = New System.Drawing.Size(172, 23)
         Me.TextBoxCodProveedor.TabIndex = 68
         '
         'ARTICULOSlbl
@@ -155,7 +155,7 @@ Partial Class ArticulosForm
         Me.ARTICULOSlbl.Location = New System.Drawing.Point(349, 9)
         Me.ARTICULOSlbl.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.ARTICULOSlbl.Name = "ARTICULOSlbl"
-        Me.ARTICULOSlbl.Size = New System.Drawing.Size(428, 94)
+        Me.ARTICULOSlbl.Size = New System.Drawing.Size(391, 68)
         Me.ARTICULOSlbl.TabIndex = 87
         Me.ARTICULOSlbl.Text = "ARTÍCULOS"
         '
@@ -165,7 +165,7 @@ Partial Class ArticulosForm
         Me.Label9.BackColor = System.Drawing.Color.Transparent
         Me.Label9.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.Black
-        Me.Label9.Location = New System.Drawing.Point(69, 290)
+        Me.Label9.Location = New System.Drawing.Point(65, 277)
         Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(19, 21)
@@ -174,48 +174,48 @@ Partial Class ArticulosForm
         '
         'TextBox3
         '
-        Me.TextBox3.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(166, 290)
+        Me.TextBox3.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.TextBox3.Location = New System.Drawing.Point(162, 277)
         Me.TextBox3.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(37, 25)
+        Me.TextBox3.Size = New System.Drawing.Size(37, 23)
         Me.TextBox3.TabIndex = 76
         '
         'ComboMarca
         '
-        Me.ComboMarca.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboMarca.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold)
         Me.ComboMarca.FormattingEnabled = True
-        Me.ComboMarca.Location = New System.Drawing.Point(16, 494)
+        Me.ComboMarca.Location = New System.Drawing.Point(12, 480)
         Me.ComboMarca.Margin = New System.Windows.Forms.Padding(4)
         Me.ComboMarca.Name = "ComboMarca"
-        Me.ComboMarca.Size = New System.Drawing.Size(213, 25)
+        Me.ComboMarca.Size = New System.Drawing.Size(213, 23)
         Me.ComboMarca.TabIndex = 80
         '
         'ComboSubCategoria
         '
-        Me.ComboSubCategoria.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboSubCategoria.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold)
         Me.ComboSubCategoria.FormattingEnabled = True
-        Me.ComboSubCategoria.Location = New System.Drawing.Point(16, 426)
+        Me.ComboSubCategoria.Location = New System.Drawing.Point(12, 413)
         Me.ComboSubCategoria.Margin = New System.Windows.Forms.Padding(4)
         Me.ComboSubCategoria.Name = "ComboSubCategoria"
-        Me.ComboSubCategoria.Size = New System.Drawing.Size(200, 25)
+        Me.ComboSubCategoria.Size = New System.Drawing.Size(200, 23)
         Me.ComboSubCategoria.TabIndex = 79
         '
         'TextBoxPrecio
         '
-        Me.TextBoxPrecio.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxPrecio.Location = New System.Drawing.Point(92, 290)
+        Me.TextBoxPrecio.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.TextBoxPrecio.Location = New System.Drawing.Point(88, 277)
         Me.TextBoxPrecio.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBoxPrecio.Name = "TextBoxPrecio"
-        Me.TextBoxPrecio.Size = New System.Drawing.Size(67, 25)
+        Me.TextBoxPrecio.Size = New System.Drawing.Size(67, 23)
         Me.TextBoxPrecio.TabIndex = 74
         '
         'MARCA
         '
         Me.MARCA.BackColor = System.Drawing.Color.Transparent
-        Me.MARCA.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MARCA.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold)
         Me.MARCA.ForeColor = System.Drawing.Color.Black
-        Me.MARCA.Location = New System.Drawing.Point(15, 473)
+        Me.MARCA.Location = New System.Drawing.Point(14, 459)
         Me.MARCA.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.MARCA.Name = "MARCA"
         Me.MARCA.Size = New System.Drawing.Size(67, 17)
@@ -225,9 +225,9 @@ Partial Class ArticulosForm
         'SUBCATEGORIA
         '
         Me.SUBCATEGORIA.BackColor = System.Drawing.Color.Transparent
-        Me.SUBCATEGORIA.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SUBCATEGORIA.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold)
         Me.SUBCATEGORIA.ForeColor = System.Drawing.Color.Black
-        Me.SUBCATEGORIA.Location = New System.Drawing.Point(11, 405)
+        Me.SUBCATEGORIA.Location = New System.Drawing.Point(7, 392)
         Me.SUBCATEGORIA.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.SUBCATEGORIA.Name = "SUBCATEGORIA"
         Me.SUBCATEGORIA.Size = New System.Drawing.Size(143, 17)
@@ -237,9 +237,9 @@ Partial Class ArticulosForm
         'CATEGORIA
         '
         Me.CATEGORIA.BackColor = System.Drawing.Color.Transparent
-        Me.CATEGORIA.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CATEGORIA.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold)
         Me.CATEGORIA.ForeColor = System.Drawing.Color.Black
-        Me.CATEGORIA.Location = New System.Drawing.Point(13, 337)
+        Me.CATEGORIA.Location = New System.Drawing.Point(9, 324)
         Me.CATEGORIA.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.CATEGORIA.Name = "CATEGORIA"
         Me.CATEGORIA.Size = New System.Drawing.Size(104, 17)
@@ -248,20 +248,20 @@ Partial Class ArticulosForm
         '
         'ComboCategoria
         '
-        Me.ComboCategoria.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboCategoria.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold)
         Me.ComboCategoria.FormattingEnabled = True
-        Me.ComboCategoria.Location = New System.Drawing.Point(16, 358)
+        Me.ComboCategoria.Location = New System.Drawing.Point(12, 345)
         Me.ComboCategoria.Margin = New System.Windows.Forms.Padding(4)
         Me.ComboCategoria.Name = "ComboCategoria"
-        Me.ComboCategoria.Size = New System.Drawing.Size(200, 25)
+        Me.ComboCategoria.Size = New System.Drawing.Size(200, 23)
         Me.ComboCategoria.TabIndex = 77
         '
         'PRECIO
         '
         Me.PRECIO.BackColor = System.Drawing.Color.Transparent
-        Me.PRECIO.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PRECIO.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold)
         Me.PRECIO.ForeColor = System.Drawing.Color.Black
-        Me.PRECIO.Location = New System.Drawing.Point(7, 287)
+        Me.PRECIO.Location = New System.Drawing.Point(19, 282)
         Me.PRECIO.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.PRECIO.Name = "PRECIO"
         Me.PRECIO.Size = New System.Drawing.Size(71, 25)
@@ -270,20 +270,20 @@ Partial Class ArticulosForm
         '
         'Combo_SubUnidad
         '
-        Me.Combo_SubUnidad.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Combo_SubUnidad.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold)
         Me.Combo_SubUnidad.FormattingEnabled = True
-        Me.Combo_SubUnidad.Location = New System.Drawing.Point(16, 248)
+        Me.Combo_SubUnidad.Location = New System.Drawing.Point(12, 235)
         Me.Combo_SubUnidad.Margin = New System.Windows.Forms.Padding(4)
         Me.Combo_SubUnidad.Name = "Combo_SubUnidad"
-        Me.Combo_SubUnidad.Size = New System.Drawing.Size(183, 25)
+        Me.Combo_SubUnidad.Size = New System.Drawing.Size(183, 23)
         Me.Combo_SubUnidad.TabIndex = 73
         '
         'SUBUNIDADDEMEDIDA
         '
         Me.SUBUNIDADDEMEDIDA.BackColor = System.Drawing.Color.Transparent
-        Me.SUBUNIDADDEMEDIDA.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SUBUNIDADDEMEDIDA.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold)
         Me.SUBUNIDADDEMEDIDA.ForeColor = System.Drawing.Color.Black
-        Me.SUBUNIDADDEMEDIDA.Location = New System.Drawing.Point(13, 227)
+        Me.SUBUNIDADDEMEDIDA.Location = New System.Drawing.Point(9, 214)
         Me.SUBUNIDADDEMEDIDA.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.SUBUNIDADDEMEDIDA.Name = "SUBUNIDADDEMEDIDA"
         Me.SUBUNIDADDEMEDIDA.Size = New System.Drawing.Size(209, 17)
@@ -293,21 +293,21 @@ Partial Class ArticulosForm
         'Combo_UniddMedida
         '
         Me.Combo_UniddMedida.DisplayMember = "Cod_Unidad_Medida"
-        Me.Combo_UniddMedida.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Combo_UniddMedida.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold)
         Me.Combo_UniddMedida.FormattingEnabled = True
-        Me.Combo_UniddMedida.Location = New System.Drawing.Point(15, 179)
+        Me.Combo_UniddMedida.Location = New System.Drawing.Point(11, 166)
         Me.Combo_UniddMedida.Margin = New System.Windows.Forms.Padding(4)
         Me.Combo_UniddMedida.Name = "Combo_UniddMedida"
-        Me.Combo_UniddMedida.Size = New System.Drawing.Size(183, 25)
+        Me.Combo_UniddMedida.Size = New System.Drawing.Size(183, 23)
         Me.Combo_UniddMedida.TabIndex = 71
         Me.Combo_UniddMedida.ValueMember = "Cod_Unidad_Medida"
         '
         'UNIDADDEMEDIDA
         '
         Me.UNIDADDEMEDIDA.BackColor = System.Drawing.Color.Transparent
-        Me.UNIDADDEMEDIDA.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.UNIDADDEMEDIDA.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold)
         Me.UNIDADDEMEDIDA.ForeColor = System.Drawing.Color.Black
-        Me.UNIDADDEMEDIDA.Location = New System.Drawing.Point(13, 157)
+        Me.UNIDADDEMEDIDA.Location = New System.Drawing.Point(9, 144)
         Me.UNIDADDEMEDIDA.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.UNIDADDEMEDIDA.Name = "UNIDADDEMEDIDA"
         Me.UNIDADDEMEDIDA.Size = New System.Drawing.Size(171, 17)
@@ -317,9 +317,9 @@ Partial Class ArticulosForm
         'DESCRIPCION
         '
         Me.DESCRIPCION.BackColor = System.Drawing.Color.Transparent
-        Me.DESCRIPCION.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DESCRIPCION.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold)
         Me.DESCRIPCION.ForeColor = System.Drawing.Color.Black
-        Me.DESCRIPCION.Location = New System.Drawing.Point(15, 85)
+        Me.DESCRIPCION.Location = New System.Drawing.Point(11, 72)
         Me.DESCRIPCION.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.DESCRIPCION.Name = "DESCRIPCION"
         Me.DESCRIPCION.Size = New System.Drawing.Size(121, 23)
@@ -328,32 +328,19 @@ Partial Class ArticulosForm
         '
         'TextBoxDescripcion
         '
-        Me.TextBoxDescripcion.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxDescripcion.Location = New System.Drawing.Point(15, 112)
+        Me.TextBoxDescripcion.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.TextBoxDescripcion.Location = New System.Drawing.Point(10, 99)
         Me.TextBoxDescripcion.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBoxDescripcion.Name = "TextBoxDescripcion"
-        Me.TextBoxDescripcion.Size = New System.Drawing.Size(252, 25)
+        Me.TextBoxDescripcion.Size = New System.Drawing.Size(214, 23)
         Me.TextBoxDescripcion.TabIndex = 69
-        '
-        'DataGridView1
-        '
-        Me.DataGridView1.AllowUserToOrderColumns = True
-        Me.DataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(232, 188)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4)
-        Me.DataGridView1.MultiSelect = False
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.ReadOnly = True
-        Me.DataGridView1.Size = New System.Drawing.Size(1564, 647)
-        Me.DataGridView1.TabIndex = 92
         '
         'EliminarButton
         '
         Me.EliminarButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.EliminarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.EliminarButton.Image = Global.GUI.My.Resources.Resources.delete1
-        Me.EliminarButton.Location = New System.Drawing.Point(977, 853)
+        Me.EliminarButton.Location = New System.Drawing.Point(911, 554)
         Me.EliminarButton.Margin = New System.Windows.Forms.Padding(4)
         Me.EliminarButton.Name = "EliminarButton"
         Me.EliminarButton.Size = New System.Drawing.Size(77, 80)
@@ -363,10 +350,10 @@ Partial Class ArticulosForm
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(900, 9)
+        Me.PictureBox1.Location = New System.Drawing.Point(888, -5)
         Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(195, 141)
+        Me.PictureBox1.Size = New System.Drawing.Size(151, 107)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 96
         Me.PictureBox1.TabStop = False
@@ -376,7 +363,7 @@ Partial Class ArticulosForm
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Image = Global.GUI.My.Resources.Resources.aceptar1
-        Me.Button1.Location = New System.Drawing.Point(15, 578)
+        Me.Button1.Location = New System.Drawing.Point(11, 534)
         Me.Button1.Margin = New System.Windows.Forms.Padding(4)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(209, 171)
@@ -387,20 +374,29 @@ Partial Class ArticulosForm
         '
         Me.CODBARRAS.AutoSize = True
         Me.CODBARRAS.BackColor = System.Drawing.Color.Transparent
-        Me.CODBARRAS.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CODBARRAS.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold)
         Me.CODBARRAS.ForeColor = System.Drawing.Color.Black
-        Me.CODBARRAS.Location = New System.Drawing.Point(15, 22)
+        Me.CODBARRAS.Location = New System.Drawing.Point(11, 9)
         Me.CODBARRAS.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.CODBARRAS.Name = "CODBARRAS"
-        Me.CODBARRAS.Size = New System.Drawing.Size(108, 21)
+        Me.CODBARRAS.Size = New System.Drawing.Size(79, 15)
         Me.CODBARRAS.TabIndex = 101
         Me.CODBARRAS.Text = "COD BARRAS"
+        '
+        'DataGridView2
+        '
+        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView2.Location = New System.Drawing.Point(243, 110)
+        Me.DataGridView2.Name = "DataGridView2"
+        Me.DataGridView2.Size = New System.Drawing.Size(986, 414)
+        Me.DataGridView2.TabIndex = 102
         '
         'ArticulosForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 17.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1596, 1038)
+        Me.ClientSize = New System.Drawing.Size(1348, 1004)
+        Me.Controls.Add(Me.DataGridView2)
         Me.Controls.Add(Me.CODBARRAS)
         Me.Controls.Add(Me.EliminarButton)
         Me.Controls.Add(Me.Label14)
@@ -430,15 +426,14 @@ Partial Class ArticulosForm
         Me.Controls.Add(Me.UNIDADDEMEDIDA)
         Me.Controls.Add(Me.DESCRIPCION)
         Me.Controls.Add(Me.TextBoxDescripcion)
-        Me.Controls.Add(Me.DataGridView1)
         Me.DoubleBuffered = True
         Me.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ForeColor = System.Drawing.Color.Transparent
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "ArticulosForm"
         Me.Text = "Form1"
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -471,6 +466,6 @@ Partial Class ArticulosForm
     Friend WithEvents UNIDADDEMEDIDA As System.Windows.Forms.Label
     Friend WithEvents DESCRIPCION As System.Windows.Forms.Label
     Friend WithEvents TextBoxDescripcion As System.Windows.Forms.TextBox
-    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
     Friend WithEvents CODBARRAS As Label
+    Friend WithEvents DataGridView2 As DataGridView
 End Class

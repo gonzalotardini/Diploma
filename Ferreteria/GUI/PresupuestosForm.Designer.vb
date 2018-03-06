@@ -40,7 +40,7 @@ Partial Class PresupuestosForm
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(57, 210)
+        Me.TextBox1.Location = New System.Drawing.Point(198, 209)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(295, 20)
         Me.TextBox1.TabIndex = 1
@@ -49,7 +49,7 @@ Partial Class PresupuestosForm
         '
         Me.GroupBox1.Controls.Add(Me.RazonSocialRadioButton)
         Me.GroupBox1.Controls.Add(Me.CodigoClienteRadioButton)
-        Me.GroupBox1.Location = New System.Drawing.Point(387, 189)
+        Me.GroupBox1.Location = New System.Drawing.Point(580, 188)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(274, 41)
         Me.GroupBox1.TabIndex = 2
@@ -83,7 +83,7 @@ Partial Class PresupuestosForm
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 36.0!, System.Drawing.FontStyle.Bold)
-        Me.Label1.Location = New System.Drawing.Point(277, 57)
+        Me.Label1.Location = New System.Drawing.Point(472, 56)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(382, 65)
         Me.Label1.TabIndex = 7
@@ -92,7 +92,7 @@ Partial Class PresupuestosForm
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(57, 12)
+        Me.PictureBox1.Location = New System.Drawing.Point(221, 12)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(199, 157)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -112,7 +112,7 @@ Partial Class PresupuestosForm
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.PresupuestosDataGridView.DefaultCellStyle = DataGridViewCellStyle1
         Me.PresupuestosDataGridView.GridColor = System.Drawing.Color.FromArgb(CType(CType(170, Byte), Integer), CType(CType(170, Byte), Integer), CType(CType(170, Byte), Integer))
-        Me.PresupuestosDataGridView.Location = New System.Drawing.Point(57, 271)
+        Me.PresupuestosDataGridView.Location = New System.Drawing.Point(170, 252)
         Me.PresupuestosDataGridView.Name = "PresupuestosDataGridView"
         Me.PresupuestosDataGridView.ReadOnly = True
         Me.PresupuestosDataGridView.Size = New System.Drawing.Size(852, 313)
@@ -178,6 +178,6 @@ Partial Class PresupuestosForm
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents PresupuestosDataGridView As DevComponents.DotNetBar.Controls.DataGridViewX
-    Friend WithEvents ButtonX1 As DevComponents.DotNetBar.ButtonX
-    Friend WithEvents ButtonX2 As DevComponents.DotNetBar.ButtonX
+    Private WithEvents ButtonX1 As DevComponents.DotNetBar.ButtonX
+    Private WithEvents ButtonX2 As DevComponents.DotNetBar.ButtonX
 End Class

@@ -53,7 +53,7 @@ Partial Class PresupuestoDetalleForm
         'PresupuestoGridView
         '
         Me.PresupuestoGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.PresupuestoGridView.Location = New System.Drawing.Point(26, 106)
+        Me.PresupuestoGridView.Location = New System.Drawing.Point(12, 63)
         Me.PresupuestoGridView.Name = "PresupuestoGridView"
         Me.PresupuestoGridView.Size = New System.Drawing.Size(1030, 300)
         Me.PresupuestoGridView.TabIndex = 0
@@ -134,7 +134,7 @@ Partial Class PresupuestoDetalleForm
         '
         Me.label.AutoSize = True
         Me.label.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label.Location = New System.Drawing.Point(630, 429)
+        Me.label.Location = New System.Drawing.Point(600, 366)
         Me.label.Name = "label"
         Me.label.Size = New System.Drawing.Size(183, 55)
         Me.label.TabIndex = 9
@@ -144,7 +144,7 @@ Partial Class PresupuestoDetalleForm
         '
         Me.TotalLabel.AutoSize = True
         Me.TotalLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TotalLabel.Location = New System.Drawing.Point(846, 429)
+        Me.TotalLabel.Location = New System.Drawing.Point(816, 366)
         Me.TotalLabel.Name = "TotalLabel"
         Me.TotalLabel.Size = New System.Drawing.Size(226, 73)
         Me.TotalLabel.TabIndex = 10
@@ -153,9 +153,9 @@ Partial Class PresupuestoDetalleForm
         'ModificarButton
         '
         Me.ModificarButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ModificarButton.Location = New System.Drawing.Point(127, 447)
+        Me.ModificarButton.Location = New System.Drawing.Point(26, 369)
         Me.ModificarButton.Name = "ModificarButton"
-        Me.ModificarButton.Size = New System.Drawing.Size(86, 55)
+        Me.ModificarButton.Size = New System.Drawing.Size(157, 38)
         Me.ModificarButton.TabIndex = 11
         Me.ModificarButton.Text = "MODIFICAR"
         Me.ModificarButton.UseVisualStyleBackColor = True
@@ -163,17 +163,17 @@ Partial Class PresupuestoDetalleForm
         'ArticuloGridView1
         '
         Me.ArticuloGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.ArticuloGridView1.Location = New System.Drawing.Point(26, 585)
+        Me.ArticuloGridView1.Location = New System.Drawing.Point(12, 446)
         Me.ArticuloGridView1.Name = "ArticuloGridView1"
         Me.ArticuloGridView1.ReadOnly = True
-        Me.ArticuloGridView1.Size = New System.Drawing.Size(1055, 244)
+        Me.ArticuloGridView1.Size = New System.Drawing.Size(1030, 244)
         Me.ArticuloGridView1.TabIndex = 12
         '
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.RadioButtonDescripcion)
         Me.GroupBox1.Controls.Add(Me.RadioButtonCodigo)
-        Me.GroupBox1.Location = New System.Drawing.Point(352, 536)
+        Me.GroupBox1.Location = New System.Drawing.Point(339, 401)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(243, 39)
         Me.GroupBox1.TabIndex = 14
@@ -203,7 +203,7 @@ Partial Class PresupuestoDetalleForm
         '
         'TextBoxBuscarArticulo
         '
-        Me.TextBoxBuscarArticulo.Location = New System.Drawing.Point(26, 542)
+        Me.TextBoxBuscarArticulo.Location = New System.Drawing.Point(12, 420)
         Me.TextBoxBuscarArticulo.Name = "TextBoxBuscarArticulo"
         Me.TextBoxBuscarArticulo.Size = New System.Drawing.Size(305, 20)
         Me.TextBoxBuscarArticulo.TabIndex = 13
@@ -213,7 +213,7 @@ Partial Class PresupuestoDetalleForm
         Me.ImprimirButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ImprimirButton.Image = Global.GUI.My.Resources.Resources.Imprimir
         Me.ImprimirButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.ImprimirButton.Location = New System.Drawing.Point(1100, 209)
+        Me.ImprimirButton.Location = New System.Drawing.Point(1067, 115)
         Me.ImprimirButton.Name = "ImprimirButton"
         Me.ImprimirButton.Size = New System.Drawing.Size(107, 44)
         Me.ImprimirButton.TabIndex = 19
@@ -224,7 +224,7 @@ Partial Class PresupuestoDetalleForm
         'FinalizarButton
         '
         Me.FinalizarButton.Image = CType(resources.GetObject("FinalizarButton.Image"), System.Drawing.Image)
-        Me.FinalizarButton.Location = New System.Drawing.Point(1083, 334)
+        Me.FinalizarButton.Location = New System.Drawing.Point(1067, 291)
         Me.FinalizarButton.Name = "FinalizarButton"
         Me.FinalizarButton.Size = New System.Drawing.Size(149, 72)
         Me.FinalizarButton.TabIndex = 18
@@ -235,7 +235,7 @@ Partial Class PresupuestoDetalleForm
         Me.QuitarButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.QuitarButton.Image = Global.GUI.My.Resources.Resources.quitar
         Me.QuitarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.QuitarButton.Location = New System.Drawing.Point(1100, 106)
+        Me.QuitarButton.Location = New System.Drawing.Point(1067, 63)
         Me.QuitarButton.Name = "QuitarButton"
         Me.QuitarButton.Size = New System.Drawing.Size(107, 46)
         Me.QuitarButton.TabIndex = 16
@@ -264,7 +264,7 @@ Partial Class PresupuestoDetalleForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1387, 912)
+        Me.ClientSize = New System.Drawing.Size(1348, 733)
         Me.Controls.Add(Me.CodigoPresupuestoTextbox)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ImprimirButton)
@@ -285,6 +285,7 @@ Partial Class PresupuestoDetalleForm
         Me.Controls.Add(Me.RazonSocialTextBox)
         Me.Controls.Add(Me.RazonSocialLabel)
         Me.Controls.Add(Me.PresupuestoGridView)
+        Me.DoubleBuffered = True
         Me.Name = "PresupuestoDetalleForm"
         Me.Text = "DETALLE PRESUPUESTO"
         CType(Me.PresupuestoGridView, System.ComponentModel.ISupportInitialize).EndInit()
