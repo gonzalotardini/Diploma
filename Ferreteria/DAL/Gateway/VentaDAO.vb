@@ -511,6 +511,80 @@ Public Class VentaDAO
         End Try
     End Function
 
+    Public Function BuscarNotaDeCreditoPorCOD(cod As Long) As DataTable
+        Dim _Consulta As String
+        Dim _Comando As SqlCommand
+        Dim _dataSet As New DataSet
+        Dim _Convertir As New Convertir
+
+
+
+        Try
+            _Consulta = "select Cod_NotaCredito as ID, c.Cod_Cliente as CodCliente ,c.Razon_Social, n.Cod_Venta, Credito, convert(char(10),Fecha,103) as FechaVenta from NotaDeCredito n
+                        inner join Cliente c on c.Cod_Cliente=n.Cod_Cliente Where Estado=0 and Cod_NotaCredito=" & cod
+
+            Me.Conexion.Open()
+
+            _Comando = New SqlCommand(_Consulta, Me.Conexion)
+
+            Dim _Adapter As New SqlDataAdapter(_Comando)
+
+            _Adapter.Fill(_dataSet)
+
+            Return _dataSet.Tables(0)
+
+
+        Catch ex As Exception
+
+            Throw New Exception(ex.Message)
+            Return Nothing
+
+
+        Finally
+
+
+            Me.Conexion.Close()
+
+        End Try
+    End Function
+
+    Public Function BuscarNotaDeCreditoPorRazonSocial(razonSocial As String)
+        Dim _Consulta As String
+        Dim _Comando As SqlCommand
+        Dim _dataSet As New DataSet
+        Dim _Convertir As New Convertir
+
+
+
+        Try
+            _Consulta = "select Cod_NotaCredito as ID, c.Cod_Cliente as CodCliente ,c.Razon_Social, n.Cod_Venta, Credito, convert(char(10),Fecha,103) as FechaVenta from NotaDeCredito n
+                        inner join Cliente c on c.Cod_Cliente=n.Cod_Cliente Where Estado=0 and C.Razon_Social like '%" & razonSocial & "%'"
+
+            Me.Conexion.Open()
+
+            _Comando = New SqlCommand(_Consulta, Me.Conexion)
+
+            Dim _Adapter As New SqlDataAdapter(_Comando)
+
+            _Adapter.Fill(_dataSet)
+
+            Return _dataSet.Tables(0)
+
+
+        Catch ex As Exception
+
+            Throw New Exception(ex.Message)
+            Return Nothing
+
+
+        Finally
+
+
+            Me.Conexion.Close()
+
+        End Try
+    End Function
+
     Public Sub CancelarNotaDeCredito(codNota As Long)
 
         Dim _Consulta As String

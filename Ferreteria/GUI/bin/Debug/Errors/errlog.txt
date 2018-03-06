@@ -2237,3 +2237,90 @@ Mensaje: Error, cantidad debe ser numerico
 StackTrace:    at GUI.PresupuestoDetalleForm.ArticuloGridView1_CellDoubleClick(Object sender, DataGridViewCellEventArgs e)
 Fecha/Hora: 05/03/2018 19:30:11
 ===========================================================================================
+Titulo: Error
+Mensaje: Error relacionado con la red o específico de la instancia mientras se establecía una conexión con el servidor SQL Server. No se encontró el servidor o éste no estaba accesible. Compruebe que el nombre de la instancia es correcto y que SQL Server está configurado para admitir conexiones remotas. (provider: SQL Network Interfaces, error: 26 - Error al buscar el servidor o instancia especificado)
+StackTrace:    en SL.GestorUsuario.TraerUsuarioBLL(Usuario _Usuario) en C:\Proyectos\Diploma\Ferreteria\SL\Usuario\GestorUsuario.vb:línea 30
+   en GUI.LogIn.Button1_Click_1(Object sender, EventArgs e) en C:\Proyectos\Diploma\Ferreteria\GUI\LogIn.vb:línea 41
+Fecha/Hora: 05/03/2018 19:51:02
+===========================================================================================
+Titulo: Error
+Mensaje: Error relacionado con la red o específico de la instancia mientras se establecía una conexión con el servidor SQL Server. No se encontró el servidor o éste no estaba accesible. Compruebe que el nombre de la instancia es correcto y que SQL Server está configurado para admitir conexiones remotas. (provider: SQL Network Interfaces, error: 26 - Error al buscar el servidor o instancia especificado)
+StackTrace:    en SL.GestorUsuario.TraerUsuarioBLL(Usuario _Usuario) en C:\Proyectos\Diploma\Ferreteria\SL\Usuario\GestorUsuario.vb:línea 30
+   en GUI.LogIn.Button1_Click_1(Object sender, EventArgs e) en C:\Proyectos\Diploma\Ferreteria\GUI\LogIn.vb:línea 41
+Fecha/Hora: 05/03/2018 20:08:23
+===========================================================================================
+Titulo: Error
+Mensaje: Revise nombre de usuario o contraseña
+StackTrace:    en SL.GestorUsuario.TraerUsuarioBLL(Usuario _Usuario) en C:\Proyectos\Diploma\Ferreteria\SL\Usuario\GestorUsuario.vb:línea 30
+   en GUI.LogIn.Button1_Click_1(Object sender, EventArgs e) en C:\Proyectos\Diploma\Ferreteria\GUI\LogIn.vb:línea 41
+Fecha/Hora: 05/03/2018 20:09:11
+===========================================================================================
+Titulo: Error
+Mensaje: Revise nombre de usuario o contraseña
+StackTrace:    en SL.GestorUsuario.TraerUsuarioBLL(Usuario _Usuario) en C:\Proyectos\Diploma\Ferreteria\SL\Usuario\GestorUsuario.vb:línea 30
+   en GUI.LogIn.Button1_Click_1(Object sender, EventArgs e) en C:\Proyectos\Diploma\Ferreteria\GUI\LogIn.vb:línea 41
+Fecha/Hora: 05/03/2018 20:09:16
+===========================================================================================
+Titulo: Error
+Mensaje: Introduzca Codigo de Barras
+StackTrace:    en GUI.ArticulosForm.Button1_Click_1(Object sender, EventArgs e) en C:\Proyectos\Diploma\Ferreteria\GUI\ArticulosForm.vb:línea 43
+Fecha/Hora: 05/03/2018 20:44:54
+===========================================================================================
+Titulo: Error
+Mensaje: Error, cantidad debe ser numerico
+StackTrace:    en GUI.NuevaVentaForm.ArticuloGridView1_CellDoubleClick(Object sender, DataGridViewCellEventArgs e)
+Fecha/Hora: 05/03/2018 21:16:22
+===========================================================================================
+Titulo: Error
+Mensaje: Debe seleccionar un cliente
+StackTrace:    en GUI.NuevaVentaForm.FinalizarButton_Click_1(Object sender, EventArgs e)
+Fecha/Hora: 05/03/2018 21:46:54
+===========================================================================================
+Titulo: Error
+Mensaje: La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+StackTrace:    en BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _fecha_Desde, DateTime _fecha_hasta) en C:\Proyectos\Diploma\Ferreteria\BLL\GestorReporte.vb:línea 29
+   en GUI.NuevoReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e)
+Fecha/Hora: 05/03/2018 21:51:14
+===========================================================================================
+Titulo: Error
+Mensaje: La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+StackTrace:    en BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _fecha_Desde, DateTime _fecha_hasta) en C:\Proyectos\Diploma\Ferreteria\BLL\GestorReporte.vb:línea 29
+   en GUI.NuevoReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e)
+Fecha/Hora: 05/03/2018 21:51:20
+===========================================================================================
+Titulo: Error
+Mensaje: La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+StackTrace:    en BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _fecha_Desde, DateTime _fecha_hasta) en C:\Proyectos\Diploma\Ferreteria\BLL\GestorReporte.vb:línea 29
+   en GUI.NuevoReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e)
+Fecha/Hora: 05/03/2018 21:53:14
+===========================================================================================
+Titulo: Error
+Mensaje: No se encontraron articulos
+StackTrace:    en BLL.GestorReporte.ObtenerArticulosMasVendidosBLL(Int32 cantidad, DateTime fecha_desde, DateTime fecha_hasta) en C:\Proyectos\Diploma\Ferreteria\BLL\GestorReporte.vb:línea 68
+   en GUI.NuevoReporteArticulosVendidos.ButtonX1_Click(Object sender, EventArgs e)
+Fecha/Hora: 05/03/2018 21:55:22
+===========================================================================================
+Titulo: Error
+Mensaje: No se encontraron articulos
+StackTrace:    en BLL.GestorReporte.ObtenerArticulosMasVendidosBLL(Int32 cantidad, DateTime fecha_desde, DateTime fecha_hasta) en C:\Proyectos\Diploma\Ferreteria\BLL\GestorReporte.vb:línea 68
+   en GUI.NuevoReporteArticulosVendidos.ButtonX1_Click(Object sender, EventArgs e)
+Fecha/Hora: 05/03/2018 21:55:26
+===========================================================================================
+Titulo: Error
+Mensaje: No se encontraron articulos
+StackTrace:    en BLL.GestorReporte.ObtenerArticulosMasVendidosBLL(Int32 cantidad, DateTime fecha_desde, DateTime fecha_hasta) en C:\Proyectos\Diploma\Ferreteria\BLL\GestorReporte.vb:línea 68
+   en GUI.NuevoReporteArticulosVendidos.ButtonX1_Click(Object sender, EventArgs e)
+Fecha/Hora: 05/03/2018 21:55:53
+===========================================================================================
+Titulo: Error
+Mensaje: La conexión no se cerró. El estado actual de la conexión es abierta.
+StackTrace:    en BLL.GestorReporte.ObtenerArticulosMasVendidosBLL(Int32 cantidad, DateTime fecha_desde, DateTime fecha_hasta) en C:\Proyectos\Diploma\Ferreteria\BLL\GestorReporte.vb:línea 68
+   en GUI.NuevoReporteArticulosVendidos.ButtonX1_Click(Object sender, EventArgs e)
+Fecha/Hora: 05/03/2018 21:57:21
+===========================================================================================
+Titulo: Error
+Mensaje: Sintaxis incorrecta cerca de '%'.
+StackTrace:    en DAL.VentaDAO.BuscarNotaDeCreditoPorRazonSocial(String razonSocial) en C:\Proyectos\Diploma\Ferreteria\DAL\Gateway\VentaDAO.vb:línea 576
+   en GUI.NotaCreditoForm.TextBox1_KeyDown(Object sender, KeyEventArgs e)
+Fecha/Hora: 05/03/2018 22:18:32
+===========================================================================================
