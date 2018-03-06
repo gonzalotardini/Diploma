@@ -245,7 +245,7 @@ Public Class ArticulosForm
         Try
 
 
-            DataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
+            DataGridView2.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
 
 
             'Cargo las unidades de medida
@@ -367,33 +367,14 @@ Public Class ArticulosForm
         End Try
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        DataGridView1.DataSource = ArticuloDao.ObtenerPrimerosArticulos.Tables(0)
+        DataGridView2.DataSource = ArticuloDao.ObtenerPrimerosArticulos.Tables(0)
 
         Dim CantidadArticulos As Integer
 
-        CantidadArticulos = DataGridView1.RowCount - 1
+        CantidadArticulos = DataGridView2.RowCount - 1
         Label14.Text = CantidadArticulos
 
-        For Each row As DataGridViewRow In DataGridView1.Rows
+        For Each row As DataGridViewRow In DataGridView2.Rows
 
             If row.Index Mod 2 <> 0 Then
                 row.DefaultCellStyle.BackColor = Color.Bisque
@@ -491,11 +472,11 @@ Public Class ArticulosForm
 
                     If TextBoxBuscar.Text <> "" And EsNumero = True And ((Len(TextBoxBuscar.Text)) < 16) Then  'valido para que no ejectue la funcion si no hay caracteres
                         Articulo.CodigoDeBarras = Convert.ToInt64(TextBoxBuscar.Text)
-                        DataGridView1.DataSource = ArticuloBLL.ValidarCodigoDeBarrasParaBusqueda(Articulo)
+                        DataGridView2.DataSource = ArticuloBLL.ValidarCodigoDeBarrasParaBusqueda(Articulo)
 
                         TextBoxBuscar.SelectAll()
 
-                        For Each row As DataGridViewRow In DataGridView1.Rows
+                        For Each row As DataGridViewRow In DataGridView2.Rows
 
                             If row.Index Mod 2 <> 0 Then
                                 row.DefaultCellStyle.BackColor = Color.Bisque
@@ -511,7 +492,7 @@ Public Class ArticulosForm
 
                     Dim CantidadArticulos As Integer
 
-                    CantidadArticulos = DataGridView1.RowCount - 1
+                    CantidadArticulos = DataGridView2.RowCount - 1
                     Label14.Text = CantidadArticulos
 
             End Select
@@ -528,11 +509,11 @@ Public Class ArticulosForm
                 Case Keys.Enter
 
                     Articulo.Descripcion = (TextBoxBuscar.Text).ToUpper
-                    DataGridView1.DataSource = GestorArticulo.ValidarDescripcionParaBusqueda(Articulo).Tables(0)
+                    DataGridView2.DataSource = GestorArticulo.ValidarDescripcionParaBusqueda(Articulo).Tables(0)
 
 
 
-                    For Each row As DataGridViewRow In DataGridView1.Rows
+                    For Each row As DataGridViewRow In DataGridView2.Rows
 
                         If row.Index Mod 2 <> 0 Then
                             row.DefaultCellStyle.BackColor = Color.Bisque
@@ -551,7 +532,7 @@ Public Class ArticulosForm
 
             Dim CantidadArticulos As Integer
 
-            CantidadArticulos = DataGridView1.RowCount - 1
+            CantidadArticulos = DataGridView2.RowCount - 1
             Label14.Text = CantidadArticulos
         End If
 
@@ -588,8 +569,8 @@ Public Class ArticulosForm
 
             If MsgBox("¿Desea eliminar el articulo?", vbYesNo, "ATENCION") = True Then
 
-                _Articulo.CodigoArticulo = DataGridView1.CurrentRow.Cells(0).Value
-                _Articulo.Descripcion = DataGridView1.CurrentRow.Cells(2).Value
+                _Articulo.CodigoArticulo = DataGridView2.CurrentRow.Cells(0).Value
+                _Articulo.Descripcion = DataGridView2.CurrentRow.Cells(2).Value
 
                 _ArticuloDao.EliminarArticulo(_Articulo)
 
@@ -620,7 +601,7 @@ Public Class ArticulosForm
         Dim Articulo As New Articulo
 
 
-        Articulo.CodigoArticulo = DataGridView1.CurrentRow.Cells(0).Value
+        Articulo.CodigoArticulo = DataGridView2.CurrentRow.Cells(0).Value
 
 
         Dim Form As New ModifcarArticuloForm(Articulo)
@@ -633,12 +614,12 @@ Public Class ArticulosForm
 
     End Sub
 
-    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
 
     End Sub
 
-    Private Sub DataGridView1_ColumnHeaderMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles DataGridView1.ColumnHeaderMouseClick
-        For Each row As DataGridViewRow In DataGridView1.Rows
+    Private Sub DataGridView1_ColumnHeaderMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs)
+        For Each row As DataGridViewRow In DataGridView2.Rows
 
             If row.Index Mod 2 <> 0 Then
                 row.DefaultCellStyle.BackColor = Color.Bisque
