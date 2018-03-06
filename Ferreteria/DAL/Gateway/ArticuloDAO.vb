@@ -18,7 +18,7 @@ Public Class ArticuloDAO
         Dim _Consulta As String
         Dim _Comando As New SqlCommand
         'Dim Dal As New DAL.DatosBase
-        _Consulta = "insert into Articulo (Cod_Articulo_Proveedor,Descripcion,Cod_Unidad_Medida,Cod_SubUnidad_Medida,Precio,Cod_Categoria,Cod_SubCategoria,Cod_Marca) values (@Cod_Articulo_Proveedor,@Descripcion,@Cod_Unidad_Medida, @Cod_SubUnidad_Medida, @Precio,@Cod_Categoria, @Cod_SubCategoria, @Cod_Marca)"
+        _Consulta = "insert into Articulo (Cod_Articulo_Proveedor,Descripcion,Cod_Unidad_Medida,Cod_SubUnidad_Medida,Precio,Cod_Categoria,Cod_SubCategoria,Cod_Marca, Eliminado) values (@Cod_Articulo_Proveedor,@Descripcion,@Cod_Unidad_Medida, @Cod_SubUnidad_Medida, @Precio,@Cod_Categoria, @Cod_SubCategoria, @Cod_Marca,0)"
 
         Try
 
@@ -34,6 +34,7 @@ Public Class ArticuloDAO
             _Comando.Parameters.AddWithValue("@Cod_Categoria", Articulo.Categoria)
             _Comando.Parameters.AddWithValue("@Cod_SubCategoria", Articulo.SubCategoria)
             _Comando.Parameters.AddWithValue("@Cod_Marca", Articulo.Marca)
+
 
 
             _Comando.ExecuteNonQuery()

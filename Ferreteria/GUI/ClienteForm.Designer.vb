@@ -54,10 +54,10 @@ Partial Class ClienteForm
         'ClienteGridView
         '
         Me.ClienteGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.ClienteGridView.Location = New System.Drawing.Point(319, 157)
+        Me.ClienteGridView.Location = New System.Drawing.Point(297, 126)
         Me.ClienteGridView.Name = "ClienteGridView"
         Me.ClienteGridView.ReadOnly = True
-        Me.ClienteGridView.Size = New System.Drawing.Size(1172, 445)
+        Me.ClienteGridView.Size = New System.Drawing.Size(915, 413)
         Me.ClienteGridView.TabIndex = 0
         '
         'AgregarClienteButton
@@ -174,7 +174,7 @@ Partial Class ClienteForm
         '
         'BuscarTextBox
         '
-        Me.BuscarTextBox.Location = New System.Drawing.Point(331, 121)
+        Me.BuscarTextBox.Location = New System.Drawing.Point(332, 95)
         Me.BuscarTextBox.Name = "BuscarTextBox"
         Me.BuscarTextBox.Size = New System.Drawing.Size(316, 20)
         Me.BuscarTextBox.TabIndex = 15
@@ -183,7 +183,7 @@ Partial Class ClienteForm
         '
         Me.GroupBox1.Controls.Add(Me.RazonSocialRadioButton)
         Me.GroupBox1.Controls.Add(Me.CuitRadioButton)
-        Me.GroupBox1.Location = New System.Drawing.Point(681, 105)
+        Me.GroupBox1.Location = New System.Drawing.Point(683, 75)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(256, 45)
         Me.GroupBox1.TabIndex = 16
@@ -245,9 +245,9 @@ Partial Class ClienteForm
         'ModificarButton
         '
         Me.ModificarButton.Image = CType(resources.GetObject("ModificarButton.Image"), System.Drawing.Image)
-        Me.ModificarButton.Location = New System.Drawing.Point(357, 608)
+        Me.ModificarButton.Location = New System.Drawing.Point(297, 545)
         Me.ModificarButton.Name = "ModificarButton"
-        Me.ModificarButton.Size = New System.Drawing.Size(95, 121)
+        Me.ModificarButton.Size = New System.Drawing.Size(166, 44)
         Me.ModificarButton.TabIndex = 21
         Me.ModificarButton.UseVisualStyleBackColor = True
         '
@@ -263,7 +263,7 @@ Partial Class ClienteForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1534, 778)
+        Me.ClientSize = New System.Drawing.Size(1348, 733)
         Me.Controls.Add(Me.LabelCodigoCliente)
         Me.Controls.Add(Me.ModificarButton)
         Me.Controls.Add(Me.Label7)

@@ -2324,3 +2324,25 @@ StackTrace:    en DAL.VentaDAO.BuscarNotaDeCreditoPorRazonSocial(String razonSoc
    en GUI.NotaCreditoForm.TextBox1_KeyDown(Object sender, KeyEventArgs e)
 Fecha/Hora: 05/03/2018 22:18:32
 ===========================================================================================
+Titulo: Error
+Mensaje: No se encontraron articulos
+StackTrace:    en BLL.GestorReporte.ObtenerArticulosMasVendidosBLL(Int32 cantidad, DateTime fecha_desde, DateTime fecha_hasta) en C:\Users\navegador\Desktop\Diploma-1-1\Ferreteria\BLL\GestorReporte.vb:línea 68
+   en GUI.NuevoReporteArticulosVendidos.ButtonX1_Click(Object sender, EventArgs e) en C:\Users\navegador\Desktop\Diploma-1-1\Ferreteria\GUI\NuevoReporteArticulosVendidos.vb:línea 20
+Fecha/Hora: 06/03/2018 18:52:39
+===========================================================================================
+Titulo: Error
+Mensaje: Revise nombre de usuario o contraseña
+StackTrace:    en SL.GestorUsuario.TraerUsuarioBLL(Usuario _Usuario) en C:\Users\navegador\Desktop\Diploma-1-1\Ferreteria\SL\Usuario\GestorUsuario.vb:línea 30
+   en GUI.LogIn.Button1_Click_1(Object sender, EventArgs e) en C:\Users\navegador\Desktop\Diploma-1-1\Ferreteria\GUI\LogIn.vb:línea 41
+Fecha/Hora: 06/03/2018 18:59:16
+===========================================================================================
+Titulo: Error
+Mensaje: Introduzca Codigo de Barras
+StackTrace:    en GUI.ArticulosForm.Button1_Click_1(Object sender, EventArgs e) en C:\Users\navegador\Desktop\Diploma-1-1\Ferreteria\GUI\ArticulosForm.vb:línea 43
+Fecha/Hora: 06/03/2018 19:01:51
+===========================================================================================
+Titulo: Error
+Mensaje: Error revise Cuit del cliente
+StackTrace:    en GUI.ClienteForm.Button1_Click(Object sender, EventArgs e) en C:\Users\navegador\Desktop\Diploma-1-1\Ferreteria\GUI\ClienteForm.vb:línea 110
+Fecha/Hora: 06/03/2018 19:03:57
+===========================================================================================

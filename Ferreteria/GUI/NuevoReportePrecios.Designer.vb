@@ -54,7 +54,7 @@ Partial Class NuevoReportePrecios
         '
         Me.GroupBox1.Controls.Add(Me.RadioButtonDESCRIPCION)
         Me.GroupBox1.Controls.Add(Me.RadioButtonCODIGO)
-        Me.GroupBox1.Location = New System.Drawing.Point(321, 438)
+        Me.GroupBox1.Location = New System.Drawing.Point(318, 386)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(252, 36)
         Me.GroupBox1.TabIndex = 34
@@ -86,7 +86,7 @@ Partial Class NuevoReportePrecios
         '
         'TextBoxBuscar
         '
-        Me.TextBoxBuscar.Location = New System.Drawing.Point(37, 454)
+        Me.TextBoxBuscar.Location = New System.Drawing.Point(34, 402)
         Me.TextBoxBuscar.Name = "TextBoxBuscar"
         Me.TextBoxBuscar.Size = New System.Drawing.Size(242, 20)
         Me.TextBoxBuscar.TabIndex = 33
@@ -95,9 +95,9 @@ Partial Class NuevoReportePrecios
         '
         Me.ArticulosGridView.BackgroundColor = System.Drawing.SystemColors.Window
         Me.ArticulosGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.ArticulosGridView.Location = New System.Drawing.Point(37, 494)
+        Me.ArticulosGridView.Location = New System.Drawing.Point(34, 443)
         Me.ArticulosGridView.Name = "ArticulosGridView"
-        Me.ArticulosGridView.Size = New System.Drawing.Size(1130, 302)
+        Me.ArticulosGridView.Size = New System.Drawing.Size(1130, 240)
         Me.ArticulosGridView.TabIndex = 32
         '
         'FechaDesde
@@ -240,11 +240,11 @@ Partial Class NuevoReportePrecios
         Me.LabelHasta.TabIndex = 44
         Me.LabelHasta.Text = "LabelX2"
         '
-        'ReportePrecios
+        'NuevoReportePrecios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1292, 865)
+        Me.ClientSize = New System.Drawing.Size(1292, 733)
         Me.Controls.Add(Me.LabelHasta)
         Me.Controls.Add(Me.LabelDesde)
         Me.Controls.Add(Me.ButtonFinalizar)
@@ -257,7 +257,7 @@ Partial Class NuevoReportePrecios
         Me.Controls.Add(Me.TextBoxBuscar)
         Me.Controls.Add(Me.ArticulosGridView)
         Me.DoubleBuffered = True
-        Me.Name = "ReportePrecios"
+        Me.Name = "NuevoReportePrecios"
         Me.Text = "ReportePrecios"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
@@ -285,9 +285,9 @@ Partial Class NuevoReportePrecios
     Friend WithEvents Aumento As DataGridViewTextBoxColumn
     Friend WithEvents Desde As DataGridViewTextBoxColumn
     Friend WithEvents Hasta As DataGridViewTextBoxColumn
-    Friend WithEvents ButtonX1 As DevComponents.DotNetBar.ButtonX
-    Friend WithEvents ButtonX3 As DevComponents.DotNetBar.ButtonX
-    Friend WithEvents ButtonFinalizar As DevComponents.DotNetBar.ButtonX
-    Friend WithEvents LabelDesde As DevComponents.DotNetBar.LabelX
-    Friend WithEvents LabelHasta As DevComponents.DotNetBar.LabelX
+    Private WithEvents ButtonX1 As DevComponents.DotNetBar.ButtonX
+    Private WithEvents ButtonX3 As DevComponents.DotNetBar.ButtonX
+    Private WithEvents ButtonFinalizar As DevComponents.DotNetBar.ButtonX
+    Private WithEvents LabelDesde As DevComponents.DotNetBar.LabelX
+    Private WithEvents LabelHasta As DevComponents.DotNetBar.LabelX
 End Class
