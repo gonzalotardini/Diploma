@@ -115,6 +115,12 @@
     <Compile Include="Integridad.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Marcas.Designer.vb">
+      <DependentUpon>Marcas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Marcas.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ModifcarArticuloForm.Designer.vb">
       <DependentUpon>ModifcarArticuloForm.vb</DependentUpon>
     </Compile>
@@ -279,6 +285,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Integridad.resx">
       <DependentUpon>Integridad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Marcas.resx">
+      <DependentUpon>Marcas.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ModifcarArticuloForm.resx">
       <DependentUpon>ModifcarArticuloForm.vb</DependentUpon>

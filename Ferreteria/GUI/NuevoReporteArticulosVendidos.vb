@@ -4,7 +4,7 @@ Imports BIZ
 Imports DAL
 
 Public Class NuevoReporteArticulosVendidos
-    Private Sub ButtonX1_Click(sender As Object, e As EventArgs) Handles ButtonX1.Click
+    Private Sub ButtonX1_Click(sender As Object, e As EventArgs) Handles GenerarButton.Click
 
         Try
             Dim reporteBLL = New GestorReporte
@@ -37,17 +37,54 @@ Public Class NuevoReporteArticulosVendidos
     Private Sub ReporteArticulosVendidos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         CantidadInput.Value = 10
 
+
+        Dim ListaPalabras As New List(Of SL.PalabrasIdioma)
+
+        Dim Multiidioma As New SL.Multiidioma
+
+        If Principal.CulturaGlobal = "ESPAÑOL" Then
+            ListaPalabras = Multiidioma.ObtenerPalabras("ES-ESP")
+
+
+            Dim Cultura = "ES-ESP"
+            'LINQ para el multiidioma
+
+            GenerarButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "BUSCAR" Select V.Value).FirstOrDefault
+            LabelDesde.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "DESDE" Select V.Value).FirstOrDefault
+            LabelHasta.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "HASTA" Select V.Value).FirstOrDefault
+            FinalizarButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "FINALIZAR" Select V.Value).FirstOrDefault
+            CantidadLabel.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "CANTIDAD" Select V.Value).FirstOrDefault
+            ReporteArticulosLabel.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "REPORTEARTICULOS" Select V.Value).FirstOrDefault
+
+        End If
+
+
+        If Principal.CulturaGlobal = "ENGLISH" Then
+
+
+            Dim Cultura = "ENG-ENGLAND"
+            ListaPalabras = Multiidioma.ObtenerPalabras(Cultura)
+
+            GenerarButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "BUSCAR" Select V.Value).FirstOrDefault
+            LabelDesde.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "DESDE" Select V.Value).FirstOrDefault
+            LabelHasta.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "HASTA" Select V.Value).FirstOrDefault
+            FinalizarButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "FINALIZAR" Select V.Value).FirstOrDefault
+            CantidadLabel.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "CANTIDAD" Select V.Value).FirstOrDefault
+              ReporteArticulosLabel.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "REPORTEARTICULOS" Select V.Value).FirstOrDefault
+        End If
+
+
         Me.WindowState = FormWindowState.Maximized 'Maximizar Ventana al Abrir
         DataGridViewX1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
         DataGridViewX1.AllowUserToAddRows = False
 
     End Sub
 
-    Private Sub VentasLabel_Click(sender As Object, e As EventArgs) Handles VentasLabel.Click
+    Private Sub VentasLabel_Click(sender As Object, e As EventArgs) Handles ReporteArticulosLabel.Click
 
     End Sub
 
-    Private Sub ButtonX2_Click(sender As Object, e As EventArgs) Handles ButtonX2.Click
+    Private Sub ButtonX2_Click(sender As Object, e As EventArgs) Handles FinalizarButton.Click
 
         Dim listaDetalle As List(Of ReporteArticulosMasVendidosDetalle)
         Dim item As ReporteArticulosMasVendidosDetalle

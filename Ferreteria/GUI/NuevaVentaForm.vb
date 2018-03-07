@@ -31,12 +31,12 @@ Public Class NuevaVentaForm
         codCreditoLabel.Visible = False
         Label6.Visible = False
         Label6.Text = ""
-        Acobrar.Text = ""
+        'Acobrar.Text = ""
         Acobrar.Visible = False
         AcobrarPrecio.Text = ""
         AcobrarPrecio.Visible = False
 
-
+        TotalLabel.Text = 0
 
         Dim ListaPalabras As New List(Of SL.PalabrasIdioma)
 
@@ -220,6 +220,9 @@ Public Class NuevaVentaForm
             Label6.Visible = True
             Label6.Text = _CodNotaCredito
             _CodClienteNota = codClienteNota
+            Acobrar.Visible = True
+            AcobrarPrecio.Visible = True
+            AcobrarPrecio.Text = "$" & (Convert.ToDecimal(TotalLabel.Text) - Convert.ToDecimal(CreditoLabel.Text))
 
         Else
 
@@ -579,6 +582,9 @@ Public Class NuevaVentaForm
                 codCreditoLabel.Text = ""
                 Label6.Visible = False
                 Label6.Text = ""
+                Acobrar.Visible = False
+                AcobrarPrecio.Text = ""
+                AcobrarPrecio.Visible = False
 
                 PresupuestoGridView1.Rows.Clear()
 

@@ -206,7 +206,7 @@ Partial Class NuevoReportePrecios
         Me.ButtonFinalizar.BackColor = System.Drawing.Color.OrangeRed
         Me.ButtonFinalizar.ColorTable = DevComponents.DotNetBar.eButtonColor.Blue
         Me.ButtonFinalizar.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.ButtonFinalizar.Location = New System.Drawing.Point(1107, 382)
+        Me.ButtonFinalizar.Location = New System.Drawing.Point(1096, 308)
         Me.ButtonFinalizar.Name = "ButtonFinalizar"
         Me.ButtonFinalizar.Size = New System.Drawing.Size(141, 72)
         Me.ButtonFinalizar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled

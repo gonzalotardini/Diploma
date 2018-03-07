@@ -76,4 +76,13 @@ Public Class VentaFacade
             Throw New Exception(ex.Message)
         End Try
     End Function
+
+    Public Function BuscarVentaPorRazonSocialFacade(cliente As Cliente) As DataTable
+        Try
+            Dim ventaDao As New VentaDAO
+            Return ventaDao.BucarVentaPorRazonSocial(cliente)
+        Catch ex As Exception
+            Throw New Exception(ex.Message)
+        End Try
+    End Function
 End Class

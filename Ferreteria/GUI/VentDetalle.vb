@@ -12,6 +12,44 @@ Public Class VentDetalle
         Dim _VentaDao As New VentaDAO
         Dim _Cliente As New Cliente
 
+
+        Dim ListaPalabras As New List(Of SL.PalabrasIdioma)
+
+        Dim Multiidioma As New SL.Multiidioma
+
+        If Principal.CulturaGlobal = "ESPAÑOL" Then
+            ListaPalabras = Multiidioma.ObtenerPalabras("ES-ESP")
+
+
+            Dim Cultura = "ES-ESP"
+            'LINQ para el multiidioma
+            CodigoClienteLabel.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "CODIGOCLIENTE" Select V.Value).FirstOrDefault
+            FechaLabel.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "FECHA" Select V.Value).FirstOrDefault
+            RazonSocialLabel.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "RAZONSOCIAL" Select V.Value).FirstOrDefault
+            CodigoVentaLabel.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "CODIGO" Select V.Value).FirstOrDefault
+            CancelarButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "CANCELAR" Select V.Value).FirstOrDefault
+            ImprimirButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "IMPRIMIR" Select V.Value).FirstOrDefault
+
+        End If
+
+
+        If Principal.CulturaGlobal = "ENGLISH" Then
+
+            ListaPalabras = Multiidioma.ObtenerPalabras("ENG-ENGLAND")
+
+
+            Dim Cultura = "ENG-ENGLAND"
+            'LINQ para el multiidioma
+            CodigoClienteLabel.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "CODIGOCLIENTE" Select V.Value).FirstOrDefault
+            FechaLabel.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "FECHA" Select V.Value).FirstOrDefault
+            RazonSocialLabel.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "RAZONSOCIAL" Select V.Value).FirstOrDefault
+            CodigoVentaLabel.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "CODIGO" Select V.Value).FirstOrDefault
+            CancelarButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "CANCELAR" Select V.Value).FirstOrDefault
+            ImprimirButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "IMPRIMIR" Select V.Value).FirstOrDefault
+
+
+        End If
+
         _VentaCabecera.Cod_Venta = VentasForm._CodigoVenta
 
         PresupuestoGridView.AllowUserToAddRows = False
@@ -41,7 +79,7 @@ Public Class VentDetalle
         RazonSocialTextBox.Text = _Cliente.RazonSocial
 
 
-        TotalLabel.Text = _VentaCabecera.Total
+        TotalLabel.Text = "$" & _VentaCabecera.Total
 
 
 
@@ -95,11 +133,11 @@ Public Class VentDetalle
 
     End Sub
 
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles CodigoVentaLabel.Click
 
     End Sub
 
-    Private Sub ButtonX3_Click(sender As Object, e As EventArgs) Handles ButtonX3.Click
+    Private Sub ButtonX3_Click(sender As Object, e As EventArgs) Handles CancelarButton.Click
         Try
             Dim ventaBll = New GestorVenta
             Dim ventaDao = New VentaDAO
@@ -153,6 +191,104 @@ Public Class VentDetalle
             Dim el As New ErrorLogger
             MsgBox(ex.Message, MsgBoxStyle.Critical, "ERROR")
             el.WriteToErrorLog(ex.Message, ex.StackTrace, "Error")
+        End Try
+    End Sub
+
+    Private Sub ImprimirButton_Click(sender As Object, e As EventArgs) Handles ImprimirButton.Click
+        Try
+            Dim msg As String = ""
+
+            Select Case Principal.CulturaGlobal
+                Case "ESPAÑOL"
+                    msg = "¿Seguro desea imprimir?"
+                Case "ENGLISH"
+                    msg = "Do you really want to print?"
+
+            End Select
+
+
+            If MsgBox(msg, MsgBoxStyle.YesNo + MsgBoxStyle.Question, "ATENCIÓN") = MsgBoxResult.Yes Then
+
+
+                Dim ventaCabecera As New VentaCabecera
+                Dim _ClasePDFVenta As SL.ClaseVentaPDF
+                Dim _ListaDetalle As New List(Of ClaseVentaPDF)
+
+
+
+                Dim CantidadItems As Integer = PresupuestoGridView.RowCount
+
+                If CantidadItems = 0 Then
+                    Select Case Principal.CulturaGlobal
+                        Case "ESPAÑOL"
+                            Throw New Exception("Error, debe agregar artículos")
+                        Case "ENGLISH"
+                            Throw New Exception("Error, you must add products")
+                    End Select
+                End If
+
+
+
+
+
+                Dim gestorVenta As New GestorVenta
+
+                For i = 0 To (CantidadItems - 1)
+
+                    _ClasePDFVenta = New ClaseVentaPDF
+
+
+
+
+                    _ClasePDFVenta.Cantidad = CDec(PresupuestoGridView.Rows(i).Cells("Cantidad").Value)
+                    _ClasePDFVenta.Descripcion = Microsoft.VisualBasic.Left(CStr((PresupuestoGridView.Rows(i).Cells("Descripcion").Value)), 40)
+                    _ClasePDFVenta.Marca = CStr(PresupuestoGridView.Rows(i).Cells("Marca").Value)
+                    _ClasePDFVenta.Medida = CStr(PresupuestoGridView.Rows(i).Cells("UnidadMedida").Value)
+                    _ClasePDFVenta.Codigo = CLng(PresupuestoGridView.Rows(i).Cells("Codigo Articulo").Value)
+                    _ClasePDFVenta.Precio = CDec(PresupuestoGridView.Rows(i).Cells("Precio").Value)
+                    _ClasePDFVenta.Importe = CDec(PresupuestoGridView.Rows(i).Cells("Importe").Value)
+
+
+
+
+                    _ListaDetalle.Add(_ClasePDFVenta)
+
+
+
+
+
+                Next
+
+                Try
+                    ventaCabecera.Fecha = CDate(FechaTextBox.Text)
+                    ventaCabecera.Total = CDec(TotalLabel.Text)
+                    ventaCabecera.Cod_Cliente = (CodigoClienteTextBox.Text).ToUpper
+                    ventaCabecera.RazonSocial = (RazonSocialTextBox.Text).ToUpper
+                    ventaCabecera.Cod_Venta = CodigoPresupuestoTextbox.Text
+                Catch ex As Exception
+                    Select Case Principal.CulturaGlobal
+                        Case "ESPAÑOL"
+                            Throw New Exception("Debe seleccionar un cliente")
+                        Case "ENGLISH"
+                            Throw New Exception("You must choose a customer")
+                    End Select
+                End Try
+
+
+                gestorVenta.GenerarVentaPDF(_ListaDetalle, ventaCabecera)
+
+            Else
+            End If
+
+
+        Catch ex As Exception
+
+            Dim el As New ErrorLogger
+            MsgBox(ex.Message, MsgBoxStyle.Critical, "ERROR")
+            el.WriteToErrorLog(ex.Message, ex.StackTrace, "Error")
+
+
+
         End Try
     End Sub
 End Class

@@ -24,11 +24,55 @@ Public Class NotaCreditoForm
 
     Private Sub NotaCreditoForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
+            Dim ListaPalabras As New List(Of SL.PalabrasIdioma)
+            RazonSocialRadioButton.Checked = True
+
+            Dim Multiidioma As New SL.Multiidioma
+
+            If Principal.CulturaGlobal = "ESPAÑOL" Then
+                ListaPalabras = Multiidioma.ObtenerPalabras("ES-ESP")
+
+
+                Dim Cultura = "ES-ESP"
+                'LINQ para el multiidioma
+
+                NotasCreditoLabel.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "NOTASCREDITO" Select V.Value).FirstOrDefault
+                CodigoNotaRadioButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "CODIGONOTA" Select V.Value).FirstOrDefault
+                RazonSocialRadioButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "RAZONSOCIAL" Select V.Value).FirstOrDefault
+
+            End If
+
+
+            If Principal.CulturaGlobal = "ENGLISH" Then
+
+
+                Dim Cultura = "ENG-ENGLAND"
+                ListaPalabras = Multiidioma.ObtenerPalabras(Cultura)
+
+                NotasCreditoLabel.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "NOTASCREDITO" Select V.Value).FirstOrDefault
+                CodigoNotaRadioButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "CODIGONOTA" Select V.Value).FirstOrDefault
+                RazonSocialRadioButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "RAZONSOCIAL" Select V.Value).FirstOrDefault
+
+            End If
+
+
+
             Dim ventaDao = New VentaDAO
             Me.WindowState = FormWindowState.Maximized 'Maximizar Ventana al Abrir
             DataGridView1.DataSource = ventaDao.ObtenerNotasDeCredito
             DataGridView1.AllowUserToAddRows = False
             DataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
+
+            For Each row As DataGridViewRow In DataGridView1.Rows
+
+                If row.Index Mod 2 <> 0 Then
+                    row.DefaultCellStyle.BackColor = Color.Bisque
+                Else
+                    row.DefaultCellStyle.BackColor = Color.Aqua
+
+                End If
+
+            Next
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
@@ -49,7 +93,7 @@ Public Class NotaCreditoForm
 
 
 
-            If CodigoClienteRadioButton.Checked = True Then
+            If CodigoNotaRadioButton.Checked = True Then
 
                 Select Case e.KeyData
                     Case Keys.Enter
@@ -140,5 +184,18 @@ Public Class NotaCreditoForm
 
         Next
 
+    End Sub
+
+    Private Sub DataGridView1_ColumnHeaderMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles DataGridView1.ColumnHeaderMouseClick
+        For Each row As DataGridViewRow In DataGridView1.Rows
+
+            If row.Index Mod 2 <> 0 Then
+                row.DefaultCellStyle.BackColor = Color.Bisque
+            Else
+                row.DefaultCellStyle.BackColor = Color.Aqua
+
+            End If
+
+        Next
     End Sub
 End Class

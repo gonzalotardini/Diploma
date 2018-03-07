@@ -65,10 +65,10 @@ Partial Class ClienteForm
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold)
         Me.Label1.Location = New System.Drawing.Point(16, 168)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(98, 13)
+        Me.Label1.Size = New System.Drawing.Size(91, 15)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "RAZÓN SOCIAL"
         '
@@ -110,50 +110,50 @@ Partial Class ClienteForm
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold)
         Me.Label2.Location = New System.Drawing.Point(26, 208)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(36, 13)
+        Me.Label2.Size = New System.Drawing.Size(33, 15)
         Me.Label2.TabIndex = 9
         Me.Label2.Text = "CUIT"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold)
         Me.Label3.Location = New System.Drawing.Point(26, 249)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(75, 13)
+        Me.Label3.Size = New System.Drawing.Size(69, 15)
         Me.Label3.TabIndex = 10
         Me.Label3.Text = "DIRECCIÓN"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold)
         Me.Label4.Location = New System.Drawing.Point(26, 292)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(54, 13)
+        Me.Label4.Size = New System.Drawing.Size(49, 15)
         Me.Label4.TabIndex = 11
         Me.Label4.Text = "BARRIO"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold)
         Me.Label5.Location = New System.Drawing.Point(26, 339)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(72, 13)
+        Me.Label5.Size = New System.Drawing.Size(65, 15)
         Me.Label5.TabIndex = 12
         Me.Label5.Text = "TELÉFONO"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold)
         Me.Label6.Location = New System.Drawing.Point(26, 384)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(44, 13)
+        Me.Label6.Size = New System.Drawing.Size(42, 15)
         Me.Label6.TabIndex = 13
         Me.Label6.Text = "EMAIL"
         '
@@ -185,10 +185,10 @@ Partial Class ClienteForm
         'RazonSocialRadioButton
         '
         Me.RazonSocialRadioButton.AutoSize = True
-        Me.RazonSocialRadioButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RazonSocialRadioButton.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold)
         Me.RazonSocialRadioButton.Location = New System.Drawing.Point(109, 16)
         Me.RazonSocialRadioButton.Name = "RazonSocialRadioButton"
-        Me.RazonSocialRadioButton.Size = New System.Drawing.Size(116, 17)
+        Me.RazonSocialRadioButton.Size = New System.Drawing.Size(109, 19)
         Me.RazonSocialRadioButton.TabIndex = 1
         Me.RazonSocialRadioButton.TabStop = True
         Me.RazonSocialRadioButton.Text = "RAZÓN SOCIAL"
@@ -197,10 +197,10 @@ Partial Class ClienteForm
         'CuitRadioButton
         '
         Me.CuitRadioButton.AutoSize = True
-        Me.CuitRadioButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CuitRadioButton.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold)
         Me.CuitRadioButton.Location = New System.Drawing.Point(20, 15)
         Me.CuitRadioButton.Name = "CuitRadioButton"
-        Me.CuitRadioButton.Size = New System.Drawing.Size(54, 17)
+        Me.CuitRadioButton.Size = New System.Drawing.Size(51, 19)
         Me.CuitRadioButton.TabIndex = 0
         Me.CuitRadioButton.TabStop = True
         Me.CuitRadioButton.Text = "CUIT"

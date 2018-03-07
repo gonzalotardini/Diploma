@@ -2405,3 +2405,191 @@ StackTrace:    at BLL.GestorReporte.ObtenerArticulosMasVendidosBLL(Int32 cantida
    at GUI.NuevoReporteArticulosVendidos.ButtonX1_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevoReporteArticulosVendidos.vb:line 20
 Fecha/Hora: 06/03/2018 23:00:15
 ===========================================================================================
+Titulo: Error
+Mensaje: Column named Codigo cannot be found.
+Parameter name: columnName
+StackTrace:    at System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   at GUI.VentDetalle.ImprimirButton_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\VentDetalle.vb:line 247
+Fecha/Hora: 07/03/2018 08:36:16
+===========================================================================================
+Titulo: Error
+Mensaje: Conversion from string "Access is denied" to type 'Integer' is not valid.
+StackTrace:    at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)
+   at BLL.GestorVenta.GenerarVentaPDF(List`1 DetalleVentaPDF, VentaCabecera VentaCabecera)
+   at GUI.VentDetalle.ImprimirButton_Click(Object sender, EventArgs e)
+Fecha/Hora: 07/03/2018 08:43:05
+===========================================================================================
+Titulo: Error
+Mensaje: No existes precios historicos del articulo
+StackTrace:    at BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _fecha_Desde, DateTime _fecha_hasta)
+   at GUI.NuevoReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e)
+Fecha/Hora: 07/03/2018 08:43:23
+===========================================================================================
+Titulo: Error
+Mensaje: The conversion of a varchar data type to a datetime data type resulted in an out-of-range value.
+StackTrace:    at BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _fecha_Desde, DateTime _fecha_hasta)
+   at GUI.NuevoReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e)
+Fecha/Hora: 07/03/2018 08:43:39
+===========================================================================================
+Titulo: Error
+Mensaje: No existes precios historicos del articulo
+StackTrace:    at BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _fecha_Desde, DateTime _fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 29
+   at GUI.NuevoReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevoReportePrecios.vb:line 260
+Fecha/Hora: 07/03/2018 08:48:15
+===========================================================================================
+Titulo: Error
+Mensaje: No existes precios historicos del articulo
+StackTrace:    at BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _fecha_Desde, DateTime _fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 29
+   at GUI.NuevoReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevoReportePrecios.vb:line 260
+Fecha/Hora: 07/03/2018 08:48:40
+===========================================================================================
+Titulo: Error
+Mensaje: Se corrompido la integridad de la BD en la Tabla Marcas
+StackTrace:    at SL.Verificar.VerificarIntegridad() in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\SL\Digito Verificador\Verificar.vb:line 149
+   at GUI.Idioma.ComboBox1_SelectedIndexChanged_1(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\Idioma.vb:line 31
+Fecha/Hora: 07/03/2018 09:03:28
+===========================================================================================
+Titulo: Error
+Mensaje: Se corrompido la integridad de la BD en la Tabla Marcas
+StackTrace:    at SL.Verificar.VerificarIntegridad() in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\SL\Digito Verificador\Verificar.vb:line 149
+   at GUI.Idioma.ComboBox1_SelectedIndexChanged_1(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\Idioma.vb:line 31
+Fecha/Hora: 07/03/2018 09:03:40
+===========================================================================================
+Titulo: Error
+Mensaje: Se corrompido la integridad de la BD en la Tabla Marcas
+StackTrace:    at SL.Verificar.VerificarIntegridad() in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\SL\Digito Verificador\Verificar.vb:line 149
+   at GUI.Idioma.ComboBox1_SelectedIndexChanged_1(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\Idioma.vb:line 31
+Fecha/Hora: 07/03/2018 09:04:23
+===========================================================================================
+Titulo: Error
+Mensaje: Fecha desde debe ser anterior a fecha hasta
+StackTrace:    at BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _fecha_Desde, DateTime _fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 29
+   at GUI.NuevoReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevoReportePrecios.vb:line 260
+Fecha/Hora: 07/03/2018 09:26:22
+===========================================================================================
+Titulo: Error
+Mensaje: No existes precios historicos del articulo
+StackTrace:    at BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _fecha_Desde, DateTime _fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 29
+   at GUI.NuevoReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevoReportePrecios.vb:line 260
+Fecha/Hora: 07/03/2018 09:26:31
+===========================================================================================
+Titulo: Error
+Mensaje: Conversion from string "Process has exited, so the reque" to type 'Integer' is not valid.
+StackTrace:    at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)
+   at BLL.GestorVenta.GenerarVentaPDF(List`1 DetalleVentaPDF, VentaCabecera VentaCabecera) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorVenta.vb:line 229
+   at GUI.NuevaVentaForm.FinalizarButton_Click_1(Object sender, EventArgs e)
+Fecha/Hora: 07/03/2018 13:10:51
+===========================================================================================
+Titulo: Error
+Mensaje: Conversion from string "Process has exited, so the reque" to type 'Integer' is not valid.
+StackTrace:    at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)
+   at BLL.GestorVenta.GenerarVentaPDF(List`1 DetalleVentaPDF, VentaCabecera VentaCabecera) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorVenta.vb:line 229
+   at GUI.NuevaVentaForm.FinalizarButton_Click_1(Object sender, EventArgs e)
+Fecha/Hora: 07/03/2018 13:12:30
+===========================================================================================
+Titulo: Error
+Mensaje: Conversion from string "Access is denied" to type 'Integer' is not valid.
+StackTrace:    at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)
+   at BLL.GestorVenta.GenerarVentaPDF(List`1 DetalleVentaPDF, VentaCabecera VentaCabecera) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorVenta.vb:line 229
+   at GUI.NuevaVentaForm.FinalizarButton_Click_1(Object sender, EventArgs e)
+Fecha/Hora: 07/03/2018 13:14:57
+===========================================================================================
+Titulo: Error
+Mensaje: Error, cantidad debe ser numerico
+StackTrace:    at GUI.PresupuestoDetalleForm.ArticuloGridView1_CellDoubleClick(Object sender, DataGridViewCellEventArgs e)
+Fecha/Hora: 07/03/2018 13:16:01
+===========================================================================================
+Titulo: Error
+Mensaje: Conversion from string "Process has exited, so the reque" to type 'Integer' is not valid.
+StackTrace:    at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)
+   at BLL.GestorVenta.GenerarVentaPDF(List`1 DetalleVentaPDF, VentaCabecera VentaCabecera) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorVenta.vb:line 229
+   at GUI.NuevaVentaForm.FinalizarButton_Click_1(Object sender, EventArgs e)
+Fecha/Hora: 07/03/2018 13:18:39
+===========================================================================================
+Titulo: Error
+Mensaje: Error,  code must be numeric
+StackTrace:    at GUI.NotaCreditoForm.TextBox1_KeyDown(Object sender, KeyEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NotaCreditoForm.vb:line 118
+Fecha/Hora: 07/03/2018 13:29:36
+===========================================================================================
+Titulo: Error
+Mensaje: USUARIO O CONTRASEÑA INCORRECTO
+StackTrace:    at GUI.LogIn.Button1_Click_1(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\LogIn.vb:line 52
+Fecha/Hora: 07/03/2018 13:35:26
+===========================================================================================
+Titulo: Error
+Mensaje: No se encontraron articulos
+StackTrace:    at BLL.GestorReporte.ObtenerArticulosMasVendidosBLL(Int32 cantidad, DateTime fecha_desde, DateTime fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 68
+   at GUI.NuevoReporteArticulosVendidos.ButtonX1_Click(Object sender, EventArgs e)
+Fecha/Hora: 07/03/2018 13:42:49
+===========================================================================================
+Titulo: Error
+Mensaje: No se encontraron articulos
+StackTrace:    at BLL.GestorReporte.ObtenerArticulosMasVendidosBLL(Int32 cantidad, DateTime fecha_desde, DateTime fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 68
+   at GUI.NuevoReporteArticulosVendidos.ButtonX1_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevoReporteArticulosVendidos.vb:line 20
+Fecha/Hora: 07/03/2018 13:45:05
+===========================================================================================
+Titulo: Error
+Mensaje: No existes precios historicos del articulo
+StackTrace:    at BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _fecha_Desde, DateTime _fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 29
+   at GUI.NuevoReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevoReportePrecios.vb:line 266
+Fecha/Hora: 07/03/2018 13:56:50
+===========================================================================================
+Titulo: Error
+Mensaje: Error, debe agregar articulos al reporte
+StackTrace:    at BLL.GestorReporte.ValidarReporteAumentoDePrecios(Reporte reporteCabecera, List`1 listaDetalles, String culturaGlobal) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 118
+   at GUI.NuevoReportePrecios.ButtonX2_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevoReportePrecios.vb:line 350
+Fecha/Hora: 07/03/2018 13:56:52
+===========================================================================================
+Titulo: Error
+Mensaje: No existes precios historicos del articulo
+StackTrace:    at BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _fecha_Desde, DateTime _fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 29
+   at GUI.NuevoReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevoReportePrecios.vb:line 266
+Fecha/Hora: 07/03/2018 13:57:01
+===========================================================================================
+Titulo: Error
+Mensaje: Conversion from string "Index was out of range. Must be " to type 'Integer' is not valid.
+StackTrace:    at BLL.GestorReporte.ImprimirReportePrecios(Reporte reporteCabecera, List`1 listaDetalle) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 158
+   at GUI.NuevoReportePrecios.ButtonX3_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevoReportePrecios.vb:line 428
+Fecha/Hora: 07/03/2018 13:58:49
+===========================================================================================
+Titulo: Error
+Mensaje: Conversion from string "The process cannot access the fi" to type 'Integer' is not valid.
+StackTrace:    at BLL.GestorReporte.ImprimirReportePrecios(Reporte reporteCabecera, List`1 listaDetalle) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 158
+   at GUI.NuevoReportePrecios.ButtonX3_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevoReportePrecios.vb:line 428
+Fecha/Hora: 07/03/2018 13:59:58
+===========================================================================================
+Titulo: Error
+Mensaje: Conversion from string "The process cannot access the fi" to type 'Integer' is not valid.
+StackTrace:    at BLL.GestorReporte.ImprimirReportePrecios(Reporte reporteCabecera, List`1 listaDetalle) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 158
+   at GUI.NuevoReportePrecios.ButtonX3_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevoReportePrecios.vb:line 428
+Fecha/Hora: 07/03/2018 14:01:06
+===========================================================================================
+Titulo: Error
+Mensaje: Conversion from string "Index was out of range. Must be " to type 'Integer' is not valid.
+StackTrace:    at BLL.GestorReporte.ImprimirReportePrecios(Reporte reporteCabecera, List`1 listaDetalle) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 158
+   at GUI.NuevoReportePrecios.ButtonX3_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevoReportePrecios.vb:line 428
+Fecha/Hora: 07/03/2018 14:04:47
+===========================================================================================
+Titulo: Error
+Mensaje: USUARIO O CONTRASEÑA INCORRECTO
+StackTrace:    at GUI.LogIn.Button1_Click_1(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\LogIn.vb:line 52
+Fecha/Hora: 07/03/2018 14:05:29
+===========================================================================================
+Titulo: Error
+Mensaje: Conversion from string "Index was out of range. Must be " to type 'Integer' is not valid.
+StackTrace:    at BLL.GestorReporte.ImprimirReportePrecios(Reporte reporteCabecera, List`1 listaDetalle) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 158
+   at GUI.NuevoReportePrecios.ButtonX3_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevoReportePrecios.vb:line 428
+Fecha/Hora: 07/03/2018 14:07:11
+===========================================================================================
+Titulo: Error
+Mensaje: No existes precios historicos del articulo
+StackTrace:    at BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _fecha_Desde, DateTime _fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 29
+   at GUI.NuevoReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevoReportePrecios.vb:line 266
+Fecha/Hora: 07/03/2018 14:07:31
+===========================================================================================
+Titulo: Error
+Mensaje: Conversion from string "Index was out of range. Must be " to type 'Integer' is not valid.
+StackTrace:    at BLL.GestorReporte.ImprimirReportePrecios(Reporte reporteCabecera, List`1 listaDetalle) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 158
+   at GUI.NuevoReportePrecios.ButtonX2_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevoReportePrecios.vb:line 354
+Fecha/Hora: 07/03/2018 14:07:42
+===========================================================================================

@@ -587,3 +587,4 @@ C:\Users\navegador\Desktop\Diploma-1-1\Ferreteria\GUI\obj\Debug\GUI.vbproj.Gener
 C:\Users\navegador\Desktop\Diploma-1-1\Ferreteria\GUI\obj\Debug\GUI.exe
 C:\Users\navegador\Desktop\Diploma-1-1\Ferreteria\GUI\obj\Debug\GUI.xml
 C:\Users\navegador\Desktop\Diploma-1-1\Ferreteria\GUI\obj\Debug\GUI.pdb
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\obj\Debug\GUI.Marcas.resources

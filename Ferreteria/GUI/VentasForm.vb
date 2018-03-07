@@ -12,6 +12,37 @@ Public Class VentasForm
 
         RazonSocialRadioButton.Checked = True
 
+        Dim ListaPalabras As New List(Of SL.PalabrasIdioma)
+
+        Dim Multiidioma As New SL.Multiidioma
+
+        If Principal.CulturaGlobal = "ESPAÑOL" Then
+            ListaPalabras = Multiidioma.ObtenerPalabras("ES-ESP")
+
+
+            Dim Cultura = "ES-ESP"
+            'LINQ para el multiidioma
+
+            CodigoClienteRadioButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "CODIGOCLIENTE" Select V.Value).FirstOrDefault
+            RazonSocialRadioButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "RAZONSOCIAL" Select V.Value).FirstOrDefault
+            VerButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "DETALLE" Select V.Value).FirstOrDefault
+            CancelarButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "CANCELAR" Select V.Value).FirstOrDefault
+            VentasLabel.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "VENTAS" Select V.Value).FirstOrDefault
+        End If
+
+
+        If Principal.CulturaGlobal = "ENGLISH" Then
+
+
+            Dim Cultura = "ENG-ENGLAND"
+            ListaPalabras = Multiidioma.ObtenerPalabras(Cultura)
+            CodigoClienteRadioButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "CODIGOCLIENTE" Select V.Value).FirstOrDefault
+            RazonSocialRadioButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "RAZONSOCIAL" Select V.Value).FirstOrDefault
+            VerButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "DETALLE" Select V.Value).FirstOrDefault
+            CancelarButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "CANCELAR" Select V.Value).FirstOrDefault
+            VentasLabel.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "VENTAS" Select V.Value).FirstOrDefault
+
+        End If
 
 
         VentasDataGridView.AllowUserToAddRows = False
@@ -67,7 +98,7 @@ Public Class VentasForm
 
     End Sub
 
-    Private Sub VerDetalleButton_Click_1(sender As Object, e As EventArgs) Handles VerDetalleButton.Click
+    Private Sub VerDetalleButton_Click_1(sender As Object, e As EventArgs) Handles VerButton.Click
         If VentasDataGridView.CurrentRow IsNot Nothing Then
 
             _CodigoVenta = (VentasDataGridView.CurrentRow.Cells(0).Value)
@@ -108,14 +139,16 @@ Public Class VentasForm
 
     Private Sub TextBox1_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox1.KeyDown
         Dim _GestorVenta As New GestorVenta
+        Dim _VentaDao As New VentaDAO
         Dim _Cliente As New Cliente
-        Dim _PresupuestoDAO As New PresupuestoDAO
+
 
         Try
 
 
 
             If CodigoClienteRadioButton.Checked = True Then
+
 
 
                 Select Case e.KeyData
@@ -151,20 +184,18 @@ Public Class VentasForm
                 If RazonSocialRadioButton.Checked = True Then
                     Select Case e.KeyData
 
-
-
-
                         Case Keys.Enter
 
                             If TextBox1.Text = "" Then
 
-                                VentasDataGridView.DataSource = _PresupuestoDAO.ObtenerPresupuestos()
+                                VentasDataGridView.DataSource = _VentaDao.ObtenerVentas
+
 
                             Else
                                 _Cliente.RazonSocial = (TextBox1.Text).ToUpper
 
 
-                                'VentasDataGridView.[DataSource] = _GestorPresupuesto.ValidarBusquedaClientePorRazonSocial(_Cliente).Tables(0)
+                                VentasDataGridView.[DataSource] = _GestorVenta.BuscarVentaPorRazonSocialBll(_Cliente)
 
 
                             End If
@@ -205,7 +236,7 @@ Public Class VentasForm
         Next
     End Sub
 
-    Private Sub ButtonX1_Click(sender As Object, e As EventArgs) Handles ButtonX1.Click
+    Private Sub ButtonX1_Click(sender As Object, e As EventArgs) Handles CancelarButton.Click
         Try
             Dim ventaBll = New GestorVenta
             Dim ventaDao = New VentaDAO
@@ -219,7 +250,7 @@ Public Class VentasForm
                     pregunta = "¿Seguro desea cancelar la venta?"
 
                 Case "ENGLISH"
-                    pregunta = "Do you realle want to cancel the sell?"
+                    pregunta = "Do you realle want to cancel the sale?"
 
             End Select
 

@@ -140,7 +140,8 @@ Public Class GestorVenta
 
             'Cliente
 
-            cb.ShowTextAligned(PdfContentByte.ALIGN_LEFT, "Cliente:  " & VentaCabecera.Cod_Cliente, 20, 720, 0)
+            cb.ShowTextAligned(PdfContentByte.ALIGN_LEFT, "Venta:  " & VentaCabecera.Cod_Venta, 20, 720, 0)
+            cb.ShowTextAligned(PdfContentByte.ALIGN_LEFT, "Cliente:  " & VentaCabecera.RazonSocial, 150, 720, 0)
 
             'Derecha
             cb.SetFontAndSize(fuente, 11)
@@ -198,7 +199,7 @@ Public Class GestorVenta
             cb.EndText()
             PdfDocument.Close()
 
-            MsgBox("PDF OK", MsgBoxStyle.Information)
+            MsgBox("PDF OK", MsgBoxStyle.Information, "INFO")
 
 
             Dim myProcess As New Process
@@ -231,6 +232,16 @@ Public Class GestorVenta
 
 
     End Sub
+
+    Public Function BuscarVentaPorRazonSocialBll(cliente As Cliente) As DataTable
+        Try
+            Dim ventaFacade As New VentaFacade
+            Return ventaFacade.BuscarVentaPorRazonSocialFacade(cliente)
+
+        Catch ex As Exception
+            Throw New Exception(ex.Message)
+        End Try
+    End Function
 
     Public Function ValidarBusquedaVentaPorCodigoCliente(cliente As Cliente, cultura As String) As DataSet
         Try

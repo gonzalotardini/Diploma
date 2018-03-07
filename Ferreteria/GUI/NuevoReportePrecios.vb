@@ -13,12 +13,18 @@ Public Class NuevoReportePrecios
         RadioButtonDESCRIPCION.Checked = True
 
         Select Case Principal.CulturaGlobal
-            Case "ENGLISH"
-                LabelDesde.Text = "FROM"
-                LabelHasta.Text = "TO"
             Case "ESPAÑOL"
                 LabelDesde.Text = "DESDE"
                 LabelHasta.Text = "HASTA"
+                ButtonFinalizar.Text = "FINALIZAR"
+                ButtonX1.Text = "QUITAR"
+                ButtonX3.Text = "IMPRIMIR"
+            Case "ENGLISH"
+                LabelDesde.Text = "DESDE"
+                LabelHasta.Text = "HASTA"
+                ButtonFinalizar.Text = "FINALIZE"
+                ButtonX1.Text = "QUIT"
+                ButtonX3.Text = "PRINT"
         End Select
 
 
@@ -371,5 +377,66 @@ Public Class NuevoReportePrecios
             End If
 
         Next
+    End Sub
+
+    Private Sub ButtonX3_Click(sender As Object, e As EventArgs) Handles ButtonX3.Click
+        Dim listaDetalle As List(Of ReportePreciosDetalle)
+        Dim item As ReportePreciosDetalle
+        Dim GestorReporte As New GestorReporte
+        Dim ReporteCabecera As New Reporte
+
+        Dim msg2 = ""
+        Dim reporteDao = New ReporteDAO
+
+        Select Case Principal.CulturaGlobal
+            Case "ESPAÑOL"
+
+                msg2 = "¿Desea imprimir el reporte?"
+            Case "ENGLISH"
+
+                msg2 = "Do you want to print the report?"
+        End Select
+
+        Try
+            If MsgBox(msg2, MsgBoxStyle.YesNo, "ATENCIÓN") = MsgBoxResult.Yes Then
+                ReporteCabecera.Usuario = LogIn.Usuario.NombreUsuario
+                listaDetalle = New List(Of ReportePreciosDetalle)
+
+                For i = 0 To GridView1.RowCount - 1
+
+                    item = New ReportePreciosDetalle
+                    item.Cod_Articulo = GridView1.Rows(i).Cells(0).Value
+                    item.Descripcion = GridView1.Rows(i).Cells(1).Value
+                    item.Marca1 = GridView1.Rows(i).Cells(2).Value
+                    item.SubUnidad = GridView1.Rows(i).Cells(3).Value
+                    item.PrecioInicial = GridView1.Rows(i).Cells(4).Value
+                    item.PrecioFinal = GridView1.Rows(i).Cells(5).Value
+                    item.CantidadPrecios = GridView1.Rows(i).Cells(6).Value
+                    item.PorcentajeAumento = Replace(GridView1.Rows(i).Cells(7).Value, "%", "")
+                    item.Fecha_Desde = GridView1.Rows(i).Cells(8).Value
+                    item.Fecha_Hasta = GridView1.Rows(i).Cells(9).Value
+                    listaDetalle.Add(item)
+
+                Next
+
+                'reporteDao.ImprimirReportePreciosDAO(ReporteCabecera, listaDetalle)
+
+
+
+
+                ReporteCabecera.Cod_Reporte = reporteDao.ObtenerCodUltimoReportePrecios()
+                GestorReporte.ImprimirReportePrecios(ReporteCabecera, listaDetalle)
+
+
+
+
+            End If
+        Catch ex As Exception
+
+            Dim el As New ErrorLogger
+            MsgBox(ex.Message, MsgBoxStyle.Critical, "ERROR")
+            el.WriteToErrorLog(ex.Message, ex.StackTrace, "Error")
+
+        End Try
     End Sub
 End Class

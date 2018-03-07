@@ -5,8 +5,17 @@
     Private _Cod_Venta As Long
     Private _Cod_Cliente As Integer
     Private _Fecha As Date
-
     Private _Total As Decimal
+    Private _RazonSocial As String
+
+    Public Property RazonSocial As String
+        Get
+            Return _RazonSocial
+        End Get
+        Set(value As String)
+            _RazonSocial = value
+        End Set
+    End Property
 
 
     Public Property Cod_Venta As Long

@@ -43,12 +43,6 @@ Public Class Principal
         ReportesButton.Enabled = False
 
 
-
-
-
-
-
-
         Me.ForeColor = Color.LightGray
 
         MenuStrip1.ForeColor = Color.White
@@ -67,6 +61,9 @@ Public Class Principal
 
         SubCategoriaToolStripMenuItem.ForeColor = Color.White
         SubCategoriaToolStripMenuItem.BackColor = Color.DodgerBlue
+
+        ArticulosMasVendidosToolStripMenuItem.ForeColor = Color.White
+        ArticulosMasVendidosToolStripMenuItem.BackColor = Color.DodgerBlue
 
         MarcasToolStripMenuItem.ForeColor = Color.White
         MarcasToolStripMenuItem.BackColor = Color.DodgerBlue
@@ -391,5 +388,9 @@ Public Class Principal
 
     Private Sub ArticulosMasVendidosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ArticulosMasVendidosToolStripMenuItem.Click
         NuevoReporteArticulosVendidos.Show()
+    End Sub
+
+    Private Sub MarcasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MarcasToolStripMenuItem.Click
+        Marcas.Show()
     End Sub
 End Class

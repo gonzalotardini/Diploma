@@ -25,6 +25,7 @@ Public Class Reportes
             Dim Cultura = "ES-ESP"
             'LINQ para el multiidioma
 
+            Label1.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "REPORTES" Select V.Value).FirstOrDefault
             ButtonReportePrecios.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "REPORTEPRECIOS" Select V.Value).FirstOrDefault
             ButtonReporteArticulos.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "REPORTEARTICULOS" Select V.Value).FirstOrDefault
             ButtonReporteVentas.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "REPORTEVENTAS" Select V.Value).FirstOrDefault
@@ -38,6 +39,7 @@ Public Class Reportes
             Dim Cultura = "ENG-ENGLAND"
             ListaPalabras = Multiidioma.ObtenerPalabras(Cultura)
 
+            Label1.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "REPORTES" Select V.Value).FirstOrDefault
             ButtonReportePrecios.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "REPORTEPRECIOS" Select V.Value).FirstOrDefault
             ButtonReporteArticulos.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "REPORTEARTICULOS" Select V.Value).FirstOrDefault
             ButtonReporteVentas.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "REPORTEVENTAS" Select V.Value).FirstOrDefault

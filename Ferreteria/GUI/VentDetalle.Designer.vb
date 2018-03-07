@@ -23,7 +23,7 @@ Partial Class VentDetalle
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(VentDetalle))
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.CodigoVentaLabel = New System.Windows.Forms.Label()
         Me.TotalLabel = New System.Windows.Forms.Label()
         Me.label = New System.Windows.Forms.Label()
         Me.FechaTextBox = New System.Windows.Forms.TextBox()
@@ -36,20 +36,20 @@ Partial Class VentDetalle
         Me.RazonSocialLabel = New System.Windows.Forms.Label()
         Me.PresupuestoGridView = New System.Windows.Forms.DataGridView()
         Me.CodigoPresupuestoTextbox = New System.Windows.Forms.Label()
-        Me.ButtonX1 = New DevComponents.DotNetBar.ButtonX()
-        Me.ButtonX3 = New DevComponents.DotNetBar.ButtonX()
+        Me.ImprimirButton = New DevComponents.DotNetBar.ButtonX()
+        Me.CancelarButton = New DevComponents.DotNetBar.ButtonX()
         CType(Me.PresupuestoGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Label1
+        'CodigoVentaLabel
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.Label1.Location = New System.Drawing.Point(801, 26)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(161, 19)
-        Me.Label1.TabIndex = 34
-        Me.Label1.Text = "CODIGO PRESUPUESTO"
+        Me.CodigoVentaLabel.AutoSize = True
+        Me.CodigoVentaLabel.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.CodigoVentaLabel.Location = New System.Drawing.Point(801, 26)
+        Me.CodigoVentaLabel.Name = "CodigoVentaLabel"
+        Me.CodigoVentaLabel.Size = New System.Drawing.Size(64, 19)
+        Me.CodigoVentaLabel.TabIndex = 34
+        Me.CodigoVentaLabel.Text = "CODIGO"
         '
         'TotalLabel
         '
@@ -156,49 +156,49 @@ Partial Class VentDetalle
         'CodigoPresupuestoTextbox
         '
         Me.CodigoPresupuestoTextbox.AutoSize = True
-        Me.CodigoPresupuestoTextbox.Location = New System.Drawing.Point(976, 30)
+        Me.CodigoPresupuestoTextbox.Location = New System.Drawing.Point(895, 31)
         Me.CodigoPresupuestoTextbox.Name = "CodigoPresupuestoTextbox"
         Me.CodigoPresupuestoTextbox.Size = New System.Drawing.Size(39, 13)
         Me.CodigoPresupuestoTextbox.TabIndex = 35
         Me.CodigoPresupuestoTextbox.Text = "Label2"
         '
-        'ButtonX1
+        'ImprimirButton
         '
-        Me.ButtonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
-        Me.ButtonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
-        Me.ButtonX1.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.ButtonX1.Image = Global.GUI.My.Resources.Resources.Imprimir1
-        Me.ButtonX1.Location = New System.Drawing.Point(1099, 126)
-        Me.ButtonX1.Name = "ButtonX1"
-        Me.ButtonX1.Size = New System.Drawing.Size(169, 66)
-        Me.ButtonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.ButtonX1.TabIndex = 36
-        Me.ButtonX1.Text = "ButtonX1"
+        Me.ImprimirButton.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.ImprimirButton.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
+        Me.ImprimirButton.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.ImprimirButton.Image = Global.GUI.My.Resources.Resources.Imprimir1
+        Me.ImprimirButton.Location = New System.Drawing.Point(1099, 126)
+        Me.ImprimirButton.Name = "ImprimirButton"
+        Me.ImprimirButton.Size = New System.Drawing.Size(148, 59)
+        Me.ImprimirButton.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.ImprimirButton.TabIndex = 36
+        Me.ImprimirButton.Text = "ButtonX1"
         '
-        'ButtonX3
+        'CancelarButton
         '
-        Me.ButtonX3.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
-        Me.ButtonX3.BackColor = System.Drawing.Color.Red
-        Me.ButtonX3.ColorTable = DevComponents.DotNetBar.eButtonColor.Magenta
-        Me.ButtonX3.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.ButtonX3.Image = CType(resources.GetObject("ButtonX3.Image"), System.Drawing.Image)
-        Me.ButtonX3.Location = New System.Drawing.Point(1099, 212)
-        Me.ButtonX3.Name = "ButtonX3"
-        Me.ButtonX3.Size = New System.Drawing.Size(148, 59)
-        Me.ButtonX3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.ButtonX3.TabIndex = 38
-        Me.ButtonX3.Text = "ButtonX3"
-        Me.ButtonX3.TextColor = System.Drawing.Color.White
+        Me.CancelarButton.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.CancelarButton.BackColor = System.Drawing.Color.Red
+        Me.CancelarButton.ColorTable = DevComponents.DotNetBar.eButtonColor.Magenta
+        Me.CancelarButton.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.CancelarButton.Image = CType(resources.GetObject("CancelarButton.Image"), System.Drawing.Image)
+        Me.CancelarButton.Location = New System.Drawing.Point(1099, 212)
+        Me.CancelarButton.Name = "CancelarButton"
+        Me.CancelarButton.Size = New System.Drawing.Size(148, 59)
+        Me.CancelarButton.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.CancelarButton.TabIndex = 38
+        Me.CancelarButton.Text = "ButtonX3"
+        Me.CancelarButton.TextColor = System.Drawing.Color.White
         '
         'VentDetalle
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1334, 592)
-        Me.Controls.Add(Me.ButtonX3)
-        Me.Controls.Add(Me.ButtonX1)
+        Me.Controls.Add(Me.CancelarButton)
+        Me.Controls.Add(Me.ImprimirButton)
         Me.Controls.Add(Me.CodigoPresupuestoTextbox)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.CodigoVentaLabel)
         Me.Controls.Add(Me.TotalLabel)
         Me.Controls.Add(Me.label)
         Me.Controls.Add(Me.FechaTextBox)
@@ -218,7 +218,7 @@ Partial Class VentDetalle
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents CodigoVentaLabel As System.Windows.Forms.Label
     Friend WithEvents TotalLabel As System.Windows.Forms.Label
     Friend WithEvents label As System.Windows.Forms.Label
     Friend WithEvents FechaTextBox As System.Windows.Forms.TextBox
@@ -231,6 +231,6 @@ Partial Class VentDetalle
     Friend WithEvents RazonSocialLabel As System.Windows.Forms.Label
     Friend WithEvents PresupuestoGridView As System.Windows.Forms.DataGridView
     Friend WithEvents CodigoPresupuestoTextbox As Label
-    Friend WithEvents ButtonX1 As DevComponents.DotNetBar.ButtonX
-    Friend WithEvents ButtonX3 As DevComponents.DotNetBar.ButtonX
+    Friend WithEvents ImprimirButton As DevComponents.DotNetBar.ButtonX
+    Friend WithEvents CancelarButton As DevComponents.DotNetBar.ButtonX
 End Class

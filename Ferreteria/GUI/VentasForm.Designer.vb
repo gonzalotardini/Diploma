@@ -30,8 +30,8 @@ Partial Class VentasForm
         Me.VentasDataGridView = New System.Windows.Forms.DataGridView()
         Me.VentasLabel = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.VerDetalleButton = New DevComponents.DotNetBar.ButtonX()
-        Me.ButtonX1 = New DevComponents.DotNetBar.ButtonX()
+        Me.VerButton = New DevComponents.DotNetBar.ButtonX()
+        Me.CancelarButton = New DevComponents.DotNetBar.ButtonX()
         Me.GroupBox1.SuspendLayout()
         CType(Me.VentasDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -73,7 +73,7 @@ Partial Class VentasForm
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(268, 134)
+        Me.TextBox1.Location = New System.Drawing.Point(279, 131)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(350, 20)
         Me.TextBox1.TabIndex = 7
@@ -110,43 +110,43 @@ Partial Class VentasForm
         Me.PictureBox2.TabIndex = 13
         Me.PictureBox2.TabStop = False
         '
-        'VerDetalleButton
+        'VerButton
         '
-        Me.VerDetalleButton.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
-        Me.VerDetalleButton.BackColor = System.Drawing.Color.DodgerBlue
-        Me.VerDetalleButton.ColorTable = DevComponents.DotNetBar.eButtonColor.Magenta
-        Me.VerDetalleButton.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.VerDetalleButton.Image = CType(resources.GetObject("VerDetalleButton.Image"), System.Drawing.Image)
-        Me.VerDetalleButton.Location = New System.Drawing.Point(341, 548)
-        Me.VerDetalleButton.Name = "VerDetalleButton"
-        Me.VerDetalleButton.Size = New System.Drawing.Size(148, 59)
-        Me.VerDetalleButton.Style = DevComponents.DotNetBar.eDotNetBarStyle.Metro
-        Me.VerDetalleButton.TabIndex = 14
-        Me.VerDetalleButton.Text = "ButtonX1"
-        Me.VerDetalleButton.TextColor = System.Drawing.Color.White
+        Me.VerButton.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.VerButton.BackColor = System.Drawing.Color.DodgerBlue
+        Me.VerButton.ColorTable = DevComponents.DotNetBar.eButtonColor.Magenta
+        Me.VerButton.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.VerButton.Image = CType(resources.GetObject("VerButton.Image"), System.Drawing.Image)
+        Me.VerButton.Location = New System.Drawing.Point(341, 548)
+        Me.VerButton.Name = "VerButton"
+        Me.VerButton.Size = New System.Drawing.Size(148, 59)
+        Me.VerButton.Style = DevComponents.DotNetBar.eDotNetBarStyle.Metro
+        Me.VerButton.TabIndex = 14
+        Me.VerButton.Text = "ButtonX1"
+        Me.VerButton.TextColor = System.Drawing.Color.White
         '
-        'ButtonX1
+        'CancelarButton
         '
-        Me.ButtonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
-        Me.ButtonX1.BackColor = System.Drawing.Color.Red
-        Me.ButtonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.Magenta
-        Me.ButtonX1.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.ButtonX1.Image = CType(resources.GetObject("ButtonX1.Image"), System.Drawing.Image)
-        Me.ButtonX1.Location = New System.Drawing.Point(735, 548)
-        Me.ButtonX1.Name = "ButtonX1"
-        Me.ButtonX1.Size = New System.Drawing.Size(148, 59)
-        Me.ButtonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.ButtonX1.TabIndex = 15
-        Me.ButtonX1.Text = "ButtonX1"
-        Me.ButtonX1.TextColor = System.Drawing.Color.White
+        Me.CancelarButton.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.CancelarButton.BackColor = System.Drawing.Color.Red
+        Me.CancelarButton.ColorTable = DevComponents.DotNetBar.eButtonColor.Magenta
+        Me.CancelarButton.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.CancelarButton.Image = CType(resources.GetObject("CancelarButton.Image"), System.Drawing.Image)
+        Me.CancelarButton.Location = New System.Drawing.Point(735, 548)
+        Me.CancelarButton.Name = "CancelarButton"
+        Me.CancelarButton.Size = New System.Drawing.Size(148, 59)
+        Me.CancelarButton.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.CancelarButton.TabIndex = 15
+        Me.CancelarButton.Text = "ButtonX1"
+        Me.CancelarButton.TextColor = System.Drawing.Color.White
         '
         'VentasForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1226, 619)
-        Me.Controls.Add(Me.ButtonX1)
-        Me.Controls.Add(Me.VerDetalleButton)
+        Me.Controls.Add(Me.CancelarButton)
+        Me.Controls.Add(Me.VerButton)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.VentasLabel)
         Me.Controls.Add(Me.GroupBox1)
@@ -170,6 +170,6 @@ Partial Class VentasForm
     Friend WithEvents VentasDataGridView As System.Windows.Forms.DataGridView
     Friend WithEvents VentasLabel As Label
     Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents VerDetalleButton As DevComponents.DotNetBar.ButtonX
-    Friend WithEvents ButtonX1 As DevComponents.DotNetBar.ButtonX
+    Friend WithEvents VerButton As DevComponents.DotNetBar.ButtonX
+    Friend WithEvents CancelarButton As DevComponents.DotNetBar.ButtonX
 End Class
