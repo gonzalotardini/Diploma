@@ -4662,3 +4662,23 @@ Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
 StackTrace: LogIn Form
 Fecha/Hora: 07/03/2018 14:16:27
 ===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 07/03/2018 19:51:58
+===========================================================================================
+Titulo: Información
+Mensaje: Se modificaron correctamente las patentes del usuario 
+StackTrace: Usuarios Form
+Fecha/Hora: 07/03/2018 20:10:27
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: LAURA ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 07/03/2018 20:10:54
+===========================================================================================
+Titulo: Información
+Mensaje: Se modificó la contraseña del usuarioLAURA
+StackTrace: Articulo Form
+Fecha/Hora: 07/03/2018 20:12:03
+===========================================================================================

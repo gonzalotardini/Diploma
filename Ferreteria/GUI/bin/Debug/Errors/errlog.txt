@@ -2593,3 +2593,20 @@ StackTrace:    at BLL.GestorReporte.ImprimirReportePrecios(Reporte reporteCabece
    at GUI.NuevoReportePrecios.ButtonX2_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevoReportePrecios.vb:line 354
 Fecha/Hora: 07/03/2018 14:07:42
 ===========================================================================================
+Titulo: Error
+Mensaje: USUARIO O CONTRASEÑA INCORRECTO
+StackTrace:    at GUI.LogIn.Button1_Click_1(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\LogIn.vb:line 52
+Fecha/Hora: 07/03/2018 19:51:55
+===========================================================================================
+Titulo: Error
+Mensaje: Conversion from string "Index was out of range. Must be " to type 'Integer' is not valid.
+StackTrace:    at BLL.GestorReporte.ImprimirReportePrecios(Reporte reporteCabecera, List`1 listaDetalle) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 158
+   at GUI.NuevoReportePrecios.ButtonX3_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevoReportePrecios.vb:line 428
+Fecha/Hora: 07/03/2018 20:02:45
+===========================================================================================
+Titulo: Error
+Mensaje: Conversion from string "Index was out of range. Must be " to type 'Integer' is not valid.
+StackTrace:    at BLL.GestorReporte.ImprimirReportePrecios(Reporte reporteCabecera, List`1 listaDetalle) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 158
+   at GUI.NuevoReportePrecios.ButtonX2_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevoReportePrecios.vb:line 354
+Fecha/Hora: 07/03/2018 20:04:33
+===========================================================================================
