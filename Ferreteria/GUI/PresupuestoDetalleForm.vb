@@ -15,29 +15,61 @@ Public Class PresupuestoDetalleForm
         Dim _PresupuestoDAO As New PresupuestoDAO
         Dim _Cliente As New Cliente
 
+
+        Dim ListaPalabras As New List(Of SL.PalabrasIdioma)
+
+        Dim Multiidioma As New SL.Multiidioma
+
+        If Principal.CulturaGlobal = "ESPAÑOL" Then
+            ListaPalabras = Multiidioma.ObtenerPalabras("ES-ESP")
+
+
+            Dim Cultura = "ES-ESP"
+            'LINQ para el multiidioma
+            CodigoClienteLabel.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "CODIGOCLIENTE" Select V.Value).FirstOrDefault
+            FechaLabel.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "FECHA" Select V.Value).FirstOrDefault
+            RazonSocialLabel.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "RAZONSOCIAL" Select V.Value).FirstOrDefault
+            CodigoPresupuestoLabel.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "CODIGO" Select V.Value).FirstOrDefault
+            QuitarButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "QUITAR" Select V.Value).FirstOrDefault
+            ImprimirButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "IMPRIMIR" Select V.Value).FirstOrDefault
+            FinalizarButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "FINALIZAR" Select V.Value).FirstOrDefault
+            ImprimirButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "IMPRIMIR" Select V.Value).FirstOrDefault
+            RadioButtonCodigo.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "CODIGO" Select V.Value).FirstOrDefault
+            RadioButtonDescripcion.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "DESCRIPCION" Select V.Value).FirstOrDefault
+            ModificarButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "MODIFICAR" Select V.Value).FirstOrDefault
+        End If
+
+
+        If Principal.CulturaGlobal = "ENGLISH" Then
+
+            ListaPalabras = Multiidioma.ObtenerPalabras("ENG-ENGLAND")
+
+
+            Dim Cultura = "ENG-ENGLAND"
+            'LINQ para el multiidioma
+            CodigoClienteLabel.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "CODIGOCLIENTE" Select V.Value).FirstOrDefault
+            FechaLabel.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "FECHA" Select V.Value).FirstOrDefault
+            RazonSocialLabel.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "RAZONSOCIAL" Select V.Value).FirstOrDefault
+            CodigoPresupuestoLabel.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "CODIGO" Select V.Value).FirstOrDefault
+            QuitarButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "QUITAR" Select V.Value).FirstOrDefault
+            ImprimirButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "IMPRIMIR" Select V.Value).FirstOrDefault
+            FinalizarButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "FINALIZAR" Select V.Value).FirstOrDefault
+            ImprimirButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "IMPRIMIR" Select V.Value).FirstOrDefault
+            RadioButtonCodigo.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "CODIGO" Select V.Value).FirstOrDefault
+            RadioButtonDescripcion.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "DESCRIPCION" Select V.Value).FirstOrDefault
+             ModificarButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "MODIFICAR" Select V.Value).FirstOrDefault
+        End If
+
         _PresupuestoCabecera.Cod_Presupuesto = PresupuestosForm._CodigoPresupuesto
         PresupuestoGridView.DataSource = _GestorPresupuesto.ObtenerPresupuestoDetalleBLL(_PresupuestoCabecera).Tables(0)
         'PresupuestoGridView.AllowUserToAddRows = False
-
         _PresupuestoCabecera = _PresupuestoDAO.ObtenerCabecera(_PresupuestoCabecera)
 
-
         _Cliente = _PresupuestoDAO.ObtenerDatosCliente(_PresupuestoCabecera)
-
-
-
         CodigoPresupuestoTextbox.Text = _PresupuestoCabecera.Cod_Presupuesto
-
-
-
         PresupuestoGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
-
-
-
         CodigoClienteTextBox.Text = _PresupuestoCabecera.Cod_Cliente
-
         FechaTextBox.Text = _PresupuestoCabecera.FechaInicio
-
         CuitTextBox.Text = _Cliente.Cuit
         RazonSocialTextBox.Text = _Cliente.RazonSocial
 
@@ -75,40 +107,8 @@ Public Class PresupuestoDetalleForm
         Me.WindowState = FormWindowState.Maximized 'Maximizar Ventana al Abrir
     End Sub
 
-    Private Sub ModificarButton_Click(sender As Object, e As EventArgs) Handles ModificarButton.Click
+    Private Sub ModificarButton_Click(sender As Object, e As EventArgs)
 
-        Dim _ArticuloDao As New ArticuloDAO
-
-
-        ArticuloGridView1.Enabled = True
-        GroupBox1.Enabled = True
-        TextBoxBuscarArticulo.Enabled = True
-        QuitarButton.Enabled = True
-
-        ImprimirButton.Enabled = True
-        FinalizarButton.Enabled = True
-
-
-        RadioButtonDescripcion.Checked = True
-
-        ArticuloGridView1.DataSource = _ArticuloDao.ObtenerPrimerosArticulos.Tables(0)
-
-        ArticuloGridView1.AllowUserToAddRows = False
-        ArticuloGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
-
-
-        For Each row As DataGridViewRow In ArticuloGridView1.Rows
-
-            If row.Index Mod 2 <> 0 Then
-                row.DefaultCellStyle.BackColor = Color.Bisque
-                ' row.Cells("Descripcion").Style.Font.Bold = True
-
-            Else
-                row.DefaultCellStyle.BackColor = Color.Aqua
-
-            End If
-
-        Next
 
     End Sub
 
@@ -368,7 +368,93 @@ Public Class PresupuestoDetalleForm
 
     End Sub
 
-    Private Sub QuitarButton_Click(sender As Object, e As EventArgs) Handles QuitarButton.Click
+    Private Sub QuitarButton_Click(sender As Object, e As EventArgs)
+
+
+    End Sub
+
+    Private Sub QuitarTodoButton_Click(sender As Object, e As EventArgs)
+        If PresupuestoGridView.CurrentRow IsNot Nothing Then
+
+
+
+            PresupuestoGridView.Rows.Clear()
+
+
+
+
+
+
+            TotalLabel.Text = 0
+
+
+        End If
+
+
+
+        TextBoxBuscarArticulo.Text = ""
+        Me.Show()
+        TextBoxBuscarArticulo.Focus()
+    End Sub
+
+    Private Sub FinalizarButton_Click(sender As Object, e As EventArgs)
+
+
+
+
+
+    End Sub
+
+    Private Sub ArticuloGridView1_ColumnHeaderMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles ArticuloGridView1.ColumnHeaderMouseClick
+        For Each row As DataGridViewRow In ArticuloGridView1.Rows
+
+            If row.Index Mod 2 <> 0 Then
+                row.DefaultCellStyle.BackColor = Color.Bisque
+            Else
+                row.DefaultCellStyle.BackColor = Color.Aqua
+
+            End If
+
+        Next
+    End Sub
+
+    Private Sub MODIFICAR_Click(sender As Object, e As EventArgs) Handles ModificarButton.Click
+
+        Dim _ArticuloDao As New ArticuloDAO
+
+
+        ArticuloGridView1.Enabled = True
+        GroupBox1.Enabled = True
+        TextBoxBuscarArticulo.Enabled = True
+        QuitarButton.Enabled = True
+
+        ImprimirButton.Enabled = True
+        FinalizarButton.Enabled = True
+
+
+        RadioButtonDescripcion.Checked = True
+
+        ArticuloGridView1.DataSource = _ArticuloDao.ObtenerPrimerosArticulos.Tables(0)
+
+        ArticuloGridView1.AllowUserToAddRows = False
+        ArticuloGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
+
+
+        For Each row As DataGridViewRow In ArticuloGridView1.Rows
+
+            If row.Index Mod 2 <> 0 Then
+                row.DefaultCellStyle.BackColor = Color.Bisque
+                ' row.Cells("Descripcion").Style.Font.Bold = True
+
+            Else
+                row.DefaultCellStyle.BackColor = Color.Aqua
+
+            End If
+
+        Next
+    End Sub
+
+    Private Sub ButtonX1_Click(sender As Object, e As EventArgs) Handles QuitarButton.Click
         Try
             Dim _ListaDetalles As New List(Of PresupuestoDetalle)
             Dim _GestorPresupuesto As New GestorPresupuesto
@@ -416,35 +502,13 @@ Public Class PresupuestoDetalleForm
 
 
         End Try
+    End Sub
+
+    Private Sub ImprimirButton_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub QuitarTodoButton_Click(sender As Object, e As EventArgs)
-        If PresupuestoGridView.CurrentRow IsNot Nothing Then
-
-
-
-            PresupuestoGridView.Rows.Clear()
-
-
-
-
-
-
-            TotalLabel.Text = 0
-
-
-        End If
-
-
-
-        TextBoxBuscarArticulo.Text = ""
-        Me.Show()
-        TextBoxBuscarArticulo.Focus()
-    End Sub
-
-    Private Sub FinalizarButton_Click(sender As Object, e As EventArgs) Handles FinalizarButton.Click
-
+    Private Sub ButtonX1_Click_1(sender As Object, e As EventArgs) Handles FinalizarButton.Click
 
 
 
@@ -534,21 +598,96 @@ Public Class PresupuestoDetalleForm
 
         End If
 
-
-
-
     End Sub
 
-    Private Sub ArticuloGridView1_ColumnHeaderMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles ArticuloGridView1.ColumnHeaderMouseClick
-        For Each row As DataGridViewRow In ArticuloGridView1.Rows
+    Private Sub ImprimirButton_Click_1(sender As Object, e As EventArgs) Handles ImprimirButton.Click
 
-            If row.Index Mod 2 <> 0 Then
-                row.DefaultCellStyle.BackColor = Color.Bisque
+        Try
+
+
+            If MsgBox("¿Seguro desea imprimir?", MsgBoxStyle.YesNo + MsgBoxStyle.Question, "ATENCIÓN") = MsgBoxResult.Yes Then
+
+
+                Dim PresupuestoCabecera As New PresupuestoCabecera
+                Dim _ClasePDFpresupuesto As SL.ClasePDFpresupuesto
+                Dim _ListaDetalle As New List(Of ClasePDFpresupuesto)
+
+
+
+                Dim CantidadItems As Integer = PresupuestoGridView.RowCount
+
+                If CantidadItems = 0 Then
+                    Select Case Principal.CulturaGlobal
+                        Case "ESPAÑOL"
+                            Throw New Exception("Error, debe agregar artículos")
+                        Case "ENGLISH"
+                            Throw New Exception("Error, you must add products")
+                    End Select
+                End If
+
+
+
+
+
+                Dim _GestorPresupuesto As New GestorPresupuesto
+
+                For i = 0 To (CantidadItems - 2)
+
+                    _ClasePDFpresupuesto = New ClasePDFpresupuesto
+
+
+
+
+                    _ClasePDFpresupuesto.Cantidad = CDec(PresupuestoGridView.Rows(i).Cells("Cantidad").Value)
+                    _ClasePDFpresupuesto.Descripcion = Microsoft.VisualBasic.Left(CStr((PresupuestoGridView.Rows(i).Cells("Descripcion").Value)), 40)
+                    _ClasePDFpresupuesto.Marca = CStr(PresupuestoGridView.Rows(i).Cells("Marca").Value)
+                    _ClasePDFpresupuesto.Medida = CStr(PresupuestoGridView.Rows(i).Cells("UnidadMedida").Value)
+                    _ClasePDFpresupuesto.Codigo = CLng(PresupuestoGridView.Rows(i).Cells("Codigo Articulo").Value)
+                    _ClasePDFpresupuesto.Precio = CDec(PresupuestoGridView.Rows(i).Cells("Precio").Value)
+                    _ClasePDFpresupuesto.Importe = CDec(PresupuestoGridView.Rows(i).Cells("Importe").Value)
+
+
+
+
+                    _ListaDetalle.Add(_ClasePDFpresupuesto)
+
+
+
+
+
+                Next
+
+                Try
+                    PresupuestoCabecera.FechaInicio = CDate(FechaTextBox.Text)
+                    PresupuestoCabecera.Total = CDec(TotalLabel.Text)
+                    PresupuestoCabecera.Cod_Cliente = (CodigoClienteTextBox.Text).ToUpper
+                    PresupuestoCabecera.RazonSocial = (RazonSocialTextBox.Text).ToUpper
+                Catch ex As Exception
+                    Select Case Principal.CulturaGlobal
+                        Case "ESPAÑOL"
+                            Throw New Exception("Debe seleccionar un cliente")
+                        Case "ENGLISH"
+                            Throw New Exception("You must choose a customer")
+                    End Select
+                End Try
+
+
+                _GestorPresupuesto.GenerarPresupuestoPDF(_ListaDetalle, PresupuestoCabecera)
+
             Else
-                row.DefaultCellStyle.BackColor = Color.Aqua
-
             End If
 
-        Next
+
+        Catch ex As Exception
+
+            Dim el As New ErrorLogger
+            MsgBox(ex.Message, MsgBoxStyle.Critical, "ERROR")
+            el.WriteToErrorLog(ex.Message, ex.StackTrace, "Error")
+
+
+
+        End Try
+
+
     End Sub
 End Class

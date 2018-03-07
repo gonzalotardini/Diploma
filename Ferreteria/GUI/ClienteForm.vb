@@ -96,8 +96,195 @@ Public Class ClienteForm
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles AgregarClienteButton.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
 
+
+
+
+    End Sub
+
+    Private Sub ModificarButton_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub BuscarTextBox_TextChanged(sender As Object, e As EventArgs) Handles BuscarTextBox.TextChanged
+
+    End Sub
+
+    Private Sub ModificarButton_Click_1(sender As Object, e As EventArgs)
+
+
+
+    End Sub
+
+    Private Sub AceptarButton_Click(sender As Object, e As EventArgs)
+
+
+
+
+    End Sub
+
+    Private Sub BuscarTextBox_KeyDown(sender As Object, e As KeyEventArgs) Handles BuscarTextBox.KeyDown
+
+        Dim bandera As Integer = 0
+
+        If CuitRadioButton.Checked = True Then
+
+            Dim cliente As New Cliente
+            Dim ClienteBll As New GestorCliente
+
+            Select Case e.KeyData
+                Case Keys.Enter
+                    Dim EsNumero As Boolean
+
+                    EsNumero = IsNumeric(BuscarTextBox.Text)
+
+                    If BuscarTextBox.Text <> "" And EsNumero = True And ((Len(BuscarTextBox.Text)) < 16) Then  'valido para que no ejectue la funcion si no hay caracteres
+                        cliente.Cuit = Convert.ToInt64(BuscarTextBox.Text)
+                        ClienteGridView.DataSource = ClienteBll.BuscarClientePorCuitBll(cliente)
+
+                        BuscarTextBox.SelectAll()
+
+                        For Each row As DataGridViewRow In ClienteGridView.Rows
+
+                            If row.Index Mod 2 <> 0 Then
+                                row.DefaultCellStyle.BackColor = Color.Bisque
+                            Else
+                                row.DefaultCellStyle.BackColor = Color.Aqua
+
+                            End If
+
+                        Next
+
+
+
+
+                    Else
+                        bandera = 1
+                    End If
+
+                    Dim CantidadArticulos As Integer
+
+                    'CantidadArticulos = DataGridView1.RowCount - 1
+                    'Label14.Text = CantidadArticulos
+
+            End Select
+
+        End If
+
+        If RazonSocialRadioButton.Checked = True Or bandera = 1 Then
+
+            Dim _Cliente As New Cliente
+            Dim _GestorCliente As New GestorCliente
+
+            Select Case e.KeyData
+
+                Case Keys.Enter
+
+
+
+
+
+                    _Cliente.RazonSocial = (BuscarTextBox.Text).ToUpper
+                    ClienteGridView.DataSource = _GestorCliente.BuscarClientePorRazonSocialBLL(_Cliente)
+
+
+
+                    For Each row As DataGridViewRow In ClienteGridView.Rows
+
+                        If row.Index Mod 2 <> 0 Then
+                            row.DefaultCellStyle.BackColor = Color.Bisque
+                        Else
+                            row.DefaultCellStyle.BackColor = Color.Aqua
+
+                        End If
+
+                    Next
+
+
+                    bandera = 0
+
+                    RazonSocialRadioButton.Checked = True
+            End Select
+
+            'Dim CantidadArticulos As Integer
+
+            'CantidadArticulos = DataGridView1.RowCount - 1
+            'Label14.Text = CantidadArticulos
+        End If
+
+
+
+    End Sub
+
+    Private Sub ClienteGridView_ColumnHeaderMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles ClienteGridView.ColumnHeaderMouseClick
+        For Each row As DataGridViewRow In ClienteGridView.Rows
+
+            If row.Index Mod 2 <> 0 Then
+                row.DefaultCellStyle.BackColor = Color.Bisque
+            Else
+                row.DefaultCellStyle.BackColor = Color.Aqua
+
+            End If
+
+        Next
+    End Sub
+
+    Private Sub ButtonX1_Click(sender As Object, e As EventArgs) Handles ButtonX1.Click
+
+        Dim _Cliente As New Cliente
+        Dim _ClienteDAO As New ClienteDAO
+        Dim _BarrioDao As New BarrioDAO
+
+
+
+
+
+        If ClienteGridView.CurrentRow IsNot Nothing Then
+
+
+
+            _Cliente.CodigoCliente = ClienteGridView.CurrentRow.Cells(0).Value
+
+            _Cliente = _ClienteDAO.ObtenerUnClientePorCodigo(_Cliente)
+
+
+
+
+            RazonSocialTextBox.Text = _Cliente.RazonSocial
+            CuitTextBox.Text = _Cliente.Cuit
+            DireccionTextBox.Text = _Cliente.Direccion
+
+
+
+
+            BarrioComboBox.SelectedValue = _Cliente.Barrio
+
+
+            TelefonoTextBox.Text = _Cliente.Telefono
+
+
+            EmailTextBox.Text = _Cliente.Email
+
+            LabelCodigoCliente.Text = _Cliente.CodigoCliente
+
+
+
+
+
+
+
+        End If
+
+
+
+        AgregarClienteButton.Enabled = False
+
+        AceptarButton.Enabled = True
+
+    End Sub
+
+    Private Sub ButtonX2_Click(sender As Object, e As EventArgs) Handles AgregarClienteButton.Click
 
         Dim _Cliente As New Cliente
         Dim _GestorCLiente As New GestorCliente
@@ -167,78 +354,10 @@ Public Class ClienteForm
 
 
 
-
-
     End Sub
 
-    Private Sub ModificarButton_Click(sender As Object, e As EventArgs)
+    Private Sub ButtonX3_Click(sender As Object, e As EventArgs) Handles AceptarButton.Click
 
-    End Sub
-
-    Private Sub BuscarTextBox_TextChanged(sender As Object, e As EventArgs) Handles BuscarTextBox.TextChanged
-
-    End Sub
-
-    Private Sub ModificarButton_Click_1(sender As Object, e As EventArgs) Handles ModificarButton.Click
-
-
-        Dim _Cliente As New Cliente
-        Dim _ClienteDAO As New ClienteDAO
-        Dim _BarrioDao As New BarrioDAO
-
-
-
-
-
-        If ClienteGridView.CurrentRow IsNot Nothing Then
-
-
-
-            _Cliente.CodigoCliente = ClienteGridView.CurrentRow.Cells(0).Value
-
-            _Cliente = _ClienteDAO.ObtenerUnClientePorCodigo(_Cliente)
-
-   
-
-
-            RazonSocialTextBox.Text = _Cliente.RazonSocial
-            CuitTextBox.Text = _Cliente.Cuit
-            DireccionTextBox.Text = _Cliente.Direccion
-
-
-
-
-            BarrioComboBox.SelectedValue = _Cliente.Barrio
-
-
-            TelefonoTextBox.Text = _Cliente.Telefono
-
-
-            EmailTextBox.Text = _Cliente.Email
-
-            LabelCodigoCliente.Text = _Cliente.CodigoCliente
-
-
-
-
-
-
-
-        End If
-
-
-
-        AgregarClienteButton.Enabled = False
-
-        AceptarButton.Enabled = True
-
-
-    End Sub
-
-    Private Sub AceptarButton_Click(sender As Object, e As EventArgs) Handles AceptarButton.Click
-
-
-      
 
         Dim _ClienteDao As New ClienteDAO
         Dim _Cliente As New Cliente
@@ -348,112 +467,5 @@ Public Class ClienteForm
 
         Next
 
-
-    End Sub
-
-    Private Sub BuscarTextBox_KeyDown(sender As Object, e As KeyEventArgs) Handles BuscarTextBox.KeyDown
-
-        Dim bandera As Integer = 0
-
-        If CuitRadioButton.Checked = True Then
-
-            Dim cliente As New Cliente
-            Dim ClienteBll As New GestorCliente
-
-            Select Case e.KeyData
-                Case Keys.Enter
-                    Dim EsNumero As Boolean
-
-                    EsNumero = IsNumeric(BuscarTextBox.Text)
-
-                    If BuscarTextBox.Text <> "" And EsNumero = True And ((Len(BuscarTextBox.Text)) < 16) Then  'valido para que no ejectue la funcion si no hay caracteres
-                        cliente.Cuit = Convert.ToInt64(BuscarTextBox.Text)
-                        ClienteGridView.DataSource = ClienteBll.BuscarClientePorCuitBll(cliente)
-
-                        BuscarTextBox.SelectAll()
-
-                        For Each row As DataGridViewRow In ClienteGridView.Rows
-
-                            If row.Index Mod 2 <> 0 Then
-                                row.DefaultCellStyle.BackColor = Color.Bisque
-                            Else
-                                row.DefaultCellStyle.BackColor = Color.Aqua
-
-                            End If
-
-                        Next
-
-
-
-
-                    Else
-                        bandera = 1
-                    End If
-
-                    Dim CantidadArticulos As Integer
-
-                    'CantidadArticulos = DataGridView1.RowCount - 1
-                    'Label14.Text = CantidadArticulos
-
-            End Select
-
-        End If
-
-        If RazonSocialRadioButton.Checked = True Or bandera = 1 Then
-
-            Dim _Cliente As New Cliente
-            Dim _GestorCliente As New GestorCliente
-
-            Select Case e.KeyData
-
-                Case Keys.Enter
-
-
-
-
-
-                    _Cliente.RazonSocial = (BuscarTextBox.Text).ToUpper
-                    ClienteGridView.DataSource = _GestorCliente.BuscarClientePorRazonSocialBLL(_Cliente)
-
-
-
-                    For Each row As DataGridViewRow In ClienteGridView.Rows
-
-                        If row.Index Mod 2 <> 0 Then
-                            row.DefaultCellStyle.BackColor = Color.Bisque
-                        Else
-                            row.DefaultCellStyle.BackColor = Color.Aqua
-
-                        End If
-
-                    Next
-
-
-                    bandera = 0
-
-                    RazonSocialRadioButton.Checked = True
-            End Select
-
-            'Dim CantidadArticulos As Integer
-
-            'CantidadArticulos = DataGridView1.RowCount - 1
-            'Label14.Text = CantidadArticulos
-        End If
-
-
-
-    End Sub
-
-    Private Sub ClienteGridView_ColumnHeaderMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles ClienteGridView.ColumnHeaderMouseClick
-        For Each row As DataGridViewRow In ClienteGridView.Rows
-
-            If row.Index Mod 2 <> 0 Then
-                row.DefaultCellStyle.BackColor = Color.Bisque
-            Else
-                row.DefaultCellStyle.BackColor = Color.Aqua
-
-            End If
-
-        Next
     End Sub
 End Class

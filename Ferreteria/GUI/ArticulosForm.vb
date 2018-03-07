@@ -17,138 +17,9 @@ Public Class ArticulosForm
 
 
 
-    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click_1(sender As Object, e As EventArgs)
 
 
-        Dim GestorArticulo As New GestorArticulo
-        Dim Articulo As New Articulo
-        Dim _Tipo As String
-
-        _Tipo = "AGREGAR"
-
-        Dim Fecha As Date
-
-        Fecha = Now
-
-
-
-
-
-        Try
-            'el textbox codigo de barras no puede estar vacio
-            If TextBoxCodProveedor.Text = "" Then
-
-                Select Case Principal.CulturaGlobal
-                    Case "ESPAÑOL"
-                        Throw New Exception("Introduzca Codigo de Barras")
-
-                    Case "ENGLISH"
-                        Throw New Exception("Introduce Bar Code")
-                End Select
-
-                TextBoxCodProveedor.Focus()
-
-            Else
-                Articulo.CodigoDeBarras = Convert.ToInt64(TextBoxCodProveedor.Text)
-            End If
-
-
-            If TextBoxPrecio.Text = "" Then
-
-                Select Case Principal.CulturaGlobal
-                    Case "ESPAÑOL"
-                        Throw New Exception("Introduzca precio")
-
-                    Case "ENGLISH"
-                        Throw New Exception("Introduce Price")
-                End Select
-
-
-                TextBoxPrecio.Focus()
-            Else
-
-                Articulo.Precio = Convert.ToDecimal(TextBoxPrecio.Text + "," + TextBox3.Text)
-
-            End If
-
-
-            If Combo_UniddMedida.SelectedIndex = -1 Then
-                Throw New Exception("Error, Seleccione Unidad de Medida")
-
-            Else
-
-                Articulo.UnidadDeMedida = Combo_UniddMedida.SelectedValue
-
-            End If
-
-
-
-            If Combo_SubUnidad.SelectedIndex = -1 Then
-
-                Throw New Exception("Error, Seleccione Sub-Unidad de Medida")
-
-
-            Else
-                Articulo.SubUnidadDeMedida = Combo_SubUnidad.SelectedValue
-
-            End If
-
-
-            If ComboCategoria.SelectedIndex = -1 Then
-
-                Throw New Exception("Error, Seleccione Categoría")
-
-            Else
-
-                Articulo.Categoria = ComboCategoria.SelectedValue
-
-            End If
-
-
-
-            If ComboSubCategoria.SelectedIndex = -1 Then
-
-                Throw New Exception("Error, Seleccione Sub-Categoría")
-
-            Else
-
-                Articulo.SubCategoria = ComboSubCategoria.SelectedValue
-
-            End If
-
-
-            If ComboMarca.SelectedIndex = -1 Then
-
-                Throw New Exception("Error, Seleccione Marca")
-
-            Else
-
-                Articulo.Marca = ComboMarca.SelectedValue
-
-            End If
-
-
-            Articulo.Descripcion = (TextBoxDescripcion.Text).ToUpper
-
-
-            GestorArticulo.ValidarDatosArticulo(Articulo, Fecha, _Tipo)
-
-            Dim el As New EventLogger
-
-            el.WriteToErrorLog("Se agregó correctamente el artículo " & Articulo.Descripcion, "Articulo Form", "Información")
-
-            Dim Mensaje = MsgBox("Se agregó correctamente el articulo " & Articulo.Descripcion, MsgBoxStyle.Information, "ATENCÓN")
-
-
-        Catch ex As Exception
-
-            Dim el As New ErrorLogger
-            MsgBox(ex.Message, MsgBoxStyle.Critical, "ERROR")
-            el.WriteToErrorLog(ex.Message, ex.StackTrace, "Error")
-
-
-
-        End Try
 
 
 
@@ -596,7 +467,7 @@ Public Class ArticulosForm
 
     End Sub
 
-    Private Sub MODIFICAR_Click(sender As Object, e As EventArgs) Handles MODIFICAR.Click
+    Private Sub MODIFICAR_Click(sender As Object, e As EventArgs)
 
         Dim Articulo As New Articulo
 
@@ -629,5 +500,161 @@ Public Class ArticulosForm
             End If
 
         Next
+    End Sub
+
+    Private Sub DataGridView2_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView2.CellContentClick
+
+    End Sub
+
+    Private Sub MODIFICAR1_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub ButtonX1_Click(sender As Object, e As EventArgs) Handles MODIFICAR.Click
+        Dim Articulo As New Articulo
+
+
+        Articulo.CodigoArticulo = DataGridView2.CurrentRow.Cells(0).Value
+
+
+        Dim Form As New ModifcarArticuloForm(Articulo)
+
+
+        Form.Show()
+
+
+    End Sub
+
+    Private Sub AgregarClienteButton_Click(sender As Object, e As EventArgs) Handles AgregarClienteButton.Click
+        Dim GestorArticulo As New GestorArticulo
+        Dim Articulo As New Articulo
+        Dim _Tipo As String
+
+        _Tipo = "AGREGAR"
+
+        Dim Fecha As Date
+
+        Fecha = Now
+
+
+
+
+
+        Try
+            'el textbox codigo de barras no puede estar vacio
+            If TextBoxCodProveedor.Text = "" Then
+
+                Select Case Principal.CulturaGlobal
+                    Case "ESPAÑOL"
+                        Throw New Exception("Introduzca Codigo de Barras")
+
+                    Case "ENGLISH"
+                        Throw New Exception("Introduce Bar Code")
+                End Select
+
+                TextBoxCodProveedor.Focus()
+
+            Else
+                Articulo.CodigoDeBarras = Convert.ToInt64(TextBoxCodProveedor.Text)
+            End If
+
+
+            If TextBoxPrecio.Text = "" Then
+
+                Select Case Principal.CulturaGlobal
+                    Case "ESPAÑOL"
+                        Throw New Exception("Introduzca precio")
+
+                    Case "ENGLISH"
+                        Throw New Exception("Introduce Price")
+                End Select
+
+
+                TextBoxPrecio.Focus()
+            Else
+
+                Articulo.Precio = Convert.ToDecimal(TextBoxPrecio.Text + "," + TextBox3.Text)
+
+            End If
+
+
+            If Combo_UniddMedida.SelectedIndex = -1 Then
+                Throw New Exception("Error, Seleccione Unidad de Medida")
+
+            Else
+
+                Articulo.UnidadDeMedida = Combo_UniddMedida.SelectedValue
+
+            End If
+
+
+
+            If Combo_SubUnidad.SelectedIndex = -1 Then
+
+                Throw New Exception("Error, Seleccione Sub-Unidad de Medida")
+
+
+            Else
+                Articulo.SubUnidadDeMedida = Combo_SubUnidad.SelectedValue
+
+            End If
+
+
+            If ComboCategoria.SelectedIndex = -1 Then
+
+                Throw New Exception("Error, Seleccione Categoría")
+
+            Else
+
+                Articulo.Categoria = ComboCategoria.SelectedValue
+
+            End If
+
+
+
+            If ComboSubCategoria.SelectedIndex = -1 Then
+
+                Throw New Exception("Error, Seleccione Sub-Categoría")
+
+            Else
+
+                Articulo.SubCategoria = ComboSubCategoria.SelectedValue
+
+            End If
+
+
+            If ComboMarca.SelectedIndex = -1 Then
+
+                Throw New Exception("Error, Seleccione Marca")
+
+            Else
+
+                Articulo.Marca = ComboMarca.SelectedValue
+
+            End If
+
+
+            Articulo.Descripcion = (TextBoxDescripcion.Text).ToUpper
+
+
+            GestorArticulo.ValidarDatosArticulo(Articulo, Fecha, _Tipo)
+
+            Dim el As New EventLogger
+
+            el.WriteToErrorLog("Se agregó correctamente el artículo " & Articulo.Descripcion, "Articulo Form", "Información")
+
+            Dim Mensaje = MsgBox("Se agregó correctamente el articulo " & Articulo.Descripcion, MsgBoxStyle.Information, "ATENCÓN")
+
+
+        Catch ex As Exception
+
+            Dim el As New ErrorLogger
+            MsgBox(ex.Message, MsgBoxStyle.Critical, "ERROR")
+            el.WriteToErrorLog(ex.Message, ex.StackTrace, "Error")
+
+
+
+        End Try
+
     End Sub
 End Class

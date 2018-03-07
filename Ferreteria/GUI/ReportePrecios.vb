@@ -10,6 +10,7 @@ Public Class ReportePrecios
             Me.WindowState = FormWindowState.Maximized 'Maximizar Ventana al Abrir
             Dim reportesDal = New ReporteDAO
             DataGridView1.DataSource = reportesDal.ObtenerReportes
+            DataGridView1.AllowUserToAddRows = False
 
             For Each row As DataGridViewRow In DataGridView1.Rows
 
@@ -31,14 +32,8 @@ Public Class ReportePrecios
         End Try
     End Sub
 
-    Private Sub ButtonX1_Click(sender As Object, e As EventArgs) Handles ButtonX1.Click
-        If DataGridView1.CurrentRow IsNot Nothing Then
+    Private Sub ButtonX1_Click(sender As Object, e As EventArgs)
 
-            _CodReportePrecios = (DataGridView1.CurrentRow.Cells(0).Value)
-
-            ReportePreciosDetalleForm.Show()
-
-        End If
     End Sub
 
     Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
@@ -56,5 +51,15 @@ Public Class ReportePrecios
             End If
 
         Next
+    End Sub
+
+    Private Sub ButtonX3_Click(sender As Object, e As EventArgs) Handles ButtonX3.Click
+        If DataGridView1.CurrentRow IsNot Nothing Then
+
+            _CodReportePrecios = (DataGridView1.CurrentRow.Cells(0).Value)
+
+            ReportePreciosDetalleForm.Show()
+
+        End If
     End Sub
 End Class

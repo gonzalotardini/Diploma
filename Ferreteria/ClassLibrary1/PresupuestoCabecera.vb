@@ -5,7 +5,16 @@
     Private _FechaInicio As Date
     Private _FechaFin As Date
     Private _Total As Decimal
+    Private _RazonSocial As String
 
+    Public Property RazonSocial As String
+        Get
+            Return _RazonSocial
+        End Get
+        Set(value As String)
+            _RazonSocial = value
+        End Set
+    End Property
 
     Public Property Cod_Presupuesto As Long
         Get

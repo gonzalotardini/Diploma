@@ -75,7 +75,31 @@ Public Class VentDetalle
 
     End Sub
 
-    Private Sub ButtonX2_Click(sender As Object, e As EventArgs) Handles ButtonX2.Click
+    Private Sub ButtonX2_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub RazonSocialLabel_Click(sender As Object, e As EventArgs) Handles RazonSocialLabel.Click
+
+    End Sub
+
+    Private Sub CodigoClienteLabel_Click(sender As Object, e As EventArgs) Handles CodigoClienteLabel.Click
+
+    End Sub
+
+    Private Sub CuitLabel_Click(sender As Object, e As EventArgs) Handles CuitLabel.Click
+
+    End Sub
+
+    Private Sub FechaLabel_Click(sender As Object, e As EventArgs) Handles FechaLabel.Click
+
+    End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+
+    End Sub
+
+    Private Sub ButtonX3_Click(sender As Object, e As EventArgs) Handles ButtonX3.Click
         Try
             Dim ventaBll = New GestorVenta
             Dim ventaDao = New VentaDAO

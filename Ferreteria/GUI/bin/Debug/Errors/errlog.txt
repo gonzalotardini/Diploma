@@ -2346,3 +2346,62 @@ Mensaje: Error revise Cuit del cliente
 StackTrace:    en GUI.ClienteForm.Button1_Click(Object sender, EventArgs e) en C:\Users\navegador\Desktop\Diploma-1-1\Ferreteria\GUI\ClienteForm.vb:línea 110
 Fecha/Hora: 06/03/2018 19:03:57
 ===========================================================================================
+Titulo: Error
+Mensaje: USUARIO O CONTRASEÑA INCORRECTO
+StackTrace:    at GUI.LogIn.Button1_Click_1(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\LogIn.vb:line 52
+Fecha/Hora: 06/03/2018 20:53:34
+===========================================================================================
+Titulo: Error
+Mensaje: Column named Codigo cannot be found.
+Parameter name: columnName
+StackTrace:    at System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   at GUI.PresupuestoDetalleForm.ImprimirButton_Click_1(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\PresupuestoDetalleForm.vb:line 645
+Fecha/Hora: 06/03/2018 22:40:16
+===========================================================================================
+Titulo: Error
+Mensaje: Conversion from string "Object reference not set to an i" to type 'Integer' is not valid.
+StackTrace:    at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)
+   at BLL.GestorPresupuesto.GenerarPresupuestoPDF(List`1 DetallePresupuestoPDF, PresupuestoCabecera PresupuestoCabecera) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorPresupuesto.vb:line 275
+   at GUI.PresupuestoDetalleForm.ImprimirButton_Click_1(Object sender, EventArgs e)
+Fecha/Hora: 06/03/2018 22:42:30
+===========================================================================================
+Titulo: Error
+Mensaje: Conversion from string "The process cannot access the fi" to type 'Integer' is not valid.
+StackTrace:    at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)
+   at BLL.GestorPresupuesto.GenerarPresupuestoPDF(List`1 DetallePresupuestoPDF, PresupuestoCabecera PresupuestoCabecera) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorPresupuesto.vb:line 275
+   at GUI.PresupuestoDetalleForm.ImprimirButton_Click_1(Object sender, EventArgs e)
+Fecha/Hora: 06/03/2018 22:43:07
+===========================================================================================
+Titulo: Error
+Mensaje: Conversion from string "The process cannot access the fi" to type 'Integer' is not valid.
+StackTrace:    at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)
+   at BLL.GestorPresupuesto.GenerarPresupuestoPDF(List`1 DetallePresupuestoPDF, PresupuestoCabecera PresupuestoCabecera) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorPresupuesto.vb:line 275
+   at GUI.PresupuestoDetalleForm.ImprimirButton_Click_1(Object sender, EventArgs e)
+Fecha/Hora: 06/03/2018 22:44:13
+===========================================================================================
+Titulo: Error
+Mensaje: Conversion from string "Object reference not set to an i" to type 'Integer' is not valid.
+StackTrace:    at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)
+   at BLL.GestorPresupuesto.GenerarPresupuestoPDF(List`1 DetallePresupuestoPDF, PresupuestoCabecera PresupuestoCabecera) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorPresupuesto.vb:line 275
+   at GUI.PresupuestoDetalleForm.ImprimirButton_Click_1(Object sender, EventArgs e)
+Fecha/Hora: 06/03/2018 22:47:34
+===========================================================================================
+Titulo: Error
+Mensaje: Conversion from string "Object reference not set to an i" to type 'Integer' is not valid.
+StackTrace:    at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)
+   at BLL.GestorPresupuesto.GenerarPresupuestoPDF(List`1 DetallePresupuestoPDF, PresupuestoCabecera PresupuestoCabecera) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorPresupuesto.vb:line 275
+   at GUI.PresupuestoDetalleForm.ImprimirButton_Click_1(Object sender, EventArgs e)
+Fecha/Hora: 06/03/2018 22:47:49
+===========================================================================================
+Titulo: Error
+Mensaje: No se encontraron articulos
+StackTrace:    at BLL.GestorReporte.ObtenerArticulosMasVendidosBLL(Int32 cantidad, DateTime fecha_desde, DateTime fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 68
+   at GUI.NuevoReporteArticulosVendidos.ButtonX1_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevoReporteArticulosVendidos.vb:line 20
+Fecha/Hora: 06/03/2018 23:00:10
+===========================================================================================
+Titulo: Error
+Mensaje: The conversion of a varchar data type to a datetime data type resulted in an out-of-range value.
+StackTrace:    at BLL.GestorReporte.ObtenerArticulosMasVendidosBLL(Int32 cantidad, DateTime fecha_desde, DateTime fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 68
+   at GUI.NuevoReporteArticulosVendidos.ButtonX1_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevoReporteArticulosVendidos.vb:line 20
+Fecha/Hora: 06/03/2018 23:00:15
+===========================================================================================

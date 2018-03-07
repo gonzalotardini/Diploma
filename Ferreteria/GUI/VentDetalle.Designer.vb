@@ -22,6 +22,7 @@ Partial Class VentDetalle
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(VentDetalle))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TotalLabel = New System.Windows.Forms.Label()
         Me.label = New System.Windows.Forms.Label()
@@ -36,17 +37,17 @@ Partial Class VentDetalle
         Me.PresupuestoGridView = New System.Windows.Forms.DataGridView()
         Me.CodigoPresupuestoTextbox = New System.Windows.Forms.Label()
         Me.ButtonX1 = New DevComponents.DotNetBar.ButtonX()
-        Me.ButtonX2 = New DevComponents.DotNetBar.ButtonX()
+        Me.ButtonX3 = New DevComponents.DotNetBar.ButtonX()
         CType(Me.PresupuestoGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(804, 30)
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.Label1.Location = New System.Drawing.Point(801, 26)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(151, 13)
+        Me.Label1.Size = New System.Drawing.Size(161, 19)
         Me.Label1.TabIndex = 34
         Me.Label1.Text = "CODIGO PRESUPUESTO"
         '
@@ -97,30 +98,30 @@ Partial Class VentDetalle
         'FechaLabel
         '
         Me.FechaLabel.AutoSize = True
-        Me.FechaLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.FechaLabel.Location = New System.Drawing.Point(580, 34)
+        Me.FechaLabel.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.FechaLabel.Location = New System.Drawing.Point(577, 30)
         Me.FechaLabel.Name = "FechaLabel"
-        Me.FechaLabel.Size = New System.Drawing.Size(47, 13)
+        Me.FechaLabel.Size = New System.Drawing.Size(51, 19)
         Me.FechaLabel.TabIndex = 27
         Me.FechaLabel.Text = "FECHA"
         '
         'CuitLabel
         '
         Me.CuitLabel.AutoSize = True
-        Me.CuitLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CuitLabel.Location = New System.Drawing.Point(322, 34)
+        Me.CuitLabel.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.CuitLabel.Location = New System.Drawing.Point(319, 30)
         Me.CuitLabel.Name = "CuitLabel"
-        Me.CuitLabel.Size = New System.Drawing.Size(36, 13)
+        Me.CuitLabel.Size = New System.Drawing.Size(40, 19)
         Me.CuitLabel.TabIndex = 26
         Me.CuitLabel.Text = "CUIT"
         '
         'CodigoClienteLabel
         '
         Me.CodigoClienteLabel.AutoSize = True
-        Me.CodigoClienteLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CodigoClienteLabel.Location = New System.Drawing.Point(26, 34)
+        Me.CodigoClienteLabel.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.CodigoClienteLabel.Location = New System.Drawing.Point(23, 30)
         Me.CodigoClienteLabel.Name = "CodigoClienteLabel"
-        Me.CodigoClienteLabel.Size = New System.Drawing.Size(132, 13)
+        Me.CodigoClienteLabel.Size = New System.Drawing.Size(142, 19)
         Me.CodigoClienteLabel.TabIndex = 25
         Me.CodigoClienteLabel.Text = "CODIGO DE CLIENTE"
         '
@@ -135,15 +136,17 @@ Partial Class VentDetalle
         'RazonSocialLabel
         '
         Me.RazonSocialLabel.AutoSize = True
-        Me.RazonSocialLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RazonSocialLabel.Location = New System.Drawing.Point(30, 65)
+        Me.RazonSocialLabel.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.RazonSocialLabel.ForeColor = System.Drawing.Color.Black
+        Me.RazonSocialLabel.Location = New System.Drawing.Point(27, 61)
         Me.RazonSocialLabel.Name = "RazonSocialLabel"
-        Me.RazonSocialLabel.Size = New System.Drawing.Size(98, 13)
+        Me.RazonSocialLabel.Size = New System.Drawing.Size(109, 19)
         Me.RazonSocialLabel.TabIndex = 23
         Me.RazonSocialLabel.Text = "RAZON SOCIAL"
         '
         'PresupuestoGridView
         '
+        Me.PresupuestoGridView.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight
         Me.PresupuestoGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.PresupuestoGridView.Location = New System.Drawing.Point(29, 126)
         Me.PresupuestoGridView.Name = "PresupuestoGridView"
@@ -163,6 +166,7 @@ Partial Class VentDetalle
         '
         Me.ButtonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
         Me.ButtonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
+        Me.ButtonX1.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
         Me.ButtonX1.Image = Global.GUI.My.Resources.Resources.Imprimir1
         Me.ButtonX1.Location = New System.Drawing.Point(1099, 126)
         Me.ButtonX1.Name = "ButtonX1"
@@ -171,23 +175,27 @@ Partial Class VentDetalle
         Me.ButtonX1.TabIndex = 36
         Me.ButtonX1.Text = "ButtonX1"
         '
-        'ButtonX2
+        'ButtonX3
         '
-        Me.ButtonX2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
-        Me.ButtonX2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
-        Me.ButtonX2.Location = New System.Drawing.Point(1099, 240)
-        Me.ButtonX2.Name = "ButtonX2"
-        Me.ButtonX2.Size = New System.Drawing.Size(169, 63)
-        Me.ButtonX2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.ButtonX2.TabIndex = 37
-        Me.ButtonX2.Text = "ButtonX2"
+        Me.ButtonX3.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.ButtonX3.BackColor = System.Drawing.Color.Red
+        Me.ButtonX3.ColorTable = DevComponents.DotNetBar.eButtonColor.Magenta
+        Me.ButtonX3.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.ButtonX3.Image = CType(resources.GetObject("ButtonX3.Image"), System.Drawing.Image)
+        Me.ButtonX3.Location = New System.Drawing.Point(1099, 212)
+        Me.ButtonX3.Name = "ButtonX3"
+        Me.ButtonX3.Size = New System.Drawing.Size(148, 59)
+        Me.ButtonX3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.ButtonX3.TabIndex = 38
+        Me.ButtonX3.Text = "ButtonX3"
+        Me.ButtonX3.TextColor = System.Drawing.Color.White
         '
         'VentDetalle
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1334, 592)
-        Me.Controls.Add(Me.ButtonX2)
+        Me.Controls.Add(Me.ButtonX3)
         Me.Controls.Add(Me.ButtonX1)
         Me.Controls.Add(Me.CodigoPresupuestoTextbox)
         Me.Controls.Add(Me.Label1)
@@ -224,5 +232,5 @@ Partial Class VentDetalle
     Friend WithEvents PresupuestoGridView As System.Windows.Forms.DataGridView
     Friend WithEvents CodigoPresupuestoTextbox As Label
     Friend WithEvents ButtonX1 As DevComponents.DotNetBar.ButtonX
-    Friend WithEvents ButtonX2 As DevComponents.DotNetBar.ButtonX
+    Friend WithEvents ButtonX3 As DevComponents.DotNetBar.ButtonX
 End Class

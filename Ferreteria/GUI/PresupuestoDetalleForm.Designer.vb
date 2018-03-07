@@ -34,17 +34,17 @@ Partial Class PresupuestoDetalleForm
         Me.FechaTextBox = New System.Windows.Forms.TextBox()
         Me.label = New System.Windows.Forms.Label()
         Me.TotalLabel = New System.Windows.Forms.Label()
-        Me.ModificarButton = New System.Windows.Forms.Button()
         Me.ArticuloGridView1 = New System.Windows.Forms.DataGridView()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.RadioButtonDescripcion = New System.Windows.Forms.RadioButton()
         Me.RadioButtonCodigo = New System.Windows.Forms.RadioButton()
         Me.TextBoxBuscarArticulo = New System.Windows.Forms.TextBox()
-        Me.ImprimirButton = New System.Windows.Forms.Button()
-        Me.FinalizarButton = New System.Windows.Forms.Button()
-        Me.QuitarButton = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.CodigoPresupuestoTextbox = New System.Windows.Forms.TextBox()
+        Me.CodigoPresupuestoLabel = New System.Windows.Forms.Label()
+        Me.CodigoPresupuestoTextbox = New System.Windows.Forms.Label()
+        Me.ModificarButton = New DevComponents.DotNetBar.ButtonX()
+        Me.QuitarButton = New DevComponents.DotNetBar.ButtonX()
+        Me.ImprimirButton = New DevComponents.DotNetBar.ButtonX()
+        Me.FinalizarButton = New DevComponents.DotNetBar.ButtonX()
         CType(Me.PresupuestoGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ArticuloGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -52,6 +52,7 @@ Partial Class PresupuestoDetalleForm
         '
         'PresupuestoGridView
         '
+        Me.PresupuestoGridView.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight
         Me.PresupuestoGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.PresupuestoGridView.Location = New System.Drawing.Point(12, 63)
         Me.PresupuestoGridView.Name = "PresupuestoGridView"
@@ -61,17 +62,17 @@ Partial Class PresupuestoDetalleForm
         'RazonSocialLabel
         '
         Me.RazonSocialLabel.AutoSize = True
-        Me.RazonSocialLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RazonSocialLabel.Location = New System.Drawing.Point(23, 44)
+        Me.RazonSocialLabel.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.RazonSocialLabel.Location = New System.Drawing.Point(22, 38)
         Me.RazonSocialLabel.Name = "RazonSocialLabel"
-        Me.RazonSocialLabel.Size = New System.Drawing.Size(98, 13)
+        Me.RazonSocialLabel.Size = New System.Drawing.Size(109, 19)
         Me.RazonSocialLabel.TabIndex = 1
         Me.RazonSocialLabel.Text = "RAZON SOCIAL"
         '
         'RazonSocialTextBox
         '
         Me.RazonSocialTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.RazonSocialTextBox.Location = New System.Drawing.Point(139, 44)
+        Me.RazonSocialTextBox.Location = New System.Drawing.Point(137, 41)
         Me.RazonSocialTextBox.Name = "RazonSocialTextBox"
         Me.RazonSocialTextBox.Size = New System.Drawing.Size(149, 13)
         Me.RazonSocialTextBox.TabIndex = 2
@@ -79,56 +80,59 @@ Partial Class PresupuestoDetalleForm
         'CodigoClienteLabel
         '
         Me.CodigoClienteLabel.AutoSize = True
-        Me.CodigoClienteLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CodigoClienteLabel.Location = New System.Drawing.Point(19, 13)
+        Me.CodigoClienteLabel.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.CodigoClienteLabel.Location = New System.Drawing.Point(22, -1)
         Me.CodigoClienteLabel.Name = "CodigoClienteLabel"
-        Me.CodigoClienteLabel.Size = New System.Drawing.Size(132, 13)
+        Me.CodigoClienteLabel.Size = New System.Drawing.Size(142, 19)
         Me.CodigoClienteLabel.TabIndex = 3
         Me.CodigoClienteLabel.Text = "CODIGO DE CLIENTE"
         '
         'CuitLabel
         '
         Me.CuitLabel.AutoSize = True
-        Me.CuitLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CuitLabel.Location = New System.Drawing.Point(315, 13)
+        Me.CuitLabel.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.CuitLabel.Location = New System.Drawing.Point(315, 2)
         Me.CuitLabel.Name = "CuitLabel"
-        Me.CuitLabel.Size = New System.Drawing.Size(36, 13)
+        Me.CuitLabel.Size = New System.Drawing.Size(40, 19)
         Me.CuitLabel.TabIndex = 4
         Me.CuitLabel.Text = "CUIT"
         '
         'FechaLabel
         '
         Me.FechaLabel.AutoSize = True
-        Me.FechaLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.FechaLabel.Location = New System.Drawing.Point(573, 13)
+        Me.FechaLabel.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.FechaLabel.Location = New System.Drawing.Point(573, 2)
         Me.FechaLabel.Name = "FechaLabel"
-        Me.FechaLabel.Size = New System.Drawing.Size(47, 13)
+        Me.FechaLabel.Size = New System.Drawing.Size(51, 19)
         Me.FechaLabel.TabIndex = 5
         Me.FechaLabel.Text = "FECHA"
         '
         'CodigoClienteTextBox
         '
         Me.CodigoClienteTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.CodigoClienteTextBox.Location = New System.Drawing.Point(157, 13)
+        Me.CodigoClienteTextBox.Location = New System.Drawing.Point(180, 5)
         Me.CodigoClienteTextBox.Name = "CodigoClienteTextBox"
         Me.CodigoClienteTextBox.Size = New System.Drawing.Size(77, 13)
         Me.CodigoClienteTextBox.TabIndex = 6
+        Me.CodigoClienteTextBox.Text = "AAAA"
         '
         'CuitTextBox
         '
         Me.CuitTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.CuitTextBox.Location = New System.Drawing.Point(354, 10)
+        Me.CuitTextBox.Location = New System.Drawing.Point(361, 5)
         Me.CuitTextBox.Name = "CuitTextBox"
         Me.CuitTextBox.Size = New System.Drawing.Size(148, 13)
         Me.CuitTextBox.TabIndex = 7
+        Me.CuitTextBox.Text = "22222222"
         '
         'FechaTextBox
         '
         Me.FechaTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.FechaTextBox.Location = New System.Drawing.Point(631, 10)
+        Me.FechaTextBox.Location = New System.Drawing.Point(630, 5)
         Me.FechaTextBox.Name = "FechaTextBox"
         Me.FechaTextBox.Size = New System.Drawing.Size(100, 13)
         Me.FechaTextBox.TabIndex = 8
+        Me.FechaTextBox.Text = "14114"
         '
         'label
         '
@@ -150,19 +154,11 @@ Partial Class PresupuestoDetalleForm
         Me.TotalLabel.TabIndex = 10
         Me.TotalLabel.Text = "Label1"
         '
-        'ModificarButton
-        '
-        Me.ModificarButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ModificarButton.Location = New System.Drawing.Point(26, 369)
-        Me.ModificarButton.Name = "ModificarButton"
-        Me.ModificarButton.Size = New System.Drawing.Size(157, 38)
-        Me.ModificarButton.TabIndex = 11
-        Me.ModificarButton.Text = "MODIFICAR"
-        Me.ModificarButton.UseVisualStyleBackColor = True
-        '
         'ArticuloGridView1
         '
+        Me.ArticuloGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight
         Me.ArticuloGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.ArticuloGridView1.GridColor = System.Drawing.SystemColors.ButtonHighlight
         Me.ArticuloGridView1.Location = New System.Drawing.Point(12, 446)
         Me.ArticuloGridView1.Name = "ArticuloGridView1"
         Me.ArticuloGridView1.ReadOnly = True
@@ -208,72 +204,96 @@ Partial Class PresupuestoDetalleForm
         Me.TextBoxBuscarArticulo.Size = New System.Drawing.Size(305, 20)
         Me.TextBoxBuscarArticulo.TabIndex = 13
         '
-        'ImprimirButton
+        'CodigoPresupuestoLabel
         '
-        Me.ImprimirButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ImprimirButton.Image = Global.GUI.My.Resources.Resources.Imprimir
-        Me.ImprimirButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.ImprimirButton.Location = New System.Drawing.Point(1067, 115)
-        Me.ImprimirButton.Name = "ImprimirButton"
-        Me.ImprimirButton.Size = New System.Drawing.Size(107, 44)
-        Me.ImprimirButton.TabIndex = 19
-        Me.ImprimirButton.Text = "IMPRIMIR"
-        Me.ImprimirButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.ImprimirButton.UseVisualStyleBackColor = True
-        '
-        'FinalizarButton
-        '
-        Me.FinalizarButton.Image = CType(resources.GetObject("FinalizarButton.Image"), System.Drawing.Image)
-        Me.FinalizarButton.Location = New System.Drawing.Point(1067, 291)
-        Me.FinalizarButton.Name = "FinalizarButton"
-        Me.FinalizarButton.Size = New System.Drawing.Size(149, 72)
-        Me.FinalizarButton.TabIndex = 18
-        Me.FinalizarButton.UseVisualStyleBackColor = True
-        '
-        'QuitarButton
-        '
-        Me.QuitarButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.QuitarButton.Image = Global.GUI.My.Resources.Resources.quitar
-        Me.QuitarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.QuitarButton.Location = New System.Drawing.Point(1067, 63)
-        Me.QuitarButton.Name = "QuitarButton"
-        Me.QuitarButton.Size = New System.Drawing.Size(107, 46)
-        Me.QuitarButton.TabIndex = 16
-        Me.QuitarButton.Text = "QUITAR"
-        Me.QuitarButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.QuitarButton.UseVisualStyleBackColor = True
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(797, 9)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(151, 13)
-        Me.Label1.TabIndex = 20
-        Me.Label1.Text = "CODIGO PRESUPUESTO"
+        Me.CodigoPresupuestoLabel.AutoSize = True
+        Me.CodigoPresupuestoLabel.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.CodigoPresupuestoLabel.Location = New System.Drawing.Point(797, -2)
+        Me.CodigoPresupuestoLabel.Name = "CodigoPresupuestoLabel"
+        Me.CodigoPresupuestoLabel.Size = New System.Drawing.Size(161, 19)
+        Me.CodigoPresupuestoLabel.TabIndex = 20
+        Me.CodigoPresupuestoLabel.Text = "CODIGO PRESUPUESTO"
         '
         'CodigoPresupuestoTextbox
         '
-        Me.CodigoPresupuestoTextbox.Location = New System.Drawing.Point(954, 3)
+        Me.CodigoPresupuestoTextbox.AutoSize = True
+        Me.CodigoPresupuestoTextbox.Location = New System.Drawing.Point(951, 2)
         Me.CodigoPresupuestoTextbox.Name = "CodigoPresupuestoTextbox"
-        Me.CodigoPresupuestoTextbox.Size = New System.Drawing.Size(100, 20)
-        Me.CodigoPresupuestoTextbox.TabIndex = 21
+        Me.CodigoPresupuestoTextbox.Size = New System.Drawing.Size(39, 13)
+        Me.CodigoPresupuestoTextbox.TabIndex = 22
+        Me.CodigoPresupuestoTextbox.Text = "Label2"
+        '
+        'ModificarButton
+        '
+        Me.ModificarButton.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.ModificarButton.BackColor = System.Drawing.Color.OrangeRed
+        Me.ModificarButton.ColorTable = DevComponents.DotNetBar.eButtonColor.Magenta
+        Me.ModificarButton.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ModificarButton.Image = CType(resources.GetObject("ModificarButton.Image"), System.Drawing.Image)
+        Me.ModificarButton.Location = New System.Drawing.Point(26, 369)
+        Me.ModificarButton.Name = "ModificarButton"
+        Me.ModificarButton.Size = New System.Drawing.Size(146, 45)
+        Me.ModificarButton.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.ModificarButton.TabIndex = 104
+        Me.ModificarButton.Text = "MODIFICAR"
+        Me.ModificarButton.TextColor = System.Drawing.Color.White
+        '
+        'QuitarButton
+        '
+        Me.QuitarButton.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.QuitarButton.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
+        Me.QuitarButton.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.QuitarButton.Image = Global.GUI.My.Resources.Resources.quitar1
+        Me.QuitarButton.Location = New System.Drawing.Point(1067, 63)
+        Me.QuitarButton.Name = "QuitarButton"
+        Me.QuitarButton.Size = New System.Drawing.Size(118, 50)
+        Me.QuitarButton.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.QuitarButton.TabIndex = 105
+        Me.QuitarButton.Text = "ButtonX1"
+        '
+        'ImprimirButton
+        '
+        Me.ImprimirButton.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.ImprimirButton.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
+        Me.ImprimirButton.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.ImprimirButton.Image = Global.GUI.My.Resources.Resources.Imprimir1
+        Me.ImprimirButton.Location = New System.Drawing.Point(1067, 136)
+        Me.ImprimirButton.Name = "ImprimirButton"
+        Me.ImprimirButton.Size = New System.Drawing.Size(118, 45)
+        Me.ImprimirButton.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.ImprimirButton.TabIndex = 106
+        Me.ImprimirButton.Text = "ButtonX1"
+        '
+        'FinalizarButton
+        '
+        Me.FinalizarButton.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.FinalizarButton.BackColor = System.Drawing.Color.OrangeRed
+        Me.FinalizarButton.ColorTable = DevComponents.DotNetBar.eButtonColor.Magenta
+        Me.FinalizarButton.FocusCuesEnabled = False
+        Me.FinalizarButton.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.FinalizarButton.Image = CType(resources.GetObject("FinalizarButton.Image"), System.Drawing.Image)
+        Me.FinalizarButton.Location = New System.Drawing.Point(1067, 291)
+        Me.FinalizarButton.Name = "FinalizarButton"
+        Me.FinalizarButton.Size = New System.Drawing.Size(171, 72)
+        Me.FinalizarButton.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.FinalizarButton.TabIndex = 107
+        Me.FinalizarButton.Text = "ButtonX2"
+        Me.FinalizarButton.TextColor = System.Drawing.Color.White
         '
         'PresupuestoDetalleForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1348, 733)
-        Me.Controls.Add(Me.CodigoPresupuestoTextbox)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.ImprimirButton)
         Me.Controls.Add(Me.FinalizarButton)
+        Me.Controls.Add(Me.ImprimirButton)
         Me.Controls.Add(Me.QuitarButton)
+        Me.Controls.Add(Me.ModificarButton)
+        Me.Controls.Add(Me.CodigoPresupuestoTextbox)
+        Me.Controls.Add(Me.CodigoPresupuestoLabel)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.TextBoxBuscarArticulo)
         Me.Controls.Add(Me.ArticuloGridView1)
-        Me.Controls.Add(Me.ModificarButton)
         Me.Controls.Add(Me.TotalLabel)
         Me.Controls.Add(Me.label)
         Me.Controls.Add(Me.FechaTextBox)
@@ -307,15 +327,15 @@ Partial Class PresupuestoDetalleForm
     Friend WithEvents FechaTextBox As System.Windows.Forms.TextBox
     Friend WithEvents label As System.Windows.Forms.Label
     Friend WithEvents TotalLabel As System.Windows.Forms.Label
-    Friend WithEvents ModificarButton As System.Windows.Forms.Button
     Friend WithEvents ArticuloGridView1 As System.Windows.Forms.DataGridView
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents RadioButtonDescripcion As System.Windows.Forms.RadioButton
     Friend WithEvents RadioButtonCodigo As System.Windows.Forms.RadioButton
     Friend WithEvents TextBoxBuscarArticulo As System.Windows.Forms.TextBox
-    Friend WithEvents ImprimirButton As System.Windows.Forms.Button
-    Friend WithEvents FinalizarButton As System.Windows.Forms.Button
-    Friend WithEvents QuitarButton As System.Windows.Forms.Button
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents CodigoPresupuestoTextbox As System.Windows.Forms.TextBox
+    Friend WithEvents CodigoPresupuestoLabel As System.Windows.Forms.Label
+    Friend WithEvents CodigoPresupuestoTextbox As Label
+    Friend WithEvents ModificarButton As DevComponents.DotNetBar.ButtonX
+    Friend WithEvents QuitarButton As DevComponents.DotNetBar.ButtonX
+    Friend WithEvents ImprimirButton As DevComponents.DotNetBar.ButtonX
+    Friend WithEvents FinalizarButton As DevComponents.DotNetBar.ButtonX
 End Class

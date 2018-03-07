@@ -169,147 +169,13 @@ Public Class NuevoPresupuestoForm
 
     End Sub
 
-    Private Sub QuitarButton_Click(sender As Object, e As EventArgs) Handles QuitarButton.Click
-
-        Try
-            Dim _ListaDetalles As New List(Of PresupuestoDetalle)
-            Dim _GestorPresupuesto As New GestorPresupuesto
-
-            Dim _CantidadFilas As Integer
+    Private Sub QuitarButton_Click(sender As Object, e As EventArgs)
 
 
-            If PresupuestoGridView1.CurrentRow IsNot Nothing Then
-
-                ' saco del presupuesto el articulo
-                PresupuestoGridView1.Rows.RemoveAt(PresupuestoGridView1.CurrentRow.Index)
-                _CantidadFilas = PresupuestoGridView1.RowCount
-
-
-
-
-                For i = 0 To _CantidadFilas - 1
-
-                    Dim _PresupuestoDetalle As New PresupuestoDetalle
-
-                    _PresupuestoDetalle.Importe = PresupuestoGridView1.Rows(i).Cells("Importe").Value
-
-                    _ListaDetalles.Add(_PresupuestoDetalle)
-
-                Next
-
-
-
-
-                TotalLabel.Text = _GestorPresupuesto.CalcularTotal(_ListaDetalles)
-
-            End If
-
-
-
-
-            Me.Show()
-            TextBoxBuscarArticulo.Focus()
-
-        Catch ex As Exception
-
-            Dim el As New ErrorLogger
-            MsgBox(ex.Message, MsgBoxStyle.Critical, "ERROR")
-            el.WriteToErrorLog(ex.Message, ex.StackTrace, "Error")
-
-
-        End Try
 
     End Sub
 
-    Private Sub FinalizarButton_Click(sender As Object, e As EventArgs) Handles FinalizarButton.Click
-        Dim _GestorPresupuesto As New GestorPresupuesto
-        '  Dim _PresupuestoDAO As New PresupuestoDAO
-        Dim _PresupuestoCabecera As New PresupuestoCabecera
-        Dim _ListaDetalles As New List(Of PresupuestoDetalle)
-
-
-        If MsgBox("¿Seguro desea finalizar el presupuesto?", MsgBoxStyle.YesNo + MsgBoxStyle.Question, "ATENCIÓN") = MsgBoxResult.Yes Then
-
-            Try
-                Try
-
-                    '_PresupuestoCabecera.Cod_Presupuesto = _PresupuestoDAO.ObtenerCodUltimoPresupuesto + 1
-                    _PresupuestoCabecera.Cod_Cliente = Convert.ToInt32(CodigoClienteLabel.Text)
-                    _PresupuestoCabecera.FechaInicio = Convert.ToDateTime(LabelFecha.Text)
-                    _PresupuestoCabecera.FechaFin = DateAdd(DateInterval.Day, 15, Convert.ToDateTime(LabelFecha.Text))
-                    _PresupuestoCabecera.Total = Convert.ToDecimal(TotalLabel.Text)
-
-                Catch ex As Exception
-
-                    Select Case Principal.CulturaGlobal
-                        Case "ESPAÑOL"
-                            Throw New Exception("Debe seleccionar un cliente")
-                        Case "ENGLISH"
-                            Throw New Exception("You must choose a customer")
-                    End Select
-
-                End Try
-
-
-
-
-                For i = 0 To PresupuestoGridView1.RowCount - 1
-
-                    Dim _PresupuestoDetalle As New PresupuestoDetalle
-
-                    '_PresupuestoDetalle.Cod_Presupuesto = _PresupuestoCabecera.Cod_Presupuesto
-                    _PresupuestoDetalle.Cantidad = PresupuestoGridView1.Rows(i).Cells("Cantidad").Value
-                    _PresupuestoDetalle.Cod_Articulo = PresupuestoGridView1.Rows(i).Cells("Codigo").Value
-                    _PresupuestoDetalle.Precio = PresupuestoGridView1.Rows(i).Cells("Precio").Value
-                    _PresupuestoDetalle.Importe = PresupuestoGridView1.Rows(i).Cells("Importe").Value
-
-                    _ListaDetalles.Add(_PresupuestoDetalle)
-
-                Next
-
-
-                _GestorPresupuesto.GenerarPresupuesto(_PresupuestoCabecera, _ListaDetalles)
-
-
-                Dim el As New EventLogger
-
-
-                el.WriteToErrorLog("Se guardo correctamente el presupuesto ", "Nuevo Presupuesto Form", "Información")
-
-                Dim Mensaje = MsgBox("Se guardo correctamente el presupuesto", MsgBoxStyle.Information, "INFORMACION")
-
-
-
-
-                PresupuestoGridView1.Rows.Clear()
-
-                TotalLabel.Text = 0
-
-                TextBoxBuscarArticulo.Text = ""
-                Me.Show()
-                TextBoxBuscarArticulo.Focus()
-
-                CodigoClienteLabel.Text = ""
-
-                TotalLabel.Text = ""
-                CuitLabel.Text = ""
-                RazonSocialLabel.Text = ""
-
-
-            Catch ex As Exception
-
-                Dim el As New ErrorLogger
-                MsgBox(ex.Message, MsgBoxStyle.Critical, "ERROR")
-                el.WriteToErrorLog(ex.Message, ex.StackTrace, "Error")
-
-            End Try
-
-
-
-        Else
-
-        End If
-
+    Private Sub FinalizarButton_Click(sender As Object, e As EventArgs)
 
 
 
@@ -390,6 +256,7 @@ Public Class NuevoPresupuestoForm
                     PresupuestoCabecera.FechaInicio = CDate(LabelFecha.Text)
                     PresupuestoCabecera.Total = CDec(TotalLabel.Text)
                     PresupuestoCabecera.Cod_Cliente = (CodigoClienteLabel.Text).ToUpper
+                    PresupuestoCabecera.RazonSocial = (RazonSocialLabel.Text).ToUpper
                 Catch ex As Exception
                     Select Case Principal.CulturaGlobal
                         Case "ESPAÑOL"
@@ -616,5 +483,147 @@ Public Class NuevoPresupuestoForm
             End If
 
         Next
+    End Sub
+
+    Private Sub ButtonX2_Click(sender As Object, e As EventArgs) Handles FinalizarButton.Click
+        Dim _GestorPresupuesto As New GestorPresupuesto
+        '  Dim _PresupuestoDAO As New PresupuestoDAO
+        Dim _PresupuestoCabecera As New PresupuestoCabecera
+        Dim _ListaDetalles As New List(Of PresupuestoDetalle)
+
+
+        If MsgBox("¿Seguro desea finalizar el presupuesto?", MsgBoxStyle.YesNo + MsgBoxStyle.Question, "ATENCIÓN") = MsgBoxResult.Yes Then
+
+            Try
+                Try
+
+                    '_PresupuestoCabecera.Cod_Presupuesto = _PresupuestoDAO.ObtenerCodUltimoPresupuesto + 1
+                    _PresupuestoCabecera.Cod_Cliente = Convert.ToInt32(CodigoClienteLabel.Text)
+                    _PresupuestoCabecera.FechaInicio = Convert.ToDateTime(LabelFecha.Text)
+                    _PresupuestoCabecera.FechaFin = DateAdd(DateInterval.Day, 15, Convert.ToDateTime(LabelFecha.Text))
+                    _PresupuestoCabecera.Total = Convert.ToDecimal(TotalLabel.Text)
+
+                Catch ex As Exception
+
+                    Select Case Principal.CulturaGlobal
+                        Case "ESPAÑOL"
+                            Throw New Exception("Debe seleccionar un cliente")
+                        Case "ENGLISH"
+                            Throw New Exception("You must choose a customer")
+                    End Select
+
+                End Try
+
+
+
+
+                For i = 0 To PresupuestoGridView1.RowCount - 1
+
+                    Dim _PresupuestoDetalle As New PresupuestoDetalle
+
+                    '_PresupuestoDetalle.Cod_Presupuesto = _PresupuestoCabecera.Cod_Presupuesto
+                    _PresupuestoDetalle.Cantidad = PresupuestoGridView1.Rows(i).Cells("Cantidad").Value
+                    _PresupuestoDetalle.Cod_Articulo = PresupuestoGridView1.Rows(i).Cells("Codigo").Value
+                    _PresupuestoDetalle.Precio = PresupuestoGridView1.Rows(i).Cells("Precio").Value
+                    _PresupuestoDetalle.Importe = PresupuestoGridView1.Rows(i).Cells("Importe").Value
+
+                    _ListaDetalles.Add(_PresupuestoDetalle)
+
+                Next
+
+
+                _GestorPresupuesto.GenerarPresupuesto(_PresupuestoCabecera, _ListaDetalles)
+
+
+                Dim el As New EventLogger
+
+
+                el.WriteToErrorLog("Se guardo correctamente el presupuesto ", "Nuevo Presupuesto Form", "Información")
+
+                Dim Mensaje = MsgBox("Se guardo correctamente el presupuesto", MsgBoxStyle.Information, "INFORMACION")
+
+
+
+
+                PresupuestoGridView1.Rows.Clear()
+
+                TotalLabel.Text = 0
+
+                TextBoxBuscarArticulo.Text = ""
+                Me.Show()
+                TextBoxBuscarArticulo.Focus()
+
+                CodigoClienteLabel.Text = ""
+
+                TotalLabel.Text = ""
+                CuitLabel.Text = ""
+                RazonSocialLabel.Text = ""
+
+
+            Catch ex As Exception
+
+                Dim el As New ErrorLogger
+                MsgBox(ex.Message, MsgBoxStyle.Critical, "ERROR")
+                el.WriteToErrorLog(ex.Message, ex.StackTrace, "Error")
+
+            End Try
+
+
+
+        Else
+
+        End If
+
+
+    End Sub
+
+    Private Sub ButtonX1_Click_1(sender As Object, e As EventArgs) Handles QuitarButton.Click
+        Try
+            Dim _ListaDetalles As New List(Of PresupuestoDetalle)
+            Dim _GestorPresupuesto As New GestorPresupuesto
+
+            Dim _CantidadFilas As Integer
+
+
+            If PresupuestoGridView1.CurrentRow IsNot Nothing Then
+
+                ' saco del presupuesto el articulo
+                PresupuestoGridView1.Rows.RemoveAt(PresupuestoGridView1.CurrentRow.Index)
+                _CantidadFilas = PresupuestoGridView1.RowCount
+
+
+
+
+                For i = 0 To _CantidadFilas - 1
+
+                    Dim _PresupuestoDetalle As New PresupuestoDetalle
+
+                    _PresupuestoDetalle.Importe = PresupuestoGridView1.Rows(i).Cells("Importe").Value
+
+                    _ListaDetalles.Add(_PresupuestoDetalle)
+
+                Next
+
+
+
+
+                TotalLabel.Text = _GestorPresupuesto.CalcularTotal(_ListaDetalles)
+
+            End If
+
+
+
+
+            Me.Show()
+            TextBoxBuscarArticulo.Focus()
+
+        Catch ex As Exception
+
+            Dim el As New ErrorLogger
+            MsgBox(ex.Message, MsgBoxStyle.Critical, "ERROR")
+            el.WriteToErrorLog(ex.Message, ex.StackTrace, "Error")
+
+
+        End Try
     End Sub
 End Class

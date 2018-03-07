@@ -186,8 +186,8 @@ Public Class GestorPresupuesto
 
 
             'Cliente
-
-            cb.ShowTextAligned(PdfContentByte.ALIGN_LEFT, "Cliente:  " & PresupuestoCabecera.Cod_Cliente, 20, 720, 0)
+            cb.ShowTextAligned(PdfContentByte.ALIGN_LEFT, "Codigo:  " & PresupuestoCabecera.Cod_Cliente, 20, 720, 0)
+            cb.ShowTextAligned(PdfContentByte.ALIGN_LEFT, "Cliente:  " & PresupuestoCabecera.RazonSocial, 120, 720, 0)
 
             'Derecha
             cb.SetFontAndSize(fuente, 11)

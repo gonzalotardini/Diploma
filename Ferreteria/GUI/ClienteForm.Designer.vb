@@ -24,7 +24,6 @@ Partial Class ClienteForm
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ClienteForm))
         Me.ClienteGridView = New System.Windows.Forms.DataGridView()
-        Me.AgregarClienteButton = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.RazonSocialTextBox = New System.Windows.Forms.TextBox()
         Me.CuitTextBox = New System.Windows.Forms.TextBox()
@@ -41,11 +40,12 @@ Partial Class ClienteForm
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.RazonSocialRadioButton = New System.Windows.Forms.RadioButton()
         Me.CuitRadioButton = New System.Windows.Forms.RadioButton()
-        Me.AceptarButton = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.ModificarButton = New System.Windows.Forms.Button()
         Me.LabelCodigoCliente = New System.Windows.Forms.Label()
+        Me.AgregarClienteButton = New DevComponents.DotNetBar.ButtonX()
+        Me.AceptarButton = New DevComponents.DotNetBar.ButtonX()
+        Me.ButtonX1 = New DevComponents.DotNetBar.ButtonX()
         CType(Me.ClienteGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -53,21 +53,14 @@ Partial Class ClienteForm
         '
         'ClienteGridView
         '
+        Me.ClienteGridView.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight
         Me.ClienteGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.ClienteGridView.GridColor = System.Drawing.SystemColors.ButtonHighlight
         Me.ClienteGridView.Location = New System.Drawing.Point(297, 126)
         Me.ClienteGridView.Name = "ClienteGridView"
         Me.ClienteGridView.ReadOnly = True
         Me.ClienteGridView.Size = New System.Drawing.Size(915, 413)
         Me.ClienteGridView.TabIndex = 0
-        '
-        'AgregarClienteButton
-        '
-        Me.AgregarClienteButton.Location = New System.Drawing.Point(55, 450)
-        Me.AgregarClienteButton.Name = "AgregarClienteButton"
-        Me.AgregarClienteButton.Size = New System.Drawing.Size(75, 61)
-        Me.AgregarClienteButton.TabIndex = 1
-        Me.AgregarClienteButton.Text = "AGREGAR"
-        Me.AgregarClienteButton.UseVisualStyleBackColor = True
         '
         'Label1
         '
@@ -213,15 +206,6 @@ Partial Class ClienteForm
         Me.CuitRadioButton.Text = "CUIT"
         Me.CuitRadioButton.UseVisualStyleBackColor = True
         '
-        'AceptarButton
-        '
-        Me.AceptarButton.Location = New System.Drawing.Point(172, 450)
-        Me.AceptarButton.Name = "AceptarButton"
-        Me.AceptarButton.Size = New System.Drawing.Size(75, 61)
-        Me.AceptarButton.TabIndex = 17
-        Me.AceptarButton.Text = "ACEPTAR"
-        Me.AceptarButton.UseVisualStyleBackColor = True
-        '
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
@@ -242,15 +226,6 @@ Partial Class ClienteForm
         Me.Label7.TabIndex = 20
         Me.Label7.Text = "CLIENTES"
         '
-        'ModificarButton
-        '
-        Me.ModificarButton.Image = CType(resources.GetObject("ModificarButton.Image"), System.Drawing.Image)
-        Me.ModificarButton.Location = New System.Drawing.Point(297, 545)
-        Me.ModificarButton.Name = "ModificarButton"
-        Me.ModificarButton.Size = New System.Drawing.Size(166, 44)
-        Me.ModificarButton.TabIndex = 21
-        Me.ModificarButton.UseVisualStyleBackColor = True
-        '
         'LabelCodigoCliente
         '
         Me.LabelCodigoCliente.AutoSize = True
@@ -259,16 +234,62 @@ Partial Class ClienteForm
         Me.LabelCodigoCliente.Size = New System.Drawing.Size(0, 13)
         Me.LabelCodigoCliente.TabIndex = 22
         '
+        'AgregarClienteButton
+        '
+        Me.AgregarClienteButton.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.AgregarClienteButton.BackColor = System.Drawing.Color.Green
+        Me.AgregarClienteButton.ColorTable = DevComponents.DotNetBar.eButtonColor.Magenta
+        Me.AgregarClienteButton.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AgregarClienteButton.Image = CType(resources.GetObject("AgregarClienteButton.Image"), System.Drawing.Image)
+        Me.AgregarClienteButton.Location = New System.Drawing.Point(19, 442)
+        Me.AgregarClienteButton.Name = "AgregarClienteButton"
+        Me.AgregarClienteButton.Size = New System.Drawing.Size(121, 68)
+        Me.AgregarClienteButton.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.AgregarClienteButton.TabIndex = 24
+        Me.AgregarClienteButton.Text = "AGREGAR"
+        Me.AgregarClienteButton.TextColor = System.Drawing.Color.White
+        '
+        'AceptarButton
+        '
+        Me.AceptarButton.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.AceptarButton.BackColor = System.Drawing.Color.DodgerBlue
+        Me.AceptarButton.ColorTable = DevComponents.DotNetBar.eButtonColor.Magenta
+        Me.AceptarButton.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AceptarButton.Image = CType(resources.GetObject("AceptarButton.Image"), System.Drawing.Image)
+        Me.AceptarButton.Location = New System.Drawing.Point(157, 442)
+        Me.AceptarButton.Name = "AceptarButton"
+        Me.AceptarButton.Size = New System.Drawing.Size(122, 68)
+        Me.AceptarButton.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.AceptarButton.TabIndex = 25
+        Me.AceptarButton.Text = "ACEPTAR"
+        Me.AceptarButton.TextColor = System.Drawing.Color.White
+        '
+        'ButtonX1
+        '
+        Me.ButtonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.ButtonX1.BackColor = System.Drawing.Color.OrangeRed
+        Me.ButtonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.Magenta
+        Me.ButtonX1.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonX1.Image = CType(resources.GetObject("ButtonX1.Image"), System.Drawing.Image)
+        Me.ButtonX1.Location = New System.Drawing.Point(297, 555)
+        Me.ButtonX1.Name = "ButtonX1"
+        Me.ButtonX1.Size = New System.Drawing.Size(146, 52)
+        Me.ButtonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.ButtonX1.TabIndex = 23
+        Me.ButtonX1.Text = "MODIFICAR"
+        Me.ButtonX1.TextColor = System.Drawing.Color.White
+        '
         'ClienteForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1348, 733)
+        Me.Controls.Add(Me.AceptarButton)
+        Me.Controls.Add(Me.AgregarClienteButton)
+        Me.Controls.Add(Me.ButtonX1)
         Me.Controls.Add(Me.LabelCodigoCliente)
-        Me.Controls.Add(Me.ModificarButton)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.AceptarButton)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.BuscarTextBox)
         Me.Controls.Add(Me.BarrioComboBox)
@@ -283,7 +304,6 @@ Partial Class ClienteForm
         Me.Controls.Add(Me.CuitTextBox)
         Me.Controls.Add(Me.RazonSocialTextBox)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.AgregarClienteButton)
         Me.Controls.Add(Me.ClienteGridView)
         Me.DoubleBuffered = True
         Me.Name = "ClienteForm"
@@ -298,7 +318,6 @@ Partial Class ClienteForm
     End Sub
 
     Friend WithEvents ClienteGridView As DataGridView
-    Friend WithEvents AgregarClienteButton As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents RazonSocialTextBox As TextBox
     Friend WithEvents CuitTextBox As TextBox
@@ -315,9 +334,10 @@ Partial Class ClienteForm
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents RazonSocialRadioButton As System.Windows.Forms.RadioButton
     Friend WithEvents CuitRadioButton As System.Windows.Forms.RadioButton
-    Friend WithEvents AceptarButton As System.Windows.Forms.Button
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Label7 As System.Windows.Forms.Label
-    Friend WithEvents ModificarButton As System.Windows.Forms.Button
     Friend WithEvents LabelCodigoCliente As System.Windows.Forms.Label
+    Friend WithEvents AgregarClienteButton As DevComponents.DotNetBar.ButtonX
+    Friend WithEvents AceptarButton As DevComponents.DotNetBar.ButtonX
+    Friend WithEvents ButtonX1 As DevComponents.DotNetBar.ButtonX
 End Class

@@ -9,6 +9,42 @@ Public Class PresupuestosForm
     
     Private Sub PresupuestosForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.Icon = My.Resources.ico
+
+
+        Dim ListaPalabras As New List(Of SL.PalabrasIdioma)
+
+        Dim Multiidioma As New SL.Multiidioma
+
+        If Principal.CulturaGlobal = "ESPAÑOL" Then
+            ListaPalabras = Multiidioma.ObtenerPalabras("ES-ESP")
+
+
+            Dim Cultura = "ES-ESP"
+            'LINQ para el multiidioma
+
+            CodigoClienteRadioButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "CODIGOCLIENTE" Select V.Value).FirstOrDefault
+            RazonSocialRadioButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "RAZONSOCIAL" Select V.Value).FirstOrDefault
+            VerButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "DETALLE" Select V.Value).FirstOrDefault
+            CancelarButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "ELIMINAR" Select V.Value).FirstOrDefault
+            PresupuestoLabel.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "PRESUPUESTOS" Select V.Value).FirstOrDefault
+        End If
+
+
+        If Principal.CulturaGlobal = "ENGLISH" Then
+
+
+            Dim Cultura = "ENG-ENGLAND"
+            ListaPalabras = Multiidioma.ObtenerPalabras(Cultura)
+            CodigoClienteRadioButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "CODIGOCLIENTE" Select V.Value).FirstOrDefault
+            RazonSocialRadioButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "RAZONSOCIAL" Select V.Value).FirstOrDefault
+            VerButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "DETALLE" Select V.Value).FirstOrDefault
+            CancelarButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "ELIMINAR" Select V.Value).FirstOrDefault
+            PresupuestoLabel.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "PRESUPUESTOS" Select V.Value).FirstOrDefault
+
+        End If
+
+
+
         Dim _PresupuestoDAO As New PresupuestoDAO
 
         Me.WindowState = FormWindowState.Maximized 'Maximizar Ventana al Abrir
@@ -154,15 +190,15 @@ Public Class PresupuestosForm
 
     End Sub
 
-    Private Sub PresupuestosDataGridView_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles PresupuestosDataGridView.CellContentClick
+    Private Sub PresupuestosDataGridView_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
 
     End Sub
 
-    Private Sub PresupuestosDataGridView_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles PresupuestosDataGridView.CellClick
+    Private Sub PresupuestosDataGridView_CellClick(sender As Object, e As DataGridViewCellEventArgs)
 
     End Sub
 
-    Private Sub PresupuestosDataGridView_ColumnHeaderMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles PresupuestosDataGridView.ColumnHeaderMouseClick
+    Private Sub PresupuestosDataGridView_ColumnHeaderMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs)
         For Each row As DataGridViewRow In PresupuestosDataGridView.Rows
 
             If row.Index Mod 2 <> 0 Then
@@ -175,7 +211,7 @@ Public Class PresupuestosForm
         Next
     End Sub
 
-    Private Sub ButtonX2_Click(sender As Object, e As EventArgs) Handles ButtonX2.Click
+    Private Sub ButtonX2_Click(sender As Object, e As EventArgs) Handles VerButton.Click
         If PresupuestosDataGridView.CurrentRow IsNot Nothing Then
 
             _CodigoPresupuesto = (PresupuestosDataGridView.CurrentRow.Cells(0).Value)
@@ -189,7 +225,7 @@ Public Class PresupuestosForm
 
     End Sub
 
-    Private Sub ButtonX1_Click(sender As Object, e As EventArgs) Handles ButtonX1.Click
+    Private Sub ButtonX1_Click(sender As Object, e As EventArgs) Handles CancelarButton.Click
         Try
 
             Dim pregunta As String = ""
@@ -211,6 +247,8 @@ Public Class PresupuestosForm
                 Dim presupuestoBll = New GestorPresupuesto
                 Dim cod As Long = PresupuestosDataGridView.CurrentRow.Cells(0).Value
                 presupuestoBll.EliminarPresupuestoBll(cod)
+                MsgBox(msg, MsgBoxStyle.Information, "ATENTION")
+
             End If
 
             PresupuestosDataGridView.AllowUserToAddRows = False
@@ -218,7 +256,16 @@ Public Class PresupuestosForm
 
             PresupuestosDataGridView.DataSource = presupuestoDAO.ObtenerPresupuestos
 
-            MsgBox(msg, MsgBoxStyle.Information, "ATENTION")
+            For Each row As DataGridViewRow In PresupuestosDataGridView.Rows
+
+                If row.Index Mod 2 <> 0 Then
+                    row.DefaultCellStyle.BackColor = Color.Bisque
+                Else
+                    row.DefaultCellStyle.BackColor = Color.Aqua
+
+                End If
+
+            Next
 
         Catch ex As Exception
             Dim el As New ErrorLogger

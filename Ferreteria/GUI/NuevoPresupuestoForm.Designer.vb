@@ -22,6 +22,7 @@ Partial Class NuevoPresupuestoForm
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(NuevoPresupuestoForm))
         Me.PresupuestoGridView1 = New System.Windows.Forms.DataGridView()
         Me.Cantidad = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Codigo = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -38,7 +39,6 @@ Partial Class NuevoPresupuestoForm
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.QuitarTodoButton = New System.Windows.Forms.Button()
-        Me.FinalizarButton = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TotalLabel = New System.Windows.Forms.Label()
         Me.LabelFecha = New System.Windows.Forms.Label()
@@ -47,10 +47,11 @@ Partial Class NuevoPresupuestoForm
         Me.CodigoClienteLabel = New System.Windows.Forms.Label()
         Me.RazonSocialLabel = New System.Windows.Forms.Label()
         Me.ImprimirButton = New System.Windows.Forms.Button()
-        Me.QuitarButton = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.CuitLabel = New System.Windows.Forms.Label()
         Me.BuscarButton = New DevComponents.DotNetBar.ButtonX()
+        Me.QuitarButton = New DevComponents.DotNetBar.ButtonX()
+        Me.FinalizarButton = New DevComponents.DotNetBar.ButtonX()
         CType(Me.PresupuestoGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ArticuloGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -59,6 +60,7 @@ Partial Class NuevoPresupuestoForm
         'PresupuestoGridView1
         '
         Me.PresupuestoGridView1.AllowUserToAddRows = False
+        Me.PresupuestoGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight
         Me.PresupuestoGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.PresupuestoGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Cantidad, Me.Codigo, Me.CodigoBarras, Me.Descripcion, Me.Marca, Me.UnidadMedida, Me.Precio, Me.Importe})
         Me.PresupuestoGridView1.Location = New System.Drawing.Point(26, 61)
@@ -108,6 +110,7 @@ Partial Class NuevoPresupuestoForm
         '
         'ArticuloGridView1
         '
+        Me.ArticuloGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight
         Me.ArticuloGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.ArticuloGridView1.Location = New System.Drawing.Point(26, 437)
         Me.ArticuloGridView1.Name = "ArticuloGridView1"
@@ -172,15 +175,6 @@ Partial Class NuevoPresupuestoForm
         Me.QuitarTodoButton.TabIndex = 10
         Me.QuitarTodoButton.Text = "QUITAR TODO"
         Me.QuitarTodoButton.UseVisualStyleBackColor = True
-        '
-        'FinalizarButton
-        '
-        Me.FinalizarButton.Location = New System.Drawing.Point(1081, 269)
-        Me.FinalizarButton.Name = "FinalizarButton"
-        Me.FinalizarButton.Size = New System.Drawing.Size(149, 72)
-        Me.FinalizarButton.TabIndex = 11
-        Me.FinalizarButton.Text = "FINALIZAR"
-        Me.FinalizarButton.UseVisualStyleBackColor = True
         '
         'Label3
         '
@@ -259,19 +253,6 @@ Partial Class NuevoPresupuestoForm
         Me.ImprimirButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.ImprimirButton.UseVisualStyleBackColor = True
         '
-        'QuitarButton
-        '
-        Me.QuitarButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.QuitarButton.Image = Global.GUI.My.Resources.Resources.quitar
-        Me.QuitarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.QuitarButton.Location = New System.Drawing.Point(1081, 61)
-        Me.QuitarButton.Name = "QuitarButton"
-        Me.QuitarButton.Size = New System.Drawing.Size(107, 46)
-        Me.QuitarButton.TabIndex = 9
-        Me.QuitarButton.Text = "QUITAR"
-        Me.QuitarButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.QuitarButton.UseVisualStyleBackColor = True
-        '
         'Label5
         '
         Me.Label5.AutoSize = True
@@ -296,19 +277,51 @@ Partial Class NuevoPresupuestoForm
         Me.BuscarButton.BackColor = System.Drawing.Color.OrangeRed
         Me.BuscarButton.ColorTable = DevComponents.DotNetBar.eButtonColor.Magenta
         Me.BuscarButton.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BuscarButton.Image = CType(resources.GetObject("BuscarButton.Image"), System.Drawing.Image)
         Me.BuscarButton.Location = New System.Drawing.Point(26, 9)
         Me.BuscarButton.Name = "BuscarButton"
-        Me.BuscarButton.Size = New System.Drawing.Size(92, 43)
+        Me.BuscarButton.Size = New System.Drawing.Size(107, 43)
         Me.BuscarButton.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.BuscarButton.TabIndex = 24
         Me.BuscarButton.Text = "BUSCAR"
         Me.BuscarButton.TextColor = System.Drawing.Color.White
+        '
+        'QuitarButton
+        '
+        Me.QuitarButton.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.QuitarButton.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
+        Me.QuitarButton.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.QuitarButton.Image = Global.GUI.My.Resources.Resources.quitar1
+        Me.QuitarButton.Location = New System.Drawing.Point(1081, 61)
+        Me.QuitarButton.Name = "QuitarButton"
+        Me.QuitarButton.Size = New System.Drawing.Size(130, 50)
+        Me.QuitarButton.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.QuitarButton.TabIndex = 46
+        Me.QuitarButton.Text = "ButtonX1"
+        '
+        'FinalizarButton
+        '
+        Me.FinalizarButton.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.FinalizarButton.BackColor = System.Drawing.Color.OrangeRed
+        Me.FinalizarButton.ColorTable = DevComponents.DotNetBar.eButtonColor.Magenta
+        Me.FinalizarButton.FocusCuesEnabled = False
+        Me.FinalizarButton.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.FinalizarButton.Image = CType(resources.GetObject("FinalizarButton.Image"), System.Drawing.Image)
+        Me.FinalizarButton.Location = New System.Drawing.Point(1081, 298)
+        Me.FinalizarButton.Name = "FinalizarButton"
+        Me.FinalizarButton.Size = New System.Drawing.Size(171, 72)
+        Me.FinalizarButton.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.FinalizarButton.TabIndex = 45
+        Me.FinalizarButton.Text = "ButtonX2"
+        Me.FinalizarButton.TextColor = System.Drawing.Color.White
         '
         'NuevoPresupuestoForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1362, 741)
+        Me.Controls.Add(Me.QuitarButton)
+        Me.Controls.Add(Me.FinalizarButton)
         Me.Controls.Add(Me.BuscarButton)
         Me.Controls.Add(Me.CuitLabel)
         Me.Controls.Add(Me.Label5)
@@ -320,9 +333,7 @@ Partial Class NuevoPresupuestoForm
         Me.Controls.Add(Me.ImprimirButton)
         Me.Controls.Add(Me.TotalLabel)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.FinalizarButton)
         Me.Controls.Add(Me.QuitarTodoButton)
-        Me.Controls.Add(Me.QuitarButton)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.TextBoxBuscarArticulo)
@@ -346,9 +357,7 @@ Partial Class NuevoPresupuestoForm
     Friend WithEvents RadioButtonDescripcion As RadioButton
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents QuitarButton As Button
     Friend WithEvents QuitarTodoButton As Button
-    Friend WithEvents FinalizarButton As Button
     Friend WithEvents Cantidad As DataGridViewTextBoxColumn
     Friend WithEvents Codigo As DataGridViewTextBoxColumn
     Friend WithEvents CodigoBarras As DataGridViewTextBoxColumn
@@ -368,4 +377,6 @@ Partial Class NuevoPresupuestoForm
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents CuitLabel As System.Windows.Forms.Label
     Friend WithEvents BuscarButton As DevComponents.DotNetBar.ButtonX
+    Friend WithEvents QuitarButton As DevComponents.DotNetBar.ButtonX
+    Friend WithEvents FinalizarButton As DevComponents.DotNetBar.ButtonX
 End Class

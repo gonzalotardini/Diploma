@@ -29,7 +29,6 @@ Partial Class ArticulosForm
         Me.RadioButtonCODIGO = New System.Windows.Forms.RadioButton()
         Me.BUSCAR = New System.Windows.Forms.Label()
         Me.TextBoxBuscar = New System.Windows.Forms.TextBox()
-        Me.MODIFICAR = New System.Windows.Forms.Button()
         Me.TextBoxCodProveedor = New System.Windows.Forms.TextBox()
         Me.ARTICULOSlbl = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
@@ -50,9 +49,10 @@ Partial Class ArticulosForm
         Me.TextBoxDescripcion = New System.Windows.Forms.TextBox()
         Me.EliminarButton = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.CODBARRAS = New System.Windows.Forms.Label()
         Me.DataGridView2 = New System.Windows.Forms.DataGridView()
+        Me.MODIFICAR = New DevComponents.DotNetBar.ButtonX()
+        Me.AgregarClienteButton = New DevComponents.DotNetBar.ButtonX()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -126,17 +126,6 @@ Partial Class ArticulosForm
         Me.TextBoxBuscar.Name = "TextBoxBuscar"
         Me.TextBoxBuscar.Size = New System.Drawing.Size(277, 22)
         Me.TextBoxBuscar.TabIndex = 67
-        '
-        'MODIFICAR
-        '
-        Me.MODIFICAR.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MODIFICAR.Location = New System.Drawing.Point(243, 554)
-        Me.MODIFICAR.Margin = New System.Windows.Forms.Padding(4)
-        Me.MODIFICAR.Name = "MODIFICAR"
-        Me.MODIFICAR.Size = New System.Drawing.Size(177, 51)
-        Me.MODIFICAR.TabIndex = 91
-        Me.MODIFICAR.Text = "MODIFICAR"
-        Me.MODIFICAR.UseVisualStyleBackColor = True
         '
         'TextBoxCodProveedor
         '
@@ -358,18 +347,6 @@ Partial Class ArticulosForm
         Me.PictureBox1.TabIndex = 96
         Me.PictureBox1.TabStop = False
         '
-        'Button1
-        '
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Image = Global.GUI.My.Resources.Resources.aceptar1
-        Me.Button1.Location = New System.Drawing.Point(11, 534)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(209, 171)
-        Me.Button1.TabIndex = 88
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'CODBARRAS
         '
         Me.CODBARRAS.AutoSize = True
@@ -385,17 +362,51 @@ Partial Class ArticulosForm
         '
         'DataGridView2
         '
+        Me.DataGridView2.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight
         Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView2.GridColor = System.Drawing.SystemColors.ButtonHighlight
         Me.DataGridView2.Location = New System.Drawing.Point(243, 110)
         Me.DataGridView2.Name = "DataGridView2"
         Me.DataGridView2.Size = New System.Drawing.Size(986, 414)
         Me.DataGridView2.TabIndex = 102
         '
+        'MODIFICAR
+        '
+        Me.MODIFICAR.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.MODIFICAR.BackColor = System.Drawing.Color.OrangeRed
+        Me.MODIFICAR.ColorTable = DevComponents.DotNetBar.eButtonColor.Magenta
+        Me.MODIFICAR.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MODIFICAR.Image = CType(resources.GetObject("MODIFICAR.Image"), System.Drawing.Image)
+        Me.MODIFICAR.Location = New System.Drawing.Point(243, 545)
+        Me.MODIFICAR.Name = "MODIFICAR"
+        Me.MODIFICAR.Size = New System.Drawing.Size(146, 52)
+        Me.MODIFICAR.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.MODIFICAR.TabIndex = 103
+        Me.MODIFICAR.Text = "MODIFICAR"
+        Me.MODIFICAR.TextColor = System.Drawing.Color.White
+        '
+        'AgregarClienteButton
+        '
+        Me.AgregarClienteButton.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.AgregarClienteButton.BackColor = System.Drawing.Color.Green
+        Me.AgregarClienteButton.ColorTable = DevComponents.DotNetBar.eButtonColor.Magenta
+        Me.AgregarClienteButton.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AgregarClienteButton.Image = CType(resources.GetObject("AgregarClienteButton.Image"), System.Drawing.Image)
+        Me.AgregarClienteButton.Location = New System.Drawing.Point(59, 529)
+        Me.AgregarClienteButton.Name = "AgregarClienteButton"
+        Me.AgregarClienteButton.Size = New System.Drawing.Size(121, 68)
+        Me.AgregarClienteButton.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.AgregarClienteButton.TabIndex = 104
+        Me.AgregarClienteButton.Text = "AGREGAR"
+        Me.AgregarClienteButton.TextColor = System.Drawing.Color.White
+        '
         'ArticulosForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 17.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1348, 1004)
+        Me.ClientSize = New System.Drawing.Size(1348, 741)
+        Me.Controls.Add(Me.AgregarClienteButton)
+        Me.Controls.Add(Me.MODIFICAR)
         Me.Controls.Add(Me.DataGridView2)
         Me.Controls.Add(Me.CODBARRAS)
         Me.Controls.Add(Me.EliminarButton)
@@ -406,9 +417,7 @@ Partial Class ArticulosForm
         Me.Controls.Add(Me.RadioButtonCODIGO)
         Me.Controls.Add(Me.BUSCAR)
         Me.Controls.Add(Me.TextBoxBuscar)
-        Me.Controls.Add(Me.MODIFICAR)
         Me.Controls.Add(Me.TextBoxCodProveedor)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ARTICULOSlbl)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.TextBox3)
@@ -446,9 +455,7 @@ Partial Class ArticulosForm
     Friend WithEvents RadioButtonCODIGO As System.Windows.Forms.RadioButton
     Friend WithEvents BUSCAR As System.Windows.Forms.Label
     Friend WithEvents TextBoxBuscar As System.Windows.Forms.TextBox
-    Friend WithEvents MODIFICAR As System.Windows.Forms.Button
     Friend WithEvents TextBoxCodProveedor As System.Windows.Forms.TextBox
-    Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents ARTICULOSlbl As System.Windows.Forms.Label
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
@@ -468,4 +475,6 @@ Partial Class ArticulosForm
     Friend WithEvents TextBoxDescripcion As System.Windows.Forms.TextBox
     Friend WithEvents CODBARRAS As Label
     Friend WithEvents DataGridView2 As DataGridView
+    Friend WithEvents MODIFICAR As DevComponents.DotNetBar.ButtonX
+    Friend WithEvents AgregarClienteButton As DevComponents.DotNetBar.ButtonX
 End Class
