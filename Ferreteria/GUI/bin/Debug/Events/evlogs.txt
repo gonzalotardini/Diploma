@@ -4682,3 +4682,8 @@ Mensaje: Se modificó la contraseña del usuarioLAURA
 StackTrace: Articulo Form
 Fecha/Hora: 07/03/2018 20:12:03
 ===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 09/03/2018 18:12:11
+===========================================================================================
