@@ -163,7 +163,7 @@ Partial Class NuevoReporteArticulosVendidos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1131, 483)
+        Me.ClientSize = New System.Drawing.Size(1120, 701)
         Me.Controls.Add(Me.CantidadLabel)
         Me.Controls.Add(Me.LabelHasta)
         Me.Controls.Add(Me.LabelDesde)

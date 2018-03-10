@@ -215,6 +215,12 @@
     <Compile Include="NuevoReportePrecios.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ReporteArticulosDetalleForm.Designer.vb">
+      <DependentUpon>ReporteArticulosDetalleForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteArticulosDetalleForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ReporteArticulosç.Designer.vb">
       <DependentUpon>ReporteArticulosç.vb</DependentUpon>
     </Compile>
@@ -333,6 +339,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NuevoReportePrecios.resx">
       <DependentUpon>NuevoReportePrecios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteArticulosDetalleForm.resx">
+      <DependentUpon>ReporteArticulosDetalleForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ReporteArticulosç.resx">
       <DependentUpon>ReporteArticulosç.vb</DependentUpon>

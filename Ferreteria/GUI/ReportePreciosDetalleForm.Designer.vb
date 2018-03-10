@@ -22,55 +22,55 @@ Partial Class ReportePreciosDetalleForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.LabelX1 = New DevComponents.DotNetBar.LabelX()
-        Me.LabelX2 = New DevComponents.DotNetBar.LabelX()
-        Me.LabelX3 = New DevComponents.DotNetBar.LabelX()
+        Me.CodLabel = New DevComponents.DotNetBar.LabelX()
+        Me.FechaLabel = New DevComponents.DotNetBar.LabelX()
+        Me.UsuarioLabel = New DevComponents.DotNetBar.LabelX()
         Me.LabelX4 = New DevComponents.DotNetBar.LabelX()
         Me.LabelX5 = New DevComponents.DotNetBar.LabelX()
         Me.LabelX6 = New DevComponents.DotNetBar.LabelX()
-        Me.ButtonX1 = New DevComponents.DotNetBar.ButtonX()
+        Me.ImprimirButton = New DevComponents.DotNetBar.ButtonX()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'LabelX1
+        'CodLabel
         '
         '
         '
         '
-        Me.LabelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
-        Me.LabelX1.Location = New System.Drawing.Point(94, 31)
-        Me.LabelX1.Name = "LabelX1"
-        Me.LabelX1.Size = New System.Drawing.Size(75, 23)
-        Me.LabelX1.TabIndex = 1
-        Me.LabelX1.Text = "LabelX1"
+        Me.CodLabel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.CodLabel.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.CodLabel.Location = New System.Drawing.Point(91, 47)
+        Me.CodLabel.Name = "CodLabel"
+        Me.CodLabel.Size = New System.Drawing.Size(75, 23)
+        Me.CodLabel.TabIndex = 1
+        Me.CodLabel.Text = "LabelX1"
         '
-        'LabelX2
-        '
-        '
-        '
-        '
-        Me.LabelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
-        Me.LabelX2.Location = New System.Drawing.Point(305, 31)
-        Me.LabelX2.Name = "LabelX2"
-        Me.LabelX2.Size = New System.Drawing.Size(75, 23)
-        Me.LabelX2.TabIndex = 2
-        Me.LabelX2.Text = "LabelX2"
-        '
-        'LabelX3
+        'FechaLabel
         '
         '
         '
         '
-        Me.LabelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
-        Me.LabelX3.Location = New System.Drawing.Point(563, 31)
-        Me.LabelX3.Name = "LabelX3"
-        Me.LabelX3.Size = New System.Drawing.Size(75, 23)
-        Me.LabelX3.TabIndex = 3
-        Me.LabelX3.Text = "LabelX3"
+        Me.FechaLabel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.FechaLabel.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.FechaLabel.Location = New System.Drawing.Point(302, 47)
+        Me.FechaLabel.Name = "FechaLabel"
+        Me.FechaLabel.Size = New System.Drawing.Size(75, 23)
+        Me.FechaLabel.TabIndex = 2
+        Me.FechaLabel.Text = "LabelX2"
+        '
+        'UsuarioLabel
+        '
+        '
+        '
+        '
+        Me.UsuarioLabel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.UsuarioLabel.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.UsuarioLabel.Location = New System.Drawing.Point(560, 47)
+        Me.UsuarioLabel.Name = "UsuarioLabel"
+        Me.UsuarioLabel.Size = New System.Drawing.Size(75, 23)
+        Me.UsuarioLabel.TabIndex = 3
+        Me.UsuarioLabel.Text = "LabelX3"
         '
         'LabelX4
         '
@@ -78,7 +78,7 @@ Partial Class ReportePreciosDetalleForm
         '
         '
         Me.LabelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX4.Location = New System.Drawing.Point(176, 30)
+        Me.LabelX4.Location = New System.Drawing.Point(172, 48)
         Me.LabelX4.Name = "LabelX4"
         Me.LabelX4.Size = New System.Drawing.Size(75, 23)
         Me.LabelX4.TabIndex = 4
@@ -90,7 +90,7 @@ Partial Class ReportePreciosDetalleForm
         '
         '
         Me.LabelX5.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX5.Location = New System.Drawing.Point(386, 30)
+        Me.LabelX5.Location = New System.Drawing.Point(383, 48)
         Me.LabelX5.Name = "LabelX5"
         Me.LabelX5.Size = New System.Drawing.Size(123, 23)
         Me.LabelX5.TabIndex = 5
@@ -102,23 +102,24 @@ Partial Class ReportePreciosDetalleForm
         '
         '
         Me.LabelX6.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX6.Location = New System.Drawing.Point(644, 31)
+        Me.LabelX6.Location = New System.Drawing.Point(641, 47)
         Me.LabelX6.Name = "LabelX6"
         Me.LabelX6.Size = New System.Drawing.Size(75, 23)
         Me.LabelX6.TabIndex = 6
         Me.LabelX6.Text = "LabelX6"
         '
-        'ButtonX1
+        'ImprimirButton
         '
-        Me.ButtonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
-        Me.ButtonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
-        Me.ButtonX1.Image = Global.GUI.My.Resources.Resources.Imprimir1
-        Me.ButtonX1.Location = New System.Drawing.Point(1203, 99)
-        Me.ButtonX1.Name = "ButtonX1"
-        Me.ButtonX1.Size = New System.Drawing.Size(180, 51)
-        Me.ButtonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.ButtonX1.TabIndex = 7
-        Me.ButtonX1.Text = "ButtonX1"
+        Me.ImprimirButton.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.ImprimirButton.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
+        Me.ImprimirButton.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.ImprimirButton.Image = Global.GUI.My.Resources.Resources.Imprimir1
+        Me.ImprimirButton.Location = New System.Drawing.Point(1165, 99)
+        Me.ImprimirButton.Name = "ImprimirButton"
+        Me.ImprimirButton.Size = New System.Drawing.Size(180, 51)
+        Me.ImprimirButton.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.ImprimirButton.TabIndex = 7
+        Me.ImprimirButton.Text = "ButtonX1"
         '
         'DataGridView1
         '
@@ -126,7 +127,7 @@ Partial Class ReportePreciosDetalleForm
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Location = New System.Drawing.Point(53, 99)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(1120, 292)
+        Me.DataGridView1.Size = New System.Drawing.Size(1080, 292)
         Me.DataGridView1.TabIndex = 8
         '
         'ReportePreciosDetalleForm
@@ -135,13 +136,13 @@ Partial Class ReportePreciosDetalleForm
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1395, 421)
         Me.Controls.Add(Me.DataGridView1)
-        Me.Controls.Add(Me.ButtonX1)
+        Me.Controls.Add(Me.ImprimirButton)
         Me.Controls.Add(Me.LabelX6)
         Me.Controls.Add(Me.LabelX5)
         Me.Controls.Add(Me.LabelX4)
-        Me.Controls.Add(Me.LabelX3)
-        Me.Controls.Add(Me.LabelX2)
-        Me.Controls.Add(Me.LabelX1)
+        Me.Controls.Add(Me.UsuarioLabel)
+        Me.Controls.Add(Me.FechaLabel)
+        Me.Controls.Add(Me.CodLabel)
         Me.DoubleBuffered = True
         Me.Name = "ReportePreciosDetalleForm"
         Me.Text = "ReportePreciosDetalleForm"
@@ -149,12 +150,12 @@ Partial Class ReportePreciosDetalleForm
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents LabelX1 As DevComponents.DotNetBar.LabelX
-    Friend WithEvents LabelX2 As DevComponents.DotNetBar.LabelX
-    Friend WithEvents LabelX3 As DevComponents.DotNetBar.LabelX
+    Friend WithEvents CodLabel As DevComponents.DotNetBar.LabelX
+    Friend WithEvents FechaLabel As DevComponents.DotNetBar.LabelX
+    Friend WithEvents UsuarioLabel As DevComponents.DotNetBar.LabelX
     Friend WithEvents LabelX4 As DevComponents.DotNetBar.LabelX
     Friend WithEvents LabelX5 As DevComponents.DotNetBar.LabelX
     Friend WithEvents LabelX6 As DevComponents.DotNetBar.LabelX
-    Friend WithEvents ButtonX1 As DevComponents.DotNetBar.ButtonX
+    Friend WithEvents ImprimirButton As DevComponents.DotNetBar.ButtonX
     Friend WithEvents DataGridView1 As DataGridView
 End Class

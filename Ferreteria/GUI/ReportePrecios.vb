@@ -96,4 +96,8 @@ Public Class ReportePrecios
 
         End If
     End Sub
+
+    Private Sub CancelarButton_Click(sender As Object, e As EventArgs) Handles CancelarButton.Click
+
+    End Sub
 End Class

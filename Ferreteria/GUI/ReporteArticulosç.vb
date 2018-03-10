@@ -1,6 +1,7 @@
 ﻿Imports DAL
 
 Public Class ReporteArticulosç
+    Public Shared _CodReporteArticulos As Long
     Private Sub ReporteArticulosç_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
             Me.Icon = My.Resources.ico
@@ -25,5 +26,15 @@ Public Class ReporteArticulosç
 
     Private Sub DataGridViewX1_ColumnHeaderMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles DataGridViewX1.ColumnHeaderMouseClick
 
+    End Sub
+
+    Private Sub ButtonX2_Click(sender As Object, e As EventArgs) Handles ButtonX2.Click
+        If DataGridViewX1.CurrentRow IsNot Nothing Then
+
+            _CodReporteArticulos = (DataGridViewX1.CurrentRow.Cells(0).Value)
+
+            ReportePreciosDetalleForm.Show()
+
+        End If
     End Sub
 End Class
