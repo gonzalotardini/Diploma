@@ -36,8 +36,6 @@ Partial Class Principal
         Me.ReportesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PreciosToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ArticulosMasVendidosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.VentasDiariasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.VentasSemanalesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BitacoraToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EventosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ErroresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -56,6 +54,9 @@ Partial Class Principal
         Me.IntegridadButton = New DevComponents.DotNetBar.ButtonX()
         Me.ContraseñaButton = New DevComponents.DotNetBar.ButtonX()
         Me.ReportesButton = New DevComponents.DotNetBar.ButtonX()
+        Me.IdiomaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ESPAÑOLToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ENGLISHToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -65,7 +66,7 @@ Partial Class Principal
         Me.MenuStrip1.BackColor = System.Drawing.Color.DodgerBlue
         Me.MenuStrip1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.MenuStrip1.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExtraToolStripMenuItem, Me.NuevoPresupuestoToolStripMenuItem, Me.VentasToolStripMenuItem, Me.ReportesToolStripMenuItem, Me.BitacoraToolStripMenuItem, Me.UsuariosToolStripMenuItem, Me.LogOutToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExtraToolStripMenuItem, Me.NuevoPresupuestoToolStripMenuItem, Me.VentasToolStripMenuItem, Me.ReportesToolStripMenuItem, Me.BitacoraToolStripMenuItem, Me.UsuariosToolStripMenuItem, Me.LogOutToolStripMenuItem, Me.IdiomaToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(939, 29)
@@ -131,7 +132,7 @@ Partial Class Principal
         'ReportesToolStripMenuItem
         '
         Me.ReportesToolStripMenuItem.AutoSize = False
-        Me.ReportesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PreciosToolStripMenuItem1, Me.ArticulosMasVendidosToolStripMenuItem, Me.VentasDiariasToolStripMenuItem, Me.VentasSemanalesToolStripMenuItem})
+        Me.ReportesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PreciosToolStripMenuItem1, Me.ArticulosMasVendidosToolStripMenuItem})
         Me.ReportesToolStripMenuItem.Enabled = False
         Me.ReportesToolStripMenuItem.Name = "ReportesToolStripMenuItem"
         Me.ReportesToolStripMenuItem.Size = New System.Drawing.Size(94, 25)
@@ -148,18 +149,6 @@ Partial Class Principal
         Me.ArticulosMasVendidosToolStripMenuItem.Name = "ArticulosMasVendidosToolStripMenuItem"
         Me.ArticulosMasVendidosToolStripMenuItem.Size = New System.Drawing.Size(192, 22)
         Me.ArticulosMasVendidosToolStripMenuItem.Text = "Articulos mas vendidos"
-        '
-        'VentasDiariasToolStripMenuItem
-        '
-        Me.VentasDiariasToolStripMenuItem.Name = "VentasDiariasToolStripMenuItem"
-        Me.VentasDiariasToolStripMenuItem.Size = New System.Drawing.Size(192, 22)
-        Me.VentasDiariasToolStripMenuItem.Text = "Ventas Diarias"
-        '
-        'VentasSemanalesToolStripMenuItem
-        '
-        Me.VentasSemanalesToolStripMenuItem.Name = "VentasSemanalesToolStripMenuItem"
-        Me.VentasSemanalesToolStripMenuItem.Size = New System.Drawing.Size(192, 22)
-        Me.VentasSemanalesToolStripMenuItem.Text = "Ventas Semanales"
         '
         'BitacoraToolStripMenuItem
         '
@@ -354,6 +343,25 @@ Partial Class Principal
         Me.ReportesButton.Text = "CONTRASEÑA"
         Me.ReportesButton.TextColor = System.Drawing.Color.White
         '
+        'IdiomaToolStripMenuItem
+        '
+        Me.IdiomaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ESPAÑOLToolStripMenuItem, Me.ENGLISHToolStripMenuItem})
+        Me.IdiomaToolStripMenuItem.Name = "IdiomaToolStripMenuItem"
+        Me.IdiomaToolStripMenuItem.Size = New System.Drawing.Size(54, 25)
+        Me.IdiomaToolStripMenuItem.Text = "Idioma"
+        '
+        'ESPAÑOLToolStripMenuItem
+        '
+        Me.ESPAÑOLToolStripMenuItem.Name = "ESPAÑOLToolStripMenuItem"
+        Me.ESPAÑOLToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ESPAÑOLToolStripMenuItem.Text = "ESPAÑOL"
+        '
+        'ENGLISHToolStripMenuItem
+        '
+        Me.ENGLISHToolStripMenuItem.Name = "ENGLISHToolStripMenuItem"
+        Me.ENGLISHToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ENGLISHToolStripMenuItem.Text = "ENGLISH"
+        '
         'Principal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -410,8 +418,9 @@ Partial Class Principal
     Friend WithEvents BackUpButton As DevComponents.DotNetBar.ButtonX
     Friend WithEvents IntegridadButton As DevComponents.DotNetBar.ButtonX
     Friend WithEvents ContraseñaButton As DevComponents.DotNetBar.ButtonX
-    Friend WithEvents VentasDiariasToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents VentasSemanalesToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ArticulosMasVendidosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ReportesButton As DevComponents.DotNetBar.ButtonX
+    Friend WithEvents IdiomaToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ESPAÑOLToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ENGLISHToolStripMenuItem As ToolStripMenuItem
 End Class

@@ -4,17 +4,24 @@ Public Class Idioma
 
     Private Sub Idioma_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Label1.ForeColor = Color.DodgerBlue
-
+        Dim usuario As New Usuario
         Me.Icon = My.Resources.ico
+        Dim usuarioDao = New UsuarioDAO
+        Dim idioma As String
 
         LogIn.Hide()
         LogIn.TextBox1.Text = ""
         LogIn.TextBox2.Text = ""
 
+        usuario.NombreUsuario = LogIn.Usuario.NombreUsuario
+
+        idioma = usuarioDao.ObtenerIdioma(usuario.NombreUsuario)
+
 
         ComboBox1.Items.Add("ESPAÑOL")
         ComboBox1.Items.Add("ENGLISH")
 
+        ComboBox1.SelectedItem = idioma
 
 
     End Sub
@@ -57,14 +64,14 @@ Public Class Idioma
         If ComboBox1.SelectedItem = "ESPAÑOL" Then
             Principal.CulturaGlobal = "ESPAÑOL"
             Principal.Show()
-            Me.Hide()
+            Me.Close()
         End If
 
 
         If ComboBox1.SelectedItem = "ENGLISH" Then
             Principal.CulturaGlobal = "ENGLISH"
             Principal.Show()
-            Me.Hide()
+            Me.Close()
         End If
 
 

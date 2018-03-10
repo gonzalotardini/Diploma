@@ -1,4 +1,6 @@
 ﻿Imports System.Linq
+Imports SL
+
 Public Class Principal
 
 
@@ -120,6 +122,7 @@ Public Class Principal
             ReportesToolStripMenuItem.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "REPORTES" Select V.Value).FirstOrDefault
             ContraseñaButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "CONTRASEÑA" Select V.Value).FirstOrDefault
             ReportesButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "REPORTES" Select V.Value).FirstOrDefault
+            IdiomaToolStripMenuItem.Text = "IDIOMA"
         End If
 
 
@@ -153,6 +156,7 @@ Public Class Principal
             ReportesToolStripMenuItem.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "REPORTES" Select V.Value).FirstOrDefault
             ReportesButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "REPORTES" Select V.Value).FirstOrDefault
             ContraseñaButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "CONTRASEÑA" Select V.Value).FirstOrDefault
+            IdiomaToolStripMenuItem.Text = "LANGUAGE"
         End If
 
 
@@ -392,5 +396,33 @@ Public Class Principal
 
     Private Sub MarcasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MarcasToolStripMenuItem.Click
         Marcas.Show()
+    End Sub
+
+    Private Sub IdiomaToolStripMenuItem_Click_1(sender As Object, e As EventArgs) Handles IdiomaToolStripMenuItem.Click
+
+    End Sub
+
+    Private Sub ESPAÑOLToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ESPAÑOLToolStripMenuItem.Click
+        Try
+            Dim usuarioDao = New UsuarioDAO
+            Dim idioma As String = "ESPAÑOL"
+            usuarioDao.ActualizarIdioma(LogIn.Usuario.NombreUsuario, idioma)
+            LogIn.Show()
+            Me.Close()
+        Catch ex As Exception
+            MsgBox(ex.Message, MsgBoxStyle.Critical, "ERROR")
+        End Try
+    End Sub
+
+    Private Sub ENGLISHToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ENGLISHToolStripMenuItem.Click
+        Try
+            Dim usuarioDao = New UsuarioDAO
+            Dim idioma As String = "ENGLISH"
+            usuarioDao.ActualizarIdioma(LogIn.Usuario.NombreUsuario, idioma)
+            LogIn.Show()
+            Me.Close()
+        Catch ex As Exception
+            MsgBox(ex.Message, MsgBoxStyle.Critical, "ERROR")
+        End Try
     End Sub
 End Class

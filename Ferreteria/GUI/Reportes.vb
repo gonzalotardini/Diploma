@@ -28,7 +28,7 @@ Public Class Reportes
             Label1.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "REPORTES" Select V.Value).FirstOrDefault
             ButtonReportePrecios.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "REPORTEPRECIOS" Select V.Value).FirstOrDefault
             ButtonReporteArticulos.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "REPORTEARTICULOS" Select V.Value).FirstOrDefault
-            ButtonReporteVentas.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "REPORTEVENTAS" Select V.Value).FirstOrDefault
+
 
         End If
 
@@ -42,7 +42,7 @@ Public Class Reportes
             Label1.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "REPORTES" Select V.Value).FirstOrDefault
             ButtonReportePrecios.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "REPORTEPRECIOS" Select V.Value).FirstOrDefault
             ButtonReporteArticulos.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "REPORTEARTICULOS" Select V.Value).FirstOrDefault
-            ButtonReporteVentas.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "REPORTEVENTAS" Select V.Value).FirstOrDefault
+
         End If
 
 

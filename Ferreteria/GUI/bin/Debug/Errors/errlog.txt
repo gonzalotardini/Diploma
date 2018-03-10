@@ -2622,3 +2622,13 @@ StackTrace:    at BLL.GestorReporte.ImprimirReportePrecios(Reporte reporteCabece
    at GUI.NuevoReportePrecios.ButtonX2_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevoReportePrecios.vb:line 354
 Fecha/Hora: 09/03/2018 18:14:35
 ===========================================================================================
+Titulo: Error
+Mensaje: USUARIO O CONTRASEÑA INCORRECTO
+StackTrace:    at GUI.LogIn.Button1_Click_1(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\LogIn.vb:line 52
+Fecha/Hora: 10/03/2018 12:55:29
+===========================================================================================
+Titulo: Error
+Mensaje: USUARIO O CONTRASEÑA INCORRECTO
+StackTrace:    at GUI.LogIn.Button1_Click_1(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\LogIn.vb:line 52
+Fecha/Hora: 10/03/2018 12:56:30
+===========================================================================================

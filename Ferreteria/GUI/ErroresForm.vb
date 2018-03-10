@@ -30,10 +30,29 @@ Public Class ErroresForm
 
     End Sub
 
+    Private Sub ButtonX1_Click(sender As Object, e As EventArgs) Handles ButtonX1.Click
+        Try
+            For x As Integer = 0 To ListBox1.Items.Count - 1
+
+                Dim palabra = (ListBox1.Items(x).ToString).ToUpper
+                If palabra.Contains((TextBoxX1.Text).ToUpper) Then
+                    ListBox1.SelectedIndex = x
+                    Return
+                End If
+
+            Next
+
+            Select Case Principal.CulturaGlobal
+                Case "ESPAÑOL"
+                    MsgBox("No se encontro nada", MsgBoxStyle.Information, "ATENTION")
+                Case "ENGLISH"
+                    MsgBox("Nothing was found", MsgBoxStyle.Information, "ATENTION")
+            End Select
 
 
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
 
-
-
-
+    End Sub
 End Class

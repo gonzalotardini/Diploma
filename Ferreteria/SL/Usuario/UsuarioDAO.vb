@@ -443,6 +443,40 @@ Public Class UsuarioDAO
 
     End Sub
 
+    Public Sub ActualizarIdioma(Usuario As String, idioma As String)
+
+        Dim _Consulta As String
+        Dim _Comando As New SqlCommand
+        'Dim Dal As New DAL.DatosBase
+        _Consulta = "Update Usuario set Idioma=@idioma where Nombre=@Usuario"
+
+        Try
+
+            Me.Conexion.Open()
+
+            _Comando = New SqlCommand(_Consulta, Me.Conexion)
+
+
+            _Comando.Parameters.AddWithValue("@idioma", idioma)
+            _Comando.Parameters.AddWithValue("@Usuario", Usuario)
+
+
+
+            _Comando.ExecuteNonQuery()
+
+
+        Catch ex As Exception
+
+            Throw New Exception("Error al eliminar la patente " & ex.Message)
+
+
+        Finally
+            Me.Conexion.Close()
+        End Try
+
+
+    End Sub
+
     Public Sub AgregarPatenteAUsuario(Patente As Patente, Usuario As Usuario)
 
 
@@ -482,6 +516,43 @@ Public Class UsuarioDAO
 
 
     End Sub
+
+    Public Function ObtenerIdioma(usuario As String) As String
+
+
+
+        Dim _Consulta As String
+        Dim _Comando As New SqlCommand
+        Dim _Idioma As String
+
+
+
+        Try
+
+
+            Me.Conexion.Open()
+
+            _Consulta = "select top 1 Idioma from Usuario where Nombre='" + usuario + "'"
+
+            _Comando = New SqlCommand(_Consulta, Me.Conexion)
+
+            _Idioma = (_Comando.ExecuteScalar) 'ejecuto scalar porque quiero obtener el valor, uso executenonqueri cuando quiero hacer un insert
+
+
+            Return _Idioma
+
+
+        Catch ex As Exception
+            Throw New Exception(ex.Message)
+        Finally
+            Me.Conexion.Close()
+
+        End Try
+
+
+
+    End Function
+
 
 End Class
 
