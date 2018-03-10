@@ -28,7 +28,7 @@ Public Class ReportePrecios
 
             If Principal.CulturaGlobal = "ENGLISH" Then
 
-
+                ListaPalabras = Multiidioma.ObtenerPalabras("ENG-ENGLAND")
                 Dim Cultura = "ENG-ENGLAND"
                 'ListaPalabras = Multiidioma.ObtenerPalabras(Cultura)
                 'CodigoClienteRadioButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "CODIGOCLIENTE" Select V.Value).FirstOrDefault

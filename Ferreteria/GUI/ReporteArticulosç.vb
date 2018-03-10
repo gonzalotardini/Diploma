@@ -14,6 +14,38 @@ Public Class ReporteArticulosç
             DataGridViewX1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
 
 
+            Dim ListaPalabras As New List(Of SL.PalabrasIdioma)
+
+            Dim Multiidioma As New SL.Multiidioma
+
+            If Principal.CulturaGlobal = "ESPAÑOL" Then
+                ListaPalabras = Multiidioma.ObtenerPalabras("ES-ESP")
+
+
+                Dim Cultura = "ES-ESP"
+                'LINQ para el multiidioma
+
+                'CodigoClienteRadioButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "CODIGOCLIENTE" Select V.Value).FirstOrDefault
+                'RazonSocialRadioButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "RAZONSOCIAL" Select V.Value).FirstOrDefault
+                ButtonX1.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "DETALLE" Select V.Value).FirstOrDefault
+                ButtonX2.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "ELIMINAR" Select V.Value).FirstOrDefault
+                Label1.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "REPORTESPRECIOS" Select V.Value).FirstOrDefault
+            End If
+
+
+            If Principal.CulturaGlobal = "ENGLISH" Then
+
+                ListaPalabras = Multiidioma.ObtenerPalabras("ENG-ENGLAND")
+                Dim Cultura = "ENG-ENGLAND"
+                'ListaPalabras = Multiidioma.ObtenerPalabras(Cultura)
+                'CodigoClienteRadioButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "CODIGOCLIENTE" Select V.Value).FirstOrDefault
+                'RazonSocialRadioButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "RAZONSOCIAL" Select V.Value).FirstOrDefault
+                ButtonX1.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "DETALLE" Select V.Value).FirstOrDefault
+                ButtonX2.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "ELIMINAR" Select V.Value).FirstOrDefault
+                Label1.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "REPORTESPRECIOS" Select V.Value).FirstOrDefault
+
+            End If
+
 
         Catch ex As Exception
 

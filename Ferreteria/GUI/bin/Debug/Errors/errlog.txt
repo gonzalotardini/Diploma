@@ -2680,3 +2680,14 @@ StackTrace:    at BLL.GestorReporte.ObtenerArticulosMasVendidosBLL(Int32 cantida
    at GUI.NuevoReporteArticulosVendidos.ButtonX1_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevoReporteArticulosVendidos.vb:line 20
 Fecha/Hora: 10/03/2018 14:16:43
 ===========================================================================================
+Titulo: Error
+Mensaje: USUARIO O CONTRASEÑA INCORRECTO
+StackTrace:    en GUI.LogIn.Button1_Click_1(Object sender, EventArgs e) en C:\Proyectos\Diploma\Ferreteria\GUI\LogIn.vb:línea 52
+Fecha/Hora: 10/03/2018 14:26:15
+===========================================================================================
+Titulo: Error
+Mensaje: La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+StackTrace:    en BLL.GestorReporte.ObtenerArticulosMasVendidosBLL(Int32 cantidad, DateTime fecha_desde, DateTime fecha_hasta) en C:\Proyectos\Diploma\Ferreteria\BLL\GestorReporte.vb:línea 68
+   en GUI.NuevoReporteArticulosVendidos.ButtonX1_Click(Object sender, EventArgs e) en C:\Proyectos\Diploma\Ferreteria\GUI\NuevoReporteArticulosVendidos.vb:línea 20
+Fecha/Hora: 10/03/2018 14:26:34
+===========================================================================================

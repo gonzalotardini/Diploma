@@ -589,3 +589,5 @@ C:\Users\navegador\Desktop\Diploma-1-1\Ferreteria\GUI\obj\Debug\GUI.xml
 C:\Users\navegador\Desktop\Diploma-1-1\Ferreteria\GUI\obj\Debug\GUI.pdb
 C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\obj\Debug\GUI.Marcas.resources
 C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\obj\Debug\GUI.ReporteArticulosDetalleForm.resources
+C:\Proyectos\Diploma\Ferreteria\GUI\obj\Debug\GUI.Marcas.resources
+C:\Proyectos\Diploma\Ferreteria\GUI\obj\Debug\GUI.ReporteArticulosDetalleForm.resources
