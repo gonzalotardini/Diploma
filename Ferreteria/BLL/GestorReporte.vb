@@ -92,6 +92,23 @@ Public Class GestorReporte
 
     End Function
 
+    Public Function ObtenerReporteArticulosDetalle(codReporteArticulos As Long) As DataTable
+        Try
+            Dim reporteFacade As New ReporteFacade
+            Return reporteFacade.obtenerReporteArticulosDetalle(codReporteArticulos)
+        Catch ex As Exception
+            Throw New Exception(ex.Message)
+        End Try
+    End Function
+
+    Public Function ObtenerReporteArticulosCabecera(codreporte As Long) As ReporteArticulosCabecera
+        Try
+            Dim reporteFacade As New ReporteFacade
+            Return reporteFacade.obtenerReporteArticulosCabecera(codreporte)
+        Catch ex As Exception
+            Throw New Exception(ex.Message)
+        End Try
+    End Function
 
     Public Sub ValidarReporteAumentoDePrecios(reporteCabecera As Reporte, listaDetalles As List(Of ReportePreciosDetalle), culturaGlobal As String)
         Dim ReporteFacade = New ReporteFacade

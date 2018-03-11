@@ -44,9 +44,9 @@ Partial Class ReporteArticulosç
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.DataGridViewX1.DefaultCellStyle = DataGridViewCellStyle1
         Me.DataGridViewX1.GridColor = System.Drawing.Color.FromArgb(CType(CType(170, Byte), Integer), CType(CType(170, Byte), Integer), CType(CType(170, Byte), Integer))
-        Me.DataGridViewX1.Location = New System.Drawing.Point(199, 59)
+        Me.DataGridViewX1.Location = New System.Drawing.Point(340, 162)
         Me.DataGridViewX1.Name = "DataGridViewX1"
-        Me.DataGridViewX1.Size = New System.Drawing.Size(712, 317)
+        Me.DataGridViewX1.Size = New System.Drawing.Size(587, 317)
         Me.DataGridViewX1.TabIndex = 0
         '
         'ButtonX1
@@ -56,7 +56,7 @@ Partial Class ReporteArticulosç
         Me.ButtonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.Magenta
         Me.ButtonX1.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
         Me.ButtonX1.Image = CType(resources.GetObject("ButtonX1.Image"), System.Drawing.Image)
-        Me.ButtonX1.Location = New System.Drawing.Point(660, 420)
+        Me.ButtonX1.Location = New System.Drawing.Point(661, 523)
         Me.ButtonX1.Name = "ButtonX1"
         Me.ButtonX1.Size = New System.Drawing.Size(148, 59)
         Me.ButtonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
@@ -71,7 +71,7 @@ Partial Class ReporteArticulosç
         Me.ButtonX2.ColorTable = DevComponents.DotNetBar.eButtonColor.Magenta
         Me.ButtonX2.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
         Me.ButtonX2.Image = CType(resources.GetObject("ButtonX2.Image"), System.Drawing.Image)
-        Me.ButtonX2.Location = New System.Drawing.Point(317, 420)
+        Me.ButtonX2.Location = New System.Drawing.Point(318, 523)
         Me.ButtonX2.Name = "ButtonX2"
         Me.ButtonX2.Size = New System.Drawing.Size(148, 59)
         Me.ButtonX2.Style = DevComponents.DotNetBar.eDotNetBarStyle.Metro
@@ -83,11 +83,12 @@ Partial Class ReporteArticulosç
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 36.0!, System.Drawing.FontStyle.Bold)
-        Me.Label1.Location = New System.Drawing.Point(431, -9)
+        Me.Label1.Location = New System.Drawing.Point(506, 68)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(226, 65)
         Me.Label1.TabIndex = 20
         Me.Label1.Text = "label rep"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'ReporteArticulosç
         '

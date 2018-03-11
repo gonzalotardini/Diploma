@@ -116,6 +116,7 @@ Public Class ReporteDAO
             reporte.Tipo = _dataSet.Tables(0).Rows(0).Item(3)
 
 
+
             Return reporte
 
 
@@ -132,7 +133,93 @@ Public Class ReporteDAO
 
     End Function
 
+    Public Function ObtenerReporteArticulosCabecera(cod_reporte As Long) As ReporteArticulosCabecera
+        Dim _Consulta As String
+        Dim _Comando As SqlCommand
+        Dim _dataSet As New DataSet
+        Dim _Convertir As New Convertir
+        Dim reporte = New ReporteArticulosCabecera
 
+
+        Try
+            _Consulta = "select Cod_Reporte as ID, FechaInicio as FechaDesde, FechaFin as FechaHasta, Usuario, Tipo from ReporteArticulosMasVendidos
+                        where cod_reporte=" & cod_reporte
+
+            Me.Conexion.Open()
+
+            _Comando = New SqlCommand(_Consulta, Me.Conexion)
+
+            Dim _Adapter As New SqlDataAdapter(_Comando)
+
+            _Adapter.Fill(_dataSet)
+
+            reporte.Cod_Reporte = _dataSet.Tables(0).Rows(0).Item(0)
+            reporte.FechaInicio = _dataSet.Tables(0).Rows(0).Item(1)
+            reporte.FechaFin = _dataSet.Tables(0).Rows(0).Item(2)
+            reporte.Usuario = _dataSet.Tables(0).Rows(0).Item(3)
+            reporte.Tipo = _dataSet.Tables(0).Rows(0).Item(4)
+
+            reporte.FechaInicio = reporte.FechaInicio.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture)
+            reporte.FechaFin = reporte.FechaInicio.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture)
+
+            Return reporte
+
+
+        Catch ex As Exception
+
+            Throw New Exception(ex.Message)
+            Return Nothing
+
+        Finally
+
+            Me.Conexion.Close()
+
+        End Try
+
+    End Function
+
+    Public Function ObtenerReporteArticulosDetalle(cod_reporte As Long) As DataTable
+
+        Dim _Consulta As String
+        Dim _Comando As SqlCommand
+        Dim _dataSet As New DataSet
+        Dim _Convertir As New Convertir
+
+
+
+        Try
+            _Consulta = "select a.cod_articulo, a.Descripcion, s.Descripcion as Unidad,m.Descripcion as Marca, r.CantidadVentas as Vendido  from ReporteArticulosMasVendidosDetalle r 
+                        inner join Articulo a on a.Cod_Articulo=r.Cod_Articulo
+                        inner join SubUnidad_Medida s on s.Cod_SubUnidad_Medida=a.Cod_SubUnidad_Medida
+                        inner join Marca m on m.Cod_Marca=a.Cod_Marca
+                        where Cod_Reporte=" & +cod_reporte
+
+
+            Me.Conexion.Open()
+
+            _Comando = New SqlCommand(_Consulta, Me.Conexion)
+
+            Dim _Adapter As New SqlDataAdapter(_Comando)
+
+            _Adapter.Fill(_dataSet)
+
+            Return _dataSet.Tables(0)
+
+
+        Catch ex As Exception
+
+            Throw New Exception(ex.Message)
+            Return Nothing
+
+        Finally
+
+            Me.Conexion.Close()
+
+        End Try
+
+
+
+    End Function
     Public Function ObtenerReportePreciosDetalle(cod_reporte As Long) As DataTable
 
         Dim _Consulta As String
@@ -417,6 +504,199 @@ Public Class ReporteDAO
 
 
 
+
+
+        Catch ex As Exception
+            MsgBox("Error al crear pdf", ex.Message)
+        End Try
+
+    End Sub
+
+    Public Sub ImprimirReporteArticulossDAO(reporteCabecera As ReporteArticulosCabecera, listaDetalle As List(Of ReporteArticulosMasVendidosDetalle))
+
+
+        Try
+            Dim PdfDocument As New Document(PageSize.A4, 0, 0, 0, 0)
+
+            'Declaro fuente
+            Dim fuente As iTextSharp.text.pdf.BaseFont
+            'Defino fuente
+            fuente = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, iTextSharp.text.Font.DEFAULTSIZE, iTextSharp.text.Font.NORMAL).BaseFont
+
+            Dim PdfWrite As PdfWriter = PdfWriter.GetInstance(PdfDocument, New FileStream("ReporteArticulos.pdf", FileMode.Create))
+
+            Dim linea As PdfContentByte
+
+            Dim cb As PdfContentByte
+
+
+            PdfDocument.Open()
+            PdfDocument.NewPage()
+
+
+
+
+            linea = PdfWrite.DirectContent
+
+            'linea.BeginText()
+
+
+            linea.SetLineWidth(1.5) 'configurando el ancho de linea
+            linea.MoveTo(0, 750) 'MoveTo indica el punto de inicio
+            linea.LineTo(750, 750) 'LineTo indica hacia donde se dibuja la linea 
+            linea.Stroke() 'traza la linea actual y se puede iniciar una nueva
+
+            linea.SetLineWidth(1.5) 'configurando el ancho de linea
+            linea.MoveTo(0, 700) 'MoveTo indica el punto de inicio
+            linea.LineTo(700, 700) 'LineTo indica hacia donde se dibuja la linea 
+            linea.Stroke() 'traza la linea actual y se puede iniciar una nueva
+
+            linea.SetLineWidth(1.5) 'configurando el ancho de linea
+            linea.MoveTo(300, 750) 'MoveTo indica el punto de inicio
+            linea.LineTo(300, 800) 'LineTo indica hacia donde se dibuja la linea
+            linea.Stroke() 'traza la linea actual y se puede iniciar una nueva
+
+            linea.SetLineWidth(1.2) 'configurando el ancho de linea
+            linea.MoveTo(280, 800) 'MoveTo indica el punto de inicio
+            linea.LineTo(280, 900) 'LineTo indica hacia donde se dibuja la linea
+            linea.Stroke() 'traza la linea actual y se puede iniciar una nueva
+
+            linea.SetLineWidth(1.2) 'configurando el ancho de linea
+            linea.MoveTo(320, 800) 'MoveTo indica el punto de inicio
+            linea.LineTo(320, 900) 'LineTo indica hacia donde se dibuja la linea
+            linea.Stroke() 'traza la linea actual y se puede iniciar una nueva
+
+
+            linea.SetLineWidth(1.5) 'configurando el ancho de linea
+            linea.MoveTo(280, 800) 'MoveTo indica el punto de inicio
+            linea.LineTo(320, 800) 'LineTo indica hacia donde se dibuja la linea 
+            linea.Stroke() 'traza la linea actual y se puede iniciar una nueva
+
+
+            'Linea final
+            linea.SetLineWidth(1.5) 'configurando el ancho de linea
+            linea.MoveTo(10, 50) 'MoveTo indica el punto de inicio
+            linea.LineTo(590, 50) 'LineTo indica hacia donde se dibuja la linea 
+            linea.Stroke() 'traza la linea actual y se puede iniciar una nueva
+
+
+
+            cb = PdfWrite.DirectContent
+            cb.BeginText()
+
+            cb.SetFontAndSize(fuente, 18)
+
+            'PdfDocument.Add(New Paragraph(" "))
+            ' PdfDocument.Add(New Paragraph(PdfContentByte.ALIGN_CENTER, "FERRETERIA TARDINI"))
+
+
+            'CABECERA
+            cb.SetColorFill(iTextSharp.text.BaseColor.BLACK)
+            cb.ShowTextAligned(PdfContentByte.ALIGN_CENTER, "FERRETERIA TARDINI HNOS.", 145, 800, 0)
+            ' cb.ShowTextAligned(PdfContentByte.ALIGN_CENTER, "PRESUPUESTO", 300, 725, 0)
+
+            cb.SetColorFill(iTextSharp.text.BaseColor.BLACK)
+            cb.ShowTextAligned(PdfContentByte.ALIGN_CENTER, "REPORTE", 450, 800, 0)
+            ' cb.ShowTextAligned(PdfContentByte.ALIGN_CENTER, "PRESUPUESTO", 300, 725, 0)
+
+            cb.SetFontAndSize(fuente, 22)
+            'X
+            cb.SetColorFill(iTextSharp.text.BaseColor.BLACK)
+            cb.ShowTextAligned(PdfContentByte.ALIGN_CENTER, "X", 300, 810, 0)
+            ' cb.ShowTextAligned(PdfContentByte.ALIGN_CENTER, "PRESUPUESTO", 300, 725, 0)
+
+
+            'Izquierda
+            cb.SetFontAndSize(fuente, 8)
+            cb.ShowTextAligned(PdfContentByte.ALIGN_LEFT, "Direccion: Artigas Jose G. 3985 CABA ", 20, 780, 0)
+            cb.ShowTextAligned(PdfContentByte.ALIGN_LEFT, "Condicion frente al IVA: Responsable Inscripto ", 20, 760, 0)
+
+
+            'Cliente
+
+            cb.ShowTextAligned(PdfContentByte.ALIGN_LEFT, "Codigo de Reporte:  " & reporteCabecera.Cod_Reporte, 20, 720, 0)
+            cb.ShowTextAligned(PdfContentByte.ALIGN_LEFT, "Usuario:  " & reporteCabecera.Usuario, 210, 720, 0)
+            cb.ShowTextAligned(PdfContentByte.ALIGN_LEFT, "Tipo Reporte:  " & reporteCabecera.Tipo, 365, 720, 0)
+
+            'Derecha
+            cb.SetFontAndSize(fuente, 11)
+            'cb.ShowTextAligned(PdfContentByte.ALIGN_LEFT, "Punto de venta: 001", 400, 780, 0)
+            cb.ShowTextAligned(PdfContentByte.ALIGN_LEFT, "Fecha Desde:  " + reporteCabecera.FechaInicio.ToString("dd/MM/yyyy"), 400, 760, 0)
+            cb.ShowTextAligned(PdfContentByte.ALIGN_LEFT, "Fecha Hasta:  " + reporteCabecera.FechaFin.ToString("dd/MM/yyyy"), 410, 760, 0)
+
+            'COLUMNAS
+            cb.SetFontAndSize(fuente, 8)
+            cb.ShowTextAligned(PdfContentByte.ALIGN_CENTER, "Código", 20, 685, 0)
+            cb.ShowTextAligned(PdfContentByte.ALIGN_CENTER, "Descripcion", 70, 685, 0)
+            cb.ShowTextAligned(PdfContentByte.ALIGN_CENTER, "Marca", 210, 685, 0)
+            cb.ShowTextAligned(PdfContentByte.ALIGN_CENTER, "Medida", 260, 685, 0)
+            cb.ShowTextAligned(PdfContentByte.ALIGN_CENTER, "Precio Inicial", 305, 685, 0)
+            cb.ShowTextAligned(PdfContentByte.ALIGN_CENTER, "Precio Final", 365, 685, 0)
+            cb.ShowTextAligned(PdfContentByte.ALIGN_CENTER, "#", 400, 685, 0)
+            cb.ShowTextAligned(PdfContentByte.ALIGN_CENTER, "%", 425, 685, 0)
+            cb.ShowTextAligned(PdfContentByte.ALIGN_CENTER, "Desde", 480, 685, 0)
+            cb.ShowTextAligned(PdfContentByte.ALIGN_CENTER, "Hasta", 540, 685, 0)
+
+            'Total
+
+
+            'cb.SetFontAndSize(fuente, 20)
+            'cb.ShowTextAligned(PdfContentByte.ALIGN_LEFT, "TOTAL: $" & PresupuestoCabecera.Total, 400, 30, 0)
+
+
+            Dim Ubicacion As Integer = 670
+
+
+
+
+            For I = 1 To listaDetalle.Count
+
+                cb.SetFontAndSize(fuente, 8)
+
+
+                'cb.ShowTextAligned(PdfContentByte.ALIGN_LEFT, listaDetalle(I - 1).Cod_Articulo, 10, Ubicacion, 0)
+                'cb.ShowTextAligned(PdfContentByte.ALIGN_LEFT, listaDetalle(I - 1).Descripcion, 45, Ubicacion, 0)
+                'cb.ShowTextAligned(PdfContentByte.ALIGN_LEFT, listaDetalle(I - 1).Marca1, 200, Ubicacion, 0)
+                'cb.ShowTextAligned(PdfContentByte.ALIGN_LEFT, listaDetalle(I - 1).SubUnidad, 255, Ubicacion, 0)
+                'cb.ShowTextAligned(PdfContentByte.ALIGN_LEFT, listaDetalle(I - 1).PrecioInicial, 300, Ubicacion, 0)
+                'cb.ShowTextAligned(PdfContentByte.ALIGN_LEFT, listaDetalle(I - 1).PrecioFinal, 350, Ubicacion, 0)
+                'cb.ShowTextAligned(PdfContentByte.ALIGN_LEFT, listaDetalle(I - 1).CantidadPrecios, 400, Ubicacion, 0)
+                'cb.ShowTextAligned(PdfContentByte.ALIGN_LEFT, listaDetalle(I - 1).PorcentajeAumento, 420, Ubicacion, 0)
+                'cb.ShowTextAligned(PdfContentByte.ALIGN_LEFT, listaDetalle(I - 1).Fecha_Desde, 460, Ubicacion, 0)
+                'cb.ShowTextAligned(PdfContentByte.ALIGN_LEFT, listaDetalle(I - 1).Fecha_Hasta, 520, Ubicacion, 0)
+
+                Ubicacion = Ubicacion - 15
+
+
+
+
+            Next
+
+
+
+
+
+            cb.EndText()
+            PdfDocument.Close()
+
+            Dim myProcess As New Process
+            myProcess.StartInfo.CreateNoWindow = False
+            myProcess.StartInfo.Verb = "print"
+            myProcess.StartInfo.FileName = "ReporteArticulos.pdf"
+            myProcess.Start()
+            myProcess.WaitForExit(10000)
+            myProcess.CloseMainWindow()
+            myProcess.Close()
+
+
+            Dim myprocesses As Process() = System.Diagnostics.Process.GetProcessesByName("AcroRd32")
+
+
+            System.Threading.Thread.Sleep(7000)
+
+            For Each myproces As Process In myprocesses
+                myproces.Kill()
+            Next
 
 
         Catch ex As Exception

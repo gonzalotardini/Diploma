@@ -34,11 +34,12 @@ Partial Class ReportePrecios
         '
         Me.ReportesPreciosLabel.AutoSize = True
         Me.ReportesPreciosLabel.Font = New System.Drawing.Font("Segoe UI", 36.0!, System.Drawing.FontStyle.Bold)
-        Me.ReportesPreciosLabel.Location = New System.Drawing.Point(446, 42)
+        Me.ReportesPreciosLabel.Location = New System.Drawing.Point(478, 41)
         Me.ReportesPreciosLabel.Name = "ReportesPreciosLabel"
         Me.ReportesPreciosLabel.Size = New System.Drawing.Size(226, 65)
         Me.ReportesPreciosLabel.TabIndex = 8
         Me.ReportesPreciosLabel.Text = "label rep"
+        Me.ReportesPreciosLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'DataGridView1
         '

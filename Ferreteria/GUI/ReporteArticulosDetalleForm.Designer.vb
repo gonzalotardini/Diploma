@@ -25,13 +25,13 @@ Partial Class ReporteArticulosDetalleForm
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.ImprimirButton = New DevComponents.DotNetBar.ButtonX()
         Me.LabelX6 = New DevComponents.DotNetBar.LabelX()
-        Me.LabelX5 = New DevComponents.DotNetBar.LabelX()
+        Me.FechaDesde = New DevComponents.DotNetBar.LabelX()
         Me.LabelX4 = New DevComponents.DotNetBar.LabelX()
         Me.UsuarioLabel = New DevComponents.DotNetBar.LabelX()
-        Me.FechaLabel = New DevComponents.DotNetBar.LabelX()
+        Me.DesdeLabel = New DevComponents.DotNetBar.LabelX()
         Me.CodLabel = New DevComponents.DotNetBar.LabelX()
-        Me.LabelX1 = New DevComponents.DotNetBar.LabelX()
-        Me.LabelX2 = New DevComponents.DotNetBar.LabelX()
+        Me.HastaLabel = New DevComponents.DotNetBar.LabelX()
+        Me.FechaHasta = New DevComponents.DotNetBar.LabelX()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -69,17 +69,17 @@ Partial Class ReporteArticulosDetalleForm
         Me.LabelX6.TabIndex = 14
         Me.LabelX6.Text = "LabelX6"
         '
-        'LabelX5
+        'FechaDesde
         '
         '
         '
         '
-        Me.LabelX5.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX5.Location = New System.Drawing.Point(346, 32)
-        Me.LabelX5.Name = "LabelX5"
-        Me.LabelX5.Size = New System.Drawing.Size(123, 23)
-        Me.LabelX5.TabIndex = 13
-        Me.LabelX5.Text = "LabelX5"
+        Me.FechaDesde.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.FechaDesde.Location = New System.Drawing.Point(346, 32)
+        Me.FechaDesde.Name = "FechaDesde"
+        Me.FechaDesde.Size = New System.Drawing.Size(123, 23)
+        Me.FechaDesde.TabIndex = 13
+        Me.FechaDesde.Text = "LabelX5"
         '
         'LabelX4
         '
@@ -106,18 +106,18 @@ Partial Class ReporteArticulosDetalleForm
         Me.UsuarioLabel.TabIndex = 11
         Me.UsuarioLabel.Text = "LabelX3"
         '
-        'FechaLabel
+        'DesdeLabel
         '
         '
         '
         '
-        Me.FechaLabel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.FechaLabel.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.FechaLabel.Location = New System.Drawing.Point(287, 30)
-        Me.FechaLabel.Name = "FechaLabel"
-        Me.FechaLabel.Size = New System.Drawing.Size(75, 23)
-        Me.FechaLabel.TabIndex = 10
-        Me.FechaLabel.Text = "LabelX2"
+        Me.DesdeLabel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.DesdeLabel.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.DesdeLabel.Location = New System.Drawing.Point(287, 30)
+        Me.DesdeLabel.Name = "DesdeLabel"
+        Me.DesdeLabel.Size = New System.Drawing.Size(75, 23)
+        Me.DesdeLabel.TabIndex = 10
+        Me.DesdeLabel.Text = "LabelX2"
         '
         'CodLabel
         '
@@ -132,45 +132,45 @@ Partial Class ReporteArticulosDetalleForm
         Me.CodLabel.TabIndex = 9
         Me.CodLabel.Text = "LabelX1"
         '
-        'LabelX1
+        'HastaLabel
         '
         '
         '
         '
-        Me.LabelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX1.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.LabelX1.Location = New System.Drawing.Point(475, 30)
-        Me.LabelX1.Name = "LabelX1"
-        Me.LabelX1.Size = New System.Drawing.Size(75, 23)
-        Me.LabelX1.TabIndex = 17
-        Me.LabelX1.Text = "LabelX1"
+        Me.HastaLabel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.HastaLabel.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.HastaLabel.Location = New System.Drawing.Point(475, 30)
+        Me.HastaLabel.Name = "HastaLabel"
+        Me.HastaLabel.Size = New System.Drawing.Size(75, 23)
+        Me.HastaLabel.TabIndex = 17
+        Me.HastaLabel.Text = "LabelX1"
         '
-        'LabelX2
-        '
-        '
+        'FechaHasta
         '
         '
-        Me.LabelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX2.Location = New System.Drawing.Point(578, 31)
-        Me.LabelX2.Name = "LabelX2"
-        Me.LabelX2.Size = New System.Drawing.Size(75, 23)
-        Me.LabelX2.TabIndex = 18
-        Me.LabelX2.Text = "LabelX2"
+        '
+        '
+        Me.FechaHasta.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.FechaHasta.Location = New System.Drawing.Point(578, 31)
+        Me.FechaHasta.Name = "FechaHasta"
+        Me.FechaHasta.Size = New System.Drawing.Size(75, 23)
+        Me.FechaHasta.TabIndex = 18
+        Me.FechaHasta.Text = "LabelX2"
         '
         'ReporteArticulosDetalleForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1258, 632)
-        Me.Controls.Add(Me.LabelX2)
-        Me.Controls.Add(Me.LabelX1)
+        Me.Controls.Add(Me.FechaHasta)
+        Me.Controls.Add(Me.HastaLabel)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.ImprimirButton)
         Me.Controls.Add(Me.LabelX6)
-        Me.Controls.Add(Me.LabelX5)
+        Me.Controls.Add(Me.FechaDesde)
         Me.Controls.Add(Me.LabelX4)
         Me.Controls.Add(Me.UsuarioLabel)
-        Me.Controls.Add(Me.FechaLabel)
+        Me.Controls.Add(Me.DesdeLabel)
         Me.Controls.Add(Me.CodLabel)
         Me.DoubleBuffered = True
         Me.Name = "ReporteArticulosDetalleForm"
@@ -183,11 +183,11 @@ Partial Class ReporteArticulosDetalleForm
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents ImprimirButton As DevComponents.DotNetBar.ButtonX
     Friend WithEvents LabelX6 As DevComponents.DotNetBar.LabelX
-    Friend WithEvents LabelX5 As DevComponents.DotNetBar.LabelX
+    Friend WithEvents FechaDesde As DevComponents.DotNetBar.LabelX
     Friend WithEvents LabelX4 As DevComponents.DotNetBar.LabelX
     Friend WithEvents UsuarioLabel As DevComponents.DotNetBar.LabelX
-    Friend WithEvents FechaLabel As DevComponents.DotNetBar.LabelX
+    Friend WithEvents DesdeLabel As DevComponents.DotNetBar.LabelX
     Friend WithEvents CodLabel As DevComponents.DotNetBar.LabelX
-    Friend WithEvents LabelX1 As DevComponents.DotNetBar.LabelX
-    Friend WithEvents LabelX2 As DevComponents.DotNetBar.LabelX
+    Friend WithEvents HastaLabel As DevComponents.DotNetBar.LabelX
+    Friend WithEvents FechaHasta As DevComponents.DotNetBar.LabelX
 End Class

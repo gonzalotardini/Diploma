@@ -106,4 +106,22 @@ Public Class ReporteFacade
             Throw New Exception(ex.Message)
         End Try
     End Sub
+
+    Public Function obtenerReporteArticulosCabecera(codreporte As Long) As ReporteArticulosCabecera
+        Try
+            Dim reporteDao = New ReporteDAO
+            Return reporteDao.ObtenerReporteArticulosCabecera(codreporte)
+        Catch ex As Exception
+            Throw New Exception(ex.Message)
+        End Try
+    End Function
+
+    Public Function obtenerReporteArticulosDetalle(codReporteArticulos As Long) As DataTable
+        Try
+            Dim reporteDao = New ReporteDAO
+            Return reporteDao.ObtenerReporteArticulosDetalle(codReporteArticulos)
+        Catch ex As Exception
+            Throw New Exception(ex.Message)
+        End Try
+    End Function
 End Class
