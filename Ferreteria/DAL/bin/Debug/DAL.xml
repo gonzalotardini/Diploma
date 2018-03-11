@@ -363,6 +363,18 @@ DAL
  </summary>
  <returns></returns>
 </member>
+<member name="M:DAL.ReporteDAO.EliminarReporteArticulos(System.Int32)">
+ <summary>
+ soft delete del reporte de un reporte de articulos mas vendidos
+ </summary>
+ <param name="cod"></param>
+</member>
+<member name="M:DAL.ReporteDAO.EliminarReportePrecios(System.Int32)">
+ <summary>
+ soft delete del reporte de un reporte de aumento de precios
+ </summary>
+ <param name="cod"></param>
+</member>
 <member name="M:DAL.ReporteDAO.ObtenerReporteArticulosCabecera(System.Int64)">
  <summary>
  Obtiene la cabecera de un reporte de articulos mas vendidos en particular

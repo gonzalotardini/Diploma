@@ -9,34 +9,40 @@ Public Class GestorCliente
     ''' <param name="Cliente"></param>
     ''' <remarks></remarks>
 
-    Public Sub ValidarClienteBLL(Cliente As Cliente)
+    Public Sub ValidarClienteBLL(Cliente As Cliente, cultura As String)
 
         Dim _ClienteFacade As New ClienteFacade
-
-
-
-
-
         Try
 
             If Cliente.RazonSocial = "" Or Cliente.RazonSocial = " " Then
+                If cultura = "ESPAÑOL" Then
+                    Throw New Exception("Error, debe completar la razón social del cliente")
+                Else
+                    Throw New Exception("Error, you must complete business name")
+                End If
 
-                Throw New Exception("Error, debe completar la razón social del cliente")
 
             End If
 
 
             If (Len(Cliente.Cuit)) > 11 Then
+                If cultura = "ESPAÑOL" Then
+                    Throw New Exception("Error, Cuit muy extenso")
+                Else
+                    Throw New Exception("Error, Cuit to long")
+                End If
 
-                Throw New Exception("Error, Cuit muy extenso")
 
             End If
 
 
             If (Len(Cliente.Telefono)) > 11 Or (Len(Cliente.Telefono)) < 8 Then
 
-                Throw New Exception("Error, Revise Teléfono")
-
+                If cultura = "ESPAÑOL" Then
+                    Throw New Exception("Error, Revise Teléfono")
+                Else
+                    Throw New Exception("Error, check phone")
+                End If
             End If
 
 
@@ -59,7 +65,7 @@ Public Class GestorCliente
     ''' </summary>
     ''' <param name="Cliente"></param>
     ''' <remarks></remarks>
-    Public Sub ValidarClienteActualizacionBLL(Cliente As Cliente)
+    Public Sub ValidarClienteActualizacionBLL(Cliente As Cliente, cultura As String)
 
         Dim _ClienteFacade As New ClienteFacade
 
@@ -68,25 +74,37 @@ Public Class GestorCliente
 
 
         Try
-
             If Cliente.RazonSocial = "" Or Cliente.RazonSocial = " " Then
+                If cultura = "ESPAÑOL" Then
+                    Throw New Exception("Error, debe completar la razón social del cliente")
+                Else
+                    Throw New Exception("Error, you must complete business name")
+                End If
 
-                Throw New Exception("Error, debe completar la razón social del cliente")
 
             End If
 
+            Dim largo As String = (Cliente.Cuit)
 
-            If (Len(Cliente.Cuit)) > 11 Then
 
-                Throw New Exception("Error, Cuit muy extenso")
+            If largo.Length > 11 Then
+                If cultura = "ESPAÑOL" Then
+                    Throw New Exception("Error, Cuit muy extenso")
+                Else
+                    Throw New Exception("Error, Cuit to long")
+                End If
+
 
             End If
 
 
             If (Len(Cliente.Telefono)) > 11 Or (Len(Cliente.Telefono)) < 8 Then
 
-                Throw New Exception("Error, Revise Teléfono")
-
+                If cultura = "ESPAÑOL" Then
+                    Throw New Exception("Error, Revise Teléfono")
+                Else
+                    Throw New Exception("Error, check phone")
+                End If
             End If
 
 

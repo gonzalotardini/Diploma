@@ -62,14 +62,14 @@ BLL
  <param name="_ListaArticulo"></param>
  <remarks></remarks>
 </member>
-<member name="M:BLL.GestorCliente.ValidarClienteBLL(BIZ.Cliente)">
+<member name="M:BLL.GestorCliente.ValidarClienteBLL(BIZ.Cliente,System.String)">
  <summary>
  En el método ValidarClienteBLL se chequean todos los datos del clientes. Estos datos tienen que estar completos sin ningún tipo de faltante y con el formato correcto
  </summary>
  <param name="Cliente"></param>
  <remarks></remarks>
 </member>
-<member name="M:BLL.GestorCliente.ValidarClienteActualizacionBLL(BIZ.Cliente)">
+<member name="M:BLL.GestorCliente.ValidarClienteActualizacionBLL(BIZ.Cliente,System.String)">
  <summary>
  En el método ValidarClienteBLL se chequean todos los datos del clientes. Estos datos tienen que estar completos sin ningún tipo de faltante y con el formato correcto. Lo realiza para poder actualizar los datos de un determinado cliente
  

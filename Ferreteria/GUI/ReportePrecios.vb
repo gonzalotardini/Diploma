@@ -1,5 +1,5 @@
 ﻿Imports DAL
-
+Imports SL
 
 Public Class ReportePrecios
 
@@ -98,6 +98,43 @@ Public Class ReportePrecios
     End Sub
 
     Private Sub CancelarButton_Click(sender As Object, e As EventArgs) Handles CancelarButton.Click
+        Try
+            Dim msg As String = ""
+            Dim msg2 As String = ""
+            Dim cod As Integer = (DataGridView1.CurrentRow.Cells(0).Value)
 
+            Select Case Principal.CulturaGlobal
+                Case "ESPAÑOL"
+                    msg = "¿Seguro desea eliminar el reporte?"
+                    msg2 = "Reporte eliminado correctamente"
+                Case "ENGLISH"
+                    msg = "Do you really want to delete the report?"
+                    msg2 = "The report was correctly deleted"
+            End Select
+
+
+            If MsgBox(msg, MsgBoxStyle.YesNo + MsgBoxStyle.Question, "ATENCIÓN") = MsgBoxResult.Yes Then
+                Dim reporteDao = New ReporteDAO
+                reporteDao.EliminarReportePrecios(cod)
+                MsgBox(msg2, MsgBoxStyle.Information, "INFO")
+                DataGridView1.DataSource = reporteDao.ObtenerReportes
+            End If
+
+            For Each row As DataGridViewRow In DataGridView1.Rows
+
+                If row.Index Mod 2 <> 0 Then
+                    row.DefaultCellStyle.BackColor = Color.Bisque
+                Else
+                    row.DefaultCellStyle.BackColor = Color.Aqua
+
+                End If
+
+            Next
+
+        Catch ex As Exception
+            Dim el As New ErrorLogger
+            MsgBox(ex.Message, MsgBoxStyle.Critical, "ERROR")
+            el.WriteToErrorLog(ex.Message, ex.StackTrace, "Error")
+        End Try
     End Sub
 End Class

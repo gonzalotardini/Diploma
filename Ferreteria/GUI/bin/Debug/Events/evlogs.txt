@@ -5007,3 +5007,73 @@ Mensaje: Se Actualizo correctamente el Cliente LECTUS SIT LLP
 StackTrace: Articulo Form
 Fecha/Hora: 11/03/2018 12:55:29
 ===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 11/03/2018 15:00:47
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 11/03/2018 15:01:59
+===========================================================================================
+Titulo: Información
+Mensaje: Se Actualizo correctamente el Cliente DICTUM CORPORATION
+StackTrace: Articulo Form
+Fecha/Hora: 11/03/2018 15:02:14
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 11/03/2018 15:07:51
+===========================================================================================
+Titulo: Información
+Mensaje: Se Actualizo correctamente el Cliente ANTE INCORPORATED
+StackTrace: Articulo Form
+Fecha/Hora: 11/03/2018 15:08:02
+===========================================================================================
+Titulo: Información
+Mensaje: Se agregó correctamente el artículo GONZALO TARDINI
+StackTrace: Articulo Form
+Fecha/Hora: 11/03/2018 15:08:29
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 11/03/2018 15:13:15
+===========================================================================================
+Titulo: Información
+Mensaje: Se Actualizo correctamente el Cliente LECTUS SIT LLP
+StackTrace: Articulo Form
+Fecha/Hora: 11/03/2018 15:13:21
+===========================================================================================
+Titulo: Información
+Mensaje: Se Actualizo correctamente el Cliente QUIS URNA LIMITED
+StackTrace: Articulo Form
+Fecha/Hora: 11/03/2018 15:13:45
+===========================================================================================
+Titulo: Información
+Mensaje: Se Actualizo correctamente el Cliente QUIS URNA LIMITED
+StackTrace: Articulo Form
+Fecha/Hora: 11/03/2018 15:14:19
+===========================================================================================
+Titulo: Información
+Mensaje: Se Actualizo correctamente el Cliente QUIS URNA LIMITED
+StackTrace: Articulo Form
+Fecha/Hora: 11/03/2018 15:17:33
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 11/03/2018 15:21:43
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 11/03/2018 15:23:13
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 11/03/2018 15:37:55
+===========================================================================================

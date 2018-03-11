@@ -1,4 +1,5 @@
 ﻿Imports DAL
+Imports SL
 
 Public Class ReporteArticulosç
     Public Shared _CodReporteArticulos As Long
@@ -47,16 +48,41 @@ Public Class ReporteArticulosç
             End If
 
 
-        Catch ex As Exception
+            For Each row As DataGridViewRow In DataGridViewX1.Rows
 
+                If row.Index Mod 2 <> 0 Then
+                    row.DefaultCellStyle.BackColor = Color.Bisque
+                Else
+                    row.DefaultCellStyle.BackColor = Color.Aqua
+
+                End If
+
+            Next
+
+        Catch ex As Exception
+            Dim el As New ErrorLogger
+            MsgBox(ex.Message, MsgBoxStyle.Critical, "ERROR")
+            el.WriteToErrorLog(ex.Message, ex.StackTrace, "Error")
         End Try
     End Sub
 
-    Private Sub DataGridViewX1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridViewX1.CellContentClick
+    Private Sub DataGridViewX1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
 
     End Sub
 
+
+
     Private Sub DataGridViewX1_ColumnHeaderMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles DataGridViewX1.ColumnHeaderMouseClick
+        For Each row As DataGridViewRow In DataGridViewX1.Rows
+
+            If row.Index Mod 2 <> 0 Then
+                row.DefaultCellStyle.BackColor = Color.Bisque
+            Else
+                row.DefaultCellStyle.BackColor = Color.Aqua
+
+            End If
+
+        Next
 
     End Sub
 
@@ -68,5 +94,50 @@ Public Class ReporteArticulosç
             ReporteArticulosDetalleForm.Show()
 
         End If
+    End Sub
+
+    Private Sub ButtonX1_Click(sender As Object, e As EventArgs) Handles ButtonX1.Click
+        Try
+            Dim msg As String = ""
+            Dim msg2 As String = ""
+            Dim cod As Integer = (DataGridViewX1.CurrentRow.Cells(0).Value)
+
+            Select Case Principal.CulturaGlobal
+                Case "ESPAÑOL"
+                    msg = "¿Seguro desea eliminar el reporte?"
+                    msg2 = "Reporte eliminado correctamente"
+                Case "ENGLISH"
+                    msg = "Do you really want to delete the report?"
+                    msg2 = "The report was correctly deleted"
+            End Select
+
+
+            If MsgBox(msg, MsgBoxStyle.YesNo + MsgBoxStyle.Question, "ATENCIÓN") = MsgBoxResult.Yes Then
+                Dim reporteDao = New ReporteDAO
+                reporteDao.EliminarReporteArticulos(cod)
+                MsgBox(msg2, MsgBoxStyle.Information, "INFO")
+                DataGridViewX1.DataSource = reporteDao.ObtenerReportesArticulos
+            End If
+
+            For Each row As DataGridViewRow In DataGridViewX1.Rows
+
+                If row.Index Mod 2 <> 0 Then
+                    row.DefaultCellStyle.BackColor = Color.Bisque
+                Else
+                    row.DefaultCellStyle.BackColor = Color.Aqua
+
+                End If
+
+            Next
+
+        Catch ex As Exception
+            Dim el As New ErrorLogger
+            MsgBox(ex.Message, MsgBoxStyle.Critical, "ERROR")
+            el.WriteToErrorLog(ex.Message, ex.StackTrace, "Error")
+        End Try
+    End Sub
+
+    Private Sub DataGridViewX1_CellContentClick_1(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridViewX1.CellContentClick
+
     End Sub
 End Class

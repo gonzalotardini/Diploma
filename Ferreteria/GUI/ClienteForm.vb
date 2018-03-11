@@ -332,13 +332,19 @@ Public Class ClienteForm
 
         Dim _Cliente As New Cliente
         Dim _GestorCLiente As New GestorCliente
+        Dim msg = ""
 
         Try
 
             _Cliente.RazonSocial = (RazonSocialTextBox.Text).ToUpper
 
             If IsNumeric(CuitTextBox.Text) = False Then
-                Throw New Exception("Error revise Cuit del cliente")
+                If Principal.CulturaGlobal = "ESPAÑOL" Then
+                    Throw New Exception("Error revise Cuit del cliente")
+                Else
+                    Throw New Exception("Error, check cuit number")
+                End If
+
             Else
 
                 _Cliente.Cuit = Convert.ToInt64(CuitTextBox.Text)
@@ -350,8 +356,12 @@ Public Class ClienteForm
 
 
             If BarrioComboBox.SelectedIndex = -1 Then
+                If Principal.CulturaGlobal = "ESPAÑOL" Then
+                    Throw New Exception("Error, debe seleccionar un barrio")
+                Else
+                    Throw New Exception("Error, you must select a city")
+                End If
 
-                Throw New Exception("Error, debe seleccionar un barrio")
             Else
                 _Cliente.Barrio = BarrioComboBox.SelectedValue
 
@@ -361,8 +371,12 @@ Public Class ClienteForm
 
 
             If IsNumeric(TelefonoTextBox.Text) = False Then
+                If Principal.CulturaGlobal = "ESPAÑOL" Then
+                    Throw New Exception("Error, Telefono debe ser numérico")
+                Else
+                    Throw New Exception("Error, phone must be numeric")
+                End If
 
-                Throw New Exception("Error, Telefono debe ser numérico")
             Else
                 _Cliente.Telefono = Convert.ToInt64(TelefonoTextBox.Text)
 
@@ -372,14 +386,21 @@ Public Class ClienteForm
 
 
             _Cliente.Email = (EmailTextBox.Text).ToUpper
-            _GestorCLiente.ValidarClienteBLL(_Cliente)
+            _GestorCLiente.ValidarClienteBLL(_Cliente, Principal.CulturaGlobal)
 
 
             Dim el As New EventLogger
 
+            Select Case Principal.CulturaGlobal
+                Case "ESPAÑOL"
+                    msg = "Se agregó correctamente el cliente"
+                Case "ENGLISH"
+                    msg = "The client was correctly added: "
+            End Select
+
             el.WriteToErrorLog("Se agregó correctamente el artículo " & _Cliente.RazonSocial, "Articulo Form", "Información")
 
-            Dim Mensaje = MsgBox("Se agregó correctamente el articulo " & _Cliente.RazonSocial, MsgBoxStyle.Information, "ATENCÓN")
+            Dim Mensaje = MsgBox(msg & _Cliente.RazonSocial, MsgBoxStyle.Information, "ATENCÓN")
 
             RazonSocialTextBox.Text = ""
             CuitTextBox.Text = ""
@@ -406,13 +427,20 @@ Public Class ClienteForm
         Dim _ClienteDao As New ClienteDAO
         Dim _Cliente As New Cliente
         Dim _GestorCLiente As New GestorCliente
+        Dim msg As String = ""
 
         Try
 
             _Cliente.RazonSocial = (RazonSocialTextBox.Text).ToUpper
 
             If IsNumeric(CuitTextBox.Text) = False Then
-                Throw New Exception("Error revise Cuit del cliente")
+                If Principal.CulturaGlobal = "ESPAÑOL" Then
+                    Throw New Exception("Error revise Cuit del cliente")
+                Else
+                    Throw New Exception("Error, check CUIT number")
+                End If
+
+
             Else
 
                 _Cliente.Cuit = Convert.ToInt64(CuitTextBox.Text)
@@ -424,8 +452,12 @@ Public Class ClienteForm
 
 
             If BarrioComboBox.SelectedIndex = -1 Then
+                If Principal.CulturaGlobal = "ESPAÑOL" Then
+                    Throw New Exception("Error, debe seleccionar un barrio")
+                Else
+                    Throw New Exception("Error, you must select a city")
+                End If
 
-                Throw New Exception("Error, debe seleccionar un barrio")
             Else
                 _Cliente.Barrio = BarrioComboBox.SelectedValue
 
@@ -435,8 +467,12 @@ Public Class ClienteForm
 
 
             If IsNumeric(TelefonoTextBox.Text) = False Then
+                If Principal.CulturaGlobal = "ESPAÑOL" Then
+                    Throw New Exception("Error, Telefono debe ser numérico")
+                Else
+                    Throw New Exception("Error, phone must be numeric")
+                End If
 
-                Throw New Exception("Error, Telefono debe ser numérico")
             Else
                 _Cliente.Telefono = (TelefonoTextBox.Text)
 
@@ -445,8 +481,12 @@ Public Class ClienteForm
 
 
             If EmailTextBox.Text = "" Then
+                If Principal.CulturaGlobal = "ESPAÑOL" Then
+                    Throw New Exception("Error, complete email")
+                Else
+                    Throw New Exception("Error, fill email")
+                End If
 
-                Throw New Exception("Error, complete email")
             Else
                 _Cliente.Email = (EmailTextBox.Text).ToUpper
             End If
@@ -458,15 +498,37 @@ Public Class ClienteForm
 
 
 
-            _GestorCLiente.ValidarClienteActualizacionBLL(_Cliente)
+            _GestorCLiente.ValidarClienteActualizacionBLL(_Cliente, Principal.CulturaGlobal)
 
 
             Dim el As New EventLogger
 
+            Select Case Principal.CulturaGlobal
+                Case "ESPAÑOL"
+                    msg = "Se actualizó correctamente el cliente"
+                Case "ENGLISH"
+                    msg = "Correctly updated client "
+            End Select
+
+
             el.WriteToErrorLog("Se Actualizo correctamente el Cliente " & _Cliente.RazonSocial, "Articulo Form", "Información")
 
-            Dim Mensaje = MsgBox("Se actualizo correctamente el cliente " & _Cliente.RazonSocial, MsgBoxStyle.Information, "ATENCÓN")
+            Dim Mensaje = MsgBox(msg & _Cliente.RazonSocial, MsgBoxStyle.Information, "ATENCÓN")
 
+            AceptarButton.Enabled = False
+            AgregarClienteButton.Enabled = True
+
+
+            ClienteGridView.DataSource = _ClienteDao.ObtenerClientesDao
+
+
+
+            LabelCodigoCliente.Text = ""
+            RazonSocialTextBox.Text = ""
+            CuitTextBox.Text = ""
+            DireccionTextBox.Text = ""
+            TelefonoTextBox.Text = ""
+            EmailTextBox.Text = ""
 
         Catch ex As Exception
 
@@ -476,25 +538,6 @@ Public Class ClienteForm
             el.WriteToErrorLog(ex.Message, ex.StackTrace, "Error")
 
         End Try
-
-
-
-
-
-        AceptarButton.Enabled = False
-        AgregarClienteButton.Enabled = True
-
-
-        ClienteGridView.DataSource = _ClienteDao.ObtenerClientesDao
-
-
-
-        LabelCodigoCliente.Text = ""
-        RazonSocialTextBox.Text = ""
-        CuitTextBox.Text = ""
-        DireccionTextBox.Text = ""
-        TelefonoTextBox.Text = ""
-        EmailTextBox.Text = ""
 
 
 

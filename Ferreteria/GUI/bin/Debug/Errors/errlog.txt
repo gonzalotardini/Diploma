@@ -2790,3 +2790,33 @@ Mensaje: Error revise Cuit del cliente
 StackTrace:    at GUI.ClienteForm.ButtonX2_Click(Object sender, EventArgs e)
 Fecha/Hora: 11/03/2018 12:55:25
 ===========================================================================================
+Titulo: Error
+Mensaje: Error, check CUIT number
+StackTrace:    at GUI.ClienteForm.ButtonX3_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ClienteForm.vb:line 419
+Fecha/Hora: 11/03/2018 15:01:03
+===========================================================================================
+Titulo: Error
+Mensaje: Error, check CUIT number
+StackTrace:    at GUI.ClienteForm.ButtonX3_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ClienteForm.vb:line 419
+Fecha/Hora: 11/03/2018 15:02:08
+===========================================================================================
+Titulo: Error
+Mensaje: Value was either too large or too small for an Int64.
+StackTrace:    at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Convert.ToInt64(String value)
+   at GUI.ClienteForm.ButtonX3_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ClienteForm.vb:line 446
+Fecha/Hora: 11/03/2018 15:13:33
+===========================================================================================
+Titulo: Error
+Mensaje: Value was either too large or too small for an Int64.
+StackTrace:    at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Convert.ToInt64(String value)
+   at GUI.ClienteForm.ButtonX3_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ClienteForm.vb:line 446
+Fecha/Hora: 11/03/2018 15:14:28
+===========================================================================================
+Titulo: Error
+Mensaje: Error, Cuit to long
+StackTrace:    at BLL.GestorCliente.ValidarClienteActualizacionBLL(Cliente Cliente, String cultura)
+   at GUI.ClienteForm.ButtonX3_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ClienteForm.vb:line 501
+Fecha/Hora: 11/03/2018 15:17:29
+===========================================================================================

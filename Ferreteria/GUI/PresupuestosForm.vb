@@ -198,7 +198,9 @@ Public Class PresupuestosForm
 
     End Sub
 
-    Private Sub PresupuestosDataGridView_ColumnHeaderMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs)
+
+
+    Private Sub PresupuestosDataGridView_ColumnHeaderMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles PresupuestosDataGridView.ColumnHeaderMouseClick
         For Each row As DataGridViewRow In PresupuestosDataGridView.Rows
 
             If row.Index Mod 2 <> 0 Then
@@ -209,6 +211,8 @@ Public Class PresupuestosForm
             End If
 
         Next
+
+
     End Sub
 
     Private Sub ButtonX2_Click(sender As Object, e As EventArgs) Handles VerButton.Click
@@ -275,6 +279,10 @@ Public Class PresupuestosForm
     End Sub
 
     Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
+
+    End Sub
+
+    Private Sub PresupuestosDataGridView_CellContentClick_1(sender As Object, e As DataGridViewCellEventArgs) Handles PresupuestosDataGridView.CellContentClick
 
     End Sub
 End Class

@@ -77,7 +77,7 @@ Public Class ReporteDAO
 
 
         Try
-            _Consulta = "select Cod_Reporte, convert(char(10),FechaInicio,103) as FechaDesde, convert(char(10),FechaFin,103) as FechaHasta, Usuario, Tipo from ReporteArticulosMasVendidos"
+            _Consulta = "select Cod_Reporte, convert(char(10),FechaInicio,103) as FechaDesde, convert(char(10),FechaFin,103) as FechaHasta, Usuario, Tipo from ReporteArticulosMasVendidos where estado=0"
 
             Me.Conexion.Open()
 
@@ -149,6 +149,74 @@ Public Class ReporteDAO
 
     End Function
 
+    ''' <summary>
+    ''' soft delete del reporte de un reporte de articulos mas vendidos
+    ''' </summary>
+    ''' <param name="cod"></param>
+    Public Sub EliminarReporteArticulos(cod As Integer)
+        Dim _Consulta As String
+        Dim _Comando As New SqlCommand
+
+
+        _Consulta = "update ReporteArticulosMasVendidos set Estado= 1 where cod_reporte=@cod_reporte"
+
+        Try
+
+            Me.Conexion.Open()
+
+            _Comando = New SqlCommand(_Consulta, Me.Conexion)
+
+            '_Comando.Parameters.AddWithValue("@Cod_Reporte", ReporteCabecera.Cod_Reporte)
+            _Comando.Parameters.AddWithValue("@cod_reporte", cod)
+
+
+            _Comando.ExecuteNonQuery()
+
+
+        Catch ex As Exception
+
+            Throw New Exception("Error al cargar Reporte " & ex.Message)
+
+
+        Finally
+            Me.Conexion.Close()
+        End Try
+
+    End Sub
+    ''' <summary>
+    ''' soft delete del reporte de un reporte de aumento de precios
+    ''' </summary>
+    ''' <param name="cod"></param>
+    Public Sub EliminarReportePrecios(cod As Integer)
+        Dim _Consulta As String
+        Dim _Comando As New SqlCommand
+
+
+        _Consulta = "update ReporteAumentodePrecios set Estado= 1 where cod_reporte=@cod_reporte"
+
+        Try
+
+            Me.Conexion.Open()
+
+            _Comando = New SqlCommand(_Consulta, Me.Conexion)
+
+            '_Comando.Parameters.AddWithValue("@Cod_Reporte", ReporteCabecera.Cod_Reporte)
+            _Comando.Parameters.AddWithValue("@cod_reporte", cod)
+
+
+            _Comando.ExecuteNonQuery()
+
+
+        Catch ex As Exception
+
+            Throw New Exception("Error al cargar Reporte " & ex.Message)
+
+
+        Finally
+            Me.Conexion.Close()
+        End Try
+
+    End Sub
 
     ''' <summary>
     ''' Obtiene la cabecera de un reporte de articulos mas vendidos en particular
@@ -987,7 +1055,7 @@ Public Class ReporteDAO
 
 
         Try
-            _Consulta = "select Cod_Reporte,Fecha, Usuario, Tipo from ReporteAumentoDePrecios"
+            _Consulta = "select Cod_Reporte,Fecha, Usuario, Tipo from ReporteAumentoDePrecios where estado=0"
 
             Me.Conexion.Open()
 
