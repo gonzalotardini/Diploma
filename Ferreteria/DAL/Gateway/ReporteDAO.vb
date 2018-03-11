@@ -621,21 +621,16 @@ Public Class ReporteDAO
             'Derecha
             cb.SetFontAndSize(fuente, 11)
             'cb.ShowTextAligned(PdfContentByte.ALIGN_LEFT, "Punto de venta: 001", 400, 780, 0)
-            cb.ShowTextAligned(PdfContentByte.ALIGN_LEFT, "Fecha Desde:  " + reporteCabecera.FechaInicio.ToString("dd/MM/yyyy"), 400, 760, 0)
-            cb.ShowTextAligned(PdfContentByte.ALIGN_LEFT, "Fecha Hasta:  " + reporteCabecera.FechaFin.ToString("dd/MM/yyyy"), 410, 760, 0)
+            cb.ShowTextAligned(PdfContentByte.ALIGN_LEFT, "Fecha Desde:  " + reporteCabecera.FechaInicio.ToString("dd/MM/yyyy"), 400, 780, 0)
+            cb.ShowTextAligned(PdfContentByte.ALIGN_LEFT, "Fecha Hasta:  " + reporteCabecera.FechaFin.ToString("dd/MM/yyyy"), 400, 760, 0)
 
             'COLUMNAS
             cb.SetFontAndSize(fuente, 8)
-            cb.ShowTextAligned(PdfContentByte.ALIGN_CENTER, "Código", 20, 685, 0)
-            cb.ShowTextAligned(PdfContentByte.ALIGN_CENTER, "Descripcion", 70, 685, 0)
-            cb.ShowTextAligned(PdfContentByte.ALIGN_CENTER, "Marca", 210, 685, 0)
-            cb.ShowTextAligned(PdfContentByte.ALIGN_CENTER, "Medida", 260, 685, 0)
-            cb.ShowTextAligned(PdfContentByte.ALIGN_CENTER, "Precio Inicial", 305, 685, 0)
-            cb.ShowTextAligned(PdfContentByte.ALIGN_CENTER, "Precio Final", 365, 685, 0)
-            cb.ShowTextAligned(PdfContentByte.ALIGN_CENTER, "#", 400, 685, 0)
-            cb.ShowTextAligned(PdfContentByte.ALIGN_CENTER, "%", 425, 685, 0)
-            cb.ShowTextAligned(PdfContentByte.ALIGN_CENTER, "Desde", 480, 685, 0)
-            cb.ShowTextAligned(PdfContentByte.ALIGN_CENTER, "Hasta", 540, 685, 0)
+            cb.ShowTextAligned(PdfContentByte.ALIGN_CENTER, "Código", 30, 685, 0)
+            cb.ShowTextAligned(PdfContentByte.ALIGN_CENTER, "Descripcion", 100, 685, 0)
+            cb.ShowTextAligned(PdfContentByte.ALIGN_CENTER, "Marca", 250, 685, 0)
+            cb.ShowTextAligned(PdfContentByte.ALIGN_CENTER, "Medida", 300, 685, 0)
+            cb.ShowTextAligned(PdfContentByte.ALIGN_CENTER, "Cantidad", 350, 685, 0)
 
             'Total
 
@@ -654,16 +649,12 @@ Public Class ReporteDAO
                 cb.SetFontAndSize(fuente, 8)
 
 
-                'cb.ShowTextAligned(PdfContentByte.ALIGN_LEFT, listaDetalle(I - 1).Cod_Articulo, 10, Ubicacion, 0)
-                'cb.ShowTextAligned(PdfContentByte.ALIGN_LEFT, listaDetalle(I - 1).Descripcion, 45, Ubicacion, 0)
-                'cb.ShowTextAligned(PdfContentByte.ALIGN_LEFT, listaDetalle(I - 1).Marca1, 200, Ubicacion, 0)
-                'cb.ShowTextAligned(PdfContentByte.ALIGN_LEFT, listaDetalle(I - 1).SubUnidad, 255, Ubicacion, 0)
-                'cb.ShowTextAligned(PdfContentByte.ALIGN_LEFT, listaDetalle(I - 1).PrecioInicial, 300, Ubicacion, 0)
-                'cb.ShowTextAligned(PdfContentByte.ALIGN_LEFT, listaDetalle(I - 1).PrecioFinal, 350, Ubicacion, 0)
-                'cb.ShowTextAligned(PdfContentByte.ALIGN_LEFT, listaDetalle(I - 1).CantidadPrecios, 400, Ubicacion, 0)
-                'cb.ShowTextAligned(PdfContentByte.ALIGN_LEFT, listaDetalle(I - 1).PorcentajeAumento, 420, Ubicacion, 0)
-                'cb.ShowTextAligned(PdfContentByte.ALIGN_LEFT, listaDetalle(I - 1).Fecha_Desde, 460, Ubicacion, 0)
-                'cb.ShowTextAligned(PdfContentByte.ALIGN_LEFT, listaDetalle(I - 1).Fecha_Hasta, 520, Ubicacion, 0)
+                cb.ShowTextAligned(PdfContentByte.ALIGN_LEFT, listaDetalle(I - 1).Cod_Articulo, 30, Ubicacion, 0)
+                cb.ShowTextAligned(PdfContentByte.ALIGN_LEFT, listaDetalle(I - 1).Descripcion, 90, Ubicacion, 0)
+                cb.ShowTextAligned(PdfContentByte.ALIGN_LEFT, listaDetalle(I - 1).Marca1, 230, Ubicacion, 0)
+                cb.ShowTextAligned(PdfContentByte.ALIGN_LEFT, listaDetalle(I - 1).SubUnidad1, 300, Ubicacion, 0)
+                cb.ShowTextAligned(PdfContentByte.ALIGN_LEFT, listaDetalle(I - 1).CantidadVentas, 350, Ubicacion, 0)
+
 
                 Ubicacion = Ubicacion - 15
 

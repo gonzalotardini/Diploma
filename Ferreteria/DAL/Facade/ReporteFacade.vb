@@ -124,4 +124,13 @@ Public Class ReporteFacade
             Throw New Exception(ex.Message)
         End Try
     End Function
+
+    Public Sub ImprimirReporteArticulos(reporteCabecera As ReporteArticulosCabecera, listaDetalle As List(Of ReporteArticulosMasVendidosDetalle))
+        Try
+            Dim reporteDao = New ReporteDAO
+            reporteDao.ImprimirReporteArticulossDAO(reporteCabecera, listaDetalle)
+        Catch ex As Exception
+            Throw New Exception(ex.Message)
+        End Try
+    End Sub
 End Class

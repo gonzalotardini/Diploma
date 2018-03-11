@@ -1,5 +1,6 @@
 ﻿Imports BIZ
 Imports BLL
+Imports DAL
 Imports SL
 
 Public Class ReporteArticulosDetalleForm
@@ -70,5 +71,68 @@ Public Class ReporteArticulosDetalleForm
             el.WriteToErrorLog(ex.Message, ex.StackTrace, "Error")
         End Try
 
+    End Sub
+
+    Private Sub ImprimirButton_Click(sender As Object, e As EventArgs) Handles ImprimirButton.Click
+        Dim listaDetalle As List(Of ReporteArticulosMasVendidosDetalle)
+        Dim item As ReporteArticulosMasVendidosDetalle
+        Dim GestorReporte As New GestorReporte
+        Dim ReporteCabecera As New ReporteArticulosCabecera
+
+        Dim msg2 = ""
+        Dim reporteDao = New ReporteDAO
+
+        Select Case Principal.CulturaGlobal
+            Case "ESPAÑOL"
+
+                msg2 = "¿Desea imprimir el reporte?"
+            Case "ENGLISH"
+
+                msg2 = "Do you want to print the report?"
+        End Select
+
+        Try
+            If MsgBox(msg2, MsgBoxStyle.YesNo + MsgBoxStyle.Question, "ATENCIÓN") = MsgBoxResult.Yes Then
+                'ReporteCabecera.Usuario = LogIn.Usuario.NombreUsuario
+                listaDetalle = New List(Of ReporteArticulosMasVendidosDetalle)
+
+                For i = 0 To DataGridView1.RowCount - 1
+
+                    item = New ReporteArticulosMasVendidosDetalle
+                    item.Cod_Articulo = DataGridView1.Rows(i).Cells(0).Value
+                    item.Descripcion = DataGridView1.Rows(i).Cells(1).Value
+                    item.SubUnidad1 = DataGridView1.Rows(i).Cells(2).Value
+                    item.Marca1 = DataGridView1.Rows(i).Cells(3).Value
+                    item.CantidadVentas = DataGridView1.Rows(i).Cells(4).Value
+
+
+                    listaDetalle.Add(item)
+
+                Next
+
+                'reporteDao.ImprimirReportePreciosDAO(ReporteCabecera, listaDetalle)
+
+
+
+
+                'ReporteCabecera.Cod_Reporte = reporteDao.ObtenerCodUltimoReportePrecios()
+                ReporteCabecera.Cod_Reporte = LabelX4.Text
+                ReporteCabecera.Tipo = "AUMENTO DE PRECIOS"
+                ReporteCabecera.Usuario = LabelX6.Text
+                ReporteCabecera.FechaInicio = FechaDesde.Text
+                ReporteCabecera.FechaFin = FechaHasta.Text
+                GestorReporte.ImprimirReporteArticulosBll(ReporteCabecera, listaDetalle)
+
+
+
+
+            End If
+        Catch ex As Exception
+
+            Dim el As New ErrorLogger
+            MsgBox(ex.Message, MsgBoxStyle.Critical, "ERROR")
+            el.WriteToErrorLog(ex.Message, ex.StackTrace, "Error")
+
+        End Try
     End Sub
 End Class

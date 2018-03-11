@@ -2767,3 +2767,10 @@ StackTrace:    at BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _
    at GUI.NuevoReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e)
 Fecha/Hora: 10/03/2018 20:57:34
 ===========================================================================================
+Titulo: Error
+Mensaje: Conversion from string "1 U" to type 'Integer' is not valid.
+StackTrace:    at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)
+   at GUI.ReporteArticulosDetalleForm.ImprimirButton_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ReporteArticulosDetalleForm.vb:line 104
+Fecha/Hora: 10/03/2018 22:47:25
+===========================================================================================

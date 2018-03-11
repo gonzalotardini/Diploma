@@ -165,6 +165,15 @@ Public Class GestorReporte
 
     End Sub
 
+    Public Sub ImprimirReporteArticulosBll(reporteCabecera As ReporteArticulosCabecera, listaDetalle As List(Of ReporteArticulosMasVendidosDetalle))
+        Try
+            Dim reporteFacade = New ReporteFacade
+            reporteFacade.ImprimirReporteArticulos(reporteCabecera, listaDetalle)
+        Catch ex As Exception
+            Throw New Exception(ex.Message)
+        End Try
+    End Sub
+
     Public Sub ImprimirReportePrecios(reporteCabecera As Reporte, listaDetalle As List(Of ReportePreciosDetalle))
         Try
             Dim reporteFacade = New ReporteFacade
