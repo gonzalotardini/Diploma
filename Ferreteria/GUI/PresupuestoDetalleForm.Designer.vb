@@ -217,7 +217,7 @@ Partial Class PresupuestoDetalleForm
         'CodigoPresupuestoTextbox
         '
         Me.CodigoPresupuestoTextbox.AutoSize = True
-        Me.CodigoPresupuestoTextbox.Location = New System.Drawing.Point(951, 2)
+        Me.CodigoPresupuestoTextbox.Location = New System.Drawing.Point(982, 4)
         Me.CodigoPresupuestoTextbox.Name = "CodigoPresupuestoTextbox"
         Me.CodigoPresupuestoTextbox.Size = New System.Drawing.Size(39, 13)
         Me.CodigoPresupuestoTextbox.TabIndex = 22

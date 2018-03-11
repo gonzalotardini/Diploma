@@ -516,9 +516,19 @@ Public Class PresupuestoDetalleForm
         Dim _PresupuestoDAO As New PresupuestoDAO
         Dim _PresupuestoCabecera As New PresupuestoCabecera
         Dim _ListaDetalles As New List(Of PresupuestoDetalle)
+        Dim msg As String = ""
+        Dim msg2 As String = ""
 
+        Select Case Principal.CulturaGlobal
+            Case "ESPAÑOL"
+                msg = "¿Seguro desea finalizar el presupuesto?"
+                msg2 = "Presupuesto guardado correctamente"
+            Case "ENGLISH"
+                msg = "Do you really want to finalize the budget?"
+                msg2 = "Budget saved correcctly"
+        End Select
 
-        If MsgBox("¿Seguro desea finalizar el presupuesto?", MsgBoxStyle.YesNo, "ATENCIÓN") = MsgBoxResult.Yes Then
+        If MsgBox(msg, MsgBoxStyle.YesNo, "ATENCIÓN") = MsgBoxResult.Yes Then
 
             Try
 
@@ -553,7 +563,7 @@ Public Class PresupuestoDetalleForm
 
                 el.WriteToErrorLog("Se guardo correctamente el presupuesto ", "Nuevo Presupuesto Form", "Información")
 
-                Dim Mensaje = MsgBox("Se guardo correctamente el presupuesto", MsgBoxStyle.Information, "INFORMACION")
+                Dim Mensaje = MsgBox(msg2, MsgBoxStyle.Information, "INFORMACION")
 
 
 
