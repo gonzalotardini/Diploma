@@ -57,7 +57,7 @@ Partial Class NotaCreditoForm
         Me.GroupBox1.Controls.Add(Me.CodigoNotaRadioButton)
         Me.GroupBox1.Location = New System.Drawing.Point(617, 144)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(274, 41)
+        Me.GroupBox1.Size = New System.Drawing.Size(304, 41)
         Me.GroupBox1.TabIndex = 10
         Me.GroupBox1.TabStop = False
         '
@@ -65,7 +65,7 @@ Partial Class NotaCreditoForm
         '
         Me.RazonSocialRadioButton.AutoSize = True
         Me.RazonSocialRadioButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RazonSocialRadioButton.Location = New System.Drawing.Point(152, 18)
+        Me.RazonSocialRadioButton.Location = New System.Drawing.Point(134, 18)
         Me.RazonSocialRadioButton.Name = "RazonSocialRadioButton"
         Me.RazonSocialRadioButton.Size = New System.Drawing.Size(116, 17)
         Me.RazonSocialRadioButton.TabIndex = 1
@@ -79,10 +79,10 @@ Partial Class NotaCreditoForm
         Me.CodigoNotaRadioButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CodigoNotaRadioButton.Location = New System.Drawing.Point(6, 18)
         Me.CodigoNotaRadioButton.Name = "CodigoNotaRadioButton"
-        Me.CodigoNotaRadioButton.Size = New System.Drawing.Size(129, 17)
+        Me.CodigoNotaRadioButton.Size = New System.Drawing.Size(111, 17)
         Me.CodigoNotaRadioButton.TabIndex = 0
         Me.CodigoNotaRadioButton.TabStop = True
-        Me.CodigoNotaRadioButton.Text = "CODIGO CLIENTE"
+        Me.CodigoNotaRadioButton.Text = "CODIGO NOTA"
         Me.CodigoNotaRadioButton.UseVisualStyleBackColor = True
         '
         'TextBox1

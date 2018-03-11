@@ -46,6 +46,7 @@ Partial Class ClienteForm
         Me.AgregarClienteButton = New DevComponents.DotNetBar.ButtonX()
         Me.AceptarButton = New DevComponents.DotNetBar.ButtonX()
         Me.ModificarButton = New DevComponents.DotNetBar.ButtonX()
+        Me.HelpProvider1 = New System.Windows.Forms.HelpProvider()
         CType(Me.ClienteGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -340,4 +341,5 @@ Partial Class ClienteForm
     Friend WithEvents AgregarClienteButton As DevComponents.DotNetBar.ButtonX
     Friend WithEvents AceptarButton As DevComponents.DotNetBar.ButtonX
     Friend WithEvents ModificarButton As DevComponents.DotNetBar.ButtonX
+    Friend WithEvents HelpProvider1 As HelpProvider
 End Class

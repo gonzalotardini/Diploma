@@ -28,13 +28,13 @@ Public Class ArticulosForm
     Public num = 0
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-        'Me.WindowState = FormWindowState.Maximized
-
-        Me.Width = 1366
-
-        Me.Height = 768
+        Me.WindowState = FormWindowState.Maximized
 
 
+        HelpProvider1.HelpNamespace = Application.StartupPath() & "/ferreteriahelper.chm"
+        HelpProvider1.SetHelpString(Me, "RegistrarArticulo")
+        HelpProvider1.SetHelpKeyword(Me, "RegistrarArticulo")
+        HelpProvider1.SetHelpNavigator(Me, HelpNavigator.KeywordIndex)
 
         Me.PerformAutoScale()
         Me.Icon = My.Resources.ico

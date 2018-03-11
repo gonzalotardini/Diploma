@@ -2831,3 +2831,21 @@ Mensaje: Error, check cuit number
 StackTrace:    en GUI.ClienteForm.ButtonX2_Click(Object sender, EventArgs e) en C:\Proyectos\Diploma\Ferreteria\GUI\ClienteForm.vb:línea 345
 Fecha/Hora: 11/03/2018 17:23:47
 ===========================================================================================
+Titulo: Error
+Mensaje: La conversión de la cadena "Acceso denegado" en el tipo 'Integer' no es válida.
+StackTrace:    en BLL.GestorReporte.ImprimirReporteArticulosBll(ReporteArticulosCabecera reporteCabecera, List`1 listaDetalle) en C:\Proyectos\Diploma\Ferreteria\BLL\GestorReporte.vb:línea 173
+   en GUI.ReporteArticulosDetalleForm.ImprimirButton_Click(Object sender, EventArgs e) en C:\Proyectos\Diploma\Ferreteria\GUI\ReporteArticulosDetalleForm.vb:línea 124
+Fecha/Hora: 11/03/2018 17:28:21
+===========================================================================================
+Titulo: Error
+Mensaje: No se encontraron articulos
+StackTrace:    en BLL.GestorReporte.ObtenerArticulosMasVendidosBLL(Int32 cantidad, DateTime fecha_desde, DateTime fecha_hasta) en C:\Proyectos\Diploma\Ferreteria\BLL\GestorReporte.vb:línea 68
+   en GUI.NuevoReporteArticulosVendidos.ButtonX1_Click(Object sender, EventArgs e) en C:\Proyectos\Diploma\Ferreteria\GUI\NuevoReporteArticulosVendidos.vb:línea 20
+Fecha/Hora: 11/03/2018 17:48:57
+===========================================================================================
+Titulo: Error
+Mensaje: La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+StackTrace:    en BLL.GestorReporte.ObtenerArticulosMasVendidosBLL(Int32 cantidad, DateTime fecha_desde, DateTime fecha_hasta) en C:\Proyectos\Diploma\Ferreteria\BLL\GestorReporte.vb:línea 68
+   en GUI.NuevoReporteArticulosVendidos.ButtonX1_Click(Object sender, EventArgs e) en C:\Proyectos\Diploma\Ferreteria\GUI\NuevoReporteArticulosVendidos.vb:línea 20
+Fecha/Hora: 11/03/2018 17:49:01
+===========================================================================================

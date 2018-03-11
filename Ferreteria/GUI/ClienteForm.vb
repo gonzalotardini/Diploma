@@ -15,6 +15,12 @@ Public Class ClienteForm
     Private Sub ClienteForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
 
+        HelpProvider1.HelpNamespace = Application.StartupPath() & "/ferreteriahelper.chm"
+        HelpProvider1.SetHelpString(Me, "RegistrarCliente")
+        HelpProvider1.SetHelpKeyword(Me, "RegistrarCliente")
+        HelpProvider1.SetHelpNavigator(Me, HelpNavigator.KeywordIndex)
+
+
         Me.Icon = My.Resources.ico
         Me.WindowState = FormWindowState.Maximized 'Maximizar Ventana al Abrir
 

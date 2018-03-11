@@ -20,6 +20,15 @@ Public Class NuevaVentaForm
     End Sub
 
     Private Sub NuevaVentaForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+
+        HelpProvider1.HelpNamespace = Application.StartupPath() & "/ferreteriahelper.chm"
+        HelpProvider1.SetHelpString(Me, "NuevaVenta")
+        HelpProvider1.SetHelpKeyword(Me, "NuevaVenta")
+        HelpProvider1.SetHelpNavigator(Me, HelpNavigator.KeywordIndex)
+
+
+
         Me.Icon = My.Resources.ico
         Dim ArticuloDAO As New ArticuloDAO
         LabelFecha.Text = Today

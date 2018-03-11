@@ -41,5 +41,13 @@ Public Class Integridad
 
     Private Sub Integridad_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.Icon = My.Resources.ico
+        Select Case Principal.CulturaGlobal
+            Case "ESPAÑOL"
+                Button1.Text = "Actualizar Integridad"
+                Button2.Text = "Verificar Integridad"
+            Case "ENGLISH"
+                Button1.Text = "Update integrity"
+                Button2.Text = "Verify integrity"
+        End Select
     End Sub
 End Class

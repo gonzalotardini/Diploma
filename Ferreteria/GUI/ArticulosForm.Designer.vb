@@ -53,6 +53,7 @@ Partial Class ArticulosForm
         Me.DataGridView2 = New System.Windows.Forms.DataGridView()
         Me.MODIFICAR = New DevComponents.DotNetBar.ButtonX()
         Me.AgregarClienteButton = New DevComponents.DotNetBar.ButtonX()
+        Me.HelpProvider1 = New System.Windows.Forms.HelpProvider()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -477,4 +478,5 @@ Partial Class ArticulosForm
     Friend WithEvents DataGridView2 As DataGridView
     Friend WithEvents MODIFICAR As DevComponents.DotNetBar.ButtonX
     Friend WithEvents AgregarClienteButton As DevComponents.DotNetBar.ButtonX
+    Friend WithEvents HelpProvider1 As HelpProvider
 End Class

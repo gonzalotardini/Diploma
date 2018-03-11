@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class NuevaVentaForm
     Inherits DevComponents.DotNetBar.Metro.MetroForm
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class NuevaVentaForm
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(NuevaVentaForm))
         Me.TotalLabel = New System.Windows.Forms.Label()
@@ -57,6 +57,7 @@ Partial Class NuevaVentaForm
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Acobrar = New System.Windows.Forms.Label()
         Me.AcobrarPrecio = New System.Windows.Forms.Label()
+        Me.HelpProvider1 = New System.Windows.Forms.HelpProvider()
         Me.GroupBox1.SuspendLayout()
         CType(Me.ArticuloGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PresupuestoGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -447,4 +448,5 @@ Partial Class NuevaVentaForm
     Friend WithEvents Label6 As Label
     Friend WithEvents Acobrar As Label
     Friend WithEvents AcobrarPrecio As Label
+    Friend WithEvents HelpProvider1 As HelpProvider
 End Class

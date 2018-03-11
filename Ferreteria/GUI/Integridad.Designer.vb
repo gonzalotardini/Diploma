@@ -41,7 +41,7 @@ Partial Class Integridad
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.Location = New System.Drawing.Point(84, 128)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(101, 52)
+        Me.Button2.Size = New System.Drawing.Size(110, 52)
         Me.Button2.TabIndex = 1
         Me.Button2.Text = "VERIFICAR INTEGRIDAD"
         Me.Button2.UseVisualStyleBackColor = True
@@ -56,7 +56,6 @@ Partial Class Integridad
         Me.DoubleBuffered = True
         Me.Name = "Integridad"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "buti"
         Me.ResumeLayout(False)
 
     End Sub
