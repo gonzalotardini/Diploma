@@ -21,6 +21,50 @@ Public Class ClienteForm
         AceptarButton.Enabled = False
 
 
+        Dim ListaPalabras As New List(Of SL.PalabrasIdioma)
+
+        Dim Multiidioma As New SL.Multiidioma
+
+        If Principal.CulturaGlobal = "ESPAÑOL" Then
+            ListaPalabras = Multiidioma.ObtenerPalabras("ES-ESP")
+
+
+            Dim Cultura = "ES-ESP"
+            'LINQ para el multiidioma
+
+
+            RazonSocialRadioButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "RAZONSOCIAL" Select V.Value).FirstOrDefault
+            RazonSocialLabel.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "RAZONSOCIAL" Select V.Value).FirstOrDefault
+            AgregarClienteButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "AGREGAR" Select V.Value).FirstOrDefault
+            AceptarButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "ACEPTAR" Select V.Value).FirstOrDefault
+            ModificarButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "MODIFICAR" Select V.Value).FirstOrDefault
+            ClienteLabel.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "CLIENTES" Select V.Value).FirstOrDefault
+            BarrioLabel.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "BARRIO" Select V.Value).FirstOrDefault
+            TelefonoLabel.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "TELEFONO" Select V.Value).FirstOrDefault
+            DireccionLabel.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "DIRECCION" Select V.Value).FirstOrDefault
+
+        End If
+
+
+        If Principal.CulturaGlobal = "ENGLISH" Then
+
+
+            Dim Cultura = "ENG-ENGLAND"
+            ListaPalabras = Multiidioma.ObtenerPalabras(Cultura)
+
+            RazonSocialRadioButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "RAZONSOCIAL" Select V.Value).FirstOrDefault
+            RazonSocialLabel.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "RAZONSOCIAL" Select V.Value).FirstOrDefault
+            AgregarClienteButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "AGREGAR" Select V.Value).FirstOrDefault
+            AceptarButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "ACEPTAR" Select V.Value).FirstOrDefault
+            ModificarButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "MODIFICAR" Select V.Value).FirstOrDefault
+            ClienteLabel.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "CLIENTES" Select V.Value).FirstOrDefault
+            BarrioLabel.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "BARRIO" Select V.Value).FirstOrDefault
+            TelefonoLabel.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "TELEFONO" Select V.Value).FirstOrDefault
+            DireccionLabel.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "DIRECCION" Select V.Value).FirstOrDefault
+        End If
+
+
+
         Dim _ClienteDAO As New ClienteDAO
         Dim _BarrioDAO As New BarrioDAO
 
@@ -230,7 +274,7 @@ Public Class ClienteForm
         Next
     End Sub
 
-    Private Sub ButtonX1_Click(sender As Object, e As EventArgs) Handles ButtonX1.Click
+    Private Sub ButtonX1_Click(sender As Object, e As EventArgs) Handles ModificarButton.Click
 
         Dim _Cliente As New Cliente
         Dim _ClienteDAO As New ClienteDAO

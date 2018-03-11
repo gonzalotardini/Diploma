@@ -122,6 +122,8 @@ Public Class Principal
             ReportesToolStripMenuItem.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "REPORTES" Select V.Value).FirstOrDefault
             ContraseñaButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "CONTRASEÑA" Select V.Value).FirstOrDefault
             ReportesButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "REPORTES" Select V.Value).FirstOrDefault
+            PreciosToolStripMenuItem1.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "PRECIOS" Select V.Value).FirstOrDefault
+            ArticulosMasVendidosToolStripMenuItem.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "ARTICULOSMASVENDIDOS" Select V.Value).FirstOrDefault
             IdiomaToolStripMenuItem.Text = "IDIOMA"
         End If
 
@@ -156,6 +158,8 @@ Public Class Principal
             ReportesToolStripMenuItem.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "REPORTES" Select V.Value).FirstOrDefault
             ReportesButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "REPORTES" Select V.Value).FirstOrDefault
             ContraseñaButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "CONTRASEÑA" Select V.Value).FirstOrDefault
+            PreciosToolStripMenuItem1.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "PRECIOS" Select V.Value).FirstOrDefault
+            ArticulosMasVendidosToolStripMenuItem.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "ARTICULOSMASVENDIDOS" Select V.Value).FirstOrDefault
             IdiomaToolStripMenuItem.Text = "LANGUAGE"
         End If
 

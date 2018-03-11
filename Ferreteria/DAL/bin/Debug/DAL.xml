@@ -66,6 +66,13 @@ DAL
  <returns></returns>
  <remarks></remarks>
 </member>
+<member name="M:DAL.ArticuloDAO.BuscarArticuloPorCodigo(BIZ.Articulo)">
+ <summary>
+ Busca un artículo por su código
+ </summary>
+ <param name="Articulo"></param>
+ <returns></returns>
+</member>
 <member name="M:DAL.ArticuloDAO.EliminarArticulo(BIZ.Articulo)">
  <summary>
  Realiza el soft delete de un articulo asignando como bandera = 1 a la columna eliminado
@@ -120,6 +127,19 @@ DAL
  <returns></returns>
  <remarks></remarks>
 </member>
+<member name="M:DAL.ArticuloDAO.ObtenerPreciosHistoricostop50">
+ <summary>
+ Obtiene los primeros 50 precios historicos de los articulos
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:DAL.ArticuloDAO.MapearArticulo(System.Data.DataTable)">
+ <summary>
+ Mapper de artículo, transforma un datatable en una lista de artículos
+ </summary>
+ <param name="DataTable"></param>
+ <returns></returns>
+</member>
 <member name="M:DAL.BarrioDAO.ObtenerBarrios">
  <summary>
  Obtiene todos los barrios cargados
@@ -133,6 +153,52 @@ DAL
  </summary>
  <returns></returns>
  <remarks></remarks>
+</member>
+<member name="M:DAL.ClienteDAO.ObtenerClientesDao">
+ <summary>
+ Obtiene todos los clientes
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:DAL.ClienteDAO.AgregarClienteDao(BIZ.Cliente)">
+ <summary>
+ Da de alta un nuevo cliente
+ </summary>
+ <param name="Cliente"></param>
+</member>
+<member name="M:DAL.ClienteDAO.ObtenerClientePorCodigo(BIZ.Cliente)">
+ <summary>
+ Busca un cliente por su código (ID)
+ </summary>
+ <param name="Cliente"></param>
+ <returns></returns>
+</member>
+<member name="M:DAL.ClienteDAO.ObtenerUnClientePorCodigo(BIZ.Cliente)">
+ <summary>
+ Obtiene un cliente buscándolo por su código (ID)
+ </summary>
+ <param name="Cliente"></param>
+ <returns></returns>
+</member>
+<member name="M:DAL.ClienteDAO.ActualizarCliente(BIZ.Cliente)">
+ <summary>
+ Actualiza los datos de un cliente determinado
+ </summary>
+ <param name="Cliente"></param>
+</member>
+<member name="M:DAL.ClienteDAO.BuscarClientePorRazonSocial(BIZ.Cliente)">
+ <summary>
+ Realizala búsqueda de un cliente mediante su razón social
+ </summary>
+ <param name="_Cliente"></param>
+ <returns></returns>
+</member>
+<member name="M:DAL.ClienteDAO.BuscarClientePorCuit(BIZ.Cliente)">
+ <summary>
+ Realizala búsqueda de un cliente mediante su número de CUIT
+ </summary>
+ <param name="_Cliente"></param>
+ <returns></returns>
 </member>
 <member name="M:DAL.Convertir.DataTableToList``1(System.Data.DataTable)">
  <summary>
@@ -158,6 +224,27 @@ DAL
  </summary>
  <returns></returns>
  <remarks></remarks>
+</member>
+<member name="M:DAL.MarcaDAO.AgregarMarca(BIZ.Marca)">
+ <summary>
+ Da de alta una nueva Marca
+ </summary>
+ <param name="Marca"></param>
+ <returns></returns>
+</member>
+<member name="M:DAL.MarcaDAO.ModificarMarca(BIZ.Marca)">
+ <summary>
+ Realiza la modificación de una marca determinada
+ </summary>
+ <param name="Marca"></param>
+ <returns></returns>
+</member>
+<member name="M:DAL.MarcaDAO.BuscarMarcaPorDescripcion(BIZ.Marca)">
+ <summary>
+ Realiza la búsqueda de una marca mediante su descripción o nombre
+ </summary>
+ <param name="Marca"></param>
+ <returns></returns>
 </member>
 <member name="M:DAL.ModificacionesPreciosDAO.MovimientoPrecios(BIZ.Articulo,System.DateTime)">
  <summary>
@@ -249,6 +336,112 @@ DAL
  <param name="_PresupuestoCabecera"></param>
  <remarks></remarks>
 </member>
+<member name="M:DAL.PresupuestoDAO.EliminarPresupuesto(System.Int64)">
+ <summary>
+ Realiza la eliminación de la cabecera de un presupuesto determinado
+ </summary>
+ <param name="cod"></param>
+</member>
+<member name="M:DAL.ReporteDAO.BuscarPrecios(BIZ.Articulo,System.DateTime,System.DateTime)">
+ <summary>
+ Realiza la búsqueda de los movimientos de precios de un artículo en cierto rango de fechas indicado
+ </summary>
+ <param name="articulo"></param>
+ <param name="_fecha_desde"></param>
+ <param name="_fecha_hasta"></param>
+ <returns></returns>
+</member>
+<member name="M:DAL.ReporteDAO.ObtenerReportesArticulos">
+ <summary>
+ Obtiene todos los reportes cabecera de los reportes de artículos más vendidos
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:DAL.ReporteDAO.ObtenerReportePreciosCabecera(System.Int64)">
+ <summary>
+ Obtiene todos los reportes cabecera de los reportes de aumentos de precios
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:DAL.ReporteDAO.ObtenerReporteArticulosCabecera(System.Int64)">
+ <summary>
+ Obtiene la cabecera de un reporte de articulos mas vendidos en particular
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:DAL.ReporteDAO.ObtenerReporteArticulosDetalle(System.Int64)">
+ <summary>
+ Obtiene el detalle de un reporte de articulos mas vendidos en particular
+ </summary>
+ <param name="cod_reporte"></param>
+ <returns></returns>
+</member>
+<member name="M:DAL.ReporteDAO.ObtenerReportePreciosDetalle(System.Int64)">
+ <summary>
+ Obtiene el detalle de un reporte de aumento de precios en particular
+ </summary>
+ <param name="cod_reporte"></param>
+ <returns></returns>
+</member>
+<member name="M:DAL.ReporteDAO.ArticulosMasVendidos(System.Int32,System.DateTime,System.DateTime)">
+ <summary>
+ Realiza la búsqueda de los artículas que poseen más ventas en un rango de fechas determinado, y obtiene una cantidad también indicada
+ </summary>
+ <param name="_cantidad"></param>
+ <param name="_fecha_desde"></param>
+ <param name="_fecha_hasta"></param>
+ <returns></returns>
+</member>
+<member name="M:DAL.ReporteDAO.ImprimirReportePreciosDAO(BIZ.Reporte,System.Collections.Generic.List{BIZ.ReportePreciosDetalle})">
+ <summary>
+ Realiza la confeccion en PDF y la impresion del reporte de aumento de precios
+ </summary>
+ <param name="reporteCabecera"></param>
+ <param name="listaDetalle"></param>
+</member>
+<member name="M:DAL.ReporteDAO.ImprimirReporteArticulossDAO(BIZ.ReporteArticulosCabecera,System.Collections.Generic.List{BIZ.ReporteArticulosMasVendidosDetalle})">
+ <summary>
+ Realiza la confeccion en PDF y la impresion del reporte de artículos más vendidos
+ </summary>
+ <param name="reporteCabecera"></param>
+ <param name="listaDetalle"></param>
+</member>
+<member name="M:DAL.ReporteDAO.GuardarReportePreciosDetalle(BIZ.ReportePreciosDetalle)">
+ <summary>
+ Realiza el guardado en base de datos del detalle de un reporte de aumento de precios
+ </summary>
+ <param name="item"></param>
+</member>
+<member name="M:DAL.ReporteDAO.GuardarReportePreciosCabecera(BIZ.Reporte)">
+ <summary>
+ Realiza el guardado en base de datos de la cabecera de un reporte de aumento de precios
+ </summary>
+ <param name="ReporteCabecera"></param>
+</member>
+<member name="M:DAL.ReporteDAO.GuardarReporteArticulosCabecera(BIZ.ReporteArticulosCabecera)">
+ <summary>
+ Realiza el guardado en base de datos de la cabecera de un reporte de articulos mas vendidos
+ </summary>
+ <param name="ReporteCabecera"></param>
+</member>
+<member name="M:DAL.ReporteDAO.GuardarReporteArticulosDetalle(BIZ.ReporteArticulosMasVendidosDetalle)">
+ <summary>
+ Realiza el guardado en base de datos del detalle de un reporte de articulos mas vendidos
+ </summary>
+ <param name="item"></param>
+</member>
+<member name="M:DAL.ReporteDAO.ObtenerCodUltimoReportePrecios">
+ <summary>
+ Obtiene el código del ultimo reporte de precios guardado
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:DAL.ReporteDAO.ObtenerCodUltimoReporteArticulos">
+ <summary>
+ Obtiene el código del último reporte de articulos mas vendidos
+ </summary>
+ <returns></returns>
+</member>
 <member name="M:DAL.SubCategoriaDAO.ObtenerSubCategorias(BIZ.Categoria)">
  <summary>
  Obtiene todas las subcategorias cargadas previamente
@@ -278,6 +471,18 @@ DAL
  </summary>
  <returns></returns>
  <remarks></remarks>
+</member>
+<member name="M:DAL.UnidadDeMedidaDao.CargarUnidadDeMedida(BIZ.UnidadDeMedida)">
+ <summary>
+ Realiza el alta de una nueva unidad de medida
+ </summary>
+ <param name="UnidadDeMedida"></param>
+</member>
+<member name="M:DAL.UnidadDeMedidaDao.ActualizarUnidadDeMedida(BIZ.UnidadDeMedida)">
+ <summary>
+ Realza la actualizacion de una unidad de medida
+ </summary>
+ <param name="UnidadDeMedida"></param>
 </member>
 <member name="M:DAL.VentaDAO.GenerarVentaCabecera(BIZ.VentaCabecera)">
  <summary>
@@ -330,6 +535,58 @@ DAL
  <param name="_VentaCabecera"></param>
  <returns></returns>
  <remarks></remarks>
+</member>
+<member name="M:DAL.VentaDAO.CancelarVentaDao(System.Int64)">
+ <summary>
+ Realiza la cancelación de una venta y genera la nota de credito cabecera y detalle
+ </summary>
+ <param name="cod_venta"></param>
+</member>
+<member name="M:DAL.VentaDAO.ObtenerCodUltimaNotaDeCredito">
+ <summary>
+ Obtiene el código de la´última nota de credito generada
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:DAL.VentaDAO.ObtenerNotasDeCredito">
+ <summary>
+ Obtiene todas las cabeceras de las notas de credito existentes
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:DAL.VentaDAO.BuscarNotaDeCreditoPorCOD(System.Int64)">
+ <summary>
+ Realiza la búsqueda de una nota de crédito mediante su código
+ </summary>
+ <param name="cod"></param>
+ <returns></returns>
+</member>
+<member name="M:DAL.VentaDAO.BuscarNotaDeCreditoPorRazonSocial(System.String)">
+ <summary>
+ Realiza la búsqueda de una nota de crédito mediante la razon social del cliente
+ </summary>
+ <param name="razonSocial"></param>
+ <returns></returns>
+</member>
+<member name="M:DAL.VentaDAO.CancelarNotaDeCredito(System.Int64)">
+ <summary>
+ Realiza la eliminación de una nota de crédito luego de haberse utilizado en una venta
+ </summary>
+ <param name="codNota"></param>
+</member>
+<member name="M:DAL.VentaDAO.BucarVentaPorCodigoCliente(BIZ.Cliente)">
+ <summary>
+ Realiza la búsqueda de una venta mediante su código
+ </summary>
+ <param name="Cliente"></param>
+ <returns></returns>
+</member>
+<member name="M:DAL.VentaDAO.BucarVentaPorRazonSocial(BIZ.Cliente)">
+ <summary>
+ Realiza la búsqueda de una venta mediante la razón social del cliente
+ </summary>
+ <param name="Cliente"></param>
+ <returns></returns>
 </member>
 </members>
 </doc>

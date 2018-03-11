@@ -35,6 +35,48 @@ Public Class NuevoPresupuestoForm
         LabelFecha.Text = Today
 
 
+
+        Dim ListaPalabras As New List(Of SL.PalabrasIdioma)
+
+        Dim Multiidioma As New SL.Multiidioma
+
+        If Principal.CulturaGlobal = "ESPAÑOL" Then
+            ListaPalabras = Multiidioma.ObtenerPalabras("ES-ESP")
+
+
+            Dim Cultura = "ES-ESP"
+            'LINQ para el multiidioma
+
+            Label2.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "CODIGOCLIENTE" Select V.Value).FirstOrDefault
+            Label4.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "RAZONSOCIAL" Select V.Value).FirstOrDefault
+            Label1.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "FECHA" Select V.Value).FirstOrDefault
+            BuscarButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "BUSCAR" Select V.Value).FirstOrDefault
+            QuitarButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "QUITAR" Select V.Value).FirstOrDefault
+            FinalizarButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "FINALIZAR" Select V.Value).FirstOrDefault
+            RadioButtonDescripcion.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "DESCRIPCION" Select V.Value).FirstOrDefault
+            RadioButtonDescripcion.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "CODIGO" Select V.Value).FirstOrDefault
+        End If
+
+
+        If Principal.CulturaGlobal = "ENGLISH" Then
+
+
+            Dim Cultura = "ENG-ENGLAND"
+            ListaPalabras = Multiidioma.ObtenerPalabras(Cultura)
+
+            Label2.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "CODIGOCLIENTE" Select V.Value).FirstOrDefault
+            Label4.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "RAZONSOCIAL" Select V.Value).FirstOrDefault
+            Label1.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "FECHA" Select V.Value).FirstOrDefault
+            BuscarButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "BUSCAR" Select V.Value).FirstOrDefault
+            QuitarButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "QUITAR" Select V.Value).FirstOrDefault
+            FinalizarButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "FINALIZAR" Select V.Value).FirstOrDefault
+            RadioButtonDescripcion.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "DESCRIPCION" Select V.Value).FirstOrDefault
+            RadioButtonDescripcion.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "CODIGO" Select V.Value).FirstOrDefault
+
+        End If
+
+
+
         Try
             ArticuloGridView1.DataSource = ArticuloDAO.ObtenerPrimerosArticulos.Tables(0)
 
@@ -198,9 +240,17 @@ Public Class NuevoPresupuestoForm
     Private Sub ImprimirButton_Click(sender As Object, e As EventArgs) Handles ImprimirButton.Click
 
         Try
+            Dim imprimir As String = ""
+
+            Select Case Principal.CulturaGlobal
+                Case "ESPAÑOL"
+                    imprimir = "¿Seguro desea imprimir?"
+                Case "ENGLISH"
+                    imprimir = "Do you really want to print?"
+            End Select
 
 
-            If MsgBox("¿Seguro desea imprimir?", MsgBoxStyle.YesNo + MsgBoxStyle.Question, "ATENCIÓN") = MsgBoxResult.Yes Then
+            If MsgBox(imprimir, MsgBoxStyle.YesNo + MsgBoxStyle.Question, "ATENCIÓN") = MsgBoxResult.Yes Then
 
 
                 Dim PresupuestoCabecera As New PresupuestoCabecera
@@ -490,9 +540,23 @@ Public Class NuevoPresupuestoForm
         '  Dim _PresupuestoDAO As New PresupuestoDAO
         Dim _PresupuestoCabecera As New PresupuestoCabecera
         Dim _ListaDetalles As New List(Of PresupuestoDetalle)
+        Dim msg As String = ""
+        Dim msg2 = ""
+        Dim imprimir = ""
+
+        Select Case Principal.CulturaGlobal
+            Case "ESPAÑOL"
+                msg = "¿Seguro desea finalizar el presupuesto?"
+                msg2 = "El presupuesto se guardó correctamente"
+                imprimir = "¿Seguro desea imprimir?"
+            Case "ENGLISH"
+                msg = "Do you really want to finalize the budget?"
+                msg2 = "The budget was correctly saved"
+                imprimir = "Do you really want to print?"
+        End Select
 
 
-        If MsgBox("¿Seguro desea finalizar el presupuesto?", MsgBoxStyle.YesNo + MsgBoxStyle.Question, "ATENCIÓN") = MsgBoxResult.Yes Then
+        If MsgBox(msg, MsgBoxStyle.YesNo + MsgBoxStyle.Question, "ATENCIÓN") = MsgBoxResult.Yes Then
 
             Try
                 Try
@@ -540,8 +604,86 @@ Public Class NuevoPresupuestoForm
 
                 el.WriteToErrorLog("Se guardo correctamente el presupuesto ", "Nuevo Presupuesto Form", "Información")
 
-                Dim Mensaje = MsgBox("Se guardo correctamente el presupuesto", MsgBoxStyle.Information, "INFORMACION")
+                Dim Mensaje = MsgBox(msg2, MsgBoxStyle.Information, "INFORMACION")
 
+
+
+
+
+                If MsgBox(imprimir, MsgBoxStyle.YesNo + MsgBoxStyle.Question, "ATENCIÓN") = MsgBoxResult.Yes Then
+
+
+                    Dim PresupuestoCabecera As New PresupuestoCabecera
+                    Dim _ClasePDFpresupuesto As SL.ClasePDFpresupuesto
+                    Dim _ListaDetalle As New List(Of ClasePDFpresupuesto)
+
+
+
+                    Dim CantidadItems As Integer = PresupuestoGridView1.RowCount
+
+                    If CantidadItems = 0 Then
+                        Select Case Principal.CulturaGlobal
+                            Case "ESPAÑOL"
+                                Throw New Exception("Error, debe agregar artículos")
+                            Case "ENGLISH"
+                                Throw New Exception("Error, you must add products")
+                        End Select
+                    End If
+
+
+
+
+
+                    _GestorPresupuesto = New GestorPresupuesto
+
+                    For i = 0 To (CantidadItems - 1)
+
+                        _ClasePDFpresupuesto = New ClasePDFpresupuesto
+
+
+
+
+                        _ClasePDFpresupuesto.Cantidad = (PresupuestoGridView1.Rows(i).Cells("Cantidad").Value)
+                        _ClasePDFpresupuesto.Descripcion = Microsoft.VisualBasic.Left(CStr((PresupuestoGridView1.Rows(i).Cells("Descripcion").Value)), 40)
+                        _ClasePDFpresupuesto.Marca = (PresupuestoGridView1.Rows(i).Cells("Marca").Value)
+                        _ClasePDFpresupuesto.Medida = (PresupuestoGridView1.Rows(i).Cells("UnidadMedida").Value)
+                        _ClasePDFpresupuesto.Codigo = (PresupuestoGridView1.Rows(i).Cells("Codigo").Value)
+                        _ClasePDFpresupuesto.Precio = (PresupuestoGridView1.Rows(i).Cells("Precio").Value)
+                        _ClasePDFpresupuesto.Importe = (PresupuestoGridView1.Rows(i).Cells("Importe").Value)
+
+
+
+
+                        _ListaDetalle.Add(_ClasePDFpresupuesto)
+
+
+
+
+
+                    Next
+
+                    Try
+                        Dim _presupuestoDAO As New PresupuestoDAO
+
+                        PresupuestoCabecera.Cod_Presupuesto = _PresupuestoDAO.ObtenerCodUltimoPresupuesto()
+                        PresupuestoCabecera.FechaInicio = CDate(LabelFecha.Text)
+                        PresupuestoCabecera.Total = CDec(TotalLabel.Text)
+                        PresupuestoCabecera.Cod_Cliente = (CodigoClienteLabel.Text).ToUpper
+                        PresupuestoCabecera.RazonSocial = (RazonSocialLabel.Text).ToUpper
+                    Catch ex As Exception
+                        Select Case Principal.CulturaGlobal
+                            Case "ESPAÑOL"
+                                Throw New Exception("Debe seleccionar un cliente")
+                            Case "ENGLISH"
+                                Throw New Exception("You must choose a customer")
+                        End Select
+                    End Try
+
+
+                    _GestorPresupuesto.GenerarPresupuestoPDF(_ListaDetalle, PresupuestoCabecera)
+
+                Else
+                End If
 
 
 

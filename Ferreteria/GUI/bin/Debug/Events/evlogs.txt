@@ -4922,3 +4922,88 @@ Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
 StackTrace: LogIn Form
 Fecha/Hora: 10/03/2018 22:47:09
 ===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 11/03/2018 11:38:23
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 11/03/2018 11:46:07
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 11/03/2018 11:49:09
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 11/03/2018 11:51:02
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 11/03/2018 11:52:05
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 11/03/2018 11:55:54
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 11/03/2018 11:58:33
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 11/03/2018 12:02:04
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 11/03/2018 12:03:30
+===========================================================================================
+Titulo: Información
+Mensaje: Se guardo correctamente el presupuesto 
+StackTrace: Nuevo Presupuesto Form
+Fecha/Hora: 11/03/2018 12:05:52
+===========================================================================================
+Titulo: Información
+Mensaje: Se guardo correctamente el presupuesto 
+StackTrace: Nuevo Presupuesto Form
+Fecha/Hora: 11/03/2018 12:08:16
+===========================================================================================
+Titulo: Información
+Mensaje: Se guardo correctamente el presupuesto 
+StackTrace: Nuevo Presupuesto Form
+Fecha/Hora: 11/03/2018 12:12:22
+===========================================================================================
+Titulo: Información
+Mensaje: Se guardo correctamente el presupuesto 
+StackTrace: Nuevo Presupuesto Form
+Fecha/Hora: 11/03/2018 12:12:55
+===========================================================================================
+Titulo: Información
+Mensaje: Se guardo correctamente el presupuesto 
+StackTrace: Nuevo Presupuesto Form
+Fecha/Hora: 11/03/2018 12:16:22
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 11/03/2018 12:47:17
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 11/03/2018 12:50:15
+===========================================================================================
+Titulo: Información
+Mensaje: Se Actualizo correctamente el Cliente LECTUS SIT LLP
+StackTrace: Articulo Form
+Fecha/Hora: 11/03/2018 12:55:29
+===========================================================================================

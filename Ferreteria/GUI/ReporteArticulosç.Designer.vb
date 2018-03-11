@@ -27,7 +27,7 @@ Partial Class ReporteArticulosç
         Me.DataGridViewX1 = New DevComponents.DotNetBar.Controls.DataGridViewX()
         Me.ButtonX1 = New DevComponents.DotNetBar.ButtonX()
         Me.ButtonX2 = New DevComponents.DotNetBar.ButtonX()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label1 = New DevComponents.DotNetBar.LabelX()
         CType(Me.DataGridViewX1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -56,7 +56,7 @@ Partial Class ReporteArticulosç
         Me.ButtonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.Magenta
         Me.ButtonX1.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
         Me.ButtonX1.Image = CType(resources.GetObject("ButtonX1.Image"), System.Drawing.Image)
-        Me.ButtonX1.Location = New System.Drawing.Point(661, 523)
+        Me.ButtonX1.Location = New System.Drawing.Point(763, 523)
         Me.ButtonX1.Name = "ButtonX1"
         Me.ButtonX1.Size = New System.Drawing.Size(148, 59)
         Me.ButtonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
@@ -71,7 +71,7 @@ Partial Class ReporteArticulosç
         Me.ButtonX2.ColorTable = DevComponents.DotNetBar.eButtonColor.Magenta
         Me.ButtonX2.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
         Me.ButtonX2.Image = CType(resources.GetObject("ButtonX2.Image"), System.Drawing.Image)
-        Me.ButtonX2.Location = New System.Drawing.Point(318, 523)
+        Me.ButtonX2.Location = New System.Drawing.Point(376, 523)
         Me.ButtonX2.Name = "ButtonX2"
         Me.ButtonX2.Size = New System.Drawing.Size(148, 59)
         Me.ButtonX2.Style = DevComponents.DotNetBar.eDotNetBarStyle.Metro
@@ -82,19 +82,23 @@ Partial Class ReporteArticulosç
         'Label1
         '
         Me.Label1.AutoSize = True
+        '
+        '
+        '
+        Me.Label1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 36.0!, System.Drawing.FontStyle.Bold)
-        Me.Label1.Location = New System.Drawing.Point(506, 68)
+        Me.Label1.Location = New System.Drawing.Point(466, 76)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(226, 65)
-        Me.Label1.TabIndex = 20
-        Me.Label1.Text = "label rep"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Label1.Size = New System.Drawing.Size(181, 68)
+        Me.Label1.TabIndex = 21
+        Me.Label1.Text = "LabelX1"
+        Me.Label1.TextAlignment = System.Drawing.StringAlignment.Center
         '
         'ReporteArticulosç
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1047, 491)
+        Me.ClientSize = New System.Drawing.Size(1047, 597)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ButtonX1)
         Me.Controls.Add(Me.ButtonX2)
@@ -111,5 +115,5 @@ Partial Class ReporteArticulosç
     Friend WithEvents DataGridViewX1 As DevComponents.DotNetBar.Controls.DataGridViewX
     Private WithEvents ButtonX1 As DevComponents.DotNetBar.ButtonX
     Private WithEvents ButtonX2 As DevComponents.DotNetBar.ButtonX
-    Friend WithEvents Label1 As Label
+    Friend WithEvents Label1 As DevComponents.DotNetBar.LabelX
 End Class

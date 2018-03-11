@@ -2774,3 +2774,19 @@ StackTrace:    at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(S
    at GUI.ReporteArticulosDetalleForm.ImprimirButton_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ReporteArticulosDetalleForm.vb:line 104
 Fecha/Hora: 10/03/2018 22:47:25
 ===========================================================================================
+Titulo: Error
+Mensaje: Conversion from string "Process has exited, so the reque" to type 'Integer' is not valid.
+StackTrace:    at BLL.GestorReporte.ImprimirReporteArticulosBll(ReporteArticulosCabecera reporteCabecera, List`1 listaDetalle) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 173
+   at GUI.NuevoReporteArticulosVendidos.ButtonX2_Click(Object sender, EventArgs e)
+Fecha/Hora: 11/03/2018 11:47:34
+===========================================================================================
+Titulo: Error
+Mensaje: Error, you must add products
+StackTrace:    at GUI.NuevoPresupuestoForm.ImprimirButton_Click(Object sender, EventArgs e)
+Fecha/Hora: 11/03/2018 12:05:20
+===========================================================================================
+Titulo: Error
+Mensaje: Error revise Cuit del cliente
+StackTrace:    at GUI.ClienteForm.ButtonX2_Click(Object sender, EventArgs e)
+Fecha/Hora: 11/03/2018 12:55:25
+===========================================================================================

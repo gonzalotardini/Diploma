@@ -42,6 +42,9 @@ Partial Class Principal
         Me.UsuariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AdministrarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LogOutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.IdiomaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ESPAÑOLToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ENGLISHToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ArticulosButtonn = New DevComponents.DotNetBar.ButtonX()
         Me.ClientesButton = New DevComponents.DotNetBar.ButtonX()
         Me.VentasButton = New DevComponents.DotNetBar.ButtonX()
@@ -54,9 +57,6 @@ Partial Class Principal
         Me.IntegridadButton = New DevComponents.DotNetBar.ButtonX()
         Me.ContraseñaButton = New DevComponents.DotNetBar.ButtonX()
         Me.ReportesButton = New DevComponents.DotNetBar.ButtonX()
-        Me.IdiomaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ESPAÑOLToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ENGLISHToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -181,14 +181,33 @@ Partial Class Principal
         '
         Me.AdministrarToolStripMenuItem.Enabled = False
         Me.AdministrarToolStripMenuItem.Name = "AdministrarToolStripMenuItem"
-        Me.AdministrarToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
-        Me.AdministrarToolStripMenuItem.Text = "Administrar"
+        Me.AdministrarToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.AdministrarToolStripMenuItem.Text = "ADMIN"
         '
         'LogOutToolStripMenuItem
         '
         Me.LogOutToolStripMenuItem.Name = "LogOutToolStripMenuItem"
         Me.LogOutToolStripMenuItem.Size = New System.Drawing.Size(58, 25)
         Me.LogOutToolStripMenuItem.Text = "LogOut"
+        '
+        'IdiomaToolStripMenuItem
+        '
+        Me.IdiomaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ESPAÑOLToolStripMenuItem, Me.ENGLISHToolStripMenuItem})
+        Me.IdiomaToolStripMenuItem.Name = "IdiomaToolStripMenuItem"
+        Me.IdiomaToolStripMenuItem.Size = New System.Drawing.Size(54, 25)
+        Me.IdiomaToolStripMenuItem.Text = "Idioma"
+        '
+        'ESPAÑOLToolStripMenuItem
+        '
+        Me.ESPAÑOLToolStripMenuItem.Name = "ESPAÑOLToolStripMenuItem"
+        Me.ESPAÑOLToolStripMenuItem.Size = New System.Drawing.Size(120, 22)
+        Me.ESPAÑOLToolStripMenuItem.Text = "ESPAÑOL"
+        '
+        'ENGLISHToolStripMenuItem
+        '
+        Me.ENGLISHToolStripMenuItem.Name = "ENGLISHToolStripMenuItem"
+        Me.ENGLISHToolStripMenuItem.Size = New System.Drawing.Size(120, 22)
+        Me.ENGLISHToolStripMenuItem.Text = "ENGLISH"
         '
         'ArticulosButtonn
         '
@@ -342,25 +361,6 @@ Partial Class Principal
         Me.ReportesButton.TabIndex = 32
         Me.ReportesButton.Text = "CONTRASEÑA"
         Me.ReportesButton.TextColor = System.Drawing.Color.White
-        '
-        'IdiomaToolStripMenuItem
-        '
-        Me.IdiomaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ESPAÑOLToolStripMenuItem, Me.ENGLISHToolStripMenuItem})
-        Me.IdiomaToolStripMenuItem.Name = "IdiomaToolStripMenuItem"
-        Me.IdiomaToolStripMenuItem.Size = New System.Drawing.Size(54, 25)
-        Me.IdiomaToolStripMenuItem.Text = "Idioma"
-        '
-        'ESPAÑOLToolStripMenuItem
-        '
-        Me.ESPAÑOLToolStripMenuItem.Name = "ESPAÑOLToolStripMenuItem"
-        Me.ESPAÑOLToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.ESPAÑOLToolStripMenuItem.Text = "ESPAÑOL"
-        '
-        'ENGLISHToolStripMenuItem
-        '
-        Me.ENGLISHToolStripMenuItem.Name = "ENGLISHToolStripMenuItem"
-        Me.ENGLISHToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.ENGLISHToolStripMenuItem.Text = "ENGLISH"
         '
         'Principal
         '

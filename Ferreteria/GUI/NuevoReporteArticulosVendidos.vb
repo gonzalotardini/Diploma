@@ -105,7 +105,7 @@ Public Class NuevoReporteArticulosVendidos
         End Select
 
         Try
-            If MsgBox(msg, MsgBoxStyle.YesNo, "ATENCIÓN") = MsgBoxResult.Yes Then
+            If MsgBox(msg, MsgBoxStyle.YesNo + MsgBoxStyle.Question, "ATENCIÓN") = MsgBoxResult.Yes Then
                 ReporteCabecera.Usuario = LogIn.Usuario.NombreUsuario
                 ReporteCabecera.FechaInicio = FechaDesde.Value
                 ReporteCabecera.FechaFin = FechaHasta.Value
@@ -116,15 +116,11 @@ Public Class NuevoReporteArticulosVendidos
 
                     item = New ReporteArticulosMasVendidosDetalle
                     item.Cod_Articulo = i.Cells(0).Value
+                    item.Descripcion = i.Cells(1).Value
+                    item.Marca1 = i.Cells(3).Value
+                    item.SubUnidad1 = i.Cells(2).Value
                     item.CantidadVentas = i.Cells(4).Value
-                    'item.Marca1 = i.Cells(2).Value
-                    'item.SubUnidad = i.Cells(3).Value
-                    'item.PrecioInicial = i.Cells(4).Value
-                    'item.PrecioFinal = i.Cells(5).Value
-                    'item.CantidadPrecios = i.Cells(6).Value
-                    'item.PorcentajeAumento = Replace(i.Cells(7).Value, "%", "")
-                    'item.Fecha_Desde = i.Cells(8).Value
-                    'item.Fecha_Hasta = i.Cells(9).Value
+
                     listaDetalle.Add(item)
 
                 Next
@@ -133,9 +129,9 @@ Public Class NuevoReporteArticulosVendidos
 
                 GestorReporte.ValidarReporteArticulosMasVendidos(ReporteCabecera, listaDetalle, Principal.CulturaGlobal)
 
-                If MsgBox(msg2, MsgBoxStyle.YesNo, "ATENCIÓN") = MsgBoxResult.Yes Then
+                If MsgBox(msg2, MsgBoxStyle.YesNo + MsgBoxStyle.Question, "ATENCIÓN") = MsgBoxResult.Yes Then
                     ReporteCabecera.Cod_Reporte = reporteDao.ObtenerCodUltimoReporteArticulos()
-                    'GestorReporte.ImprimirReportePrecios(ReporteCabecera, listaDetalle)
+                    GestorReporte.ImprimirReporteArticulosBll(ReporteCabecera, listaDetalle)
                 End If
 
                 Me.Close()

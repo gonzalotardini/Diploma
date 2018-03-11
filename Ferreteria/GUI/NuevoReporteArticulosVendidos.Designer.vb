@@ -100,6 +100,7 @@ Partial Class NuevoReporteArticulosVendidos
         Me.ReporteArticulosLabel.Size = New System.Drawing.Size(170, 65)
         Me.ReporteArticulosLabel.TabIndex = 12
         Me.ReporteArticulosLabel.Text = "LABEL"
+        Me.ReporteArticulosLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'LabelHasta
         '
@@ -107,12 +108,13 @@ Partial Class NuevoReporteArticulosVendidos
         '
         '
         Me.LabelHasta.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelHasta.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.LabelHasta.Location = New System.Drawing.Point(463, 123)
+        Me.LabelHasta.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.LabelHasta.Location = New System.Drawing.Point(484, 124)
         Me.LabelHasta.Name = "LabelHasta"
         Me.LabelHasta.Size = New System.Drawing.Size(75, 23)
         Me.LabelHasta.TabIndex = 46
         Me.LabelHasta.Text = "LabelX2"
+        Me.LabelHasta.TextAlignment = System.Drawing.StringAlignment.Center
         '
         'LabelDesde
         '
@@ -120,12 +122,13 @@ Partial Class NuevoReporteArticulosVendidos
         '
         '
         Me.LabelDesde.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelDesde.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.LabelDesde.Location = New System.Drawing.Point(206, 124)
+        Me.LabelDesde.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.LabelDesde.Location = New System.Drawing.Point(212, 124)
         Me.LabelDesde.Name = "LabelDesde"
         Me.LabelDesde.Size = New System.Drawing.Size(75, 23)
         Me.LabelDesde.TabIndex = 45
         Me.LabelDesde.Text = "LabelX1"
+        Me.LabelDesde.TextAlignment = System.Drawing.StringAlignment.Center
         '
         'CantidadLabel
         '
@@ -133,12 +136,13 @@ Partial Class NuevoReporteArticulosVendidos
         '
         '
         Me.CantidadLabel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.CantidadLabel.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.CantidadLabel.Location = New System.Drawing.Point(691, 124)
+        Me.CantidadLabel.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.CantidadLabel.Location = New System.Drawing.Point(689, 124)
         Me.CantidadLabel.Name = "CantidadLabel"
         Me.CantidadLabel.Size = New System.Drawing.Size(87, 23)
         Me.CantidadLabel.TabIndex = 47
         Me.CantidadLabel.Text = "LabelX2"
+        Me.CantidadLabel.TextAlignment = System.Drawing.StringAlignment.Center
         '
         'DataGridViewX1
         '

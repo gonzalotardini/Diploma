@@ -24,16 +24,16 @@ Partial Class ClienteForm
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ClienteForm))
         Me.ClienteGridView = New System.Windows.Forms.DataGridView()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.RazonSocialLabel = New System.Windows.Forms.Label()
         Me.RazonSocialTextBox = New System.Windows.Forms.TextBox()
         Me.CuitTextBox = New System.Windows.Forms.TextBox()
         Me.DireccionTextBox = New System.Windows.Forms.TextBox()
         Me.TelefonoTextBox = New System.Windows.Forms.TextBox()
         Me.EmailTextBox = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.DireccionLabel = New System.Windows.Forms.Label()
+        Me.BarrioLabel = New System.Windows.Forms.Label()
+        Me.TelefonoLabel = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.BarrioComboBox = New System.Windows.Forms.ComboBox()
         Me.BuscarTextBox = New System.Windows.Forms.TextBox()
@@ -41,11 +41,11 @@ Partial Class ClienteForm
         Me.RazonSocialRadioButton = New System.Windows.Forms.RadioButton()
         Me.CuitRadioButton = New System.Windows.Forms.RadioButton()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Label7 = New System.Windows.Forms.Label()
+        Me.ClienteLabel = New System.Windows.Forms.Label()
         Me.LabelCodigoCliente = New System.Windows.Forms.Label()
         Me.AgregarClienteButton = New DevComponents.DotNetBar.ButtonX()
         Me.AceptarButton = New DevComponents.DotNetBar.ButtonX()
-        Me.ButtonX1 = New DevComponents.DotNetBar.ButtonX()
+        Me.ModificarButton = New DevComponents.DotNetBar.ButtonX()
         CType(Me.ClienteGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -62,15 +62,15 @@ Partial Class ClienteForm
         Me.ClienteGridView.Size = New System.Drawing.Size(915, 413)
         Me.ClienteGridView.TabIndex = 0
         '
-        'Label1
+        'RazonSocialLabel
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.Label1.Location = New System.Drawing.Point(16, 168)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(91, 15)
-        Me.Label1.TabIndex = 2
-        Me.Label1.Text = "RAZÓN SOCIAL"
+        Me.RazonSocialLabel.AutoSize = True
+        Me.RazonSocialLabel.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.RazonSocialLabel.Location = New System.Drawing.Point(16, 168)
+        Me.RazonSocialLabel.Name = "RazonSocialLabel"
+        Me.RazonSocialLabel.Size = New System.Drawing.Size(91, 15)
+        Me.RazonSocialLabel.TabIndex = 2
+        Me.RazonSocialLabel.Text = "RAZÓN SOCIAL"
         '
         'RazonSocialTextBox
         '
@@ -117,35 +117,35 @@ Partial Class ClienteForm
         Me.Label2.TabIndex = 9
         Me.Label2.Text = "CUIT"
         '
-        'Label3
+        'DireccionLabel
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.Label3.Location = New System.Drawing.Point(26, 249)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(69, 15)
-        Me.Label3.TabIndex = 10
-        Me.Label3.Text = "DIRECCIÓN"
+        Me.DireccionLabel.AutoSize = True
+        Me.DireccionLabel.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.DireccionLabel.Location = New System.Drawing.Point(26, 249)
+        Me.DireccionLabel.Name = "DireccionLabel"
+        Me.DireccionLabel.Size = New System.Drawing.Size(69, 15)
+        Me.DireccionLabel.TabIndex = 10
+        Me.DireccionLabel.Text = "DIRECCIÓN"
         '
-        'Label4
+        'BarrioLabel
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.Label4.Location = New System.Drawing.Point(26, 292)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(49, 15)
-        Me.Label4.TabIndex = 11
-        Me.Label4.Text = "BARRIO"
+        Me.BarrioLabel.AutoSize = True
+        Me.BarrioLabel.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.BarrioLabel.Location = New System.Drawing.Point(26, 292)
+        Me.BarrioLabel.Name = "BarrioLabel"
+        Me.BarrioLabel.Size = New System.Drawing.Size(49, 15)
+        Me.BarrioLabel.TabIndex = 11
+        Me.BarrioLabel.Text = "BARRIO"
         '
-        'Label5
+        'TelefonoLabel
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.Label5.Location = New System.Drawing.Point(26, 339)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(65, 15)
-        Me.Label5.TabIndex = 12
-        Me.Label5.Text = "TELÉFONO"
+        Me.TelefonoLabel.AutoSize = True
+        Me.TelefonoLabel.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.TelefonoLabel.Location = New System.Drawing.Point(26, 339)
+        Me.TelefonoLabel.Name = "TelefonoLabel"
+        Me.TelefonoLabel.Size = New System.Drawing.Size(65, 15)
+        Me.TelefonoLabel.TabIndex = 12
+        Me.TelefonoLabel.Text = "TELÉFONO"
         '
         'Label6
         '
@@ -216,15 +216,15 @@ Partial Class ClienteForm
         Me.PictureBox1.TabIndex = 19
         Me.PictureBox1.TabStop = False
         '
-        'Label7
+        'ClienteLabel
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Segoe UI", 36.0!, System.Drawing.FontStyle.Bold)
-        Me.Label7.Location = New System.Drawing.Point(321, 27)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(243, 65)
-        Me.Label7.TabIndex = 20
-        Me.Label7.Text = "CLIENTES"
+        Me.ClienteLabel.AutoSize = True
+        Me.ClienteLabel.Font = New System.Drawing.Font("Segoe UI", 36.0!, System.Drawing.FontStyle.Bold)
+        Me.ClienteLabel.Location = New System.Drawing.Point(321, 27)
+        Me.ClienteLabel.Name = "ClienteLabel"
+        Me.ClienteLabel.Size = New System.Drawing.Size(243, 65)
+        Me.ClienteLabel.TabIndex = 20
+        Me.ClienteLabel.Text = "CLIENTES"
         '
         'LabelCodigoCliente
         '
@@ -264,20 +264,20 @@ Partial Class ClienteForm
         Me.AceptarButton.Text = "ACEPTAR"
         Me.AceptarButton.TextColor = System.Drawing.Color.White
         '
-        'ButtonX1
+        'ModificarButton
         '
-        Me.ButtonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
-        Me.ButtonX1.BackColor = System.Drawing.Color.OrangeRed
-        Me.ButtonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.Magenta
-        Me.ButtonX1.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonX1.Image = CType(resources.GetObject("ButtonX1.Image"), System.Drawing.Image)
-        Me.ButtonX1.Location = New System.Drawing.Point(297, 555)
-        Me.ButtonX1.Name = "ButtonX1"
-        Me.ButtonX1.Size = New System.Drawing.Size(146, 52)
-        Me.ButtonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.ButtonX1.TabIndex = 23
-        Me.ButtonX1.Text = "MODIFICAR"
-        Me.ButtonX1.TextColor = System.Drawing.Color.White
+        Me.ModificarButton.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.ModificarButton.BackColor = System.Drawing.Color.OrangeRed
+        Me.ModificarButton.ColorTable = DevComponents.DotNetBar.eButtonColor.Magenta
+        Me.ModificarButton.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ModificarButton.Image = CType(resources.GetObject("ModificarButton.Image"), System.Drawing.Image)
+        Me.ModificarButton.Location = New System.Drawing.Point(297, 555)
+        Me.ModificarButton.Name = "ModificarButton"
+        Me.ModificarButton.Size = New System.Drawing.Size(146, 52)
+        Me.ModificarButton.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.ModificarButton.TabIndex = 23
+        Me.ModificarButton.Text = "MODIFICAR"
+        Me.ModificarButton.TextColor = System.Drawing.Color.White
         '
         'ClienteForm
         '
@@ -286,24 +286,24 @@ Partial Class ClienteForm
         Me.ClientSize = New System.Drawing.Size(1348, 733)
         Me.Controls.Add(Me.AceptarButton)
         Me.Controls.Add(Me.AgregarClienteButton)
-        Me.Controls.Add(Me.ButtonX1)
+        Me.Controls.Add(Me.ModificarButton)
         Me.Controls.Add(Me.LabelCodigoCliente)
-        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.ClienteLabel)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.BuscarTextBox)
         Me.Controls.Add(Me.BarrioComboBox)
         Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.TelefonoLabel)
+        Me.Controls.Add(Me.BarrioLabel)
+        Me.Controls.Add(Me.DireccionLabel)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.EmailTextBox)
         Me.Controls.Add(Me.TelefonoTextBox)
         Me.Controls.Add(Me.DireccionTextBox)
         Me.Controls.Add(Me.CuitTextBox)
         Me.Controls.Add(Me.RazonSocialTextBox)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.RazonSocialLabel)
         Me.Controls.Add(Me.ClienteGridView)
         Me.DoubleBuffered = True
         Me.Name = "ClienteForm"
@@ -318,16 +318,16 @@ Partial Class ClienteForm
     End Sub
 
     Friend WithEvents ClienteGridView As DataGridView
-    Friend WithEvents Label1 As Label
+    Friend WithEvents RazonSocialLabel As Label
     Friend WithEvents RazonSocialTextBox As TextBox
     Friend WithEvents CuitTextBox As TextBox
     Friend WithEvents DireccionTextBox As TextBox
     Friend WithEvents TelefonoTextBox As TextBox
     Friend WithEvents EmailTextBox As TextBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label5 As Label
+    Friend WithEvents DireccionLabel As Label
+    Friend WithEvents BarrioLabel As Label
+    Friend WithEvents TelefonoLabel As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents BarrioComboBox As ComboBox
     Friend WithEvents BuscarTextBox As System.Windows.Forms.TextBox
@@ -335,9 +335,9 @@ Partial Class ClienteForm
     Friend WithEvents RazonSocialRadioButton As System.Windows.Forms.RadioButton
     Friend WithEvents CuitRadioButton As System.Windows.Forms.RadioButton
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
-    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents ClienteLabel As System.Windows.Forms.Label
     Friend WithEvents LabelCodigoCliente As System.Windows.Forms.Label
     Friend WithEvents AgregarClienteButton As DevComponents.DotNetBar.ButtonX
     Friend WithEvents AceptarButton As DevComponents.DotNetBar.ButtonX
-    Friend WithEvents ButtonX1 As DevComponents.DotNetBar.ButtonX
+    Friend WithEvents ModificarButton As DevComponents.DotNetBar.ButtonX
 End Class

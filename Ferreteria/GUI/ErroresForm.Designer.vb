@@ -22,6 +22,7 @@ Partial Class ErroresForm
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ErroresForm))
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.TextBoxX1 = New DevComponents.DotNetBar.Controls.TextBoxX()
         Me.ButtonX1 = New DevComponents.DotNetBar.ButtonX()
@@ -52,13 +53,14 @@ Partial Class ErroresForm
         'ButtonX1
         '
         Me.ButtonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
-        Me.ButtonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
-        Me.ButtonX1.Location = New System.Drawing.Point(276, 27)
+        Me.ButtonX1.BackColor = System.Drawing.Color.Red
+        Me.ButtonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.Magenta
+        Me.ButtonX1.Image = CType(resources.GetObject("ButtonX1.Image"), System.Drawing.Image)
+        Me.ButtonX1.Location = New System.Drawing.Point(249, 12)
         Me.ButtonX1.Name = "ButtonX1"
-        Me.ButtonX1.Size = New System.Drawing.Size(89, 23)
+        Me.ButtonX1.Size = New System.Drawing.Size(58, 50)
         Me.ButtonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.ButtonX1.TabIndex = 2
-        Me.ButtonX1.Text = "ButtonX1"
         '
         'ErroresForm
         '

@@ -128,9 +128,10 @@ Partial Class NuevoPresupuestoForm
         'RadioButtonCodigo
         '
         Me.RadioButtonCodigo.AutoSize = True
+        Me.RadioButtonCodigo.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Bold)
         Me.RadioButtonCodigo.Location = New System.Drawing.Point(25, 13)
         Me.RadioButtonCodigo.Name = "RadioButtonCodigo"
-        Me.RadioButtonCodigo.Size = New System.Drawing.Size(67, 17)
+        Me.RadioButtonCodigo.Size = New System.Drawing.Size(82, 23)
         Me.RadioButtonCodigo.TabIndex = 3
         Me.RadioButtonCodigo.TabStop = True
         Me.RadioButtonCodigo.Text = "CODIGO"
@@ -139,9 +140,10 @@ Partial Class NuevoPresupuestoForm
         'RadioButtonDescripcion
         '
         Me.RadioButtonDescripcion.AutoSize = True
+        Me.RadioButtonDescripcion.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Bold)
         Me.RadioButtonDescripcion.Location = New System.Drawing.Point(134, 13)
         Me.RadioButtonDescripcion.Name = "RadioButtonDescripcion"
-        Me.RadioButtonDescripcion.Size = New System.Drawing.Size(98, 17)
+        Me.RadioButtonDescripcion.Size = New System.Drawing.Size(117, 23)
         Me.RadioButtonDescripcion.TabIndex = 4
         Me.RadioButtonDescripcion.TabStop = True
         Me.RadioButtonDescripcion.Text = "DESCRIPCION"
@@ -153,16 +155,17 @@ Partial Class NuevoPresupuestoForm
         Me.GroupBox1.Controls.Add(Me.RadioButtonCodigo)
         Me.GroupBox1.Location = New System.Drawing.Point(352, 389)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(243, 39)
+        Me.GroupBox1.Size = New System.Drawing.Size(267, 39)
         Me.GroupBox1.TabIndex = 5
         Me.GroupBox1.TabStop = False
         '
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Bold)
         Me.Label1.Location = New System.Drawing.Point(881, 9)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(42, 13)
+        Me.Label1.Size = New System.Drawing.Size(51, 19)
         Me.Label1.TabIndex = 6
         Me.Label1.Text = "FECHA"
         '
@@ -207,27 +210,27 @@ Partial Class NuevoPresupuestoForm
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(155, 12)
+        Me.Label2.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.Label2.Location = New System.Drawing.Point(139, 12)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(103, 13)
+        Me.Label2.Size = New System.Drawing.Size(128, 19)
         Me.Label2.TabIndex = 18
         Me.Label2.Text = "CODIGO CLIENTE: "
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(323, 11)
+        Me.Label4.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.Label4.Location = New System.Drawing.Point(348, 12)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(92, 13)
+        Me.Label4.Size = New System.Drawing.Size(116, 19)
         Me.Label4.TabIndex = 19
         Me.Label4.Text = "RAZON SOCIAL: "
         '
         'CodigoClienteLabel
         '
         Me.CodigoClienteLabel.AutoSize = True
-        Me.CodigoClienteLabel.Location = New System.Drawing.Point(264, 12)
+        Me.CodigoClienteLabel.Location = New System.Drawing.Point(290, 15)
         Me.CodigoClienteLabel.Name = "CodigoClienteLabel"
         Me.CodigoClienteLabel.Size = New System.Drawing.Size(0, 13)
         Me.CodigoClienteLabel.TabIndex = 20
@@ -235,7 +238,7 @@ Partial Class NuevoPresupuestoForm
         'RazonSocialLabel
         '
         Me.RazonSocialLabel.AutoSize = True
-        Me.RazonSocialLabel.Location = New System.Drawing.Point(421, 12)
+        Me.RazonSocialLabel.Location = New System.Drawing.Point(492, 15)
         Me.RazonSocialLabel.Name = "RazonSocialLabel"
         Me.RazonSocialLabel.Size = New System.Drawing.Size(0, 13)
         Me.RazonSocialLabel.TabIndex = 21
@@ -256,10 +259,10 @@ Partial Class NuevoPresupuestoForm
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Bold)
         Me.Label5.Location = New System.Drawing.Point(323, 39)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(38, 13)
+        Me.Label5.Size = New System.Drawing.Size(47, 19)
         Me.Label5.TabIndex = 22
         Me.Label5.Text = "CUIT: "
         '
