@@ -2820,3 +2820,14 @@ StackTrace:    at BLL.GestorCliente.ValidarClienteActualizacionBLL(Cliente Clien
    at GUI.ClienteForm.ButtonX3_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\ClienteForm.vb:line 501
 Fecha/Hora: 11/03/2018 15:17:29
 ===========================================================================================
+Titulo: Error
+Mensaje: El nombre de columna 'estado' no es válido.
+StackTrace:    en DAL.ReporteDAO.ObtenerReportesArticulos() en C:\Proyectos\Diploma\Ferreteria\DAL\Gateway\ReporteDAO.vb:línea 95
+   en GUI.ReporteArticulosç.ReporteArticulosç_Load(Object sender, EventArgs e) en C:\Proyectos\Diploma\Ferreteria\GUI\ReporteArticulosç.vb:línea 13
+Fecha/Hora: 11/03/2018 17:19:06
+===========================================================================================
+Titulo: Error
+Mensaje: Error, check cuit number
+StackTrace:    en GUI.ClienteForm.ButtonX2_Click(Object sender, EventArgs e) en C:\Proyectos\Diploma\Ferreteria\GUI\ClienteForm.vb:línea 345
+Fecha/Hora: 11/03/2018 17:23:47
+===========================================================================================
