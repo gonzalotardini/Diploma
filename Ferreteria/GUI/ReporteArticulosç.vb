@@ -27,9 +27,9 @@ Public Class ReporteArticulosç
 
                 'CodigoClienteRadioButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "CODIGOCLIENTE" Select V.Value).FirstOrDefault
                 'RazonSocialRadioButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "RAZONSOCIAL" Select V.Value).FirstOrDefault
-                ButtonX1.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "DETALLE" Select V.Value).FirstOrDefault
-                ButtonX2.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "ELIMINAR" Select V.Value).FirstOrDefault
-                Label1.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "REPORTESPRECIOS" Select V.Value).FirstOrDefault
+                ButtonX2.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "DETALLE" Select V.Value).FirstOrDefault
+                ButtonX1.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "ELIMINAR" Select V.Value).FirstOrDefault
+                Label1.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "REPORTESARTICULOS" Select V.Value).FirstOrDefault
             End If
 
 
@@ -40,9 +40,9 @@ Public Class ReporteArticulosç
                 'ListaPalabras = Multiidioma.ObtenerPalabras(Cultura)
                 'CodigoClienteRadioButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "CODIGOCLIENTE" Select V.Value).FirstOrDefault
                 'RazonSocialRadioButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "RAZONSOCIAL" Select V.Value).FirstOrDefault
-                ButtonX1.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "DETALLE" Select V.Value).FirstOrDefault
-                ButtonX2.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "ELIMINAR" Select V.Value).FirstOrDefault
-                Label1.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "REPORTESPRECIOS" Select V.Value).FirstOrDefault
+                ButtonX2.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "DETALLE" Select V.Value).FirstOrDefault
+                ButtonX1.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "ELIMINAR" Select V.Value).FirstOrDefault
+                Label1.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "REPORTESARTICULOS" Select V.Value).FirstOrDefault
 
             End If
 
@@ -65,7 +65,7 @@ Public Class ReporteArticulosç
 
             _CodReporteArticulos = (DataGridViewX1.CurrentRow.Cells(0).Value)
 
-            ReportePreciosDetalleForm.Show()
+            ReporteArticulosDetalleForm.Show()
 
         End If
     End Sub

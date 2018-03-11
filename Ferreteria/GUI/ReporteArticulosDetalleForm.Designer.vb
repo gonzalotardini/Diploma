@@ -30,6 +30,8 @@ Partial Class ReporteArticulosDetalleForm
         Me.UsuarioLabel = New DevComponents.DotNetBar.LabelX()
         Me.FechaLabel = New DevComponents.DotNetBar.LabelX()
         Me.CodLabel = New DevComponents.DotNetBar.LabelX()
+        Me.LabelX1 = New DevComponents.DotNetBar.LabelX()
+        Me.LabelX2 = New DevComponents.DotNetBar.LabelX()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -61,7 +63,7 @@ Partial Class ReporteArticulosDetalleForm
         '
         '
         Me.LabelX6.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX6.Location = New System.Drawing.Point(626, 30)
+        Me.LabelX6.Location = New System.Drawing.Point(904, 31)
         Me.LabelX6.Name = "LabelX6"
         Me.LabelX6.Size = New System.Drawing.Size(75, 23)
         Me.LabelX6.TabIndex = 14
@@ -73,7 +75,7 @@ Partial Class ReporteArticulosDetalleForm
         '
         '
         Me.LabelX5.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX5.Location = New System.Drawing.Point(368, 31)
+        Me.LabelX5.Location = New System.Drawing.Point(346, 32)
         Me.LabelX5.Name = "LabelX5"
         Me.LabelX5.Size = New System.Drawing.Size(123, 23)
         Me.LabelX5.TabIndex = 13
@@ -98,7 +100,7 @@ Partial Class ReporteArticulosDetalleForm
         '
         Me.UsuarioLabel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.UsuarioLabel.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.UsuarioLabel.Location = New System.Drawing.Point(545, 30)
+        Me.UsuarioLabel.Location = New System.Drawing.Point(833, 30)
         Me.UsuarioLabel.Name = "UsuarioLabel"
         Me.UsuarioLabel.Size = New System.Drawing.Size(75, 23)
         Me.UsuarioLabel.TabIndex = 11
@@ -130,11 +132,38 @@ Partial Class ReporteArticulosDetalleForm
         Me.CodLabel.TabIndex = 9
         Me.CodLabel.Text = "LabelX1"
         '
+        'LabelX1
+        '
+        '
+        '
+        '
+        Me.LabelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX1.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.LabelX1.Location = New System.Drawing.Point(475, 30)
+        Me.LabelX1.Name = "LabelX1"
+        Me.LabelX1.Size = New System.Drawing.Size(75, 23)
+        Me.LabelX1.TabIndex = 17
+        Me.LabelX1.Text = "LabelX1"
+        '
+        'LabelX2
+        '
+        '
+        '
+        '
+        Me.LabelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX2.Location = New System.Drawing.Point(578, 31)
+        Me.LabelX2.Name = "LabelX2"
+        Me.LabelX2.Size = New System.Drawing.Size(75, 23)
+        Me.LabelX2.TabIndex = 18
+        Me.LabelX2.Text = "LabelX2"
+        '
         'ReporteArticulosDetalleForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1258, 632)
+        Me.Controls.Add(Me.LabelX2)
+        Me.Controls.Add(Me.LabelX1)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.ImprimirButton)
         Me.Controls.Add(Me.LabelX6)
@@ -159,4 +188,6 @@ Partial Class ReporteArticulosDetalleForm
     Friend WithEvents UsuarioLabel As DevComponents.DotNetBar.LabelX
     Friend WithEvents FechaLabel As DevComponents.DotNetBar.LabelX
     Friend WithEvents CodLabel As DevComponents.DotNetBar.LabelX
+    Friend WithEvents LabelX1 As DevComponents.DotNetBar.LabelX
+    Friend WithEvents LabelX2 As DevComponents.DotNetBar.LabelX
 End Class

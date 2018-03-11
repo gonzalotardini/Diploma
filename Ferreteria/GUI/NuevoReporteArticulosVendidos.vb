@@ -36,7 +36,7 @@ Public Class NuevoReporteArticulosVendidos
 
     Private Sub ReporteArticulosVendidos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         CantidadInput.Value = 10
-
+        Me.Icon = My.Resources.ico
 
         Dim ListaPalabras As New List(Of SL.PalabrasIdioma)
 
@@ -138,7 +138,7 @@ Public Class NuevoReporteArticulosVendidos
                     'GestorReporte.ImprimirReportePrecios(ReporteCabecera, listaDetalle)
                 End If
 
-                Me.Hide()
+                Me.Close()
 
             End If
 

@@ -181,16 +181,16 @@ Public Class ReporteDAO
         Dim _Comando As New SqlCommand
         Dim _DataSet As New DataSet
         Dim _Consulta As String
-        'Dim Fecha_Desde = _fecha_desde.ToString("yyyy/MM/dd", CultureInfo.InvariantCulture)
-        'Dim Fecha_Hasta = _fecha_hasta.ToString("yyyy/MM/dd", CultureInfo.InvariantCulture)
-        Dim Fecha_Desde = _fecha_desde.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture)
-        Dim Fecha_Hasta = _fecha_hasta.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture)
+        Dim Fecha_Desde = _fecha_desde.ToString("yyyy/MM/dd", CultureInfo.InvariantCulture)
+        Dim Fecha_Hasta = _fecha_hasta.ToString("yyyy/MM/dd", CultureInfo.InvariantCulture)
+        'Dim Fecha_Desde = _fecha_desde.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture)
+        'Dim Fecha_Hasta = _fecha_hasta.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture)
         '_fecha_desde = (_fecha_desde.Date).ToString("yyyy-mm-dd")
 
 
         Try
 
-            _Consulta = "select  top " & _cantidad & "(d.Cod_Articulo), a.Descripcion,s.Descripcion,m.Descripcion,sum(cantidad) as 'Cantidad' from VentaDetalle d
+            _Consulta = "select  top " & _cantidad & "(d.Cod_Articulo), a.Descripcion,s.Descripcion as Unidad ,m.Descripcion as Marca ,sum(cantidad) as 'Cantidad' from VentaDetalle d
                         inner join VentaCabecera c on c.Cod_Venta=d.Cod_Venta
                         inner join Articulo a on a.Cod_Articulo=d.Cod_Articulo
                         inner join SubUnidad_Medida s on s.Cod_SubUnidad_Medida=a.Cod_SubUnidad_Medida
@@ -332,7 +332,7 @@ Public Class ReporteDAO
 
             'Cliente
 
-            cb.ShowTextAligned(PdfContentByte.ALIGN_LEFT, "Codigo de Reporte:  " & listaDetalle(1).Cod_Reporte, 20, 720, 0)
+            cb.ShowTextAligned(PdfContentByte.ALIGN_LEFT, "Codigo de Reporte:  " & reporteCabecera.Cod_Reporte, 20, 720, 0)
             cb.ShowTextAligned(PdfContentByte.ALIGN_LEFT, "Usuario:  " & reporteCabecera.Usuario, 210, 720, 0)
             cb.ShowTextAligned(PdfContentByte.ALIGN_LEFT, "Tipo Reporte:  " & reporteCabecera.Tipo, 365, 720, 0)
 

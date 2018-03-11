@@ -4812,3 +4812,88 @@ Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
 StackTrace: LogIn Form
 Fecha/Hora: 10/03/2018 14:35:35
 ===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 10/03/2018 14:53:17
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 10/03/2018 20:03:36
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 10/03/2018 20:09:04
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 10/03/2018 20:12:26
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 10/03/2018 20:14:36
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 10/03/2018 20:24:05
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 10/03/2018 20:28:15
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 10/03/2018 20:32:02
+===========================================================================================
+Titulo: Información
+Mensaje: Se creo correctamente la venta 
+StackTrace: Nuevo venta form
+Fecha/Hora: 10/03/2018 20:32:38
+===========================================================================================
+Titulo: Información
+Mensaje: Se creo correctamente la venta 
+StackTrace: Nuevo venta form
+Fecha/Hora: 10/03/2018 20:33:47
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 10/03/2018 20:39:03
+===========================================================================================
+Titulo: Información
+Mensaje: Se creo correctamente la venta 
+StackTrace: Nuevo venta form
+Fecha/Hora: 10/03/2018 20:39:27
+===========================================================================================
+Titulo: Información
+Mensaje: Se creo correctamente la venta 
+StackTrace: Nuevo venta form
+Fecha/Hora: 10/03/2018 20:40:14
+===========================================================================================
+Titulo: Información
+Mensaje: Se creo correctamente la venta 
+StackTrace: Nuevo venta form
+Fecha/Hora: 10/03/2018 20:41:32
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 10/03/2018 20:44:46
+===========================================================================================
+Titulo: Información
+Mensaje: Se creo correctamente la venta 
+StackTrace: Nuevo venta form
+Fecha/Hora: 10/03/2018 20:45:14
+===========================================================================================
+Titulo: Información
+Mensaje: El usuario: GONZALO ha accedido correctamente al sistema
+StackTrace: LogIn Form
+Fecha/Hora: 10/03/2018 20:54:42
+===========================================================================================

@@ -542,16 +542,13 @@ Public Class NuevaVentaForm
 
 
 
-                        _ClaseVentaPdf.Cantidad = CDec(PresupuestoGridView1.Rows(i).Cells("Cantidad").Value)
+                        _ClaseVentaPdf.Cantidad = (PresupuestoGridView1.Rows(i).Cells("Cantidad").Value)
                         _ClaseVentaPdf.Descripcion = Microsoft.VisualBasic.Left(CStr((PresupuestoGridView1.Rows(i).Cells("Descripcion").Value)), 40)
-                        _ClaseVentaPdf.Marca = CStr(PresupuestoGridView1.Rows(i).Cells("Marca").Value)
-                        _ClaseVentaPdf.Medida = CStr(PresupuestoGridView1.Rows(i).Cells("UnidadMedida").Value)
-                        _ClaseVentaPdf.Codigo = CLng(PresupuestoGridView1.Rows(i).Cells("Codigo").Value)
-                        _ClaseVentaPdf.Precio = CDec(PresupuestoGridView1.Rows(i).Cells("Precio").Value)
-                        _ClaseVentaPdf.Importe = CDec(PresupuestoGridView1.Rows(i).Cells("Importe").Value)
-
-
-
+                        _ClaseVentaPdf.Marca = (PresupuestoGridView1.Rows(i).Cells("Marca").Value)
+                        _ClaseVentaPdf.Medida = (PresupuestoGridView1.Rows(i).Cells("UnidadMedida").Value)
+                        _ClaseVentaPdf.Codigo = (PresupuestoGridView1.Rows(i).Cells("Codigo").Value)
+                        _ClaseVentaPdf.Precio = (PresupuestoGridView1.Rows(i).Cells("Precio").Value)
+                        _ClaseVentaPdf.Importe = (PresupuestoGridView1.Rows(i).Cells("Importe").Value)
 
                         _ListaDetalle.Add(_ClaseVentaPdf)
 
@@ -560,11 +557,12 @@ Public Class NuevaVentaForm
 
 
                     Next
-                    VentaCabecera.Fecha = CDate(LabelFecha.Text)
-                    VentaCabecera.Total = CDec(TotalLabel.Text)
-                    VentaCabecera.Cod_Cliente = (CodigoClienteLabel.Text).ToUpper
-
-                    _GestorVenta.GenerarVentaPDF(_ListaDetalle, _VentaCabecera)
+                    VentaCabecera.Cod_Cliente = Convert.ToInt32(CodigoClienteLabel.Text)
+                    VentaCabecera.Fecha = Convert.ToDateTime(LabelFecha.Text)
+                    VentaCabecera.Total = Convert.ToDecimal(TotalLabel.Text)
+                    VentaCabecera.Cod_Venta = _VentaDao.ObtenerCodUltimaVenta
+                    VentaCabecera.RazonSocial = RazonSocialLabel.Text
+                    _GestorVenta.GenerarVentaPDF(_ListaDetalle, VentaCabecera)
 
                 End If
 

@@ -2691,3 +2691,79 @@ StackTrace:    en BLL.GestorReporte.ObtenerArticulosMasVendidosBLL(Int32 cantida
    en GUI.NuevoReporteArticulosVendidos.ButtonX1_Click(Object sender, EventArgs e) en C:\Proyectos\Diploma\Ferreteria\GUI\NuevoReporteArticulosVendidos.vb:línea 20
 Fecha/Hora: 10/03/2018 14:26:34
 ===========================================================================================
+Titulo: Error
+Mensaje: No se encontraron articulos
+StackTrace:    at BLL.GestorReporte.ObtenerArticulosMasVendidosBLL(Int32 cantidad, DateTime fecha_desde, DateTime fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 68
+   at GUI.NuevoReporteArticulosVendidos.ButtonX1_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevoReporteArticulosVendidos.vb:line 20
+Fecha/Hora: 10/03/2018 14:53:24
+===========================================================================================
+Titulo: Error
+Mensaje: No existes precios historicos del articulo
+StackTrace:    at BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _fecha_Desde, DateTime _fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 29
+   at GUI.NuevoReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevoReportePrecios.vb:line 266
+Fecha/Hora: 10/03/2018 14:54:00
+===========================================================================================
+Titulo: Error
+Mensaje: No existes precios historicos del articulo
+StackTrace:    at BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _fecha_Desde, DateTime _fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 29
+   at GUI.NuevoReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevoReportePrecios.vb:line 266
+Fecha/Hora: 10/03/2018 14:54:02
+===========================================================================================
+Titulo: Error
+Mensaje: USUARIO O CONTRASEÑA INCORRECTO
+StackTrace:    at GUI.LogIn.Button1_Click_1(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\LogIn.vb:line 52
+Fecha/Hora: 10/03/2018 20:03:34
+===========================================================================================
+Titulo: Error
+Mensaje: No existes precios historicos del articulo
+StackTrace:    at BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _fecha_Desde, DateTime _fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 29
+   at GUI.NuevoReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevoReportePrecios.vb:line 266
+Fecha/Hora: 10/03/2018 20:12:42
+===========================================================================================
+Titulo: Error
+Mensaje: No existes precios historicos del articulo
+StackTrace:    at BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _fecha_Desde, DateTime _fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 29
+   at GUI.NuevoReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevoReportePrecios.vb:line 266
+Fecha/Hora: 10/03/2018 20:12:47
+===========================================================================================
+Titulo: Error
+Mensaje: No existes precios historicos del articulo
+StackTrace:    at BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _fecha_Desde, DateTime _fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 29
+   at GUI.NuevoReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevoReportePrecios.vb:line 266
+Fecha/Hora: 10/03/2018 20:15:26
+===========================================================================================
+Titulo: Error
+Mensaje: No existes precios historicos del articulo
+StackTrace:    at BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _fecha_Desde, DateTime _fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 29
+   at GUI.NuevoReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevoReportePrecios.vb:line 266
+Fecha/Hora: 10/03/2018 20:15:44
+===========================================================================================
+Titulo: Error
+Mensaje: No existes precios historicos del articulo
+StackTrace:    at BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _fecha_Desde, DateTime _fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 29
+   at GUI.NuevoReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevoReportePrecios.vb:line 266
+Fecha/Hora: 10/03/2018 20:16:04
+===========================================================================================
+Titulo: Error
+Mensaje: No se encontraron articulos
+StackTrace:    at BLL.GestorReporte.ObtenerArticulosMasVendidosBLL(Int32 cantidad, DateTime fecha_desde, DateTime fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 68
+   at GUI.NuevoReporteArticulosVendidos.ButtonX1_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevoReporteArticulosVendidos.vb:line 20
+Fecha/Hora: 10/03/2018 20:24:10
+===========================================================================================
+Titulo: Error
+Mensaje: No se encontraron articulos
+StackTrace:    at BLL.GestorReporte.ObtenerArticulosMasVendidosBLL(Int32 cantidad, DateTime fecha_desde, DateTime fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 68
+   at GUI.NuevoReporteArticulosVendidos.ButtonX1_Click(Object sender, EventArgs e)
+Fecha/Hora: 10/03/2018 20:27:07
+===========================================================================================
+Titulo: Error
+Mensaje: Error, cantidad debe ser numerico
+StackTrace:    at GUI.NuevaVentaForm.ArticuloGridView1_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevaVentaForm.vb:line 339
+Fecha/Hora: 10/03/2018 20:41:24
+===========================================================================================
+Titulo: Error
+Mensaje: No existes precios historicos del articulo
+StackTrace:    at BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _fecha_Desde, DateTime _fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 29
+   at GUI.NuevoReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e)
+Fecha/Hora: 10/03/2018 20:57:34
+===========================================================================================

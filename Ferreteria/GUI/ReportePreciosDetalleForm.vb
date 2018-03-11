@@ -91,8 +91,8 @@ Public Class ReportePreciosDetalleForm
         End Select
 
         Try
-            If MsgBox(msg2, MsgBoxStyle.YesNo, "ATENCIÓN") = MsgBoxResult.Yes Then
-                ReporteCabecera.Usuario = LogIn.Usuario.NombreUsuario
+            If MsgBox(msg2, MsgBoxStyle.YesNo + MsgBoxStyle.Question, "ATENCIÓN") = MsgBoxResult.Yes Then
+                'ReporteCabecera.Usuario = LogIn.Usuario.NombreUsuario
                 listaDetalle = New List(Of ReportePreciosDetalle)
 
                 For i = 0 To DataGridView1.RowCount - 1
@@ -117,7 +117,11 @@ Public Class ReportePreciosDetalleForm
 
 
 
-                ReporteCabecera.Cod_Reporte = reporteDao.ObtenerCodUltimoReportePrecios()
+                'ReporteCabecera.Cod_Reporte = reporteDao.ObtenerCodUltimoReportePrecios()
+                ReporteCabecera.Cod_Reporte = LabelX4.Text
+                ReporteCabecera.Tipo = "AUMENTO DE PRECIOS"
+                ReporteCabecera.Usuario = LabelX6.Text
+                ReporteCabecera.Fecha = LabelX5.Text
                 GestorReporte.ImprimirReportePrecios(ReporteCabecera, listaDetalle)
 
 

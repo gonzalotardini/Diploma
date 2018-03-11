@@ -141,7 +141,8 @@ Public Class GestorVenta
             'Cliente
 
             cb.ShowTextAligned(PdfContentByte.ALIGN_LEFT, "Venta:  " & VentaCabecera.Cod_Venta, 20, 720, 0)
-            cb.ShowTextAligned(PdfContentByte.ALIGN_LEFT, "Cliente:  " & VentaCabecera.RazonSocial, 150, 720, 0)
+            cb.ShowTextAligned(PdfContentByte.ALIGN_LEFT, "Cod Cliente:  " & VentaCabecera.Cod_Cliente, 170, 720, 0)
+            cb.ShowTextAligned(PdfContentByte.ALIGN_LEFT, "Razon Social:  " & VentaCabecera.RazonSocial, 300, 720, 0)
 
             'Derecha
             cb.SetFontAndSize(fuente, 11)

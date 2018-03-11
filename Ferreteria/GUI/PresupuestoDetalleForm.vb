@@ -662,6 +662,7 @@ Public Class PresupuestoDetalleForm
                     PresupuestoCabecera.Total = CDec(TotalLabel.Text)
                     PresupuestoCabecera.Cod_Cliente = (CodigoClienteTextBox.Text).ToUpper
                     PresupuestoCabecera.RazonSocial = (RazonSocialTextBox.Text).ToUpper
+                    PresupuestoCabecera.Cod_Presupuesto = CodigoPresupuestoTextbox.Text
                 Catch ex As Exception
                     Select Case Principal.CulturaGlobal
                         Case "ESPAÑOL"

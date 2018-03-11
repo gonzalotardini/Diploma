@@ -324,7 +324,7 @@ Public Class NuevoReportePrecios
         End Select
 
         Try
-            If MsgBox(msg, MsgBoxStyle.YesNo, "ATENCIÓN") = MsgBoxResult.Yes Then
+            If MsgBox(msg, MsgBoxStyle.YesNo + MsgBoxStyle.Question, "ATENCIÓN") = MsgBoxResult.Yes Then
                 ReporteCabecera.Usuario = LogIn.Usuario.NombreUsuario
                 listaDetalle = New List(Of ReportePreciosDetalle)
 
@@ -349,12 +349,14 @@ Public Class NuevoReportePrecios
 
                 GestorReporte.ValidarReporteAumentoDePrecios(ReporteCabecera, listaDetalle, Principal.CulturaGlobal)
 
-                If MsgBox(msg2, MsgBoxStyle.YesNo, "ATENCIÓN") = MsgBoxResult.Yes Then
+                If MsgBox(msg2, MsgBoxStyle.YesNo + MsgBoxStyle.Question, "ATENCIÓN") = MsgBoxResult.Yes Then
                     ReporteCabecera.Cod_Reporte = reporteDao.ObtenerCodUltimoReportePrecios()
+                    ReporteCabecera.Fecha = Now
+                    ReporteCabecera.Tipo = "AUMENTO DE PRECIOS"
                     GestorReporte.ImprimirReportePrecios(ReporteCabecera, listaDetalle)
                 End If
 
-                Me.Hide()
+                Me.Close()
 
             End If
         Catch ex As Exception
@@ -398,7 +400,7 @@ Public Class NuevoReportePrecios
         End Select
 
         Try
-            If MsgBox(msg2, MsgBoxStyle.YesNo, "ATENCIÓN") = MsgBoxResult.Yes Then
+            If MsgBox(msg2, MsgBoxStyle.YesNo + MsgBoxStyle.Question, "ATENCIÓN") = MsgBoxResult.Yes Then
                 ReporteCabecera.Usuario = LogIn.Usuario.NombreUsuario
                 listaDetalle = New List(Of ReportePreciosDetalle)
 
@@ -425,6 +427,9 @@ Public Class NuevoReportePrecios
 
 
                 ReporteCabecera.Cod_Reporte = reporteDao.ObtenerCodUltimoReportePrecios()
+                ReporteCabecera.Fecha = Now
+                ReporteCabecera.Tipo = "AUMENTO DE PRECIOS"
+
                 GestorReporte.ImprimirReportePrecios(ReporteCabecera, listaDetalle)
 
 
