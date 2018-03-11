@@ -599,7 +599,10 @@ Public Class PresupuestoDAO
 
     End Sub
 
-
+    ''' <summary>
+    ''' Realiza la eliminación de la cabecera de un presupuesto determinado
+    ''' </summary>
+    ''' <param name="cod"></param>
     Public Sub EliminarPresupuesto(cod As Long)
         Dim _Consulta As String
         Dim _Comando As New SqlCommand

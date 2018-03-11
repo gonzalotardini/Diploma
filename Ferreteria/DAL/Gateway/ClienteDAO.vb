@@ -5,7 +5,10 @@ Public Class ClienteDAO
     Inherits DatosBase
 
 
-
+    ''' <summary>
+    ''' Obtiene todos los clientes
+    ''' </summary>
+    ''' <returns></returns>
     Public Function ObtenerClientesDao() As DataTable
 
 
@@ -47,7 +50,10 @@ Public Class ClienteDAO
     End Function
 
 
-
+    ''' <summary>
+    ''' Da de alta un nuevo cliente
+    ''' </summary>
+    ''' <param name="Cliente"></param>
     Public Sub AgregarClienteDao(Cliente As Cliente)
 
         Dim _Consulta As String
@@ -86,7 +92,11 @@ Public Class ClienteDAO
 
     End Sub
 
-
+    ''' <summary>
+    ''' Busca un cliente por su código (ID)
+    ''' </summary>
+    ''' <param name="Cliente"></param>
+    ''' <returns></returns>
     Public Function ObtenerClientePorCodigo(Cliente As Cliente) As DataTable
 
 
@@ -131,7 +141,11 @@ Public Class ClienteDAO
 
     End Function
 
-
+    ''' <summary>
+    ''' Obtiene un cliente buscándolo por su código (ID)
+    ''' </summary>
+    ''' <param name="Cliente"></param>
+    ''' <returns></returns>
     Public Function ObtenerUnClientePorCodigo(Cliente As Cliente) As Cliente
 
 
@@ -188,7 +202,10 @@ Public Class ClienteDAO
     End Function
 
 
-
+    ''' <summary>
+    ''' Actualiza los datos de un cliente determinado
+    ''' </summary>
+    ''' <param name="Cliente"></param>
     Public Sub ActualizarCliente(Cliente As Cliente)
 
         Dim _Consulta As String
@@ -229,7 +246,11 @@ Public Class ClienteDAO
 
     End Sub
 
-
+    ''' <summary>
+    ''' Realizala búsqueda de un cliente mediante su razón social
+    ''' </summary>
+    ''' <param name="_Cliente"></param>
+    ''' <returns></returns>
     Public Function BuscarClientePorRazonSocial(_Cliente As Cliente) As DataTable
 
 
@@ -270,6 +291,12 @@ Public Class ClienteDAO
 
     End Function
 
+
+    ''' <summary>
+    ''' Realizala búsqueda de un cliente mediante su número de CUIT
+    ''' </summary>
+    ''' <param name="_Cliente"></param>
+    ''' <returns></returns>
     Public Function BuscarClientePorCuit(_Cliente As Cliente) As DataTable
 
 

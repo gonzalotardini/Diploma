@@ -303,6 +303,11 @@ Public Class ArticuloDAO
 
     End Function
 
+    ''' <summary>
+    ''' Busca un artículo por su código
+    ''' </summary>
+    ''' <param name="Articulo"></param>
+    ''' <returns></returns>
     Public Function BuscarArticuloPorCodigo(ByVal Articulo As Articulo) As Articulo
 
 
@@ -622,12 +627,6 @@ Public Class ArticuloDAO
     End Sub
 
 
-    ''' <summary>
-    ''' Busca todos los precios históricos de un artículo mediante su codigo
-    ''' </summary>
-    ''' <param name="articulo"></param>
-    ''' <returns></returns>
-    ''' <remarks></remarks>
 
 
 
@@ -688,7 +687,10 @@ Public Class ArticuloDAO
 
 
 
-
+    ''' <summary>
+    ''' Obtiene los primeros 50 precios historicos de los articulos
+    ''' </summary>
+    ''' <returns></returns>
 
     Public Function ObtenerPreciosHistoricostop50() As DataSet
         Dim _Comando As New SqlCommand
@@ -729,7 +731,11 @@ Public Class ArticuloDAO
     End Function
 
 
-
+    ''' <summary>
+    ''' Mapper de artículo, transforma un datatable en una lista de artículos
+    ''' </summary>
+    ''' <param name="DataTable"></param>
+    ''' <returns></returns>
     Public Function MapearArticulo(DataTable As DataTable) As Articulo
         Dim Articulo As New Articulo
 

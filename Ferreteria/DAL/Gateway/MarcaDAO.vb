@@ -51,6 +51,12 @@ Public Class MarcaDAO
 
     End Function
 
+
+    ''' <summary>
+    ''' Da de alta una nueva Marca
+    ''' </summary>
+    ''' <param name="Marca"></param>
+    ''' <returns></returns>
     Public Function AgregarMarca(Marca As Marca) As Boolean
         Dim _Consulta As String
         Dim _Comando As SqlCommand
@@ -85,7 +91,11 @@ Public Class MarcaDAO
 
     End Function
 
-
+    ''' <summary>
+    ''' Realiza la modificación de una marca determinada
+    ''' </summary>
+    ''' <param name="Marca"></param>
+    ''' <returns></returns>
     Public Function ModificarMarca(Marca As Marca) As Boolean
         Dim _Consulta As String
         Dim _Comando As New SqlCommand
@@ -118,10 +128,11 @@ Public Class MarcaDAO
 
     End Function
 
-
-
-
-
+    ''' <summary>
+    ''' Realiza la búsqueda de una marca mediante su descripción o nombre
+    ''' </summary>
+    ''' <param name="Marca"></param>
+    ''' <returns></returns>
     Public Function BuscarMarcaPorDescripcion(Marca As Marca) As DataSet
 
         Try

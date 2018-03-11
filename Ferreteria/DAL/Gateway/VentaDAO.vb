@@ -391,6 +391,11 @@ Public Class VentaDAO
 
     End Function
 
+
+    ''' <summary>
+    ''' Realiza la cancelación de una venta y genera la nota de credito cabecera y detalle
+    ''' </summary>
+    ''' <param name="cod_venta"></param>
     Public Sub CancelarVentaDao(cod_venta As Long)
 
         Dim _Consulta As String
@@ -436,6 +441,11 @@ Public Class VentaDAO
 
     End Sub
 
+
+    ''' <summary>
+    ''' Obtiene el código de la´última nota de credito generada
+    ''' </summary>
+    ''' <returns></returns>
     Public Function ObtenerCodUltimaNotaDeCredito() As Integer
 
 
@@ -472,7 +482,10 @@ Public Class VentaDAO
 
 
 
-
+    ''' <summary>
+    ''' Obtiene todas las cabeceras de las notas de credito existentes
+    ''' </summary>
+    ''' <returns></returns>
 
     Public Function ObtenerNotasDeCredito() As DataTable
         Dim _Consulta As String
@@ -511,6 +524,12 @@ Public Class VentaDAO
         End Try
     End Function
 
+
+    ''' <summary>
+    ''' Realiza la búsqueda de una nota de crédito mediante su código
+    ''' </summary>
+    ''' <param name="cod"></param>
+    ''' <returns></returns>
     Public Function BuscarNotaDeCreditoPorCOD(cod As Long) As DataTable
         Dim _Consulta As String
         Dim _Comando As SqlCommand
@@ -548,6 +567,12 @@ Public Class VentaDAO
         End Try
     End Function
 
+
+    ''' <summary>
+    ''' Realiza la búsqueda de una nota de crédito mediante la razon social del cliente
+    ''' </summary>
+    ''' <param name="razonSocial"></param>
+    ''' <returns></returns>
     Public Function BuscarNotaDeCreditoPorRazonSocial(razonSocial As String)
         Dim _Consulta As String
         Dim _Comando As SqlCommand
@@ -585,6 +610,11 @@ Public Class VentaDAO
         End Try
     End Function
 
+
+    ''' <summary>
+    ''' Realiza la eliminación de una nota de crédito luego de haberse utilizado en una venta
+    ''' </summary>
+    ''' <param name="codNota"></param>
     Public Sub CancelarNotaDeCredito(codNota As Long)
 
         Dim _Consulta As String
@@ -609,6 +639,11 @@ Public Class VentaDAO
     End Sub
 
 
+    ''' <summary>
+    ''' Realiza la búsqueda de una venta mediante su código
+    ''' </summary>
+    ''' <param name="Cliente"></param>
+    ''' <returns></returns>
     Public Function BucarVentaPorCodigoCliente(Cliente As Cliente) As DataSet
 
         Dim _Consulta As String
@@ -661,6 +696,12 @@ Public Class VentaDAO
 
     End Function
 
+
+    ''' <summary>
+    ''' Realiza la búsqueda de una venta mediante la razón social del cliente
+    ''' </summary>
+    ''' <param name="Cliente"></param>
+    ''' <returns></returns>
     Public Function BucarVentaPorRazonSocial(Cliente As Cliente) As DataTable
 
         Dim _Consulta As String

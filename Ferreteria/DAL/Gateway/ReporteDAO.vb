@@ -8,6 +8,14 @@ Imports iTextSharp.text.pdf
 Public Class ReporteDAO
     Inherits DatosBase
 
+
+    ''' <summary>
+    ''' Realiza la búsqueda de los movimientos de precios de un artículo en cierto rango de fechas indicado
+    ''' </summary>
+    ''' <param name="articulo"></param>
+    ''' <param name="_fecha_desde"></param>
+    ''' <param name="_fecha_hasta"></param>
+    ''' <returns></returns>
     Public Function BuscarPrecios(ByVal articulo As Articulo, ByVal _fecha_desde As Date, ByVal _fecha_hasta As Date) As DataTable
         Dim _Comando As New SqlCommand
         Dim _DataSet As New DataSet
@@ -55,6 +63,11 @@ Public Class ReporteDAO
 
     End Function
 
+
+    ''' <summary>
+    ''' Obtiene todos los reportes cabecera de los reportes de artículos más vendidos
+    ''' </summary>
+    ''' <returns></returns>
     Public Function ObtenerReportesArticulos() As DataTable
         Dim _Consulta As String
         Dim _Comando As SqlCommand
@@ -90,7 +103,10 @@ Public Class ReporteDAO
 
     End Function
 
-
+    ''' <summary>
+    ''' Obtiene todos los reportes cabecera de los reportes de aumentos de precios
+    ''' </summary>
+    ''' <returns></returns>
     Public Function ObtenerReportePreciosCabecera(cod_reporte As Long) As Reporte
         Dim _Consulta As String
         Dim _Comando As SqlCommand
@@ -133,6 +149,11 @@ Public Class ReporteDAO
 
     End Function
 
+
+    ''' <summary>
+    ''' Obtiene la cabecera de un reporte de articulos mas vendidos en particular
+    ''' </summary>
+    ''' <returns></returns>
     Public Function ObtenerReporteArticulosCabecera(cod_reporte As Long) As ReporteArticulosCabecera
         Dim _Consulta As String
         Dim _Comando As SqlCommand
@@ -178,6 +199,11 @@ Public Class ReporteDAO
 
     End Function
 
+    ''' <summary>
+    ''' Obtiene el detalle de un reporte de articulos mas vendidos en particular
+    ''' </summary>
+    ''' <param name="cod_reporte"></param>
+    ''' <returns></returns>
     Public Function ObtenerReporteArticulosDetalle(cod_reporte As Long) As DataTable
 
         Dim _Consulta As String
@@ -220,6 +246,11 @@ Public Class ReporteDAO
 
 
     End Function
+    ''' <summary>
+    ''' Obtiene el detalle de un reporte de aumento de precios en particular
+    ''' </summary>
+    ''' <param name="cod_reporte"></param>
+    ''' <returns></returns>
     Public Function ObtenerReportePreciosDetalle(cod_reporte As Long) As DataTable
 
         Dim _Consulta As String
@@ -264,6 +295,13 @@ Public Class ReporteDAO
     End Function
 
 
+    ''' <summary>
+    ''' Realiza la búsqueda de los artículas que poseen más ventas en un rango de fechas determinado, y obtiene una cantidad también indicada
+    ''' </summary>
+    ''' <param name="_cantidad"></param>
+    ''' <param name="_fecha_desde"></param>
+    ''' <param name="_fecha_hasta"></param>
+    ''' <returns></returns>
     Public Function ArticulosMasVendidos(ByVal _cantidad As Integer, ByVal _fecha_desde As Date, ByVal _fecha_hasta As Date) As DataTable
         Dim _Comando As New SqlCommand
         Dim _DataSet As New DataSet
@@ -316,7 +354,11 @@ Public Class ReporteDAO
     End Function
 
 
-
+    ''' <summary>
+    ''' Realiza la confeccion en PDF y la impresion del reporte de aumento de precios
+    ''' </summary>
+    ''' <param name="reporteCabecera"></param>
+    ''' <param name="listaDetalle"></param>
     Public Sub ImprimirReportePreciosDAO(reporteCabecera As Reporte, listaDetalle As List(Of ReportePreciosDetalle))
 
 
@@ -512,6 +554,12 @@ Public Class ReporteDAO
 
     End Sub
 
+
+    ''' <summary>
+    ''' Realiza la confeccion en PDF y la impresion del reporte de artículos más vendidos
+    ''' </summary>
+    ''' <param name="reporteCabecera"></param>
+    ''' <param name="listaDetalle"></param>
     Public Sub ImprimirReporteArticulossDAO(reporteCabecera As ReporteArticulosCabecera, listaDetalle As List(Of ReporteArticulosMasVendidosDetalle))
 
 
@@ -696,6 +744,10 @@ Public Class ReporteDAO
 
     End Sub
 
+    ''' <summary>
+    ''' Realiza el guardado en base de datos del detalle de un reporte de aumento de precios
+    ''' </summary>
+    ''' <param name="item"></param>
     Public Sub GuardarReportePreciosDetalle(item As ReportePreciosDetalle)
 
         Dim _Consulta As String
@@ -738,6 +790,10 @@ Public Class ReporteDAO
         End Try
     End Sub
 
+    ''' <summary>
+    ''' Realiza el guardado en base de datos de la cabecera de un reporte de aumento de precios
+    ''' </summary>
+    ''' <param name="ReporteCabecera"></param>
     Public Sub GuardarReportePreciosCabecera(ReporteCabecera As Reporte)
         Dim _Consulta As String
         Dim _Comando As New SqlCommand
@@ -770,6 +826,10 @@ Public Class ReporteDAO
 
     End Sub
 
+    ''' <summary>
+    ''' Realiza el guardado en base de datos de la cabecera de un reporte de articulos mas vendidos
+    ''' </summary>
+    ''' <param name="ReporteCabecera"></param>
     Public Sub GuardarReporteArticulosCabecera(ReporteCabecera As ReporteArticulosCabecera)
         Dim _Consulta As String
         Dim _Comando As New SqlCommand
@@ -803,6 +863,10 @@ Public Class ReporteDAO
 
     End Sub
 
+    ''' <summary>
+    ''' Realiza el guardado en base de datos del detalle de un reporte de articulos mas vendidos
+    ''' </summary>
+    ''' <param name="item"></param>
     Public Sub GuardarReporteArticulosDetalle(item As ReporteArticulosMasVendidosDetalle)
 
         Dim _Consulta As String
@@ -835,6 +899,10 @@ Public Class ReporteDAO
         End Try
     End Sub
 
+    ''' <summary>
+    ''' Obtiene el código del ultimo reporte de precios guardado
+    ''' </summary>
+    ''' <returns></returns>
     Public Function ObtenerCodUltimoReportePrecios() As Integer
 
 
@@ -871,7 +939,10 @@ Public Class ReporteDAO
 
     End Function
 
-
+    ''' <summary>
+    ''' Obtiene el código del último reporte de articulos mas vendidos
+    ''' </summary>
+    ''' <returns></returns>
     Public Function ObtenerCodUltimoReporteArticulos() As Integer
 
         Dim _Consulta As String
@@ -942,6 +1013,8 @@ Public Class ReporteDAO
 
 
     End Function
+
+
 
     'Public Sub GenerarPdf(ListaDetalle As List(Of Reporte), PresupuestoCabecera As PresupuestoCabecera, b As Integer)
     '    Try

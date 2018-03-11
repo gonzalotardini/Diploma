@@ -50,6 +50,11 @@ Public Class UnidadDeMedidaDao
 
     End Function
 
+
+    ''' <summary>
+    ''' Realiza el alta de una nueva unidad de medida
+    ''' </summary>
+    ''' <param name="UnidadDeMedida"></param>
     Public Sub CargarUnidadDeMedida(ByVal UnidadDeMedida As UnidadDeMedida)
 
         Dim _Consulta As String
@@ -82,6 +87,11 @@ Public Class UnidadDeMedidaDao
 
     End Sub
 
+
+    ''' <summary>
+    ''' Realza la actualizacion de una unidad de medida
+    ''' </summary>
+    ''' <param name="UnidadDeMedida"></param>
     Public Sub ActualizarUnidadDeMedida(ByVal UnidadDeMedida As UnidadDeMedida)
 
         Dim _Consulta As String
