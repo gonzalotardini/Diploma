@@ -2849,3 +2849,65 @@ StackTrace:    en BLL.GestorReporte.ObtenerArticulosMasVendidosBLL(Int32 cantida
    en GUI.NuevoReporteArticulosVendidos.ButtonX1_Click(Object sender, EventArgs e) en C:\Proyectos\Diploma\Ferreteria\GUI\NuevoReporteArticulosVendidos.vb:línea 20
 Fecha/Hora: 11/03/2018 17:49:01
 ===========================================================================================
+Titulo: Error
+Mensaje: No se encontraron articulos
+StackTrace:    en BLL.GestorReporte.ObtenerArticulosMasVendidosBLL(Int32 cantidad, DateTime fecha_desde, DateTime fecha_hasta) en C:\Proyectos\Diploma\Ferreteria\BLL\GestorReporte.vb:línea 68
+   en GUI.NuevoReporteArticulosVendidos.ButtonX1_Click(Object sender, EventArgs e) en C:\Proyectos\Diploma\Ferreteria\GUI\NuevoReporteArticulosVendidos.vb:línea 20
+Fecha/Hora: 11/03/2018 20:06:27
+===========================================================================================
+Titulo: Error
+Mensaje: La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+StackTrace:    en BLL.GestorReporte.ObtenerArticulosMasVendidosBLL(Int32 cantidad, DateTime fecha_desde, DateTime fecha_hasta) en C:\Proyectos\Diploma\Ferreteria\BLL\GestorReporte.vb:línea 68
+   en GUI.NuevoReporteArticulosVendidos.ButtonX1_Click(Object sender, EventArgs e) en C:\Proyectos\Diploma\Ferreteria\GUI\NuevoReporteArticulosVendidos.vb:línea 20
+Fecha/Hora: 11/03/2018 20:06:33
+===========================================================================================
+Titulo: Error
+Mensaje: Introduzca Codigo de Barras
+StackTrace:    en GUI.ArticulosForm.AgregarClienteButton_Click(Object sender, EventArgs e) en C:\Proyectos\Diploma\Ferreteria\GUI\ArticulosForm.vb:línea 549
+Fecha/Hora: 11/03/2018 20:52:22
+===========================================================================================
+Titulo: Error
+Mensaje: Debe seleccionar un cliente
+StackTrace:    en GUI.NuevaVentaForm.FinalizarButton_Click_1(Object sender, EventArgs e) en C:\Proyectos\Diploma\Ferreteria\GUI\NuevaVentaForm.vb:línea 485
+Fecha/Hora: 11/03/2018 21:38:25
+===========================================================================================
+Titulo: Error
+Mensaje: Error, cantidad debe ser numerico
+StackTrace:    en GUI.NuevaVentaForm.ArticuloGridView1_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) en C:\Proyectos\Diploma\Ferreteria\GUI\NuevaVentaForm.vb:línea 348
+Fecha/Hora: 11/03/2018 21:39:04
+===========================================================================================
+Titulo: Error
+Mensaje: Error, el total de la venta debe ser mayor al crédito
+StackTrace:    en BLL.GestorVenta.CancelarNotaDeCredito(Int64 codNotaCredito, Decimal totalCredito, Decimal totalVenta, String cultura) en C:\Proyectos\Diploma\Ferreteria\BLL\GestorVenta.vb:línea 296
+   en GUI.NuevaVentaForm.FinalizarButton_Click_1(Object sender, EventArgs e) en C:\Proyectos\Diploma\Ferreteria\GUI\NuevaVentaForm.vb:línea 514
+Fecha/Hora: 11/03/2018 21:41:23
+===========================================================================================
+Titulo: Error
+Mensaje: Se corrompido la integridad de la BD en la Tabla Marcas
+StackTrace:    en SL.Verificar.VerificarIntegridad() en C:\Proyectos\Diploma\Ferreteria\SL\Digito Verificador\Verificar.vb:línea 149
+   en GUI.Idioma.ComboBox1_SelectedIndexChanged_1(Object sender, EventArgs e) en C:\Proyectos\Diploma\Ferreteria\GUI\Idioma.vb:línea 38
+Fecha/Hora: 11/03/2018 21:43:07
+===========================================================================================
+Titulo: Error
+Mensaje: La conversión del tipo de datos varchar en datetime produjo un valor fuera de intervalo.
+StackTrace:    en BLL.GestorReporte.ObtenerArticulosMasVendidosBLL(Int32 cantidad, DateTime fecha_desde, DateTime fecha_hasta) en C:\Proyectos\Diploma\Ferreteria\BLL\GestorReporte.vb:línea 68
+   en GUI.NuevoReporteArticulosVendidos.ButtonX1_Click(Object sender, EventArgs e) en C:\Proyectos\Diploma\Ferreteria\GUI\NuevoReporteArticulosVendidos.vb:línea 20
+Fecha/Hora: 11/03/2018 21:46:49
+===========================================================================================
+Titulo: Error
+Mensaje: Fecha desde debe ser menor a fecha hasta
+StackTrace:    en BLL.GestorReporte.ObtenerArticulosMasVendidosBLL(Int32 cantidad, DateTime fecha_desde, DateTime fecha_hasta) en C:\Proyectos\Diploma\Ferreteria\BLL\GestorReporte.vb:línea 68
+   en GUI.NuevoReporteArticulosVendidos.ButtonX1_Click(Object sender, EventArgs e) en C:\Proyectos\Diploma\Ferreteria\GUI\NuevoReporteArticulosVendidos.vb:línea 20
+Fecha/Hora: 11/03/2018 21:48:36
+===========================================================================================
+Titulo: Error
+Mensaje: No existes precios historicos del articulo
+StackTrace:    en BLL.GestorReporte.ValidarFechas(Articulo _Articulo, DateTime _fecha_Desde, DateTime _fecha_hasta) en C:\Proyectos\Diploma\Ferreteria\BLL\GestorReporte.vb:línea 29
+   en GUI.NuevoReportePrecios.ArticulosGridView_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) en C:\Proyectos\Diploma\Ferreteria\GUI\NuevoReportePrecios.vb:línea 266
+Fecha/Hora: 11/03/2018 21:50:49
+===========================================================================================
+Titulo: Error
+Mensaje: USUARIO O CONTRASEÑA INCORRECTO
+StackTrace:    en GUI.LogIn.Button1_Click_1(Object sender, EventArgs e) en C:\Proyectos\Diploma\Ferreteria\GUI\LogIn.vb:línea 52
+Fecha/Hora: 11/03/2018 21:53:21
+===========================================================================================

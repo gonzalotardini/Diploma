@@ -1,5 +1,6 @@
 ﻿Imports BIZ
 Imports DAL
+Imports SL
 
 Public Class Marcas
     Private Sub Marca_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -21,7 +22,7 @@ Public Class Marcas
     Private Sub ButtonAgregar_Click(sender As Object, e As EventArgs) Handles ButtonAgregar.Click
         Dim marca As New Marca
         Dim marcaMetodos As New MarcaDAO
-
+        Dim Verificar As New Verificar
         marca.Descripcion = (TextBox1.Text).ToUpper
 
         If marcaMetodos.AgregarMarca(marca) = True Then
@@ -32,7 +33,7 @@ Public Class Marcas
 
         End If
 
-
+        Verificar.RealizarIntegridad()
 
 
 
@@ -62,7 +63,7 @@ Public Class Marcas
 
     Private Sub ButtonAceptar_Click(sender As Object, e As EventArgs) Handles ButtonAceptar.Click
         Dim MarcaMetodos As New MarcaDAO
-
+        Dim Verificar As New Verificar
 
         MarcaP.Descripcion = (TextBox1.Text).ToUpper
 
@@ -76,6 +77,7 @@ Public Class Marcas
         ButtonAceptar.Enabled = False
         ButtonAgregar.Enabled = True
 
+        Verificar.RealizarIntegridad()
 
 
     End Sub

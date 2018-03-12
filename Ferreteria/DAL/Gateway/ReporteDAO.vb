@@ -20,10 +20,10 @@ Public Class ReporteDAO
         Dim _Comando As New SqlCommand
         Dim _DataSet As New DataSet
         Dim _Consulta As String
-        Dim Fecha_Desde = _fecha_desde.ToString("yyyy/MM/dd", CultureInfo.InvariantCulture)
-        Dim Fecha_Hasta = _fecha_hasta.ToString("yyyy/MM/dd", CultureInfo.InvariantCulture)
-        'Dim Fecha_Desde = _fecha_desde.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture)
-        'Dim Fecha_Hasta = _fecha_hasta.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture)
+        ' Dim Fecha_Desde = _fecha_desde.ToString("yyyy/MM/dd", CultureInfo.InvariantCulture)
+        'Dim Fecha_Hasta = _fecha_hasta.ToString("yyyy/MM/dd", CultureInfo.InvariantCulture)
+        Dim Fecha_Desde = _fecha_desde.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture)
+        Dim Fecha_Hasta = _fecha_hasta.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture)
 
 
         '_fecha_desde = (_fecha_desde.Date).ToString("yyyy-mm-dd")
@@ -374,10 +374,10 @@ Public Class ReporteDAO
         Dim _Comando As New SqlCommand
         Dim _DataSet As New DataSet
         Dim _Consulta As String
-        Dim Fecha_Desde = _fecha_desde.ToString("yyyy/MM/dd", CultureInfo.InvariantCulture)
-        Dim Fecha_Hasta = _fecha_hasta.ToString("yyyy/MM/dd", CultureInfo.InvariantCulture)
-        'Dim Fecha_Desde = _fecha_desde.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture)
-        'Dim Fecha_Hasta = _fecha_hasta.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture)
+        'Dim Fecha_Desde = _fecha_desde.ToString("yyyy/MM/dd", CultureInfo.InvariantCulture)
+        'Dim Fecha_Hasta = _fecha_hasta.ToString("yyyy/MM/dd", CultureInfo.InvariantCulture)
+        Dim Fecha_Desde = _fecha_desde.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture)
+        Dim Fecha_Hasta = _fecha_hasta.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture)
         '_fecha_desde = (_fecha_desde.Date).ToString("yyyy-mm-dd")
 
 

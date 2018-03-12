@@ -24,6 +24,7 @@ Public Class NotaCreditoForm
 
     Private Sub NotaCreditoForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
+            Me.Icon = My.Resources.ico
             Dim ListaPalabras As New List(Of SL.PalabrasIdioma)
             RazonSocialRadioButton.Checked = True
 
