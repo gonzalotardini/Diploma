@@ -72,6 +72,7 @@ Partial Class ErroresForm
         Me.Controls.Add(Me.ListBox1)
         Me.DoubleBuffered = True
         Me.Name = "ErroresForm"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Errores"
         Me.ResumeLayout(False)
 

@@ -503,7 +503,6 @@ C:\Proyectos\Diploma\Ferreteria\GUI\bin\Debug\DevComponents.DotNetBar2.xml
 C:\Proyectos\Diploma\Ferreteria\GUI\bin\Debug\itextsharp.xml
 C:\Proyectos\Diploma\Ferreteria\GUI\obj\Debug\GUI.vbprojResolveAssemblyReference.cache
 C:\Proyectos\Diploma\Ferreteria\GUI\obj\Debug\GUI.BackUp.resources
-C:\Proyectos\Diploma\Ferreteria\GUI\obj\Debug\GUI.CIrcularLoaderForm.resources
 C:\Proyectos\Diploma\Ferreteria\GUI\obj\Debug\GUI.ClienteForm.resources
 C:\Proyectos\Diploma\Ferreteria\GUI\obj\Debug\GUI.ContraseñaForm.resources
 C:\Proyectos\Diploma\Ferreteria\GUI\obj\Debug\GUI.ErroresForm.resources

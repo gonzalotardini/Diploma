@@ -82,8 +82,10 @@ Public Class Inicio
             config3.Save(ConfigurationSaveMode.Modified)
             ConfigurationManager.RefreshSection("appSettings")
 
-
+            Me.ShowInTaskbar = False
+            Me.Visible = False
             LogIn.Show()
+
 
         Catch ex As Exception
             MsgBox(ex.Message)

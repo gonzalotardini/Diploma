@@ -39,7 +39,9 @@ Partial Class EventosForm
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(870, 432)
         Me.Controls.Add(Me.ListBox1)
+        Me.DoubleBuffered = True
         Me.Name = "EventosForm"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "EventosForm"
         Me.ResumeLayout(False)
 
