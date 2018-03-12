@@ -602,3 +602,4 @@ C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\bin\Debug\Microsoft.SqlSer
 C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\bin\Debug\Microsoft.SqlServer.Diagnostics.STrace.dll
 C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\bin\Debug\Microsoft.SqlServer.ServiceBrokerEnum.dll
 C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\bin\Debug\Microsoft.SqlServer.RegSvrEnum.dll
+C:\Proyectos\Diploma\Ferreteria\GUI\obj\Debug\GUI.Inicio.resources

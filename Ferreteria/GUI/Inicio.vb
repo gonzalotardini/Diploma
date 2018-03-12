@@ -7,15 +7,38 @@ Public Class Inicio
 
     Private Sub Inicio_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim test = ConfigurationManager.AppSettings("inicio").ToString()
+
+
+
+
         If test = 1 Then
             Me.ShowInTaskbar = False
             Me.Visible = False
             LogIn.Show()
         Else
-            Dim i1 As String = Instancias(0).Item(0)
-            'Dim i2 As String = Instancias(0).Item(1)
-            ComboBox1.Items.Add(i1 & "\SQL_UAI")
+
+            Dim Server As String = String.Empty
+            Dim instance As SqlDataSourceEnumerator = SqlDataSourceEnumerator.Instance
+            Dim table As System.Data.DataTable = instance.GetDataSources()
+
+            For Each row As System.Data.DataRow In table.Rows
+                Server = String.Empty
+                Server = row("ServerName")
+                If row("InstanceName").ToString.Length > 0 Then
+                    Server = Server & "\" & row("InstanceName")
+                End If
+                ComboBox1.Items.Add(Server)
+            Next
+
+            ComboBox1.SelectedIndex = ComboBox1.FindStringExact(Environment.MachineName)
+
         End If
+
+
+
+
+
+
 
         'DataGridView1.DataSource = Microsoft.SqlServer.Management.Smo.SmoApplication.EnumAvailableSqlServers()
 
@@ -30,30 +53,38 @@ Public Class Inicio
     Private Sub ButtonX1_Click(sender As Object, e As EventArgs) Handles ButtonX1.Click
 
         Try
-            Dim d As New DirectoryInfo(Application.StartupPath & "\DB.sql")
+
             Dim ArticuloDao As New ArticuloDAO
 
-
-            'Dim script As String = file.OpenText().ReadToEnd();
-
-
-            Dim file As String = (Application.StartupPath & "\DB.sql")
+            Dim file As String = (Application.StartupPath & "\Correr.bat")
+            Dim file2 As String = (Application.StartupPath & "\CorrerUai.bat")
             Dim sr As System.IO.StreamReader = Nothing
 
 
-            sr = New System.IO.StreamReader(file)
-            Dim script As String = sr.ReadToEnd() ' con este metodo leeriamos todo el fichero y cargar en el string
 
-            'ArticuloDao.CrearBaseDatos(script)
-            MsgBox(script)
 
-            sr.Close()
-            sr.Dispose()
+            If ComboBox1.SelectedItem = "GONZALO-PC" Then
+                Process.Start(file)
+            Else
+                Process.Start(file2)
+            End If
 
-            'Dim config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None)
-            'config.AppSettings.Settings("inicio").Value = "1"
-            'config.Save(ConfigurationSaveMode.Modified)
-            'ConfigurationManager.RefreshSection("appSettings")
+
+            MsgBox("Base de datos creada correctamente/ DataBase created successfully", MsgBoxStyle.Information)
+
+            Dim config2 As Configuration = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None)
+            config2.ConnectionStrings.ConnectionStrings("Conexion").ConnectionString = "Data Source=" & ComboBox1.SelectedItem & ";Initial Catalog=Ferreteria;Integrated Security=True"
+            config2.Save(ConfigurationSaveMode.Modified, True)
+            ConfigurationManager.RefreshSection("connectionStrings")
+
+            Dim config3 = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None)
+            config3.AppSettings.Settings("inicio").Value = "1"
+            config3.Save(ConfigurationSaveMode.Modified)
+            ConfigurationManager.RefreshSection("appSettings")
+
+
+            LogIn.Show()
+
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try

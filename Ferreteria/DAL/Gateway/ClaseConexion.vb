@@ -22,14 +22,9 @@ Public Class ClaseConexion
 
             Dim conexion As String = ConfigurationManager.ConnectionStrings("Conexion").ToString()
 
-
-            'Dim settings = ConfigurationManager.ConnectionStrings(0)
-            'settings.ConnectionString = "blah"
-
-
-
-
             _CadenaConexion = New SqlConnection(conexion)
+
+
 
         Catch ex As Exception
 
