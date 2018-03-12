@@ -1,5 +1,6 @@
 ﻿Imports SL
 Imports BLL
+Imports System.Configuration
 
 Public Class LogIn
     Public ListaPatentes As New List(Of Patente)
@@ -18,6 +19,9 @@ Public Class LogIn
 
         Me.Icon = My.Resources.ico
         TextBox2.PasswordChar = "*"
+
+        Me.Hide()
+
     End Sub
 
     Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
@@ -65,5 +69,9 @@ Public Class LogIn
         End Try
 
 
+    End Sub
+
+    Private Sub LogIn_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+        Inicio.Close()
     End Sub
 End Class

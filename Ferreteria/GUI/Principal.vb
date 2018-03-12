@@ -5,17 +5,6 @@ Public Class Principal
 
 
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub Button1_Click_1(sender As Object, e As EventArgs)
-
-    End Sub
 
 
     Public CulturaGlobal As String
@@ -23,7 +12,7 @@ Public Class Principal
     Private Sub Principal_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
 
         If LogIn.Visible = False Then
-
+            Inicio.Close()
             LogIn.Close()
 
         End If

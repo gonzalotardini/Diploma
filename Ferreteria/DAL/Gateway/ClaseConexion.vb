@@ -16,9 +16,20 @@ Public Class ClaseConexion
 
 
             '_CadenaConexion = New SqlConnection("Data Source=.\SQL_UAI;Initial Catalog=Ferreteria;Integrated Security=True")
-            _CadenaConexion = New SqlConnection("Data Source=Gonzalo-PC;Initial Catalog=Ferreteria;Integrated Security=True")
+            '_CadenaConexion = New SqlConnection("Data Source=Gonzalo-PC;Initial Catalog=Ferreteria;Integrated Security=True")
             '_CadenaConexion = New SqlConnection("Data Source=ACBYEMRTRL\SQLEXPRESS;Initial Catalog=Ferreteria;Integrated Security=True")
             '_CadenaConexion = New SqlConnection(ConfigurationManager.ConnectionStrings("Conexion").ToString)
+
+            Dim conexion As String = ConfigurationManager.ConnectionStrings("Conexion").ToString()
+
+
+            'Dim settings = ConfigurationManager.ConnectionStrings(0)
+            'settings.ConnectionString = "blah"
+
+
+
+
+            _CadenaConexion = New SqlConnection(conexion)
 
         Catch ex As Exception
 

@@ -591,3 +591,14 @@ C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\obj\Debug\GUI.Marcas.resou
 C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\obj\Debug\GUI.ReporteArticulosDetalleForm.resources
 C:\Proyectos\Diploma\Ferreteria\GUI\obj\Debug\GUI.Marcas.resources
 C:\Proyectos\Diploma\Ferreteria\GUI\obj\Debug\GUI.ReporteArticulosDetalleForm.resources
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\obj\Debug\GUI.Inicio.resources
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\bin\Debug\Microsoft.SqlServer.Management.Sdk.Sfc.dll
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\bin\Debug\Microsoft.SqlServer.Smo.dll
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\bin\Debug\Microsoft.SqlServer.SmoExtended.dll
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\bin\Debug\Microsoft.SqlServer.ConnectionInfo.dll
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\bin\Debug\Microsoft.SqlServer.SqlClrProvider.dll
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\bin\Debug\Microsoft.SqlServer.SqlEnum.dll
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\bin\Debug\Microsoft.SqlServer.Dmf.Common.dll
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\bin\Debug\Microsoft.SqlServer.Diagnostics.STrace.dll
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\bin\Debug\Microsoft.SqlServer.ServiceBrokerEnum.dll
+C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\bin\Debug\Microsoft.SqlServer.RegSvrEnum.dll

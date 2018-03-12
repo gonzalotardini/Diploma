@@ -762,15 +762,37 @@ Public Class ArticuloDAO
         Catch ex As Exception
             Throw New Exception("Error al mapear Articulo" & ex.Message)
         End Try
-
-
-
-
-
-
     End Function
 
 
+
+
+    Public Sub CrearBaseDatos(query As String)
+
+        Dim _Consulta As String
+        Dim _Comando As New SqlCommand
+        'Dim Dal As New DAL.DatosBase
+        _Consulta = query
+
+        Try
+
+            Me.Conexion.Open()
+
+            _Comando = New SqlCommand(_Consulta, Me.Conexion)
+            _Comando.ExecuteNonQuery()
+
+
+        Catch ex As Exception
+
+            Throw New Exception("Error al crear base de datos " & ex.Message)
+
+
+        Finally
+            Me.Conexion.Close()
+        End Try
+
+
+    End Sub
 
 
 End Class

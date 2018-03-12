@@ -2911,3 +2911,16 @@ Mensaje: USUARIO O CONTRASEÑA INCORRECTO
 StackTrace:    en GUI.LogIn.Button1_Click_1(Object sender, EventArgs e) en C:\Proyectos\Diploma\Ferreteria\GUI\LogIn.vb:línea 52
 Fecha/Hora: 11/03/2018 21:53:21
 ===========================================================================================
+Titulo: Error
+Mensaje: Error al conectar con la base de datos
+StackTrace:    at SL.GestorUsuario.TraerUsuarioBLL(Usuario _Usuario) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\SL\Usuario\GestorUsuario.vb:line 30
+   at GUI.LogIn.Button1_Click_1(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\LogIn.vb:line 45
+Fecha/Hora: 12/03/2018 12:58:25
+===========================================================================================
+Titulo: Error
+Mensaje: Cannot open database "FerreteriaUai" requested by the login. The login failed.
+Login failed for user 'AMERICAS\tardini'.
+StackTrace:    at SL.GestorUsuario.TraerUsuarioBLL(Usuario _Usuario) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\SL\Usuario\GestorUsuario.vb:line 30
+   at GUI.LogIn.Button1_Click_1(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\LogIn.vb:line 45
+Fecha/Hora: 12/03/2018 13:02:09
+===========================================================================================
