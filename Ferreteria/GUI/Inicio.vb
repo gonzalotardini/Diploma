@@ -40,29 +40,20 @@ Public Class Inicio
             Dim file As String = (Application.StartupPath & "\DB.sql")
             Dim sr As System.IO.StreamReader = Nothing
 
-            Try
-                sr = New System.IO.StreamReader(file)
-                Dim script As String = sr.ReadToEnd() ' con este metodo leeriamos todo el fichero y cargar en el string
 
-                ArticuloDao.CrearBaseDatos(script)
+            sr = New System.IO.StreamReader(file)
+            Dim script As String = sr.ReadToEnd() ' con este metodo leeriamos todo el fichero y cargar en el string
 
+            'ArticuloDao.CrearBaseDatos(script)
+            MsgBox(script)
 
-            Catch ex As Exception
-                MessageBox.Show(ex.Message)
-            Finally
-                sr.Close()
-                sr.Dispose()
-            End Try
+            sr.Close()
+            sr.Dispose()
 
-
-
-
-
-
-            Dim config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None)
-            config.AppSettings.Settings("inicio").Value = "0"
-            config.Save(ConfigurationSaveMode.Modified)
-            ConfigurationManager.RefreshSection("appSettings")
+            'Dim config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None)
+            'config.AppSettings.Settings("inicio").Value = "1"
+            'config.Save(ConfigurationSaveMode.Modified)
+            'ConfigurationManager.RefreshSection("appSettings")
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try

@@ -57,7 +57,7 @@ Partial Class Reportes
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 36.0!, System.Drawing.FontStyle.Bold)
-        Me.Label1.Location = New System.Drawing.Point(561, 81)
+        Me.Label1.Location = New System.Drawing.Point(514, 83)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(138, 65)
         Me.Label1.TabIndex = 8

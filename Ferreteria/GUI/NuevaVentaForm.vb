@@ -222,7 +222,7 @@ Public Class NuevaVentaForm
         If codCliente = codClienteNota Then
 
             CreditoLabel.Text = Total
-            RazonSocialLabel.Text = CodNotaCredito
+            'RazonSocialLabel.Text = CodNotaCredito
             labelPesos.Visible = True
             CreditoLabel.Visible = True
             codCreditoLabel.Visible = True

@@ -34,7 +34,7 @@ Partial Class ReportePrecios
         '
         Me.ReportesPreciosLabel.AutoSize = True
         Me.ReportesPreciosLabel.Font = New System.Drawing.Font("Segoe UI", 36.0!, System.Drawing.FontStyle.Bold)
-        Me.ReportesPreciosLabel.Location = New System.Drawing.Point(478, 41)
+        Me.ReportesPreciosLabel.Location = New System.Drawing.Point(432, 44)
         Me.ReportesPreciosLabel.Name = "ReportesPreciosLabel"
         Me.ReportesPreciosLabel.Size = New System.Drawing.Size(226, 65)
         Me.ReportesPreciosLabel.TabIndex = 8
@@ -46,7 +46,7 @@ Partial Class ReportePrecios
         Me.DataGridView1.BackgroundColor = System.Drawing.SystemColors.Control
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.GridColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.DataGridView1.Location = New System.Drawing.Point(350, 122)
+        Me.DataGridView1.Location = New System.Drawing.Point(370, 122)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(488, 314)
         Me.DataGridView1.TabIndex = 10
@@ -58,7 +58,7 @@ Partial Class ReportePrecios
         Me.CancelarButton.ColorTable = DevComponents.DotNetBar.eButtonColor.Magenta
         Me.CancelarButton.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
         Me.CancelarButton.Image = CType(resources.GetObject("CancelarButton.Image"), System.Drawing.Image)
-        Me.CancelarButton.Location = New System.Drawing.Point(690, 472)
+        Me.CancelarButton.Location = New System.Drawing.Point(710, 472)
         Me.CancelarButton.Name = "CancelarButton"
         Me.CancelarButton.Size = New System.Drawing.Size(148, 59)
         Me.CancelarButton.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
@@ -73,7 +73,7 @@ Partial Class ReportePrecios
         Me.VerButton.ColorTable = DevComponents.DotNetBar.eButtonColor.Magenta
         Me.VerButton.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
         Me.VerButton.Image = CType(resources.GetObject("VerButton.Image"), System.Drawing.Image)
-        Me.VerButton.Location = New System.Drawing.Point(348, 472)
+        Me.VerButton.Location = New System.Drawing.Point(370, 472)
         Me.VerButton.Name = "VerButton"
         Me.VerButton.Size = New System.Drawing.Size(148, 59)
         Me.VerButton.Style = DevComponents.DotNetBar.eDotNetBarStyle.Metro

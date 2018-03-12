@@ -64,7 +64,7 @@ Public Class ArticulosForm
             MODIFICAR.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "MODIFICAR" Select V.Value).FirstOrDefault
             RadioButtonCODIGO.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "CODIGO" Select V.Value).FirstOrDefault
             CANTIDADDEARTICULOS.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "CANTIDADDEARTICULOS" Select V.Value).FirstOrDefault
-
+            AgregarClienteButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "AGREGAR" Select V.Value).FirstOrDefault
 
 
 
@@ -90,7 +90,7 @@ Public Class ArticulosForm
             MODIFICAR.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "MODIFICAR" Select V.Value).FirstOrDefault
             RadioButtonCODIGO.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "CODIGO" Select V.Value).FirstOrDefault
             CANTIDADDEARTICULOS.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "CANTIDADDEARTICULOS" Select V.Value).FirstOrDefault
-
+             AgregarClienteButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "AGREGAR" Select V.Value).FirstOrDefault
 
 
         End If
@@ -419,6 +419,7 @@ Public Class ArticulosForm
         If RadioButtonCODIGO.Checked = True Then
             TextBoxBuscar.Text = ""
             Me.Show()
+
             TextBoxBuscar.Focus()
 
 
@@ -433,12 +434,24 @@ Public Class ArticulosForm
     Private Sub EliminarButton_Click(sender As Object, e As EventArgs) Handles EliminarButton.Click
         Dim _Articulo As New Articulo
         Dim _ArticuloDao As New ArticuloDAO
+        Dim msg As String = ""
+        Dim msg2 As String = ""
 
+        Select Case Principal.CulturaGlobal
+            Case "ESPAÑOL"
+                msg = "¿Seguro desea eliminar el artículo?"
+                msg2 = "Se eliminó correctamente el artículo"
+
+            Case "ENGLISH"
+
+                msg = "Do you really want to delete the product?"
+                msg2 = "The product was deleted successfully"
+        End Select
 
 
         Try
 
-            If MsgBox("¿Desea eliminar el articulo?", vbYesNo, "ATENCION") = True Then
+            If MsgBox(msg, vbYesNo + MsgBoxStyle.Question, "ATENCION") = MsgBoxResult.Yes Then
 
                 _Articulo.CodigoArticulo = DataGridView2.CurrentRow.Cells(0).Value
                 _Articulo.Descripcion = DataGridView2.CurrentRow.Cells(2).Value
@@ -447,7 +460,7 @@ Public Class ArticulosForm
 
                 Dim el As New EventLogger
 
-                MsgBox("Se ha eliminado correctamente el articulo " & _Articulo.Descripcion, MsgBoxStyle.Information, "ATENCION")
+                MsgBox(msg2, MsgBoxStyle.Information, "ATENCION")
                 el.WriteToErrorLog("Se ha eliminado correctamente el articulo " & _Articulo.Descripcion, "Articulo Form", "Información")
 
                 _ArticuloDao.ObtenerPrimerosArticulos()

@@ -2924,3 +2924,38 @@ StackTrace:    at SL.GestorUsuario.TraerUsuarioBLL(Usuario _Usuario) in C:\Users
    at GUI.LogIn.Button1_Click_1(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\LogIn.vb:line 45
 Fecha/Hora: 12/03/2018 13:02:09
 ===========================================================================================
+Titulo: Error
+Mensaje: Error, the total of the sell must be higher than the credit
+StackTrace:    at BLL.GestorVenta.CancelarNotaDeCredito(Int64 codNotaCredito, Decimal totalCredito, Decimal totalVenta, String cultura) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorVenta.vb:line 296
+   at GUI.NuevaVentaForm.FinalizarButton_Click_1(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevaVentaForm.vb:line 514
+Fecha/Hora: 12/03/2018 16:03:39
+===========================================================================================
+Titulo: Error
+Mensaje: Error, cantidad debe ser numerico
+StackTrace:    at GUI.NuevaVentaForm.ArticuloGridView1_CellDoubleClick(Object sender, DataGridViewCellEventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevaVentaForm.vb:line 348
+Fecha/Hora: 12/03/2018 16:04:18
+===========================================================================================
+Titulo: Error
+Mensaje: Error, the total of the sell must be higher than the credit
+StackTrace:    at BLL.GestorVenta.CancelarNotaDeCredito(Int64 codNotaCredito, Decimal totalCredito, Decimal totalVenta, String cultura) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorVenta.vb:line 296
+   at GUI.NuevaVentaForm.FinalizarButton_Click_1(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevaVentaForm.vb:line 514
+Fecha/Hora: 12/03/2018 16:07:16
+===========================================================================================
+Titulo: Error
+Mensaje: Conversion from string "Process has exited, so the reque" to type 'Integer' is not valid.
+StackTrace:    at BLL.GestorReporte.ImprimirReportePrecios(Reporte reporteCabecera, List`1 listaDetalle) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 184
+   at GUI.NuevoReportePrecios.ButtonX2_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevoReportePrecios.vb:line 356
+Fecha/Hora: 12/03/2018 16:09:50
+===========================================================================================
+Titulo: Error
+Mensaje: No se encontraron articulos
+StackTrace:    at BLL.GestorReporte.ObtenerArticulosMasVendidosBLL(Int32 cantidad, DateTime fecha_desde, DateTime fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 68
+   at GUI.NuevoReporteArticulosVendidos.ButtonX1_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevoReporteArticulosVendidos.vb:line 20
+Fecha/Hora: 12/03/2018 16:10:05
+===========================================================================================
+Titulo: Error
+Mensaje: No se encontraron articulos
+StackTrace:    at BLL.GestorReporte.ObtenerArticulosMasVendidosBLL(Int32 cantidad, DateTime fecha_desde, DateTime fecha_hasta) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\BLL\GestorReporte.vb:line 68
+   at GUI.NuevoReporteArticulosVendidos.ButtonX1_Click(Object sender, EventArgs e) in C:\Users\tardini\Documents\GIT\Diploma\Ferreteria\GUI\NuevoReporteArticulosVendidos.vb:line 20
+Fecha/Hora: 12/03/2018 16:10:32
+===========================================================================================
