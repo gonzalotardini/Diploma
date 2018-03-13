@@ -55,7 +55,7 @@ Partial Class VentDetalle
         '
         Me.TotalLabel.AutoSize = True
         Me.TotalLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TotalLabel.Location = New System.Drawing.Point(821, 452)
+        Me.TotalLabel.Location = New System.Drawing.Point(850, 452)
         Me.TotalLabel.Name = "TotalLabel"
         Me.TotalLabel.Size = New System.Drawing.Size(226, 73)
         Me.TotalLabel.TabIndex = 32
@@ -67,9 +67,9 @@ Partial Class VentDetalle
         Me.label.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.label.Location = New System.Drawing.Point(605, 467)
         Me.label.Name = "label"
-        Me.label.Size = New System.Drawing.Size(183, 55)
+        Me.label.Size = New System.Drawing.Size(239, 55)
         Me.label.TabIndex = 31
-        Me.label.Text = "TOTAL"
+        Me.label.Text = "TOTAL  $"
         '
         'FechaTextBox
         '

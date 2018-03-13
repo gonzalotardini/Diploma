@@ -79,7 +79,7 @@ Public Class VentDetalle
         RazonSocialTextBox.Text = _Cliente.RazonSocial
 
 
-        TotalLabel.Text = "$" & _VentaCabecera.Total
+        TotalLabel.Text = _VentaCabecera.Total
 
 
 
@@ -260,8 +260,8 @@ Public Class VentDetalle
                 Next
 
                 Try
-                    ventaCabecera.Fecha = CDate(FechaTextBox.Text)
-                    ventaCabecera.Total = CDec(TotalLabel.Text)
+                    ventaCabecera.Fecha = (FechaTextBox.Text)
+                    ventaCabecera.Total = (TotalLabel.Text)
                     ventaCabecera.Cod_Cliente = (CodigoClienteTextBox.Text).ToUpper
                     ventaCabecera.RazonSocial = (RazonSocialTextBox.Text).ToUpper
                     ventaCabecera.Cod_Venta = CodigoPresupuestoTextbox.Text

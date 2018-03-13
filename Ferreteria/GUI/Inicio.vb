@@ -7,7 +7,7 @@ Public Class Inicio
 
     Private Sub Inicio_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim test = ConfigurationManager.AppSettings("inicio").ToString()
-
+        Me.Icon = My.Resources.ico
 
 
 
@@ -70,7 +70,7 @@ Public Class Inicio
             End If
 
 
-            MsgBox("Base de datos creada correctamente/ DataBase created successfully", MsgBoxStyle.Information)
+
 
             Dim config2 As Configuration = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None)
             config2.ConnectionStrings.ConnectionStrings("Conexion").ConnectionString = "Data Source=" & ComboBox1.SelectedItem & ";Initial Catalog=Ferreteria;Integrated Security=True"

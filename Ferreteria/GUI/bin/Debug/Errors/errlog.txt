@@ -32,3 +32,15 @@ StackTrace:    en SL.GestorUsuario.TraerUsuarioBLL(Usuario _Usuario) en C:\Proye
    en GUI.LogIn.Button1_Click_1(Object sender, EventArgs e)
 Fecha/Hora: 12/03/2018 19:21:44
 ===========================================================================================
+Titulo: Error
+Mensaje: El nombre de columna 'idUsuario' no es válido.
+El nombre de columna 'Pw' no es válido.
+StackTrace:    en SL.GestorUsuario.TraerUsuarioBLL(Usuario _Usuario) en C:\Proyectos\Diploma\Ferreteria\SL\Usuario\GestorUsuario.vb:línea 30
+   en GUI.LogIn.Button1_Click_1(Object sender, EventArgs e) en C:\Proyectos\Diploma\Ferreteria\GUI\LogIn.vb:línea 45
+Fecha/Hora: 12/03/2018 20:19:47
+===========================================================================================
+Titulo: Error
+Mensaje: You must choose a customer
+StackTrace:    en GUI.VentDetalle.ImprimirButton_Click(Object sender, EventArgs e) en C:\Proyectos\Diploma\Ferreteria\GUI\VentDetalle.vb:línea 273
+Fecha/Hora: 12/03/2018 20:20:45
+===========================================================================================
