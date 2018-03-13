@@ -38,7 +38,6 @@ Partial Class NuevoPresupuestoForm
         Me.RadioButtonDescripcion = New System.Windows.Forms.RadioButton()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.QuitarTodoButton = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TotalLabel = New System.Windows.Forms.Label()
         Me.LabelFecha = New System.Windows.Forms.Label()
@@ -168,16 +167,6 @@ Partial Class NuevoPresupuestoForm
         Me.Label1.Size = New System.Drawing.Size(51, 19)
         Me.Label1.TabIndex = 6
         Me.Label1.Text = "FECHA"
-        '
-        'QuitarTodoButton
-        '
-        Me.QuitarTodoButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.QuitarTodoButton.Location = New System.Drawing.Point(1217, 61)
-        Me.QuitarTodoButton.Name = "QuitarTodoButton"
-        Me.QuitarTodoButton.Size = New System.Drawing.Size(87, 46)
-        Me.QuitarTodoButton.TabIndex = 10
-        Me.QuitarTodoButton.Text = "QUITAR TODO"
-        Me.QuitarTodoButton.UseVisualStyleBackColor = True
         '
         'Label3
         '
@@ -336,7 +325,6 @@ Partial Class NuevoPresupuestoForm
         Me.Controls.Add(Me.ImprimirButton)
         Me.Controls.Add(Me.TotalLabel)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.QuitarTodoButton)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.TextBoxBuscarArticulo)
@@ -360,7 +348,6 @@ Partial Class NuevoPresupuestoForm
     Friend WithEvents RadioButtonDescripcion As RadioButton
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents QuitarTodoButton As Button
     Friend WithEvents Cantidad As DataGridViewTextBoxColumn
     Friend WithEvents Codigo As DataGridViewTextBoxColumn
     Friend WithEvents CodigoBarras As DataGridViewTextBoxColumn

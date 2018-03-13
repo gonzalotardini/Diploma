@@ -10,33 +10,38 @@ Public Class Inicio
         Dim test = ConfigurationManager.AppSettings("inicio").ToString()
         Me.Icon = My.Resources.ico
 
-        Dim el As New ErrorLogger
-        el.WriteToErrorLog("Inicio", "Inicio", "Error")
+
+        Try
+            Dim el As New ErrorLogger
+            el.WriteToErrorLog("Inicio", "Inicio", "Error")
+            If test = 1 Then
+                Me.ShowInTaskbar = False
+                Me.Visible = False
+                LogIn.Show()
+            Else
+
+                Dim Server As String = String.Empty
+                Dim instance As SqlDataSourceEnumerator = SqlDataSourceEnumerator.Instance
+                Dim table As System.Data.DataTable = instance.GetDataSources()
+
+                For Each row As System.Data.DataRow In table.Rows
+                    Server = String.Empty
+                    Server = row("ServerName")
+                    If row("InstanceName").ToString.Length > 0 Then
+                        Server = Server & "\" & row("InstanceName")
+                    End If
+                    ComboBox1.Items.Add(Server)
+                Next
+
+                ComboBox1.SelectedIndex = ComboBox1.FindStringExact(Environment.MachineName)
+
+            End If
+        Catch ex As Exception
+            Dim el As New ErrorLogger
+            el.WriteToErrorLog(ex.Message, ex.StackTrace, "Error")
+        End Try
 
 
-
-        If test = 1 Then
-            Me.ShowInTaskbar = False
-            Me.Visible = False
-            LogIn.Show()
-        Else
-
-            Dim Server As String = String.Empty
-            Dim instance As SqlDataSourceEnumerator = SqlDataSourceEnumerator.Instance
-            Dim table As System.Data.DataTable = instance.GetDataSources()
-
-            For Each row As System.Data.DataRow In table.Rows
-                Server = String.Empty
-                Server = row("ServerName")
-                If row("InstanceName").ToString.Length > 0 Then
-                    Server = Server & "\" & row("InstanceName")
-                End If
-                ComboBox1.Items.Add(Server)
-            Next
-
-            ComboBox1.SelectedIndex = ComboBox1.FindStringExact(Environment.MachineName)
-
-        End If
 
 
 
@@ -68,7 +73,7 @@ Public Class Inicio
             Dim contenidobat = File.ReadAllText(_file)
 
 
-            contenidobat = contenidobat.Replace("DB", ComboBox1.SelectedItem)
+            'contenidobat = contenidobat.Replace("DB", ComboBox1.SelectedItem)
 
             File.WriteAllText(_file, contenidobat)
 
@@ -81,7 +86,8 @@ Public Class Inicio
 
 
             Dim config2 As Configuration = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None)
-            config2.ConnectionStrings.ConnectionStrings("Conexion").ConnectionString = "Data Source=" & ComboBox1.SelectedItem & ";Initial Catalog=Ferreteria;Integrated Security=True"
+            'config2.ConnectionStrings.ConnectionStrings("Conexion").ConnectionString = "Data Source=" & ComboBox1.SelectedItem & ";Initial Catalog=Ferreteria;Integrated Security=True"
+            config2.ConnectionStrings.ConnectionStrings("Conexion").ConnectionString = "Data Source=.\SQL_UAI;Initial Catalog=Ferreteria;Integrated Security=True"
             config2.Save(ConfigurationSaveMode.Modified, True)
             ConfigurationManager.RefreshSection("connectionStrings")
 

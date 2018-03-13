@@ -54,7 +54,8 @@ Public Class NuevoPresupuestoForm
             QuitarButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "QUITAR" Select V.Value).FirstOrDefault
             FinalizarButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "FINALIZAR" Select V.Value).FirstOrDefault
             RadioButtonDescripcion.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "DESCRIPCION" Select V.Value).FirstOrDefault
-            RadioButtonDescripcion.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "CODIGO" Select V.Value).FirstOrDefault
+            RadioButtonCodigo.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "CODIGO" Select V.Value).FirstOrDefault
+            ImprimirButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "IMPRIMIR" Select V.Value).FirstOrDefault
         End If
 
 
@@ -71,7 +72,8 @@ Public Class NuevoPresupuestoForm
             QuitarButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "QUITAR" Select V.Value).FirstOrDefault
             FinalizarButton.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "FINALIZAR" Select V.Value).FirstOrDefault
             RadioButtonDescripcion.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "DESCRIPCION" Select V.Value).FirstOrDefault
-            RadioButtonDescripcion.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "CODIGO" Select V.Value).FirstOrDefault
+            RadioButtonCodigo.Text = (From V In ListaPalabras Where V.Cultura = Cultura And V.Key = "CODIGO" Select V.Value).FirstOrDefault
+
 
         End If
 
@@ -340,7 +342,7 @@ Public Class NuevoPresupuestoForm
 
     End Sub
 
-    Private Sub QuitarTodoButton_Click(sender As Object, e As EventArgs) Handles QuitarTodoButton.Click
+    Private Sub QuitarTodoButton_Click(sender As Object, e As EventArgs)
 
         If PresupuestoGridView1.CurrentRow IsNot Nothing Then
 
@@ -380,8 +382,17 @@ Public Class NuevoPresupuestoForm
         Dim _CantidadFilas As Integer
         Dim Bandera As Integer = 0
         Dim indice As Integer
+        Dim msg As String = ""
+        Dim msg2 As String = ""
 
-
+        Select Case Principal.CulturaGlobal
+            Case "ESPAÑOL"
+                msg = "Introduzca cantidad"
+                msg2 = "Error, la cantidad debe ser numérica"
+            Case "ENGLISH"
+                msg = "Introduce quantity"
+                msg2 = "Error, quantity must be numeric"
+        End Select
 
 
 
@@ -391,14 +402,9 @@ Public Class NuevoPresupuestoForm
 
             _ArticuloParaPresupuesto = _GestorArticulo.ObtenerArticuloPorCodigo(_Articulo)
 
-
-
-
-
-
             Dim _EsNumero As Boolean
 
-            _RespuestaInputBox = InputBox("Introduza cantidad", "ATENCIÓN", CStr(1))
+            _RespuestaInputBox = InputBox(msg, "ATENCIÓN", CStr(1))
 
             _EsNumero = IsNumeric(_RespuestaInputBox)
 
@@ -439,7 +445,7 @@ Public Class NuevoPresupuestoForm
 
             Else
 
-                Throw New Exception("Error, cantidad debe ser numerico")
+                Throw New Exception(msg2)
 
             End If
 
