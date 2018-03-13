@@ -4,11 +4,18 @@ Public Class BackUp
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim BackUp As New SL.BackUp
-
+        Dim msg As String = ""
         Try
+            Select Case Principal.CulturaGlobal
+                Case "ESPAÑOL"
+                    msg = "Se generó BackUp"
+                Case "ENGLISH"
+                    msg = "BackUp generated"
+            End Select
+
 
             BackUp.BackUp()
-            MsgBox("Se genero backup", MsgBoxStyle.Information, "INFORMACION")
+            MsgBox(msg, MsgBoxStyle.Information, "INFO")
             Me.Close()
         Catch ex As Exception
 

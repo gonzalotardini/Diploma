@@ -21,31 +21,13 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_016A56CD1621F6FA6AA6FE4CC29F7B4D"
-        "OwnerKey" = "8:_35234D926D7F3A9F4102445E38A2F275"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_016A56CD1621F6FA6AA6FE4CC29F7B4D"
-        "OwnerKey" = "8:_683BE7920B7729398ADE339CE4047B97"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_016A56CD1621F6FA6AA6FE4CC29F7B4D"
-        "OwnerKey" = "8:_CF2C05B5163E44FC86F1CDE197F97D3F"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_02723A0552F54FA6B909A4B86C7D6C0D"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_1663352EAD9646BA86618BC9565CB43C"
+        "MsmKey" = "8:_21276558F8A140929ACAB62DD052CF48"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -75,12 +57,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_44A616A77B154189BC84BA40A3A069D9"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_5F1BA59FF2AFCED1ABC9CADDFE9C6838"
         "OwnerKey" = "8:_683BE7920B7729398ADE339CE4047B97"
         "MsmSig" = "8:_UNDEFINED"
@@ -94,6 +70,24 @@
         "Entry"
         {
         "MsmKey" = "8:_683BE7920B7729398ADE339CE4047B97"
+        "OwnerKey" = "8:_CF2C05B5163E44FC86F1CDE197F97D3F"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_AA6BC7683444D538E0BCA97DE8DC01A0"
+        "OwnerKey" = "8:_35234D926D7F3A9F4102445E38A2F275"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_AA6BC7683444D538E0BCA97DE8DC01A0"
+        "OwnerKey" = "8:_683BE7920B7729398ADE339CE4047B97"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_AA6BC7683444D538E0BCA97DE8DC01A0"
         "OwnerKey" = "8:_CF2C05B5163E44FC86F1CDE197F97D3F"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -130,7 +124,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_27DF18051029CC73E77F3B39A330D89C"
+        "OwnerKey" = "8:_CF2C05B5163E44FC86F1CDE197F97D3F"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -160,13 +154,13 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_CF2C05B5163E44FC86F1CDE197F97D3F"
+        "OwnerKey" = "8:_AA6BC7683444D538E0BCA97DE8DC01A0"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_016A56CD1621F6FA6AA6FE4CC29F7B4D"
+        "OwnerKey" = "8:_27DF18051029CC73E77F3B39A330D89C"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -187,6 +181,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.6.1"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.6.1 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.6.1"
+                    }
+                }
+            }
         }
         "Release"
         {
@@ -203,6 +213,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.6.1"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.6.1 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.6.1"
+                    }
+                }
+            }
         }
     }
     "Deployable"
@@ -252,37 +278,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_016A56CD1621F6FA6AA6FE4CC29F7B4D"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:itextsharp, Version=5.5.9.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_016A56CD1621F6FA6AA6FE4CC29F7B4D"
-                    {
-                    "Name" = "8:itextsharp.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:itextsharp.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_B2EE1C775FF349D4858EE4EF167DFA66"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_02723A0552F54FA6B909A4B86C7D6C0D"
             {
             "SourcePath" = "8:..\\GUI\\bin\\Debug\\ferreteriahelper.chm"
@@ -303,10 +298,10 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_1663352EAD9646BA86618BC9565CB43C"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_21276558F8A140929ACAB62DD052CF48"
             {
-            "SourcePath" = "8:..\\GUI\\bin\\Debug\\CorrerUai.bat"
-            "TargetName" = "8:CorrerUai.bat"
+            "SourcePath" = "8:..\\GUI\\bin\\Debug\\Correr.bat"
+            "TargetName" = "8:Correr.bat"
             "Tag" = "8:"
             "Folder" = "8:_B2EE1C775FF349D4858EE4EF167DFA66"
             "Condition" = "8:"
@@ -385,26 +380,6 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_44A616A77B154189BC84BA40A3A069D9"
-            {
-            "SourcePath" = "8:..\\GUI\\bin\\Debug\\Correr.bat"
-            "TargetName" = "8:Correr.bat"
-            "Tag" = "8:"
-            "Folder" = "8:_B2EE1C775FF349D4858EE4EF167DFA66"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_5F1BA59FF2AFCED1ABC9CADDFE9C6838"
             {
             "AssemblyRegister" = "3:1"
@@ -450,6 +425,37 @@
                     }
                 }
             "SourcePath" = "8:BLL.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_B2EE1C775FF349D4858EE4EF167DFA66"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_AA6BC7683444D538E0BCA97DE8DC01A0"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:itextsharp, Version=5.5.9.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_AA6BC7683444D538E0BCA97DE8DC01A0"
+                    {
+                    "Name" = "8:itextsharp.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:itextsharp.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_B2EE1C775FF349D4858EE4EF167DFA66"
@@ -575,7 +581,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Instalador"
         "ProductCode" = "8:{D81AA9BA-55BE-47C9-8E1E-0B66051380D7}"
-        "PackageCode" = "8:{14D3066D-56A2-4AE5-BAD5-F7DC97BD3E35}"
+        "PackageCode" = "8:{0B83806F-E0FD-452D-A584-45DD93B84C54}"
         "UpgradeCode" = "8:{761E5922-11C7-478C-8E48-A02B287C020B}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"

@@ -2,12 +2,16 @@
 Imports System.Data.Sql
 Imports System.IO
 Imports DAL
+Imports SL
 
 Public Class Inicio
 
     Private Sub Inicio_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim test = ConfigurationManager.AppSettings("inicio").ToString()
         Me.Icon = My.Resources.ico
+
+        Dim el As New ErrorLogger
+        el.WriteToErrorLog("Inicio", "Inicio", "Error")
 
 
 
@@ -56,20 +60,24 @@ Public Class Inicio
 
             Dim ArticuloDao As New ArticuloDAO
 
-            Dim file As String = (Application.StartupPath & "\Correr.bat")
-            Dim file2 As String = (Application.StartupPath & "\CorrerUai.bat")
-            Dim sr As System.IO.StreamReader = Nothing
+            Dim _file As String = (Application.StartupPath & "\Correr.bat")
+            'Dim _file2 As String = (Application.StartupPath & "\CorrerUai.bat")
+            'Dim sr As System.IO.StreamReader = Nothing
 
 
+            Dim contenidobat = File.ReadAllText(_file)
 
 
-            If ComboBox1.SelectedItem = "GONZALO-PC" Then
-                Process.Start(file)
-            Else
-                Process.Start(file2)
-            End If
+            contenidobat = contenidobat.Replace("DB", ComboBox1.SelectedItem)
+
+            File.WriteAllText(_file, contenidobat)
 
 
+            'If ComboBox1.SelectedItem = "GONZALO-PC" Then
+            Process.Start(_file)
+            'Else
+            '    Process.Start(_file2)
+            'End If
 
 
             Dim config2 As Configuration = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None)
