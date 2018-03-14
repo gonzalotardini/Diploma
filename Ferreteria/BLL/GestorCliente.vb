@@ -121,6 +121,12 @@ Public Class GestorCliente
 
     End Sub
 
+    ''' <summary>
+    ''' Se encarga de realizar la busqueda de clientes mediante la razon social del mismo
+    ''' </summary>
+    ''' <param name="_Cliente"></param>
+    ''' <returns></returns>
+
     Public Function BuscarClientePorRazonSocialBLL(_Cliente As Cliente) As DataTable
 
         Try
@@ -131,7 +137,12 @@ Public Class GestorCliente
         End Try
     End Function
 
-
+    ''' <summary>
+    ''' Se encarga de realizar la busqueda de un cliente mediante su cuit
+    '''
+    ''' </summary>
+    ''' <param name="_cliente"></param>
+    ''' <returns></returns>
     Public Function BuscarClientePorCuitBll(_cliente As Cliente) As DataTable
 
         Try

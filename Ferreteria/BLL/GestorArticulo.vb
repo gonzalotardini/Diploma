@@ -277,7 +277,11 @@ Public Class GestorArticulo
 
     End Sub
 
-
+    ''' <summary>
+    ''' Realiza los calculos pertinentes para descontar precio
+    ''' </summary>
+    ''' <param name="_ListaArticulo"></param>
+    ''' <param name="_PorcentajeAumento"></param>
     Public Sub DescontarPrecioBll(_ListaArticulo As List(Of Articulo), _PorcentajeAumento As Integer)
 
         Dim _NuevoPrecio As Decimal

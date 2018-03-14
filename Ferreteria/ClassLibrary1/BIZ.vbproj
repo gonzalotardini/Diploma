@@ -65,7 +65,6 @@
     <Compile Include="Articulo.vb" />
     <Compile Include="ArticuloParaPresupuesto.vb" />
     <Compile Include="Categoria.vb" />
-    <Compile Include="Envio.vb" />
     <Compile Include="ModificacionesPrecios.vb" />
     <Compile Include="Marca.vb" />
     <Compile Include="NotaDeCredito.vb" />

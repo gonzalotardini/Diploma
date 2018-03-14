@@ -18,7 +18,12 @@ Public Class ReporteFacade
 
     End Function
 
-
+    ''' <summary>
+    ''' Se encagra de las llamadas a la DAL para guardar cabecera y detalle del reporte
+    ''' </summary>
+    ''' <param name="reporteCabecera"></param>
+    ''' <param name="listaDetalles"></param>
+    ''' <param name="culturaGlobal"></param>
     Public Sub GuardarReportePreciosFacade(reporteCabecera As Reporte, listaDetalles As List(Of ReportePreciosDetalle), culturaGlobal As String)
         Dim reportesDAL As New ReporteDAO
         Dim codReporte As Integer
@@ -65,6 +70,13 @@ Public Class ReporteFacade
         End Try
     End Function
 
+    ''' <summary>
+    ''' Llama a la Dal para obtener el detalle del reporte
+    ''' </summary>
+    ''' <param name="cantidad"></param>
+    ''' <param name="fecha_desde"></param>
+    ''' <param name="fecha_hasta"></param>
+    ''' <returns></returns>
     Public Function ObtenerArticulosMasVendidosFacade(cantidad As Integer, fecha_desde As Date, fecha_hasta As Date) As DataTable
         Try
             Dim reporteDal = New ReporteDAO
@@ -84,6 +96,12 @@ Public Class ReporteFacade
         End Try
     End Sub
 
+    ''' <summary>
+    ''' Se encagra de las llamadas a la DAL para guardar cabecera y detalle del reporte
+    ''' </summary>
+    ''' <param name="reporteCabecera"></param>
+    ''' <param name="listaDetalle"></param>
+    ''' <param name="culturaGlobal"></param>
     Public Sub GuardarReporteArticulosFacade(reporteCabecera As ReporteArticulosCabecera, listaDetalle As List(Of ReporteArticulosMasVendidosDetalle), culturaGlobal As String)
         Dim reportesDAL As New ReporteDAO
         Dim codReporte As Integer
@@ -106,6 +124,7 @@ Public Class ReporteFacade
             Throw New Exception(ex.Message)
         End Try
     End Sub
+
 
     Public Function obtenerReporteArticulosCabecera(codreporte As Long) As ReporteArticulosCabecera
         Try

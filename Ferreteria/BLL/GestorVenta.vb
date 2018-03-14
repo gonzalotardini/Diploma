@@ -10,6 +10,11 @@ Imports System.IO
 Public Class GestorVenta
 
 
+    ''' <summary>
+    ''' Llama a la capa Facade para generar una venta
+    ''' </summary>
+    ''' <param name="VentaCabecera"></param>
+    ''' <param name="ListaDetalles"></param>
     Public Sub GenerarVenta(ByVal VentaCabecera As VentaCabecera, ByVal ListaDetalles As List(Of VentaDetalle))
 
         Dim _VentaFacade As New VentaFacade
@@ -30,7 +35,11 @@ Public Class GestorVenta
 
     End Sub
 
-
+    ''' <summary>
+    ''' Se encarga de generar el PDF de la venta
+    ''' </summary>
+    ''' <param name="DetalleVentaPDF"></param>
+    ''' <param name="VentaCabecera"></param>
     Public Sub GenerarVentaPDF(DetalleVentaPDF As List(Of SL.ClaseVentaPDF), VentaCabecera As VentaCabecera)
 
 
@@ -234,6 +243,11 @@ Public Class GestorVenta
 
     End Sub
 
+    ''' <summary>
+    ''' Llama a la capa Facade para realizar la búsqueda de una venta por la razón social del cliente
+    ''' </summary>
+    ''' <param name="cliente"></param>
+    ''' <returns></returns>
     Public Function BuscarVentaPorRazonSocialBll(cliente As Cliente) As DataTable
         Try
             Dim ventaFacade As New VentaFacade
@@ -243,6 +257,8 @@ Public Class GestorVenta
             Throw New Exception(ex.Message)
         End Try
     End Function
+
+
 
     Public Function ValidarBusquedaVentaPorCodigoCliente(cliente As Cliente, cultura As String) As DataSet
         Try

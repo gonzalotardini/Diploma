@@ -281,6 +281,10 @@ Public Class GestorPresupuesto
 
     End Sub
 
+    ''' <summary>
+    ''' Es un pasa manos que llama a la capa facade para realzar la elimninacion de un presupuesto
+    ''' </summary>
+    ''' <param name="cod"></param>
     Public Sub EliminarPresupuestoBll(cod As Long)
         Try
             Dim presupuestoFacade As New PresupuestoFacade
@@ -326,10 +330,6 @@ Public Class GestorPresupuesto
 
         Dim _PresupuestoFacade As New PresupuestoFacade
 
-
-
-
-
         Try
 
             Return _PresupuestoFacade.BuscarPresupuestoPorCodigoClientelFacade(_Cliente)
@@ -345,15 +345,14 @@ Public Class GestorPresupuesto
     End Function
 
 
-
+    ''' <summary>
+    ''' Obtiene el detalle de un presupuesto en particular. LLama a la capa Facade
+    ''' </summary>
+    ''' <param name="_presupuestoCabecera"></param>
+    ''' <returns></returns>
     Public Function ObtenerPresupuestoDetalleBLL(_presupuestoCabecera As PresupuestoCabecera) As DataSet
 
         Dim _PresupuestoFacade As New PresupuestoFacade
-
-
-
-
-
         Try
 
             Return _PresupuestoFacade.ObtenerPresupuestoDetalleFacade(_presupuestoCabecera)
@@ -363,22 +362,18 @@ Public Class GestorPresupuesto
             Throw New Exception(ex.Message)
 
         End Try
-
-
-
-
-
-
-
     End Function
 
 
 
+    ''' <summary>
+    ''' Se encarga de llamar a la capa Facade para realizar la actualizacion de un presupuesto
+    ''' </summary>
+    ''' <param name="_PresupuestoCabecera"></param>
+    ''' <param name="_ListaDetalles"></param>
     Public Sub ActualizarPresupuesto(ByVal _PresupuestoCabecera As PresupuestoCabecera, ByVal _ListaDetalles As List(Of PresupuestoDetalle))
 
         Dim _PresupuestoFacade As New PresupuestoFacade
-
-
 
         Try
 

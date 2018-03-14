@@ -3,7 +3,13 @@ Imports DAL
 
 
 Public Class GestorReporte
-
+    ''' <summary>
+    ''' Realiza la valicaciòn de fechas para que la fecha desde no sea mayor a la fecha hasta y luego llama a la capa Facade
+    ''' </summary>
+    ''' <param name="_Articulo"></param>
+    ''' <param name="_fecha_Desde"></param>
+    ''' <param name="_fecha_hasta"></param>
+    ''' <returns></returns>
     Public Function ValidarFechas(_Articulo As Articulo, _fecha_Desde As Date, _fecha_hasta As Date) As ReportePreciosDetalle
         Dim articuloDao = New ArticuloDAO
         Dim _Datatable As New DataTable
@@ -32,6 +38,11 @@ Public Class GestorReporte
 
     End Function
 
+    ''' <summary>
+    ''' Llama a la capa Facade para obtener el detalle de un reporte de precios
+    ''' </summary>
+    ''' <param name="codReportePrecios"></param>
+    ''' <returns></returns>
     Public Function ObtenerReportePreciosDetalleBll(codReportePrecios As Long) As Object
         Try
             Dim reporteFacade = New ReporteFacade
@@ -43,6 +54,11 @@ Public Class GestorReporte
         End Try
     End Function
 
+    ''' <summary>
+    ''' Llama a la capa Facade para obtener la cabecera de un reporte de precios
+    ''' </summary>
+    ''' <param name="codReportePrecios"></param>
+    ''' <returns></returns>
     Public Function ObtenerReportePreciosCabeceraBll(codReportePrecios As Long) As Reporte
         Try
             Dim reporteFacade = New ReporteFacade
@@ -54,6 +70,13 @@ Public Class GestorReporte
         End Try
     End Function
 
+    ''' <summary>
+    ''' Realiza validación de fechas y luego llama a la capa Facade para obtener reporte de artículos más vendidos
+    ''' </summary>
+    ''' <param name="cantidad"></param>
+    ''' <param name="fecha_desde"></param>
+    ''' <param name="fecha_hasta"></param>
+    ''' <returns></returns>
     Public Function ObtenerArticulosMasVendidosBLL(cantidad As Integer, fecha_desde As Date, fecha_hasta As Date) As DataTable
         Try
             Dim reporteFacade = New ReporteFacade
@@ -71,6 +94,14 @@ Public Class GestorReporte
 
     End Function
 
+
+    ''' <summary>
+    ''' Se encarga de realizar los cálculos del porcentaje de aumento de un producto
+    ''' </summary>
+    ''' <param name="_Datatable"></param>
+    ''' <param name="_fecha_Desde"></param>
+    ''' <param name="_fecha_hasta"></param>
+    ''' <returns></returns>
     Public Function CalculosReportePrecios(_Datatable As DataTable, _fecha_Desde As Date, _fecha_hasta As Date) As ReportePreciosDetalle
         Dim _ReportePreciosDetalle As New ReportePreciosDetalle
         Dim _Articulo = New Articulo
@@ -92,6 +123,11 @@ Public Class GestorReporte
 
     End Function
 
+    ''' <summary>
+    ''' Llama a la capa Facade para obtener el detalle de un reporte de artículos más vendidos
+    ''' </summary>
+    ''' <param name="codReporteArticulos"></param>
+    ''' <returns></returns>
     Public Function ObtenerReporteArticulosDetalle(codReporteArticulos As Long) As DataTable
         Try
             Dim reporteFacade As New ReporteFacade
@@ -101,6 +137,11 @@ Public Class GestorReporte
         End Try
     End Function
 
+    ''' <summary>
+    ''' Llama a la capa Facade para obtener la cabecera de un reporte de artículos más vendidos
+    ''' </summary>
+    ''' <param name="codreporte"></param>
+    ''' <returns></returns>
     Public Function ObtenerReporteArticulosCabecera(codreporte As Long) As ReporteArticulosCabecera
         Try
             Dim reporteFacade As New ReporteFacade
@@ -110,6 +151,13 @@ Public Class GestorReporte
         End Try
     End Function
 
+
+    ''' <summary>
+    ''' Valida que a la hora de guardar un reporte de precios este tenga artículos en su detalle
+    ''' </summary>
+    ''' <param name="reporteCabecera"></param>
+    ''' <param name="listaDetalles"></param>
+    ''' <param name="culturaGlobal"></param>
     Public Sub ValidarReporteAumentoDePrecios(reporteCabecera As Reporte, listaDetalles As List(Of ReportePreciosDetalle), culturaGlobal As String)
         Dim ReporteFacade = New ReporteFacade
 
@@ -138,6 +186,13 @@ Public Class GestorReporte
 
     End Sub
 
+
+    ''' <summary>
+    ''' Valida que a la hora de guardar un reporte de precios este tenga artículos en su detalle
+    ''' </summary>
+    ''' <param name="reporteCabecera"></param>
+    ''' <param name="listaDetalle"></param>
+    ''' <param name="culturaGlobal"></param>
     Public Sub ValidarReporteArticulosMasVendidos(reporteCabecera As ReporteArticulosCabecera, listaDetalle As List(Of ReporteArticulosMasVendidosDetalle), culturaGlobal As String)
         Dim ReporteFacade = New ReporteFacade
 

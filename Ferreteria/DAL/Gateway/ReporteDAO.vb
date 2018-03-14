@@ -867,7 +867,7 @@ Public Class ReporteDAO
         Dim _Comando As New SqlCommand
 
 
-        _Consulta = "insert into ReporteAumentoDePrecios (Fecha, Tipo ,Usuario) Values (@Fecha, @Tipo, @Usuario)"
+        _Consulta = "insert into ReporteAumentoDePrecios (Fecha, Tipo ,Usuario, Estado) Values (@Fecha, @Tipo, @Usuario, 0)"
 
         Try
 
@@ -903,7 +903,7 @@ Public Class ReporteDAO
         Dim _Comando As New SqlCommand
 
 
-        _Consulta = "insert into ReporteArticulosMasVendidos (FechaInicio, FechaFin, Tipo ,Usuario) Values (@FechaInicio, @FechaFin, @Tipo ,@Usuario)"
+        _Consulta = "insert into ReporteArticulosMasVendidos (FechaInicio, FechaFin, Tipo ,Usuario, Estado) Values (@FechaInicio, @FechaFin, @Tipo ,@Usuario,0)"
 
         Try
 
